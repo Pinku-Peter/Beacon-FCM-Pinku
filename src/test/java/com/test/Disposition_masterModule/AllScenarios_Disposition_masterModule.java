@@ -64,37 +64,48 @@ public class AllScenarios_Disposition_masterModule {
 		 extenttest = ExtentTestManager.startTest("Disposition Master Test-Cases");
 		
 		try {
+			extenttest.log(Status.INFO, "Step 1: Hover over the 'Disposition' main menu");
 		// Step 1: Hover over the "Disposition" main menu
 		Actions actions = new Actions(driver);
 		actions.moveToElement(dispositionMasterPage.getDispositionMainMenu()).perform();
-
+		extenttest.log(Status.PASS, "Hovered over the 'Disposition' main menu successfully.");
+		extenttest.log(Status.INFO, "Step 2: Waiting for the 'Disposition Master' sub-menu to be visible");
 		// Step 2: Wait until "Disposition Master" sub-menu is visible
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='Disposition Master']")));
 		Assert.assertNotNull(element, "Disposition Master sub-menu not found in DOM");
-
+		extenttest.log(Status.PASS, "'Disposition Master' sub-menu is visible.");
 		// Step 3: Click the "Disposition Master" sub-menu
 		// Scroll into view and ensure visibility
+		extenttest.log(Status.INFO, "Step 3: Clicking the 'Disposition Master' sub-menu");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 
 		// Click the sub-menu
 		try {
 			element.click();
+			extenttest.log(Status.PASS, "Clicked 'Disposition Master' sub-menu using standard click.");
 		} catch (ElementNotInteractableException e) {
 			js.executeScript("arguments[0].click();", element);
+			extenttest.log(Status.WARNING, "'Disposition Master' sub-menu was not interactable; used JavaScript click instead.");
 		}
 
 
 		// Step 4: Verify that the Disposition is displayed
+		extenttest.log(Status.INFO, "Step 4: Verifying the Disposition window is displayed");
 		 Assert.assertTrue(dispositionMasterPage.isDispositionDisplayed(),
 		            "Disposition window is not displayed.");
+		 extenttest.log(Status.PASS, "Disposition window is displayed successfully.");
 
 		// Step 5: Verify that the Sub-Disposition is displayed
+		 extenttest.log(Status.INFO, "Step 5: Verifying the Sub-Disposition tab is displayed");
 		Assert.assertTrue(dispositionMasterPage.isSubDispositionDisplayed(),
 				"Sub-Disposition window is not displayed.");
+		extenttest.log(Status.PASS, "Sub-Disposition tab is displayed successfully.");
 		// Step 6: Verify the last link address
+		extenttest.log(Status.INFO, "Step 6: Verifying the URL contains 'Admin/DispositionMaster'");
 		String currentUrl = driver.getCurrentUrl();
+		extenttest.log(Status.INFO, "Current URL: " + currentUrl);
 		System.out.println("Current URL: " + currentUrl); // Log the URL for debugging
 		String expectedUrlPart = "Admin/DispositionMaster";
 		Assert.assertTrue(currentUrl.contains(expectedUrlPart),

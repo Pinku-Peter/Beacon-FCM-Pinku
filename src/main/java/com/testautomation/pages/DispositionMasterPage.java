@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-
+import com.Utility.Log;
 
 public class DispositionMasterPage {
 	
@@ -23,6 +23,7 @@ public class DispositionMasterPage {
 	public DispositionMasterPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this); // Initialize WebElements
+        Log.info("DispositionMasterPage initialized.");
     }
 	
 	@FindBy(xpath = "//span[contains(text(), 'Disposition')]")
@@ -111,12 +112,16 @@ public class DispositionMasterPage {
 	
 
 	public void clickOnDispositionMainMenu() throws InterruptedException {
+		Log.info("Clicking on the Disposition.");
 		dispositionMainMenu.click();
+		Log.info("Successfully clicked on the Disposition.");
 		Thread.sleep(10000);
 	}
 
 	public void clickOnDispositionMasterSubMenu() throws InterruptedException {
+		Log.info("Clicking on the Disposition Master.");
 		dispositionMasterSubMenu.click();
+		Log.info("Successfully clicked on the Disposition Master.");
 		Thread.sleep(30000);
 	}
 
@@ -143,10 +148,15 @@ public class DispositionMasterPage {
 
 	//Method to select Action Owner from dropdown
 	public void selectActionOwnerOptions() {
+		Log.info("Opening the Action Owner dropdown.");
 		actionOwnerDropdown.click();
+		Log.info("Selecting 'Call Centre' option.");
 		callCentreOption.click();
+		Log.info("Selecting 'Collection Agency' option.");
 		collectionAgencyOption.click();
+		Log.info("Selecting 'Internal User' option.");
 		internalUserOption.click();
+		Log.info("Action Owner options selected successfully.");
 	}
 
 	public boolean isIsActiveCheckboxChecked() {
