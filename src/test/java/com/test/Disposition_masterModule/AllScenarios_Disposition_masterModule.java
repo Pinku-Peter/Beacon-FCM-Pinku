@@ -25,7 +25,6 @@ import org.testng.annotations.Test;
 import com.BasePackage.Base_Class;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.MediaEntityModelProvider;
 import com.aventstack.extentreports.Status;
 import com.extentReports.ExtentManager;
 import com.extentReports.ExtentTestManager;
@@ -42,6 +41,7 @@ public class AllScenarios_Disposition_masterModule {
 	com.Utility.ScreenShot screenShot;
 	DispositionMasterPage dispositionMasterPage;
 	ExtentTest extenttest;
+	
 	@BeforeSuite
 
 	public void SetUp() throws IOException, InterruptedException {
@@ -64,48 +64,48 @@ public class AllScenarios_Disposition_masterModule {
 		 extenttest = ExtentTestManager.startTest("Disposition Master Test-Cases");
 		
 		try {
-			extenttest.log(Status.INFO, "Step 1: Hover over the 'Disposition' main menu");
+			//extenttest.log(Status.INFO, "Step 1: Hover over the 'Disposition' main menu");
 		// Step 1: Hover over the "Disposition" main menu
 		Actions actions = new Actions(driver);
 		actions.moveToElement(dispositionMasterPage.getDispositionMainMenu()).perform();
-		extenttest.log(Status.PASS, "Hovered over the 'Disposition' main menu successfully.");
-		extenttest.log(Status.INFO, "Step 2: Waiting for the 'Disposition Master' sub-menu to be visible");
+		//extenttest.log(Status.PASS, "Hovered over the 'Disposition' main menu successfully.");
+		//extenttest.log(Status.INFO, "Step 2: Waiting for the 'Disposition Master' sub-menu to be visible");
 		// Step 2: Wait until "Disposition Master" sub-menu is visible
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='Disposition Master']")));
 		Assert.assertNotNull(element, "Disposition Master sub-menu not found in DOM");
-		extenttest.log(Status.PASS, "'Disposition Master' sub-menu is visible.");
+		//extenttest.log(Status.PASS, "'Disposition Master' sub-menu is visible.");
 		// Step 3: Click the "Disposition Master" sub-menu
 		// Scroll into view and ensure visibility
-		extenttest.log(Status.INFO, "Step 3: Clicking the 'Disposition Master' sub-menu");
+		//extenttest.log(Status.INFO, "Step 3: Clicking the 'Disposition Master' sub-menu");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 
 		// Click the sub-menu
 		try {
 			element.click();
-			extenttest.log(Status.PASS, "Clicked 'Disposition Master' sub-menu using standard click.");
+			//extenttest.log(Status.PASS, "Clicked 'Disposition Master' sub-menu using standard click.");
 		} catch (ElementNotInteractableException e) {
 			js.executeScript("arguments[0].click();", element);
-			extenttest.log(Status.WARNING, "'Disposition Master' sub-menu was not interactable; used JavaScript click instead.");
+			//extenttest.log(Status.WARNING, "'Disposition Master' sub-menu was not interactable; used JavaScript click instead.");
 		}
 
 
 		// Step 4: Verify that the Disposition is displayed
-		extenttest.log(Status.INFO, "Step 4: Verifying the Disposition window is displayed");
+		//extenttest.log(Status.INFO, "Step 4: Verifying the Disposition window is displayed");
 		 Assert.assertTrue(dispositionMasterPage.isDispositionDisplayed(),
 		            "Disposition window is not displayed.");
-		 extenttest.log(Status.PASS, "Disposition window is displayed successfully.");
+		 //extenttest.log(Status.PASS, "Disposition window is displayed successfully.");
 
 		// Step 5: Verify that the Sub-Disposition is displayed
-		 extenttest.log(Status.INFO, "Step 5: Verifying the Sub-Disposition tab is displayed");
+		 //extenttest.log(Status.INFO, "Step 5: Verifying the Sub-Disposition tab is displayed");
 		Assert.assertTrue(dispositionMasterPage.isSubDispositionDisplayed(),
 				"Sub-Disposition window is not displayed.");
-		extenttest.log(Status.PASS, "Sub-Disposition tab is displayed successfully.");
+		//extenttest.log(Status.PASS, "Sub-Disposition tab is displayed successfully.");
 		// Step 6: Verify the last link address
-		extenttest.log(Status.INFO, "Step 6: Verifying the URL contains 'Admin/DispositionMaster'");
+		//extenttest.log(Status.INFO, "Step 6: Verifying the URL contains 'Admin/DispositionMaster'");
 		String currentUrl = driver.getCurrentUrl();
-		extenttest.log(Status.INFO, "Current URL: " + currentUrl);
+		//extenttest.log(Status.INFO, "Current URL: " + currentUrl);
 		System.out.println("Current URL: " + currentUrl); // Log the URL for debugging
 		String expectedUrlPart = "Admin/DispositionMaster";
 		Assert.assertTrue(currentUrl.contains(expectedUrlPart),
@@ -335,7 +335,7 @@ public class AllScenarios_Disposition_masterModule {
 		 
 		 try {
 		 
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
 				if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
 					
@@ -359,20 +359,28 @@ public class AllScenarios_Disposition_masterModule {
 		// Validate the popup message
 	
 	        By popuppath = By.xpath("//div[@class='rz-growl-item']//div//span[contains(text(),'Success ')]");
+	        //WebElement popupmsg =  driver.findElement(popuppath);
 	        WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(popuppath));
 	        Assert.assertTrue(popup.isDisplayed(), "Success popup is not displayed.");
 	      
 	        ExtentTestManager.getTest().log(Status.PASS, "TestCase_14 : Add Disposition - Submit with All Fields Valid");
 		 }
 	        catch (AssertionError | Exception e) {
-				ExtentTestManager.getTest().log(Status.FAIL, "TestCase_14 : Add Disposition - Submit with All Fields Valid - Test Failed: " + e.getMessage());
+	        	//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+	        	//By popuppath = By.xpath("//div[@class='rz-growl-item']//div//span[contains(text(),'warning ')]");
+		        //WebElement popupmsg =  driver.findElement(popuppath);
+		       // WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(popuppath));
+		        //Assert.assertTrue(popup.isDisplayed(), "warning popup is not displayed.");
+				ExtentTestManager.getTest().log(Status.FAIL, "TestCase_14 : Add Disposition - Submit with All Fields Valid - Test Failed: This Disposition Already Exist. " + e.getMessage());
 	            throw e;
 		 }
 		 Thread.sleep(3000); 
 	    }
 	 @Test(priority = 15, dataProvider = "TestData")
 	    public void testMultiSelectActionOwner(Map<Object, Object> testdata) throws InterruptedException {
-		 
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 By popup = By.xpath("//div[@class='rz-growl-item']");
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(popup));
 		 try {
 	        // Step 1: Click on the Action Owner dropdown
 		 dispositionMasterPage.clickOnActionOwnerDropdown();
@@ -383,9 +391,6 @@ public class AllScenarios_Disposition_masterModule {
 		    	
 		    	// Step 2: Retrieve the "ActionOwner" data from the test data
 		        String[] actionOwners = testdata.get("ActionOwners").toString().split("\\|");;
-		        
-		     // Split the action owner values using the delimiter '|'
-		       // String[] actionOwnerArray = actionOwners.split("\\|");
 		        
 		     // Step 4: Iterate through the action owner values and select them
 		        for (String actionOwner : actionOwners) {
@@ -409,6 +414,77 @@ public class AllScenarios_Disposition_masterModule {
 	        
 	 }
 	 
+	 @Test(priority = 16, dataProvider = "TestData")
+	    public void testMultiAssetCategory(Map<Object, Object> testdata) throws InterruptedException {
+		 
+		 try {
+	        // Step 1: Click on the Action Owner dropdown
+		 dispositionMasterPage.clickAssetCategoryDropdown();
+	        
+	        // Step 2: Select multiple values
+		// Step 1: Check if the test needs to be executed
+		 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+		    	
+		    	// Step 2: Retrieve the "ActionOwner" data from the test data
+		        String[] actionOwners = testdata.get("AssetCategories").toString().split("\\|");;
+		        
+		     // Step 4: Iterate through the action owner values and select them
+		        for (String actionOwner : actionOwners) {
+		            actionOwner = actionOwner.trim(); // Remove any leading/trailing spaces
+		            dispositionMasterPage.AssetCategory(actionOwner); // Ensure this method selects an item
+		        }
+		    }
+		    // Step 5: Click outside the dropdown to close it
+		 
+		 By actionownerpath =By.xpath("(//label[contains(text(),'Asset Category')]//following::div//div[@class='rz-helper-hidden-accessible']//input//following::label)[1]");
+	    	WebElement dropdown =  driver.findElement(actionownerpath);
+	        dropdown.click();
+	        ExtentTestManager.getTest().log(Status.PASS, "TestCase_16 : Asset Category Multi-select Functionality");
+		 }
+	        catch (AssertionError | Exception e) {
+				ExtentTestManager.getTest().log(Status.FAIL, "TestCase_16 : Asset Category Multi-select Functionality - Test Failed: " + e.getMessage());
+	            throw e;
+		 }
+		 Thread.sleep(3000); 
+		   // dispositionMasterPage.clickOnActionOwnerDropdown();
+	        
+	 }
+	 
+	 @Test(priority = 17)
+	    public void testSelectAllFunctionality() throws InterruptedException {
+		 
+		 
+		 
+	        // Click on Action Owner dropdown
+		 dispositionMasterPage.clickActionOwnerDropdown();
+		 try {
+	        // Select all options in Action Owner
+		 dispositionMasterPage.selectAllActionOwners();
+
+		 ExtentTestManager.getTest().log(Status.PASS, "TestCase_17 : Select All Functionality - Action Owner");
+		 }
+	        catch (AssertionError | Exception e) {
+				ExtentTestManager.getTest().log(Status.FAIL, "TestCase_17 : Select All Functionality - Action Owner - Test Failed: " + e.getMessage());
+	            throw e;
+		 }
+		 Thread.sleep(3000); 
+		   
+	        
+	    }
+	 
+	 @Test(priority = 18)
+	    public void testDeselectAllOptions() throws InterruptedException {
+		 try {
+		 dispositionMasterPage.deselectAllActionOwners();
+		 ExtentTestManager.getTest().log(Status.PASS, "TestCase_18 : Deselecting Via Multi-select - Action Owner");
+		 }
+	        catch (AssertionError | Exception e) {
+				ExtentTestManager.getTest().log(Status.FAIL, "TestCase_18 : Deselecting Via Multi-select - Action Owner - Test Failed: " + e.getMessage());
+	            throw e;
+		 }
+		 Thread.sleep(3000);
+	       
+	    }
 	 
 	 @AfterMethod
 	    public void takeScreenshotOnFailure(ITestResult result) throws IOException {

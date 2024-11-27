@@ -1,2 +1,8 @@
-[INFO ] 2024-11-27 17:37:34.589 [main] Log - Driver has initialized successfully for chromebrowser
-[INFO ] 2024-11-27 17:38:23.578 [main] Log - Title is displayed : BeaconICnRM
+[INFO ] 2024-11-28 01:25:55.069 [main] Log - Driver has initialized successfully for chromebrowser
+[INFO ] 2024-11-28 01:26:24.042 [main] Log - Title is displayed : BeaconICnRM
+[INFO ] 2024-11-28 01:27:15.573 [main] Log - DispositionMasterPage initialized.
+[INFO ] 2024-11-28 01:27:52.883 [main] Log - Opening the Action Owner dropdown.
+[INFO ] 2024-11-28 01:27:52.978 [main] Log - Selecting 'Call Centre' option.
+[INFO ] 2024-11-28 01:27:53.173 [main] Log - Selecting 'Collection Agency' option.
+[INFO ] 2024-11-28 01:27:53.266 [main] Log - Selecting 'Internal User' option.
+[INFO ] 2024-11-28 01:27:53.362 [main] Log - Action Owner options selected successfully.

@@ -439,7 +439,50 @@ public class DispositionMasterPage {
         option.click(); // Select the option
     }
     
+    public void clickAssetCategoryDropdown() {
+    	
+    	//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    	By assetpath =By.xpath("(//label[contains(text(),'Asset Category')]//following::div//div[@class='rz-helper-hidden-accessible']//input//following::label)[1]");
+        WebElement dropdown = driver.findElement(assetpath);
+        dropdown.click();
+        
+    }
+    
+    public void AssetCategory(String category) {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    	 WebElement option = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='rz-multiselect-items-wrapper']//ul//li[@aria-label='" + category + "']")));
+         option.click(); // Select the option
+        
+        }
+    
+    public void clickActionOwnerDropdown() {
+    	By popclosebuttonpath =By.xpath("//div[@class='rz-dialog-titlebar']//a");
+    	WebElement popclose =  driver.findElement(popclosebuttonpath);
+    	popclose.click();
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    	WebElement addDispositionButton2 =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Add Disposition')]")));
+    	addDispositionButton2.click();
+    	//By actionownerpath =By.xpath("//label[contains(text(),'Action Owner')]//following::div[1]");
+    	WebElement dropdown =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[contains(text(),'Action Owner')]//following::div[1]")));
+        dropdown.click();
+    }
+    
+    public void selectAllActionOwners() {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    	By spinner = By.xpath("//div[@class='spinner']");
+    	By selectAllOptionpath = By.xpath("(//div//div[@class='rz-chkbox'])[5]"); 
+    	WebElement selectAllOption =  driver.findElement(selectAllOptionpath);	
+    	wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+    	selectAllOption.click();
+    	
+    }
+    
+    public void deselectAllActionOwners() {
+    	By deselectAllOptionpath = By.xpath("(//div//div[@class='rz-chkbox'])[5]"); 
+    	WebElement deselectAllOption =  driver.findElement(deselectAllOptionpath);
+    	deselectAllOption.click();
+    }
+    
+ }
     
     
-    
-}

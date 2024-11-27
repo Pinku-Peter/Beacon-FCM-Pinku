@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 27 17:39:19 IST 2024</td>
+<td>Started on:</td><td>Thu Nov 28 01:27:15 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>139 seconds (139674 ms)</td>
+<tr><td>Total time:</td><td>133 seconds (133329 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSubmitWithAllFieldsValid()'><b>testSubmitWithAllFieldsValid</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule<br>Parameters: {ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategory=NPA Category, Name=Sajeesh, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;rz-growl-item&apos;]//div//span[contains(text(),&apos;Success &apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSubmitWithAllFieldsValid()'><b>testSubmitWithAllFieldsValid</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule<br>Parameters: {ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Sajeesh, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;rz-growl-item&apos;]//div//span[contains(text(),&apos;Success &apos;)] (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51859}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51859/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6113db3da0ef7b7a9a4f6065e0672250
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50328/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7dfe1a40a96d3a8be481c965b972b29e
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSubmitWithAllFieldsValid(AllScenarios_Disposition_masterModule.java:351)
+	at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSubmitWithAllFieldsValid(AllScenarios_Disposition_masterModule.java:364)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -111,16 +111,16 @@ Session ID: 6113db3da0ef7b7a9a4f6065e0672250
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1774316039", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1774316039'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;rz-growl-item&apos;]//div//span[contains(text(),&apos;Success &apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1172716014", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1172716014'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;rz-growl-item&apos;]//div//span[contains(text(),&apos;Success &apos;)] (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51859}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51859/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6113db3da0ef7b7a9a4f6065e0672250
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50328/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7dfe1a40a96d3a8be481c965b972b29e
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSubmitWithAllFieldsValid(AllScenarios_Disposition_masterModule.java:351)
+	at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSubmitWithAllFieldsValid(AllScenarios_Disposition_masterModule.java:364)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -148,8 +148,8 @@ Session ID: 6113db3da0ef7b7a9a4f6065e0672250
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>35</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
+<td>9</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -162,72 +162,87 @@ Session ID: 6113db3da0ef7b7a9a4f6065e0672250
 <td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testVerifyIsActiveCheckboxDefaultState()'><b>testVerifyIsActiveCheckboxDefaultState</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
 <td>3</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testJumpToLastPage()'><b>testJumpToLastPage</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>13</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testOpenAddDispositionForm()'><b>testOpenAddDispositionForm</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testValidatePreviousButton()'><b>testValidatePreviousButton</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testDispositionMasterNavigation()'><b>testDispositionMasterNavigation</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.verifyInitialLoadOfActiveDispositions()'><b>verifyInitialLoadOfActiveDispositions</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>33</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
 <td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.actionOwnerDropdownSelections()'><b>actionOwnerDropdownSelections</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
 <td>3</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.verifyActionColumnOptions()'><b>verifyActionColumnOptions</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.verifyStatusColumnAppearance()'><b>verifyStatusColumnAppearance</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.validatePaginationInitialLoad()'><b>validatePaginationInitialLoad</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testValidateNextButton()'><b>testValidateNextButton</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>4</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
 <td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testCloseAddDispositionPopup()'><b>testCloseAddDispositionPopup</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
 <td>3</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiSelectActionOwner()'><b>testMultiSelectActionOwner</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule<br>Parameters: {ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategory=NPA Category, Name=Sajeesh, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}</td>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.verifyInitialLoadOfActiveDispositions()'><b>verifyInitialLoadOfActiveDispositions</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>33</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testOpenAddDispositionForm()'><b>testOpenAddDispositionForm</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>3</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.validatePaginationInitialLoad()'><b>validatePaginationInitialLoad</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>3</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiAssetCategory()'><b>testMultiAssetCategory</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule<br>Parameters: {ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Sajeesh, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}</td>
+<td></td>
+<td>3</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testJumpToLastPage()'><b>testJumpToLastPage</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>13</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSelectAllFunctionality()'><b>testSelectAllFunctionality</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
 <td>7</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testValidateNextButton()'><b>testValidateNextButton</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>4</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testDispositionMasterNavigation()'><b>testDispositionMasterNavigation</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>3</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
 <td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testJumpToFirstPage()'><b>testJumpToFirstPage</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
 <td>13</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@24269709</td></tr>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.verifyStatusColumnAppearance()'><b>verifyStatusColumnAppearance</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>3</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.verifyActionColumnOptions()'><b>verifyActionColumnOptions</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>3</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiSelectActionOwner()'><b>testMultiSelectActionOwner</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule<br>Parameters: {ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Sajeesh, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}</td>
+<td></td>
+<td>11</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testDeselectAllOptions()'><b>testDeselectAllOptions</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>3</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testValidatePreviousButton()'><b>testValidatePreviousButton</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>3</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 </table><p>
 </body>
 </html>
