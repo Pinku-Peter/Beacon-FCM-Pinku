@@ -366,15 +366,24 @@ public class AllScenarios_Disposition_masterModule {
 	        ExtentTestManager.getTest().log(Status.PASS, "TestCase_14 : Add Disposition - Submit with All Fields Valid");
 		 }
 	        catch (AssertionError | Exception e) {
-	        	//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-	        	//By popuppath = By.xpath("//div[@class='rz-growl-item']//div//span[contains(text(),'warning ')]");
-		        //WebElement popupmsg =  driver.findElement(popuppath);
-		       // WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(popuppath));
-		        //Assert.assertTrue(popup.isDisplayed(), "warning popup is not displayed.");
 				ExtentTestManager.getTest().log(Status.FAIL, "TestCase_14 : Add Disposition - Submit with All Fields Valid - Test Failed: This Disposition Already Exist. " + e.getMessage());
+				try {
+					
+			        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			        By popup = By.xpath("//div[@class='rz-growl-item']");
+					 wait.until(ExpectedConditions.invisibilityOfElementLocated(popup));
+			        WebElement popclosebutton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='rz-dialog-titlebar']//a")));
+			        popclosebutton.click(); // Close the popup
+			    } catch (Exception popupException) {
+			        // Log any errors encountered while trying to close the popup
+			        ExtentTestManager.getTest().log(Status.WARNING, 
+			            "Failed to close popup after catching exception: " + popupException.getMessage());
+			    }
 	            throw e;
+	            
 		 }
 		 Thread.sleep(3000); 
+		 
 	    }
 	 @Test(priority = 15, dataProvider = "TestData")
 	    public void testMultiSelectActionOwner(Map<Object, Object> testdata) throws InterruptedException {

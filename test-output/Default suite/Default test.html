@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 28 01:27:15 IST 2024</td>
+<td>Started on:</td><td>Thu Nov 28 03:08:30 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>133 seconds (133329 ms)</td>
+<tr><td>Total time:</td><td>188 seconds (188780 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSubmitWithAllFieldsValid()'><b>testSubmitWithAllFieldsValid</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule<br>Parameters: {ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Sajeesh, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;rz-growl-item&apos;]//div//span[contains(text(),&apos;Success &apos;)] (tried for 5 second(s) with 500 milliseconds interval)
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiSelectActionOwner()'><b>testMultiSelectActionOwner</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule<br>Parameters: {ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Hansan, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class=&apos;rz-multiselect-items-wrapper&apos;])[5]//ul//li[@aria-label=&apos;Call Centre&apos;] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50328/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7dfe1a40a96d3a8be481c965b972b29e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c13a8a5c354e4c87aaabdda9d006048
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSubmitWithAllFieldsValid(AllScenarios_Disposition_masterModule.java:364)
+	at com.testautomation.pages.DispositionMasterPage.selectActionOwners(DispositionMasterPage.java:437)
+	at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiSelectActionOwner(AllScenarios_Disposition_masterModule.java:407)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -111,16 +112,17 @@ Session ID: 7dfe1a40a96d3a8be481c965b972b29e
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1172716014", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1172716014'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;rz-growl-item&apos;]//div//span[contains(text(),&apos;Success &apos;)] (tried for 5 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1868914109", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1868914109'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class=&apos;rz-multiselect-items-wrapper&apos;])[5]//ul//li[@aria-label=&apos;Call Centre&apos;] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50328/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7dfe1a40a96d3a8be481c965b972b29e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c13a8a5c354e4c87aaabdda9d006048
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSubmitWithAllFieldsValid(AllScenarios_Disposition_masterModule.java:364)
+	at com.testautomation.pages.DispositionMasterPage.selectActionOwners(DispositionMasterPage.java:437)
+	at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiSelectActionOwner(AllScenarios_Disposition_masterModule.java:407)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -148,7 +150,85 @@ Session ID: 7dfe1a40a96d3a8be481c965b972b29e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>9</td>
+<td>34</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiAssetCategory()'><b>testMultiAssetCategory</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule<br>Parameters: {ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Hansan, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;rz-multiselect-items-wrapper&apos;]//ul//li[@aria-label=&apos;NPA Category&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c13a8a5c354e4c87aaabdda9d006048
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.testautomation.pages.DispositionMasterPage.AssetCategory(DispositionMasterPage.java:452)
+	at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiAssetCategory(AllScenarios_Disposition_masterModule.java:443)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1303192419", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1303192419'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;rz-multiselect-items-wrapper&apos;]//ul//li[@aria-label=&apos;NPA Category&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c13a8a5c354e4c87aaabdda9d006048
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.testautomation.pages.DispositionMasterPage.AssetCategory(DispositionMasterPage.java:452)
+	at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiAssetCategory(AllScenarios_Disposition_masterModule.java:443)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>30</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -159,37 +239,22 @@ Session ID: 7dfe1a40a96d3a8be481c965b972b29e
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testVerifyIsActiveCheckboxDefaultState()'><b>testVerifyIsActiveCheckboxDefaultState</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testDispositionMasterNavigation()'><b>testDispositionMasterNavigation</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
 <td>3</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.actionOwnerDropdownSelections()'><b>actionOwnerDropdownSelections</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSelectAllFunctionality()'><b>testSelectAllFunctionality</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
-<td>3</td>
+<td>7</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testCloseAddDispositionPopup()'><b>testCloseAddDispositionPopup</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSubmitWithAllFieldsValid()'><b>testSubmitWithAllFieldsValid</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule<br>Parameters: {ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Hansan, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}</td>
 <td></td>
-<td>3</td>
+<td>13</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.verifyInitialLoadOfActiveDispositions()'><b>verifyInitialLoadOfActiveDispositions</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>33</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testOpenAddDispositionForm()'><b>testOpenAddDispositionForm</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.validatePaginationInitialLoad()'><b>validatePaginationInitialLoad</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiAssetCategory()'><b>testMultiAssetCategory</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule<br>Parameters: {ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Sajeesh, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}</td>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testValidatePreviousButton()'><b>testValidatePreviousButton</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
 <td>3</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
@@ -199,17 +264,32 @@ Session ID: 7dfe1a40a96d3a8be481c965b972b29e
 <td>13</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testSelectAllFunctionality()'><b>testSelectAllFunctionality</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.verifyInitialLoadOfActiveDispositions()'><b>verifyInitialLoadOfActiveDispositions</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
-<td>7</td>
+<td>33</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testValidateNextButton()'><b>testValidateNextButton</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.verifyActionColumnOptions()'><b>verifyActionColumnOptions</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
-<td>4</td>
+<td>3</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testDispositionMasterNavigation()'><b>testDispositionMasterNavigation</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testOpenAddDispositionForm()'><b>testOpenAddDispositionForm</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>3</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testCloseAddDispositionPopup()'><b>testCloseAddDispositionPopup</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>3</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testVerifyIsActiveCheckboxDefaultState()'><b>testVerifyIsActiveCheckboxDefaultState</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td></td>
+<td>3</td>
+<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
+<tr>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.validatePaginationInitialLoad()'><b>validatePaginationInitialLoad</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
 <td>3</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
@@ -224,22 +304,17 @@ Session ID: 7dfe1a40a96d3a8be481c965b972b29e
 <td>3</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.verifyActionColumnOptions()'><b>verifyActionColumnOptions</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testValidateNextButton()'><b>testValidateNextButton</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
-<td>3</td>
+<td>4</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiSelectActionOwner()'><b>testMultiSelectActionOwner</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule<br>Parameters: {ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Sajeesh, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}</td>
+<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.actionOwnerDropdownSelections()'><b>actionOwnerDropdownSelections</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
-<td>11</td>
+<td>3</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
 <tr>
 <td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testDeselectAllOptions()'><b>testDeselectAllOptions</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>
-<tr>
-<td title='com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testValidatePreviousButton()'><b>testValidatePreviousButton</b><br>Test class: com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</td>
 <td></td>
 <td>3</td>
 <td>com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3</td></tr>

@@ -5,7 +5,8 @@
     <classes>
       <class name="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule">
         <methods>
-          <include name="testSubmitWithAllFieldsValid" invocation-numbers="0"/>
+          <include name="testMultiAssetCategory" invocation-numbers="0"/>
+          <include name="testMultiSelectActionOwner" invocation-numbers="0"/>
           <include name="afterEachTest"/>
           <include name="SetUp"/>
           <include name="takeScreenshotOnFailure"/>

@@ -419,13 +419,12 @@ public class DispositionMasterPage {
     }
     
     public void clickOnActionOwnerDropdown() {
-    	By popclosebuttonpath =By.xpath("//div[@class='rz-dialog-titlebar']//a");
-    	WebElement popclose =  driver.findElement(popclosebuttonpath);
-    	popclose.click();
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     	//By addDispositionButton =By.xpath("//button[contains(text(),'Add Disposition')]");
     	WebElement addDispositionButton2 =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Add Disposition')]")));
 		 addDispositionButton2.click();
+		 By spinner = By.xpath("//div[@class='spinner']");
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
     	By actionownerpath =By.xpath("//label[contains(text(),'Action Owner')]//following::div[1]");
     	WebElement dropdown =  driver.findElement(actionownerpath);
         dropdown.click();
