@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\pinku.peter\AppData\Local\Temp\testng-eclipse-826157613\testng-customsuite.xml</span>
+                    <span>C:\Users\pinku.peter\AppData\Local\Temp\testng-eclipse--1616015421\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">18 methods, 2 failed,   16 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule" class="method navigator-link" hash-for-method="testMultiAssetCategory({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)">testMultiAssetCategory({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule" class="method navigator-link" hash-for-method="testMultiSelectActionOwner({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)">testMultiSelectActionOwner({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">18 methods,   18 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -149,6 +130,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule" class="method navigator-link" hash-for-method="testJumpToLastPage">testJumpToLastPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule" class="method navigator-link" hash-for-method="testMultiAssetCategory({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)">testMultiAssetCategory({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule" class="method navigator-link" hash-for-method="testMultiSelectActionOwner({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)">testMultiSelectActionOwner({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -213,106 +204,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMultiAssetCategory({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)">
-                  </a> <!-- testMultiAssetCategory({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...) -->
-                  <span class="method-name">testMultiAssetCategory</span>
-                  <span class="parameters">({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Hansan, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;rz-multiselect-items-wrapper&apos;]//ul//li[@aria-label=&apos;NPA Category&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c13a8a5c354e4c87aaabdda9d006048
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.testautomation.pages.DispositionMasterPage.AssetCategory(DispositionMasterPage.java:452)
-	at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiAssetCategory(AllScenarios_Disposition_masterModule.java:443)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMultiSelectActionOwner({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)">
-                  </a> <!-- testMultiSelectActionOwner({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...) -->
-                  <span class="method-name">testMultiSelectActionOwner</span>
-                  <span class="parameters">({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Hansan, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class=&apos;rz-multiselect-items-wrapper&apos;])[5]//ul//li[@aria-label=&apos;Call Centre&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c13a8a5c354e4c87aaabdda9d006048
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.testautomation.pages.DispositionMasterPage.selectActionOwners(DispositionMasterPage.java:437)
-	at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiSelectActionOwner(AllScenarios_Disposition_masterModule.java:407)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -363,6 +254,22 @@ Session ID: 1c13a8a5c354e4c87aaabdda9d006048
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testMultiAssetCategory({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)">
+                  </a> <!-- testMultiAssetCategory({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...) -->
+                  <span class="method-name">testMultiAssetCategory</span>
+                  <span class="parameters">({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Jancy, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultiSelectActionOwner({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)">
+                  </a> <!-- testMultiSelectActionOwner({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...) -->
+                  <span class="method-name">testMultiSelectActionOwner</span>
+                  <span class="parameters">({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Jancy, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testOpenAddDispositionForm">
                   </a> <!-- testOpenAddDispositionForm -->
                   <span class="method-name">testOpenAddDispositionForm</span>
@@ -380,7 +287,7 @@ Session ID: 1c13a8a5c354e4c87aaabdda9d006048
                   <a name="testSubmitWithAllFieldsValid({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)">
                   </a> <!-- testSubmitWithAllFieldsValid({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...) -->
                   <span class="method-name">testSubmitWithAllFieldsValid</span>
-                  <span class="parameters">({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Hansan, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master})</span>
+                  <span class="parameters">({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Jancy, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -437,7 +344,7 @@ Session ID: 1c13a8a5c354e4c87aaabdda9d006048
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\pinku.peter\AppData\Local\Temp\testng-eclipse-826157613\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\pinku.peter\AppData\Local\Temp\testng-eclipse--1616015421\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -488,82 +395,82 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(18);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testMultiSelectActionOwner')
+data.setCell(0, 1, 'verifyInitialLoadOfActiveDispositions')
 data.setCell(0, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(0, 3, 34001);
+data.setCell(0, 3, 33116);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyInitialLoadOfActiveDispositions')
+data.setCell(1, 1, 'testJumpToFirstPage')
 data.setCell(1, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(1, 3, 33112);
+data.setCell(1, 3, 18875);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testMultiAssetCategory')
+data.setCell(2, 1, 'testJumpToLastPage')
 data.setCell(2, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(2, 3, 30274);
+data.setCell(2, 3, 18830);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testSubmitWithAllFieldsValid')
+data.setCell(3, 1, 'testMultiSelectActionOwner')
 data.setCell(3, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(3, 3, 13909);
+data.setCell(3, 3, 13254);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testJumpToFirstPage')
+data.setCell(4, 1, 'testSubmitWithAllFieldsValid')
 data.setCell(4, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(4, 3, 13476);
+data.setCell(4, 3, 12011);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testJumpToLastPage')
+data.setCell(5, 1, 'testOpenAddDispositionForm')
 data.setCell(5, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(5, 3, 13403);
+data.setCell(5, 3, 9043);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testSelectAllFunctionality')
 data.setCell(6, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(6, 3, 7822);
+data.setCell(6, 3, 8006);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testValidateNextButton')
 data.setCell(7, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(7, 3, 4575);
+data.setCell(7, 3, 4458);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testDispositionMasterNavigation')
+data.setCell(8, 1, 'testCloseAddDispositionPopup')
 data.setCell(8, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(8, 3, 3965);
+data.setCell(8, 3, 4388);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'actionOwnerDropdownSelections')
+data.setCell(9, 1, 'testValidatePreviousButton')
 data.setCell(9, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(9, 3, 3687);
+data.setCell(9, 3, 3893);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testOpenAddDispositionForm')
+data.setCell(10, 1, 'testDispositionMasterNavigation')
 data.setCell(10, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(10, 3, 3488);
+data.setCell(10, 3, 3850);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testValidatePreviousButton')
+data.setCell(11, 1, 'actionOwnerDropdownSelections')
 data.setCell(11, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(11, 3, 3437);
+data.setCell(11, 3, 3541);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'validatePaginationInitialLoad')
+data.setCell(12, 1, 'testMultiAssetCategory')
 data.setCell(12, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(12, 3, 3415);
+data.setCell(12, 3, 3422);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testCloseAddDispositionPopup')
+data.setCell(13, 1, 'validatePaginationInitialLoad')
 data.setCell(13, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(13, 3, 3316);
+data.setCell(13, 3, 3225);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyStatusColumnAppearance')
+data.setCell(14, 1, 'verifyActionColumnOptions')
 data.setCell(14, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(14, 3, 3266);
+data.setCell(14, 3, 3207);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifyActionColumnOptions')
+data.setCell(15, 1, 'verifyStatusColumnAppearance')
 data.setCell(15, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(15, 3, 3196);
+data.setCell(15, 3, 3165);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'testDeselectAllOptions')
 data.setCell(16, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(16, 3, 3172);
+data.setCell(16, 3, 3100);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'testVerifyIsActiveCheckboxDefaultState')
 data.setCell(17, 2, 'com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule')
-data.setCell(17, 3, 3061);
+data.setCell(17, 3, 3049);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -596,155 +503,151 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">testDispositionMasterNavigation</span>
-                <span class="method-start">106421 ms</span>
+                <span class="method-start">101681 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testDispositionMasterNavigation status=SUCCESS method=AllScenarios_Disposition_mast...)</span>
-                <span class="method-start">110396 ms</span>
+                <span class="method-start">105541 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyInitialLoadOfActiveDispositions</span>
-                <span class="method-start">110649 ms</span>
+                <span class="method-start">105686 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=verifyInitialLoadOfActiveDispositions status=SUCCESS method=AllScenarios_Dispositio...)</span>
-                <span class="method-start">143767 ms</span>
+                <span class="method-start">138807 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">actionOwnerDropdownSelections</span>
-                <span class="method-start">143930 ms</span>
+                <span class="method-start">138938 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=actionOwnerDropdownSelections status=SUCCESS method=AllScenarios_Disposition_master...)</span>
-                <span class="method-start">147622 ms</span>
+                <span class="method-start">142484 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testVerifyIsActiveCheckboxDefaultState</span>
-                <span class="method-start">147788 ms</span>
+                <span class="method-start">142620 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testVerifyIsActiveCheckboxDefaultState status=SUCCESS method=AllScenarios_Dispositi...)</span>
-                <span class="method-start">150853 ms</span>
+                <span class="method-start">145674 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyActionColumnOptions</span>
-                <span class="method-start">150990 ms</span>
+                <span class="method-start">145808 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=verifyActionColumnOptions status=SUCCESS method=AllScenarios_Disposition_masterModu...)</span>
-                <span class="method-start">154191 ms</span>
+                <span class="method-start">149019 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyStatusColumnAppearance</span>
-                <span class="method-start">154322 ms</span>
+                <span class="method-start">149133 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=verifyStatusColumnAppearance status=SUCCESS method=AllScenarios_Disposition_masterM...)</span>
-                <span class="method-start">157593 ms</span>
+                <span class="method-start">152302 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validatePaginationInitialLoad</span>
-                <span class="method-start">157750 ms</span>
+                <span class="method-start">152441 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=validatePaginationInitialLoad status=SUCCESS method=AllScenarios_Disposition_master...)</span>
-                <span class="method-start">161169 ms</span>
+                <span class="method-start">155670 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testValidateNextButton</span>
-                <span class="method-start">161310 ms</span>
+                <span class="method-start">155799 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testValidateNextButton status=SUCCESS method=AllScenarios_Disposition_masterModule....)</span>
-                <span class="method-start">165887 ms</span>
+                <span class="method-start">160260 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testValidatePreviousButton</span>
-                <span class="method-start">166035 ms</span>
+                <span class="method-start">160425 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testValidatePreviousButton status=SUCCESS method=AllScenarios_Disposition_masterMod...)</span>
-                <span class="method-start">169476 ms</span>
+                <span class="method-start">164322 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testJumpToLastPage</span>
-                <span class="method-start">169621 ms</span>
+                <span class="method-start">164471 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testJumpToLastPage status=SUCCESS method=AllScenarios_Disposition_masterModule.test...)</span>
-                <span class="method-start">183028 ms</span>
+                <span class="method-start">183304 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testJumpToFirstPage</span>
-                <span class="method-start">183227 ms</span>
+                <span class="method-start">183425 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testJumpToFirstPage status=SUCCESS method=AllScenarios_Disposition_masterModule.tes...)</span>
-                <span class="method-start">196707 ms</span>
+                <span class="method-start">202303 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testOpenAddDispositionForm</span>
-                <span class="method-start">196922 ms</span>
+                <span class="method-start">202453 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testOpenAddDispositionForm status=SUCCESS method=AllScenarios_Disposition_masterMod...)</span>
-                <span class="method-start">200413 ms</span>
+                <span class="method-start">211499 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testCloseAddDispositionPopup</span>
-                <span class="method-start">200572 ms</span>
+                <span class="method-start">211686 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testCloseAddDispositionPopup status=SUCCESS method=AllScenarios_Disposition_masterM...)</span>
-                <span class="method-start">203892 ms</span>
+                <span class="method-start">216078 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testSubmitWithAllFieldsValid({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)</span>
-                <span class="method-start">205038 ms</span>
+                <span class="method-start">217168 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testSubmitWithAllFieldsValid status=SUCCESS method=AllScenarios_Disposition_masterM...)</span>
-                <span class="method-start">218953 ms</span>
+                <span class="method-start">229187 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testMultiSelectActionOwner({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)</span>
-                <span class="method-start">219245 ms</span>
+                <span class="method-start">229380 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshotOnFailure([TestResult name=testMultiSelectActionOwner status=FAILURE method=AllScenarios_Disposition_masterMod...)</span>
-                <span class="method-start">253254 ms</span>
+                <span class="method-name">takeScreenshotOnFailure([TestResult name=testMultiSelectActionOwner status=SUCCESS method=AllScenarios_Disposition_masterMod...)</span>
+                <span class="method-start">242637 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testMultiAssetCategory({ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategor...)</span>
-                <span class="method-start">253438 ms</span>
+                <span class="method-start">242826 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshotOnFailure([TestResult name=testMultiAssetCategory status=FAILURE method=AllScenarios_Disposition_masterModule....)</span>
-                <span class="method-start">283719 ms</span>
+                <span class="method-name">takeScreenshotOnFailure([TestResult name=testMultiAssetCategory status=SUCCESS method=AllScenarios_Disposition_masterModule....)</span>
+                <span class="method-start">246251 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testSelectAllFunctionality</span>
-                <span class="method-start">283847 ms</span>
+                <span class="method-start">246381 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testSelectAllFunctionality status=SUCCESS method=AllScenarios_Disposition_masterMod...)</span>
-                <span class="method-start">291672 ms</span>
+                <span class="method-start">254388 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testDeselectAllOptions</span>
-                <span class="method-start">291831 ms</span>
+                <span class="method-start">254497 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testDeselectAllOptions status=SUCCESS method=AllScenarios_Disposition_masterModule....)</span>
-                <span class="method-start">295005 ms</span>
+                <span class="method-start">257599 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterEachTest</span>
-                <span class="method-start">295223 ms</span>
+                <span class="method-start">257718 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

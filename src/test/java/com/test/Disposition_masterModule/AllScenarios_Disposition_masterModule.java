@@ -61,6 +61,11 @@ public class AllScenarios_Disposition_masterModule {
 
 	@Test(priority = 1)
 	public void testDispositionMasterNavigation() throws InterruptedException {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		By spinner = By.xpath("//div[@class='spinner']");
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+		 
 		 extenttest = ExtentTestManager.startTest("Disposition Master Test-Cases");
 		
 		try {
@@ -71,7 +76,7 @@ public class AllScenarios_Disposition_masterModule {
 		//extenttest.log(Status.PASS, "Hovered over the 'Disposition' main menu successfully.");
 		//extenttest.log(Status.INFO, "Step 2: Waiting for the 'Disposition Master' sub-menu to be visible");
 		// Step 2: Wait until "Disposition Master" sub-menu is visible
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		//WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(60));
 		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='Disposition Master']")));
 		Assert.assertNotNull(element, "Disposition Master sub-menu not found in DOM");
 		//extenttest.log(Status.PASS, "'Disposition Master' sub-menu is visible.");
@@ -125,6 +130,11 @@ public class AllScenarios_Disposition_masterModule {
 	}
 	@Test(priority = 2)
 	public void verifyInitialLoadOfActiveDispositions() throws InterruptedException {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		By spinner = By.xpath("//div[@class='spinner']");
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+		 
 		//ExtentTestManager.startTest("TestCase_02 : Verify Initial Load of Active Dispositions");
 		try {
 		// Precondition: User is on the Disposition Master window
@@ -145,6 +155,11 @@ public class AllScenarios_Disposition_masterModule {
 
 	@Test(priority = 3)
 	public void actionOwnerDropdownSelections() throws IOException, InterruptedException {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		By spinner = By.xpath("//div[@class='spinner']");
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+		 
 		//ExtentTestManager.startTest("TestCase_03 : Action Owner Dropdown Selections");
 		try {
 		dispositionMasterPage.selectActionOwnerOptions();
@@ -163,6 +178,11 @@ public class AllScenarios_Disposition_masterModule {
 
 	@Test(priority = 4)
 	public void testVerifyIsActiveCheckboxDefaultState() throws InterruptedException {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		By spinner = By.xpath("//div[@class='spinner']");
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+		 
 		//ExtentTestManager.startTest("TestCase_04 : Verify Is Active Checkbox Default State");
 		try {
 		Assert.assertTrue(dispositionMasterPage.isIsActiveCheckboxChecked(), "Is Active checkbox is not checked by default.");
@@ -180,6 +200,11 @@ public class AllScenarios_Disposition_masterModule {
 
 	@Test(priority = 5)
 	public void verifyActionColumnOptions() throws InterruptedException {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		By spinner = By.xpath("//div[@class='spinner']");
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+		 
 		//ExtentTestManager.startTest("TestCase_05 : Verify Action Column Options");
 		try {
 		//dispositionMasterPage.navigateToDispositionMaster();
@@ -198,6 +223,11 @@ public class AllScenarios_Disposition_masterModule {
 
 	@Test(priority = 6)
 	public void verifyStatusColumnAppearance() throws InterruptedException {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		By spinner = By.xpath("//div[@class='spinner']");
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+		 
 		//ExtentTestManager.startTest("TestCase_06 : Verify Status Column Appearance");
 		try {
 		Assert.assertTrue(dispositionMasterPage.areAllStatusIconsGreenTicks(), "Not all status icons are green ticks");
@@ -214,6 +244,11 @@ public class AllScenarios_Disposition_masterModule {
 
 	@Test(priority = 7)
     public void validatePaginationInitialLoad() throws InterruptedException {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		By spinner = By.xpath("//div[@class='spinner']");
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+		 
 		//ExtentTestManager.startTest("TestCase_07 : Validate Pagination - Initial Load");
 		try {
         Assert.assertTrue(dispositionMasterPage.isPaginationCorrect());
@@ -231,6 +266,11 @@ public class AllScenarios_Disposition_masterModule {
 	
 	@Test(priority = 8)
     public void testValidateNextButton() throws InterruptedException {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		By spinner = By.xpath("//div[@class='spinner']");
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+		 
 		//ExtentTestManager.startTest("TestCase_08 : Validate Next Button");
 		try {
 		dispositionMasterPage.clickNextPagination();
@@ -248,6 +288,11 @@ public class AllScenarios_Disposition_masterModule {
 	
 	 @Test(priority = 9)
 	    public void testValidatePreviousButton() throws InterruptedException {
+		 
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			By spinner = By.xpath("//div[@class='spinner']");
+			 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+			 
 		 //ExtentTestManager.startTest("TestCase_09 : Validate Previous Button");
 		 //page2.click();
 		 try {
@@ -265,6 +310,11 @@ public class AllScenarios_Disposition_masterModule {
 	 
 	 @Test(priority = 10)
 	    public void testJumpToLastPage() throws InterruptedException {
+		 
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			By spinner = By.xpath("//div[@class='spinner']");
+			 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+			 
 		 //ExtentTestManager.startTest("TestCase_10 : Validate >> Button - Jump to Last Page");
 		 try {
 			 Thread.sleep(10000);	        
@@ -281,6 +331,10 @@ public class AllScenarios_Disposition_masterModule {
 	    }
 	 @Test(priority = 11)
 	    public void testJumpToFirstPage() throws InterruptedException {
+		 
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			By spinner = By.xpath("//div[@class='spinner']");
+			 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
 		 //ExtentTestManager.startTest("TestCase_11 : Validate << Button - Jump to First Page");
 		 try { 
 			 Thread.sleep(10000);
@@ -297,6 +351,10 @@ public class AllScenarios_Disposition_masterModule {
 	 
 	 @Test(priority = 12)
 	    public void testOpenAddDispositionForm() throws InterruptedException {
+		 
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			By spinner = By.xpath("//div[@class='spinner']");
+			 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
 		 //ExtentTestManager.startTest("TestCase_12 : Open Add Disposition Form");
 		 try {
 	        // Step 1: Click on "Add Disposition" button
@@ -314,6 +372,10 @@ public class AllScenarios_Disposition_masterModule {
 	 
 	 @Test(priority = 13)
 	    public void testCloseAddDispositionPopup() throws InterruptedException {
+		 
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			By spinner = By.xpath("//div[@class='spinner']");
+			 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
 		 //ExtentTestManager.startTest("TestCase_13 : Close Add Disposition Form");
 		 try {
 	        // Close the popup
@@ -333,9 +395,13 @@ public class AllScenarios_Disposition_masterModule {
 	 @Test(priority = 14, dataProvider = "TestData")
 	    public void testSubmitWithAllFieldsValid(Map<Object, Object> testdata) throws InterruptedException {
 		 
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			By spinner = By.xpath("//div[@class='spinner']");
+			 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+			 
 		 try {
 		 
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		 WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));
 
 				if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
 					
@@ -360,7 +426,7 @@ public class AllScenarios_Disposition_masterModule {
 	
 	        By popuppath = By.xpath("//div[@class='rz-growl-item']//div//span[contains(text(),'Success ')]");
 	        //WebElement popupmsg =  driver.findElement(popuppath);
-	        WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(popuppath));
+	        WebElement popup = wait1.until(ExpectedConditions.visibilityOfElementLocated(popuppath));
 	        Assert.assertTrue(popup.isDisplayed(), "Success popup is not displayed.");
 	      
 	        ExtentTestManager.getTest().log(Status.PASS, "TestCase_14 : Add Disposition - Submit with All Fields Valid");
@@ -369,10 +435,10 @@ public class AllScenarios_Disposition_masterModule {
 				ExtentTestManager.getTest().log(Status.FAIL, "TestCase_14 : Add Disposition - Submit with All Fields Valid - Test Failed: This Disposition Already Exist. " + e.getMessage());
 				try {
 					
-			        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(30));
 			        By popup = By.xpath("//div[@class='rz-growl-item']");
 					 wait.until(ExpectedConditions.invisibilityOfElementLocated(popup));
-			        WebElement popclosebutton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='rz-dialog-titlebar']//a")));
+			        WebElement popclosebutton = wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='rz-dialog-titlebar']//a")));
 			        popclosebutton.click(); // Close the popup
 			    } catch (Exception popupException) {
 			        // Log any errors encountered while trying to close the popup
@@ -390,6 +456,8 @@ public class AllScenarios_Disposition_masterModule {
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		 By popup = By.xpath("//div[@class='rz-growl-item']");
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(popup));
+		 By spinner = By.xpath("//div[@class='spinner']");
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
 		 try {
 	        // Step 1: Click on the Action Owner dropdown
 		 dispositionMasterPage.clickOnActionOwnerDropdown();
@@ -425,6 +493,10 @@ public class AllScenarios_Disposition_masterModule {
 	 
 	 @Test(priority = 16, dataProvider = "TestData")
 	    public void testMultiAssetCategory(Map<Object, Object> testdata) throws InterruptedException {
+		 
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			By spinner = By.xpath("//div[@class='spinner']");
+			 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
 		 
 		 try {
 	        // Step 1: Click on the Action Owner dropdown
@@ -462,7 +534,9 @@ public class AllScenarios_Disposition_masterModule {
 	 @Test(priority = 17)
 	    public void testSelectAllFunctionality() throws InterruptedException {
 		 
-		 
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			By spinner = By.xpath("//div[@class='spinner']");
+			 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
 		 
 	        // Click on Action Owner dropdown
 		 dispositionMasterPage.clickActionOwnerDropdown();
@@ -483,6 +557,11 @@ public class AllScenarios_Disposition_masterModule {
 	 
 	 @Test(priority = 18)
 	    public void testDeselectAllOptions() throws InterruptedException {
+		 
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			By spinner = By.xpath("//div[@class='spinner']");
+			 wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+			 
 		 try {
 		 dispositionMasterPage.deselectAllActionOwners();
 		 ExtentTestManager.getTest().log(Status.PASS, "TestCase_18 : Deselecting Via Multi-select - Action Owner");

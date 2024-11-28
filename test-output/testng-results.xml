@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="16" failed="2" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-28T03:08:30 IST" name="Default suite" finished-at="2024-11-28T03:11:38 IST" duration-ms="188780">
+  <suite started-at="2024-11-29T00:15:50 IST" name="Default suite" finished-at="2024-11-29T00:18:26 IST" duration-ms="156056">
     <groups>
     </groups>
-    <test started-at="2024-11-28T03:08:30 IST" name="Default test" finished-at="2024-11-28T03:11:38 IST" duration-ms="188780">
+    <test started-at="2024-11-29T00:15:50 IST" name="Default test" finished-at="2024-11-29T00:18:26 IST" duration-ms="156056">
       <class name="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:06:43 IST" name="SetUp" finished-at="2024-11-28T03:08:30 IST" duration-ms="106372" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:14:08 IST" name="SetUp" finished-at="2024-11-29T00:15:50 IST" duration-ms="101643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="testDispositionMasterNavigation()[pri:1, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:08:30 IST" name="testDispositionMasterNavigation" finished-at="2024-11-28T03:08:34 IST" duration-ms="3965" status="PASS">
+        <test-method signature="testDispositionMasterNavigation()[pri:1, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:15:50 IST" name="testDispositionMasterNavigation" finished-at="2024-11-29T00:15:53 IST" duration-ms="3850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDispositionMasterNavigation -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:08:34 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:08:34 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:15:53 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:15:54 IST" duration-ms="143" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="verifyInitialLoadOfActiveDispositions()[pri:2, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:08:34 IST" name="verifyInitialLoadOfActiveDispositions" finished-at="2024-11-28T03:09:07 IST" duration-ms="33112" status="PASS">
+        <test-method signature="verifyInitialLoadOfActiveDispositions()[pri:2, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:15:54 IST" name="verifyInitialLoadOfActiveDispositions" finished-at="2024-11-29T00:16:27 IST" duration-ms="33116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInitialLoadOfActiveDispositions -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:07 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:09:07 IST" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:27 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:16:27 IST" duration-ms="130" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="actionOwnerDropdownSelections()[pri:3, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:07 IST" name="actionOwnerDropdownSelections" finished-at="2024-11-28T03:09:11 IST" duration-ms="3687" status="PASS">
+        <test-method signature="actionOwnerDropdownSelections()[pri:3, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:27 IST" name="actionOwnerDropdownSelections" finished-at="2024-11-29T00:16:30 IST" duration-ms="3541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- actionOwnerDropdownSelections -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:11 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:09:11 IST" duration-ms="165" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:30 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:16:30 IST" duration-ms="135" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,11 +56,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="testVerifyIsActiveCheckboxDefaultState()[pri:4, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:11 IST" name="testVerifyIsActiveCheckboxDefaultState" finished-at="2024-11-28T03:09:14 IST" duration-ms="3061" status="PASS">
+        <test-method signature="testVerifyIsActiveCheckboxDefaultState()[pri:4, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:30 IST" name="testVerifyIsActiveCheckboxDefaultState" finished-at="2024-11-29T00:16:34 IST" duration-ms="3049" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyIsActiveCheckboxDefaultState -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:14 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:09:14 IST" duration-ms="136" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:34 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:16:34 IST" duration-ms="133" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,11 +71,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="verifyActionColumnOptions()[pri:5, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:14 IST" name="verifyActionColumnOptions" finished-at="2024-11-28T03:09:17 IST" duration-ms="3196" status="PASS">
+        <test-method signature="verifyActionColumnOptions()[pri:5, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:34 IST" name="verifyActionColumnOptions" finished-at="2024-11-29T00:16:37 IST" duration-ms="3207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyActionColumnOptions -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:17 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:09:18 IST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:37 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:16:37 IST" duration-ms="114" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,11 +86,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="verifyStatusColumnAppearance()[pri:6, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:18 IST" name="verifyStatusColumnAppearance" finished-at="2024-11-28T03:09:21 IST" duration-ms="3266" status="PASS">
+        <test-method signature="verifyStatusColumnAppearance()[pri:6, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:37 IST" name="verifyStatusColumnAppearance" finished-at="2024-11-29T00:16:40 IST" duration-ms="3165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyStatusColumnAppearance -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:21 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:09:21 IST" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:40 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:16:40 IST" duration-ms="138" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,11 +101,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="validatePaginationInitialLoad()[pri:7, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:21 IST" name="validatePaginationInitialLoad" finished-at="2024-11-28T03:09:24 IST" duration-ms="3415" status="PASS">
+        <test-method signature="validatePaginationInitialLoad()[pri:7, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:40 IST" name="validatePaginationInitialLoad" finished-at="2024-11-29T00:16:44 IST" duration-ms="3225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePaginationInitialLoad -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:24 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:09:25 IST" duration-ms="140" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:44 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:16:44 IST" duration-ms="129" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,11 +116,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="testValidateNextButton()[pri:8, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:25 IST" name="testValidateNextButton" finished-at="2024-11-28T03:09:29 IST" duration-ms="4575" status="PASS">
+        <test-method signature="testValidateNextButton()[pri:8, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:44 IST" name="testValidateNextButton" finished-at="2024-11-29T00:16:48 IST" duration-ms="4458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateNextButton -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:29 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:09:29 IST" duration-ms="148" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:48 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:16:48 IST" duration-ms="165" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -131,11 +131,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="testValidatePreviousButton()[pri:9, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:29 IST" name="testValidatePreviousButton" finished-at="2024-11-28T03:09:33 IST" duration-ms="3437" status="PASS">
+        <test-method signature="testValidatePreviousButton()[pri:9, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:48 IST" name="testValidatePreviousButton" finished-at="2024-11-29T00:16:52 IST" duration-ms="3893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidatePreviousButton -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:33 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:09:33 IST" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:52 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:16:52 IST" duration-ms="148" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,11 +146,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="testJumpToLastPage()[pri:10, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:33 IST" name="testJumpToLastPage" finished-at="2024-11-28T03:09:46 IST" duration-ms="13403" status="PASS">
+        <test-method signature="testJumpToLastPage()[pri:10, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:16:52 IST" name="testJumpToLastPage" finished-at="2024-11-29T00:17:11 IST" duration-ms="18830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJumpToLastPage -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:46 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:09:47 IST" duration-ms="198" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:17:11 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:17:11 IST" duration-ms="121" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,11 +161,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="testJumpToFirstPage()[pri:11, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:09:47 IST" name="testJumpToFirstPage" finished-at="2024-11-28T03:10:00 IST" duration-ms="13476" status="PASS">
+        <test-method signature="testJumpToFirstPage()[pri:11, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:17:11 IST" name="testJumpToFirstPage" finished-at="2024-11-29T00:17:30 IST" duration-ms="18875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJumpToFirstPage -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:10:00 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:10:00 IST" duration-ms="214" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:17:30 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:17:30 IST" duration-ms="149" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -176,11 +176,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="testOpenAddDispositionForm()[pri:12, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:10:00 IST" name="testOpenAddDispositionForm" finished-at="2024-11-28T03:10:04 IST" duration-ms="3488" status="PASS">
+        <test-method signature="testOpenAddDispositionForm()[pri:12, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:17:30 IST" name="testOpenAddDispositionForm" finished-at="2024-11-29T00:17:39 IST" duration-ms="9043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenAddDispositionForm -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:10:04 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:10:04 IST" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:17:39 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:17:40 IST" duration-ms="187" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -191,11 +191,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="testCloseAddDispositionPopup()[pri:13, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:10:04 IST" name="testCloseAddDispositionPopup" finished-at="2024-11-28T03:10:07 IST" duration-ms="3316" status="PASS">
+        <test-method signature="testCloseAddDispositionPopup()[pri:13, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:17:40 IST" name="testCloseAddDispositionPopup" finished-at="2024-11-29T00:17:44 IST" duration-ms="4388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCloseAddDispositionPopup -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:10:07 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:10:07 IST" duration-ms="163" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:17:44 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:17:44 IST" duration-ms="132" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -206,18 +206,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="testSubmitWithAllFieldsValid(java.util.Map)[pri:14, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:10:08 IST" name="testSubmitWithAllFieldsValid" data-provider="TestData" finished-at="2024-11-28T03:10:22 IST" duration-ms="13909" status="PASS">
+        <test-method signature="testSubmitWithAllFieldsValid(java.util.Map)[pri:14, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:17:45 IST" name="testSubmitWithAllFieldsValid" data-provider="TestData" finished-at="2024-11-29T00:17:57 IST" duration-ms="12011" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Hansan, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}]]>
+                <![CDATA[{ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Jancy, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSubmitWithAllFieldsValid -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:10:22 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:10:22 IST" duration-ms="221" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:17:57 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:17:57 IST" duration-ms="144" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -228,153 +228,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="testMultiSelectActionOwner(java.util.Map)[pri:15, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:10:23 IST" name="testMultiSelectActionOwner" data-provider="TestData" finished-at="2024-11-28T03:10:57 IST" duration-ms="34001" status="FAIL">
+        <test-method signature="testMultiSelectActionOwner(java.util.Map)[pri:15, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:17:57 IST" name="testMultiSelectActionOwner" data-provider="TestData" finished-at="2024-11-29T00:18:11 IST" duration-ms="13254" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Hansan, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}]]>
+                <![CDATA[{ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Jancy, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='rz-multiselect-items-wrapper'])[5]//ul//li[@aria-label='Call Centre'] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c13a8a5c354e4c87aaabdda9d006048]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='rz-multiselect-items-wrapper'])[5]//ul//li[@aria-label='Call Centre'] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c13a8a5c354e4c87aaabdda9d006048
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at com.testautomation.pages.DispositionMasterPage.selectActionOwners(DispositionMasterPage.java:437)
-at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiSelectActionOwner(AllScenarios_Disposition_masterModule.java:407)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMultiSelectActionOwner -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:10:57 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:10:57 IST" duration-ms="123" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:18:11 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:18:11 IST" duration-ms="142" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMultiSelectActionOwner status=FAILURE method=AllScenarios_Disposition_masterModule.testMultiSelectActionOwner(java.util.Map)[pri:15, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=testMultiSelectActionOwner status=SUCCESS method=AllScenarios_Disposition_masterModule.testMultiSelectActionOwner(java.util.Map)[pri:15, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="testMultiAssetCategory(java.util.Map)[pri:16, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:10:57 IST" name="testMultiAssetCategory" data-provider="TestData" finished-at="2024-11-28T03:11:27 IST" duration-ms="30274" status="FAIL">
+        <test-method signature="testMultiAssetCategory(java.util.Map)[pri:16, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:18:11 IST" name="testMultiAssetCategory" data-provider="TestData" finished-at="2024-11-29T00:18:14 IST" duration-ms="3422" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Hansan, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}]]>
+                <![CDATA[{ActionOwner=Call Centre, ActionOwners=Call Centre | Collection Agency | Internal User, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, Name=Jancy, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master}]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='rz-multiselect-items-wrapper']//ul//li[@aria-label='NPA Category'] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c13a8a5c354e4c87aaabdda9d006048]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='rz-multiselect-items-wrapper']//ul//li[@aria-label='NPA Category'] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c13a8a5c354e4c87aaabdda9d006048
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at com.testautomation.pages.DispositionMasterPage.AssetCategory(DispositionMasterPage.java:452)
-at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.testMultiAssetCategory(AllScenarios_Disposition_masterModule.java:443)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMultiAssetCategory -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:11:27 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:11:27 IST" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:18:14 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:18:14 IST" duration-ms="128" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMultiAssetCategory status=FAILURE method=AllScenarios_Disposition_masterModule.testMultiAssetCategory(java.util.Map)[pri:16, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=testMultiAssetCategory status=SUCCESS method=AllScenarios_Disposition_masterModule.testMultiAssetCategory(java.util.Map)[pri:16, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="testSelectAllFunctionality()[pri:17, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:11:27 IST" name="testSelectAllFunctionality" finished-at="2024-11-28T03:11:35 IST" duration-ms="7822" status="PASS">
+        <test-method signature="testSelectAllFunctionality()[pri:17, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:18:14 IST" name="testSelectAllFunctionality" finished-at="2024-11-29T00:18:22 IST" duration-ms="8006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSelectAllFunctionality -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:11:35 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:11:35 IST" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:18:22 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:18:22 IST" duration-ms="108" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -385,11 +287,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="testDeselectAllOptions()[pri:18, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:11:35 IST" name="testDeselectAllOptions" finished-at="2024-11-28T03:11:38 IST" duration-ms="3172" status="PASS">
+        <test-method signature="testDeselectAllOptions()[pri:18, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:18:22 IST" name="testDeselectAllOptions" finished-at="2024-11-29T00:18:25 IST" duration-ms="3100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeselectAllOptions -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:11:38 IST" name="takeScreenshotOnFailure" finished-at="2024-11-28T03:11:38 IST" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:18:25 IST" name="takeScreenshotOnFailure" finished-at="2024-11-29T00:18:26 IST" duration-ms="100" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -400,7 +302,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-28T03:11:39 IST" name="afterEachTest" finished-at="2024-11-28T03:11:39 IST" duration-ms="555" status="PASS">
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@3a52dba3]" started-at="2024-11-29T00:18:26 IST" name="afterEachTest" finished-at="2024-11-29T00:18:26 IST" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
