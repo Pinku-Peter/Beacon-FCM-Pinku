@@ -2,6 +2,9 @@ package com.BasePackage;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -233,5 +236,35 @@ WebDriverWait wait;
 
 	}
 
-	
+public static Connection OracleDBConnection() throws IOException {
+		
+		Connection connection = null;
+        try {
+        	String DB_URL = configloader().getProperty("DatabaseURL");
+        	String DB_UserName = configloader().getProperty("DB_UserName");
+        	String DB_Password = configloader().getProperty("DB_Password");
+        	
+            // JDBC URL for Oracle database
+            String URL = "jdbc:oracle:thin:@"+ DB_URL.trim();
+            String username = DB_UserName.trim();
+            String password = DB_Password.trim();
+            // Establish connection
+            System.out.println("URL="+URL);
+            System.out.println("username="+username);
+            System.out.println("password="+password);
+            connection = DriverManager.getConnection(URL, username, password);
+            
+            if (connection != null) {
+                System.out.println("Connected to the database!");
+            } else {
+                System.out.println("Failed to make connection!");
+            }
+        } catch (SQLException e) {
+            System.err.println("Connection failed!");
+            e.printStackTrace();
+        } 
+		return connection;
+		
+	}
+
 }

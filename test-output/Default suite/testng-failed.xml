@@ -5,9 +5,10 @@
     <classes>
       <class name="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule">
         <methods>
-          <include name="testMultiAssetCategory" invocation-numbers="0"/>
-          <include name="testMultiSelectActionOwner" invocation-numbers="0"/>
+          <include name="Add_Duplicate_Sub_Disposition" invocation-numbers="0"/>
           <include name="afterEachTest"/>
+          <include name="setupTest"/>
+          <include name="Add_New_Sub_Disposition" invocation-numbers="0"/>
           <include name="SetUp"/>
           <include name="takeScreenshotOnFailure"/>
         </methods>

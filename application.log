@@ -1,8 +1,14 @@
-[INFO ] 2024-11-29 00:14:11.586 [main] Log - Driver has initialized successfully for chromebrowser
-[INFO ] 2024-11-29 00:14:50.112 [main] Log - Title is displayed : BeaconICnRM
-[INFO ] 2024-11-29 00:15:50.011 [main] Log - DispositionMasterPage initialized.
-[INFO ] 2024-11-29 00:16:27.327 [main] Log - Opening the Action Owner dropdown.
-[INFO ] 2024-11-29 00:16:27.428 [main] Log - Selecting 'Call Centre' option.
-[INFO ] 2024-11-29 00:16:27.625 [main] Log - Selecting 'Collection Agency' option.
-[INFO ] 2024-11-29 00:16:27.726 [main] Log - Selecting 'Internal User' option.
-[INFO ] 2024-11-29 00:16:27.834 [main] Log - Action Owner options selected successfully.
+[INFO ] 2024-12-09 10:18:28.515 [main] Log - Driver has initialized successfully for chrome browser
+[INFO ] 2024-12-09 10:19:11.474 [main] Log - Title is displayed: BeaconICnRM
+[INFO ] 2024-12-09 10:19:11.932 [main] Log - Entered IBU0001196 in user name field
+[INFO ] 2024-12-09 10:19:12.077 [main] Log - Entered test@123 in password field
+[INFO ] 2024-12-09 10:19:12.266 [main] Log - Clicked on login button
+[INFO ] 2024-12-09 10:19:37.287 [main] Log - Clicked on Go collection button
+[INFO ] 2024-12-09 10:19:50.571 [main] Log - UserID in Dashboard: IBU0001196
+[INFO ] 2024-12-09 10:19:52.276 [main] Log - Org Name: Ahmedabad, Org Type Name: Zone/CO
+[INFO ] 2024-12-09 10:19:54.183 [main] Log - DispositionMasterPage initialized.
+[INFO ] 2024-12-09 10:20:31.467 [main] Log - Opening the Action Owner dropdown.
+[INFO ] 2024-12-09 10:20:31.674 [main] Log - Selecting 'Call Centre' option.
+[INFO ] 2024-12-09 10:20:31.866 [main] Log - Selecting 'Collection Agency' option.
+[INFO ] 2024-12-09 10:20:32.006 [main] Log - Selecting 'Internal User' option.
+[INFO ] 2024-12-09 10:20:32.112 [main] Log - Action Owner options selected successfully.

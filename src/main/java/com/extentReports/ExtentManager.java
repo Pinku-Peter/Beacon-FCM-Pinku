@@ -41,7 +41,7 @@ public class ExtentManager {
 			extent.setSystemInfo("OS", "Windows");
 			extent.setSystemInfo("AUT", "QA");
 			extent.setSystemInfo("Author", "Pinku Peter");
-	 
+			//extent.setSystemInfo("Total Test Cases", String.valueOf(ExtentTestManager.getTestCaseCount()));
 	        return extent;
 	    }
 	     
