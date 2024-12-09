@@ -914,14 +914,26 @@ public class DispositionMasterPage {
         return existingmsgpop.getText();
     }
     
-    public void clkThreeDotButtonofsubdisposition() {
-    	WebElement actionColumnButton = driver.findElement(DispositionMasterPageRepo.actionColumnButton2);
+    public void openEditPopuptoupdateexistingname() {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.errorMessage2));
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-    	WebElement closeButton = driver.findElement(DispositionMasterPageRepo.closeButton);
-    	closeButton.click();
+    	WebElement subPopupClosePopupButtonElement = driver.findElement(DispositionMasterPageRepo.subpopupclosePopupButton);
+    	subPopupClosePopupButtonElement.click();
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+    	WebElement actionButton = driver.findElement(DispositionMasterPageRepo.actionButton);
+    	actionButton.click();
+    	WebElement subdispoeditButton = driver.findElement(DispositionMasterPageRepo.subdispoeditButton);
+    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+    	subdispoeditButton.click();
+    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+    }
+    
+    public void clkThreeDotButtonofsubdisposition() {
+    	WebElement actionColumnButton = driver.findElement(DispositionMasterPageRepo.actionColumnButton2);
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.successMessage2));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
     	actionColumnButton.click();
     }
     

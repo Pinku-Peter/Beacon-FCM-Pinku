@@ -15,7 +15,7 @@
 
 		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
 	
-	<title>Automation_Report_12092024_101954.html</title>
+	<title>Automation_Report_12092024_161749.html</title>
 
 	<style type='text/css'>
 	</style>
@@ -33,11 +33,12 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
-		<span class='report-name'>Automation_Report_12092024_101954.html</span>
+		<span class='report-name'>Automation_Report_12092024_161749.html</span>
 		
 		<!-- report headline -->
 		<span class='report-headline'></span>
@@ -46,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Monday, December 09, 2024, 10:19 AM (IST)</span>
+                    <span class='label suite-start-time blue darken-3'>Monday, December 09, 2024, 04:17 PM (IST)</span>
 				</a>
 			</li>
 			<li>
@@ -79,6 +80,16 @@
 			<!-- test toggle -->
 
 			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>Dispositionmaster</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
 			<!-- category toggle -->
 
 			<!-- clear filters -->
@@ -122,7 +133,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>44</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>45</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -137,7 +148,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>44</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>45</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -158,15 +169,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify_Disposition_Master_Navigation</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:19 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:17 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:19 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:19 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+757ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:17 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:17 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+675ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -179,7 +195,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:19:55 AM</td>
+					<td class='timestamp'>4:17:50 PM</td>
 					<td class='step-details'>Disposition master window opens, displaying Disposition and Sub Disposition tabs. Should show last link address as Admin/DispositionMaster.</td>
 				</tr>
 			</tbody>
@@ -192,15 +208,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify_Initial_Load_of_Active_Dispositions</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:19 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:17 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:19 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+138ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:17 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+795ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -213,7 +234,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:20:28 AM</td>
+					<td class='timestamp'>4:18:24 PM</td>
 					<td class='step-details'>10 active dispositions are displayed.</td>
 				</tr>
 			</tbody>
@@ -226,15 +247,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>Action_Owner_Dropdown_Selections</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+717ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+531ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -247,7 +273,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:20:32 AM</td>
+					<td class='timestamp'>4:18:28 PM</td>
 					<td class='step-details'>Selected options should be visible and selectable.</td>
 				</tr>
 			</tbody>
@@ -260,15 +286,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify_Is_Active_Checkbox_Default_State</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+64ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+68ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -281,7 +312,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:20:35 AM</td>
+					<td class='timestamp'>4:18:31 PM</td>
 					<td class='step-details'>Is Active checkbox is checked (active) by default.</td>
 				</tr>
 			</tbody>
@@ -294,15 +325,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify_Action_Column_Options</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+333ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+229ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -315,7 +351,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:20:38 AM</td>
+					<td class='timestamp'>4:18:34 PM</td>
 					<td class='step-details'>Edit and Activate/Deactivate options are displayed.</td>
 				</tr>
 			</tbody>
@@ -328,15 +364,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify_Status_Column_Appearance</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+314ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+171ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -349,7 +390,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:20:41 AM</td>
+					<td class='timestamp'>4:18:37 PM</td>
 					<td class='step-details'>A green tick icon is displayed, indicating active dispositions.</td>
 				</tr>
 			</tbody>
@@ -362,15 +403,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>Validate_Pagination__Initial_Load</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+310ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+180ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -383,7 +429,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:20:45 AM</td>
+					<td class='timestamp'>4:18:40 PM</td>
 					<td class='step-details'>Previous button is disabled, Page 1 is selected Next and >> buttons are enabled, No << button appears</td>
 				</tr>
 			</tbody>
@@ -396,15 +442,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
 					<div class='test-heading'>
 						<span class='test-name'>Validate_Next_Button</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+2ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+393ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -417,7 +468,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:20:56 AM</td>
+					<td class='timestamp'>4:18:45 PM</td>
 					<td class='step-details'>Moves to Page 2, Previous button is enabled, Next and >> buttons remain enabled, << button appears</td>
 				</tr>
 			</tbody>
@@ -430,15 +481,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
 					<div class='test-heading'>
 						<span class='test-name'>Validate_Previous_Button</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:20 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+244ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+863ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -451,7 +507,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:21:12 AM</td>
+					<td class='timestamp'>4:18:49 PM</td>
 					<td class='step-details'>Moves to Page 1, Previous button is disabled, Next and >> buttons are enabled, No << button appears.</td>
 				</tr>
 			</tbody>
@@ -464,15 +520,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
 					<div class='test-heading'>
 						<span class='test-name'>Validate_Button__Jump_to_Last_Page</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+798ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:18 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+823ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -485,7 +546,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:21:35 AM</td>
+					<td class='timestamp'>4:19:11 PM</td>
 					<td class='step-details'>Moves to the last page, Previous and << buttons are enabled, Next and >> buttons are disabled</td>
 				</tr>
 			</tbody>
@@ -498,15 +559,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
 					<div class='test-heading'>
 						<span class='test-name'>Validate_Button__Jump_to_First_Page</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+62ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+749ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -519,7 +585,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:21:43 AM</td>
+					<td class='timestamp'>4:19:29 PM</td>
 					<td class='step-details'>Moves to the first page, Previous button is disabled, Next and >> buttons are enabled, No << button appears</td>
 				</tr>
 			</tbody>
@@ -532,15 +598,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
 					<div class='test-heading'>
 						<span class='test-name'>Open_Add_Disposition_Form</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+903ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+419ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -553,7 +624,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:21:49 AM</td>
+					<td class='timestamp'>4:19:33 PM</td>
 					<td class='step-details'>Add Disposition popup opens with Action Owner, Name, Asset Category fields, and Submit, Close buttons.</td>
 				</tr>
 			</tbody>
@@ -566,15 +637,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
 					<div class='test-heading'>
 						<span class='test-name'>Close_Add_Disposition_Form</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+707ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+226ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -587,7 +663,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:21:55 AM</td>
+					<td class='timestamp'>4:19:36 PM</td>
 					<td class='step-details'>Add Disposition popup is closed.</td>
 				</tr>
 			</tbody>
@@ -600,15 +676,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
 					<div class='test-heading'>
 						<span class='test-name'>Add_Disposition__Submit_with_All_Fields_Valid</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:21 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+36ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+557ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -621,7 +702,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:22:10 AM</td>
+					<td class='timestamp'>4:19:54 PM</td>
 					<td class='step-details'>Data is submitted successfully, popup closes without errors.</td>
 				</tr>
 			</tbody>
@@ -634,15 +715,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
 					<div class='test-heading'>
 						<span class='test-name'>Test_Disposition_Grid_Visibility</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+787ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:19 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+822ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -655,7 +741,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:22:20 AM</td>
+					<td class='timestamp'>4:20:08 PM</td>
 					<td class='step-details'>Disposition appears as expected with Call centre, Internal user, Collection agency in Action Owner, Green tick in Status, Three dot button in Action</td>
 				</tr>
 			</tbody>
@@ -668,15 +754,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
 					<div class='test-heading'>
 						<span class='test-name'>Action_Owner_Multi_select_Functionality</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+369ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+989ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -689,7 +780,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:22:28 AM</td>
+					<td class='timestamp'>4:20:19 PM</td>
 					<td class='step-details'>Selected values are displayed in the dropdown field with comma separation.</td>
 				</tr>
 			</tbody>
@@ -702,15 +793,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
 					<div class='test-heading'>
 						<span class='test-name'>Asset_Category_Multi_select_Functionality</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+571ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+365ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -723,7 +819,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:22:32 AM</td>
+					<td class='timestamp'>4:20:23 PM</td>
 					<td class='step-details'>Selected values are displayed, and "NPA Category" is checked.</td>
 				</tr>
 			</tbody>
@@ -736,15 +832,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
 					<div class='test-heading'>
 						<span class='test-name'>Select_All_Functionality__Action_Owner</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+255ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+621ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -757,7 +858,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:22:40 AM</td>
+					<td class='timestamp'>4:20:33 PM</td>
 					<td class='step-details'>All options in Action Owner are selected.</td>
 				</tr>
 			</tbody>
@@ -770,15 +871,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
 					<div class='test-heading'>
 						<span class='test-name'>Deselecting_Via_Multi_select__Action_Owner</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+206ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+133ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -791,7 +897,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:22:44 AM</td>
+					<td class='timestamp'>4:20:36 PM</td>
 					<td class='step-details'>All options in Action Owner are deselected.</td>
 				</tr>
 			</tbody>
@@ -804,15 +910,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
 					<div class='test-heading'>
 						<span class='test-name'>Select_All_Functionality__Asset_Category</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+373ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+259ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -825,7 +936,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:22:47 AM</td>
+					<td class='timestamp'>4:20:39 PM</td>
 					<td class='step-details'>All options in Asset Category are selected.</td>
 				</tr>
 			</tbody>
@@ -838,15 +949,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
 					<div class='test-heading'>
 						<span class='test-name'>Deselecting_Via_Multi_select__Asset_Category</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+226ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+135ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -859,7 +975,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:22:50 AM</td>
+					<td class='timestamp'>4:20:42 PM</td>
 					<td class='step-details'>All options in Asset Category are deselected.</td>
 				</tr>
 			</tbody>
@@ -872,15 +988,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify_Add_Disposition_without_Selection</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:22 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+221ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:20 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+378ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -893,7 +1014,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:22:58 AM</td>
+					<td class='timestamp'>4:20:58 PM</td>
 					<td class='step-details'>Should show error message as "Name required" under the name field.</td>
 				</tr>
 			</tbody>
@@ -906,15 +1027,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
 					<div class='test-heading'>
 						<span class='test-name'>Add_Disposition_with_Existing_Name</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+518ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+151ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -927,7 +1053,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:23:12 AM</td>
+					<td class='timestamp'>4:21:10 PM</td>
 					<td class='step-details'>Error message "This Disposition Already Exist" is displayed.</td>
 				</tr>
 			</tbody>
@@ -940,15 +1066,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
 					<div class='test-heading'>
 						<span class='test-name'>Edit_Disposition_Popup_Display</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+574ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+267ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -961,7 +1092,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:23:23 AM</td>
+					<td class='timestamp'>4:21:22 PM</td>
 					<td class='step-details'>Edit disposition popup is displayed with Action owner dropdown, Name field, Asset category dropdown, and Update button pre-populated with existing values.</td>
 				</tr>
 			</tbody>
@@ -974,15 +1105,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
 					<div class='test-heading'>
 						<span class='test-name'>Update_Without_Changes</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+847ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+318ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -995,7 +1131,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:23:26 AM</td>
+					<td class='timestamp'>4:21:33 PM</td>
 					<td class='step-details'>Edit disposition popup closes with a success message "Saved successfully".</td>
 				</tr>
 			</tbody>
@@ -1008,15 +1144,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify_Add_Disposition_with_Valid_Data</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+363ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+119ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1029,7 +1170,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:23:40 AM</td>
+					<td class='timestamp'>4:21:45 PM</td>
 					<td class='step-details'>Edit disposition popup closes with a success message "Saved successfully".</td>
 				</tr>
 			</tbody>
@@ -1042,15 +1183,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
 					<div class='test-heading'>
 						<span class='test-name'>Change_Name_to_Existing_and_Update</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:23 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:24 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+718ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:21 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:22 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+771ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1063,7 +1209,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:24:02 AM</td>
+					<td class='timestamp'>4:22:08 PM</td>
 					<td class='step-details'>Error message "This Disposition Already Exist" is displayed.</td>
 				</tr>
 			</tbody>
@@ -1076,15 +1222,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
 					<div class='test-heading'>
 						<span class='test-name'>Edit_and_Verify_Disposition_Changes</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:24 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:22 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:24 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:24 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+480ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:22 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:22 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+272ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1097,7 +1248,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:24:18 AM</td>
+					<td class='timestamp'>4:22:21 PM</td>
 					<td class='step-details'>Edit disposition popup closes with a success message. Changes are visible in the active disposition list with updated Action owner, Name, and Asset category.</td>
 				</tr>
 			</tbody>
@@ -1110,15 +1261,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='29'>
 					<div class='test-heading'>
 						<span class='test-name'>Deactivate_Disposition</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:24 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:22 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:24 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:24 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 25s+923ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:22 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:22 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+389ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1131,7 +1287,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:24:47 AM</td>
+					<td class='timestamp'>4:22:56 PM</td>
 					<td class='step-details'>Message "Disposition Status Changed" is displayed. The entry disappears from the active disposition list.</td>
 				</tr>
 			</tbody>
@@ -1144,15 +1300,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='30'>
 					<div class='test-heading'>
 						<span class='test-name'>Search_Deactivated_Disposition</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:24 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:22 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:24 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+377ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:22 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+265ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1165,7 +1326,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:25:02 AM</td>
+					<td class='timestamp'>4:23:12 PM</td>
 					<td class='step-details'>Deactivated disposition is shown with a red cross mark in the not active disposition list.</td>
 				</tr>
 			</tbody>
@@ -1178,15 +1339,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
 					<div class='test-heading'>
 						<span class='test-name'>Activate_Deactivated_Disposition</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+549ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+331ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1199,7 +1365,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:25:24 AM</td>
+					<td class='timestamp'>4:23:33 PM</td>
 					<td class='step-details'>Message "Disposition Status Changed" is displayed. The entry disappears from the not active disposition list..</td>
 				</tr>
 			</tbody>
@@ -1212,15 +1378,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='32'>
 					<div class='test-heading'>
 						<span class='test-name'>Search_Active_Disposition</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+816ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+292ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1233,7 +1404,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:25:38 AM</td>
+					<td class='timestamp'>4:23:40 PM</td>
 					<td class='step-details'>Active disposition is shown in the active disposition list with a green tick mark.</td>
 				</tr>
 			</tbody>
@@ -1246,15 +1417,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='33'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify_Sub_Disposition_Tab_UI_Elements</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+368ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+326ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1267,7 +1443,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:25:42 AM</td>
+					<td class='timestamp'>4:23:44 PM</td>
 					<td class='step-details'>Action Owner dropdown, Disposition search field, Is Active checkbox (checked), Search button, Add Sub-Disposition button, and active sub disposition list (up to 10 rows) are displayed</td>
 				</tr>
 			</tbody>
@@ -1280,15 +1456,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='34'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify_Add_Sub_Disposition_Popup</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+472ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+341ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1301,7 +1482,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:25:45 AM</td>
+					<td class='timestamp'>4:23:47 PM</td>
 					<td class='step-details'>Popup window appears with Action Owner dropdown, Disposition dropdown, Sub-Disposition name field, Submit button, and a cross mark</td>
 				</tr>
 			</tbody>
@@ -1314,15 +1495,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='35'>
 					<div class='test-heading'>
 						<span class='test-name'>Close_Add_Sub_Disposition_Popup</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+231ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+139ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1335,7 +1521,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:25:48 AM</td>
+					<td class='timestamp'>4:23:50 PM</td>
 					<td class='step-details'>Add Sub-Disposition popup closes</td>
 				</tr>
 			</tbody>
@@ -1348,15 +1534,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='36'>
 					<div class='test-heading'>
 						<span class='test-name'>Add_New_Sub_Disposition</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:25 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:26 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+958ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:23 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:24 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+17ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1369,7 +1560,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:26:07 AM</td>
+					<td class='timestamp'>4:24:15 PM</td>
 					<td class='step-details'>Popup closes and displays success message "Saved successfully". New sub disposition appears in the active sub disposition list</td>
 				</tr>
 			</tbody>
@@ -1382,15 +1573,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='37'>
 					<div class='test-heading'>
 						<span class='test-name'>Add_Duplicate_Sub_Disposition</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:26 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:24 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:26 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:26 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+493ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:24 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:24 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 24s+183ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1403,7 +1599,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:26:33 AM</td>
+					<td class='timestamp'>4:24:42 PM</td>
 					<td class='step-details'>Error message "This Sub-Disposition Already Exist" is displayed</td>
 				</tr>
 			</tbody>
@@ -1416,15 +1612,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='38'>
 					<div class='test-heading'>
 						<span class='test-name'>Edit_Sub_Disposition_Popup_Display</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:26 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:24 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:26 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:26 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+399ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:24 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:24 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+552ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1437,7 +1638,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:26:41 AM</td>
+					<td class='timestamp'>4:24:55 PM</td>
 					<td class='step-details'>Edit Sub-Disposition popup opens with pre-filled fields and shows an Update button</td>
 				</tr>
 			</tbody>
@@ -1450,15 +1651,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='39'>
 					<div class='test-heading'>
 						<span class='test-name'>Update_Sub_Disposition_Without_Changes</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:26 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:24 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:26 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:26 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+147ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:24 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:25 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+269ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1471,7 +1677,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:26:48 AM</td>
+					<td class='timestamp'>4:25:05 PM</td>
 					<td class='step-details'>Popup closes and displays success message "Saved successfully"</td>
 				</tr>
 			</tbody>
@@ -1484,15 +1690,20 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='40'>
 					<div class='test-heading'>
 						<span class='test-name'>Update_Sub_Disposition_with_Duplicate_Name</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:26 AM (IST)</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:25 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:26 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:28 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 9s+473ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:25 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:25 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+307ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1505,7 +1716,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:28:01 AM</td>
+					<td class='timestamp'>4:25:30 PM</td>
 					<td class='step-details'>Error message "This Sub-Disposition Already Exist" is displayed</td>
 				</tr>
 			</tbody>
@@ -1517,16 +1728,21 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='41'>
 					<div class='test-heading'>
-						<span class='test-name'>Deactivate_Sub_Disposition</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:28 AM (IST)</span>
+						<span class='test-name'>Update_Sub_Disposition_Successfully</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:25 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:28 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:28 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 34s+353ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:25 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:25 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+625ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1539,8 +1755,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:28:38 AM</td>
-					<td class='step-details'>Message "Sub Disposition Status Changed" is displayed and entry disappears from the active list</td>
+					<td class='timestamp'>4:25:50 PM</td>
+					<td class='step-details'>Popup closes and displays success message "Saved successfully"</td>
 				</tr>
 			</tbody>
 		</table>
@@ -1551,16 +1767,21 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='42'>
 					<div class='test-heading'>
-						<span class='test-name'>Search_Deactivated_Sub_Disposition</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:28 AM (IST)</span>
+						<span class='test-name'>Deactivate_Sub_Disposition</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:25 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:28 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:29 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 2s+129ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:25 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:26 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+236ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1573,8 +1794,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:29:44 AM</td>
-					<td class='step-details'>Deactivated sub disposition appears in not active list with red cross mark</td>
+					<td class='timestamp'>4:26:09 PM</td>
+					<td class='step-details'>Message "Sub Disposition Status Changed" is displayed and entry disappears from the active list</td>
 				</tr>
 			</tbody>
 		</table>
@@ -1585,16 +1806,21 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='43'>
 					<div class='test-heading'>
-						<span class='test-name'>Reactivate_Sub_Disposition</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:29 AM (IST)</span>
+						<span class='test-name'>Search_Deactivated_Sub_Disposition</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:26 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:29 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:30 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+332ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:26 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:26 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+706ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1607,8 +1833,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:30:07 AM</td>
-					<td class='step-details'>Message "Sub Disposition Status Changed" is displayed and entry disappears from the not active list</td>
+					<td class='timestamp'>4:26:24 PM</td>
+					<td class='step-details'>Deactivated sub disposition appears in not active list with red cross mark</td>
 				</tr>
 			</tbody>
 		</table>
@@ -1619,16 +1845,21 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='44'>
 					<div class='test-heading'>
-						<span class='test-name'>Search_Active_Sub_Disposition</span>
-						<span class='test-time'>Monday, December 09, 2024, 10:30 AM (IST)</span>
+						<span class='test-name'>Reactivate_Sub_Disposition</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:26 PM (IST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Monday, December 09, 2024, 10:30 AM (IST)</span>
-	<span class='label end-time'>Monday, December 09, 2024, 10:30 AM (IST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+608ms</span>
+	<span class='label start-time'>Monday, December 09, 2024, 04:26 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:26 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+681ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -1641,7 +1872,46 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:30:33 AM</td>
+					<td class='timestamp'>4:26:47 PM</td>
+					<td class='step-details'>Message "Sub Disposition Status Changed" is displayed and entry disappears from the not active list</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='45'>
+					<div class='test-heading'>
+						<span class='test-name'>Search_Active_Sub_Disposition</span>
+						<span class='test-time'>Monday, December 09, 2024, 04:26 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Monday, December 09, 2024, 04:26 PM (IST)</span>
+	<span class='label end-time'>Monday, December 09, 2024, 04:27 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+25ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Dispositionmaster</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:27:06 PM</td>
 					<td class='step-details'>Active sub disposition appears in list with green tick mark</td>
 				</tr>
 			</tbody>
@@ -1674,6 +1944,296 @@
 
 </div>
 <!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Dispositionmaster</span>
+						<span class='category-status right'>
+							<span class='label pass'>45</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 45</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Monday, December 09, 2024, 04:17 PM (IST)</td>
+										<td class='linked' test-id='1'>Verify_Disposition_Master_Navigation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:17 PM (IST)</td>
+										<td class='linked' test-id='2'>Verify_Initial_Load_of_Active_Dispositions</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:18 PM (IST)</td>
+										<td class='linked' test-id='3'>Action_Owner_Dropdown_Selections</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:18 PM (IST)</td>
+										<td class='linked' test-id='4'>Verify_Is_Active_Checkbox_Default_State</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:18 PM (IST)</td>
+										<td class='linked' test-id='5'>Verify_Action_Column_Options</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:18 PM (IST)</td>
+										<td class='linked' test-id='6'>Verify_Status_Column_Appearance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:18 PM (IST)</td>
+										<td class='linked' test-id='7'>Validate_Pagination__Initial_Load</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:18 PM (IST)</td>
+										<td class='linked' test-id='8'>Validate_Next_Button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:18 PM (IST)</td>
+										<td class='linked' test-id='9'>Validate_Previous_Button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:18 PM (IST)</td>
+										<td class='linked' test-id='10'>Validate_Button__Jump_to_Last_Page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:19 PM (IST)</td>
+										<td class='linked' test-id='11'>Validate_Button__Jump_to_First_Page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:19 PM (IST)</td>
+										<td class='linked' test-id='12'>Open_Add_Disposition_Form</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:19 PM (IST)</td>
+										<td class='linked' test-id='13'>Close_Add_Disposition_Form</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:19 PM (IST)</td>
+										<td class='linked' test-id='14'>Add_Disposition__Submit_with_All_Fields_Valid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:19 PM (IST)</td>
+										<td class='linked' test-id='15'>Test_Disposition_Grid_Visibility</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:20 PM (IST)</td>
+										<td class='linked' test-id='16'>Action_Owner_Multi_select_Functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:20 PM (IST)</td>
+										<td class='linked' test-id='17'>Asset_Category_Multi_select_Functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:20 PM (IST)</td>
+										<td class='linked' test-id='18'>Select_All_Functionality__Action_Owner</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:20 PM (IST)</td>
+										<td class='linked' test-id='19'>Deselecting_Via_Multi_select__Action_Owner</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:20 PM (IST)</td>
+										<td class='linked' test-id='20'>Select_All_Functionality__Asset_Category</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:20 PM (IST)</td>
+										<td class='linked' test-id='21'>Deselecting_Via_Multi_select__Asset_Category</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:20 PM (IST)</td>
+										<td class='linked' test-id='22'>Verify_Add_Disposition_without_Selection</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:21 PM (IST)</td>
+										<td class='linked' test-id='23'>Add_Disposition_with_Existing_Name</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:21 PM (IST)</td>
+										<td class='linked' test-id='24'>Edit_Disposition_Popup_Display</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:21 PM (IST)</td>
+										<td class='linked' test-id='25'>Update_Without_Changes</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:21 PM (IST)</td>
+										<td class='linked' test-id='26'>Verify_Add_Disposition_with_Valid_Data</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:21 PM (IST)</td>
+										<td class='linked' test-id='27'>Change_Name_to_Existing_and_Update</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:22 PM (IST)</td>
+										<td class='linked' test-id='28'>Edit_and_Verify_Disposition_Changes</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:22 PM (IST)</td>
+										<td class='linked' test-id='29'>Deactivate_Disposition</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:22 PM (IST)</td>
+										<td class='linked' test-id='30'>Search_Deactivated_Disposition</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:23 PM (IST)</td>
+										<td class='linked' test-id='31'>Activate_Deactivated_Disposition</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:23 PM (IST)</td>
+										<td class='linked' test-id='32'>Search_Active_Disposition</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:23 PM (IST)</td>
+										<td class='linked' test-id='33'>Verify_Sub_Disposition_Tab_UI_Elements</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:23 PM (IST)</td>
+										<td class='linked' test-id='34'>Verify_Add_Sub_Disposition_Popup</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:23 PM (IST)</td>
+										<td class='linked' test-id='35'>Close_Add_Sub_Disposition_Popup</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:23 PM (IST)</td>
+										<td class='linked' test-id='36'>Add_New_Sub_Disposition</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:24 PM (IST)</td>
+										<td class='linked' test-id='37'>Add_Duplicate_Sub_Disposition</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:24 PM (IST)</td>
+										<td class='linked' test-id='38'>Edit_Sub_Disposition_Popup_Display</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:24 PM (IST)</td>
+										<td class='linked' test-id='39'>Update_Sub_Disposition_Without_Changes</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:25 PM (IST)</td>
+										<td class='linked' test-id='40'>Update_Sub_Disposition_with_Duplicate_Name</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:25 PM (IST)</td>
+										<td class='linked' test-id='41'>Update_Sub_Disposition_Successfully</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:25 PM (IST)</td>
+										<td class='linked' test-id='42'>Deactivate_Sub_Disposition</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:26 PM (IST)</td>
+										<td class='linked' test-id='43'>Search_Deactivated_Sub_Disposition</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:26 PM (IST)</td>
+										<td class='linked' test-id='44'>Reactivate_Sub_Disposition</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Monday, December 09, 2024, 04:26 PM (IST)</td>
+										<td class='linked' test-id='45'>Search_Active_Sub_Disposition</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
 <!-- category view -->
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
@@ -1684,31 +2244,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>44</div>
+					<div class='panel-lead'>45</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>44</div>
+					<div class='panel-lead'>45</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Monday, December 09, 2024, 10:19 AM (IST)</div>
+					<div class='panel-lead'>Monday, December 09, 2024, 04:17 PM (IST)</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Monday, December 09, 2024, 10:30 AM (IST)</div>
+			 		<div class='panel-lead'>Monday, December 09, 2024, 04:27 PM (IST)</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 10m 41s+920ms</div>
+					<div class='panel-lead'>0h 9m 19s+890ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1735,6 +2295,30 @@
 					</table>
 				</div>
 			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>Dispositionmaster</td>
+							<td>45</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -1745,7 +2329,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 44,
+				passParent: 45,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -1753,7 +2337,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 44,
+				passChild: 45,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,

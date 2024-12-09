@@ -69,7 +69,7 @@ public class AllScenarios_Disposition_masterModule {
 	@BeforeMethod
     public void setupTest(Method method) {
         // Start a new ExtentTest for the current test method
-        extenttest = ExtentTestManager.startTest(method.getName());
+        extenttest = ExtentTestManager.startTest(method.getName()).assignCategory("Disposition master");
     }
 
 	@Test(priority = 1)
@@ -1107,10 +1107,38 @@ public class AllScenarios_Disposition_masterModule {
 			 Thread.sleep(3000);
 	    }
 	    
-	    @Test(priority = 41)
-	    public void Deactivate_Sub_Disposition() throws InterruptedException {
+	    @Test(priority = 41, dataProvider = "TestData")
+	    public void Update_Sub_Disposition_Successfully(Map<Object, Object> testdata) throws InterruptedException {
+	    	try {
+	    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+				
+	    		String subdispositionname = testdata.get("UpdateExistingNameofsubdispositiontoNew").toString();
+				
+	        // Preconditions: Ensure popup is open
+	    		dispositionMasterPage.openEditPopuptoupdateexistingname();
+
+	        // Step 1: Enter a duplicate name and update
+	    		dispositionMasterPage.enterSubDispositionName(subdispositionname);
+	    		dispositionMasterPage.clickUpdateWithexistingname();
+	    		
+	    	}
+ 
+	        // Expected Result: Success message displayed
+	    	Assert.assertTrue(dispositionMasterPage.isSuccessMessageDisplayedforsubdispos(), "Success message should be displayed.");
+	        ExtentTestManager.getTest().log(Status.PASS, "Popup closes and displays success message \"Saved successfully\"");
+			 }
+		        catch (AssertionError | Exception e) {
+					ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+		            throw e;
+			 }
+			 Thread.sleep(3000);
+	    }
+	    
+	    @Test(priority = 42)
+	    public void Deactivate_Sub_Disposition() throws InterruptedException { 
 	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	try {
+	    		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.successMessage2));
 	    		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 	        // Clicking on the three-dot button
 	    	dispositionMasterPage.clkThreeDotButtonofsubdisposition();
@@ -1131,7 +1159,7 @@ public class AllScenarios_Disposition_masterModule {
 			 Thread.sleep(3000);
 	    }
 	    
-	    @Test(priority = 42, dataProvider = "TestData")
+	    @Test(priority = 43, dataProvider = "TestData")
 	    public void Search_Deactivated_Sub_Disposition(Map<Object, Object> testdata) throws InterruptedException {
 	    	try {
 	    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
@@ -1163,7 +1191,7 @@ public class AllScenarios_Disposition_masterModule {
 			 Thread.sleep(3000);
 	    }
 	    
-	    @Test(priority = 43)
+	    @Test(priority = 44)
 	    public void Reactivate_Sub_Disposition() throws InterruptedException {
 	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	try {
@@ -1187,9 +1215,11 @@ public class AllScenarios_Disposition_masterModule {
 			 Thread.sleep(3000);
 	    }
 	    
-	    @Test(priority = 44, dataProvider = "TestData")
+	    @Test(priority = 45, dataProvider = "TestData")
 	    public void Search_Active_Sub_Disposition(Map<Object, Object> testdata) throws InterruptedException {
 	    	try {
+	    		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+	    		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 	    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
 				
 	    		String actionowner = testdata.get("ActiveActionOwnerforsubdispositionSearch").toString();
@@ -1201,7 +1231,7 @@ public class AllScenarios_Disposition_masterModule {
 	    	dispositionMasterPage.seldispositionforactivesubdispositionsearch(dispostion);
 
 	        // Step 3: Untick Is active checkbox
-	    	dispositionMasterPage.untickIsActiveCheckboxforsubdispositionsearch(); 
+	    	dispositionMasterPage.untickIsActiveCheckboxforsubdispositionsearch();  
 
 	        // Step 4: Click on Search button
 	    	dispositionMasterPage.clickSearchButtonforsubdispositionsearch();

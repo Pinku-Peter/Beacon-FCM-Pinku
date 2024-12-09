@@ -5,10 +5,9 @@
     <classes>
       <class name="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule">
         <methods>
-          <include name="Add_Duplicate_Sub_Disposition" invocation-numbers="0"/>
+          <include name="Search_Active_Sub_Disposition" invocation-numbers="0"/>
           <include name="afterEachTest"/>
           <include name="setupTest"/>
-          <include name="Add_New_Sub_Disposition" invocation-numbers="0"/>
           <include name="SetUp"/>
           <include name="takeScreenshotOnFailure"/>
         </methods>
