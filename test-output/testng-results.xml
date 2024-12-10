@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="45" passed="45" failed="0" skipped="0">
+<testng-results ignored="0" total="45" passed="43" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-09T16:17:49 IST" name="Default suite" finished-at="2024-12-09T16:27:09 IST" duration-ms="559865">
+  <suite started-at="2024-12-09T22:46:07 IST" name="Default suite" finished-at="2024-12-09T22:58:51 IST" duration-ms="764176">
     <groups>
     </groups>
-    <test started-at="2024-12-09T16:17:49 IST" name="Default test" finished-at="2024-12-09T16:27:09 IST" duration-ms="559865">
+    <test started-at="2024-12-09T22:46:07 IST" name="Default test" finished-at="2024-12-09T22:58:51 IST" duration-ms="764176">
       <class name="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:15:13 IST" name="SetUp" finished-at="2024-12-09T16:17:49 IST" duration-ms="155901" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:43:46 IST" name="SetUp" finished-at="2024-12-09T22:46:07 IST" duration-ms="140967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:17:49 IST" name="setupTest" finished-at="2024-12-09T16:17:50 IST" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:07 IST" name="setupTest" finished-at="2024-12-09T22:46:08 IST" duration-ms="237" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Disposition_Master_Navigation()[pri:1, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:17:50 IST" name="Verify_Disposition_Master_Navigation" finished-at="2024-12-09T16:17:53 IST" duration-ms="3691" status="PASS">
+        <test-method signature="Verify_Disposition_Master_Navigation()[pri:1, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:08 IST" name="Verify_Disposition_Master_Navigation" finished-at="2024-12-09T22:46:14 IST" duration-ms="6705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Disposition_Master_Navigation -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:17:53 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:17:53 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:14 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:46:14 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:17:53 IST" name="setupTest" finished-at="2024-12-09T16:17:53 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:14 IST" name="setupTest" finished-at="2024-12-09T22:46:14 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Initial_Load_of_Active_Dispositions()[pri:2, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:17:53 IST" name="Verify_Initial_Load_of_Active_Dispositions" finished-at="2024-12-09T16:18:27 IST" duration-ms="33809" status="PASS">
+        <test-method signature="Verify_Initial_Load_of_Active_Dispositions()[pri:2, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:14 IST" name="Verify_Initial_Load_of_Active_Dispositions" finished-at="2024-12-09T22:46:47 IST" duration-ms="33175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Initial_Load_of_Active_Dispositions -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:27 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:18:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:47 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:46:47 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:27 IST" name="setupTest" finished-at="2024-12-09T16:18:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:47 IST" name="setupTest" finished-at="2024-12-09T22:46:47 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,11 +74,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Action_Owner_Dropdown_Selections()[pri:3, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:27 IST" name="Action_Owner_Dropdown_Selections" finished-at="2024-12-09T16:18:31 IST" duration-ms="3540" status="PASS">
+        <test-method signature="Action_Owner_Dropdown_Selections()[pri:3, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:47 IST" name="Action_Owner_Dropdown_Selections" finished-at="2024-12-09T22:46:51 IST" duration-ms="3677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Action_Owner_Dropdown_Selections -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:31 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:18:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:51 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:46:51 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:31 IST" name="setupTest" finished-at="2024-12-09T16:18:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:51 IST" name="setupTest" finished-at="2024-12-09T22:46:51 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,11 +100,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Is_Active_Checkbox_Default_State()[pri:4, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:31 IST" name="Verify_Is_Active_Checkbox_Default_State" finished-at="2024-12-09T16:18:34 IST" duration-ms="3072" status="PASS">
+        <test-method signature="Verify_Is_Active_Checkbox_Default_State()[pri:4, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:51 IST" name="Verify_Is_Active_Checkbox_Default_State" finished-at="2024-12-09T22:46:54 IST" duration-ms="3118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Is_Active_Checkbox_Default_State -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:34 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:18:34 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:54 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:46:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,7 +115,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:34 IST" name="setupTest" finished-at="2024-12-09T16:18:34 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:54 IST" name="setupTest" finished-at="2024-12-09T22:46:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,11 +126,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Action_Column_Options()[pri:5, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:34 IST" name="Verify_Action_Column_Options" finished-at="2024-12-09T16:18:37 IST" duration-ms="3239" status="PASS">
+        <test-method signature="Verify_Action_Column_Options()[pri:5, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:54 IST" name="Verify_Action_Column_Options" finished-at="2024-12-09T22:46:58 IST" duration-ms="3330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Action_Column_Options -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:37 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:18:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:58 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:46:58 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,7 +141,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:37 IST" name="setupTest" finished-at="2024-12-09T16:18:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:58 IST" name="setupTest" finished-at="2024-12-09T22:46:58 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,11 +152,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Status_Column_Appearance()[pri:6, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:37 IST" name="Verify_Status_Column_Appearance" finished-at="2024-12-09T16:18:40 IST" duration-ms="3181" status="PASS">
+        <test-method signature="Verify_Status_Column_Appearance()[pri:6, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:46:58 IST" name="Verify_Status_Column_Appearance" finished-at="2024-12-09T22:47:01 IST" duration-ms="3254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Status_Column_Appearance -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:40 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:18:40 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:47:01 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:47:01 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -167,7 +167,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:40 IST" name="setupTest" finished-at="2024-12-09T16:18:40 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:47:01 IST" name="setupTest" finished-at="2024-12-09T22:47:01 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,11 +178,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Pagination__Initial_Load()[pri:7, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:40 IST" name="Validate_Pagination__Initial_Load" finished-at="2024-12-09T16:18:43 IST" duration-ms="3194" status="PASS">
+        <test-method signature="Validate_Pagination__Initial_Load()[pri:7, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:47:01 IST" name="Validate_Pagination__Initial_Load" finished-at="2024-12-09T22:47:04 IST" duration-ms="3344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_Pagination__Initial_Load -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:43 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:18:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:47:04 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:47:04 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -193,7 +193,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:43 IST" name="setupTest" finished-at="2024-12-09T16:18:43 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:47:04 IST" name="setupTest" finished-at="2024-12-09T22:47:04 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -204,11 +204,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Next_Button()[pri:8, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:43 IST" name="Validate_Next_Button" finished-at="2024-12-09T16:18:48 IST" duration-ms="4400" status="PASS">
+        <test-method signature="Validate_Next_Button()[pri:8, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:47:04 IST" name="Validate_Next_Button" finished-at="2024-12-09T22:47:29 IST" duration-ms="25168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_Next_Button -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:48 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:18:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:47:29 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:47:29 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -219,7 +219,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:48 IST" name="setupTest" finished-at="2024-12-09T16:18:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:47:29 IST" name="setupTest" finished-at="2024-12-09T22:47:29 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -230,11 +230,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Previous_Button()[pri:9, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:48 IST" name="Validate_Previous_Button" finished-at="2024-12-09T16:18:52 IST" duration-ms="3864" status="PASS">
+        <test-method signature="Validate_Previous_Button()[pri:9, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:47:29 IST" name="Validate_Previous_Button" finished-at="2024-12-09T22:47:44 IST" duration-ms="14560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_Previous_Button -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:52 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:18:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:47:44 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:47:44 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -245,7 +245,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:52 IST" name="setupTest" finished-at="2024-12-09T16:18:52 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:47:44 IST" name="setupTest" finished-at="2024-12-09T22:47:44 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -256,11 +256,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Button__Jump_to_Last_Page()[pri:10, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:18:52 IST" name="Validate_Button__Jump_to_Last_Page" finished-at="2024-12-09T16:19:14 IST" duration-ms="22838" status="PASS">
+        <test-method signature="Validate_Button__Jump_to_Last_Page()[pri:10, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:47:44 IST" name="Validate_Button__Jump_to_Last_Page" finished-at="2024-12-09T22:48:02 IST" duration-ms="18205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_Button__Jump_to_Last_Page -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:14 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:19:14 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:48:02 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:48:02 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -271,7 +271,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:14 IST" name="setupTest" finished-at="2024-12-09T16:19:14 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:48:02 IST" name="setupTest" finished-at="2024-12-09T22:48:02 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -282,11 +282,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Button__Jump_to_First_Page()[pri:11, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:14 IST" name="Validate_Button__Jump_to_First_Page" finished-at="2024-12-09T16:19:32 IST" duration-ms="17758" status="PASS">
+        <test-method signature="Validate_Button__Jump_to_First_Page()[pri:11, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:48:02 IST" name="Validate_Button__Jump_to_First_Page" finished-at="2024-12-09T22:48:22 IST" duration-ms="19796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_Button__Jump_to_First_Page -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:32 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:19:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:48:22 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:48:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,7 +297,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:32 IST" name="setupTest" finished-at="2024-12-09T16:19:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:48:22 IST" name="setupTest" finished-at="2024-12-09T22:48:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -308,11 +308,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Open_Add_Disposition_Form()[pri:12, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:32 IST" name="Open_Add_Disposition_Form" finished-at="2024-12-09T16:19:36 IST" duration-ms="3428" status="PASS">
+        <test-method signature="Open_Add_Disposition_Form()[pri:12, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:48:22 IST" name="Open_Add_Disposition_Form" finished-at="2024-12-09T22:48:25 IST" duration-ms="3457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Open_Add_Disposition_Form -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:36 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:19:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:48:25 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:48:25 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -323,7 +323,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:36 IST" name="setupTest" finished-at="2024-12-09T16:19:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:48:25 IST" name="setupTest" finished-at="2024-12-09T22:48:25 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -334,11 +334,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Close_Add_Disposition_Form()[pri:13, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:36 IST" name="Close_Add_Disposition_Form" finished-at="2024-12-09T16:19:39 IST" duration-ms="3227" status="PASS">
+        <test-method signature="Close_Add_Disposition_Form()[pri:13, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:48:25 IST" name="Close_Add_Disposition_Form" finished-at="2024-12-09T22:48:32 IST" duration-ms="6301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close_Add_Disposition_Form -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:39 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:19:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:48:32 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:48:32 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -349,18 +349,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="Add_Disposition__Submit_with_All_Fields_Valid(java.util.Map)[pri:14, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:40 IST" name="Add_Disposition__Submit_with_All_Fields_Valid" data-provider="TestData" finished-at="2024-12-09T16:19:57 IST" duration-ms="17560" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Add_Disposition__Submit_with_All_Fields_Valid -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:40 IST" name="setupTest" finished-at="2024-12-09T16:19:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:48:33 IST" name="setupTest" finished-at="2024-12-09T22:48:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -371,18 +360,77 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:57 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:19:57 IST" duration-ms="1" status="PASS">
+        <test-method signature="Add_Disposition__Submit_with_All_Fields_Valid(java.util.Map)[pri:14, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:48:33 IST" name="Add_Disposition__Submit_with_All_Fields_Valid" data-provider="TestData" finished-at="2024-12-09T22:49:40 IST" duration-ms="66602" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Add_Disposition__Submit_with_All_Fields_Valid status=SUCCESS method=AllScenarios_Disposition_masterModule.Add_Disposition__Submit_with_All_Fields_Valid(java.util.Map)[pri:14, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14] output={null}]]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='rz-growl-item']//div//span[contains(text(),'Success ')] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57807/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 85c645ddb18de1a97a4d9ac6582a64d9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='rz-growl-item']//div//span[contains(text(),'Success ')] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57807/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 85c645ddb18de1a97a4d9ac6582a64d9
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.Add_Disposition__Submit_with_All_Fields_Valid(AllScenarios_Disposition_masterModule.java:424)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Disposition__Submit_with_All_Fields_Valid -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:49:40 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:49:40 IST" duration-ms="167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Add_Disposition__Submit_with_All_Fields_Valid status=FAILURE method=AllScenarios_Disposition_masterModule.Add_Disposition__Submit_with_All_Fields_Valid(java.util.Map)[pri:14, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:58 IST" name="setupTest" finished-at="2024-12-09T16:19:58 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:49:40 IST" name="setupTest" finished-at="2024-12-09T22:49:40 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -393,18 +441,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Test_Disposition_Grid_Visibility(java.util.Map)[pri:15, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:19:58 IST" name="Test_Disposition_Grid_Visibility" data-provider="TestData" finished-at="2024-12-09T16:20:11 IST" duration-ms="13838" status="PASS">
+        <test-method signature="Test_Disposition_Grid_Visibility(java.util.Map)[pri:15, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:49:40 IST" name="Test_Disposition_Grid_Visibility" data-provider="TestData" finished-at="2024-12-09T22:49:43 IST" duration-ms="3285" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_Disposition_Grid_Visibility -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:11 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:20:11 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:49:43 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:49:43 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -415,7 +463,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:11 IST" name="setupTest" finished-at="2024-12-09T16:20:11 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:49:43 IST" name="setupTest" finished-at="2024-12-09T22:49:43 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -426,18 +474,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Action_Owner_Multi_select_Functionality(java.util.Map)[pri:16, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:11 IST" name="Action_Owner_Multi_select_Functionality" data-provider="TestData" finished-at="2024-12-09T16:20:22 IST" duration-ms="10989" status="PASS">
+        <test-method signature="Action_Owner_Multi_select_Functionality(java.util.Map)[pri:16, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:49:43 IST" name="Action_Owner_Multi_select_Functionality" data-provider="TestData" finished-at="2024-12-09T22:49:52 IST" duration-ms="8539" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Action_Owner_Multi_select_Functionality -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:22 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:20:22 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:49:52 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:49:52 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -448,7 +496,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:23 IST" name="setupTest" finished-at="2024-12-09T16:20:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:49:52 IST" name="setupTest" finished-at="2024-12-09T22:49:52 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -459,18 +507,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Asset_Category_Multi_select_Functionality(java.util.Map)[pri:17, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:23 IST" name="Asset_Category_Multi_select_Functionality" data-provider="TestData" finished-at="2024-12-09T16:20:26 IST" duration-ms="3366" status="PASS">
+        <test-method signature="Asset_Category_Multi_select_Functionality(java.util.Map)[pri:17, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:49:52 IST" name="Asset_Category_Multi_select_Functionality" data-provider="TestData" finished-at="2024-12-09T22:49:55 IST" duration-ms="3473" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Asset_Category_Multi_select_Functionality -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:26 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:20:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:49:55 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:49:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -481,7 +529,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:26 IST" name="setupTest" finished-at="2024-12-09T16:20:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:49:55 IST" name="setupTest" finished-at="2024-12-09T22:49:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -492,11 +540,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Select_All_Functionality__Action_Owner()[pri:18, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:26 IST" name="Select_All_Functionality__Action_Owner" finished-at="2024-12-09T16:20:36 IST" duration-ms="9637" status="PASS">
+        <test-method signature="Select_All_Functionality__Action_Owner()[pri:18, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:49:55 IST" name="Select_All_Functionality__Action_Owner" finished-at="2024-12-09T22:50:05 IST" duration-ms="9558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_All_Functionality__Action_Owner -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:36 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:20:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:05 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:50:05 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -507,7 +555,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:36 IST" name="setupTest" finished-at="2024-12-09T16:20:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:05 IST" name="setupTest" finished-at="2024-12-09T22:50:05 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -518,11 +566,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Deselecting_Via_Multi_select__Action_Owner()[pri:19, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:36 IST" name="Deselecting_Via_Multi_select__Action_Owner" finished-at="2024-12-09T16:20:39 IST" duration-ms="3136" status="PASS">
+        <test-method signature="Deselecting_Via_Multi_select__Action_Owner()[pri:19, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:05 IST" name="Deselecting_Via_Multi_select__Action_Owner" finished-at="2024-12-09T22:50:08 IST" duration-ms="3201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Deselecting_Via_Multi_select__Action_Owner -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:39 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:20:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:08 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:50:08 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -533,7 +581,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:39 IST" name="setupTest" finished-at="2024-12-09T16:20:39 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:08 IST" name="setupTest" finished-at="2024-12-09T22:50:08 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -544,11 +592,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Select_All_Functionality__Asset_Category()[pri:20, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:39 IST" name="Select_All_Functionality__Asset_Category" finished-at="2024-12-09T16:20:42 IST" duration-ms="3275" status="PASS">
+        <test-method signature="Select_All_Functionality__Asset_Category()[pri:20, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:08 IST" name="Select_All_Functionality__Asset_Category" finished-at="2024-12-09T22:50:12 IST" duration-ms="3408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_All_Functionality__Asset_Category -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:42 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:20:42 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:12 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:50:12 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -559,7 +607,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:42 IST" name="setupTest" finished-at="2024-12-09T16:20:42 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:12 IST" name="setupTest" finished-at="2024-12-09T22:50:12 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -570,11 +618,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Deselecting_Via_Multi_select__Asset_Category()[pri:21, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:42 IST" name="Deselecting_Via_Multi_select__Asset_Category" finished-at="2024-12-09T16:20:45 IST" duration-ms="3139" status="PASS">
+        <test-method signature="Deselecting_Via_Multi_select__Asset_Category()[pri:21, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:12 IST" name="Deselecting_Via_Multi_select__Asset_Category" finished-at="2024-12-09T22:50:15 IST" duration-ms="3251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Deselecting_Via_Multi_select__Asset_Category -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:45 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:20:45 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:15 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:50:15 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -585,7 +633,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:45 IST" name="setupTest" finished-at="2024-12-09T16:20:45 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:15 IST" name="setupTest" finished-at="2024-12-09T22:50:15 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -596,11 +644,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Add_Disposition_without_Selection()[pri:22, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:20:45 IST" name="Verify_Add_Disposition_without_Selection" finished-at="2024-12-09T16:21:01 IST" duration-ms="15385" status="PASS">
+        <test-method signature="Verify_Add_Disposition_without_Selection()[pri:22, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:15 IST" name="Verify_Add_Disposition_without_Selection" finished-at="2024-12-09T22:50:24 IST" duration-ms="8921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Add_Disposition_without_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:01 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:21:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:24 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:50:24 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -611,7 +659,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:01 IST" name="setupTest" finished-at="2024-12-09T16:21:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:24 IST" name="setupTest" finished-at="2024-12-09T22:50:24 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -622,18 +670,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Add_Disposition_with_Existing_Name(java.util.Map)[pri:23, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:01 IST" name="Add_Disposition_with_Existing_Name" data-provider="TestData" finished-at="2024-12-09T16:21:13 IST" duration-ms="12160" status="PASS">
+        <test-method signature="Add_Disposition_with_Existing_Name(java.util.Map)[pri:23, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:24 IST" name="Add_Disposition_with_Existing_Name" data-provider="TestData" finished-at="2024-12-09T22:50:39 IST" duration-ms="14669" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_Disposition_with_Existing_Name -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:13 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:21:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:39 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:50:39 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -644,7 +692,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:13 IST" name="setupTest" finished-at="2024-12-09T16:21:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:39 IST" name="setupTest" finished-at="2024-12-09T22:50:39 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -655,11 +703,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Edit_Disposition_Popup_Display()[pri:24, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:13 IST" name="Edit_Disposition_Popup_Display" finished-at="2024-12-09T16:21:25 IST" duration-ms="12276" status="PASS">
+        <test-method signature="Edit_Disposition_Popup_Display()[pri:24, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:39 IST" name="Edit_Disposition_Popup_Display" finished-at="2024-12-09T22:50:52 IST" duration-ms="12929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Edit_Disposition_Popup_Display -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:25 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:21:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:52 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:50:52 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -670,7 +718,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:25 IST" name="setupTest" finished-at="2024-12-09T16:21:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:52 IST" name="setupTest" finished-at="2024-12-09T22:50:52 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -681,11 +729,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Update_Without_Changes()[pri:25, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:25 IST" name="Update_Without_Changes" finished-at="2024-12-09T16:21:36 IST" duration-ms="11319" status="PASS">
+        <test-method signature="Update_Without_Changes()[pri:25, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:50:52 IST" name="Update_Without_Changes" finished-at="2024-12-09T22:51:03 IST" duration-ms="10968" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Update_Without_Changes -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:36 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:21:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:51:03 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:51:03 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -696,7 +744,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:36 IST" name="setupTest" finished-at="2024-12-09T16:21:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:51:03 IST" name="setupTest" finished-at="2024-12-09T22:51:03 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -707,29 +755,78 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Add_Disposition_with_Valid_Data(java.util.Map)[pri:26, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:36 IST" name="Verify_Add_Disposition_with_Valid_Data" data-provider="TestData" finished-at="2024-12-09T16:21:48 IST" duration-ms="11134" status="PASS">
+        <test-method signature="Verify_Add_Disposition_with_Valid_Data(java.util.Map)[pri:26, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:51:03 IST" name="Verify_Add_Disposition_with_Valid_Data" data-provider="TestData" finished-at="2024-12-09T22:52:20 IST" duration-ms="77466" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='rz-growl-item']//div//span[contains(text(),'Success ')]//following::p (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57807/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 85c645ddb18de1a97a4d9ac6582a64d9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='rz-growl-item']//div//span[contains(text(),'Success ')]//following::p (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57807/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 85c645ddb18de1a97a4d9ac6582a64d9
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.testautomation.pages.DispositionMasterPage.SuccessMessageDisplayed(DispositionMasterPage.java:563)
+at com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule.Verify_Add_Disposition_with_Valid_Data(AllScenarios_Disposition_masterModule.java:747)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Add_Disposition_with_Valid_Data -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:48 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:21:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:52:20 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:52:20 IST" duration-ms="129" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verify_Add_Disposition_with_Valid_Data status=SUCCESS method=AllScenarios_Disposition_masterModule.Verify_Add_Disposition_with_Valid_Data(java.util.Map)[pri:26, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Add_Disposition_with_Valid_Data status=FAILURE method=AllScenarios_Disposition_masterModule.Verify_Add_Disposition_with_Valid_Data(java.util.Map)[pri:26, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:48 IST" name="setupTest" finished-at="2024-12-09T16:21:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:52:20 IST" name="setupTest" finished-at="2024-12-09T22:52:20 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -740,18 +837,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Change_Name_to_Existing_and_Update(java.util.Map)[pri:27, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:21:48 IST" name="Change_Name_to_Existing_and_Update" data-provider="TestData" finished-at="2024-12-09T16:22:11 IST" duration-ms="23777" status="PASS">
+        <test-method signature="Change_Name_to_Existing_and_Update(java.util.Map)[pri:27, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:52:20 IST" name="Change_Name_to_Existing_and_Update" data-provider="TestData" finished-at="2024-12-09T22:52:35 IST" duration-ms="14865" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Change_Name_to_Existing_and_Update -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:22:11 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:22:11 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:52:35 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:52:35 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -762,18 +859,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="Edit_and_Verify_Disposition_Changes(java.util.Map)[pri:28, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:22:12 IST" name="Edit_and_Verify_Disposition_Changes" data-provider="TestData" finished-at="2024-12-09T16:22:24 IST" duration-ms="12286" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Edit_and_Verify_Disposition_Changes -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:22:12 IST" name="setupTest" finished-at="2024-12-09T16:22:12 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:52:35 IST" name="setupTest" finished-at="2024-12-09T22:52:35 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -784,7 +870,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:22:24 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:22:24 IST" duration-ms="1" status="PASS">
+        <test-method signature="Edit_and_Verify_Disposition_Changes(java.util.Map)[pri:28, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:52:35 IST" name="Edit_and_Verify_Disposition_Changes" data-provider="TestData" finished-at="2024-12-09T22:52:54 IST" duration-ms="18896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Edit_and_Verify_Disposition_Changes -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:52:54 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:52:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -795,7 +892,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:22:24 IST" name="setupTest" finished-at="2024-12-09T16:22:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:52:54 IST" name="setupTest" finished-at="2024-12-09T22:52:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -806,11 +903,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Deactivate_Disposition()[pri:29, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:22:24 IST" name="Deactivate_Disposition" finished-at="2024-12-09T16:22:59 IST" duration-ms="35403" status="PASS">
+        <test-method signature="Deactivate_Disposition()[pri:29, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:52:54 IST" name="Deactivate_Disposition" finished-at="2024-12-09T22:53:29 IST" duration-ms="35159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Deactivate_Disposition -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:22:59 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:22:59 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:53:29 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:53:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -821,7 +918,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:22:59 IST" name="setupTest" finished-at="2024-12-09T16:22:59 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:53:29 IST" name="setupTest" finished-at="2024-12-09T22:53:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -832,18 +929,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Search_Deactivated_Disposition(java.util.Map)[pri:30, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:22:59 IST" name="Search_Deactivated_Disposition" data-provider="TestData" finished-at="2024-12-09T16:23:15 IST" duration-ms="15274" status="PASS">
+        <test-method signature="Search_Deactivated_Disposition(java.util.Map)[pri:30, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:53:29 IST" name="Search_Deactivated_Disposition" data-provider="TestData" finished-at="2024-12-09T22:53:45 IST" duration-ms="15288" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Deactivated_Disposition -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:15 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:23:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:53:45 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:53:45 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -854,7 +951,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:15 IST" name="setupTest" finished-at="2024-12-09T16:23:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:53:45 IST" name="setupTest" finished-at="2024-12-09T22:53:45 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -865,11 +962,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Activate_Deactivated_Disposition()[pri:31, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:15 IST" name="Activate_Deactivated_Disposition" finished-at="2024-12-09T16:23:36 IST" duration-ms="21338" status="PASS">
+        <test-method signature="Activate_Deactivated_Disposition()[pri:31, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:53:45 IST" name="Activate_Deactivated_Disposition" finished-at="2024-12-09T22:54:10 IST" duration-ms="24928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Activate_Deactivated_Disposition -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:36 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:23:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:10 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:54:10 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -880,7 +977,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:36 IST" name="setupTest" finished-at="2024-12-09T16:23:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:10 IST" name="setupTest" finished-at="2024-12-09T22:54:10 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -891,18 +988,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Search_Active_Disposition(java.util.Map)[pri:32, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:36 IST" name="Search_Active_Disposition" data-provider="TestData" finished-at="2024-12-09T16:23:43 IST" duration-ms="7297" status="PASS">
+        <test-method signature="Search_Active_Disposition(java.util.Map)[pri:32, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:10 IST" name="Search_Active_Disposition" data-provider="TestData" finished-at="2024-12-09T22:54:26 IST" duration-ms="16268" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Active_Disposition -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:43 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:23:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:26 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:54:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -913,7 +1010,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:43 IST" name="setupTest" finished-at="2024-12-09T16:23:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:26 IST" name="setupTest" finished-at="2024-12-09T22:54:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -924,11 +1021,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Sub_Disposition_Tab_UI_Elements()[pri:33, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:43 IST" name="Verify_Sub_Disposition_Tab_UI_Elements" finished-at="2024-12-09T16:23:47 IST" duration-ms="3338" status="PASS">
+        <test-method signature="Verify_Sub_Disposition_Tab_UI_Elements()[pri:33, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:26 IST" name="Verify_Sub_Disposition_Tab_UI_Elements" finished-at="2024-12-09T22:54:29 IST" duration-ms="3412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Sub_Disposition_Tab_UI_Elements -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:47 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:23:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:29 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:54:29 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -939,7 +1036,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:47 IST" name="setupTest" finished-at="2024-12-09T16:23:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:29 IST" name="setupTest" finished-at="2024-12-09T22:54:29 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -950,11 +1047,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Add_Sub_Disposition_Popup()[pri:34, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:47 IST" name="Verify_Add_Sub_Disposition_Popup" finished-at="2024-12-09T16:23:50 IST" duration-ms="3349" status="PASS">
+        <test-method signature="Verify_Add_Sub_Disposition_Popup()[pri:34, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:29 IST" name="Verify_Add_Sub_Disposition_Popup" finished-at="2024-12-09T22:54:33 IST" duration-ms="3452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Add_Sub_Disposition_Popup -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:50 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:23:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:33 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:54:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -965,11 +1062,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="Close_Add_Sub_Disposition_Popup()[pri:35, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:50 IST" name="Close_Add_Sub_Disposition_Popup" finished-at="2024-12-09T16:23:53 IST" duration-ms="3152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close_Add_Sub_Disposition_Popup -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:50 IST" name="setupTest" finished-at="2024-12-09T16:23:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:33 IST" name="setupTest" finished-at="2024-12-09T22:54:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -980,7 +1073,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:53 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:23:53 IST" duration-ms="0" status="PASS">
+        <test-method signature="Close_Add_Sub_Disposition_Popup()[pri:35, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:33 IST" name="Close_Add_Sub_Disposition_Popup" finished-at="2024-12-09T22:54:36 IST" duration-ms="3309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close_Add_Sub_Disposition_Popup -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:36 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:54:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -991,7 +1088,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:53 IST" name="setupTest" finished-at="2024-12-09T16:23:53 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:36 IST" name="setupTest" finished-at="2024-12-09T22:54:36 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1002,18 +1099,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Add_New_Sub_Disposition(java.util.Map)[pri:36, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:23:53 IST" name="Add_New_Sub_Disposition" data-provider="TestData" finished-at="2024-12-09T16:24:18 IST" duration-ms="25027" status="PASS">
+        <test-method signature="Add_New_Sub_Disposition(java.util.Map)[pri:36, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:36 IST" name="Add_New_Sub_Disposition" data-provider="TestData" finished-at="2024-12-09T22:54:58 IST" duration-ms="21884" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_New_Sub_Disposition -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:24:18 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:24:18 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:58 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:54:58 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1024,18 +1121,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="Add_Duplicate_Sub_Disposition(java.util.Map)[pri:37, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:24:18 IST" name="Add_Duplicate_Sub_Disposition" data-provider="TestData" finished-at="2024-12-09T16:24:45 IST" duration-ms="27189" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Add_Duplicate_Sub_Disposition -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:24:18 IST" name="setupTest" finished-at="2024-12-09T16:24:18 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:58 IST" name="setupTest" finished-at="2024-12-09T22:54:58 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1046,7 +1132,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:24:45 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:24:45 IST" duration-ms="1" status="PASS">
+        <test-method signature="Add_Duplicate_Sub_Disposition(java.util.Map)[pri:37, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:54:58 IST" name="Add_Duplicate_Sub_Disposition" data-provider="TestData" finished-at="2024-12-09T22:55:28 IST" duration-ms="29666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Duplicate_Sub_Disposition -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:55:28 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:55:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1057,7 +1154,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:24:45 IST" name="setupTest" finished-at="2024-12-09T16:24:45 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:55:28 IST" name="setupTest" finished-at="2024-12-09T22:55:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1068,11 +1165,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Edit_Sub_Disposition_Popup_Display()[pri:38, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:24:45 IST" name="Edit_Sub_Disposition_Popup_Display" finished-at="2024-12-09T16:24:58 IST" duration-ms="12566" status="PASS">
+        <test-method signature="Edit_Sub_Disposition_Popup_Display()[pri:38, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:55:28 IST" name="Edit_Sub_Disposition_Popup_Display" finished-at="2024-12-09T22:55:39 IST" duration-ms="10820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Edit_Sub_Disposition_Popup_Display -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:24:58 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:24:58 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:55:39 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:55:39 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1083,7 +1180,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:24:58 IST" name="setupTest" finished-at="2024-12-09T16:24:58 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:55:39 IST" name="setupTest" finished-at="2024-12-09T22:55:39 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1094,11 +1191,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Update_Sub_Disposition_Without_Changes()[pri:39, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:24:58 IST" name="Update_Sub_Disposition_Without_Changes" finished-at="2024-12-09T16:25:08 IST" duration-ms="10272" status="PASS">
+        <test-method signature="Update_Sub_Disposition_Without_Changes()[pri:39, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:55:39 IST" name="Update_Sub_Disposition_Without_Changes" finished-at="2024-12-09T22:55:55 IST" duration-ms="15866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Update_Sub_Disposition_Without_Changes -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:25:08 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:25:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:55:55 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:55:55 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1109,7 +1206,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:25:08 IST" name="setupTest" finished-at="2024-12-09T16:25:08 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:55:55 IST" name="setupTest" finished-at="2024-12-09T22:55:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1120,18 +1217,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Update_Sub_Disposition_with_Duplicate_Name(java.util.Map)[pri:40, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:25:08 IST" name="Update_Sub_Disposition_with_Duplicate_Name" data-provider="TestData" finished-at="2024-12-09T16:25:33 IST" duration-ms="24323" status="PASS">
+        <test-method signature="Update_Sub_Disposition_with_Duplicate_Name(java.util.Map)[pri:40, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:55:55 IST" name="Update_Sub_Disposition_with_Duplicate_Name" data-provider="TestData" finished-at="2024-12-09T22:56:27 IST" duration-ms="32447" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Update_Sub_Disposition_with_Duplicate_Name -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:25:33 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:25:33 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:56:27 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:56:27 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1142,7 +1239,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:25:33 IST" name="setupTest" finished-at="2024-12-09T16:25:33 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:56:27 IST" name="setupTest" finished-at="2024-12-09T22:56:27 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1153,18 +1250,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Update_Sub_Disposition_Successfully(java.util.Map)[pri:41, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:25:33 IST" name="Update_Sub_Disposition_Successfully" data-provider="TestData" finished-at="2024-12-09T16:25:53 IST" duration-ms="20632" status="PASS">
+        <test-method signature="Update_Sub_Disposition_Successfully(java.util.Map)[pri:41, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:56:27 IST" name="Update_Sub_Disposition_Successfully" data-provider="TestData" finished-at="2024-12-09T22:56:49 IST" duration-ms="21683" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Update_Sub_Disposition_Successfully -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:25:53 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:25:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:56:49 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:56:49 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1175,7 +1272,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:25:53 IST" name="setupTest" finished-at="2024-12-09T16:25:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:56:49 IST" name="setupTest" finished-at="2024-12-09T22:56:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1186,11 +1283,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Deactivate_Sub_Disposition()[pri:42, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:25:53 IST" name="Deactivate_Sub_Disposition" finished-at="2024-12-09T16:26:12 IST" duration-ms="18237" status="PASS">
+        <test-method signature="Deactivate_Sub_Disposition()[pri:42, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:56:49 IST" name="Deactivate_Sub_Disposition" finished-at="2024-12-09T22:57:25 IST" duration-ms="36086" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Deactivate_Sub_Disposition -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:26:12 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:26:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:57:25 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:57:25 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1201,7 +1298,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:26:12 IST" name="setupTest" finished-at="2024-12-09T16:26:12 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:57:25 IST" name="setupTest" finished-at="2024-12-09T22:57:25 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1212,18 +1309,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Search_Deactivated_Sub_Disposition(java.util.Map)[pri:43, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:26:12 IST" name="Search_Deactivated_Sub_Disposition" data-provider="TestData" finished-at="2024-12-09T16:26:27 IST" duration-ms="15707" status="PASS">
+        <test-method signature="Search_Deactivated_Sub_Disposition(java.util.Map)[pri:43, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:57:25 IST" name="Search_Deactivated_Sub_Disposition" data-provider="TestData" finished-at="2024-12-09T22:57:49 IST" duration-ms="24253" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Deactivated_Sub_Disposition -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:26:27 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:26:27 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:57:49 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:57:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1234,7 +1331,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:26:27 IST" name="setupTest" finished-at="2024-12-09T16:26:27 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:57:49 IST" name="setupTest" finished-at="2024-12-09T22:57:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1245,11 +1342,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Reactivate_Sub_Disposition()[pri:44, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:26:27 IST" name="Reactivate_Sub_Disposition" finished-at="2024-12-09T16:26:50 IST" duration-ms="22686" status="PASS">
+        <test-method signature="Reactivate_Sub_Disposition()[pri:44, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:57:49 IST" name="Reactivate_Sub_Disposition" finished-at="2024-12-09T22:58:22 IST" duration-ms="32722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Reactivate_Sub_Disposition -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:26:50 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:26:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:58:22 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:58:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1260,7 +1357,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:26:50 IST" name="setupTest" finished-at="2024-12-09T16:26:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:58:22 IST" name="setupTest" finished-at="2024-12-09T22:58:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1271,18 +1368,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Search_Active_Sub_Disposition(java.util.Map)[pri:45, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:26:50 IST" name="Search_Active_Sub_Disposition" data-provider="TestData" finished-at="2024-12-09T16:27:09 IST" duration-ms="19036" status="PASS">
+        <test-method signature="Search_Active_Sub_Disposition(java.util.Map)[pri:45, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:58:22 IST" name="Search_Active_Sub_Disposition" data-provider="TestData" finished-at="2024-12-09T22:58:51 IST" duration-ms="29373" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr3, Nameforsubdisposition=Kael3, NameUpdate=Orion3, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora3, UpdateExistingNameofsubdispositiontoNew=Nyx3}]]>
+                <![CDATA[{ActionOwner=Internal User, ActionOwnerforsubdisposition=Call Centre, ActionOwners=Internal User | Collection Agency | Call Centre, ActionOwnerSearch=Call Centre, ActionOwnerUpdate=Call Centre, ActiveActionOwnerforsubdispositionSearch=Call Centre, ActiveDisposistionforsubdispositionSearch=Aaron, AssetCategories=NPA Category | SMA Category, AssetCategory=NPA Category, AssetCategoryUpdate=SMA Category, DeactivatedActionOwnerforsubdispositionSearch=Call Centre, DeactivatedDisposistionforsubdispositionSearch=Aaron, Disposistionforsubdisposition=Aaron, ExistingName=Irfan, ExistingNameforsubdisposition=abc, Name=Zephyr4, Nameforsubdisposition=Kael4, NameUpdate=Orion4, project=Beacon FCM, Run=Yes, TestScenario=Disposition_master, UpdateExistingName=Liora4, UpdateExistingNameofsubdispositiontoNew=Nyx4}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Active_Sub_Disposition -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:27:09 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T16:27:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:58:51 IST" name="takeScreenshotOnFailure" finished-at="2024-12-09T22:58:51 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1293,7 +1390,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T16:27:09 IST" name="afterEachTest" finished-at="2024-12-09T16:27:10 IST" duration-ms="508" status="PASS">
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule@70325e14]" started-at="2024-12-09T22:58:52 IST" name="afterEachTest" finished-at="2024-12-09T22:58:52 IST" duration-ms="685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->

@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Map;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -422,9 +421,7 @@ public class AllScenarios_Disposition_masterModule {
 		 dispositionMasterPage.clickSubmit();
 		// Validate the popup message
 	
-	        By popuppath = By.xpath("//div[@class='rz-growl-item']//div//span[contains(text(),'Success ')]");
-	        //WebElement popupmsg =  driver.findElement(popuppath);
-	        WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(popuppath));
+		 WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.successPopup));
 	        Assert.assertTrue(popup.isDisplayed(), "Success popup is not displayed.");
 	      
 	        ExtentTestManager.getTest().log(Status.PASS, "Data is submitted successfully, popup closes without errors.");
@@ -533,9 +530,8 @@ public class AllScenarios_Disposition_masterModule {
 		    }
 		    // Step 5: Click outside the dropdown to close it
 		 
-		 By actionownerpath =By.xpath("(//label[contains(text(),'Asset Category')]//following::div//div[@class='rz-helper-hidden-accessible']//input//following::label)[1]");
-	    	WebElement dropdown =  driver.findElement(actionownerpath);
-	        dropdown.click();
+		 WebElement dropdown = driver.findElement(DispositionMasterPageRepo.actionOwnerPath);
+		    dropdown.click();
 	        ExtentTestManager.getTest().log(Status.PASS, "Selected values are displayed, and \"NPA Category\" is checked.");
 		 }
 	        catch (AssertionError | Exception e) {
@@ -652,8 +648,10 @@ public class AllScenarios_Disposition_masterModule {
 	    public void Add_Disposition_with_Existing_Name(Map<Object, Object> testdata) throws InterruptedException {
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-			 WebElement popclosebutton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='rz-dialog-titlebar']//a")));
-	        popclosebutton.click(); // Close the popup
+		 WebElement popCloseButton = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.popUpCloseButton));
+		    
+		    // Click the close button
+		    popCloseButton.click(); // Close the popup
 		 try { 
 		 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
 				
@@ -1213,7 +1211,7 @@ public class AllScenarios_Disposition_masterModule {
 		            throw e;
 			 }
 			 Thread.sleep(3000);
-	    }
+	    } 
 	    
 	    @Test(priority = 45, dataProvider = "TestData")
 	    public void Search_Active_Sub_Disposition(Map<Object, Object> testdata) throws InterruptedException {

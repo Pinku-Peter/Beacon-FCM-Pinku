@@ -5,10 +5,11 @@
     <classes>
       <class name="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule">
         <methods>
-          <include name="Search_Active_Sub_Disposition" invocation-numbers="0"/>
+          <include name="Verify_Add_Disposition_with_Valid_Data" invocation-numbers="0"/>
           <include name="afterEachTest"/>
           <include name="setupTest"/>
           <include name="SetUp"/>
+          <include name="Add_Disposition__Submit_with_All_Fields_Valid" invocation-numbers="0"/>
           <include name="takeScreenshotOnFailure"/>
         </methods>
       </class> <!-- com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule -->

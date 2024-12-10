@@ -7,6 +7,7 @@ public class DispositionMasterPageRepo {
 	public static By dispositionMainMenu = By.xpath("//span[contains(text(), 'Disposition')]");
 	public static By dispositionMasterSubMenu = By.xpath("//a[@title='Disposition Master']");
 	public static By disposition = By.xpath("//ul[@role='tablist']");
+	public static By previousDoubleArrowButtons = By.xpath("//li[@class='page-item  ']//span[contains(text(),'<<')]");
 	public static By dispositionMasterHeader = By.xpath("//div[@class='main']");
 	public static By Sub_Disposition = By.xpath("//span[contains(text(),'Sub-Disposition')]");
 	public static By actionOwnerDropdown = By.xpath("(//div[@onmousedown='Radzen.activeElement = null'])[1]");
@@ -86,6 +87,42 @@ public class DispositionMasterPageRepo {
     public static By statusIconslist2 = By.xpath("(//div[@class='rz-data-grid-data'])[2]//tr[contains(@class,'rz-datatable')]//td[4]//span//i");
     public static By clearvaluepath3 = By.xpath("(//div[contains(@class, 'cardheaderleft')]//div[@onmousedown='Radzen.activeElement = null'])[2]//i");
     public static By clearvaluepath4 = By.xpath("(//div[contains(@class, 'cardheaderleft')]//div[@onmousedown='Radzen.activeElement = null'])[3]//i");
+    public static By actionOwnerOption(String actionOwner) {
+        return By.xpath("(//div[@class='rz-multiselect-items-wrapper'])[5]//ul//li[@aria-label='" + actionOwner + "']");
+    }
+    public static By actionOwnerOption4(String actionOwner) {
+        return By.xpath("//div[@class='rz-dropdown-items-wrapper']//ul//li[@aria-label='>" + actionOwner + "']");
+    }
+    public static By assetCategoryOption(String category) {
+        return By.xpath("//div[@class='rz-multiselect-items-wrapper']//ul//li[@aria-label='" + category + "']");
+    }
+    public static By dispositionByName(String name) {
+        return By.xpath("//div//div[@class='table-wrapper-inner']//div//div//table//tr//td//span[@title='" + name + "']");
+    }
+    public static By actionOwnerText(String actionOwner) {
+        return By.xpath("(//div//div[@class='table-wrapper-inner']//div//div//table//tr//td//span[@title='" + actionOwner + "'])[1]");
+    }
+    public static By assetCategoryOption2(String assetCategory) {
+        return By.xpath("//div[@class='rz-multiselect-items-wrapper']//ul//li[@aria-label='" + assetCategory + "']");
+    }
+    public static By actionOwnerOption3(String actionOwner) {
+        return By.xpath("(//div[@class='rz-multiselect-items-wrapper']//ul[@role='listbox'])[3]//li[@aria-label='" + actionOwner + "']");
+    }
+    public static By subDispositionActionOwnerOption(String owner) {
+        return By.xpath("//div[@class='rz-dropdown-items-wrapper']//ul//li[@aria-label='>" + owner + "']");
+    }
+    public static By subPopupDispositionOption(String disposition) {
+        return By.xpath("//div[@class='rz-dropdown-items-wrapper']//ul//li[@aria-label='>" + disposition + "']");
+    }
+    public static By subDispositionOption(String disposition) {
+        return By.xpath("//div[@class='rz-multiselect-items-wrapper']//ul//li[@aria-label='" + disposition + "']");
+    }
+    public static By dispositionOption(String disposition) {
+        return By.xpath("//div[@class='rz-multiselect-items-wrapper']//ul//li[@aria-label='" + disposition + "']");
+    }
+    public static By successPopup = By.xpath("//div[@class='rz-growl-item']//div//span[contains(text(),'Success ')]");
+    public static By actionOwnerPath = By.xpath("(//label[contains(text(),'Asset Category')]//following::div//div[@class='rz-helper-hidden-accessible']//input//following::label)[1]");
+    public static By popUpCloseButton = By.xpath("//div[@class='rz-dialog-titlebar']//a");
     }
     
     

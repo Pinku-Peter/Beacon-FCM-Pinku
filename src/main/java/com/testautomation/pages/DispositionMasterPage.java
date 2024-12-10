@@ -188,7 +188,6 @@ public class DispositionMasterPage {
         WebElement previousBut = previousbutton.findElement(DispositionMasterPageRepo.nextButton);
         WebElement nextButton = previousbutton.findElement(DispositionMasterPageRepo.paginationNextButton);
         WebElement nextdoubleArrowButton = previousbutton.findElement(DispositionMasterPageRepo.lastPageButton);
-        //WebElement previousdoubleArrowButton = previousButton.findElement(By.xpath("(//li[@class='page-item  '])[1]"));
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView(true);", paginationNextButton);
         previousbutton.click();
@@ -207,7 +206,7 @@ public class DispositionMasterPage {
      // Verify Double Arrow (>>) button is enabled
         Assert.assertTrue(nextdoubleArrowButton.isEnabled(), "Next Double Arrow button is not enabled.");
      /// Verify Double Arrow (<<) button is not visible
-        List<WebElement> previousdoubleArrowButtons = driver.findElements(By.xpath("//li[@class='page-item  ']//span[contains(text(),'<<')]"));
+        List<WebElement> previousdoubleArrowButtons = driver.findElements(DispositionMasterPageRepo.previousDoubleArrowButtons);
         if (previousdoubleArrowButtons.isEmpty()) {
             // Element is not in the DOM
             System.out.println("The '<<' button is not present in the DOM.");
@@ -292,7 +291,6 @@ public class DispositionMasterPage {
 	
 	public boolean isPopupDisplayed() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='rz-dialog-content']")));
 	    try {
 	    	wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.actionOwnerField));
 	        wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.nameField));
@@ -336,7 +334,7 @@ public class DispositionMasterPage {
     	addDisposition.click();
     	WebElement actionOwnerElement = driver.findElement(DispositionMasterPageRepo.actionOwnerField);
     	actionOwnerElement.click();
-        WebElement ccelement =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='rz-multiselect-items-wrapper'])[5]//ul//li[@aria-label='" + actionOwner + "']")));
+    	WebElement ccelement = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.actionOwnerOption(actionOwner)));
         ccelement.click();
     }
 
@@ -351,7 +349,7 @@ public class DispositionMasterPage {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
     	WebElement assetCategoryElement = driver.findElement(DispositionMasterPageRepo.assetCategoryField);
         assetCategoryElement.click();
-        WebElement ccelement =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='rz-multiselect-items-wrapper']//ul//li[@aria-label='" + category + "']")));
+        WebElement ccelement = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.assetCategoryOption(category)));
         ccelement.click();
     }
 
@@ -375,9 +373,8 @@ public class DispositionMasterPage {
     public void selectActionOwners(String actionOwner) {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         // Locate the dropdown option by visible text or a unique attribute
-        //WebElement option = driver.findElement(By.xpath("(//div[@class='rz-multiselect-items-wrapper'])[5]//ul//li[@aria-label='" + actionOwner + "']"));
-        WebElement option = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='rz-multiselect-items-wrapper'])[5]//ul//li[@aria-label='" + actionOwner + "']")));
-        option.click(); // Select the option
+    	 WebElement option = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.actionOwnerOption(actionOwner)));
+    	    option.click();  // Select the option
     }
     
     public void clickAssetCategoryDropdown() {
@@ -390,8 +387,8 @@ public class DispositionMasterPage {
     
     public void AssetCategory(String category) {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-    	 WebElement option = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='rz-multiselect-items-wrapper']//ul//li[@aria-label='" + category + "']")));
-         option.click(); // Select the option
+        WebElement option = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.assetCategoryOption(category)));
+        option.click(); // Select the option
         
         }
     
@@ -462,17 +459,14 @@ public class DispositionMasterPage {
     // Method to verify if a disposition row is visible
     public boolean isDispositionVisible(String name) {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-//    	WebElement close = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='rz-dialog-titlebar']//a")));
-//    	close.click();
-    	By spinner = By.xpath("//div[@class='spinner']");
-    	wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
-    	return driver.findElement(By.xpath("//div//div[@class='table-wrapper-inner']//div//div//table//tr//td//span[@title='" + name + "']")).isDisplayed();
+    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+    	 return driver.findElement(DispositionMasterPageRepo.dispositionByName(name)).isDisplayed();
     }
 
     // Method to get action owner text
     public String getActionOwnerText(String ActionOwner) {
     	
-    	return driver.findElement(By.xpath("(//div//div[@class='table-wrapper-inner']//div//div//table//tr//td//span[@title='" + ActionOwner + "'])[1]")).getText();
+    	return driver.findElement(DispositionMasterPageRepo.actionOwnerText(ActionOwner)).getText();
     }
 
     // Method to verify if status is a green tick
@@ -584,8 +578,6 @@ public class DispositionMasterPage {
     	WebElement nameFieldElement = driver.findElement(DispositionMasterPageRepo.nameField);
     	nameFieldElement.clear();
     	nameFieldElement.sendKeys(name);
-//        By namereq = By.xpath("//div[contains(text(),'Name Required')]");
-//    	wait.until(ExpectedConditions.invisibilityOfElementLocated(namereq));
     	WebElement outsideElementWebElement = driver.findElement(DispositionMasterPageRepo.outsideElement); // Assuming the <body> tag is safe to click
     	outsideElementWebElement.click();
     }
@@ -622,8 +614,8 @@ public class DispositionMasterPage {
     	clearValue.click();
     	WebElement actionOwnerElement = driver.findElement(DispositionMasterPageRepo.actionOwnerField);
     	actionOwnerElement.click();
-        WebElement ccelement =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='rz-dropdown-items-wrapper']//ul//li[@aria-label='>" + actionOwner + "']")));
-        ccelement.click();
+    	 WebElement ccelement = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.actionOwnerOption4(actionOwner)));
+    	    ccelement.click();
         WebElement outsideElement = driver.findElement(DispositionMasterPageRepo.outsideElement); // Assuming the <body> tag is safe to click
         outsideElement.click();
     }
@@ -644,7 +636,7 @@ public class DispositionMasterPage {
     	clearValueButton.click();
     	WebElement assetLabel = driver.findElement(DispositionMasterPageRepo.assetCategoryField);
     	assetLabel.click();
-        WebElement ccelement =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='rz-multiselect-items-wrapper']//ul//li[@aria-label='" + assetCategory + "']")));
+    	WebElement ccelement = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.assetCategoryOption2(assetCategory)));
         ccelement.click();
         WebElement outsideElement = driver.findElement(DispositionMasterPageRepo.outsideElement); // Assuming the <body> tag is safe to click
         outsideElement.click();
@@ -680,8 +672,8 @@ public class DispositionMasterPage {
     	clearValueButton.click();
     	WebElement actionOwnerDropdown = driver.findElement(DispositionMasterPageRepo.actionownerdropdownpath);
     	actionOwnerDropdown.click();
-      WebElement ccelement =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='rz-multiselect-items-wrapper']//ul[@role='listbox'])[3]//li[@aria-label='" + actionOwner + "']")));
-      ccelement.click();
+    	WebElement ccelement = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.actionOwnerOption3(actionOwner)));
+        ccelement.click();
       WebElement outsideElement = driver.findElement(DispositionMasterPageRepo.outsideElementPath2); // Assuming the <body> tag is safe to click
       outsideElement.click();
     }
@@ -803,9 +795,9 @@ public class DispositionMasterPage {
     	WebElement subPopupClosePopupButtonElement = driver.findElement(DispositionMasterPageRepo.actionOwnerDropdown);
     	subPopupClosePopupButtonElement.click();
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-    	By subpopupactionOwnerDropdownvaluepath = By.xpath("//div[@class='rz-dropdown-items-wrapper']//ul//li[@aria-label='>" + owner + "']");
-    	WebElement subpopupactionOwnervalue = driver.findElement(subpopupactionOwnerDropdownvaluepath);
-    	subpopupactionOwnervalue.click();
+        By subpopupactionOwnerDropdownvaluepath = DispositionMasterPageRepo.subDispositionActionOwnerOption(owner);
+        WebElement subpopupactionOwnervalue = driver.findElement(subpopupactionOwnerDropdownvaluepath);
+        subpopupactionOwnervalue.click();
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
     }
 
@@ -817,9 +809,9 @@ public class DispositionMasterPage {
     	WebElement subpopupdispositionDropdown = driver.findElement(DispositionMasterPageRepo.subPopupDispositionDropdown);
     	subpopupdispositionDropdown.click();
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-    	By subpopupactionOwnerDropdownvaluepath = By.xpath("//div[@class='rz-dropdown-items-wrapper']//ul//li[@aria-label='>" + disposition + "']");
-    	WebElement subpopupactionOwnervalue = driver.findElement(subpopupactionOwnerDropdownvaluepath);
-    	subpopupactionOwnervalue.click();
+        By subpopupDispositionOption = DispositionMasterPageRepo.subPopupDispositionOption(disposition);
+        WebElement subpopupactionOwnervalue = driver.findElement(subpopupDispositionOption);
+        subpopupactionOwnervalue.click();
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
     }
 
@@ -949,8 +941,10 @@ public class DispositionMasterPage {
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
     	WebElement actionOwnerDropdown = driver.findElement(DispositionMasterPageRepo.subPopupDispositionDropdown);
     	actionOwnerDropdown.click();
-      WebElement ccelement =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='rz-multiselect-items-wrapper']//ul[@role='listbox'])[3]//li[@aria-label='" + actionOwner + "']")));
-      ccelement.click();
+    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+    	 By actionOwnerOption = DispositionMasterPageRepo.actionOwnerOption3(actionOwner);
+    	    WebElement ccelement = wait.until(ExpectedConditions.visibilityOfElementLocated(actionOwnerOption));
+    	    ccelement.click();
       wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
       WebElement outsideElement = driver.findElement(DispositionMasterPageRepo.outsideElementPath2); // Assuming the <body> tag is safe to click
       outsideElement.click();
@@ -964,9 +958,9 @@ public class DispositionMasterPage {
     	WebElement dispositionDropdown = driver.findElement(DispositionMasterPageRepo.dispositionSearchField);
     	dispositionDropdown.click();
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-    	By subpopupactionOwnerDropdownvaluepath = By.xpath("//div[@class='rz-multiselect-items-wrapper']//ul//li[@aria-label='" + dispostion + "']");
-    	WebElement subpopupactionOwnervalue = driver.findElement(subpopupactionOwnerDropdownvaluepath);
-    	subpopupactionOwnervalue.click();
+    	 By dispositionOption = DispositionMasterPageRepo.subDispositionOption(dispostion);
+    	    WebElement subpopupDispositionValue = driver.findElement(dispositionOption);
+    	    subpopupDispositionValue.click();
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
       WebElement outsideElement = driver.findElement(DispositionMasterPageRepo.outsideElementPath2); // Assuming the <body> tag is safe to click
       outsideElement.click();
@@ -1033,8 +1027,9 @@ public class DispositionMasterPage {
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
     	WebElement actionOwnerDropdown = driver.findElement(DispositionMasterPageRepo.subPopupDispositionDropdown);
     	actionOwnerDropdown.click();
-      WebElement ccelement =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='rz-multiselect-items-wrapper']//ul[@role='listbox'])[3]//li[@aria-label='" + actionOwner + "']")));
-      ccelement.click();
+    	By actionOwnerLocator = DispositionMasterPageRepo.actionOwnerOption3(actionOwner);
+        WebElement ccelement = wait.until(ExpectedConditions.visibilityOfElementLocated(actionOwnerLocator));
+        ccelement.click();
       wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
       WebElement outsideElement = driver.findElement(DispositionMasterPageRepo.outsideElementPath2); // Assuming the <body> tag is safe to click
       outsideElement.click();
@@ -1048,9 +1043,9 @@ public class DispositionMasterPage {
     	WebElement dispositionDropdown = driver.findElement(DispositionMasterPageRepo.dispositionSearchField);
     	dispositionDropdown.click();
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-    	By subpopupactionOwnerDropdownvaluepath = By.xpath("//div[@class='rz-multiselect-items-wrapper']//ul//li[@aria-label='" + dispostion + "']");
-    	WebElement subpopupactionOwnervalue = driver.findElement(subpopupactionOwnerDropdownvaluepath);
-    	subpopupactionOwnervalue.click();
+    	By dispositionLocator = DispositionMasterPageRepo.dispositionOption(dispostion);
+        WebElement subpopupactionOwnervalue = driver.findElement(dispositionLocator);
+        subpopupactionOwnervalue.click();
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
       WebElement outsideElement = driver.findElement(DispositionMasterPageRepo.outsideElementPath2); // Assuming the <body> tag is safe to click
       outsideElement.click();
