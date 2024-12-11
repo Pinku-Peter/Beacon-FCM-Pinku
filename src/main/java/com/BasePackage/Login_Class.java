@@ -13,8 +13,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import com.BasePackage.Base_Class;
 import com.Page_Repository.LoginPageRepo;
 import com.Utility.Log;
-import com.aventstack.extentreports.Status;
-import com.extentReports.ExtentTestManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Login_Class extends Base_Class {
@@ -23,17 +21,12 @@ public class Login_Class extends Base_Class {
     public static String orgTypeName;
 	
     public void CoreLogin() throws Exception {
-        try {
+        try {        	
             String Browser = configloader().getProperty("Browser");
             String CoreAppUrl = configloader().getProperty("CoreApplicationUrl");
             String CoreUserName = configloader().getProperty("CoreUserName");
             String CoreUserPassword = configloader().getProperty("CoreUserPassword");
-            
-            System.out.println(Browser);
-            System.out.println(CoreAppUrl);
-            System.out.println(CoreUserName);
-            System.out.println(CoreUserPassword);
-            
+
             // Initialize WebDriver based on browser type
             switch (Browser.toUpperCase()) {
                 case "CHROME":
@@ -110,15 +103,24 @@ public class Login_Class extends Base_Class {
                     System.out.println("Element not clickable within the timeout.");
                 }
             } catch (Exception e) {
-                // Handle the exception (e.g., log it or perform an alternative action)
                 System.out.println("Exception occurred while waiting for the element: " + e.getMessage());
+                System.out.println("Already login pop up not appeared");
             }
-
+            
+            String query = "select Default_URL from acc_users where user_id = '"+CoreUserName+"'";
+            String defaultURL = DBUtils.fetchSingleValueFromDB(query);
+            System.out.println("Default URL: " + defaultURL);
+            
             // Redirect to the module selection page
-            if (Common.waitForElementToBeClickable(driver, LoginPageRepo.GoCollectionButton, Duration.ofSeconds(30)) != null) {
-                Common.fluentWait("SetAsDefaultRadioButton", LoginPageRepo.SetAsDefaultRadioButton);
+            //if (Common.waitForElementToBeClickable(driver, LoginPageRepo.GoCollectionButton, Duration.ofSeconds(30)) != null) {
+            if (defaultURL == null) {
+            	System.out.println("Entered into module selection page if condition");
                 Common.waitForSpinnerToDisappear(driver, "Loading Spinner", LoginPageRepo.Spinner);
-                driver.findElement(LoginPageRepo.GoCollectionButton).click();
+                Common.fluentWait("SetAsDefaultRadioButton", LoginPageRepo.SetAsDefaultRadioButton);
+                Common.fluentWait("GoCollectionButton", LoginPageRepo.GoCollectionButton);
+                Thread.sleep(3000);
+                //driver.findElement(LoginPageRepo.GoCollectionButton).click();
+                ForLoopClick(LoginPageRepo.GoCollectionButton);
                 Log.info("Clicked on Go collection button");
             } else {
                 Log.info("Module selection page not appeared");

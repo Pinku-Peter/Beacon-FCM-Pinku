@@ -30,6 +30,8 @@ public class Base_Class {
 
 public static RemoteWebDriver driver = null;
 WebDriverWait wait;
+
+
 	
 	public WebDriver getDriver() {
 		return driver;
@@ -235,6 +237,31 @@ WebDriverWait wait;
 		
 
 	}
+	
+	public static void ForLoopClick(By ClickElement) {
+        try {
+            for (int i = 0; i < 60; i++) {
+                try {
+                    WebElement element = driver.findElement(ClickElement);
+                    if (element.isDisplayed()) {
+                        element.click();
+                        element.click(); // Added double click as per the original logic
+                        System.out.println("ForLoopWaitPlusClick: Element clicked");
+                        break;
+                    } else {
+                        System.out.println("Element to be clicked is not found");
+                    }
+                } catch (Exception e1) {
+                    System.out.println("Catch exception");
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Error occurred: " + e);
+        }
+    }
+
+	
+	
 
 public static Connection OracleDBConnection() throws IOException {
 		
@@ -266,5 +293,6 @@ public static Connection OracleDBConnection() throws IOException {
 		return connection;
 		
 	}
+
 
 }

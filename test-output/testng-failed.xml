@@ -3,16 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule">
+      <class name="com.test.Updation_of_DispositionModule.AllScenarios_Updation_of_DispositionModule">
         <methods>
-          <include name="Verify_Add_Disposition_with_Valid_Data" invocation-numbers="0"/>
+          <include name="SetUp"/>
+          <include name="takeScreenshotOnFailure"/>
           <include name="afterEachTest"/>
           <include name="setupTest"/>
-          <include name="SetUp"/>
-          <include name="Add_Disposition__Submit_with_All_Fields_Valid" invocation-numbers="0"/>
-          <include name="takeScreenshotOnFailure"/>
+          <include name="testAllFieldsMissingValidation"/>
+          <include name="Enter_Invalid_Account_Number_and_Search" invocation-numbers="0"/>
+          <include name="Enter_Valid_Account_Number_and_Search"/>
         </methods>
-      </class> <!-- com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule -->
+      </class> <!-- com.test.Updation_of_DispositionModule.AllScenarios_Updation_of_DispositionModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

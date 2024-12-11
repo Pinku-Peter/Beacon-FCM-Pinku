@@ -1,14 +1,18 @@
-[INFO ] 2024-12-09 22:43:51.879 [main] Log - Driver has initialized successfully for chrome browser
-[INFO ] 2024-12-09 22:44:54.383 [main] Log - Title is displayed: BeaconICnRM
-[INFO ] 2024-12-09 22:44:54.843 [main] Log - Entered IBU0001196 in user name field
-[INFO ] 2024-12-09 22:44:54.988 [main] Log - Entered test@123 in password field
-[INFO ] 2024-12-09 22:44:55.145 [main] Log - Clicked on login button
-[INFO ] 2024-12-09 22:45:39.370 [main] Log - Clicked on Go collection button
-[INFO ] 2024-12-09 22:46:01.465 [main] Log - UserID in Dashboard: IBU0001196
-[INFO ] 2024-12-09 22:46:03.800 [main] Log - Org Name: Ahmedabad, Org Type Name: Zone/CO
-[INFO ] 2024-12-09 22:46:07.785 [main] Log - DispositionMasterPage initialized.
-[INFO ] 2024-12-09 22:46:48.031 [main] Log - Opening the Action Owner dropdown.
-[INFO ] 2024-12-09 22:46:48.235 [main] Log - Selecting 'Call Centre' option.
-[INFO ] 2024-12-09 22:46:48.421 [main] Log - Selecting 'Collection Agency' option.
-[INFO ] 2024-12-09 22:46:48.546 [main] Log - Selecting 'Internal User' option.
-[INFO ] 2024-12-09 22:46:48.640 [main] Log - Action Owner options selected successfully.
+[INFO ] 2024-12-11 15:42:16.634 [main] Log - Driver has initialized successfully for chrome browser
+[INFO ] 2024-12-11 15:44:27.730 [main] Log - Title is displayed: BeaconICnRM
+[INFO ] 2024-12-11 15:44:28.014 [main] Log - Entered IBU0001196 in user name field
+[INFO ] 2024-12-11 15:44:28.149 [main] Log - Entered test@123 in password field
+[INFO ] 2024-12-11 15:44:28.250 [main] Log - Clicked on login button
+[INFO ] 2024-12-11 15:44:50.336 [main] Log - Module selection page not appeared
+[INFO ] 2024-12-11 15:45:04.413 [main] Log - UserID in Dashboard: IBU0001196
+[INFO ] 2024-12-11 15:45:05.295 [main] Log - Org Name: Ahmedabad, Org Type Name: Zone/CO
+[INFO ] 2024-12-11 15:45:06.989 [main] Log - UpdationofDispositionPage initialized.
+[INFO ] 2024-12-11 15:45:07.217 [main] Log - Clicking on the Disposition.
+[INFO ] 2024-12-11 15:45:07.294 [main] Log - Successfully clicked on the Disposition.
+[INFO ] 2024-12-11 15:45:07.310 [main] Log - Clicking on the Updation of Disposition.
+[INFO ] 2024-12-11 15:45:07.483 [main] Log - Successfully clicked on the Updation of Disposition.
+[INFO ] 2024-12-11 15:45:14.982 [main] Log - Should not possible to type Alphabets and special characters in account number field.
+[INFO ] 2024-12-11 15:45:15.094 [main] Log - Should not possible to type Alphabets and special characters in account number field.
+[INFO ] 2024-12-11 15:45:18.309 [main] Log - Entry is restricted to 25 characters.
+[INFO ] 2024-12-11 15:45:21.608 [main] Log - Account number entered successfully.
+[INFO ] 2024-12-11 15:46:36.581 [main] Log - Account number entered successfully.
