@@ -11,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import com.BasePackage.Common;
 import com.Page_Repository.DispositionMasterPageRepo;
 import com.Utility.Log;
 
@@ -537,6 +539,7 @@ public class DispositionMasterPage {
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
     	WebElement dropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.actionOwnerDropdown));
         dropdown.click();
+        Common.fluentWait("Action Owner Dropdown", DispositionMasterPageRepo.selectAllOptionpath);
         WebElement selectAllOption = driver.findElement(DispositionMasterPageRepo.selectAllOptionpath); 
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
     	selectAllOption.click();

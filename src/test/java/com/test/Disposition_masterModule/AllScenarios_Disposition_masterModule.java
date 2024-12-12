@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Map;
 
+import org.junit.AfterClass;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -23,8 +24,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 import com.BasePackage.Base_Class;
+import com.BasePackage.Common;
 import com.BasePackage.Login_Class;
 import com.Page_Repository.DispositionMasterPageRepo;
+import com.Page_Repository.LoginPageRepo;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
@@ -149,6 +152,7 @@ public class AllScenarios_Disposition_masterModule {
 		//ExtentTestManager.startTest("TestCase_02 : Verify Initial Load of Active Dispositions");
 		try {
 		// Precondition: User is on the Disposition Master window
+			Common.fluentWait("User is on the Disposition Master window", DispositionMasterPageRepo.subDispositionList);
 		Assert.assertTrue(dispositionMasterPage.isDispositionMasterPageDisplayed(), "Disposition Master page not displayed");
 		int activeDispositionsCount = dispositionMasterPage.getActiveDispositionsCount();
 		Assert.assertEquals(activeDispositionsCount, 10, "Active dispositions count does not equal 10");
@@ -983,7 +987,7 @@ public class AllScenarios_Disposition_masterModule {
 	    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
 				
 				String actionowner = testdata.get("ActionOwnerforsubdisposition").toString();
-				String disposition = testdata.get("Disposistionforsubdisposition").toString();
+				String disposition = testdata.get("UpdateExistingName").toString();
 				String subdispositionname = testdata.get("Nameforsubdisposition").toString();
 				
 				
@@ -994,15 +998,33 @@ public class AllScenarios_Disposition_masterModule {
 				dispositionMasterPage.enterDisposition(disposition);
 				
 				dispositionMasterPage.enterSubDisposition(subdispositionname);
-				
-				}
 
 	        // Click on the Submit button
 				dispositionMasterPage.clickSubmit();
 
-	        // Assert the success message
-	        Assert.assertTrue(dispositionMasterPage.isSuccessMessageDisplayedforsubdisposition(), "Success message not displayed.");
+	        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.successMessage2));
+	        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+	        
+	     // Adding Second Sub-Disposition
+	        dispositionMasterPage.clickAddSubDispositionButton();
+	        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 
+	            // Retrieve the data for the second sub-disposition
+	            String actionowner2 = testdata.get("ActionOwnerforsubdisposition").toString(); // This may be the same or different
+	            String disposition2 = testdata.get("UpdateExistingName").toString(); // This may be the same or different
+	            String subdispositionname2 = testdata.get("Nameforsubdisposition2").toString(); // New sub-disposition name
+
+	            // Select an option from the Action Owner dropdown for the second sub-disposition
+	            dispositionMasterPage.selectsubdispositionActionOwner(actionowner2);
+
+	            // Enter required values for the second sub-disposition
+	            dispositionMasterPage.enterDisposition(disposition2);
+	            dispositionMasterPage.enterSubDisposition(subdispositionname2);
+	        }
+
+	        // Click on the Submit button for the second sub-disposition
+	        dispositionMasterPage.clickSubmit();
+	        Assert.assertTrue(dispositionMasterPage.isSuccessMessageDisplayedforsubdisposition(), "Success message not displayed.");
 	        ExtentTestManager.getTest().log(Status.PASS, "Popup closes and displays success message \"Saved successfully\". New sub disposition appears in the active sub disposition list");
 			 }
 		        catch (AssertionError | Exception e) {
@@ -1017,12 +1039,13 @@ public class AllScenarios_Disposition_masterModule {
 	    	try {
 	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.successMessage2));
+	    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 	    	dispositionMasterPage.clickAddSubDispositionButton();
 	    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 	    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
 				
 				String actionowner = testdata.get("ActionOwnerforsubdisposition").toString();
-				String disposition = testdata.get("Disposistionforsubdisposition").toString();
+				String disposition = testdata.get("UpdateExistingName").toString();
 				String subdispositionname = testdata.get("Nameforsubdisposition").toString();
 				
 				
@@ -1083,7 +1106,7 @@ public class AllScenarios_Disposition_masterModule {
 	    	try {
 	    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
 				
-	    		String subdispositionname = testdata.get("ExistingNameforsubdisposition").toString();
+	    		String subdispositionname = testdata.get("Nameforsubdisposition").toString();
 				
 	        // Preconditions: Ensure popup is open
 	    		dispositionMasterPage.openEditPopuptoupdate();
@@ -1163,7 +1186,7 @@ public class AllScenarios_Disposition_masterModule {
 	    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
 				
 				String actionowner = testdata.get("DeactivatedActionOwnerforsubdispositionSearch").toString();
-				String dispostion = testdata.get("DeactivatedDisposistionforsubdispositionSearch").toString();
+				String dispostion = testdata.get("UpdateExistingName").toString();
 	        // Step 1: Select Action owner as "Call centre"
 	    	dispositionMasterPage.selActionOwnerforsubdispositionsearch(actionowner);
 	    	
@@ -1221,7 +1244,7 @@ public class AllScenarios_Disposition_masterModule {
 	    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
 				
 	    		String actionowner = testdata.get("ActiveActionOwnerforsubdispositionSearch").toString();
-				String dispostion = testdata.get("ActiveDisposistionforsubdispositionSearch").toString();
+				String dispostion = testdata.get("UpdateExistingName").toString();
 	        // Step 1: Select Action owner as "Call centre"
 	    	dispositionMasterPage.selActionOwnerforactivesubdispositionsearch(actionowner);
 	    	
@@ -1286,6 +1309,11 @@ public class AllScenarios_Disposition_masterModule {
 	 @AfterSuite
 	 public void afterEachTest() {
 	     ExtentManager.getInstance().flush();
+	  // Close the browser
+	        if (driver != null) {
+	            driver.quit();
+	        }
 	 }
+
 }
 
