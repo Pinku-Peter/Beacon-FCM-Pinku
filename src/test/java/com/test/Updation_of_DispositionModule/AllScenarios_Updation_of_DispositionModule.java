@@ -153,7 +153,7 @@ public class AllScenarios_Updation_of_DispositionModule {
 	    	// Step 2: Retrieve the "Account Numbers" data from the test data
 	        String InvalidAccountNumber = testdata.get("InvalidAccountNumber").toString(); 
 	        
-	        updationofdispositionMasterPage.enterInvalidAccountNumber(InvalidAccountNumber);  
+	        updationofdispositionMasterPage.enterInvalidAccountNumber(InvalidAccountNumber);   
 	        
 	        updationofdispositionMasterPage.clickSearchButton();
 	        Assert.assertEquals(updationofdispositionMasterPage.getErrorMessage(), "Invalid Account Number");
@@ -193,7 +193,7 @@ public class AllScenarios_Updation_of_DispositionModule {
     public void Enter_invalid_Account_Number_which_is_user_not_assigned_branches_and_Search() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 		 try {
-		updationofdispositionMasterPage.enterinvalidAccountNumbernotassigned();
+		updationofdispositionMasterPage.enterinvalidAccountNumbernotassigned(); 
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		updationofdispositionMasterPage.clickSearchButton();
 		Assert.assertEquals(updationofdispositionMasterPage.getErrorMessageforinvalidAccountNumbernotassigned(), "You are not authorized to do the disposition of this account number");

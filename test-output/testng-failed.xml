@@ -9,7 +9,7 @@
           <include name="takeScreenshotOnFailure"/>
           <include name="afterEachTest"/>
           <include name="setupTest"/>
-          <include name="Search_with_Empty_Account_Number_Field"/>
+          <include name="Enter_Invalid_Account_Number_and_Search" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.test.Updation_of_DispositionModule.AllScenarios_Updation_of_DispositionModule -->
     </classes>

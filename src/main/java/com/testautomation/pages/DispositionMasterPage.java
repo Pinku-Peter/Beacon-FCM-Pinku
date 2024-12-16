@@ -718,6 +718,7 @@ public class DispositionMasterPage {
     }
     
     public boolean isActiveDispositionShown() {
+    	Common.fluentWait("Status icon list", DispositionMasterPageRepo.statusIconslist);
     	List<WebElement> statusIcons = driver.findElements(DispositionMasterPageRepo.statusIconslist);
 		for (WebElement icon : statusIcons) {
 			if (!icon.getAttribute("style").contains("color: green")) {

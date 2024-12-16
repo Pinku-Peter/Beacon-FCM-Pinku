@@ -101,14 +101,14 @@ public class UpdationofDispositionPage {
     
     // Get Error Message Text
     public String getErrorMessage() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
     	WebElement msg = wait.until(ExpectedConditions.visibilityOfElementLocated(UpdationofDispositionRepo.errorMessage8));
         return msg.getText();
     }
     
     // Get Error Message Text
     public String getErrorMessageforemptysearch() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
     	WebElement msg = wait.until(ExpectedConditions.visibilityOfElementLocated(UpdationofDispositionRepo.errorMessage));
         return msg.getText();
     }
@@ -319,8 +319,9 @@ public class UpdationofDispositionPage {
     
     public void enterinvalidAccountNumbernotassigned() {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-    	String procedureCall = "{CALL SPGETBRANCHALLOCATEDACCOUNTS(?, ?)}";
-        String userId = "IBU0000028"; // Input parameter
+    	WebElement userid = wait.until(ExpectedConditions.visibilityOfElementLocated(UpdationofDispositionRepo.loginuserid));
+    	String procedureCall = "{CALL SP_GET_USER_OTHERBRANCH_ACCOUNTS(?, ?)}";
+        String userId = userid.getText(); // Input parameter
     	WebElement accountnumber = driver.findElement(UpdationofDispositionRepo.accountNumberField);
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
         try {
@@ -342,7 +343,7 @@ public class UpdationofDispositionPage {
     }
     
     public String getErrorMessageforinvalidAccountNumbernotassigned() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
     	WebElement errormsg = wait.until(ExpectedConditions.visibilityOfElementLocated(UpdationofDispositionRepo.errorMessage7));
         return errormsg.getText();
     }

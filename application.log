@@ -1,20 +1,24 @@
-[INFO ] 2024-12-15 21:15:22.243 [main] Log - Driver has initialized successfully for chrome browser
-[INFO ] 2024-12-15 21:15:56.464 [main] Log - Title is displayed: BeaconICnRM
-[INFO ] 2024-12-15 21:15:56.756 [main] Log - Entered IBU0001196 in user name field
-[INFO ] 2024-12-15 21:15:56.892 [main] Log - Entered test@123 in password field
-[INFO ] 2024-12-15 21:15:57.006 [main] Log - Clicked on login button
-[INFO ] 2024-12-15 21:16:18.911 [main] Log - Module selection page not appeared
-[INFO ] 2024-12-15 21:16:24.039 [main] Log - UserID in Dashboard: IBU0001196
-[INFO ] 2024-12-15 21:16:24.720 [main] Log - Org Name: Ahmedabad, Org Type Name: Zone/CO
-[INFO ] 2024-12-15 21:16:25.758 [main] Log - UpdationofDispositionPage initialized.
-[INFO ] 2024-12-15 21:16:26.019 [main] Log - Clicking on the Disposition.
-[INFO ] 2024-12-15 21:16:26.107 [main] Log - Successfully clicked on the Disposition.
-[INFO ] 2024-12-15 21:16:26.127 [main] Log - Clicking on the Updation of Disposition.
-[INFO ] 2024-12-15 21:16:26.322 [main] Log - Successfully clicked on the Updation of Disposition.
-[INFO ] 2024-12-15 21:16:31.685 [main] Log - Should not possible to type Alphabets and special characters in account number field.
-[INFO ] 2024-12-15 21:16:31.799 [main] Log - Should not possible to type Alphabets and special characters in account number field.
-[INFO ] 2024-12-15 21:16:35.066 [main] Log - Entry is restricted to 25 characters.
-[INFO ] 2024-12-15 21:16:38.421 [main] Log - Account number entered successfully.
-[INFO ] 2024-12-15 21:17:53.141 [main] Log - Account number entered successfully.
-[INFO ] 2024-12-15 21:18:56.092 [main] Log - Account number entered successfully.
-[INFO ] 2024-12-15 21:21:39.108 [main] Log - Account number entered using the previously fetched value.
+[INFO ] 2024-12-16 17:47:31.357 [main] Log - Driver has initialized successfully for chrome browser
+[INFO ] 2024-12-16 17:48:23.372 [main] Log - Title is displayed: BeaconICnRM
+[INFO ] 2024-12-16 17:48:23.633 [main] Log - Entered IBU0001196 in user name field
+[INFO ] 2024-12-16 17:48:23.771 [main] Log - Entered test@123 in password field
+[INFO ] 2024-12-16 17:48:23.887 [main] Log - Clicked on login button
+[INFO ] 2024-12-16 17:48:30.298 [main] Log - Entered IBU0001196 in user name field
+[INFO ] 2024-12-16 17:48:30.420 [main] Log - Entered test@123 in password field
+[INFO ] 2024-12-16 17:48:30.514 [main] Log - Clicked on login button
+[INFO ] 2024-12-16 17:48:30.514 [main] Log - Clicked on already login yes button and logged in again with valid credentials
+[INFO ] 2024-12-16 17:48:32.448 [main] Log - Module selection page not appeared
+[INFO ] 2024-12-16 17:49:02.721 [main] Log - UserID in Dashboard: IBU0001196
+[INFO ] 2024-12-16 17:49:03.537 [main] Log - Org Name: Ahmedabad, Org Type Name: Zone/CO
+[INFO ] 2024-12-16 17:49:04.561 [main] Log - UpdationofDispositionPage initialized.
+[INFO ] 2024-12-16 17:49:04.751 [main] Log - Clicking on the Disposition.
+[INFO ] 2024-12-16 17:49:04.823 [main] Log - Successfully clicked on the Disposition.
+[INFO ] 2024-12-16 17:49:04.842 [main] Log - Clicking on the Updation of Disposition.
+[INFO ] 2024-12-16 17:49:05.019 [main] Log - Successfully clicked on the Updation of Disposition.
+[INFO ] 2024-12-16 17:49:24.933 [main] Log - Should not possible to type Alphabets and special characters in account number field.
+[INFO ] 2024-12-16 17:49:25.038 [main] Log - Should not possible to type Alphabets and special characters in account number field.
+[INFO ] 2024-12-16 17:49:28.255 [main] Log - Entry is restricted to 25 characters.
+[INFO ] 2024-12-16 17:49:31.597 [main] Log - Account number entered successfully.
+[INFO ] 2024-12-16 17:50:49.331 [main] Log - Account number entered successfully.
+[INFO ] 2024-12-16 17:51:47.417 [main] Log - Account number entered successfully.
+[INFO ] 2024-12-16 17:53:33.779 [main] Log - Account number entered using the previously fetched value.

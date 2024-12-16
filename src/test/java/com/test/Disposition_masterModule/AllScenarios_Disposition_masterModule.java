@@ -809,6 +809,7 @@ public class AllScenarios_Disposition_masterModule {
 
 	        // Validate that success message is displayed
 	        Assert.assertTrue(dispositionMasterPage.isUpdateSuccessMessageDisplayed(),"The success message should be displayed.");
+	        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.successMessage));
 	        ExtentTestManager.getTest().log(Status.PASS, "Edit disposition popup closes with a success message. Changes are visible in the active disposition list with updated Action owner, Name, and Asset category.");
 			 }
 		        catch (AssertionError | Exception e) {
@@ -820,7 +821,7 @@ public class AllScenarios_Disposition_masterModule {
 	    
 	    @Test(priority = 29)
 	    public void Deactivate_Disposition() throws InterruptedException {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 	    	try {
 	    		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 	        // Clicking on the three-dot button

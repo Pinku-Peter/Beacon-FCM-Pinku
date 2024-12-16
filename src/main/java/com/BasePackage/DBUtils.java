@@ -62,7 +62,7 @@ public class DBUtils {
             e.printStackTrace();
         }*/
         
-    	String procedureCall = "{CALL SPGETBRANCHALLOCATEDACCOUNTS(?, ?)}";
+    	String procedureCall = "{CALL SP_GET_USER_OTHERBRANCH_ACCOUNTS(?, ?)}";
         String userId = "IBU0001196"; // Input parameter
 
         try {
