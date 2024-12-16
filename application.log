@@ -1,18 +1,20 @@
-[INFO ] 2024-12-12 10:53:35.566 [main] Log - Driver has initialized successfully for chrome browser
-[INFO ] 2024-12-12 10:54:43.862 [main] Log - Title is displayed: BeaconICnRM
-[INFO ] 2024-12-12 10:54:44.302 [main] Log - Entered IBU0001196 in user name field
-[INFO ] 2024-12-12 10:54:44.443 [main] Log - Entered test@123 in password field
-[INFO ] 2024-12-12 10:54:44.550 [main] Log - Clicked on login button
-[INFO ] 2024-12-12 10:54:54.437 [main] Log - Entered IBU0001196 in user name field
-[INFO ] 2024-12-12 10:54:54.542 [main] Log - Entered test@123 in password field
-[INFO ] 2024-12-12 10:54:54.620 [main] Log - Clicked on login button
-[INFO ] 2024-12-12 10:54:54.620 [main] Log - Clicked on already login yes button and logged in again with valid credentials
-[INFO ] 2024-12-12 10:54:56.663 [main] Log - Module selection page not appeared
-[INFO ] 2024-12-12 10:55:31.758 [main] Log - UserID in Dashboard: IBU0001196
-[INFO ] 2024-12-12 10:55:32.988 [main] Log - Org Name: Ahmedabad, Org Type Name: Zone/CO
-[INFO ] 2024-12-12 10:55:34.201 [main] Log - DispositionMasterPage initialized.
-[INFO ] 2024-12-12 10:56:11.277 [main] Log - Opening the Action Owner dropdown.
-[INFO ] 2024-12-12 10:56:11.404 [main] Log - Selecting 'Call Centre' option.
-[INFO ] 2024-12-12 10:56:11.572 [main] Log - Selecting 'Collection Agency' option.
-[INFO ] 2024-12-12 10:56:11.665 [main] Log - Selecting 'Internal User' option.
-[INFO ] 2024-12-12 10:56:11.756 [main] Log - Action Owner options selected successfully.
+[INFO ] 2024-12-15 21:15:22.243 [main] Log - Driver has initialized successfully for chrome browser
+[INFO ] 2024-12-15 21:15:56.464 [main] Log - Title is displayed: BeaconICnRM
+[INFO ] 2024-12-15 21:15:56.756 [main] Log - Entered IBU0001196 in user name field
+[INFO ] 2024-12-15 21:15:56.892 [main] Log - Entered test@123 in password field
+[INFO ] 2024-12-15 21:15:57.006 [main] Log - Clicked on login button
+[INFO ] 2024-12-15 21:16:18.911 [main] Log - Module selection page not appeared
+[INFO ] 2024-12-15 21:16:24.039 [main] Log - UserID in Dashboard: IBU0001196
+[INFO ] 2024-12-15 21:16:24.720 [main] Log - Org Name: Ahmedabad, Org Type Name: Zone/CO
+[INFO ] 2024-12-15 21:16:25.758 [main] Log - UpdationofDispositionPage initialized.
+[INFO ] 2024-12-15 21:16:26.019 [main] Log - Clicking on the Disposition.
+[INFO ] 2024-12-15 21:16:26.107 [main] Log - Successfully clicked on the Disposition.
+[INFO ] 2024-12-15 21:16:26.127 [main] Log - Clicking on the Updation of Disposition.
+[INFO ] 2024-12-15 21:16:26.322 [main] Log - Successfully clicked on the Updation of Disposition.
+[INFO ] 2024-12-15 21:16:31.685 [main] Log - Should not possible to type Alphabets and special characters in account number field.
+[INFO ] 2024-12-15 21:16:31.799 [main] Log - Should not possible to type Alphabets and special characters in account number field.
+[INFO ] 2024-12-15 21:16:35.066 [main] Log - Entry is restricted to 25 characters.
+[INFO ] 2024-12-15 21:16:38.421 [main] Log - Account number entered successfully.
+[INFO ] 2024-12-15 21:17:53.141 [main] Log - Account number entered successfully.
+[INFO ] 2024-12-15 21:18:56.092 [main] Log - Account number entered successfully.
+[INFO ] 2024-12-15 21:21:39.108 [main] Log - Account number entered using the previously fetched value.

@@ -106,11 +106,13 @@
     <version>5.2.3</version>
 	</dependency>
 
+	<!--
 	<dependency>
 		<groupId>com.speridian</groupId>
 		<artifactId>O360-AI</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</dependency>
+	-->
 	
 	<dependency>
     <groupId>com.google.guava</groupId>

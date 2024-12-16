@@ -44,7 +44,7 @@ public class Login_Class extends Base_Class {
             }
 
             driver.manage().window().maximize();
-            driver.manage().deleteAllCookies();
+            //driver.manage().deleteAllCookies();
             //ExtentTestManager.getTest().log(Status.INFO, Browser + " opened successfully!");
             Log.info("Driver has initialized successfully for " + Browser + " browser");
 
