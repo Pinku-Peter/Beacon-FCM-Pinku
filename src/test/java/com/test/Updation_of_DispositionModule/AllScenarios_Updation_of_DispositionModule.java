@@ -71,6 +71,8 @@ public class AllScenarios_Updation_of_DispositionModule {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 		try {
 		updationofdispositionMasterPage.navigateToUpdationOfDisposition();
+		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the 'Disposition' main menu.");
+		ExtentTestManager.getTest().log(Status.PASS, "Selected the 'Updation of Disposition' menu.");
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		// Find the account number field element
 	    WebElement accountNumberField = driver.findElement(UpdationofDispositionRepo.accountNumberField);
@@ -154,8 +156,9 @@ public class AllScenarios_Updation_of_DispositionModule {
 	        String InvalidAccountNumber = testdata.get("InvalidAccountNumber").toString(); 
 	        
 	        updationofdispositionMasterPage.enterInvalidAccountNumber(InvalidAccountNumber);   
-	        
+	        ExtentTestManager.getTest().log(Status.PASS, "Entered an invalid account number like 1231232123123213123123123.");
 	        updationofdispositionMasterPage.clickSearchButton();
+	        ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Search button.");
 	        Assert.assertEquals(updationofdispositionMasterPage.getErrorMessage(), "Invalid Account Number");
 	    }
         ExtentTestManager.getTest().log(Status.PASS, "An error message is displayed \"Invalid account number\".");
@@ -175,7 +178,9 @@ public class AllScenarios_Updation_of_DispositionModule {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 	 try {
 		 	updationofdispositionMasterPage.withoutAccountNumber();
+		 	ExtentTestManager.getTest().log(Status.PASS, "Left the Account Number field empty.");
 	        updationofdispositionMasterPage.clickSearchButton();
+	        ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Search button.");
 	        Assert.assertEquals(updationofdispositionMasterPage.getErrorMessageforemptysearch(), "Invalid account number.");
 	    
         ExtentTestManager.getTest().log(Status.PASS, "An error message is displayed \"Invalid account number\".");
@@ -194,8 +199,11 @@ public class AllScenarios_Updation_of_DispositionModule {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 		 try {
 		updationofdispositionMasterPage.enterinvalidAccountNumbernotassigned(); 
+		ExtentTestManager.getTest().log(Status.PASS, "Executed the Oracle SQL stored procedure to fetch another branch's valid account number.");
+		ExtentTestManager.getTest().log(Status.PASS, "Entered the account number in the account number field.");
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		updationofdispositionMasterPage.clickSearchButton();
+		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Search button.");
 		Assert.assertEquals(updationofdispositionMasterPage.getErrorMessageforinvalidAccountNumbernotassigned(), "You are not authorized to do the disposition of this account number");
         ExtentTestManager.getTest().log(Status.PASS, "Should display error message \"You are not authorized to do the disposition of this account number.\"");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(UpdationofDispositionRepo.errorMessage7));
@@ -213,8 +221,11 @@ public class AllScenarios_Updation_of_DispositionModule {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 		 try {
 		updationofdispositionMasterPage.entervalidAccountNumber();
+		ExtentTestManager.getTest().log(Status.PASS, "Executed the Oracle SQL stored procedure to fetch a valid account number.");
+		ExtentTestManager.getTest().log(Status.PASS, "Entered the account number in the account number field.");
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		updationofdispositionMasterPage.clickSearchButton();
+		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Search button.");
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(UpdationofDispositionRepo.customername));
         Assert.assertTrue(driver.getPageSource().contains("cardsheadings"));
@@ -232,6 +243,7 @@ public class AllScenarios_Updation_of_DispositionModule {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 		 try {
 		updationofdispositionMasterPage.clickSaveButton();
+		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Save button without selecting any values in Next Action Owner, Disposition, Sub Disposition, Next Action Date, and without entering Remarks.");
         Assert.assertEquals(updationofdispositionMasterPage.getErrorMessagewithoutvalue(), "Please Enter All Fields In The Interaction Details");
         ExtentTestManager.getTest().log(Status.PASS, "Error message \"Please Enter All Fields In The Interaction Details\" is displayed.");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(UpdationofDispositionRepo.errorMessage2));
@@ -253,7 +265,10 @@ public class AllScenarios_Updation_of_DispositionModule {
 		    	// Step 2: Retrieve the "Action Onwer" data from the test data
 		        String Actionowner = testdata.get("ActionOwner").toString();
 		        updationofdispositionMasterPage.selectNextActionOwner(Actionowner);
+		        ExtentTestManager.getTest().log(Status.PASS, "Selected \"Internal User\" as the Next Action Owner");
+		        ExtentTestManager.getTest().log(Status.PASS, "left Disposition, Sub Disposition, Next Action Date, and Remarks empty");
 		        updationofdispositionMasterPage.clickSaveButton();
+		        ExtentTestManager.getTest().log(Status.PASS, "clicked on the Save button.");
 		 }
 	        Assert.assertEquals(updationofdispositionMasterPage.getErrorMessageafterenteronlyactionowner(), "Select Disposition");
 	        ExtentTestManager.getTest().log(Status.PASS, "Error message \"Select Disposition\" is displayed");
@@ -275,7 +290,11 @@ public class AllScenarios_Updation_of_DispositionModule {
 			 String disposition = testdata.get("Disposition").toString();
 			 
 			 updationofdispositionMasterPage.selectDisposition(disposition);
+			 ExtentTestManager.getTest().log(Status.PASS, "Selected \"Internal User\" as the Next Action Owner");
+			 ExtentTestManager.getTest().log(Status.PASS, "selected \"Direct call\" as the Disposition");
+			 ExtentTestManager.getTest().log(Status.PASS, "left Sub Disposition, Next Action Date, and Remarks empty");
 		        updationofdispositionMasterPage.clickSaveButton();
+		        ExtentTestManager.getTest().log(Status.PASS, "clicked on the Save button.");
 		 }
 		 Assert.assertEquals(updationofdispositionMasterPage.getErrorMessageafterenterdisposition(), "Select Sub Disposition");
 		 ExtentTestManager.getTest().log(Status.PASS, "Error message \"Select Sub Disposition\" is displayed");
@@ -297,7 +316,12 @@ public class AllScenarios_Updation_of_DispositionModule {
 			 String subdisposition = testdata.get("Subdisposition").toString();
 			 
 			 updationofdispositionMasterPage.selectsubDisposition(subdisposition);
+			 ExtentTestManager.getTest().log(Status.PASS, "Selected \"Internal User\" as the Next Action Owner");
+			 ExtentTestManager.getTest().log(Status.PASS, "selected \"Direct call\" as the Disposition");
+			 ExtentTestManager.getTest().log(Status.PASS, "selected \"Mobile\" as the Sub Disposition");
+			 ExtentTestManager.getTest().log(Status.PASS, "left Next Action Date and Remarks empty");
 		        updationofdispositionMasterPage.clickSaveButton();
+		        ExtentTestManager.getTest().log(Status.PASS, "clicked on the Save button");
 		 }
 		 Assert.assertEquals(updationofdispositionMasterPage.getErrorMessageafterentersubdisposition(), "Select Next Action Date");
 		 ExtentTestManager.getTest().log(Status.PASS, "Error message \"Select Next action date\" is displayed");
@@ -319,7 +343,13 @@ public class AllScenarios_Updation_of_DispositionModule {
 			 String date = testdata.get("Date").toString(); 
 			 
 			 updationofdispositionMasterPage.enterNextActionDate(date);
+			 ExtentTestManager.getTest().log(Status.PASS, "Selected \"Internal User\" as the Next Action Owner");
+			 ExtentTestManager.getTest().log(Status.PASS, "selected \"Direct call\" as the Disposition");
+			 ExtentTestManager.getTest().log(Status.PASS, "selected \"Mobile\" as the Sub Disposition");
+			 ExtentTestManager.getTest().log(Status.PASS, "selected a date for the Next Action Date");
+			 ExtentTestManager.getTest().log(Status.PASS, "left Remarks empty");
 		        updationofdispositionMasterPage.clickSaveButton();
+		        ExtentTestManager.getTest().log(Status.PASS, "clicked on the Save button");
 		 }
 		 Assert.assertEquals(updationofdispositionMasterPage.getErrorMessageafterenterdate(), "Remarks is required");
 		 ExtentTestManager.getTest().log(Status.PASS, "Error message \"Remark is required\" is displayed");
@@ -341,7 +371,14 @@ public class AllScenarios_Updation_of_DispositionModule {
 			 String remarks = testdata.get("Remarks").toString(); 
 			  
 			 updationofdispositionMasterPage.enterRemarks(remarks);
+			 ExtentTestManager.getTest().log(Status.PASS, "Selected \"Internal User\" as the Next Action Owner");
+			 ExtentTestManager.getTest().log(Status.PASS, "selected \"Direct call\" as the Disposition");
+			 ExtentTestManager.getTest().log(Status.PASS, "selected \"Mobile\" as the Sub Disposition");
+			 ExtentTestManager.getTest().log(Status.PASS, "selected a date for the Next Action Date");
+			 ExtentTestManager.getTest().log(Status.PASS, "entered \"test remarks\" in the Remarks field");
 		        updationofdispositionMasterPage.clickSaveButton();
+		        ExtentTestManager.getTest().log(Status.PASS, "clicked on Save");
+		        ExtentTestManager.getTest().log(Status.PASS, "clicked on the close button on the Deviation Request pop-up.");
 		 }
 		 Assert.assertTrue(updationofdispositionMasterPage.isSuccessMessageDisplayed(), "Success message not displayed");
 		 ExtentTestManager.getTest().log(Status.PASS, "Message \"Saved successfully\" is displayed");
@@ -383,6 +420,7 @@ public class AllScenarios_Updation_of_DispositionModule {
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		 updationofdispositionMasterPage.clickSearchButton();
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+		 ExtentTestManager.getTest().log(Status.PASS, "Navigated to the \"History Of Interaction Details\" area.");
 		 wait.until(ExpectedConditions.visibilityOfElementLocated(UpdationofDispositionRepo.transactiondetails));
 		 Assert.assertTrue(updationofdispositionMasterPage.isTransactionDisplayedWithExpectedDetails(formattedDate,Actionowner), 
                  "The newly added interaction details are not displayed as expected.");

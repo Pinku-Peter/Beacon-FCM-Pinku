@@ -1,24 +1,223 @@
-[INFO ] 2024-12-16 17:47:31.357 [main] Log - Driver has initialized successfully for chrome browser
-[INFO ] 2024-12-16 17:48:23.372 [main] Log - Title is displayed: BeaconICnRM
-[INFO ] 2024-12-16 17:48:23.633 [main] Log - Entered IBU0001196 in user name field
-[INFO ] 2024-12-16 17:48:23.771 [main] Log - Entered test@123 in password field
-[INFO ] 2024-12-16 17:48:23.887 [main] Log - Clicked on login button
-[INFO ] 2024-12-16 17:48:30.298 [main] Log - Entered IBU0001196 in user name field
-[INFO ] 2024-12-16 17:48:30.420 [main] Log - Entered test@123 in password field
-[INFO ] 2024-12-16 17:48:30.514 [main] Log - Clicked on login button
-[INFO ] 2024-12-16 17:48:30.514 [main] Log - Clicked on already login yes button and logged in again with valid credentials
-[INFO ] 2024-12-16 17:48:32.448 [main] Log - Module selection page not appeared
-[INFO ] 2024-12-16 17:49:02.721 [main] Log - UserID in Dashboard: IBU0001196
-[INFO ] 2024-12-16 17:49:03.537 [main] Log - Org Name: Ahmedabad, Org Type Name: Zone/CO
-[INFO ] 2024-12-16 17:49:04.561 [main] Log - UpdationofDispositionPage initialized.
-[INFO ] 2024-12-16 17:49:04.751 [main] Log - Clicking on the Disposition.
-[INFO ] 2024-12-16 17:49:04.823 [main] Log - Successfully clicked on the Disposition.
-[INFO ] 2024-12-16 17:49:04.842 [main] Log - Clicking on the Updation of Disposition.
-[INFO ] 2024-12-16 17:49:05.019 [main] Log - Successfully clicked on the Updation of Disposition.
-[INFO ] 2024-12-16 17:49:24.933 [main] Log - Should not possible to type Alphabets and special characters in account number field.
-[INFO ] 2024-12-16 17:49:25.038 [main] Log - Should not possible to type Alphabets and special characters in account number field.
-[INFO ] 2024-12-16 17:49:28.255 [main] Log - Entry is restricted to 25 characters.
-[INFO ] 2024-12-16 17:49:31.597 [main] Log - Account number entered successfully.
-[INFO ] 2024-12-16 17:50:49.331 [main] Log - Account number entered successfully.
-[INFO ] 2024-12-16 17:51:47.417 [main] Log - Account number entered successfully.
-[INFO ] 2024-12-16 17:53:33.779 [main] Log - Account number entered using the previously fetched value.
+[INFO ] 2024-12-16 20:41:03.510 [main] Log - Driver has initialized successfully for chrome browser
+[INFO ] 2024-12-16 20:43:42.681 [main] Log - Title is displayed: BeaconICnRM
+[INFO ] 2024-12-16 20:43:43.438 [main] Log - Entered IBU0001196 in user name field
+[INFO ] 2024-12-16 20:43:43.830 [main] Log - Entered test@123 in password field
+[INFO ] 2024-12-16 20:43:44.037 [main] Log - Clicked on login button
+[INFO ] 2024-12-16 20:43:55.735 [main] Log - Entered IBU0001196 in user name field
+[INFO ] 2024-12-16 20:43:55.992 [main] Log - Entered test@123 in password field
+[INFO ] 2024-12-16 20:43:56.202 [main] Log - Clicked on login button
+[INFO ] 2024-12-16 20:43:56.202 [main] Log - Clicked on already login yes button and logged in again with valid credentials
+[INFO ] 2024-12-16 20:44:00.092 [main] Log - Module selection page not appeared
+[INFO ] 2024-12-16 20:44:35.181 [main] Log - UserID in Dashboard: IBU0001196
+[INFO ] 2024-12-16 20:44:38.895 [main] Log - Org Name: Ahmedabad, Org Type Name: Zone/CO
+[INFO ] 2024-12-16 20:44:48.598 [main] Log - UpdationofDispositionPage initialized.
+[INFO ] 2024-12-16 20:44:49.020 [main] Log - Method navigateToUpdationOfDisposition started.
+[INFO ] 2024-12-16 20:44:49.020 [main] Log - Locating Disposition menu.
+[INFO ] 2024-12-16 20:44:49.057 [main] Log - Clicking on Disposition menu.
+[INFO ] 2024-12-16 20:44:49.241 [main] Log - Locating Updation of Disposition menu.
+[INFO ] 2024-12-16 20:44:49.280 [main] Log - Clicking on the Updation of Disposition.
+[INFO ] 2024-12-16 20:44:49.656 [main] Log - Successfully navigated to the Updation of Disposition screen.
+[INFO ] 2024-12-16 20:44:49.657 [main] Log - Method navigateToUpdationOfDisposition completed.
+[INFO ] 2024-12-16 20:44:56.187 [main] Log - Starting to enter account number.
+[INFO ] 2024-12-16 20:44:56.187 [main] Log - Locating the account number field.
+[INFO ] 2024-12-16 20:44:56.207 [main] Log - Clearing the account number field.
+[INFO ] 2024-12-16 20:44:56.284 [main] Log - Entering the account number: abcdefgh
+[INFO ] 2024-12-16 20:44:56.473 [main] Log - Verifying the entered account number.
+[ERROR] 2024-12-16 20:44:56.547 [main] Log - Failed to enter the account number. Either invalid input or a problem with the field.
+[ERROR] 2024-12-16 20:44:56.548 [main] Log - Should not allow typing alphabets or special characters in the account number field.
+[INFO ] 2024-12-16 20:44:56.549 [main] Log - Finished entering account number.
+[INFO ] 2024-12-16 20:44:56.549 [main] Log - Starting to enter account number.
+[INFO ] 2024-12-16 20:44:56.550 [main] Log - Locating the account number field.
+[INFO ] 2024-12-16 20:44:56.597 [main] Log - Clearing the account number field.
+[INFO ] 2024-12-16 20:44:56.730 [main] Log - Entering the account number: !@#$%^&*()
+[INFO ] 2024-12-16 20:44:56.891 [main] Log - Verifying the entered account number.
+[ERROR] 2024-12-16 20:44:56.946 [main] Log - Failed to enter the account number. Either invalid input or a problem with the field.
+[ERROR] 2024-12-16 20:44:56.948 [main] Log - Should not allow typing alphabets or special characters in the account number field.
+[INFO ] 2024-12-16 20:44:56.948 [main] Log - Finished entering account number.
+[INFO ] 2024-12-16 20:45:00.212 [main] Log - Starting to interact with the Account Number field.
+[INFO ] 2024-12-16 20:45:00.213 [main] Log - Attempting to locate the Account Number field.
+[INFO ] 2024-12-16 20:45:00.231 [main] Log - Successfully located the Account Number field.
+[INFO ] 2024-12-16 20:45:00.231 [main] Log - Clearing any existing value in the Account Number field.
+[INFO ] 2024-12-16 20:45:00.280 [main] Log - Successfully cleared the Account Number field.
+[INFO ] 2024-12-16 20:45:00.282 [main] Log - Entering the account number: 12345678901234500000000000000
+[INFO ] 2024-12-16 20:45:00.720 [main] Log - Successfully entered the account number.
+[INFO ] 2024-12-16 20:45:00.721 [main] Log - Validating the entered account number.
+[ERROR] 2024-12-16 20:45:00.743 [main] Log - Failed to enter the account number. Entry might be restricted to 25 characters.
+[INFO ] 2024-12-16 20:45:00.744 [main] Log - Completed interaction with the Account Number field.
+[INFO ] 2024-12-16 20:45:04.019 [main] Log - Starting the process of entering an invalid account number.
+[INFO ] 2024-12-16 20:45:04.020 [main] Log - Attempting to locate the Account Number field.
+[INFO ] 2024-12-16 20:45:04.046 [main] Log - Successfully located the Account Number field.
+[INFO ] 2024-12-16 20:45:04.047 [main] Log - Clearing the existing value in the Account Number field.
+[INFO ] 2024-12-16 20:45:04.124 [main] Log - Successfully cleared the Account Number field.
+[INFO ] 2024-12-16 20:45:04.206 [main] Log - Entering the invalid account number: 1231232123123210000000000
+[INFO ] 2024-12-16 20:45:04.762 [main] Log - Successfully entered the invalid account number.
+[INFO ] 2024-12-16 20:45:04.762 [main] Log - Validating the entered account number.
+[INFO ] 2024-12-16 20:45:04.794 [main] Log - Account number entered successfully.
+[INFO ] 2024-12-16 20:45:04.794 [main] Log - Completed the process of entering an invalid account number.
+[INFO ] 2024-12-16 20:45:04.795 [main] Log - Starting the process to click the Search button.
+[INFO ] 2024-12-16 20:45:04.796 [main] Log - Attempting to locate the Search button.
+[INFO ] 2024-12-16 20:45:04.834 [main] Log - Successfully located the Search button.
+[INFO ] 2024-12-16 20:45:04.835 [main] Log - Attempting to click the Search button.
+[INFO ] 2024-12-16 20:45:05.238 [main] Log - Successfully clicked the Search button.
+[INFO ] 2024-12-16 20:45:05.239 [main] Log - Completed the process of interacting with the Search button.
+[INFO ] 2024-12-16 20:45:05.240 [main] Log - Starting the process to retrieve the error message.
+[INFO ] 2024-12-16 20:45:46.823 [main] Log - Error message element is now visible.
+[INFO ] 2024-12-16 20:45:46.824 [main] Log - Attempting to retrieve the error message text.
+[INFO ] 2024-12-16 20:45:46.883 [main] Log - Successfully retrieved the error message: Invalid Account Number
+[INFO ] 2024-12-16 20:45:46.884 [main] Log - Completed the process to retrieve the error message.
+[INFO ] 2024-12-16 20:45:54.667 [main] Log - Starting the process to clear the Account Number field without entering a value.
+[INFO ] 2024-12-16 20:45:54.668 [main] Log - Attempting to locate the Account Number field.
+[INFO ] 2024-12-16 20:45:54.715 [main] Log - Successfully located the Account Number field.
+[INFO ] 2024-12-16 20:45:54.715 [main] Log - Clearing any existing value in the Account Number field.
+[INFO ] 2024-12-16 20:45:54.889 [main] Log - Successfully cleared the Account Number field.
+[INFO ] 2024-12-16 20:45:55.014 [main] Log - Completed the process of clearing the Account Number field without entering a value.
+[INFO ] 2024-12-16 20:45:55.016 [main] Log - Starting the process to click the Search button.
+[INFO ] 2024-12-16 20:45:55.017 [main] Log - Attempting to locate the Search button.
+[INFO ] 2024-12-16 20:45:55.050 [main] Log - Successfully located the Search button.
+[INFO ] 2024-12-16 20:45:55.051 [main] Log - Attempting to click the Search button.
+[INFO ] 2024-12-16 20:45:55.435 [main] Log - Successfully clicked the Search button.
+[INFO ] 2024-12-16 20:45:55.435 [main] Log - Completed the process of interacting with the Search button.
+[INFO ] 2024-12-16 20:45:55.437 [main] Log - Starting the process to retrieve the error message for an empty search.
+[INFO ] 2024-12-16 20:45:55.438 [main] Log - Waiting for the error message element to become visible.
+[INFO ] 2024-12-16 20:46:16.286 [main] Log - Error message element is now visible.
+[INFO ] 2024-12-16 20:46:16.287 [main] Log - Attempting to retrieve the error message text.
+[INFO ] 2024-12-16 20:46:16.324 [main] Log - Successfully retrieved the error message: Invalid account number.
+[INFO ] 2024-12-16 20:46:16.325 [main] Log - Completed the process to retrieve the error message for an empty search.
+[INFO ] 2024-12-16 20:46:24.153 [main] Log - Fetching the user ID from the page...
+[INFO ] 2024-12-16 20:46:24.309 [main] Log - User ID fetched: IBU0001196
+[INFO ] 2024-12-16 20:46:24.416 [main] Log - Calling stored procedure to fetch account numbers for user: IBU0001196
+[INFO ] 2024-12-16 20:46:27.695 [main] Log - Fetched Account Numbers: 1109004406001714
+[INFO ] 2024-12-16 20:46:27.696 [main] Log - Entering the account number into the field...
+[INFO ] 2024-12-16 20:46:28.336 [main] Log - Verifying if the account number is entered correctly...
+[INFO ] 2024-12-16 20:46:28.382 [main] Log - Account number entered successfully: 1109004406001714
+[INFO ] 2024-12-16 20:46:28.497 [main] Log - Starting the process to click the Search button.
+[INFO ] 2024-12-16 20:46:28.498 [main] Log - Attempting to locate the Search button.
+[INFO ] 2024-12-16 20:46:28.537 [main] Log - Successfully located the Search button.
+[INFO ] 2024-12-16 20:46:28.538 [main] Log - Attempting to click the Search button.
+[INFO ] 2024-12-16 20:46:28.910 [main] Log - Successfully clicked the Search button.
+[INFO ] 2024-12-16 20:46:28.911 [main] Log - Completed the process of interacting with the Search button.
+[INFO ] 2024-12-16 20:46:28.913 [main] Log - Starting to retrieve the error message for invalid account number...
+[INFO ] 2024-12-16 20:46:28.913 [main] Log - Waiting for the error message element to become visible...
+[INFO ] 2024-12-16 20:47:42.774 [main] Log - Error message element is visible. Retrieving the message...
+[INFO ] 2024-12-16 20:47:42.831 [main] Log - Retrieved error message: You are not authorized to do the disposition of this account number
+[INFO ] 2024-12-16 20:47:51.249 [main] Log - Starting the process to retrieve and enter a valid account number.
+[INFO ] 2024-12-16 20:47:51.400 [main] Log - Retrieved user ID: IBU0001196
+[INFO ] 2024-12-16 20:47:51.448 [main] Log - Waiting for any spinner to disappear before proceeding with account number entry.
+[INFO ] 2024-12-16 20:47:51.523 [main] Log - Calling stored procedure to fetch branch allocated accounts.
+[INFO ] 2024-12-16 20:47:53.779 [main] Log - Fetched user branch account numbers: 1109004405968445
+[INFO ] 2024-12-16 20:47:53.780 [main] Log - Clearing the account number field before entering the new value.
+[INFO ] 2024-12-16 20:47:53.978 [main] Log - Waiting for any spinner to disappear before entering the account number.
+[INFO ] 2024-12-16 20:47:54.080 [main] Log - Entering the account number into the field.
+[INFO ] 2024-12-16 20:47:54.663 [main] Log - Account number entered successfully: 1109004405968445
+[INFO ] 2024-12-16 20:47:54.663 [main] Log - Completed the process of entering the account number.
+[INFO ] 2024-12-16 20:47:54.736 [main] Log - Starting the process to click the Search button.
+[INFO ] 2024-12-16 20:47:54.736 [main] Log - Attempting to locate the Search button.
+[INFO ] 2024-12-16 20:47:54.821 [main] Log - Successfully located the Search button.
+[INFO ] 2024-12-16 20:47:54.822 [main] Log - Attempting to click the Search button.
+[INFO ] 2024-12-16 20:47:55.209 [main] Log - Successfully clicked the Search button.
+[INFO ] 2024-12-16 20:47:55.210 [main] Log - Completed the process of interacting with the Search button.
+[INFO ] 2024-12-16 20:48:50.498 [main] Log - Starting to retrieve the error message without a value.
+[INFO ] 2024-12-16 20:48:50.499 [main] Log - Waiting for the error message element to be visible.
+[INFO ] 2024-12-16 20:48:50.561 [main] Log - Error message element is now visible. Retrieving the error message text.
+[INFO ] 2024-12-16 20:48:50.592 [main] Log - Retrieved error message: Please Enter All Fields In The Interaction Details
+[INFO ] 2024-12-16 20:48:56.110 [main] Log - Starting the process to select the next action owner.
+[INFO ] 2024-12-16 20:48:56.111 [main] Log - Waiting for the spinner to disappear before interacting with the dropdown.
+[INFO ] 2024-12-16 20:48:56.183 [main] Log - Spinner is invisible, proceeding to select the next action owner.
+[INFO ] 2024-12-16 20:48:56.209 [main] Log - Clicking on the next action owner dropdown.
+[INFO ] 2024-12-16 20:48:56.494 [main] Log - Next action owner dropdown clicked.
+[INFO ] 2024-12-16 20:48:56.495 [main] Log - Waiting for the option 'Internal User' to be visible in the dropdown.
+[INFO ] 2024-12-16 20:48:56.558 [main] Log - Option 'Internal User' is visible, clicking on it.
+[INFO ] 2024-12-16 20:48:56.959 [main] Log - Selected 'Internal User' as the next action owner.
+[INFO ] 2024-12-16 20:48:57.395 [main] Log - Starting the process to retrieve the error message after entering only the action owner.
+[INFO ] 2024-12-16 20:48:57.396 [main] Log - Waiting for the error message element to be visible.
+[INFO ] 2024-12-16 20:48:57.454 [main] Log - Error message element is visible.
+[INFO ] 2024-12-16 20:48:57.476 [main] Log - Error message retrieved: Select Disposition
+[INFO ] 2024-12-16 20:49:02.531 [main] Log - Starting the process to select disposition.
+[INFO ] 2024-12-16 20:49:02.532 [main] Log - Waiting for the spinner to disappear before accessing the disposition dropdown.
+[INFO ] 2024-12-16 20:49:02.610 [main] Log - Spinner disappeared, now interacting with disposition dropdown.
+[INFO ] 2024-12-16 20:49:02.657 [main] Log - Clicking on the disposition dropdown.
+[INFO ] 2024-12-16 20:49:03.041 [main] Log - Disposition dropdown clicked.
+[INFO ] 2024-12-16 20:49:03.041 [main] Log - Waiting for the spinner to disappear after opening the dropdown.
+[INFO ] 2024-12-16 20:49:03.119 [main] Log - Spinner disappeared, now selecting the disposition value.
+[INFO ] 2024-12-16 20:49:03.188 [main] Log - Found the disposition value: My bank, now clicking on it.
+[INFO ] 2024-12-16 20:49:03.702 [main] Log - Disposition value selected.
+[INFO ] 2024-12-16 20:49:03.702 [main] Log - Waiting for the spinner to disappear after selecting the disposition.
+[INFO ] 2024-12-16 20:49:14.351 [main] Log - Spinner disappeared, disposition selection process completed.
+[INFO ] 2024-12-16 20:49:14.715 [main] Log - Starting to retrieve error message after entering disposition.
+[INFO ] 2024-12-16 20:49:14.715 [main] Log - Waiting for the error message element to become visible.
+[INFO ] 2024-12-16 20:49:14.777 [main] Log - Error message element is now visible.
+[INFO ] 2024-12-16 20:49:14.802 [main] Log - Retrieved the error message text: Select Sub Disposition
+[INFO ] 2024-12-16 20:49:19.816 [main] Log - Starting to select the sub-disposition: android
+[INFO ] 2024-12-16 20:49:19.817 [main] Log - Waiting for the spinner to disappear.
+[INFO ] 2024-12-16 20:49:19.894 [main] Log - Spinner is no longer visible.
+[INFO ] 2024-12-16 20:49:19.943 [main] Log - Clicking on the sub-disposition dropdown.
+[INFO ] 2024-12-16 20:49:20.198 [main] Log - Sub-disposition dropdown clicked.
+[INFO ] 2024-12-16 20:49:20.257 [main] Log - Waiting for the spinner to disappear after clicking the dropdown.
+[INFO ] 2024-12-16 20:49:20.320 [main] Log - Sub-disposition value 'android' is now visible. Clicking the value.
+[INFO ] 2024-12-16 20:49:20.882 [main] Log - Sub-disposition value 'android' selected.
+[INFO ] 2024-12-16 20:49:20.968 [main] Log - Spinner is no longer visible after selecting the sub-disposition.
+[INFO ] 2024-12-16 20:49:21.616 [main] Log - Starting to get the error message after entering sub-disposition.
+[INFO ] 2024-12-16 20:49:21.617 [main] Log - Waiting for the error message element to be visible.
+[INFO ] 2024-12-16 20:49:21.675 [main] Log - Error message element is visible.
+[INFO ] 2024-12-16 20:49:21.702 [main] Log - Error message retrieved: Select Next Action Date
+[INFO ] 2024-12-16 20:49:26.673 [main] Log - Starting to enter the next action date: 18
+[INFO ] 2024-12-16 20:49:26.674 [main] Log - Waiting for the spinner to disappear before interacting with the datepicker.
+[INFO ] 2024-12-16 20:49:26.753 [main] Log - Spinner disappeared. Proceeding with datepicker interaction.
+[INFO ] 2024-12-16 20:49:26.804 [main] Log - Clicking on the datepicker.
+[INFO ] 2024-12-16 20:49:27.242 [main] Log - Spinner disappeared. Proceeding with selecting the date.
+[INFO ] 2024-12-16 20:49:27.366 [main] Log - Selecting the day: 18
+[INFO ] 2024-12-16 20:49:28.148 [main] Log - Date selected successfully: 18
+[INFO ] 2024-12-16 20:49:28.576 [main] Log - Starting to retrieve the error message after entering the date.
+[INFO ] 2024-12-16 20:49:28.576 [main] Log - Waiting for the spinner to disappear before closing the popup.
+[INFO ] 2024-12-16 20:49:56.622 [main] Log - Spinner disappeared. Proceeding to close the popup.
+[INFO ] 2024-12-16 20:49:56.755 [main] Log - Clicking the close button on the popup.
+[INFO ] 2024-12-16 20:50:07.208 [main] Log - Popup closed successfully, waiting for the spinner to disappear again.
+[INFO ] 2024-12-16 20:50:07.302 [main] Log - Retrieving the error message after entering the date.
+[INFO ] 2024-12-16 20:50:07.339 [main] Log - Error message retrieved: Remarks is required
+[INFO ] 2024-12-16 20:50:12.296 [main] Log - Starting to enter remarks.
+[INFO ] 2024-12-16 20:50:12.299 [main] Log - Waiting for the spinner to disappear before interacting with the remarks field.
+[INFO ] 2024-12-16 20:50:12.386 [main] Log - Spinner disappeared. Proceeding to click on the remarks field.
+[INFO ] 2024-12-16 20:50:12.443 [main] Log - Clicking on the remarks field.
+[INFO ] 2024-12-16 20:50:12.788 [main] Log - Spinner disappeared after clicking remarks field. Proceeding to enter remarks.
+[INFO ] 2024-12-16 20:50:13.025 [main] Log - Entered remarks: test
+[INFO ] 2024-12-16 20:50:13.105 [main] Log - Spinner disappeared after entering remarks.
+[INFO ] 2024-12-16 20:50:13.849 [main] Log - Starting to check for success message display.
+[INFO ] 2024-12-16 20:50:13.849 [main] Log - Waiting for the spinner to disappear before proceeding.
+[INFO ] 2024-12-16 20:50:25.482 [main] Log - Spinner disappeared. Proceeding to close the popup if present.
+[INFO ] 2024-12-16 20:50:25.585 [main] Log - Clicking on the popup close button.
+[INFO ] 2024-12-16 20:50:36.699 [main] Log - Spinner disappeared after closing the popup. Proceeding to check for success message.
+[INFO ] 2024-12-16 20:50:36.746 [main] Log - Checking visibility of the success message.
+[INFO ] 2024-12-16 20:50:36.766 [main] Log - Success message is displayed.
+[INFO ] 2024-12-16 20:50:45.393 [main] Log - Starting to enter the account number.
+[INFO ] 2024-12-16 20:50:45.394 [main] Log - Locating the account number field on the page.
+[INFO ] 2024-12-16 20:50:45.443 [main] Log - Account number field located.
+[INFO ] 2024-12-16 20:50:45.444 [main] Log - Clearing any existing value in the account number field.
+[INFO ] 2024-12-16 20:50:45.572 [main] Log - Existing value cleared.
+[INFO ] 2024-12-16 20:50:45.573 [main] Log - Entering the fetched account number.
+[INFO ] 2024-12-16 20:50:46.191 [main] Log - Account number entered successfully using the previously fetched value.
+[INFO ] 2024-12-16 20:50:46.298 [main] Log - Starting the process to click the Search button.
+[INFO ] 2024-12-16 20:50:46.299 [main] Log - Attempting to locate the Search button.
+[INFO ] 2024-12-16 20:50:46.343 [main] Log - Successfully located the Search button.
+[INFO ] 2024-12-16 20:50:46.344 [main] Log - Attempting to click the Search button.
+[INFO ] 2024-12-16 20:50:46.685 [main] Log - Successfully clicked the Search button.
+[INFO ] 2024-12-16 20:50:46.686 [main] Log - Completed the process of interacting with the Search button.
+[INFO ] 2024-12-16 20:50:59.143 [main] Log - Starting to check if the transaction is displayed with the expected details.
+[INFO ] 2024-12-16 20:50:59.144 [main] Log - Creating a dynamic locator for transaction heading with date: 16-Dec-2024 and userType: Internal User
+[INFO ] 2024-12-16 20:50:59.145 [main] Log - Waiting for the transaction heading to be visible.
+[INFO ] 2024-12-16 20:51:30.987 [main] Log - Transaction heading is visible.
+[INFO ] 2024-12-16 20:51:30.988 [main] Log - Checking if the transaction heading is displayed.
+[INFO ] 2024-12-16 20:51:31.026 [main] Log - Transaction heading is displayed with the expected details.
+[INFO ] 2024-12-16 20:51:31.026 [main] Log - Verifying Disposition: My bank
+[INFO ] 2024-12-16 20:51:31.139 [main] Log - Disposition verified successfully: My bank
+[INFO ] 2024-12-16 20:51:31.140 [main] Log - Verifying Sub-Disposition: android
+[INFO ] 2024-12-16 20:51:31.210 [main] Log - Sub-Disposition verified successfully: android
+[INFO ] 2024-12-16 20:51:31.210 [main] Log - Verifying Remarks: test
+[INFO ] 2024-12-16 20:51:31.289 [main] Log - Remarks verified successfully: test
+[INFO ] 2024-12-16 20:51:31.289 [main] Log - Verifying Action Done By: Pinku peter
+[INFO ] 2024-12-16 20:51:31.380 [main] Log - Action Done By verified successfully: Pinku peter
+[INFO ] 2024-12-16 20:51:31.382 [main] Log - Verifying User EIN: IBU0001196
+[INFO ] 2024-12-16 20:51:31.509 [main] Log - User EIN verified successfully: IBU0001196
+[INFO ] 2024-12-16 20:51:31.510 [main] Log - Verifying Next Action Owner: Internal User
+[INFO ] 2024-12-16 20:51:31.637 [main] Log - Next Action Owner verified successfully: Internal User
+[INFO ] 2024-12-16 20:51:31.638 [main] Log - Verifying Next Action Date: 18/Dec/2024
+[INFO ] 2024-12-16 20:51:31.770 [main] Log - Next Action Date verified successfully: 18/Dec/2024

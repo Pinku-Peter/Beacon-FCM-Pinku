@@ -5,11 +5,24 @@
     <classes>
       <class name="com.test.Updation_of_DispositionModule.AllScenarios_Updation_of_DispositionModule">
         <methods>
+          <include name="Add_New_Interaction_Details__Remark_Missing_Validation"/>
+          <include name="Attempt_to_Enter_More_than_25_Characters"/>
+          <include name="Verify_successfully_saved_interaction_in_history_of_interaction_details_section"/>
           <include name="SetUp"/>
+          <include name="Enter_Valid_Account_Number_and_Search"/>
+          <include name="Enter_invalid_Account_Number_which_is_user_not_assigned_branches_and_Search"/>
+          <include name="Add_New_Interaction_Details__All_Fields_Missing_Validation"/>
+          <include name="Add_New_Interaction_Details__Disposition_Missing_Validation"/>
+          <include name="Add_New_Interaction_Details__Successful_Form_Submission"/>
+          <include name="Add_New_Interaction_Details__Sub_Disposition_Missing_Validation"/>
+          <include name="Open_Updation_of_Disposition_Screen"/>
           <include name="takeScreenshotOnFailure"/>
           <include name="afterEachTest"/>
           <include name="setupTest"/>
-          <include name="Enter_Invalid_Account_Number_and_Search" invocation-numbers="0"/>
+          <include name="Enter_Invalid_Account_Number_and_Search"/>
+          <include name="Account_Number_Field__ECP_Validations"/>
+          <include name="Add_New_Interaction_Details__NextAction_Date_Missing_Validation"/>
+          <include name="Search_with_Empty_Account_Number_Field"/>
         </methods>
       </class> <!-- com.test.Updation_of_DispositionModule.AllScenarios_Updation_of_DispositionModule -->
     </classes>

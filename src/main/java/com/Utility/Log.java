@@ -15,9 +15,13 @@ public class Log {
     public static void warn (String message) {
         Log.warn(message);
     }
-    //Error Level Logs
-    public static void error (String message) {
-        Log.error(message);
+ // Error Level Logs - Single argument
+    public static void error(String message) {
+        Log.error(message); // Calls Logger's single-argument error method
+    }
+ // Error Level Logs - With Throwable
+    public static void error (String message, Throwable throwable) {
+    	Log.error(message, throwable);
     }
     //Fatal Level Logs
     public static void fatal (String message) {
