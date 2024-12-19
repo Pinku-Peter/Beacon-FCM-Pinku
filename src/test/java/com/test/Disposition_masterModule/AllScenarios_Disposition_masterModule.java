@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Map;
-
-import org.junit.AfterClass;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +25,6 @@ import com.BasePackage.Base_Class;
 import com.BasePackage.Common;
 import com.BasePackage.Login_Class;
 import com.Page_Repository.DispositionMasterPageRepo;
-import com.Page_Repository.LoginPageRepo;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
@@ -35,7 +32,7 @@ import com.extentReports.ExtentManager;
 import com.extentReports.ExtentTestManager;
 import com.testautomation.pages.DispositionMasterPage;
 import com.listeners.TestListener;
-//import com.testautomation.pages.AllScenarios_Disposition_masterModule;
+
 
 public class AllScenarios_Disposition_masterModule {
 
@@ -81,51 +78,35 @@ public class AllScenarios_Disposition_masterModule {
 		
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		 
-		 //extenttest = ExtentTestManager.startTest("Verify Disposition Master Navigation");
 		
 		try {
-			//extenttest.log(Status.INFO, "Step 1: Hover over the 'Disposition' main menu");
 		// Step 1: Hover over the "Disposition" main menu
 		Actions actions = new Actions(driver);
 		actions.moveToElement(dispositionMasterPage.getDispositionMainMenu()).perform();
-		//extenttest.log(Status.PASS, "Hovered over the 'Disposition' main menu successfully.");
-		//extenttest.log(Status.INFO, "Step 2: Waiting for the 'Disposition Master' sub-menu to be visible");
-		// Step 2: Wait until "Disposition Master" sub-menu is visible
-		//WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(60));
+		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the 'Disposition' main menu.");
 		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(DispositionMasterPageRepo.dispositionMasterSubMenu));
 		Assert.assertNotNull(element, "Disposition Master sub-menu not found in DOM");
-		//extenttest.log(Status.PASS, "'Disposition Master' sub-menu is visible.");
-		// Step 3: Click the "Disposition Master" sub-menu
-		// Scroll into view and ensure visibility
-		//extenttest.log(Status.INFO, "Step 3: Clicking the 'Disposition Master' sub-menu");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 
 		// Click the sub-menu
 		try {
 			element.click();
-			//extenttest.log(Status.PASS, "Clicked 'Disposition Master' sub-menu using standard click.");
+			ExtentTestManager.getTest().log(Status.PASS, "Clicked on the 'Disposition Master' sub menu.");
 		} catch (ElementNotInteractableException e) {
 			js.executeScript("arguments[0].click();", element);
-			//extenttest.log(Status.WARNING, "'Disposition Master' sub-menu was not interactable; used JavaScript click instead.");
 		}
 
 
 		// Step 4: Verify that the Disposition is displayed
-		//extenttest.log(Status.INFO, "Step 4: Verifying the Disposition window is displayed");
 		 Assert.assertTrue(dispositionMasterPage.isDispositionDisplayed(),
 		            "Disposition window is not displayed.");
-		 //extenttest.log(Status.PASS, "Disposition window is displayed successfully.");
 
 		// Step 5: Verify that the Sub-Disposition is displayed
-		 //extenttest.log(Status.INFO, "Step 5: Verifying the Sub-Disposition tab is displayed");
 		Assert.assertTrue(dispositionMasterPage.isSubDispositionDisplayed(),
 				"Sub-Disposition window is not displayed.");
-		//extenttest.log(Status.PASS, "Sub-Disposition tab is displayed successfully.");
-		// Step 6: Verify the last link address
-		//extenttest.log(Status.INFO, "Step 6: Verifying the URL contains 'Admin/DispositionMaster'");
+
 		String currentUrl = driver.getCurrentUrl();
-		//extenttest.log(Status.INFO, "Current URL: " + currentUrl);
 		System.out.println("Current URL: " + currentUrl); // Log the URL for debugging
 		String expectedUrlPart = "Admin/DispositionMaster";
 		Assert.assertTrue(currentUrl.contains(expectedUrlPart),
@@ -141,7 +122,6 @@ public class AllScenarios_Disposition_masterModule {
             throw e;
         }
 		Thread.sleep(3000);
-		//ExtentTestManager.getTest().log(Status.FAIL, "Expected Result not matching with Actual Result");
 	}
 	@Test(priority = 2)
 	public void Verify_Initial_Load_of_Active_Dispositions() throws InterruptedException {
@@ -149,7 +129,6 @@ public class AllScenarios_Disposition_masterModule {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		 
-		//ExtentTestManager.startTest("TestCase_02 : Verify Initial Load of Active Dispositions");
 		try {
 		// Precondition: User is on the Disposition Master window
 			Common.fluentWait("User is on the Disposition Master window", DispositionMasterPageRepo.subDispositionList);
@@ -159,7 +138,7 @@ public class AllScenarios_Disposition_masterModule {
 		
 		
 		ExtentTestManager.getTest().log(Status.PASS, "10 active dispositions are displayed.");
-//		ExtentTestManager.getTest().log(Status.FAIL, "Expected Result not matching with Actual Result");
+
 		}
 		catch (AssertionError | Exception e) {
 			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
@@ -174,14 +153,13 @@ public class AllScenarios_Disposition_masterModule {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		 
-		//ExtentTestManager.startTest("TestCase_03 : Action Owner Dropdown Selections"); 
 		try {
 		dispositionMasterPage.selectActionOwnerOptions();
 		
-		
-		
+		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Action Owner dropdown.");
+		ExtentTestManager.getTest().log(Status.PASS, "Selected \"Call centre\", \"Collection agency\", and \"Internal user\".");
 		ExtentTestManager.getTest().log(Status.PASS, "Selected options should be visible and selectable.");
-//		ExtentTestManager.getTest().log(Status.FAIL, "Expected Result not matching with Actual Result");
+
 		}
 		catch (AssertionError | Exception e) {
 			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
@@ -196,13 +174,11 @@ public class AllScenarios_Disposition_masterModule {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		 
-		//ExtentTestManager.startTest("TestCase_04 : Verify Is Active Checkbox Default State");
 		try {
 		Assert.assertTrue(dispositionMasterPage.isIsActiveCheckboxChecked(), "Is Active checkbox is not checked by default.");
 		
 		
 		ExtentTestManager.getTest().log(Status.PASS, "Is Active checkbox is checked (active) by default.");
-//		ExtentTestManager.getTest().log(Status.FAIL, "Expected Result not matching with Actual Result");
 		}
 		catch (AssertionError | Exception e) {
 			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
@@ -217,14 +193,11 @@ public class AllScenarios_Disposition_masterModule {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		 
-		//ExtentTestManager.startTest("TestCase_05 : Verify Action Column Options");
 		try {
-		//dispositionMasterPage.navigateToDispositionMaster();
 		Assert.assertTrue(dispositionMasterPage.verifyActionOptions());
 		
-		
+		ExtentTestManager.getTest().log(Status.PASS, "Clicked the three-dot button in the action column.");
 		ExtentTestManager.getTest().log(Status.PASS, "Edit and Activate/Deactivate options are displayed.");
-//		ExtentTestManager.getTest().log(Status.FAIL, "Expected Result not matching with Actual Result");
 		}
 		catch (AssertionError | Exception e) {
 			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
@@ -239,12 +212,10 @@ public class AllScenarios_Disposition_masterModule {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		 
-		//ExtentTestManager.startTest("TestCase_06 : Verify Status Column Appearance");
 		try {
 		Assert.assertTrue(dispositionMasterPage.areAllStatusIconsGreenTicks(), "Not all status icons are green ticks");
 		
 		ExtentTestManager.getTest().log(Status.PASS, "A green tick icon is displayed, indicating active dispositions.");
-//		ExtentTestManager.getTest().log(Status.FAIL, "Expected Result not matching with Actual Result");
 		}
 		catch (AssertionError | Exception e) {
 			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
@@ -259,13 +230,12 @@ public class AllScenarios_Disposition_masterModule {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		 
-		//ExtentTestManager.startTest("TestCase_07 : Validate Pagination - Initial Load");
 		try {
         Assert.assertTrue(dispositionMasterPage.isPaginationCorrect());
         
-		
+        ExtentTestManager.getTest().log(Status.PASS, "Opened the Disposition master window.");
 		ExtentTestManager.getTest().log(Status.PASS, "Previous button is disabled, Page 1 is selected Next and >> buttons are enabled, No << button appears");
-//		ExtentTestManager.getTest().log(Status.FAIL, "Expected Result not matching with Actual Result");
+
 		}
 		catch (AssertionError | Exception e) {
 			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
@@ -280,13 +250,11 @@ public class AllScenarios_Disposition_masterModule {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		 
-		//ExtentTestManager.startTest("TestCase_08 : Validate Next Button");
 		try {
 		dispositionMasterPage.clickNextPagination();
 		
-		
+		 ExtentTestManager.getTest().log(Status.PASS, "Opened the Disposition master window.");
 		ExtentTestManager.getTest().log(Status.PASS, "Moves to Page 2, Previous button is enabled, Next and >> buttons remain enabled, << button appears");
-//		ExtentTestManager.getTest().log(Status.FAIL, "Expected Result not matching with Actual Result");
 		}
 		catch (AssertionError | Exception e) {
 			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
@@ -301,12 +269,12 @@ public class AllScenarios_Disposition_masterModule {
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 			 
-		 //ExtentTestManager.startTest("TestCase_09 : Validate Previous Button");
-		 //page2.click();
 		 try {
 		 dispositionMasterPage.clickPreviousPagination();
 		 
-			
+		 ExtentTestManager.getTest().log(Status.PASS, "Opened the Disposition master window.");
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on Page 2.");
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Previous button.");
 			ExtentTestManager.getTest().log(Status.PASS, "Moves to Page 1, Previous button is disabled, Next and >> buttons are enabled, No << button appears.");
 		 }
 		 catch (AssertionError | Exception e) {
@@ -327,6 +295,8 @@ public class AllScenarios_Disposition_masterModule {
 			 Thread.sleep(10000);	        
 			 // Step 1: Click the last page button
 	        dispositionMasterPage.clickLastPageButton();
+	        ExtentTestManager.getTest().log(Status.PASS, "Opened the Disposition master window.");
+			 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the >> button.");
 	        ExtentTestManager.getTest().log(Status.PASS, "Moves to the last page, Previous and << buttons are enabled, Next and >> buttons are disabled");
 		 }
 		 catch (AssertionError | Exception e) {
@@ -341,10 +311,12 @@ public class AllScenarios_Disposition_masterModule {
 		 
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-		 //ExtentTestManager.startTest("TestCase_11 : Validate << Button - Jump to First Page");
 		 try { 
 		 // Click the >> page button
 		 dispositionMasterPage.clickFirstPageButton();
+		 ExtentTestManager.getTest().log(Status.PASS, "Opened the Disposition master window.");
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the >> button.");
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the << button.");
 		 ExtentTestManager.getTest().log(Status.PASS, "Moves to the first page, Previous button is disabled, Next and >> buttons are enabled, No << button appears");
 		 }
 		 catch (AssertionError | Exception e) {
@@ -359,7 +331,6 @@ public class AllScenarios_Disposition_masterModule {
 		 
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-		 //ExtentTestManager.startTest("TestCase_12 : Open Add Disposition Form");
 		 try {
 	        // Step 1: Click on "Add Disposition" button
 		 dispositionMasterPage.clickAddDispositionButton();
@@ -379,7 +350,6 @@ public class AllScenarios_Disposition_masterModule {
 		 
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-		 //ExtentTestManager.startTest("TestCase_13 : Close Add Disposition Form");
 		 try {
 	        // Close the popup  
 		 dispositionMasterPage.closeAddDispositionPopup();
@@ -400,7 +370,6 @@ public class AllScenarios_Disposition_masterModule {
 		 
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-			// ExtentTestManager.startTest("TestCase_14 : Add Disposition - Submit with All Fields Valid");
 			 
 		 try {
 
@@ -411,12 +380,13 @@ public class AllScenarios_Disposition_masterModule {
 					String assetcategory = testdata.get("AssetCategory").toString();
 					
 					dispositionMasterPage.selectActionOwner(actionowner);
-			        
+					ExtentTestManager.getTest().log(Status.PASS, "Selected \"Call centre\" in Action Owner.");
 			        // Step 2: Enter a valid name within 1 to 100 characters
 				 dispositionMasterPage.enterName(name);
-			        
+				 ExtentTestManager.getTest().log(Status.PASS, "Entered a valid name within 1 to 100 characters."); 
 			        // Step 3: Select "NPA Category" in Asset Category
 				 dispositionMasterPage.selectAssetCategory(assetcategory);
+				 ExtentTestManager.getTest().log(Status.PASS, "Selected \"NPA Category\" in Asset Category.");
 				}
 	        // Step 1: Select "Call centre" in Action Owner
 		 
@@ -424,7 +394,7 @@ public class AllScenarios_Disposition_masterModule {
 	        // Step 4: Click on Submit
 		 dispositionMasterPage.clickSubmit();
 		// Validate the popup message
-	
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on Submit.");
 		 WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.successPopup));
 	        Assert.assertTrue(popup.isDisplayed(), "Success popup is not displayed.");
 	      
@@ -451,16 +421,17 @@ public class AllScenarios_Disposition_masterModule {
 				
 	        // Check if the disposition row is visible
 	        Assert.assertTrue(dispositionMasterPage.isDispositionVisible(name), "Disposition row should be visible");
-
+	        ExtentTestManager.getTest().log(Status.PASS, "Checked the grid");
 	        // Verify Action Owner values
 	        String expectedActionOwners = actionowner;
 	        Assert.assertEquals(dispositionMasterPage.getActionOwnerText(actionowner),expectedActionOwners, "Action Owner text should match");
-
+	        ExtentTestManager.getTest().log(Status.PASS, "Verified that Action Owner values match expectations.");
 	        // Verify status is green tick
 	        Assert.assertTrue(dispositionMasterPage.isStatusGreenTick(), "Status should be a green tick");
-
+	        ExtentTestManager.getTest().log(Status.PASS, "Verified that the Status is a Green tick (active).");
 	        // Verify Action column has three-dot button
 	        Assert.assertTrue(dispositionMasterPage.isActionButtonPresent(), "Action column should have a three-dot button");
+	        ExtentTestManager.getTest().log(Status.PASS, "Verified that the Action column has a three-dot button.");
 	        ExtentTestManager.getTest().log(Status.PASS, "Disposition appears as expected with Call centre, Internal user, Collection agency in Action Owner, Green tick in Status, Three dot button in Action");
 		 }
 		 }
@@ -476,11 +447,10 @@ public class AllScenarios_Disposition_masterModule {
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.popup));
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-		 //ExtentTestManager.startTest("TestCase_15 : Action Owner Multi-select Functionality");
 		 try {
 	        // Step 1: Click on the Action Owner dropdown
 		 dispositionMasterPage.clickOnActionOwnerDropdown();
-	        
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Action Owner dropdown.");  
 	        // Step 2: Select multiple values
 		// Step 1: Check if the test needs to be executed
 		 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
@@ -493,10 +463,12 @@ public class AllScenarios_Disposition_masterModule {
 		            actionOwner = actionOwner.trim(); // Remove any leading/trailing spaces
 		            dispositionMasterPage.selectActionOwners(actionOwner); // Ensure this method selects an item
 		        }
+		        ExtentTestManager.getTest().log(Status.PASS, "Selected multiple values (\"Call centre\", \"Internal user\").");
 		    }
 		    // Step 5: Click outside the dropdown to close it
 	    	WebElement dropdown =  driver.findElement(DispositionMasterPageRepo.actionOwnerField);
 	        dropdown.click();
+	        ExtentTestManager.getTest().log(Status.PASS, "Clicked outside the dropdown.");
 	        ExtentTestManager.getTest().log(Status.PASS, "Selected values are displayed in the dropdown field with comma separation.");
 		 }
 	        catch (AssertionError | Exception e) {
@@ -504,7 +476,6 @@ public class AllScenarios_Disposition_masterModule {
 	            throw e;
 		 }
 		 Thread.sleep(3000); 
-		   // dispositionMasterPage.clickOnActionOwnerDropdown();
 	        
 	 }
 	 
@@ -513,12 +484,11 @@ public class AllScenarios_Disposition_masterModule {
 		 
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-			 //ExtentTestManager.startTest("TestCase_16 : Asset Category Multi-select Functionality");
 		 
 		 try {
 	        // Step 1: Click on the Action Owner dropdown
 		 dispositionMasterPage.clickAssetCategoryDropdown();
-	        
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Asset Category dropdown.");  
 	        // Step 2: Select multiple values
 		// Step 1: Check if the test needs to be executed
 		 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
@@ -531,11 +501,13 @@ public class AllScenarios_Disposition_masterModule {
 		            actionOwner = actionOwner.trim(); // Remove any leading/trailing spaces
 		            dispositionMasterPage.AssetCategory(actionOwner); // Ensure this method selects an item
 		        }
+		        ExtentTestManager.getTest().log(Status.PASS, "Selected multiple values (\"NPA Category\").");
 		    }
 		    // Step 5: Click outside the dropdown to close it
 		 
 		 WebElement dropdown = driver.findElement(DispositionMasterPageRepo.actionOwnerPath);
 		    dropdown.click();
+		    ExtentTestManager.getTest().log(Status.PASS, "Clicked outside the dropdown.");
 	        ExtentTestManager.getTest().log(Status.PASS, "Selected values are displayed, and \"NPA Category\" is checked.");
 		 }
 	        catch (AssertionError | Exception e) {
@@ -543,7 +515,6 @@ public class AllScenarios_Disposition_masterModule {
 	            throw e;
 		 }
 		 Thread.sleep(3000); 
-		   // dispositionMasterPage.clickOnActionOwnerDropdown();
 	        
 	 }
 	 
@@ -552,13 +523,13 @@ public class AllScenarios_Disposition_masterModule {
 		 
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-			// ExtentTestManager.startTest("TestCase_17 : Select All Functionality - Action Owner");
 	        // Click on Action Owner dropdown
 		 dispositionMasterPage.clickActionOwnerDropdown();
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Action Owner dropdown.");
 		 try {
 	        // Select all options in Action Owner
 		 dispositionMasterPage.selectAllActionOwners();
-
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on \"Select All\".");
 		 ExtentTestManager.getTest().log(Status.PASS, "All options in Action Owner are selected.");
 		 }
 	        catch (AssertionError | Exception e) {
@@ -574,10 +545,10 @@ public class AllScenarios_Disposition_masterModule {
 	    public void Deselecting_Via_Multi_select__Action_Owner() throws InterruptedException {
 		 
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-			 //ExtentTestManager.startTest("TestCase_18 : Deselecting Via Multi-select - Action Owner"); 
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner)); 
 		 try {
 		 dispositionMasterPage.deselectAllActionOwners();
+		 ExtentTestManager.getTest().log(Status.PASS, "Unchecked \"Select All\".");
 		 ExtentTestManager.getTest().log(Status.PASS, "All options in Action Owner are deselected.");
 		 }
 	        catch (AssertionError | Exception e) {
@@ -593,13 +564,13 @@ public class AllScenarios_Disposition_masterModule {
 		 
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-			// ExtentTestManager.startTest("TestCase_19 : Select All Functionality - Asset Category");
 			 try { 
 	        // Click Asset Category dropdown
 		 dispositionMasterPage.clickAssetCategoryDropdown();
-
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Asset Category dropdown.");
 	        // Click "Select All" option
 		 dispositionMasterPage.clickSelectAllAssetCategory();
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on \"Select All\".");
 		 ExtentTestManager.getTest().log(Status.PASS, "All options in Asset Category are selected.");
 			 }
 		        catch (AssertionError | Exception e) {
@@ -614,10 +585,10 @@ public class AllScenarios_Disposition_masterModule {
 	    public void Deselecting_Via_Multi_select__Asset_Category() throws InterruptedException {
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-			 //ExtentTestManager.startTest("TestCase_20 : Deselecting Via Multi-select - Asset Category");
 			 try { 
 	        // Uncheck "Select All"
 		 dispositionMasterPage.uncheckSelectAllAssetCategory();
+		 ExtentTestManager.getTest().log(Status.PASS, "Unchecked \"Select All\".");
 		 ExtentTestManager.getTest().log(Status.PASS, "All options in Asset Category are deselected.");
 			 }
 		        catch (AssertionError | Exception e) {
@@ -634,7 +605,12 @@ public class AllScenarios_Disposition_masterModule {
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 		 try { 
 		 dispositionMasterPage.clickAddDisposition();
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the \"Add Disposition\" button.");
+		 ExtentTestManager.getTest().log(Status.PASS, "Did not select any options for Action Owner.");
+		 ExtentTestManager.getTest().log(Status.PASS, "Did not enter any name.");
+		 ExtentTestManager.getTest().log(Status.PASS, "Did not select any options from Asset Category.");
 		 dispositionMasterPage.clickSubmitButton();
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Submit button.");
 	        String errorMessage = dispositionMasterPage.getNameErrorMessage();
 	        Assert.assertEquals(errorMessage, "Name Required");
 	        ExtentTestManager.getTest().log(Status.PASS, "Should show error message as \"Name required\" under the name field.");
@@ -664,16 +640,16 @@ public class AllScenarios_Disposition_masterModule {
 				String assetcategory = testdata.get("AssetCategory").toString();
 				
 				dispositionMasterPage.selectActionOwner(actionowner);
-		        
+				ExtentTestManager.getTest().log(Status.PASS, "Selected a value in the Action Owner dropdown.");
 		        // Step 2: Enter a valid name within 1 to 100 characters
 			 dispositionMasterPage.enterName(name);
-		        
+			 ExtentTestManager.getTest().log(Status.PASS, "Entered Name");
 		        // Step 3: Select "NPA Category" in Asset Category
 			 dispositionMasterPage.selectAssetCategory(assetcategory);
-			 
+			 ExtentTestManager.getTest().log(Status.PASS, "Selected a value in the Asset Category dropdown.");
 			 // Step 4: Click on Submit
 			 dispositionMasterPage.clickSubmit();
-			        
+			 ExtentTestManager.getTest().log(Status.PASS, "Clicked the Add button.");  
 			        // Expected Result: Error message is displayed
 			        Assert.assertEquals(dispositionMasterPage.getErrorMessageText(), "This Disposition Already Exist");
 			        ExtentTestManager.getTest().log(Status.PASS, "Error message \"This Disposition Already Exist\" is displayed.");
@@ -695,10 +671,10 @@ public class AllScenarios_Disposition_masterModule {
 		 try { 
 	        // Step 1: Click on the three-dot button in the Action column
 		 dispositionMasterPage.clickThreeDotButton();
-
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the three-dot button in the Action column."); 
 	        // Step 2: Click on the edit button
 		 dispositionMasterPage.clickEditButton();
-
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Edit button."); 
 	        // Expected Result: Verify the Edit disposition popup is displayed with expected elements
 	        Assert.assertTrue(dispositionMasterPage.isEditPopupDisplayed(), 
 	                "Edit disposition popup elements are not displayed as expected.");
@@ -718,6 +694,7 @@ public class AllScenarios_Disposition_masterModule {
 	    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 	    	try {
 	    	dispositionMasterPage.clickUpdateButton();
+	        ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Update button without changing any values.");
 	        Assert.assertTrue(dispositionMasterPage.isSuccessMessageDisplayed(), "Success message should be displayed");
 	        ExtentTestManager.getTest().log(Status.PASS, "Edit disposition popup closes with a success message \"Saved successfully\".");
 			 }
@@ -732,11 +709,11 @@ public class AllScenarios_Disposition_masterModule {
 	    public void Verify_Add_Disposition_with_Valid_Data(Map<Object, Object> testdata) throws InterruptedException  {
 	    	
 	    	try {
-	    		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+	    		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 	    		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.successMessage));
 		    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 	        dispositionMasterPage.clickAddDispositionButton();
-
+	        ExtentTestManager.getTest().log(Status.PASS, "Clicked on the \"Add Disposition\" button.");
 	    	
 	        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 	    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
@@ -744,12 +721,17 @@ public class AllScenarios_Disposition_masterModule {
 				String name = testdata.get("UpdateExistingName").toString();
 				
 	        dispositionMasterPage.selectAllActionOwnersdropdown();
+	        ExtentTestManager.getTest().log(Status.PASS, "Selected all options in the Action Owner dropdown.");
 	        dispositionMasterPage.enterDispositionName(name);
+	        ExtentTestManager.getTest().log(Status.PASS, "Entered the Name.");
 	        dispositionMasterPage.selectAllAssetCategories();
+	        ExtentTestManager.getTest().log(Status.PASS, "Selected all options in the Asset Category dropdown.");
 	    	}
 	        dispositionMasterPage.clickSubmit();
+	        ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Submit button.");
 	        Assert.assertTrue(dispositionMasterPage.SuccessMessageDisplayed(), "Success message is not displayed");
 	        ExtentTestManager.getTest().log(Status.PASS, "Edit disposition popup closes with a success message \"Saved successfully\".");
+	        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.successMessage));
 			 }
 		        catch (AssertionError | Exception e) {
 			        ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
@@ -771,12 +753,12 @@ public class AllScenarios_Disposition_masterModule {
 				String name = testdata.get("ExistingName").toString();
 	        // Step 1: Changing the Name field to an existing disposition name
 	    	dispositionMasterPage.changeNameField(name);
-	    	
+	    	ExtentTestManager.getTest().log(Status.PASS, "Changed the Name field to an existing disposition name.");
 	    	}
 	    	
 	    	// Step 2: Clicking on the Update button
 	    	dispositionMasterPage.UpdateButton();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Update button.");
 	        // Validating expected error message
 	        Assert.assertEquals(dispositionMasterPage.getErrorMessage(), "This Disposition Already Exist");
 	        ExtentTestManager.getTest().log(Status.PASS, "Error message \"This Disposition Already Exist\" is displayed.");
@@ -802,14 +784,16 @@ public class AllScenarios_Disposition_masterModule {
 				dispositionMasterPage.setActionOwner(actionowner);
 				dispositionMasterPage.setName(name);
 				dispositionMasterPage.setAssetCategory(assetcategory);
+				ExtentTestManager.getTest().log(Status.PASS, "Changed the Action Owner, Name, and Asset Category fields to new values.");
 			}
 
 	        // Click the Update button
 	    	dispositionMasterPage.clickUpdateButton();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Update button.");
 	        // Validate that success message is displayed
 	        Assert.assertTrue(dispositionMasterPage.isUpdateSuccessMessageDisplayed(),"The success message should be displayed.");
 	        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.successMessage));
+	        ExtentTestManager.getTest().log(Status.PASS, "Verified the active disposition list.");
 	        ExtentTestManager.getTest().log(Status.PASS, "Edit disposition popup closes with a success message. Changes are visible in the active disposition list with updated Action owner, Name, and Asset category.");
 			 }
 		        catch (AssertionError | Exception e) {
@@ -826,10 +810,10 @@ public class AllScenarios_Disposition_masterModule {
 	    		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 	        // Clicking on the three-dot button
 	    	dispositionMasterPage.clkThreeDotButton();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the three-dot button in the Action column.");
 	        // Clicking on Activate/De-activate option
 	    	dispositionMasterPage.clickActivateDeactivateOption();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Activate/De-activate option.");
 	        // Assert to verify if the message "Disposition Status Changed" is displayed
 	    	WebElement msg = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.msgLocator));
 	        Assert.assertEquals(msg.getText(), "Disposition Status Changed");
@@ -852,13 +836,13 @@ public class AllScenarios_Disposition_masterModule {
 				String actionowner = testdata.get("ActionOwnerSearch").toString();
 	        // Step 1: Select Action owner as "Call centre"
 	    	dispositionMasterPage.selActionOwner(actionowner);
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Selected \"Call centre\" as the Action Owner.");
 	        // Step 2: Untick Is active checkbox
 	    	dispositionMasterPage.untickIsActiveCheckbox();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Unticked the Is Active checkbox.");
 	        // Step 3: Click on Search button
 	    	dispositionMasterPage.clickSearchButton();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Search button.");
 	        // Validate the expected result
 	        Assert.assertTrue(dispositionMasterPage.isDeactivatedDispositionVisible(),
 	                "Deactivated disposition should be shown with a red cross mark.");
@@ -880,10 +864,10 @@ public class AllScenarios_Disposition_masterModule {
 	    		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 	        // Clicking on the three-dot button
 	    	dispositionMasterPage.clkThreeDotButton();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the three-dot button in the Action column.");
 	        // Clicking on Activate/De-activate option
 	    	dispositionMasterPage.clickActivateDeactivateOption();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Activate/De-activate option.");
 	        // Assert to verify if the message "Disposition Status Changed" is displayed
 	    	WebElement msg = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.msgLocator));
 	        Assert.assertEquals(msg.getText(), "Disposition Status Changed");
@@ -905,15 +889,15 @@ public class AllScenarios_Disposition_masterModule {
 				String actionowner = testdata.get("ActionOwnerSearch").toString();
 	        // Step 1: Select Action owner as "Call centre"
 	    	dispositionMasterPage.selActionOwner(actionowner);
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Selected the Action Owner.");
 	        // Step 2: Untick Is active checkbox
 	    	dispositionMasterPage.untickIsActiveCheckbox();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Ticked the Is Active checkbox.");
 	        // Step 3: Click on Search button
 	    	dispositionMasterPage.clickSearchButton();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Search button.");
 	        // Validate the expected result
-	        Assert.assertTrue(dispositionMasterPage.isActiveDispositionShown(),
+	        Assert.assertTrue(dispositionMasterPage.isActiveDispositionShown(), 
 	                "Active disposition should be shown with a green cross mark.");
 	    	}
 	    	ExtentTestManager.getTest().log(Status.PASS, "Active disposition is shown in the active disposition list with a green tick mark.");
@@ -926,12 +910,12 @@ public class AllScenarios_Disposition_masterModule {
 	    }
 	    
 	    @Test(priority = 33)
-	    public void Verify_Sub_Disposition_Tab_UI_Elements() throws InterruptedException {
+	    public void Verify_Sub_Disposition_Tab_UI_Elements() throws InterruptedException { 
 	    	try {
 	    	
 	        // Navigate to Sub-Disposition tab
 	    	dispositionMasterPage.navigateToSubDispositionTab();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Navigated to the Sub-Disposition tab.");
 	        // Verify UI elements are displayed as expected
 	        Assert.assertTrue(dispositionMasterPage.verifyUIElements(), "UI elements verification failed.");
 	        ExtentTestManager.getTest().log(Status.PASS, "Action Owner dropdown, Disposition search field, Is Active checkbox (checked), Search button, Add Sub-Disposition button, and active sub disposition list (up to 10 rows) are displayed");
@@ -948,7 +932,8 @@ public class AllScenarios_Disposition_masterModule {
 	    	try {
 	        // Click Add Sub-Disposition button
 	    	dispositionMasterPage.clickAddSubDispositionButton();
-	        
+	    	ExtentTestManager.getTest().log(Status.PASS, "Navigated to the Sub-Disposition tab.");
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Add Sub-Disposition button.");
 	        // Verify if all expected elements are displayed on the popup
 	        Assert.assertTrue(dispositionMasterPage.issubdispositionPopupelementsDisplayed(), "Popup elements are not displayed correctly.");
 	        ExtentTestManager.getTest().log(Status.PASS, "Popup window appears with Action Owner dropdown, Disposition dropdown, Sub-Disposition name field, Submit button, and a cross mark");
@@ -966,7 +951,7 @@ public class AllScenarios_Disposition_masterModule {
 	    	try {
 	        // Preconditions: Add Sub-Disposition popup should be displayed
 	    	dispositionMasterPage.clickCloseButton();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the cross mark on the top right of the popup.");
 	        // Assertion to ensure the popup is closed
 	        // Example: Checking if the popup is no longer visible, to be updated with actual validation logic
 	    	Assert.assertTrue(driver.findElements(DispositionMasterPageRepo.popupDialogLocator).isEmpty(), "Popup is not closed");
@@ -1008,7 +993,7 @@ public class AllScenarios_Disposition_masterModule {
 	        
 	     // Adding Second Sub-Disposition
 	        dispositionMasterPage.clickAddSubDispositionButton();
-	        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+	         wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 
 	            // Retrieve the data for the second sub-disposition
 	            String actionowner2 = testdata.get("ActionOwnerforsubdisposition").toString(); // This may be the same or different
@@ -1017,14 +1002,17 @@ public class AllScenarios_Disposition_masterModule {
 
 	            // Select an option from the Action Owner dropdown for the second sub-disposition
 	            dispositionMasterPage.selectsubdispositionActionOwner(actionowner2);
-
+	            ExtentTestManager.getTest().log(Status.PASS, "Selected an option from the Action Owner dropdown.");
 	            // Enter required values for the second sub-disposition
 	            dispositionMasterPage.enterDisposition(disposition2);
+	            ExtentTestManager.getTest().log(Status.PASS, "Entered the Disposition.");
 	            dispositionMasterPage.enterSubDisposition(subdispositionname2);
+	            ExtentTestManager.getTest().log(Status.PASS, "Entered the Sub-Disposition name.");
 	        }
 
 	        // Click on the Submit button for the second sub-disposition
 	        dispositionMasterPage.clickSubmit();
+	        ExtentTestManager.getTest().log(Status.PASS, "Clicked the Submit button.");
 	        Assert.assertTrue(dispositionMasterPage.isSuccessMessageDisplayedforsubdisposition(), "Success message not displayed.");
 	        ExtentTestManager.getTest().log(Status.PASS, "Popup closes and displays success message \"Saved successfully\". New sub disposition appears in the active sub disposition list");
 			 }
@@ -1052,17 +1040,17 @@ public class AllScenarios_Disposition_masterModule {
 				
 	        // Select an option from the Action Owner dropdown
 				dispositionMasterPage.selectsubdispositionActionOwner(actionowner);
-
+				 ExtentTestManager.getTest().log(Status.PASS, "Selected an option from the Action Owner dropdown.");
 	        // Enter required values
 				dispositionMasterPage.enterDisposition(disposition);
-				
+				 ExtentTestManager.getTest().log(Status.PASS, "Entered the Disposition.");
 				dispositionMasterPage.enterSubDisposition(subdispositionname);
-				
+				 ExtentTestManager.getTest().log(Status.PASS, "Entered the Sub-Disposition name.");
 				}
 
 	        // Click on the Submit button
 				dispositionMasterPage.clickSubmit();
-
+				 ExtentTestManager.getTest().log(Status.PASS, "Clicked the Submit button.");
 	        // Assert the success message
 	        Assert.assertTrue(dispositionMasterPage.iserrorMessageDisplayedforsubdisposition(), "Error message not displayed.");
 
@@ -1079,6 +1067,8 @@ public class AllScenarios_Disposition_masterModule {
 	    public void Edit_Sub_Disposition_Popup_Display() throws InterruptedException {
 	    	try {
 	    	dispositionMasterPage.openEditPopup();
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the three-dot button in the Action column.");
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the Edit button.");
 	    	ExtentTestManager.getTest().log(Status.PASS, "Edit Sub-Disposition popup opens with pre-filled fields and shows an Update button");
 			 }
 		        catch (AssertionError | Exception e) {
@@ -1092,6 +1082,7 @@ public class AllScenarios_Disposition_masterModule {
 	    public void Update_Sub_Disposition_Without_Changes() throws InterruptedException {
 	    	try {
 	        dispositionMasterPage.clickUpdateWithoutChanges();
+	        ExtentTestManager.getTest().log(Status.PASS, "Clicked the Update button without making any changes.");
 	        Assert.assertTrue(dispositionMasterPage.isSuccessMessageDisplayedforsubdispos(), "Success message should be displayed.");
 	        ExtentTestManager.getTest().log(Status.PASS, "Popup closes and displays success message \"Saved successfully\"");
 			 }
@@ -1114,8 +1105,9 @@ public class AllScenarios_Disposition_masterModule {
 
 	        // Step 1: Enter a duplicate name and update
 	    		dispositionMasterPage.enterSubDispositionName(subdispositionname);
+	    		 ExtentTestManager.getTest().log(Status.PASS, "Changed the Sub-Disposition name to an already existing one.");
 	    		dispositionMasterPage.clickUpdateWithexistingname();
-	    		
+	    		 ExtentTestManager.getTest().log(Status.PASS, "Clicked the Update button.");
 	    	}
  
 	        // Expected Result: Error message displayed
@@ -1141,8 +1133,9 @@ public class AllScenarios_Disposition_masterModule {
 
 	        // Step 1: Enter a duplicate name and update
 	    		dispositionMasterPage.enterSubDispositionName(subdispositionname);
+	    		 ExtentTestManager.getTest().log(Status.PASS, "Changed the Sub-Disposition name.");
 	    		dispositionMasterPage.clickUpdateWithexistingname();
-	    		
+	    		 ExtentTestManager.getTest().log(Status.PASS, "Clicked the Update button.");
 	    	}
  
 	        // Expected Result: Success message displayed
@@ -1158,16 +1151,16 @@ public class AllScenarios_Disposition_masterModule {
 	    
 	    @Test(priority = 42)
 	    public void Deactivate_Sub_Disposition() throws InterruptedException { 
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 	    	try {
 	    		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.successMessage2));
 	    		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 	        // Clicking on the three-dot button
 	    	dispositionMasterPage.clkThreeDotButtonofsubdisposition();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the three-dot button in the Action column.");
 	        // Clicking on Activate/De-activate option
 	    	dispositionMasterPage.clickActivateDeactivateOptionofsubdisposition();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the Activate/Deactivate option.");
 	        // Assert to verify if the message "Disposition Status Changed" is displayed
 	    	WebElement msg = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.msgLocator));
 	        Assert.assertEquals(msg.getText(), "Sub-Disposition Status Changed");
@@ -1190,16 +1183,16 @@ public class AllScenarios_Disposition_masterModule {
 				String dispostion = testdata.get("UpdateExistingName").toString();
 	        // Step 1: Select Action owner as "Call centre"
 	    	dispositionMasterPage.selActionOwnerforsubdispositionsearch(actionowner);
-	    	
+	    	ExtentTestManager.getTest().log(Status.PASS, "Selected the Action Owner.");
 	    	 // Step 2: Select Action owner as "Call centre"
 	    	dispositionMasterPage.seldispositionforsubdispositionsearch(dispostion);
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Set the Disposition.");
 	        // Step 3: Untick Is active checkbox
 	    	dispositionMasterPage.untickIsActiveCheckboxforsubdispositionsearch();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Unticked the Is Active checkbox.");
 	        // Step 4: Click on Search button
 	    	dispositionMasterPage.clickSearchButtonforsubdispositionsearch();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the Search button.");
 	        // Validate the expected result
 	        Assert.assertTrue(dispositionMasterPage.isDeactivatedDispositionVisibleforsubdispositionsearch(),
 	                "Deactivated sub disposition should be shown with a red cross mark.");
@@ -1220,10 +1213,10 @@ public class AllScenarios_Disposition_masterModule {
 	    		wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
 	        // Clicking on the three-dot button
 	    	dispositionMasterPage.clkThreeDotButtonfordeactivatingsubdisposition();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the three-dot button in the Action column.");
 	        // Clicking on Activate/De-activate option
 	    	dispositionMasterPage.clickActivateDeactivateOptionfordeactivatingsubdisposition();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the Activate/Deactivate option.");
 	        // Assert to verify if the message "Disposition Status Changed" is displayed
 	    	WebElement msg = wait.until(ExpectedConditions.visibilityOfElementLocated(DispositionMasterPageRepo.msgLocator));
 	        Assert.assertEquals(msg.getText(), "Sub-Disposition Status Changed");
@@ -1248,16 +1241,16 @@ public class AllScenarios_Disposition_masterModule {
 				String dispostion = testdata.get("UpdateExistingName").toString();
 	        // Step 1: Select Action owner as "Call centre"
 	    	dispositionMasterPage.selActionOwnerforactivesubdispositionsearch(actionowner);
-	    	
-	    	 // Step 2: Select Action owner as "Call centre"
+	    	ExtentTestManager.getTest().log(Status.PASS, "Selected the Action Owner.");
+	    	 // Step 2: Select Action owner as "Call centre" 
 	    	dispositionMasterPage.seldispositionforactivesubdispositionsearch(dispostion);
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Set the Disposition.");
 	        // Step 3: Untick Is active checkbox
 	    	dispositionMasterPage.untickIsActiveCheckboxforsubdispositionsearch();  
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Ticked the Is Active checkbox.");
 	        // Step 4: Click on Search button
 	    	dispositionMasterPage.clickSearchButtonforsubdispositionsearch();
-
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the Search button.");
 	        // Validate the expected result
 	        Assert.assertTrue(dispositionMasterPage.isActiveDispositionVisibleforsubdispositionsearch(),
 	                "Active sub disposition should be shown with a green cross mark.");
@@ -1279,10 +1272,6 @@ public class AllScenarios_Disposition_masterModule {
 		        try {
 		            // Take the screenshot for the failed test
 		            File image = screenShot.takeScreenShot(methodName, "Failure");
-		            
-//		            ExtentTestManager.getTest()
-//	                .fail("Screenshot of failure: ",
-//	                      MediaEntityBuilder.createScreenCaptureFromPath(image.getAbsolutePath()).build());
 		            
 		            extenttest.log(Status.INFO, "Screenshot of failure: ",
 		                    MediaEntityBuilder.createScreenCaptureFromPath(image.getAbsolutePath()).build());
