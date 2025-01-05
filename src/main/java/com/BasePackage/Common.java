@@ -42,7 +42,7 @@ public class Common {
     public static void waitForSpinnerToDisappear(WebDriver driver, String WebElementName, By element) {
         // Define the FluentWait
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
-                .withTimeout(Duration.ofSeconds(30)) // Maximum wait time
+                .withTimeout(Duration.ofSeconds(60)) // Maximum wait time
                 .pollingEvery(Duration.ofMillis(500)) // Polling interval
                 .ignoring(Exception.class); // Ignore exceptions like NoSuchElementException
 

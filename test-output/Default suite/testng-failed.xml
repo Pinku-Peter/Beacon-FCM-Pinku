@@ -3,17 +3,45 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule">
+      <class name="com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule">
         <methods>
-          <include name="Search_Deactivated_Sub_Disposition" invocation-numbers="0"/>
-          <include name="Search_Active_Sub_Disposition" invocation-numbers="0"/>
-          <include name="afterEachTest"/>
+          <include name="Select_NPA_and_SMA_Category_Checkbox"/>
+          <include name="Allocated_To_dropdown_mandatory_checking"/>
+          <include name="Verify_Total_Account_and_Amount_in_Grid"/>
+          <include name="Login_to_call_centre_application_and_take_account_filtration_page"/>
+          <include name="Select_Zone_from_Dropdown"/>
+          <include name="Reactivate_Allocation_Name"/>
+          <include name="Add_New_Allocation_Name"/>
+          <include name="Download_File__List_of_Accounts"/>
+          <include name="Asset_category_dropdown_mandatory_checking"/>
+          <include name="Verify_Allocation_Name_Status_After_Creation"/>
           <include name="setupTest"/>
+          <include name="Select_SMA_and_NPA_Categorie"/>
+          <include name="Perform_Search_with_Valid_Datas"/>
+          <include name="Verify_Fields_and_Buttons_on_Auto_Allocation_Page"/>
+          <include name="NPA_Category_Selection"/>
+          <include name="Select_Processing_Interval_from_Dropdown"/>
+          <include name="Login_to_call_centre_application_and_take_account_filtration_pages"/>
+          <include name="NPA_Category_Selections"/>
+          <include name="Allocation_Type_Selection__Auto"/>
           <include name="SetUp"/>
+          <include name="Select_SMA_and_NPA_Categories"/>
+          <include name="Deactivate_Allocation_Name"/>
+          <include name="Select_effect_Date_from_Date_Picker"/>
+          <include name="Login_to_beacon_fcm_core_application_Verify_Auto_Allocation_Page_Load"/>
+          <include name="Allocation_Type_Selections__Auto"/>
+          <include name="afterEachTest"/>
+          <include name="Select_To_Dropdown"/>
+          <include name="Verify_Downloaded_File"/>
+          <include name="SMA_Category_Selections"/>
           <include name="takeScreenshotOnFailure"/>
-          <include name="Deactivate_Disposition"/>
+          <include name="Enter_Allocation_Name_with_Alphabets"/>
+          <include name="Run_Database_Package_and_Verify_Accounts_Insertion"/>
+          <include name="Perform_Search_with_Valid_Data"/>
+          <include name="SMA_Category_Selection"/>
+          <include name="Allocated_To_Selection__Call_Centre"/>
         </methods>
-      </class> <!-- com.test.Disposition_masterModule.AllScenarios_Disposition_masterModule -->
+      </class> <!-- com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
