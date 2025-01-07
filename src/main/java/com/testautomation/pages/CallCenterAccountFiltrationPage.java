@@ -516,6 +516,8 @@ public class CallCenterAccountFiltrationPage {
     }
  // Method to enter Allocation Name
     public void enterAllocationName(String name) {
+    	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+    	 wait.until(ExpectedConditions.visibilityOfElementLocated(CallCenterAccountFiltrationRepo.zoneall));
     	Log.info("Starting the process to enter the Allocation Name...");
 
         try {
@@ -642,9 +644,8 @@ public class CallCenterAccountFiltrationPage {
             Log.info("Waiting for spinner to be invisible...");
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
             wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-
             Log.info("Locating the Asset Category field...");
-            WebElement assetCategory = driver.findElement(CallCenterAccountFiltrationRepo.assetCategory);
+            WebElement assetCategory = driver.findElement(CallCenterAccountFiltrationRepo.assetCategory); 
             Log.info("Asset Category field located successfully.");
 
             Log.info("Clicking on the Asset Category field...");

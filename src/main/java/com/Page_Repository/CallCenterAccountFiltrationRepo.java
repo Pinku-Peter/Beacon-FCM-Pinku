@@ -34,7 +34,7 @@ public class CallCenterAccountFiltrationRepo {
 	public static By allocationName = By.xpath("//input[@type='text' and @maxlength='50' ]");
 	public static By effectDate = By.xpath("(//input[@id='Date' ])[1]");
 	public static By effectDatevalue(String date) {
-        return By.xpath("(//span[@class='rz-state-default' and contains(text(),'" + date + "')])[2]");
+        return By.xpath("(//span[@class='rz-state-default' and text()= '" + date + "'])[2]");
     }
 	public static By assetCategory = By.xpath("//div[@id='PFTNPADisable']");
 	public static By assetCategoryselectall = By.xpath("(//div[@class='rz-chkbox-box   '])[17]");
@@ -43,6 +43,7 @@ public class CallCenterAccountFiltrationRepo {
 	public static By npaCategory = By.xpath("(//div[@onmousedown='Radzen.activeElement = null'])[3]");
 	public static By npaCategoryselectall = By.xpath("(//div[@class='rz-chkbox-box   '])[17]");
 	public static By zone = By.xpath("(//div[@onmousedown='Radzen.activeElement = null'])[4]");
+	public static By zoneall = By.xpath("//i[contains(@class, 'rz-dropdown-clear-icon rzi')]");
 	public static By zonevalue(String value) {
         return By.xpath("//li[@aria-label='>" + value + "']");
     }

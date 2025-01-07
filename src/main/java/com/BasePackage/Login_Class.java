@@ -7,7 +7,6 @@ import java.sql.SQLException;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -164,20 +163,22 @@ public class Login_Class extends Base_Class {
             switch (Browser.toUpperCase()) {
                 case "CHROME":
                     ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--allow-running-insecure-content");
-                    options.addArguments("--ignore-certificate-errors");
+                 // Enable insecure downloads by setting Chrome preferences
+                    Map<String, Object> prefs = new HashMap<>();
+                    prefs.put("profile.default_content_setting_values.automatic_downloads", 1); // Allow automatic downloads
+                    prefs.put("profile.default_content_setting_values.mixed_script", 1); // Allow insecure content globally
+                    prefs.put("profile.default_content_settings.popups", 0); // Block popups
+                    prefs.put("download.prompt_for_download", false); // Disable download prompt
+                    prefs.put("download.default_directory", "C:\\Users\\pinku.peter\\Downloads"); // Set download directory
+
+                    options.setExperimentalOption("prefs", prefs);
+
+                    // Add necessary arguments
+                    options.addArguments("--allow-running-insecure-content"); // Allow insecure content
+                    options.addArguments("--ignore-certificate-errors"); // Ignore SSL certificate errors
                     options.addArguments("--disable-extensions");
                     options.addArguments("--start-maximized");
                     options.addArguments("--disable-popup-blocking");
-                 // Enable insecure downloads by setting Chrome preferences
-                    Map<String, Object> prefs = new HashMap<>();
-                    prefs.put("download.prompt_for_download", false); // Disable download prompt
-                    prefs.put("safebrowsing.enabled", true);         // Enable safe browsing
-                    prefs.put("safebrowsing.disable_download_protection", true); // Disable blocking of insecure downloads
-                    prefs.put("download.default_directory", "C:\\Users\\pinku.peter\\Downloads"); // Optional: Set default download directory
-                    options.setExperimentalOption("prefs", prefs);
-                    options.addArguments("--allow-running-insecure-content");
-                    options.addArguments("--ignore-certificate-errors");
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(options);
                     break;

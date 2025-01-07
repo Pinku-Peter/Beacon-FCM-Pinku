@@ -18,7 +18,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 import java.time.Duration;
-
 import com.BasePackage.Base_Class;
 import com.BasePackage.ExecuteStoredProcedure;
 import com.BasePackage.Login_Class;
@@ -30,9 +29,7 @@ import com.aventstack.extentreports.Status;
 import com.extentReports.ExtentManager;
 import com.extentReports.ExtentTestManager;
 import com.testautomation.pages.CallCenterAccountFiltrationPage;
-
 import bsh.ParseException;
-
 import com.listeners.TestListener;
 
 public class AllScenarios_CallCenter_AccountFiltrationModule {
@@ -245,7 +242,7 @@ public class AllScenarios_CallCenter_AccountFiltrationModule {
 			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
             throw e;
 	 }
-	Thread.sleep(3000); 
+	Thread.sleep(3000);  
     }
 	
 	@Test(priority = 9)
@@ -254,6 +251,8 @@ public class AllScenarios_CallCenter_AccountFiltrationModule {
 		callcenterlogin.CoreLogin();
 		driver = baseclass.getDriver(); // Update the driver after CoreLogin
 		callcenteraccountfiltrationPage = new CallCenterAccountFiltrationPage(driver);
+		
+		
         Assert.assertTrue(callcenteraccountfiltrationPage.isAutoAllocationPageLoaded(), "Auto Allocation page not loaded correctly.");
         ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Call Centre menu.");
         ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Auto Allocation submenu successfully.");
@@ -340,7 +339,7 @@ public class AllScenarios_CallCenter_AccountFiltrationModule {
     @Test(priority = 13)
     public void Select_NPA_and_SMA_Category_Checkbox() throws InterruptedException {
     	try {
-    	callcenteraccountfiltrationPage.selectAllInAssetCategory();
+    	callcenteraccountfiltrationPage.selectAllInAssetCategory(); 
     	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Asset Category dropdown.");
     	ExtentTestManager.getTest().log(Status.PASS, "Selected NPA Category from the dropdown.");
     	ExtentTestManager.getTest().log(Status.PASS, "Verified the presence of SMA Category in the dropdown");
@@ -799,9 +798,9 @@ public class AllScenarios_CallCenter_AccountFiltrationModule {
 	 public void afterEachTest() {
 	     ExtentManager.getInstance().flush();
 	  // Close the browser
-//	        if (driver != null) {
-//	            driver.quit();
-//	        }
+	        if (driver != null) {
+	            driver.quit();
+	        }
 	 }
 
 		
