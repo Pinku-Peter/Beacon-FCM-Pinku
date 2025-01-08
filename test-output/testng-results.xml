@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="31" passed="31" failed="0" skipped="0">
+<testng-results ignored="0" total="31" passed="23" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-07T20:30:10 IST" name="Default suite" finished-at="2025-01-07T20:37:15 IST" duration-ms="425291">
+  <suite started-at="2025-01-08T17:51:26 IST" name="Default suite" finished-at="2025-01-08T18:06:45 IST" duration-ms="919378">
     <groups>
     </groups>
-    <test started-at="2025-01-07T20:30:10 IST" name="Default test" finished-at="2025-01-07T20:37:15 IST" duration-ms="425291">
+    <test started-at="2025-01-08T17:51:26 IST" name="Default test" finished-at="2025-01-08T18:06:45 IST" duration-ms="919378">
       <class name="com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:29:21 IST" name="SetUp" finished-at="2025-01-07T20:30:10 IST" duration-ms="48616" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:50:34 IST" name="SetUp" finished-at="2025-01-08T17:51:26 IST" duration-ms="51957" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:10 IST" name="setupTest" finished-at="2025-01-07T20:30:10 IST" duration-ms="105" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:51:26 IST" name="setupTest" finished-at="2025-01-08T17:51:26 IST" duration-ms="232" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Login_to_call_centre_application_and_take_account_filtration_page()[pri:1, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:10 IST" name="Login_to_call_centre_application_and_take_account_filtration_page" finished-at="2025-01-07T20:30:20 IST" duration-ms="9999" status="PASS">
+        <test-method signature="Login_to_call_centre_application_and_take_account_filtration_page()[pri:1, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:51:26 IST" name="Login_to_call_centre_application_and_take_account_filtration_page" finished-at="2025-01-08T17:51:35 IST" duration-ms="8846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_to_call_centre_application_and_take_account_filtration_page -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:20 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:30:20 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:51:35 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T17:51:35 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:20 IST" name="setupTest" finished-at="2025-01-07T20:30:20 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:51:35 IST" name="setupTest" finished-at="2025-01-08T17:51:35 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Allocated_To_dropdown_mandatory_checking()[pri:2, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:20 IST" name="Allocated_To_dropdown_mandatory_checking" finished-at="2025-01-07T20:30:29 IST" duration-ms="8729" status="PASS">
+        <test-method signature="Allocated_To_dropdown_mandatory_checking()[pri:2, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:51:35 IST" name="Allocated_To_dropdown_mandatory_checking" finished-at="2025-01-08T17:51:44 IST" duration-ms="8900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Allocated_To_dropdown_mandatory_checking -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:29 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:30:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:51:44 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T17:51:44 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:29 IST" name="setupTest" finished-at="2025-01-07T20:30:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:51:45 IST" name="setupTest" finished-at="2025-01-08T17:51:45 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,18 +74,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Asset_category_dropdown_mandatory_checking(java.util.Map)[pri:3, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:29 IST" name="Asset_category_dropdown_mandatory_checking" data-provider="TestData" finished-at="2025-01-07T20:30:38 IST" duration-ms="8756" status="PASS">
+        <test-method signature="Asset_category_dropdown_mandatory_checking(java.util.Map)[pri:3, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:51:45 IST" name="Asset_category_dropdown_mandatory_checking" data-provider="TestData" finished-at="2025-01-08T17:51:54 IST" duration-ms="8994" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Asset_category_dropdown_mandatory_checking -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:38 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:30:38 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:51:54 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T17:51:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,7 +96,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:38 IST" name="setupTest" finished-at="2025-01-07T20:30:38 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:51:54 IST" name="setupTest" finished-at="2025-01-08T17:51:54 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,11 +107,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Select_SMA_and_NPA_Categories()[pri:4, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:38 IST" name="Select_SMA_and_NPA_Categories" finished-at="2025-01-07T20:30:50 IST" duration-ms="12238" status="PASS">
+        <test-method signature="Select_SMA_and_NPA_Categories()[pri:4, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:51:54 IST" name="Select_SMA_and_NPA_Categories" finished-at="2025-01-08T17:52:49 IST" duration-ms="54590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_SMA_and_NPA_Categories -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:50 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:30:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:52:49 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T17:52:49 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -122,7 +122,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:50 IST" name="setupTest" finished-at="2025-01-07T20:30:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:52:49 IST" name="setupTest" finished-at="2025-01-08T17:52:49 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,11 +133,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="SMA_Category_Selection()[pri:5, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:50 IST" name="SMA_Category_Selection" finished-at="2025-01-07T20:30:54 IST" duration-ms="3560" status="PASS">
+        <test-method signature="SMA_Category_Selection()[pri:5, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:52:49 IST" name="SMA_Category_Selection" finished-at="2025-01-08T17:52:52 IST" duration-ms="3586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SMA_Category_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:54 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:30:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:52:52 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T17:52:52 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -148,7 +148,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:54 IST" name="setupTest" finished-at="2025-01-07T20:30:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:52:52 IST" name="setupTest" finished-at="2025-01-08T17:52:52 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -159,11 +159,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="NPA_Category_Selection()[pri:6, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:54 IST" name="NPA_Category_Selection" finished-at="2025-01-07T20:30:58 IST" duration-ms="3549" status="PASS">
+        <test-method signature="NPA_Category_Selection()[pri:6, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:52:52 IST" name="NPA_Category_Selection" finished-at="2025-01-08T17:52:56 IST" duration-ms="3642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NPA_Category_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:58 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:30:58 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:52:56 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T17:52:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -174,7 +174,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:58 IST" name="setupTest" finished-at="2025-01-07T20:30:58 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:52:56 IST" name="setupTest" finished-at="2025-01-08T17:52:56 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -185,18 +185,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Allocation_Type_Selection__Auto(java.util.Map)[pri:7, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:30:58 IST" name="Allocation_Type_Selection__Auto" data-provider="TestData" finished-at="2025-01-07T20:31:02 IST" duration-ms="4106" status="PASS">
+        <test-method signature="Allocation_Type_Selection__Auto(java.util.Map)[pri:7, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:52:56 IST" name="Allocation_Type_Selection__Auto" data-provider="TestData" finished-at="2025-01-08T17:53:00 IST" duration-ms="4144" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Allocation_Type_Selection__Auto -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:31:02 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:31:02 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:53:00 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T17:53:00 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -207,7 +207,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:31:02 IST" name="setupTest" finished-at="2025-01-07T20:31:02 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:53:00 IST" name="setupTest" finished-at="2025-01-08T17:53:00 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -218,22 +218,59 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Perform_Search_with_Valid_Data()[pri:8, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:31:02 IST" name="Perform_Search_with_Valid_Data" finished-at="2025-01-07T20:31:12 IST" duration-ms="10381" status="PASS">
+        <test-method signature="Perform_Search_with_Valid_Data()[pri:8, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:53:00 IST" name="Perform_Search_with_Valid_Data" finished-at="2025-01-08T17:54:02 IST" duration-ms="62058" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed because grid text did not contain 'No records to display'. Instead, it contained: No records message element not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed because grid text did not contain 'No records to display'. Instead, it contained: No records message element not found.
+at org.testng.Assert.fail(Assert.java:99)
+at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Perform_Search_with_Valid_Data(AllScenarios_CallCenter_AccountFiltrationModule.java:241)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Perform_Search_with_Valid_Data -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:31:12 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:31:12 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:54:02 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T17:54:02 IST" duration-ms="119" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Perform_Search_with_Valid_Data status=SUCCESS method=AllScenarios_CallCenter_AccountFiltrationModule.Perform_Search_with_Valid_Data()[pri:8, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
+                <![CDATA[[TestResult name=Perform_Search_with_Valid_Data status=FAILURE method=AllScenarios_CallCenter_AccountFiltrationModule.Perform_Search_with_Valid_Data()[pri:8, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:31:12 IST" name="setupTest" finished-at="2025-01-07T20:31:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:54:02 IST" name="setupTest" finished-at="2025-01-08T17:54:02 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -244,11 +281,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Login_to_beacon_fcm_core_application_Verify_Auto_Allocation_Page_Load()[pri:9, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:31:12 IST" name="Login_to_beacon_fcm_core_application_Verify_Auto_Allocation_Page_Load" finished-at="2025-01-07T20:32:27 IST" duration-ms="74766" status="PASS">
+        <test-method signature="Login_to_beacon_fcm_core_application_Verify_Auto_Allocation_Page_Load()[pri:9, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:54:02 IST" name="Login_to_beacon_fcm_core_application_Verify_Auto_Allocation_Page_Load" finished-at="2025-01-08T17:58:28 IST" duration-ms="265470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_to_beacon_fcm_core_application_Verify_Auto_Allocation_Page_Load -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:32:27 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:32:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:58:28 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T17:58:28 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -259,7 +296,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:32:27 IST" name="setupTest" finished-at="2025-01-07T20:32:27 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:58:28 IST" name="setupTest" finished-at="2025-01-08T17:58:28 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -270,11 +307,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Fields_and_Buttons_on_Auto_Allocation_Page()[pri:10, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:32:27 IST" name="Verify_Fields_and_Buttons_on_Auto_Allocation_Page" finished-at="2025-01-07T20:32:31 IST" duration-ms="3619" status="PASS">
+        <test-method signature="Verify_Fields_and_Buttons_on_Auto_Allocation_Page()[pri:10, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:58:28 IST" name="Verify_Fields_and_Buttons_on_Auto_Allocation_Page" finished-at="2025-01-08T17:58:32 IST" duration-ms="3697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Fields_and_Buttons_on_Auto_Allocation_Page -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:32:31 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:32:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:58:32 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T17:58:32 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -285,7 +322,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:32:31 IST" name="setupTest" finished-at="2025-01-07T20:32:31 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:58:32 IST" name="setupTest" finished-at="2025-01-08T17:58:32 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -296,29 +333,78 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Enter_Allocation_Name_with_Alphabets(java.util.Map)[pri:11, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:32:31 IST" name="Enter_Allocation_Name_with_Alphabets" data-provider="TestData" finished-at="2025-01-07T20:32:38 IST" duration-ms="7120" status="PASS">
+        <test-method signature="Enter_Allocation_Name_with_Alphabets(java.util.Map)[pri:11, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T17:58:32 IST" name="Enter_Allocation_Name_with_Alphabets" data-provider="TestData" finished-at="2025-01-08T18:01:32 IST" duration-ms="180278" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //i[contains(@class, 'rz-dropdown-clear-icon rzi')] (tried for 180 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //i[contains(@class, 'rz-dropdown-clear-icon rzi')] (tried for 180 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.testautomation.pages.CallCenterAccountFiltrationPage.enterAllocationName(CallCenterAccountFiltrationPage.java:520)
+at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Enter_Allocation_Name_with_Alphabets(AllScenarios_CallCenter_AccountFiltrationModule.java:293)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Enter_Allocation_Name_with_Alphabets -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:32:38 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:32:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:01:32 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:01:32 IST" duration-ms="137" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Enter_Allocation_Name_with_Alphabets status=SUCCESS method=AllScenarios_CallCenter_AccountFiltrationModule.Enter_Allocation_Name_with_Alphabets(java.util.Map)[pri:11, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
+                <![CDATA[[TestResult name=Enter_Allocation_Name_with_Alphabets status=FAILURE method=AllScenarios_CallCenter_AccountFiltrationModule.Enter_Allocation_Name_with_Alphabets(java.util.Map)[pri:11, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:32:38 IST" name="setupTest" finished-at="2025-01-07T20:32:38 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:01:32 IST" name="setupTest" finished-at="2025-01-08T18:01:32 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -329,18 +415,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Select_effect_Date_from_Date_Picker(java.util.Map)[pri:12, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:32:38 IST" name="Select_effect_Date_from_Date_Picker" data-provider="TestData" finished-at="2025-01-07T20:32:41 IST" duration-ms="3398" status="PASS">
+        <test-method signature="Select_effect_Date_from_Date_Picker(java.util.Map)[pri:12, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:01:32 IST" name="Select_effect_Date_from_Date_Picker" data-provider="TestData" finished-at="2025-01-08T18:01:35 IST" duration-ms="3402" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_effect_Date_from_Date_Picker -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:32:41 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:32:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:01:35 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:01:35 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -351,7 +437,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:32:41 IST" name="setupTest" finished-at="2025-01-07T20:32:41 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:01:35 IST" name="setupTest" finished-at="2025-01-08T18:01:35 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -362,22 +448,89 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Select_NPA_and_SMA_Category_Checkbox()[pri:13, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:32:41 IST" name="Select_NPA_and_SMA_Category_Checkbox" finished-at="2025-01-07T20:33:31 IST" duration-ms="49735" status="PASS">
+        <test-method signature="Select_NPA_and_SMA_Category_Checkbox()[pri:13, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:01:35 IST" name="Select_NPA_and_SMA_Category_Checkbox" finished-at="2025-01-08T18:01:56 IST" duration-ms="20209" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='rz-chkbox-box   '])[17]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//div[@class='rz-chkbox-box   '])[17]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='rz-chkbox-box   '])[17]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//div[@class='rz-chkbox-box   '])[17]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.testautomation.pages.CallCenterAccountFiltrationPage.selectAllInAssetCategory(CallCenterAccountFiltrationPage.java:660)
+at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_NPA_and_SMA_Category_Checkbox(AllScenarios_CallCenter_AccountFiltrationModule.java:345)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_NPA_and_SMA_Category_Checkbox -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:33:31 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:33:31 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:01:56 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:01:56 IST" duration-ms="96" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Select_NPA_and_SMA_Category_Checkbox status=SUCCESS method=AllScenarios_CallCenter_AccountFiltrationModule.Select_NPA_and_SMA_Category_Checkbox()[pri:13, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
+                <![CDATA[[TestResult name=Select_NPA_and_SMA_Category_Checkbox status=FAILURE method=AllScenarios_CallCenter_AccountFiltrationModule.Select_NPA_and_SMA_Category_Checkbox()[pri:13, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:33:31 IST" name="setupTest" finished-at="2025-01-07T20:33:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:01:56 IST" name="setupTest" finished-at="2025-01-08T18:01:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -388,29 +541,96 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Select_Zone_from_Dropdown(java.util.Map)[pri:14, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:33:31 IST" name="Select_Zone_from_Dropdown" data-provider="TestData" finished-at="2025-01-07T20:33:39 IST" duration-ms="8403" status="PASS">
+        <test-method signature="Select_Zone_from_Dropdown(java.util.Map)[pri:14, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:01:56 IST" name="Select_Zone_from_Dropdown" data-provider="TestData" finished-at="2025-01-08T18:02:01 IST" duration-ms="5196" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@aria-label='>Mumbai']"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=//li[@aria-label='>Mumbai']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@aria-label='>Mumbai']"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=//li[@aria-label='>Mumbai']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.testautomation.pages.CallCenterAccountFiltrationPage.selectZone(CallCenterAccountFiltrationPage.java:805)
+at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_Zone_from_Dropdown(AllScenarios_CallCenter_AccountFiltrationModule.java:371)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_Zone_from_Dropdown -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:33:39 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:33:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:01 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:02:01 IST" duration-ms="93" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Select_Zone_from_Dropdown status=SUCCESS method=AllScenarios_CallCenter_AccountFiltrationModule.Select_Zone_from_Dropdown(java.util.Map)[pri:14, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
+                <![CDATA[[TestResult name=Select_Zone_from_Dropdown status=FAILURE method=AllScenarios_CallCenter_AccountFiltrationModule.Select_Zone_from_Dropdown(java.util.Map)[pri:14, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:33:39 IST" name="setupTest" finished-at="2025-01-07T20:33:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:01 IST" name="setupTest" finished-at="2025-01-08T18:02:01 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -421,18 +641,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Select_Processing_Interval_from_Dropdown(java.util.Map)[pri:15, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:33:39 IST" name="Select_Processing_Interval_from_Dropdown" data-provider="TestData" finished-at="2025-01-07T20:33:48 IST" duration-ms="8448" status="PASS">
+        <test-method signature="Select_Processing_Interval_from_Dropdown(java.util.Map)[pri:15, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:01 IST" name="Select_Processing_Interval_from_Dropdown" data-provider="TestData" finished-at="2025-01-08T18:02:10 IST" duration-ms="8405" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_Processing_Interval_from_Dropdown -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:33:48 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:33:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:10 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:02:10 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -443,7 +663,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:33:48 IST" name="setupTest" finished-at="2025-01-07T20:33:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:10 IST" name="setupTest" finished-at="2025-01-08T18:02:10 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -454,18 +674,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Select_To_Dropdown(java.util.Map)[pri:16, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:33:48 IST" name="Select_To_Dropdown" data-provider="TestData" finished-at="2025-01-07T20:33:56 IST" duration-ms="8458" status="PASS">
+        <test-method signature="Select_To_Dropdown(java.util.Map)[pri:16, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:10 IST" name="Select_To_Dropdown" data-provider="TestData" finished-at="2025-01-08T18:02:18 IST" duration-ms="8359" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_To_Dropdown -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:33:56 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:33:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:02:18 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -476,7 +696,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:33:56 IST" name="setupTest" finished-at="2025-01-07T20:33:56 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="setupTest" finished-at="2025-01-08T18:02:18 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -487,29 +707,96 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Add_New_Allocation_Name(java.util.Map)[pri:17, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:33:56 IST" name="Add_New_Allocation_Name" data-provider="TestData" finished-at="2025-01-07T20:34:18 IST" duration-ms="21432" status="PASS">
+        <test-method signature="Add_New_Allocation_Name(java.util.Map)[pri:17, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="Add_New_Allocation_Name" data-provider="TestData" finished-at="2025-01-08T18:02:18 IST" duration-ms="27" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//tr[@class='rz-datatable-even  '])[1]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//tr[@class='rz-datatable-even  '])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//tr[@class='rz-datatable-even  '])[1]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//tr[@class='rz-datatable-even  '])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.testautomation.pages.CallCenterAccountFiltrationPage.clickAddButtonaftergivingrequiredvalues(CallCenterAccountFiltrationPage.java:932)
+at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Add_New_Allocation_Name(AllScenarios_CallCenter_AccountFiltrationModule.java:428)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_New_Allocation_Name -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:34:18 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:34:18 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:02:18 IST" duration-ms="162" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Add_New_Allocation_Name status=SUCCESS method=AllScenarios_CallCenter_AccountFiltrationModule.Add_New_Allocation_Name(java.util.Map)[pri:17, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
+                <![CDATA[[TestResult name=Add_New_Allocation_Name status=FAILURE method=AllScenarios_CallCenter_AccountFiltrationModule.Add_New_Allocation_Name(java.util.Map)[pri:17, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:34:18 IST" name="setupTest" finished-at="2025-01-07T20:34:18 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="setupTest" finished-at="2025-01-08T18:02:18 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -520,22 +807,89 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Allocation_Name_Status_After_Creation()[pri:18, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:34:18 IST" name="Verify_Allocation_Name_Status_After_Creation" finished-at="2025-01-07T20:34:22 IST" duration-ms="4107" status="PASS">
+        <test-method signature="Verify_Allocation_Name_Status_After_Creation()[pri:18, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="Verify_Allocation_Name_Status_After_Creation" finished-at="2025-01-08T18:02:18 IST" duration-ms="41" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//i[@style='color:green'])[1]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//i[@style='color:green'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//i[@style='color:green'])[1]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//i[@style='color:green'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.testautomation.pages.CallCenterAccountFiltrationPage.isStatusActive(CallCenterAccountFiltrationPage.java:1010)
+at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Verify_Allocation_Name_Status_After_Creation(AllScenarios_CallCenter_AccountFiltrationModule.java:454)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Allocation_Name_Status_After_Creation -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:34:22 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:34:22 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:02:18 IST" duration-ms="108" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verify_Allocation_Name_Status_After_Creation status=SUCCESS method=AllScenarios_CallCenter_AccountFiltrationModule.Verify_Allocation_Name_Status_After_Creation()[pri:18, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Allocation_Name_Status_After_Creation status=FAILURE method=AllScenarios_CallCenter_AccountFiltrationModule.Verify_Allocation_Name_Status_After_Creation()[pri:18, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:34:22 IST" name="setupTest" finished-at="2025-01-07T20:34:22 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="setupTest" finished-at="2025-01-08T18:02:18 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -546,22 +900,89 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Deactivate_Allocation_Name()[pri:19, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:34:22 IST" name="Deactivate_Allocation_Name" finished-at="2025-01-07T20:34:43 IST" duration-ms="20972" status="PASS">
+        <test-method signature="Deactivate_Allocation_Name()[pri:19, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="Deactivate_Allocation_Name" finished-at="2025-01-08T18:02:18 IST" duration-ms="16" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='rz-chkbox-box'])[1]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//div[@class='rz-chkbox-box'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='rz-chkbox-box'])[1]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//div[@class='rz-chkbox-box'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.testautomation.pages.CallCenterAccountFiltrationPage.selectAllocationName(CallCenterAccountFiltrationPage.java:1040)
+at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Deactivate_Allocation_Name(AllScenarios_CallCenter_AccountFiltrationModule.java:469)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Deactivate_Allocation_Name -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:34:43 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:34:43 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:02:18 IST" duration-ms="106" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Deactivate_Allocation_Name status=SUCCESS method=AllScenarios_CallCenter_AccountFiltrationModule.Deactivate_Allocation_Name()[pri:19, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
+                <![CDATA[[TestResult name=Deactivate_Allocation_Name status=FAILURE method=AllScenarios_CallCenter_AccountFiltrationModule.Deactivate_Allocation_Name()[pri:19, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:34:43 IST" name="setupTest" finished-at="2025-01-07T20:34:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="setupTest" finished-at="2025-01-08T18:02:18 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -572,22 +993,89 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Reactivate_Allocation_Name()[pri:20, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:34:43 IST" name="Reactivate_Allocation_Name" finished-at="2025-01-07T20:34:59 IST" duration-ms="15900" status="PASS">
+        <test-method signature="Reactivate_Allocation_Name()[pri:20, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="Reactivate_Allocation_Name" finished-at="2025-01-08T18:02:18 IST" duration-ms="13" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='rz-chkbox-box'])[1]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//div[@class='rz-chkbox-box'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='rz-chkbox-box'])[1]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//div[@class='rz-chkbox-box'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.testautomation.pages.CallCenterAccountFiltrationPage.selectAllocationName(CallCenterAccountFiltrationPage.java:1040)
+at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Reactivate_Allocation_Name(AllScenarios_CallCenter_AccountFiltrationModule.java:492)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Reactivate_Allocation_Name -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:34:59 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:34:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:18 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:02:19 IST" duration-ms="110" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Reactivate_Allocation_Name status=SUCCESS method=AllScenarios_CallCenter_AccountFiltrationModule.Reactivate_Allocation_Name()[pri:20, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
+                <![CDATA[[TestResult name=Reactivate_Allocation_Name status=FAILURE method=AllScenarios_CallCenter_AccountFiltrationModule.Reactivate_Allocation_Name()[pri:20, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:34:59 IST" name="setupTest" finished-at="2025-01-07T20:34:59 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:19 IST" name="setupTest" finished-at="2025-01-08T18:02:19 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -598,11 +1086,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Run_Database_Package_and_Verify_Accounts_Insertion()[pri:21, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:34:59 IST" name="Run_Database_Package_and_Verify_Accounts_Insertion" finished-at="2025-01-07T20:35:30 IST" duration-ms="31406" status="PASS">
+        <test-method signature="Run_Database_Package_and_Verify_Accounts_Insertion()[pri:21, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:02:19 IST" name="Run_Database_Package_and_Verify_Accounts_Insertion" finished-at="2025-01-08T18:04:10 IST" duration-ms="111354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Run_Database_Package_and_Verify_Accounts_Insertion -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:35:30 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:35:30 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:04:10 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:04:10 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -613,7 +1101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:35:30 IST" name="setupTest" finished-at="2025-01-07T20:35:30 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:04:10 IST" name="setupTest" finished-at="2025-01-08T18:04:10 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -624,11 +1112,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Login_to_call_centre_application_and_take_account_filtration_pages()[pri:22, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:35:30 IST" name="Login_to_call_centre_application_and_take_account_filtration_pages" finished-at="2025-01-07T20:36:21 IST" duration-ms="50526" status="PASS">
+        <test-method signature="Login_to_call_centre_application_and_take_account_filtration_pages()[pri:22, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:04:10 IST" name="Login_to_call_centre_application_and_take_account_filtration_pages" finished-at="2025-01-08T18:05:30 IST" duration-ms="79912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_to_call_centre_application_and_take_account_filtration_pages -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:21 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:36:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:05:30 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:05:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -639,7 +1127,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:21 IST" name="setupTest" finished-at="2025-01-07T20:36:21 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:05:30 IST" name="setupTest" finished-at="2025-01-08T18:05:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -650,11 +1138,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Select_SMA_and_NPA_Categorie()[pri:23, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:21 IST" name="Select_SMA_and_NPA_Categorie" finished-at="2025-01-07T20:36:34 IST" duration-ms="12793" status="PASS">
+        <test-method signature="Select_SMA_and_NPA_Categorie()[pri:23, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:05:30 IST" name="Select_SMA_and_NPA_Categorie" finished-at="2025-01-08T18:05:49 IST" duration-ms="19565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_SMA_and_NPA_Categorie -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:34 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:36:34 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:05:49 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:05:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -665,7 +1153,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:34 IST" name="setupTest" finished-at="2025-01-07T20:36:34 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:05:49 IST" name="setupTest" finished-at="2025-01-08T18:05:49 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -676,11 +1164,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="SMA_Category_Selections()[pri:24, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:34 IST" name="SMA_Category_Selections" finished-at="2025-01-07T20:36:37 IST" duration-ms="3541" status="PASS">
+        <test-method signature="SMA_Category_Selections()[pri:24, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:05:49 IST" name="SMA_Category_Selections" finished-at="2025-01-08T18:05:53 IST" duration-ms="3503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SMA_Category_Selections -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:37 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:36:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:05:53 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:05:53 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -691,7 +1179,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:37 IST" name="setupTest" finished-at="2025-01-07T20:36:37 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:05:53 IST" name="setupTest" finished-at="2025-01-08T18:05:53 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -702,18 +1190,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="NPA_Category_Selections(java.util.Map)[pri:25, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:37 IST" name="NPA_Category_Selections" data-provider="TestData" finished-at="2025-01-07T20:36:41 IST" duration-ms="4202" status="PASS">
+        <test-method signature="NPA_Category_Selections(java.util.Map)[pri:25, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:05:53 IST" name="NPA_Category_Selections" data-provider="TestData" finished-at="2025-01-08T18:05:57 IST" duration-ms="4179" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NPA_Category_Selections -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:41 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:36:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:05:57 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:05:57 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -724,7 +1212,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:41 IST" name="setupTest" finished-at="2025-01-07T20:36:41 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:05:57 IST" name="setupTest" finished-at="2025-01-08T18:05:57 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -735,18 +1223,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Allocation_Type_Selections__Auto(java.util.Map)[pri:26, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:41 IST" name="Allocation_Type_Selections__Auto" data-provider="TestData" finished-at="2025-01-07T20:36:46 IST" duration-ms="4144" status="PASS">
+        <test-method signature="Allocation_Type_Selections__Auto(java.util.Map)[pri:26, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:05:57 IST" name="Allocation_Type_Selections__Auto" data-provider="TestData" finished-at="2025-01-08T18:06:01 IST" duration-ms="4175" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Allocation_Type_Selections__Auto -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:46 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:36:46 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:01 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:06:01 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -757,7 +1245,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:46 IST" name="setupTest" finished-at="2025-01-07T20:36:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:01 IST" name="setupTest" finished-at="2025-01-08T18:06:01 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -768,18 +1256,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Allocated_To_Selection__Call_Centre(java.util.Map)[pri:27, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:46 IST" name="Allocated_To_Selection__Call_Centre" data-provider="TestData" finished-at="2025-01-07T20:36:49 IST" duration-ms="3565" status="PASS">
+        <test-method signature="Allocated_To_Selection__Call_Centre(java.util.Map)[pri:27, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:01 IST" name="Allocated_To_Selection__Call_Centre" data-provider="TestData" finished-at="2025-01-08T18:06:05 IST" duration-ms="3587" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Allocated_To_Selection__Call_Centre -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:49 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:36:49 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:05 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:06:05 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -790,7 +1278,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:49 IST" name="setupTest" finished-at="2025-01-07T20:36:49 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:05 IST" name="setupTest" finished-at="2025-01-08T18:06:05 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -801,11 +1289,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Perform_Search_with_Valid_Datas()[pri:28, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:36:49 IST" name="Perform_Search_with_Valid_Datas" finished-at="2025-01-07T20:37:01 IST" duration-ms="11349" status="PASS">
+        <test-method signature="Perform_Search_with_Valid_Datas()[pri:28, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:05 IST" name="Perform_Search_with_Valid_Datas" finished-at="2025-01-08T18:06:27 IST" duration-ms="22340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Perform_Search_with_Valid_Datas -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:37:01 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:37:01 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:27 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:06:27 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -816,7 +1304,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:37:01 IST" name="setupTest" finished-at="2025-01-07T20:37:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:27 IST" name="setupTest" finished-at="2025-01-08T18:06:27 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -827,11 +1315,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Total_Account_and_Amount_in_Grid()[pri:29, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:37:01 IST" name="Verify_Total_Account_and_Amount_in_Grid" finished-at="2025-01-07T20:37:04 IST" duration-ms="3053" status="PASS">
+        <test-method signature="Verify_Total_Account_and_Amount_in_Grid()[pri:29, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:27 IST" name="Verify_Total_Account_and_Amount_in_Grid" finished-at="2025-01-08T18:06:30 IST" duration-ms="3055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Total_Account_and_Amount_in_Grid -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:37:04 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:37:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:30 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:06:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -842,7 +1330,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:37:04 IST" name="setupTest" finished-at="2025-01-07T20:37:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:30 IST" name="setupTest" finished-at="2025-01-08T18:06:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -853,29 +1341,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Download_File__List_of_Accounts(java.util.Map)[pri:30, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:37:04 IST" name="Download_File__List_of_Accounts" data-provider="TestData" finished-at="2025-01-07T20:37:12 IST" duration-ms="8094" status="PASS">
+        <test-method signature="Download_File__List_of_Accounts(java.util.Map)[pri:30, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:30 IST" name="Download_File__List_of_Accounts" data-provider="TestData" finished-at="2025-01-08T18:06:42 IST" duration-ms="11728" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Download_File__List_of_Accounts -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:37:12 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:37:12 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Download_File__List_of_Accounts status=SUCCESS method=AllScenarios_CallCenter_AccountFiltrationModule.Download_File__List_of_Accounts(java.util.Map)[pri:30, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:37:12 IST" name="setupTest" finished-at="2025-01-07T20:37:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:42 IST" name="setupTest" finished-at="2025-01-08T18:06:42 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -886,11 +1363,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Downloaded_File()[pri:31, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:37:12 IST" name="Verify_Downloaded_File" finished-at="2025-01-07T20:37:15 IST" duration-ms="3188" status="PASS">
+        <test-method signature="Verify_Downloaded_File()[pri:31, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:42 IST" name="Verify_Downloaded_File" finished-at="2025-01-08T18:06:45 IST" duration-ms="3145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Downloaded_File -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:37:15 IST" name="takeScreenshotOnFailure" finished-at="2025-01-07T20:37:15 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:42 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:06:42 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Download_File__List_of_Accounts status=SUCCESS method=AllScenarios_CallCenter_AccountFiltrationModule.Download_File__List_of_Accounts(java.util.Map)[pri:30, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:45 IST" name="takeScreenshotOnFailure" finished-at="2025-01-08T18:06:45 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -901,7 +1389,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-07T20:37:15 IST" name="afterEachTest" finished-at="2025-01-07T20:37:16 IST" duration-ms="867" status="PASS">
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968]" started-at="2025-01-08T18:06:45 IST" name="afterEachTest" finished-at="2025-01-08T18:06:47 IST" duration-ms="2031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->

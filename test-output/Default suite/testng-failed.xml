@@ -6,33 +6,17 @@
       <class name="com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule">
         <methods>
           <include name="Select_NPA_and_SMA_Category_Checkbox"/>
-          <include name="Verify_Total_Account_and_Amount_in_Grid"/>
-          <include name="Select_Zone_from_Dropdown"/>
-          <include name="Reactivate_Allocation_Name"/>
-          <include name="Add_New_Allocation_Name"/>
-          <include name="Download_File__List_of_Accounts"/>
           <include name="Verify_Allocation_Name_Status_After_Creation"/>
-          <include name="setupTest"/>
-          <include name="Select_SMA_and_NPA_Categorie"/>
-          <include name="Perform_Search_with_Valid_Datas"/>
-          <include name="Verify_Fields_and_Buttons_on_Auto_Allocation_Page"/>
-          <include name="Select_Processing_Interval_from_Dropdown"/>
-          <include name="Login_to_call_centre_application_and_take_account_filtration_pages"/>
-          <include name="NPA_Category_Selections"/>
-          <include name="SetUp"/>
-          <include name="Deactivate_Allocation_Name"/>
-          <include name="Select_effect_Date_from_Date_Picker"/>
-          <include name="Login_to_beacon_fcm_core_application_Verify_Auto_Allocation_Page_Load"/>
-          <include name="Allocation_Type_Selections__Auto"/>
           <include name="afterEachTest"/>
-          <include name="Select_To_Dropdown"/>
-          <include name="Verify_Downloaded_File"/>
-          <include name="SMA_Category_Selections"/>
+          <include name="setupTest"/>
+          <include name="Select_Zone_from_Dropdown" invocation-numbers="0"/>
+          <include name="Reactivate_Allocation_Name"/>
+          <include name="SetUp"/>
           <include name="takeScreenshotOnFailure"/>
-          <include name="Enter_Allocation_Name_with_Alphabets"/>
-          <include name="Run_Database_Package_and_Verify_Accounts_Insertion"/>
+          <include name="Add_New_Allocation_Name" invocation-numbers="0"/>
+          <include name="Enter_Allocation_Name_with_Alphabets" invocation-numbers="0"/>
+          <include name="Deactivate_Allocation_Name"/>
           <include name="Perform_Search_with_Valid_Data"/>
-          <include name="Allocated_To_Selection__Call_Centre"/>
         </methods>
       </class> <!-- com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule -->
     </classes>

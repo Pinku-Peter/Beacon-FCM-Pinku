@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>31/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>23/8/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 07 20:30:10 IST 2025</td>
+<td>Started on:</td><td>Wed Jan 08 17:51:26 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>425 seconds (425291 ms)</td>
+<tr><td>Total time:</td><td>919 seconds (919378 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,804 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Perform_Search_with_Valid_Data()'><b>Perform_Search_with_Valid_Data</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td><div><pre>java.lang.AssertionError: Test failed because grid text did not contain &apos;No records to display&apos;. Instead, it contained: No records message element not found.
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Perform_Search_with_Valid_Data(AllScenarios_CallCenter_AccountFiltrationModule.java:241)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1365343123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1365343123'><pre>java.lang.AssertionError: Test failed because grid text did not contain &apos;No records to display&apos;. Instead, it contained: No records message element not found.
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Perform_Search_with_Valid_Data(AllScenarios_CallCenter_AccountFiltrationModule.java:241)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>62</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Enter_Allocation_Name_with_Alphabets()'><b>Enter_Allocation_Name_with_Alphabets</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //i[contains(@class, &apos;rz-dropdown-clear-icon rzi&apos;)] (tried for 180 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.enterAllocationName(CallCenterAccountFiltrationPage.java:520)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Enter_Allocation_Name_with_Alphabets(AllScenarios_CallCenter_AccountFiltrationModule.java:293)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace222601056", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace222601056'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //i[contains(@class, &apos;rz-dropdown-clear-icon rzi&apos;)] (tried for 180 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.enterAllocationName(CallCenterAccountFiltrationPage.java:520)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Enter_Allocation_Name_with_Alphabets(AllScenarios_CallCenter_AccountFiltrationModule.java:293)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>180</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Verify_Allocation_Name_Status_After_Creation()'><b>Verify_Allocation_Name_Status_After_Creation</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//i[@style=&apos;color:green&apos;])[1]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//i[@style=&apos;color:green&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.isStatusActive(CallCenterAccountFiltrationPage.java:1010)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Verify_Allocation_Name_Status_After_Creation(AllScenarios_CallCenter_AccountFiltrationModule.java:454)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace444590347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace444590347'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//i[@style=&apos;color:green&apos;])[1]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//i[@style=&apos;color:green&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.isStatusActive(CallCenterAccountFiltrationPage.java:1010)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Verify_Allocation_Name_Status_After_Creation(AllScenarios_CallCenter_AccountFiltrationModule.java:454)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Add_New_Allocation_Name()'><b>Add_New_Allocation_Name</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[@class=&apos;rz-datatable-even  &apos;])[1]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//tr[@class=&apos;rz-datatable-even  &apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.clickAddButtonaftergivingrequiredvalues(CallCenterAccountFiltrationPage.java:932)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Add_New_Allocation_Name(AllScenarios_CallCenter_AccountFiltrationModule.java:428)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1672495317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1672495317'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[@class=&apos;rz-datatable-even  &apos;])[1]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//tr[@class=&apos;rz-datatable-even  &apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.clickAddButtonaftergivingrequiredvalues(CallCenterAccountFiltrationPage.java:932)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Add_New_Allocation_Name(AllScenarios_CallCenter_AccountFiltrationModule.java:428)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Reactivate_Allocation_Name()'><b>Reactivate_Allocation_Name</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;rz-chkbox-box&apos;])[1]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//div[@class=&apos;rz-chkbox-box&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.selectAllocationName(CallCenterAccountFiltrationPage.java:1040)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Reactivate_Allocation_Name(AllScenarios_CallCenter_AccountFiltrationModule.java:492)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1800029389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1800029389'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;rz-chkbox-box&apos;])[1]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//div[@class=&apos;rz-chkbox-box&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.selectAllocationName(CallCenterAccountFiltrationPage.java:1040)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Reactivate_Allocation_Name(AllScenarios_CallCenter_AccountFiltrationModule.java:492)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_NPA_and_SMA_Category_Checkbox()'><b>Select_NPA_and_SMA_Category_Checkbox</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;rz-chkbox-box   &apos;])[17]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//div[@class=&apos;rz-chkbox-box   &apos;])[17]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.selectAllInAssetCategory(CallCenterAccountFiltrationPage.java:660)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_NPA_and_SMA_Category_Checkbox(AllScenarios_CallCenter_AccountFiltrationModule.java:345)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1102924885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1102924885'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;rz-chkbox-box   &apos;])[17]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//div[@class=&apos;rz-chkbox-box   &apos;])[17]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.selectAllInAssetCategory(CallCenterAccountFiltrationPage.java:660)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_NPA_and_SMA_Category_Checkbox(AllScenarios_CallCenter_AccountFiltrationModule.java:345)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>20</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Deactivate_Allocation_Name()'><b>Deactivate_Allocation_Name</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;rz-chkbox-box&apos;])[1]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//div[@class=&apos;rz-chkbox-box&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.selectAllocationName(CallCenterAccountFiltrationPage.java:1040)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Deactivate_Allocation_Name(AllScenarios_CallCenter_AccountFiltrationModule.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1526395953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1526395953'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;rz-chkbox-box&apos;])[1]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=(//div[@class=&apos;rz-chkbox-box&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.selectAllocationName(CallCenterAccountFiltrationPage.java:1040)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Deactivate_Allocation_Name(AllScenarios_CallCenter_AccountFiltrationModule.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_Zone_from_Dropdown()'><b>Select_Zone_from_Dropdown</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@aria-label=&apos;&gt;Mumbai&apos;]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=//li[@aria-label=&apos;&gt;Mumbai&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.selectZone(CallCenterAccountFiltrationPage.java:805)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_Zone_from_Dropdown(AllScenarios_CallCenter_AccountFiltrationModule.java:371)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2116101485", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2116101485'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@aria-label=&apos;&gt;Mumbai&apos;]&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c650fd3f8769d65e95bc71ba0abd83c2, findElement {using=xpath, value=//li[@aria-label=&apos;&gt;Mumbai&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c650fd3f8769d65e95bc71ba0abd83c2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.testautomation.pages.CallCenterAccountFiltrationPage.selectZone(CallCenterAccountFiltrationPage.java:805)
+	at com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_Zone_from_Dropdown(AllScenarios_CallCenter_AccountFiltrationModule.java:371)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>5</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,127 +873,52 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Login_to_call_centre_application_and_take_account_filtration_pages()'><b>Login_to_call_centre_application_and_take_account_filtration_pages</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
-<td></td>
-<td>50</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Perform_Search_with_Valid_Datas()'><b>Perform_Search_with_Valid_Datas</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
-<td></td>
-<td>11</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Reactivate_Allocation_Name()'><b>Reactivate_Allocation_Name</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
-<td></td>
-<td>15</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_To_Dropdown()'><b>Select_To_Dropdown</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>8</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.SMA_Category_Selection()'><b>SMA_Category_Selection</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Verify_Fields_and_Buttons_on_Auto_Allocation_Page()'><b>Verify_Fields_and_Buttons_on_Auto_Allocation_Page</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
 <td></td>
 <td>3</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Verify_Allocation_Name_Status_After_Creation()'><b>Verify_Allocation_Name_Status_After_Creation</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
-<td></td>
-<td>4</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 <tr>
 <td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_SMA_and_NPA_Categorie()'><b>Select_SMA_and_NPA_Categorie</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
 <td></td>
-<td>12</td>
+<td>19</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Download_File__List_of_Accounts()'><b>Download_File__List_of_Accounts</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td></td>
+<td>11</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 <tr>
 <td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Run_Database_Package_and_Verify_Accounts_Insertion()'><b>Run_Database_Package_and_Verify_Accounts_Insertion</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
 <td></td>
-<td>31</td>
+<td>111</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 <tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_effect_Date_from_Date_Picker()'><b>Select_effect_Date_from_Date_Picker</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Allocated_To_dropdown_mandatory_checking()'><b>Allocated_To_dropdown_mandatory_checking</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td></td>
+<td>8</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Allocated_To_Selection__Call_Centre()'><b>Allocated_To_Selection__Call_Centre</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
 <td></td>
 <td>3</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 <tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Add_New_Allocation_Name()'><b>Add_New_Allocation_Name</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>21</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Deactivate_Allocation_Name()'><b>Deactivate_Allocation_Name</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
-<td></td>
-<td>20</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Allocated_To_Selection__Call_Centre()'><b>Allocated_To_Selection__Call_Centre</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>3</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Allocation_Type_Selection__Auto()'><b>Allocation_Type_Selection__Auto</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Allocation_Type_Selections__Auto()'><b>Allocation_Type_Selections__Auto</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
 <td></td>
 <td>4</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 <tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_Zone_from_Dropdown()'><b>Select_Zone_from_Dropdown</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>8</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.NPA_Category_Selections()'><b>NPA_Category_Selections</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>4</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Perform_Search_with_Valid_Data()'><b>Perform_Search_with_Valid_Data</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
-<td></td>
-<td>10</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_NPA_and_SMA_Category_Checkbox()'><b>Select_NPA_and_SMA_Category_Checkbox</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
-<td></td>
-<td>49</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.SMA_Category_Selections()'><b>SMA_Category_Selections</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_effect_Date_from_Date_Picker()'><b>Select_effect_Date_from_Date_Picker</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
 <td></td>
 <td>3</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 <tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Download_File__List_of_Accounts()'><b>Download_File__List_of_Accounts</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>8</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Asset_category_dropdown_mandatory_checking()'><b>Asset_category_dropdown_mandatory_checking</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>8</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_SMA_and_NPA_Categories()'><b>Select_SMA_and_NPA_Categories</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
-<td></td>
-<td>12</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_Processing_Interval_from_Dropdown()'><b>Select_Processing_Interval_from_Dropdown</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>8</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Allocation_Type_Selections__Auto()'><b>Allocation_Type_Selections__Auto</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.NPA_Category_Selections()'><b>NPA_Category_Selections</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
 <td></td>
 <td>4</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 <tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Verify_Total_Account_and_Amount_in_Grid()'><b>Verify_Total_Account_and_Amount_in_Grid</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
-<tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Verify_Fields_and_Buttons_on_Auto_Allocation_Page()'><b>Verify_Fields_and_Buttons_on_Auto_Allocation_Page</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.SMA_Category_Selection()'><b>SMA_Category_Selection</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
 <td></td>
 <td>3</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
@@ -205,29 +928,64 @@ function toggleAllBoxes() {
 <td>3</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 <tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.NPA_Category_Selection()'><b>NPA_Category_Selection</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Login_to_call_centre_application_and_take_account_filtration_page()'><b>Login_to_call_centre_application_and_take_account_filtration_page</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td></td>
+<td>8</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_Processing_Interval_from_Dropdown()'><b>Select_Processing_Interval_from_Dropdown</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td></td>
+<td>8</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_To_Dropdown()'><b>Select_To_Dropdown</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td></td>
+<td>8</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Verify_Total_Account_and_Amount_in_Grid()'><b>Verify_Total_Account_and_Amount_in_Grid</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
 <td></td>
 <td>3</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 <tr>
 <td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Login_to_beacon_fcm_core_application_Verify_Auto_Allocation_Page_Load()'><b>Login_to_beacon_fcm_core_application_Verify_Auto_Allocation_Page_Load</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
 <td></td>
-<td>74</td>
+<td>265</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 <tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Login_to_call_centre_application_and_take_account_filtration_page()'><b>Login_to_call_centre_application_and_take_account_filtration_page</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.SMA_Category_Selections()'><b>SMA_Category_Selections</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
 <td></td>
-<td>9</td>
+<td>3</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 <tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Enter_Allocation_Name_with_Alphabets()'><b>Enter_Allocation_Name_with_Alphabets</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=7, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Allocation_Type_Selection__Auto()'><b>Allocation_Type_Selection__Auto</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
 <td></td>
-<td>7</td>
+<td>4</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 <tr>
-<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Allocated_To_dropdown_mandatory_checking()'><b>Allocated_To_dropdown_mandatory_checking</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Select_SMA_and_NPA_Categories()'><b>Select_SMA_and_NPA_Categories</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td></td>
+<td>54</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Login_to_call_centre_application_and_take_account_filtration_pages()'><b>Login_to_call_centre_application_and_take_account_filtration_pages</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td></td>
+<td>79</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.NPA_Category_Selection()'><b>NPA_Category_Selection</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td></td>
+<td>3</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Asset_category_dropdown_mandatory_checking()'><b>Asset_category_dropdown_mandatory_checking</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation23, AllocationType=Auto Allocation, DownloadFile=List of Accounts - Excel, effectDate=8, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
 <td></td>
 <td>8</td>
+<td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
+<tr>
+<td title='com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule.Perform_Search_with_Valid_Datas()'><b>Perform_Search_with_Valid_Datas</b><br>Test class: com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule</td>
+<td></td>
+<td>22</td>
 <td>com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule@544fa968</td></tr>
 </table><p>
 </body>

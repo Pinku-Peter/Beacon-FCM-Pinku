@@ -2,6 +2,8 @@ package com.test.CallCenter_AccountFiltration_Module;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -35,7 +37,7 @@ import com.listeners.TestListener;
 public class AllScenarios_CallCenter_AccountFiltrationModule {
 	
 	private String totalAccounts;
-	
+	private List<WebDriver> drivers = new ArrayList<>();
 	Base_Class baseclass;
 	com.Utility.ExcelReader ExcelReader;
 	WebDriver driver;
@@ -65,6 +67,7 @@ public class AllScenarios_CallCenter_AccountFiltrationModule {
     public void setupTest(Method method) {
 		 baseclass = new Base_Class();
 		    driver = baseclass.getDriver();
+		    drivers.add(driver);
 		    callcenteraccountfiltrationPage = new CallCenterAccountFiltrationPage(driver);
 		    callcenterlogin = new Login_Class();
         // Start a new ExtentTest for the current test method
@@ -797,11 +800,18 @@ public class AllScenarios_CallCenter_AccountFiltrationModule {
 	 @AfterSuite
 	 public void afterEachTest() {
 	     ExtentManager.getInstance().flush();
-	  // Close the browser
-	        if (driver != null) {
-	            driver.quit();
+	  // Close all tracked browser instances
+	        for (WebDriver driverInstance : drivers) {
+	            if (driverInstance != null) {
+	                driverInstance.quit();
+	            }
 	        }
-	 }
+
+	        // Clear the list of drivers
+	        drivers.clear();
+
+	        System.out.println("All browser instances have been closed.");
+	    }
 
 		
 }
