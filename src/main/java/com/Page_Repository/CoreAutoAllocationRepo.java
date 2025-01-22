@@ -1,7 +1,7 @@
 package com.Page_Repository;
 import org.openqa.selenium.By;
 
-public class CallCenterAccountFiltrationRepo {
+public class CoreAutoAllocationRepo {
 	
 	public static By callcentermainmenu = By.xpath("//span[contains(text(),'Call Centre')]");
 	public static By accountfiltrationsubmenu = By.xpath("//a[contains(text(),'Account Filtration')]");
@@ -98,4 +98,14 @@ public class CallCenterAccountFiltrationRepo {
         return By.xpath("(//li[@aria-label='>" + value + "'])[3]");
     }
 	public static By OutstandingBalLimit = By.xpath("//input[@onkeypress='DecimalWithHyphen(event, this); NumberWithMaxLengthWithHyphen(event, this)']");
+	public static By getdownloadhistorybutton = By.xpath("//button[contains(text(),'Get Download History')]");
+	public static By fromDateField = By.xpath("//input[@name='ActionDatefrom']");
+	public static By fromandtodatevalue(String value) {
+        return By.xpath("(//span[contains(@class, 'rz-state-default') and text()='"+ value +"'])[6]");
+    }
+	public static By toDateField = By.xpath("(//input[@name='ActionDateto' and @id='ActionDateto'])[1]");
+	public static By searchbtn = By.xpath("(//button[@type='submit' and text()='Search'])[1]");
+	public static By table = By.xpath("(//table[contains(@class, 'rz-grid-table-fixed')])[1]");
+	public static By rows = By.xpath("//tr[contains(@class, 'rz-datatable')]");
+	public static By cells = By.xpath("//span[@class='rz-cell-data']");
 }

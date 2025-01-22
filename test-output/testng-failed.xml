@@ -3,22 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule">
+      <class name="com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule">
         <methods>
-          <include name="Select_NPA_and_SMA_Category_Checkbox"/>
-          <include name="Verify_Allocation_Name_Status_After_Creation"/>
-          <include name="afterEachTest"/>
-          <include name="setupTest"/>
-          <include name="Select_Zone_from_Dropdown" invocation-numbers="0"/>
-          <include name="Reactivate_Allocation_Name"/>
           <include name="SetUp"/>
           <include name="takeScreenshotOnFailure"/>
-          <include name="Add_New_Allocation_Name" invocation-numbers="0"/>
-          <include name="Enter_Allocation_Name_with_Alphabets" invocation-numbers="0"/>
-          <include name="Deactivate_Allocation_Name"/>
-          <include name="Perform_Search_with_Valid_Data"/>
+          <include name="Verify_Dialer_Downloaded_File"/>
+          <include name="afterEachTest"/>
+          <include name="setupTest"/>
         </methods>
-      </class> <!-- com.test.CallCenter_AccountFiltration_Module.AllScenarios_CallCenter_AccountFiltrationModule -->
+      </class> <!-- com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

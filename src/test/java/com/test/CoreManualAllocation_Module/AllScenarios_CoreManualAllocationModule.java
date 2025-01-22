@@ -1,0 +1,412 @@
+package com.test.CoreManualAllocation_Module;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import java.lang.reflect.Method;
+import java.time.Duration;
+import com.BasePackage.Base_Class;
+import com.BasePackage.DownloadedExcelReader.DataSummary;
+import com.BasePackage.ExecuteStoredProcedure;
+import com.BasePackage.Login_Class;
+import com.Page_Repository.CoreAutoAllocationRepo;
+import com.Page_Repository.CoreManualAllocationRepo;
+import com.Page_Repository.DispositionMasterPageRepo;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+import com.extentReports.ExtentManager;
+import com.extentReports.ExtentTestManager;
+import com.testautomation.pages.CoreAutoAllocationPage;
+import com.testautomation.pages.CoreAutoAllocationPage.ProcedureResult;
+import com.testautomation.pages.CoreManualAllocationPage;
+
+import bsh.ParseException;
+import com.listeners.TestListener;
+
+
+public class AllScenarios_CoreManualAllocationModule {
+	private List<WebDriver> drivers = new ArrayList<>();
+	Base_Class baseclass;
+	com.Utility.ExcelReader ExcelReader;
+	WebDriver driver;
+	TestListener TestListener;
+	com.Utility.ScreenShot screenShot;
+	ExtentTest extenttest;
+	Login_Class callcenterlogin;
+	CoreManualAllocationPage coremanualallocationpage;
+	
+	@BeforeSuite
+
+	public void SetUp() throws Exception {
+		
+		baseclass = new Base_Class();
+		callcenterlogin = new Login_Class();
+		//callcenterlogin.CallCenterLogin();
+		driver = baseclass.getDriver(); // Retrieve the driver instance
+		coremanualallocationpage = new CoreManualAllocationPage(driver);
+		ExcelReader = new com.Utility.ExcelReader("Core_Manual_Allocation");
+		TestListener = new TestListener();
+		screenShot = new com.Utility.ScreenShot(driver);
+	}
+	
+	@BeforeMethod
+    public void setupTest(Method method) {
+		 baseclass = new Base_Class();
+		    driver = baseclass.getDriver();
+		    drivers.add(driver);
+		    coremanualallocationpage = new CoreManualAllocationPage(driver);
+		    //callcenterlogin = new Login_Class();
+		    // Update the ScreenShot object with the new driver
+		    screenShot = new com.Utility.ScreenShot(driver);
+        // Start a new ExtentTest for the current test method
+        extenttest = ExtentTestManager.startTest(method.getName()).assignCategory("Call Centre ManualAllocation");
+    }
+	
+//	@Test(priority = 1)
+//    public void Login_to_call_centre_application_and_take_account_filtration_page() throws InterruptedException {
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+//		try {
+//			ExtentTestManager.getTest().log(Status.PASS, "Opened the FCM Call Centre application.");
+//			ExtentTestManager.getTest().log(Status.PASS, "Entered valid credentials and logged in.");
+//        //Navigate to Call Centre Main Menu
+//			coremanualallocationpage.navigateToMainMenu();
+//		ExtentTestManager.getTest().log(Status.PASS, "Navigated to the Call Centre Main Menu.");
+//        //Click on Account Filtration sub-menu
+//		coremanualallocationpage.navigateToAccountFiltration();
+//		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Account Filtration sub-menu.");
+//        // Expected Result: User is navigated to Account Filtration page
+//        // URL shows CallCentre/CallCentreLeadFiltration
+//        String currentUrl = driver.getCurrentUrl();
+//        Assert.assertTrue(currentUrl.contains("CallCentre/CallCentreLeadFiltration"), "Not navigated to Account Filtration page.");
+//        ExtentTestManager.getTest().log(Status.PASS, "User is navigated to Account Filtration page, URL shows CallCentre/CallCentreLeadFiltration.");
+//        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+//}
+//		
+//		catch (AssertionError | Exception e) {
+//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+//            throw e;
+//        }
+//		Thread.sleep(3000);
+//    }
+//	
+//	@Test(priority = 2)
+//    public void Allocated_To_dropdown_mandatory_checking() throws InterruptedException {
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+//		try {
+//			ExtentTestManager.getTest().log(Status.PASS, "Left the Asset Category and Allocated To fields empty.");
+//       //Click on the Search button
+//			coremanualallocationpage.clickSearchButton();
+//		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Search button.");
+//        // Verify the warning message
+//        String expectedMessage = "Allocated To is Required";
+//        Assert.assertEquals(coremanualallocationpage.getWarningMessage(), expectedMessage, "Warning message not displayed as expected");
+//        ExtentTestManager.getTest().log(Status.PASS, "Displays warning message \"Allocated to is required\".");
+//        wait.until(ExpectedConditions.invisibilityOfElementLocated(CoreAutoAllocationRepo.warningmsg));
+//}
+//		
+//		catch (AssertionError | Exception e) {
+//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+//            throw e;
+//        }
+//		Thread.sleep(3000);
+//    }
+//	
+//	@Test(priority = 3, dataProvider = "TestData")
+//    public void Asset_category_dropdown_mandatory_checking(Map<Object, Object> testdata) throws InterruptedException {
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+//	 try {
+//        
+//	 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+//	    	
+//	        String value = testdata.get("AllocatedTo").toString();
+//	     // Select any value in Allocated To field
+//	        coremanualallocationpage.selectAllocatedTo(value);
+//	        ExtentTestManager.getTest().log(Status.PASS, "Left the Asset Category field empty and selected a value in the Allocated To field.");
+//	    }
+//	// Click Search button
+//	 coremanualallocationpage.clickSearchButtonaftergivingvalueforallocatedto();
+//	 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Search button.");
+//	// Verify the warning message
+//     Assert.assertEquals(coremanualallocationpage.getWarningMessageaftergivingvalueforallocatedto(), "Asset Category is Required");
+//        ExtentTestManager.getTest().log(Status.PASS, "Displays warning message  \"asset category is required\".");
+//        wait.until(ExpectedConditions.invisibilityOfElementLocated(CoreAutoAllocationRepo.warningmsg2));
+//	 }
+//        catch (AssertionError | Exception e) {
+//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+//            throw e;
+//	 }
+//	 Thread.sleep(3000); 
+//        
+// }
+//	
+//	@Test(priority = 4)
+//    public void Select_SMA_and_NPA_Categories() throws InterruptedException {
+//		 try {
+//        // Open Asset Category dropdown and selecting all values
+//			 coremanualallocationpage.openAssetCategoryDropdown();
+//		ExtentTestManager.getTest().log(Status.PASS, "Opened the Asset Category dropdown.");
+//		ExtentTestManager.getTest().log(Status.PASS, "Selected the SMA category and NPA category.");
+//		ExtentTestManager.getTest().log(Status.PASS, "SMA and NPA categories are selected.");
+//	 }
+//        catch (AssertionError | Exception e) {
+//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+//            throw e;
+//	 }
+//	 Thread.sleep(3000);
+//    }
+//	
+//	@Test(priority = 5)
+//    public void SMA_Category_Selection() throws InterruptedException {
+//		 try {
+//        // Open SMA Category dropdown and selecting all values
+//			 coremanualallocationpage.openSMACategoryDropdown(); 
+//		ExtentTestManager.getTest().log(Status.PASS, "Opened the SMA Category dropdown.");
+//		ExtentTestManager.getTest().log(Status.PASS, "Selected SMA 0, SMA 1, and SMA 2 from the dropdown.");
+//		ExtentTestManager.getTest().log(Status.PASS, "SMA 0, SMA 1, SMA 2 should be selected.");
+//	 }
+//        catch (AssertionError | Exception e) {
+//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+//            throw e;
+//	 }
+//	 Thread.sleep(3000);
+//    }
+//	
+//	@Test(priority = 6)
+//    public void NPA_Category_Selection() throws InterruptedException {
+//		 try {
+//        // Open SMA Category dropdown and selecting all values
+//			 coremanualallocationpage.openNPACategoryDropdown(); 
+//		ExtentTestManager.getTest().log(Status.PASS, "Opened the NPA Category dropdown.");
+//		ExtentTestManager.getTest().log(Status.PASS, "Selected sub-standard, doubtful-1, doubtful-2, doubtful-3, and loss asset.");
+//		ExtentTestManager.getTest().log(Status.PASS, "Selected NPA categories sub-standard , doubtful-1 , doubtful-2,doubtful-3,loss asset should be selected from the dropdown");
+//	 }
+//        catch (AssertionError | Exception e) {
+//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+//            throw e;
+//	 }
+//	 Thread.sleep(3000);
+//    }
+//	
+//	@Test(priority = 7, dataProvider = "TestData")
+//  public void Allocation_Type_Selection__Auto(Map<Object, Object> testdata) throws InterruptedException {
+//	 try {
+//      
+//	 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+//	    	
+//	        String value = testdata.get("AllocationType").toString();
+//	        coremanualallocationpage.selectAllocationType(value); 
+//	        ExtentTestManager.getTest().log(Status.PASS, "Opened the Allocation Type dropdown.");
+//	        ExtentTestManager.getTest().log(Status.PASS, "Selected Auto Allocation.");
+//	    }
+//      ExtentTestManager.getTest().log(Status.PASS, "Auto Allocation is selected.");
+//	 }
+//      catch (AssertionError | Exception e) {
+//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+//          throw e;
+//	 }
+//	 Thread.sleep(3000); 
+//      
+//}
+//	
+//	@Test(priority = 8)
+//  public void Perform_Search_with_Valid_Data() throws InterruptedException {
+//	try {
+//	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+//		ExtentTestManager.getTest().log(Status.PASS, "Verified that the Asset Category, SMA Category, NPA Category, and Allocated To mandatory fields are filled.");
+//		ExtentTestManager.getTest().log(Status.PASS, "Confirmed that the Allocation Date is autofilled.");
+//	 WebElement downloadbutton = driver.findElement(CoreAutoAllocationRepo.downloadbutton);
+//  	JavascriptExecutor js = (JavascriptExecutor) driver;
+//      js.executeScript("arguments[0].scrollIntoView(true);", downloadbutton);
+//      Thread.sleep(500);
+//      // Perform search
+//      coremanualallocationpage.clickSearchButton(); 
+//		ExtentTestManager.getTest().log(Status.PASS, "Clicked the Search button successfully.");
+//	 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+//	 String gridText = coremanualallocationpage.getResultGridText();
+//   if (gridText.contains("No records to display.")) {
+//  	 Assert.assertEquals(gridText, "No records to display.", "Expected no records to display");
+//		ExtentTestManager.getTest().log(Status.PASS, "Verified that the grid displays the message \"No records to display\" when no data is available.");
+//   } else {
+//  	 System.out.println("Total accounts allocated");
+//  	 Assert.fail("Test failed because grid text did not contain 'No records to display'. Instead, it contains: records");
+//   }
+//	}
+//		catch (AssertionError | Exception e) {
+//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+//          throw e;
+//	 }
+//	Thread.sleep(3000);  
+//  }
+	
+	@Test(priority = 9)
+  public void  Login_and_Navigation_to_Manual_Allocation() throws Exception {
+		try {
+		callcenterlogin.CoreLogin();
+		driver = baseclass.getDriver(); // Update the driver after CoreLogin
+		drivers.add(driver); // Add the new driver to the list
+		coremanualallocationpage = new CoreManualAllocationPage(driver);
+		
+		
+      Assert.assertTrue(coremanualallocationpage.isManualAllocationPageLoaded(), "Manual Allocation page not loaded correctly.");
+      ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Call Centre menu.");
+      ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Manual Allocation submenu successfully.");
+      ExtentTestManager.getTest().log(Status.PASS, "Auto Allocation page is displayed with URL ending in `CallCentre/ManualAllocationConfiguration`");
+		}
+		catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+          throw e;
+	 }
+	Thread.sleep(3000);
+  }
+	
+	 @Test(priority = 10) 
+   public void Verify_Fields_and_Buttons_on_Manual_Allocation_Page() throws InterruptedException {
+   	try {
+       
+       Assert.assertTrue(coremanualallocationpage.areFieldsAndButtonsPresent(), "Fields or Add button not present on Manual Allocation page.");
+       ExtentTestManager.getTest().log(Status.PASS, "Verified the presence of the following fields: Allocation Name\",\"Zone/CO\",\"Region\",\"Branch\",\"Branch ID\",\"Vertical\",\"Scheme Type\",\"Product Type\",\"Scheme Code\",\"Asset Tagging Type\",\"Asset Category\",\"SMA Category\",\"NPA Category\",\"DPD\",\"O/S Balance\",\"%Overdue to EMI\",\"Action Owner\",\"Action Date From\" ,\"Action Date to \",\"Types of Account\",\"Not Allocated\",\"To\",\"Is PFTNPA\",\"Is FTNPA\",\"Save This Allocation Criteria\" , Search button and reset button and edit allocation criteria button, assign button, download in excel button , assigned list button  fields and buttons.");
+       ExtentTestManager.getTest().log(Status.PASS, "All fields and Add button are present on the page");
+   	}
+		catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+           throw e;
+	 }
+	Thread.sleep(3000);
+   }
+	 
+	 @Test(priority = 11)
+	    public void testMandatoryFieldValidation() throws InterruptedException {
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+	        // Test case for mandatory field validation
+		 coremanualallocationpage.clickSearchButton();
+	        String warning = coremanualallocationpage.getWarningmessage();
+	        Assert.assertEquals(warning, "Asset Category Required");
+	    	wait.until(ExpectedConditions.invisibilityOfElementLocated(CoreManualAllocationRepo.warningMessage));
+	    }
+
+	    @Test(priority = 12)
+	    public void testAssetCategorySelection() throws InterruptedException {
+	        // Test case for asset category selection
+	    	coremanualallocationpage.selectAssetCategory();  
+	    }
+
+	    @Test(priority = 13)
+	    public void testSmaCategoryDropdownSelection() {
+	        // Test case for SMA category dropdown selection
+	    	coremanualallocationpage.selectSmaCategories();
+	    }
+
+	    @Test(priority = 14)
+	    public void testNpaCategoryDropdownSelection() {
+	        // Test case for NPA category dropdown selection
+	    	coremanualallocationpage.selectNpaCategories();
+	    }
+	    
+	    @Test(priority = 15, dataProvider = "TestData")
+	    public void testOsBalanceFieldValidation(Map<Object, Object> testdata) {
+	    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+		    	
+		        String value1 = testdata.get("OutstandingBalanceOperator").toString();
+		        String value2 = testdata.get("OutstandingBalance").toString();
+	    	coremanualallocationpage.clickOsBalanceField();
+	    	coremanualallocationpage.selectEqualFinancialOperator(value1);
+	    	coremanualallocationpage.enterOsBalance(value2);
+	    	}
+	    }
+
+	    @Test(priority = 16, dataProvider = "TestData")
+	    public void testToFieldDropdownSelection(Map<Object, Object> testdata) {
+	    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+		    	
+		        String value1 = testdata.get("To").toString();
+		        coremanualallocationpage.selectCallCentreFromToDropdown(value1);
+	    	}
+	    }
+
+	    @Test(priority = 17)
+	    public void testSearchWithMandatoryFields() {
+	    	coremanualallocationpage.clickSearchBtn();
+	    	WebElement totalAccountSelected = driver.findElement(By.id("totalAccountSelected")); // Update with the actual locator
+            WebElement totalOutstandingAmount = driver.findElement(By.id("totalOutstandingAmount")); // Update with the actual locator
+	    	 // Verify if the text for "Total account selected" is displayed and is not empty
+	    	Assert.assertTrue("Total account selected is not displayed", totalAccountSelected.isDisplayed());
+            Assert.assertFalse("Total account selected text is empty", totalAccountSelected.getText().isEmpty());
+            // Verify if the text for "Total outstanding amount" is displayed and is not empty
+            Assert.assertTrue("Total outstanding amount is not displayed", totalOutstandingAmount.isDisplayed());
+            Assert.assertFalse("Total outstanding amount text is empty", totalOutstandingAmount.getText().isEmpty());
+	    }
+
+	    @Test(priority = 18)
+	    public void testDownloadExcelFunctionality() {
+	        manualAllocationPage.clickDownloadExcelButton();
+	        // Suppose there's a method to verify download success, add assertions to validate expected outcome
+	    }
+	
+	@AfterMethod 
+	 public void takeScreenshotOnFailure(ITestResult result) throws IOException {
+		    // Check if the test case failed
+		    if (result.getStatus() == ITestResult.FAILURE) {
+		        String methodName = result.getMethod().getMethodName();
+		        try {
+		            // Take the screenshot for the failed test
+		            File image = screenShot.takeScreenShot(methodName, "Failure");
+		            
+		            extenttest.log(Status.INFO, "Screenshot of failure: ",
+		                    MediaEntityBuilder.createScreenCaptureFromPath(image.getAbsolutePath()).build());
+		            
+		        } catch (IOException e) {
+		            System.err.println("Failed to capture screenshot: " + e.getMessage());
+		        }
+		    }
+		}
+	
+	
+	 
+	 @DataProvider(name = "TestData")
+		public static Object[][] gettestdate() throws IOException {
+
+			Object[][] objectarry = null;
+			java.util.List<Map<String, String>> completedata = com.Utility.ExcelReader.getdata();
+
+			objectarry = new Object[completedata.size()][1];
+
+			for (int i = 0; i < completedata.size(); i++) {
+				objectarry[i][0] = completedata.get(i);
+			}
+			return objectarry;
+		}
+	 
+	 @AfterSuite
+	 public void afterEachTest() {
+	     ExtentManager.getInstance().flush();
+	  // Close all tracked browser instances
+//	        for (WebDriver driverInstance : drivers) {
+//	            if (driverInstance != null) {
+//	                driverInstance.quit();
+//	            }
+//	        }
+//
+//	        // Clear the list of drivers
+//	        drivers.clear();
+//
+//	        System.out.println("All browser instances have been closed.");
+	    }
+
+
+}
