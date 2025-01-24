@@ -506,126 +506,374 @@ public class CoreManualAllocationPage {
     
  // Method to click the search button
     public void clickSearchbutton() {
-    	 WebElement Searchbtn = driver.findElement(CoreManualAllocationRepo.Searchbtn);
-    	 Searchbtn.click();
+    	 // Log before finding the element
+    	Log.info("Attempting to locate the search button element.");
+
+        // Find the search button
+        WebElement Searchbtn = driver.findElement(CoreManualAllocationRepo.Searchbtn);
+
+        // Log after locating the element
+        Log.info("Search button element located successfully.");
+
+        // Log before clicking the button
+        Log.info("Attempting to click the search button.");
+
+        // Perform the click action
+        Searchbtn.click();
+
+        // Log after clicking the button
+        Log.info("Search button clicked successfully.");
     }
     
  // Method to get the warning message text
     public String getWarningmessage() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-    	WebElement warningMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.warningMessage));
-        return warningMessage.getText();
+    	 // Log before waiting for the warning message to appear
+        Log.info("Waiting for the warning message to become visible on the page.");
+
+        // Initialize WebDriverWait and wait for the element to become visible
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+
+        // Log after initializing the wait
+        Log.info("WebDriverWait initialized with a timeout of 120 seconds.");
+
+        // Wait for the warning message element to be located and visible
+        WebElement warningMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.warningMessage));
+
+        // Log after the element is located
+        Log.info("Warning message element is now visible.");
+
+        // Retrieve the text of the warning message
+        String messageText = warningMessage.getText();
+
+        // Log after retrieving the warning message text
+        Log.info("Retrieved warning message text: " + messageText);
+
+        // Return the warning message text
+        return messageText;
     }
     
  // Method to select categories from asset category dropdown
     public void selectAssetCategory() throws InterruptedException {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-    	WebElement allocationName = driver.findElement(CoreManualAllocationRepo.allocationName);
-    	JavascriptExecutor js = (JavascriptExecutor) driver;
-    	js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'start'});", allocationName);
+    	// Log before initializing WebDriverWait
+        Log.info("Initializing WebDriverWait with a timeout of 120 seconds.");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+
+        // Log before locating the allocation name element
+        Log.info("Attempting to locate the allocation name element.");
+        WebElement allocationName = driver.findElement(CoreManualAllocationRepo.allocationName);
+        Log.info("Allocation name element located successfully.");
+
+        // Log before scrolling to the allocation name element
+        Log.info("Scrolling to the allocation name element using JavaScript.");
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'start'});", allocationName);
+        Log.info("Scroll action completed.");
+
+        // Log before adding a delay
+        Log.info("Waiting for 5 seconds to ensure proper loading.");
         Thread.sleep(5000);
+        Log.info("Wait of 5 seconds completed.");
+
+        // Log before waiting for spinner to disappear
+        Log.info("Waiting for the spinner to become invisible.");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+        Log.info("Spinner is now invisible.");
+
+        // Log before locating the asset category element
+        Log.info("Attempting to locate the asset category element.");
         WebElement assetcategory = driver.findElement(CoreManualAllocationRepo.assetcategory);
-    	assetcategory.click();
-    	WebElement assetcategorysellectall = driver.findElement(CoreManualAllocationRepo.assetcategorysellectall);
-    	assetcategorysellectall.click();
-    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+        Log.info("Asset category element located successfully.");
+
+        // Log before clicking on the asset category element
+        Log.info("Clicking on the asset category element.");
+        assetcategory.click();
+        Log.info("Asset category element clicked successfully.");
+
+        // Log before locating the select all element in the asset category
+        Log.info("Attempting to locate the 'Select All' option in the asset category.");
+        WebElement assetcategorysellectall = driver.findElement(CoreManualAllocationRepo.assetcategorysellectall);
+        Log.info("'Select All' option located successfully.");
+
+        // Log before clicking on the 'Select All' option
+        Log.info("Clicking on the 'Select All' option in the asset category.");
+        assetcategorysellectall.click();
+        Log.info("'Select All' option clicked successfully.");
+
+        // Log before waiting for spinner to disappear again
+        Log.info("Waiting for the spinner to become invisible after selecting 'Select All'.");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+        Log.info("Spinner is now invisible after selecting 'Select All'.");
     }
     
  // Method to select SMA categories
     public void selectSmaCategories() throws InterruptedException {
-    	WebElement smacategory = driver.findElement(CoreManualAllocationRepo.smacategory);
-    	smacategory.click();
-    	Thread.sleep(1000);
-    	WebElement smacategorysellectall = driver.findElement(CoreManualAllocationRepo.smacategorysellectall);
-    	smacategorysellectall.click();
+    	// Log before locating the SMA category element
+        Log.info("Attempting to locate the SMA category element.");
+        WebElement smacategory = driver.findElement(CoreManualAllocationRepo.smacategory);
+        Log.info("SMA category element located successfully.");
+
+        // Log before clicking the SMA category element
+        Log.info("Clicking on the SMA category element.");
+        smacategory.click();
+        Log.info("SMA category element clicked successfully.");
+
+        // Log before adding a delay
+        Log.info("Waiting for 1 second to ensure proper loading.");
+        Thread.sleep(1000);
+        Log.info("Wait of 1 second completed.");
+
+        // Log before locating the 'Select All' option in SMA categories
+        Log.info("Attempting to locate the 'Select All' option in SMA categories.");
+        WebElement smacategorysellectall = driver.findElement(CoreManualAllocationRepo.smacategorysellectall);
+        Log.info("'Select All' option located successfully.");
+
+        // Log before clicking the 'Select All' option
+        Log.info("Clicking on the 'Select All' option in SMA categories.");
+        smacategorysellectall.click();
+        Log.info("'Select All' option in SMA categories clicked successfully.");
     }
     
  // Method to select NPA categories
     public void selectNpaCategories() {
-    	WebElement npacategory = driver.findElement(CoreManualAllocationRepo.npacategory);
-    	npacategory.click();
-    	WebElement npacategorysellectall = driver.findElement(CoreManualAllocationRepo.npacategorysellectall);
-    	npacategorysellectall.click();
+    	// Log before locating the NPA category element
+        Log.info("Attempting to locate the NPA category element.");
+        WebElement npacategory = driver.findElement(CoreManualAllocationRepo.npacategory);
+        Log.info("NPA category element located successfully.");
+
+        // Log before clicking the NPA category element
+        Log.info("Clicking on the NPA category element.");
+        npacategory.click();
+        Log.info("NPA category element clicked successfully.");
+
+        // Log before locating the 'Select All' option in NPA categories
+        Log.info("Attempting to locate the 'Select All' option in NPA categories.");
+        WebElement npacategorysellectall = driver.findElement(CoreManualAllocationRepo.npacategorysellectall);
+        Log.info("'Select All' option in NPA categories located successfully.");
+
+        // Log before clicking the 'Select All' option
+        Log.info("Clicking on the 'Select All' option in NPA categories.");
+        npacategorysellectall.click();
+        Log.info("'Select All' option in NPA categories clicked successfully.");
     }
     
     public void clickOsBalanceField() {
-    	WebElement osbalanceoperatorsdropdown = driver.findElement(CoreManualAllocationRepo.osbalanceoperatorsdropdown);
-    	osbalanceoperatorsdropdown.click();
+    	// Log before locating the OS balance operators dropdown element
+        Log.info("Attempting to locate the OS balance operators dropdown element.");
+        WebElement osbalanceoperatorsdropdown = driver.findElement(CoreManualAllocationRepo.osbalanceoperatorsdropdown);
+        Log.info("OS balance operators dropdown element located successfully.");
+
+        // Log before clicking the OS balance operators dropdown element
+        Log.info("Clicking on the OS balance operators dropdown element.");
+        osbalanceoperatorsdropdown.click();
+        Log.info("OS balance operators dropdown element clicked successfully.");
     }
 
     public void selectEqualFinancialOperator(String value) {
-    	WebElement OutstandingBalLimitOperatordropdownvalue = driver.findElement(CoreManualAllocationRepo.OutstandingBalLimitOperatordropdownvalue(value));
-    	OutstandingBalLimitOperatordropdownvalue.click();
+    	// Log before locating the dropdown value element
+        Log.info("Attempting to locate the dropdown value element for the financial operator with value: " + value);
+        WebElement OutstandingBalLimitOperatordropdownvalue = driver.findElement(CoreManualAllocationRepo.OutstandingBalLimitOperatordropdownvalue(value));
+        Log.info("Dropdown value element for the financial operator with value: " + value + " located successfully.");
+
+        // Log before clicking the dropdown value element
+        Log.info("Clicking on the dropdown value element for the financial operator with value: " + value);
+        OutstandingBalLimitOperatordropdownvalue.click();
+        Log.info("Dropdown value element for the financial operator with value: " + value + " clicked successfully.");
     }
 
     public void enterOsBalance(String balance) {
-    	WebElement osbalancetextfield = driver.findElement(CoreManualAllocationRepo.osbalancetextfield);
-    	osbalancetextfield.clear();
-    	osbalancetextfield.sendKeys(balance);
+    	// Log before locating the OS balance text field element
+        Log.info("Attempting to locate the OS balance text field element.");
+        WebElement osbalancetextfield = driver.findElement(CoreManualAllocationRepo.osbalancetextfield);
+        Log.info("OS balance text field element located successfully.");
+
+        // Log before clearing the text field
+        Log.info("Clearing any existing value in the OS balance text field.");
+        osbalancetextfield.clear();
+        Log.info("Existing value in the OS balance text field cleared successfully.");
+
+        // Log before entering the balance value
+        Log.info("Entering the balance value: " + balance + " into the OS balance text field.");
+        osbalancetextfield.sendKeys(balance);
+        Log.info("Balance value: " + balance + " entered successfully into the OS balance text field.");
     }
 
     public void selectCallCentreFromToDropdown(String value) {
-    	WebElement To = driver.findElement(CoreManualAllocationRepo.To);
-    	To.click();
-    	WebElement tovalue = driver.findElement(CoreManualAllocationRepo.tovalue(value));
-    	tovalue.click();
+    	// Log before locating and clicking the 'To' dropdown element
+        Log.info("Attempting to locate the 'To' dropdown element.");
+        WebElement To = driver.findElement(CoreManualAllocationRepo.To);
+        Log.info("'To' dropdown element located successfully.");
+
+        Log.info("Clicking on the 'To' dropdown element.");
+        To.click();
+        Log.info("'To' dropdown element clicked successfully.");
+
+        // Log before locating and clicking the specific value in the 'To' dropdown
+        Log.info("Attempting to locate the value: " + value + " in the 'To' dropdown.");
+        WebElement tovalue = driver.findElement(CoreManualAllocationRepo.tovalue(value));
+        Log.info("Value: " + value + " located successfully in the 'To' dropdown.");
+
+        Log.info("Clicking on the value: " + value + " in the 'To' dropdown.");
+        tovalue.click();
+        Log.info("Value: " + value + " clicked successfully in the 'To' dropdown.");
     }
 
     public void clickSearchBtn() throws InterruptedException {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-    	WebElement Searchbtn = driver.findElement(CoreManualAllocationRepo.Searchbtn);
-    	Searchbtn.click();
-    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-    	 WebElement AssignedList = driver.findElement(CoreManualAllocationRepo.AssignedList);
-    	JavascriptExecutor js = (JavascriptExecutor) driver;
-    	js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'start'});", AssignedList);
+    	 // Log before creating WebDriverWait instance
+        Log.info("Creating WebDriverWait instance with a timeout of 120 seconds.");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        Log.info("WebDriverWait instance created successfully.");
+
+        // Log before locating and clicking the Search button
+        Log.info("Attempting to locate the Search button.");
+        WebElement Searchbtn = driver.findElement(CoreManualAllocationRepo.Searchbtn);
+        Log.info("Search button located successfully.");
+        
+        Log.info("Clicking on the Search button.");
+        Searchbtn.click();
+        Log.info("Search button clicked successfully.");
+
+        // Log before waiting for the spinner to disappear
+        Log.info("Waiting for the spinner to become invisible.");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+        Log.info("Spinner is now invisible.");
+
+        // Log before locating the Assigned List element
+        Log.info("Attempting to locate the Assigned List element.");
+        WebElement AssignedList = driver.findElement(CoreManualAllocationRepo.AssignedList);
+        Log.info("Assigned List element located successfully.");
+
+        // Log before scrolling to the Assigned List element
+        Log.info("Scrolling to the Assigned List element.");
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'start'});", AssignedList);
+        Log.info("Successfully scrolled to the Assigned List element.");
+
+        // Log before adding a delay
+        Log.info("Waiting for 5 seconds to ensure proper loading.");
         Thread.sleep(5000);
+        Log.info("Wait of 5 seconds completed.");
     }
 
     public void clickDownloadExcelButton() {
-    	WebElement DownloadinExcel = driver.findElement(CoreManualAllocationRepo.DownloadinExcel);
-    	DownloadinExcel.click();
+    	// Log before locating the Download in Excel button
+        Log.info("Attempting to locate the 'Download in Excel' button.");
+        WebElement DownloadinExcel = driver.findElement(CoreManualAllocationRepo.DownloadinExcel);
+        Log.info("'Download in Excel' button located successfully.");
+
+        // Log before clicking the Download in Excel button
+        Log.info("Clicking on the 'Download in Excel' button.");
+        DownloadinExcel.click();
+        Log.info("'Download in Excel' button clicked successfully.");
     }
     
  // Method to get the account count from the grid
     public String getAccountGridCount() {
-    	WebElement totalAccountSelected = driver.findElement(CoreManualAllocationRepo.TotalAccountSelected);
-        return totalAccountSelected.getText();
+    	// Log before locating the Total Account Selected element
+        Log.info("Attempting to locate the 'Total Account Selected' element.");
+        WebElement totalAccountSelected = driver.findElement(CoreManualAllocationRepo.TotalAccountSelected);
+        Log.info("'Total Account Selected' element located successfully.");
+
+        // Log before retrieving the text from the element
+        Log.info("Retrieving the text from the 'Total Account Selected' element.");
+        String accountCount = totalAccountSelected.getText();
+        Log.info("Retrieved text successfully: " + accountCount);
+
+        return accountCount;
     }
     
     public void navigateTodispostionMainMenu() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-    	WebElement Disposition = driver.findElement(CoreManualAllocationRepo.Disposition);
-    	Disposition.click();
-    	WebElement UpdationofDisposition = driver.findElement(CoreManualAllocationRepo.UpdationofDisposition);
-    	UpdationofDisposition.click();
-    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+    	// Log before creating WebDriverWait instance
+        Log.info("Creating WebDriverWait instance with a timeout of 120 seconds.");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        Log.info("WebDriverWait instance created successfully.");
+
+        // Log before locating and clicking the 'Disposition' menu option
+        Log.info("Attempting to locate the 'Disposition' menu option.");
+        WebElement Disposition = driver.findElement(CoreManualAllocationRepo.Disposition);
+        Log.info("'Disposition' menu option located successfully.");
+        
+        Log.info("Clicking on the 'Disposition' menu option.");
+        Disposition.click();
+        Log.info("'Disposition' menu option clicked successfully.");
+
+        // Log before locating and clicking the 'Updation of Disposition' option
+        Log.info("Attempting to locate the 'Updation of Disposition' option.");
+        WebElement UpdationofDisposition = driver.findElement(CoreManualAllocationRepo.UpdationofDisposition);
+        Log.info("'Updation of Disposition' option located successfully.");
+
+        Log.info("Clicking on the 'Updation of Disposition' option.");
+        UpdationofDisposition.click();
+        Log.info("'Updation of Disposition' option clicked successfully.");
+
+        // Log before waiting for the spinner to disappear
+        Log.info("Waiting for the spinner to become invisible.");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+        Log.info("Spinner is now invisible.");
     }
     
   //Enter account number in the search tab
     public void enterAccountNumber(String accountNumber) {
-    	WebElement AccountNumbertextfield = driver.findElement(CoreManualAllocationRepo.AccountNumbertextfield);
-    	AccountNumbertextfield.sendKeys(accountNumber);
+    	// Log before locating the Account Number text field
+        Log.info("Attempting to locate the Account Number text field.");
+        WebElement AccountNumbertextfield = driver.findElement(CoreManualAllocationRepo.AccountNumbertextfield);
+        Log.info("Account Number text field located successfully.");
+
+        // Log before entering the account number
+        Log.info("Entering the account number: " + accountNumber + " into the Account Number text field.");
+        AccountNumbertextfield.sendKeys(accountNumber);
+        Log.info("Account number: " + accountNumber + " entered successfully into the Account Number text field.");
     }
 
     // Click search button
     public void clickSearchButon() {
-    	WebElement Searchbut = driver.findElement(CoreManualAllocationRepo.Searchbut);
-    	Searchbut.click();
+    	// Log before locating the Search button
+        Log.info("Attempting to locate the Search button.");
+        WebElement Searchbut = driver.findElement(CoreManualAllocationRepo.Searchbut);
+        Log.info("Search button located successfully.");
+
+        // Log before clicking the Search button
+        Log.info("Clicking on the Search button.");
+        Searchbut.click();
+        Log.info("Search button clicked successfully.");
     }
 
     // Get warning message text
     public String getWarnMessage() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-    	WebElement warningmsg = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.warningmsg));
-    	return warningmsg.getText();
+    	// Log before creating WebDriverWait instance
+        Log.info("Creating WebDriverWait instance with a timeout of 120 seconds.");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        Log.info("WebDriverWait instance created successfully.");
+
+        // Log before waiting for the visibility of the warning message element
+        Log.info("Waiting for the warning message to become visible.");
+        WebElement warningmsg = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.warningmsg));
+        Log.info("Warning message is now visible.");
+
+        // Log before retrieving the text of the warning message
+        Log.info("Retrieving the text of the warning message.");
+        String warningText = warningmsg.getText();
+        Log.info("Warning message text retrieved successfully: " + warningText);
+
+        return warningText;
     }
     
  // Method to get the warning message text
     public String getWarningmessageforTofieldmandatorychecking() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-    	WebElement warningMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.Tofieldmandatorywarningmsg));
-        return warningMessage.getText();
+    	// Log before creating WebDriverWait instance
+        Log.info("Creating WebDriverWait instance with a timeout of 120 seconds.");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        Log.info("WebDriverWait instance created successfully.");
+
+        // Log before waiting for the visibility of the warning message for the 'To' field
+        Log.info("Waiting for the 'To' field mandatory warning message to become visible.");
+        WebElement warningMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.Tofieldmandatorywarningmsg));
+        Log.info("'To' field mandatory warning message is now visible.");
+
+        // Log before retrieving the warning message text
+        Log.info("Retrieving the text of the 'To' field mandatory warning message.");
+        String warningText = warningMessage.getText();
+        Log.info("'To' field warning message text retrieved successfully: " + warningText);
+
+        return warningText;
     }
 }

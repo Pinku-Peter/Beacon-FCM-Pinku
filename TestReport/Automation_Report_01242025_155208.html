@@ -1,0 +1,1677 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='EEEE, MMMM dd, yyyy, hh:mm a '('zzz')''/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Automation_Report_01242025_155208.html</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent dark default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Automation_Report_01242025_155208.html</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>CallCentreManualAllocation</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>25</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>63</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Login_to_call_centre_application_and_take_account_filtration_page</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+969ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:09 PM</td>
+					<td class='step-details'>Opened the FCM Call Centre application.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:09 PM</td>
+					<td class='step-details'>Entered valid credentials and logged in.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:09 PM</td>
+					<td class='step-details'>Navigated to the Call Centre Main Menu.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:09 PM</td>
+					<td class='step-details'>Clicked on the Account Filtration sub-menu.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:09 PM</td>
+					<td class='step-details'>User is navigated to Account Filtration page, URL shows CallCentre/CallCentreLeadFiltration.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Allocated_To_dropdown_mandatory_checking</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+937ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:17 PM</td>
+					<td class='step-details'>Left the Asset Category and Allocated To fields empty.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:18 PM</td>
+					<td class='step-details'>Clicked on the Search button.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:18 PM</td>
+					<td class='step-details'>Displays warning message "Allocated to is required".</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Asset_category_dropdown_mandatory_checking</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+886ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:27 PM</td>
+					<td class='step-details'>Left the Asset Category field empty and selected a value in the Allocated To field.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:27 PM</td>
+					<td class='step-details'>Clicked on the Search button.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:28 PM</td>
+					<td class='step-details'>Displays warning message  "asset category is required".</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Select_SMA_and_NPA_Categories</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+433ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:56 PM</td>
+					<td class='step-details'>Opened the Asset Category dropdown.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:56 PM</td>
+					<td class='step-details'>Selected the SMA category and NPA category.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:56 PM</td>
+					<td class='step-details'>SMA and NPA categories are selected.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>SMA_Category_Selection</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:52 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+559ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:59 PM</td>
+					<td class='step-details'>Opened the SMA Category dropdown.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:59 PM</td>
+					<td class='step-details'>Selected SMA 0, SMA 1, and SMA 2 from the dropdown.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:52:59 PM</td>
+					<td class='step-details'>SMA 0, SMA 1, SMA 2 should be selected.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>NPA_Category_Selection</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:53 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:53 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:53 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+559ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:53:03 PM</td>
+					<td class='step-details'>Opened the NPA Category dropdown.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:53:03 PM</td>
+					<td class='step-details'>Selected sub-standard, doubtful-1, doubtful-2, doubtful-3, and loss asset.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:53:03 PM</td>
+					<td class='step-details'>Selected NPA categories sub-standard , doubtful-1 , doubtful-2,doubtful-3,loss asset should be selected from the dropdown</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Allocation_Type_Selection_Manual_allocation</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:53 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:53 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:53 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+106ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:53:07 PM</td>
+					<td class='step-details'>Opened the Allocation Type dropdown.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:53:07 PM</td>
+					<td class='step-details'>Selected Auto Allocation.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:53:07 PM</td>
+					<td class='step-details'>Manual Allocation is selected.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Perform_Search_with_Valid_Data</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:53 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:53 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:53 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+243ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:53:10 PM</td>
+					<td class='step-details'>Ensured that the Asset Category, SMA Category, NPA Category, and Allocated To mandatory fields are filled.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:53:11 PM</td>
+					<td class='step-details'>Clicked the Search button successfully.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:53:17 PM</td>
+					<td class='step-details'>Verified that the grid displays the message "No records to display" when no data is available.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Login_and_Navigation_to_Manual_Allocation</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:53 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:53 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 47s+913ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:08 PM</td>
+					<td class='step-details'>Clicked on the Call Centre menu.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:08 PM</td>
+					<td class='step-details'>Clicked on the Manual Allocation submenu successfully.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:08 PM</td>
+					<td class='step-details'>Auto Allocation page is displayed with URL ending in `CallCentre/ManualAllocationConfiguration`</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify_Fields_and_Buttons_on_Manual_Allocation_Page</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+815ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:13 PM</td>
+					<td class='step-details'>Verified the presence of the following fields: Allocation Name","Zone/CO","Region","Branch","Branch ID","Vertical","Scheme Type","Product Type","Scheme Code","Asset Tagging Type","Asset Category","SMA Category","NPA Category","DPD","O/S Balance","%Overdue to EMI","Action Owner","Action Date From" ,"Action Date to ","Types of Account","Not Allocated","To","Is PFTNPA","Is FTNPA","Save This Allocation Criteria" , Search button and reset button and edit allocation criteria button, assign button, download in excel button , assigned list button.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:13 PM</td>
+					<td class='step-details'>All fields and Add button are present on the page</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>Mandatory_Field_Validation_for_Asset_Category</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+231ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:16 PM</td>
+					<td class='step-details'>Asset Category and To fields were left blank</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:16 PM</td>
+					<td class='step-details'>Search button was clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:16 PM</td>
+					<td class='step-details'>After leaving the Asset Category and To fields blank and clicking the search button, a warning message 'Asset category is Required' appeared.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>Asset_Category_SMA_and_NPA_Selection</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+826ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:36 PM</td>
+					<td class='step-details'>Selected 'NPA' and 'SMA' category from the Asset Category dropdown.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>SMA_Category_Dropdown_Selection</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+275ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:39 PM</td>
+					<td class='step-details'>Clicked on the SMA category dropdown.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:40 PM</td>
+					<td class='step-details'>Selected 'SMA 0', 'SMA 1', and 'SMA 2'.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>NPA_Category_Dropdown_Selection</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+322ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:43 PM</td>
+					<td class='step-details'>Clicked on the NPA category dropdown.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:43 PM</td>
+					<td class='step-details'>Selected 'Sub-standard', 'Doubtful-1', 'Doubtful-2', 'Doubtful-3', and 'Loss asset'.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>OS_Balance_Field_Validation</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+667ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:46 PM</td>
+					<td class='step-details'>Clicked on the O/S Balance field.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:47 PM</td>
+					<td class='step-details'>Selected '=' from the 'Select Financial Operator' dropdown, and entered '1234' in the O/S Balance field.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>To_Field_Dropdown_Selection</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+442ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:55:50 PM</td>
+					<td class='step-details'>Selected 'Call Centre' from the 'To' dropdown.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>Search_with_Mandatory_Fields</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:55 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:56 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+401ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:56:06 PM</td>
+					<td class='step-details'>Clicked the search button.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:56:06 PM</td>
+					<td class='step-details'>The accounts count is displayed with the columns 'Total Account Selected' and 'Total Outstanding Amount'.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>Download_Excel_Functionality</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:56 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:56 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:56 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+279ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:56:09 PM</td>
+					<td class='step-details'>Clicked the 'Download in Excel' button.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:56:09 PM</td>
+					<td class='step-details'>Excel file is downloaded</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>Excel_Account_Count_Verification</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:56 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:56 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:56 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+243ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:56:22 PM</td>
+					<td class='step-details'>Verified that the account count in the Excel file matches the account count displayed in the grid.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:56:22 PM</td>
+					<td class='step-details'>The account count matches in both the grid and the downloaded Excel file.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>Login_to_call_centre_application_and_take_updation_of_disposition_page</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:56 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:56 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 03:57 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 22s+397ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:57:27 PM</td>
+					<td class='step-details'>Entered the account number in the search tab.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:57:27 PM</td>
+					<td class='step-details'>Clicked the search button.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:57:48 PM</td>
+					<td class='step-details'>After entering the account number in the search tab and clicking the search button, the warning message 'You are not authorized to do the disposition of this account number' appeared.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>Login_and_Navigation_to_Manual_Allocation_Core_Application</span>
+						<span class='test-time'>Friday, January 24, 2025, 03:57 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 03:57 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 4m 22s+328ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:02:13 PM</td>
+					<td class='step-details'>Clicked on the Call Centre menu.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:02:13 PM</td>
+					<td class='step-details'>Clicked on the Manual Allocation submenu successfully.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:02:13 PM</td>
+					<td class='step-details'>The Manual Allocation page is displayed with the URL 'CallCentre/ManualAllocationConfiguration'.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>Mandatory_Field_Validation_for_Asset_Category_</span>
+						<span class='test-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+272ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:02:17 PM</td>
+					<td class='step-details'>Did not enter values for the Asset Category and To fields.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:02:17 PM</td>
+					<td class='step-details'>Clicked the search button</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:02:17 PM</td>
+					<td class='step-details'>After not entering values for the Asset Category and To fields and clicking the search button, the warning message 'Asset category is Required' appeared.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>Asset_Category_SMA_and_NPA_Selection_</span>
+						<span class='test-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+301ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:02:37 PM</td>
+					<td class='step-details'>Selected 'NPA' category from the Asset Category dropdown and 'SMA' category from the dropdown.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>SMA_Category_Dropdown_Selection_</span>
+						<span class='test-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+228ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:02:41 PM</td>
+					<td class='step-details'>Clicked the SMA category dropdown</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:02:41 PM</td>
+					<td class='step-details'>selected 'SMA 0', 'SMA 1', and 'SMA 2'.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>NPA_Category_Dropdown_Selection_</span>
+						<span class='test-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+	<span class='label end-time'>Friday, January 24, 2025, 04:02 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+590ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CallCentreManualAllocation</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:02:44 PM</td>
+					<td class='step-details'>Clicked the NPA category dropdown</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:02:44 PM</td>
+					<td class='step-details'>Selected 'Sub-standard', 'Doubtful-1', 'Doubtful-2', 'Doubtful-3', and 'Loss asset'.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:02:45 PM</td>
+					<td class='step-details'>After selecting values from the NPA category dropdown and clicking the search button, the warning message 'To is Required' appeared.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CallCentreManualAllocation</span>
+						<span class='category-status right'>
+							<span class='label pass'>25</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 25</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Friday, January 24, 2025, 03:52 PM (IST)</td>
+										<td class='linked' test-id='1'>Login_to_call_centre_application_and_take_account_filtration_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:52 PM (IST)</td>
+										<td class='linked' test-id='2'>Allocated_To_dropdown_mandatory_checking</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:52 PM (IST)</td>
+										<td class='linked' test-id='3'>Asset_category_dropdown_mandatory_checking</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:52 PM (IST)</td>
+										<td class='linked' test-id='4'>Select_SMA_and_NPA_Categories</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:52 PM (IST)</td>
+										<td class='linked' test-id='5'>SMA_Category_Selection</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:53 PM (IST)</td>
+										<td class='linked' test-id='6'>NPA_Category_Selection</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:53 PM (IST)</td>
+										<td class='linked' test-id='7'>Allocation_Type_Selection_Manual_allocation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:53 PM (IST)</td>
+										<td class='linked' test-id='8'>Perform_Search_with_Valid_Data</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:53 PM (IST)</td>
+										<td class='linked' test-id='9'>Login_and_Navigation_to_Manual_Allocation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:55 PM (IST)</td>
+										<td class='linked' test-id='10'>Verify_Fields_and_Buttons_on_Manual_Allocation_Page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:55 PM (IST)</td>
+										<td class='linked' test-id='11'>Mandatory_Field_Validation_for_Asset_Category</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:55 PM (IST)</td>
+										<td class='linked' test-id='12'>Asset_Category_SMA_and_NPA_Selection</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:55 PM (IST)</td>
+										<td class='linked' test-id='13'>SMA_Category_Dropdown_Selection</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:55 PM (IST)</td>
+										<td class='linked' test-id='14'>NPA_Category_Dropdown_Selection</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:55 PM (IST)</td>
+										<td class='linked' test-id='15'>OS_Balance_Field_Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:55 PM (IST)</td>
+										<td class='linked' test-id='16'>To_Field_Dropdown_Selection</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:55 PM (IST)</td>
+										<td class='linked' test-id='17'>Search_with_Mandatory_Fields</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:56 PM (IST)</td>
+										<td class='linked' test-id='18'>Download_Excel_Functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:56 PM (IST)</td>
+										<td class='linked' test-id='19'>Excel_Account_Count_Verification</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:56 PM (IST)</td>
+										<td class='linked' test-id='20'>Login_to_call_centre_application_and_take_updation_of_disposition_page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 03:57 PM (IST)</td>
+										<td class='linked' test-id='21'>Login_and_Navigation_to_Manual_Allocation_Core_Application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 04:02 PM (IST)</td>
+										<td class='linked' test-id='22'>Mandatory_Field_Validation_for_Asset_Category_</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 04:02 PM (IST)</td>
+										<td class='linked' test-id='23'>Asset_Category_SMA_and_NPA_Selection_</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 04:02 PM (IST)</td>
+										<td class='linked' test-id='24'>SMA_Category_Dropdown_Selection_</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, January 24, 2025, 04:02 PM (IST)</td>
+										<td class='linked' test-id='25'>NPA_Category_Dropdown_Selection_</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>25</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>63</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Friday, January 24, 2025, 03:52 PM (IST)</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Friday, January 24, 2025, 04:02 PM (IST)</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 10m 39s+374ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>OS</td>
+								<td>Windows</td>
+							</tr>
+							<tr>
+								<td>AUT</td>
+								<td>QA</td>
+							</tr>
+							<tr>
+								<td>Author</td>
+								<td>Pinku Peter</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>CallCentreManualAllocation</td>
+							<td>25</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 25,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				
+				passChild: 63,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 0,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>
