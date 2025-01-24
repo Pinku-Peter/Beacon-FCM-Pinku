@@ -16,35 +16,6 @@ import java.util.Map;
 
 public class DownloadedExcelReader {
 	
-//	public static void main(String[] args) {
-//	    try {
-//	        // Directory where files are downloaded
-//	        String downloadDir = "C:\\Users\\pinku.peter\\Downloads";
-//
-//	        // Get the latest downloaded file
-//	        File latestFile = getLatestFileFromDir(downloadDir);
-//
-//	        if (latestFile == null) {
-//	            System.out.println("No files found in the download directory.");
-//	            return;
-//	        }
-//
-//	        // Print the name of the file being processed
-//	        System.out.println("Processing file: " + latestFile.getName());
-//
-//	        // Call the getCountOfRows method and print the result
-//	        int rowCount = getCountOfRows();
-//	        System.out.println("Total Rows (excluding header): " + rowCount);
-//
-//	        // Call the getCountAndAccountNumbers method and print the result
-//	        DataSummary dataSummary = getCountAndAccountNumbers();
-//	        System.out.println("Total Rows with Data: " + dataSummary.getRowCount());
-//	        System.out.println("Account Numbers: " + dataSummary.getAccountNumbers());
-//	    } catch (IOException e) {
-//	        System.err.println("Error while processing the Excel file: " + e.getMessage());
-//	    }
-//	}
-	
 	public static int getCountOfRows() throws IOException {
 	    // Directory where files are downloaded
 	    String downloadDir = "C:\\Users\\pinku.peter\\Downloads";
@@ -140,6 +111,52 @@ public class DownloadedExcelReader {
 
 	    workbook.close();
 	    return new DataSummary(count, accountNumbers, contactNumbers); // Return count, account numbers, and contact numbers
+	}
+	
+	public static DataSummary getAccountNumberSummary() throws IOException {
+	    // Directory where files are downloaded
+	    String downloadDir = "C:\\Users\\pinku.peter\\Downloads";
+
+	    // Get the latest downloaded file
+	    File latestFile = getLatestFileFromDir(downloadDir);
+	    if (latestFile == null) {
+	        System.out.println("No files found in the download directory.");
+	        return new DataSummary(0, new ArrayList<>(), new ArrayList<>()); // Return empty data if no file is found
+	    }
+
+	    // Open the latest Excel file
+	    FileInputStream fis = new FileInputStream(latestFile);
+	    Workbook workbook = new XSSFWorkbook(fis);
+	    Sheet sheet = workbook.getSheet("sheet1"); // Use the correct sheet name
+
+	    // Variables to store row count and account numbers
+	    int count = 0;
+	    List<String> accountNumbers = new ArrayList<>();
+
+	    // Iterate through rows, excluding the first row (header)
+	    for (int i = 1; i <= sheet.getLastRowNum(); i++) { // Start from the second row
+	        Row row = sheet.getRow(i);
+	        if (row == null) continue; // Skip empty rows
+
+	        // Assuming "A/c Number" is in column 8 (index 7 as column index starts from 0)
+	        Cell accountCell = row.getCell(7); // Adjust the column index for "A/c Number"
+	        if (accountCell != null) {
+	            String accountNumber = null;
+	            if (accountCell.getCellType() == CellType.NUMERIC) {
+	                accountNumber = String.valueOf((long) accountCell.getNumericCellValue());
+	            } else if (accountCell.getCellType() == CellType.STRING) {
+	                accountNumber = accountCell.getStringCellValue().trim();
+	            }
+
+	            if (accountNumber != null && !accountNumber.isEmpty()) {
+	                accountNumbers.add(accountNumber);
+	                count++;
+	            }
+	        }
+	    }
+
+	    workbook.close();
+	    return new DataSummary(count, accountNumbers, new ArrayList<>()); // Return count and account numbers
 	}
 	/**
 	 * Method to get the most recently modified file in a directory.

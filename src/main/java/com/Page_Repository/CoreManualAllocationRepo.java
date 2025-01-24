@@ -50,4 +50,14 @@ public class CoreManualAllocationRepo {
 	public static By assetcategorysellectall = By.xpath("(//label[text()='Asset Category']//following::div[@class='rz-chkbox-box   '])[4]");
 	public static By smacategorysellectall = By.xpath("(//label[text()='SMA Category']//following::div[contains(@class,' rz-multiselect-header')]//following-sibling::div[@class='rz-chkbox'])[4]");
 	public static By npacategorysellectall = By.xpath("(//label[text()='NPA Category']//following::div[contains(@class,' rz-multiselect-header')]//following-sibling::div[@class='rz-chkbox'])[4]");
+	public static By TotalAccountSelected = By.xpath("(//span[@class='rz-cell-data'])[1]");
+	public static By TotalOutStandingAmount = By.xpath("(//span[@class='rz-cell-data'])[2]");
+	//public static By UserType = By.xpath("//label[text()='User Type']//following-sibling::div[@onmousedown='Radzen.activeElement = null']");
+	public static By Disposition = By.xpath("//span[text()='Disposition']");
+	public static By UpdationofDisposition = By.xpath("//a[text()='Updation of Disposition']");
+	public static By AccountNumbertextfield = By.xpath("//input[@placeholder='Account Number']");
+	public static By Searchbut = By.xpath("//input[@value='Search']");
+	public static By warningmsg = By.xpath("//p[text()='You are not authorized to do the disposition of this account number']");
+	public static By downloadedmsg = By.xpath("//p[text()='File downloaded successfully']");
+	public static By Tofieldmandatorywarningmsg = By.xpath("//p[text()='To is Required']");
 }

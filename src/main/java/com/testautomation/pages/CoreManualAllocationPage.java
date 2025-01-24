@@ -296,6 +296,8 @@ public class CoreManualAllocationPage {
     	Log.info("Starting the process to verify if the Auto Allocation page is loaded...");
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
     	Log.info("Locating the Call Center menu...");
+//    	WebElement UserType = driver.findElement(CoreManualAllocationRepo.UserType);
+//    	UserType.getText();
     	WebElement callcentermenu = driver.findElement(CoreAutoAllocationRepo.callcentermenu);
     	Log.info("Call Center menu located successfully.");
     	Log.info("Clicking on the Call Center menu...");
@@ -311,8 +313,7 @@ public class CoreManualAllocationPage {
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
     	Log.info("Spinner disappeared successfully.");
     	Log.info("Pausing for a brief moment...");
-    	Thread.sleep(1000);
-    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+    	WebElement button = wait.until(ExpectedConditions.elementToBeClickable(CoreManualAllocationRepo.Searchbtn));
     	Log.info("Checking if the current URL ends with 'CallCentre/ManualAllocationConfiguration'...");
         boolean isPageLoaded = driver.getCurrentUrl().endsWith("CallCentre/ManualAllocationConfiguration");
 
@@ -523,17 +524,19 @@ public class CoreManualAllocationPage {
     	JavascriptExecutor js = (JavascriptExecutor) driver;
     	js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'start'});", allocationName);
         Thread.sleep(5000);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
         WebElement assetcategory = driver.findElement(CoreManualAllocationRepo.assetcategory);
     	assetcategory.click();
     	WebElement assetcategorysellectall = driver.findElement(CoreManualAllocationRepo.assetcategorysellectall);
     	assetcategorysellectall.click();
-    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));;
+    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
     }
     
  // Method to select SMA categories
-    public void selectSmaCategories() {
+    public void selectSmaCategories() throws InterruptedException {
     	WebElement smacategory = driver.findElement(CoreManualAllocationRepo.smacategory);
     	smacategory.click();
+    	Thread.sleep(1000);
     	WebElement smacategorysellectall = driver.findElement(CoreManualAllocationRepo.smacategorysellectall);
     	smacategorysellectall.click();
     }
@@ -564,18 +567,65 @@ public class CoreManualAllocationPage {
 
     public void selectCallCentreFromToDropdown(String value) {
     	WebElement To = driver.findElement(CoreManualAllocationRepo.To);
-    	WebElement tovalue = driver.findElement(CoreManualAllocationRepo.tovalue(value));
     	To.click();
+    	WebElement tovalue = driver.findElement(CoreManualAllocationRepo.tovalue(value));
     	tovalue.click();
     }
 
-    public void clickSearchBtn() {
+    public void clickSearchBtn() throws InterruptedException {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
     	WebElement Searchbtn = driver.findElement(CoreManualAllocationRepo.Searchbtn);
     	Searchbtn.click();
+    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+    	 WebElement AssignedList = driver.findElement(CoreManualAllocationRepo.AssignedList);
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+    	js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'start'});", AssignedList);
+        Thread.sleep(5000);
     }
 
     public void clickDownloadExcelButton() {
     	WebElement DownloadinExcel = driver.findElement(CoreManualAllocationRepo.DownloadinExcel);
     	DownloadinExcel.click();
+    }
+    
+ // Method to get the account count from the grid
+    public String getAccountGridCount() {
+    	WebElement totalAccountSelected = driver.findElement(CoreManualAllocationRepo.TotalAccountSelected);
+        return totalAccountSelected.getText();
+    }
+    
+    public void navigateTodispostionMainMenu() {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+    	WebElement Disposition = driver.findElement(CoreManualAllocationRepo.Disposition);
+    	Disposition.click();
+    	WebElement UpdationofDisposition = driver.findElement(CoreManualAllocationRepo.UpdationofDisposition);
+    	UpdationofDisposition.click();
+    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+    }
+    
+  //Enter account number in the search tab
+    public void enterAccountNumber(String accountNumber) {
+    	WebElement AccountNumbertextfield = driver.findElement(CoreManualAllocationRepo.AccountNumbertextfield);
+    	AccountNumbertextfield.sendKeys(accountNumber);
+    }
+
+    // Click search button
+    public void clickSearchButon() {
+    	WebElement Searchbut = driver.findElement(CoreManualAllocationRepo.Searchbut);
+    	Searchbut.click();
+    }
+
+    // Get warning message text
+    public String getWarnMessage() {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+    	WebElement warningmsg = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.warningmsg));
+    	return warningmsg.getText();
+    }
+    
+ // Method to get the warning message text
+    public String getWarningmessageforTofieldmandatorychecking() {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+    	WebElement warningMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.Tofieldmandatorywarningmsg));
+        return warningMessage.getText();
     }
 }

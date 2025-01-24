@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule">
+      <class name="com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule">
         <methods>
-          <include name="SetUp"/>
-          <include name="takeScreenshotOnFailure"/>
-          <include name="Verify_Dialer_Downloaded_File"/>
           <include name="afterEachTest"/>
           <include name="setupTest"/>
+          <include name="testMandatoryFieldValidations"/>
+          <include name="SetUp"/>
+          <include name="takeScreenshotOnFailure"/>
         </methods>
-      </class> <!-- com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule -->
+      </class> <!-- com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

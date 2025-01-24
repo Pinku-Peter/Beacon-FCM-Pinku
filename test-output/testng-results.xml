@@ -1,499 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-21T20:48:49 IST" name="Default suite" finished-at="2025-01-21T21:31:48 IST" duration-ms="2578791">
+  <suite started-at="2025-01-23T19:19:31 IST" name="Default suite" finished-at="2025-01-23T19:21:23 IST" duration-ms="111415">
     <groups>
     </groups>
-    <test started-at="2025-01-21T20:48:49 IST" name="Default test" finished-at="2025-01-21T21:31:48 IST" duration-ms="2578791">
-      <class name="com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:48:48 IST" name="SetUp" finished-at="2025-01-21T20:48:49 IST" duration-ms="1002" status="PASS">
+    <test started-at="2025-01-23T19:19:31 IST" name="Default test" finished-at="2025-01-23T19:21:23 IST" duration-ms="111415">
+      <class name="com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:19:31 IST" name="SetUp" finished-at="2025-01-23T19:19:31 IST" duration-ms="626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:48:49 IST" name="setupTest" finished-at="2025-01-21T20:48:49 IST" duration-ms="148" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:19:31 IST" name="setupTest" finished-at="2025-01-23T19:19:31 IST" duration-ms="98" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Login_to_call_centre_application_and_take_account_filtration_pages() throws java.lang.Exception]]>
+                <![CDATA[public void com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule.Login_and_Navigation_to_Manual_Allocation_Core_Application() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Login_to_call_centre_application_and_take_account_filtration_pages()[pri:22, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:48:49 IST" name="Login_to_call_centre_application_and_take_account_filtration_pages" finished-at="2025-01-21T20:49:45 IST" duration-ms="56212" status="PASS">
+        <test-method signature="Login_and_Navigation_to_Manual_Allocation_Core_Application()[pri:21, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:19:31 IST" name="Login_and_Navigation_to_Manual_Allocation_Core_Application" finished-at="2025-01-23T19:21:03 IST" duration-ms="92107" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login_to_call_centre_application_and_take_account_filtration_pages -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:49:45 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:49:45 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Login_and_Navigation_to_Manual_Allocation_Core_Application -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:03 IST" name="takeScreenshotOnFailure" finished-at="2025-01-23T19:21:03 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login_to_call_centre_application_and_take_account_filtration_pages status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.Login_to_call_centre_application_and_take_account_filtration_pages()[pri:22, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
+                <![CDATA[[TestResult name=Login_and_Navigation_to_Manual_Allocation_Core_Application status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Login_and_Navigation_to_Manual_Allocation_Core_Application()[pri:21, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:49:45 IST" name="setupTest" finished-at="2025-01-21T20:49:45 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:03 IST" name="setupTest" finished-at="2025-01-23T19:21:03 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Select_SMA_and_NPA_Categorie() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule.testMandatoryFieldValidations() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Select_SMA_and_NPA_Categorie()[pri:23, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:49:45 IST" name="Select_SMA_and_NPA_Categorie" finished-at="2025-01-21T20:49:58 IST" duration-ms="12783" status="PASS">
+        <test-method signature="testMandatoryFieldValidations()[pri:22, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:03 IST" name="testMandatoryFieldValidations" finished-at="2025-01-23T19:21:10 IST" duration-ms="6307" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Select_SMA_and_NPA_Categorie -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:49:58 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:49:58 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- testMandatoryFieldValidations -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:10 IST" name="takeScreenshotOnFailure" finished-at="2025-01-23T19:21:10 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Select_SMA_and_NPA_Categorie status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.Select_SMA_and_NPA_Categorie()[pri:23, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
+                <![CDATA[[TestResult name=testMandatoryFieldValidations status=SUCCESS method=AllScenarios_CoreManualAllocationModule.testMandatoryFieldValidations()[pri:22, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:49:58 IST" name="setupTest" finished-at="2025-01-21T20:49:58 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:10 IST" name="setupTest" finished-at="2025-01-23T19:21:10 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.SMA_Category_Selections() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule.testAssetCategorySelections() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="SMA_Category_Selections()[pri:24, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:49:58 IST" name="SMA_Category_Selections" finished-at="2025-01-21T20:50:02 IST" duration-ms="3553" status="PASS">
+        <test-method signature="testAssetCategorySelections()[pri:23, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:10 IST" name="testAssetCategorySelections" finished-at="2025-01-23T19:21:21 IST" duration-ms="10925" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SMA_Category_Selections -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:02 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:50:02 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- testAssetCategorySelections -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:21 IST" name="takeScreenshotOnFailure" finished-at="2025-01-23T19:21:21 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SMA_Category_Selections status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.SMA_Category_Selections()[pri:24, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
+                <![CDATA[[TestResult name=testAssetCategorySelections status=SUCCESS method=AllScenarios_CoreManualAllocationModule.testAssetCategorySelections()[pri:23, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:03 IST" name="setupTest" finished-at="2025-01-21T20:50:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:21 IST" name="setupTest" finished-at="2025-01-23T19:21:21 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.NPA_Category_Selections(java.util.Map) throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule.testSmaCategoryDropdownSelections() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="NPA_Category_Selections(java.util.Map)[pri:25, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:03 IST" name="NPA_Category_Selections" data-provider="TestData" finished-at="2025-01-21T20:50:07 IST" duration-ms="4176" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation28, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=21, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testSmaCategoryDropdownSelections()[pri:24, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:21 IST" name="testSmaCategoryDropdownSelections" finished-at="2025-01-23T19:21:22 IST" duration-ms="1248" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NPA_Category_Selections -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:07 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:50:07 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- testSmaCategoryDropdownSelections -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:22 IST" name="takeScreenshotOnFailure" finished-at="2025-01-23T19:21:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=NPA_Category_Selections status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.NPA_Category_Selections(java.util.Map)[pri:25, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
+                <![CDATA[[TestResult name=testSmaCategoryDropdownSelections status=SUCCESS method=AllScenarios_CoreManualAllocationModule.testSmaCategoryDropdownSelections()[pri:24, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:07 IST" name="setupTest" finished-at="2025-01-21T20:50:07 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:22 IST" name="setupTest" finished-at="2025-01-23T19:21:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Allocation_Type_Selections__Auto(java.util.Map) throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule.testNpaCategoryDropdownSelection()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Allocation_Type_Selections__Auto(java.util.Map)[pri:26, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:07 IST" name="Allocation_Type_Selections__Auto" data-provider="TestData" finished-at="2025-01-21T20:50:11 IST" duration-ms="4237" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation28, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=21, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testNpaCategoryDropdownSelection()[pri:25, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:22 IST" name="testNpaCategoryDropdownSelection" finished-at="2025-01-23T19:21:23 IST" duration-ms="665" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Allocation_Type_Selections__Auto -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:11 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:50:11 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- testNpaCategoryDropdownSelection -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:23 IST" name="takeScreenshotOnFailure" finished-at="2025-01-23T19:21:23 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Allocation_Type_Selections__Auto status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.Allocation_Type_Selections__Auto(java.util.Map)[pri:26, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
+                <![CDATA[[TestResult name=testNpaCategoryDropdownSelection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.testNpaCategoryDropdownSelection()[pri:25, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:11 IST" name="setupTest" finished-at="2025-01-21T20:50:11 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Allocated_To_Selection__Call_Centre(java.util.Map) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Allocated_To_Selection__Call_Centre(java.util.Map)[pri:27, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:11 IST" name="Allocated_To_Selection__Call_Centre" data-provider="TestData" finished-at="2025-01-21T20:50:15 IST" duration-ms="3604" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation28, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=21, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Allocated_To_Selection__Call_Centre -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:15 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:50:15 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Allocated_To_Selection__Call_Centre status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.Allocated_To_Selection__Call_Centre(java.util.Map)[pri:27, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:15 IST" name="setupTest" finished-at="2025-01-21T20:50:15 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Perform_Search_with_Valid_Datas() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Perform_Search_with_Valid_Datas()[pri:28, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:15 IST" name="Perform_Search_with_Valid_Datas" finished-at="2025-01-21T20:50:25 IST" duration-ms="10529" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Perform_Search_with_Valid_Datas -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:25 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:50:25 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Perform_Search_with_Valid_Datas status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.Perform_Search_with_Valid_Datas()[pri:28, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:25 IST" name="setupTest" finished-at="2025-01-21T20:50:25 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Total_Account_and_Amount_in_Grid() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Total_Account_and_Amount_in_Grid()[pri:29, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:25 IST" name="Verify_Total_Account_and_Amount_in_Grid" finished-at="2025-01-21T20:50:28 IST" duration-ms="3065" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Total_Account_and_Amount_in_Grid -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:28 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:50:28 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verify_Total_Account_and_Amount_in_Grid status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.Verify_Total_Account_and_Amount_in_Grid()[pri:29, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:28 IST" name="setupTest" finished-at="2025-01-21T20:50:28 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Download_File__List_of_Accounts(java.util.Map) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Download_File__List_of_Accounts(java.util.Map)[pri:30, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:28 IST" name="Download_File__List_of_Accounts" data-provider="TestData" finished-at="2025-01-21T20:50:35 IST" duration-ms="7029" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation28, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=21, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Download_File__List_of_Accounts -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:35 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:50:35 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Download_File__List_of_Accounts status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.Download_File__List_of_Accounts(java.util.Map)[pri:30, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:35 IST" name="setupTest" finished-at="2025-01-21T20:50:35 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Downloaded_File() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Downloaded_File()[pri:31, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:35 IST" name="Verify_Downloaded_File" finished-at="2025-01-21T20:50:39 IST" duration-ms="3234" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Downloaded_File -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:39 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:50:39 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verify_Downloaded_File status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.Verify_Downloaded_File()[pri:31, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:39 IST" name="setupTest" finished-at="2025-01-21T20:50:39 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Download_Dialer_File(java.util.Map) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Download_Dialer_File(java.util.Map)[pri:32, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:39 IST" name="Download_Dialer_File" data-provider="TestData" finished-at="2025-01-21T20:50:46 IST" duration-ms="7498" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation28, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=21, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Download_Dialer_File -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:46 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:50:46 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Download_Dialer_File status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.Download_Dialer_File(java.util.Map)[pri:32, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:46 IST" name="setupTest" finished-at="2025-01-21T20:50:46 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Dialer_Downloaded_File() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Dialer_Downloaded_File()[pri:33, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:46 IST" name="Verify_Dialer_Downloaded_File" finished-at="2025-01-21T20:50:46 IST" duration-ms="87" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Accounts do not match those indicated in the grid. expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Accounts do not match those indicated in the grid. expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Dialer_Downloaded_File(AllScenarios_CoreAutoAllocationModule.java:805)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Dialer_Downloaded_File -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:46 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:50:46 IST" duration-ms="160" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verify_Dialer_Downloaded_File status=FAILURE method=AllScenarios_CoreAutoAllocationModule.Verify_Dialer_Downloaded_File()[pri:33, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:47 IST" name="setupTest" finished-at="2025-01-21T20:50:47 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Download_Invalid_MobileNo_Excel_File(java.util.Map) throws java.lang.Throwable]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Download_Invalid_MobileNo_Excel_File(java.util.Map)[pri:34, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:47 IST" name="Download_Invalid_MobileNo_Excel_File" data-provider="TestData" finished-at="2025-01-21T20:50:55 IST" duration-ms="8080" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation28, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=21, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Download_Invalid_MobileNo_Excel_File -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:55 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:50:55 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Download_Invalid_MobileNo_Excel_File status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.Download_Invalid_MobileNo_Excel_File(java.util.Map)[pri:34, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:55 IST" name="setupTest" finished-at="2025-01-21T20:50:55 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Invalid_Mobile_Number_Downloaded_File() throws java.lang.Throwable]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Invalid_Mobile_Number_Downloaded_File()[pri:35, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:55 IST" name="Verify_Invalid_Mobile_Number_Downloaded_File" finished-at="2025-01-21T20:50:58 IST" duration-ms="3066" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Invalid_Mobile_Number_Downloaded_File -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:58 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T20:50:58 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verify_Invalid_Mobile_Number_Downloaded_File status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.Verify_Invalid_Mobile_Number_Downloaded_File()[pri:35, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:58 IST" name="setupTest" finished-at="2025-01-21T20:50:58 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Download_History(java.util.Map) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Download_History(java.util.Map)[pri:36, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T20:50:58 IST" name="Verify_Download_History" data-provider="TestData" finished-at="2025-01-21T21:31:48 IST" duration-ms="2449886" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationName=TestAllocation28, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=21, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Download_History -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T21:31:48 IST" name="takeScreenshotOnFailure" finished-at="2025-01-21T21:31:48 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verify_Download_History status=SUCCESS method=AllScenarios_CoreAutoAllocationModule.Verify_Download_History(java.util.Map)[pri:36, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@4ee203eb]" started-at="2025-01-21T21:31:48 IST" name="afterEachTest" finished-at="2025-01-21T21:31:50 IST" duration-ms="2156" status="PASS">
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@367ffa75]" started-at="2025-01-23T19:21:23 IST" name="afterEachTest" finished-at="2025-01-23T19:21:23 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-      </class> <!-- com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule -->
+      </class> <!-- com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
