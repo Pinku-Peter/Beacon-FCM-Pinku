@@ -42,6 +42,14 @@ public class LoginPageRepo {
 	public static By username = By.xpath("//input[@placeholder='User Name']");
 	public static By password = By.xpath("//input[@placeholder='Password']");
 	public static By login = By.xpath("//button[contains(text(),'LOGIN')]");
-
+	
+	
+		public static By CollectionAgencyLoginBannerDetails (String BannerDetailsValue) {
+			String xpathExpression;
+			xpathExpression = "//a[@href='"+ BannerDetailsValue +"']";
+			return By.xpath(xpathExpression);
+		}
+		
+	public static By CallcentreFullLogo = By.xpath("//img[@class='fulllogo']");
 }
 

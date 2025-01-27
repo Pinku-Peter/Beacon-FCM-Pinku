@@ -1,5 +1,6 @@
 package com.BasePackage;
 
+import java.io.File;
 import java.io.IOException;
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -37,8 +38,10 @@ public class Login_Class extends Base_Class {
                 prefs.put("profile.default_content_setting_values.mixed_script", 1); // Allow insecure content globally
                 prefs.put("profile.default_content_settings.popups", 0); // Block popups
                 prefs.put("download.prompt_for_download", false); // Disable download prompt
-                prefs.put("download.default_directory", "C:\\Users\\pinku.peter\\Downloads"); // Set download directory
-
+                //prefs.put("download.default_directory", "C:\\Users\\pinku.peter\\Downloads"); // Set download directory
+                String userHome = System.getProperty("user.home"); // Gets the user's home directory
+                String downloadDirectory = userHome + File.separator + "Downloads";
+                prefs.put("download.default_directory", downloadDirectory); // Set the dynamic download directory
                 options.setExperimentalOption("prefs", prefs);
 
                 // Add necessary arguments
@@ -184,8 +187,10 @@ public class Login_Class extends Base_Class {
                     prefs.put("profile.default_content_setting_values.mixed_script", 1); // Allow insecure content globally
                     prefs.put("profile.default_content_settings.popups", 0); // Block popups
                     prefs.put("download.prompt_for_download", false); // Disable download prompt
-                    prefs.put("download.default_directory", "C:\\Users\\pinku.peter\\Downloads"); // Set download directory
-
+                   // prefs.put("download.default_directory", "C:\\Users\\yadhukrishnan.p\\Downloads"); // Set download directory
+                    String userHome = System.getProperty("user.home"); // Gets the user's home directory
+                    String downloadDirectory = userHome + File.separator + "Downloads";
+                    prefs.put("download.default_directory", downloadDirectory); // Set the dynamic download directory
                     options.setExperimentalOption("prefs", prefs);
 
                     // Add necessary arguments
@@ -214,6 +219,12 @@ public class Login_Class extends Base_Class {
             driver.get(CallCenterAppUrl);
             Common.setDriver(driver);
             //Common.fluentWait("LoginHyperlink2Banner", LoginPageRepo.LoginHyperlink2Banner);
+            
+            String LoginBannerQuery = "select BANNER_DETAILS from SET_LOGINPAGE_BANNER_DETAILS where IS_ACTIVE=1 and banner_user_type=2 order by banner_section desc FETCH FIRST 1 ROWS ONLY";
+            String CORE_LOGIN_BANNER_DETAILS = DBUtils.fetchSingleValueFromDB(LoginBannerQuery);
+            //System.out.println("BANNER_DETAILS: " + CORE_LOGIN_BANNER_DETAILS);
+            
+            Common.fluentWait("Core login Banner", LoginPageRepo.CollectionAgencyLoginBannerDetails(CORE_LOGIN_BANNER_DETAILS));
 
             //ExtentTestManager.getTest().log(Status.INFO, CoreAppUrl + " loaded successfully!");
             Thread.sleep(9000);
@@ -269,27 +280,10 @@ public class Login_Class extends Base_Class {
                 System.out.println("Already login pop up not appeared");
             }
             
-            String query = "select Default_URL from acc_users where user_id = '"+CallCenterUserName+"'";
-            String defaultURL = DBUtils.fetchSingleValueFromDB(query);
-            System.out.println("Default URL: " + defaultURL);
+            Common.waitForSpinnerToDisappear(driver, "Loading Spinner", LoginPageRepo.Spinner);
+            Common.fluentWait("CallcentreFullLogo", LoginPageRepo.CallcentreFullLogo);
+            Thread.sleep(5000);
             
-            // Redirect to the module selection page
-            //if (Common.waitForElementToBeClickable(driver, LoginPageRepo.GoCollectionButton, Duration.ofSeconds(30)) != null) {
-            if (defaultURL == null) {
-            	System.out.println("Entered into module selection page if condition");
-                Common.waitForSpinnerToDisappear(driver, "Loading Spinner", LoginPageRepo.Spinner);
-                //Common.fluentWait("SetAsDefaultRadioButton", LoginPageRepo.SetAsDefaultRadioButton);
-               // Common.fluentWait("GoCollectionButton", LoginPageRepo.GoCollectionButton);
-                Thread.sleep(3000);
-                //driver.findElement(LoginPageRepo.GoCollectionButton).click();
-                //ForLoopClick(LoginPageRepo.GoCollectionButton);
-                //Log.info("Clicked on Go collection button");
-            } else {
-                Log.info("Module selection page not appeared");
-            }
-
-            // Fetch and display user organization details
-            //Common.fluentWait("AccountCategoryLabelInDashboard", LoginPageRepo.AccountCategoryLabelInDashboard);
             String UserIDInDashboard = driver.findElement(LoginPageRepo.UserIDInDashboard).getText();
             Log.info("UserID in Dashboard: " + UserIDInDashboard);
 

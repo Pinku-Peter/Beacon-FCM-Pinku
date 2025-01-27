@@ -60,4 +60,9 @@ public class CoreManualAllocationRepo {
 	public static By warningmsg = By.xpath("//p[text()='You are not authorized to do the disposition of this account number']");
 	public static By downloadedmsg = By.xpath("//p[text()='File downloaded successfully']");
 	public static By Tofieldmandatorywarningmsg = By.xpath("//p[text()='To is Required']");
+	public static By SelectCallCentre = By.xpath("//label[contains(text(),'Select Call Centre')]//following-sibling::div[@onmousedown='Radzen.activeElement = null']");
+	public static By SelectCallCentrevalue(String value) {
+        return By.xpath("//li[@ role='option' and @aria-label='>" + value + "']");
+    }
+	public static By validationMessage = By.xpath("//p[text()='Assigned Successfully']");
 }

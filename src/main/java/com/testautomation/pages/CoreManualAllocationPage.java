@@ -313,7 +313,9 @@ public class CoreManualAllocationPage {
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
     	Log.info("Spinner disappeared successfully.");
     	Log.info("Pausing for a brief moment...");
+    	Log.info("Waiting for the 'Search' button to become clickable.");
     	WebElement button = wait.until(ExpectedConditions.elementToBeClickable(CoreManualAllocationRepo.Searchbtn));
+    	Log.info("The 'Search' button is now clickable.");
     	Log.info("Checking if the current URL ends with 'CallCentre/ManualAllocationConfiguration'...");
         boolean isPageLoaded = driver.getCurrentUrl().endsWith("CallCentre/ManualAllocationConfiguration");
 
@@ -875,5 +877,37 @@ public class CoreManualAllocationPage {
         Log.info("'To' field warning message text retrieved successfully: " + warningText);
 
         return warningText;
+    }
+    
+ // Method to select 'Call Centre' from 'Allocate To' dropdown
+    public void selectCallCentreFromAllocateToDropdown(String value) {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+    	WebElement AllocateTo = driver.findElement(CoreManualAllocationRepo.AllocateTo);
+    	AllocateTo.click();
+        WebElement tovalue = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.tovalue(value)));
+        tovalue.click();
+    }
+    
+ // Method to select a call centre from the dropdown
+    public void selectCallCentre(String callCentreName) {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+    	WebElement SelectCallCentre = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.SelectCallCentre));
+    	SelectCallCentre.click();
+    	WebElement SelectCallCentrevalue = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.SelectCallCentrevalue(callCentreName)));
+    	SelectCallCentrevalue.click();;
+    }
+
+    // Method to click the assign button
+    public void clickAssignButton() {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+    	WebElement Assignbtn = wait.until(ExpectedConditions.elementToBeClickable(CoreManualAllocationRepo.Assignbtn));
+    	Assignbtn.click();
+    }
+
+    // Method to get the validation message text
+    public String getValidationMessage() {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+    	WebElement validationMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.validationMessage));
+        return validationMessage.getText();
     }
 }

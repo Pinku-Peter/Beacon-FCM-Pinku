@@ -268,7 +268,7 @@ public class AllScenarios_CoreManualAllocationModule {
       ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Manual Allocation submenu successfully.");
       ExtentTestManager.getTest().log(Status.PASS, "Auto Allocation page is displayed with URL ending in `CallCentre/ManualAllocationConfiguration`");
 		}
-		catch (AssertionError | Exception e) {
+		catch (AssertionError | Exception e) { 
 			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
           throw e;
 	 }
@@ -577,7 +577,7 @@ public class AllScenarios_CoreManualAllocationModule {
 		    	String warning = coremanualallocationpage.getWarningmessageforTofieldmandatorychecking(); 
 		        Assert.assertEquals(warning, "To is Required");
 		        ExtentTestManager.getTest().log(Status.PASS, "After selecting values from the NPA category dropdown and clicking the search button, the warning message 'To is Required' appeared.");
-		    	wait.until(ExpectedConditions.invisibilityOfElementLocated(CoreManualAllocationRepo.warningMessage));
+		    	wait.until(ExpectedConditions.invisibilityOfElementLocated(CoreManualAllocationRepo.Tofieldmandatorywarningmsg));
 		    	}
 				catch (AssertionError | Exception e) {
 					ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
@@ -585,6 +585,97 @@ public class AllScenarios_CoreManualAllocationModule {
 			 }
 			Thread.sleep(3000);
 		    }
+		    
+//		    @Test(priority = 26, dataProvider = "TestData")
+//		    public void OS_Balance_Field_Validation_(Map<Object, Object> testdata) throws InterruptedException {
+//		    	try {
+//		    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+//			    	
+//			        String value1 = testdata.get("OutstandingBalanceOperator").toString();
+//			        String value2 = testdata.get("OutstandingBalance").toString();
+//		    	coremanualallocationpage.clickOsBalanceField();
+//		    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the O/S Balance field.");
+//		    	coremanualallocationpage.selectEqualFinancialOperator(value1);
+//		    	coremanualallocationpage.enterOsBalance(value2);
+//		    	ExtentTestManager.getTest().log(Status.PASS, "Selected '=' from the 'Select Financial Operator' dropdown, and entered '1234' in the O/S Balance field.");
+//		    	}
+//		    	}
+//				catch (AssertionError | Exception e) {
+//					ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+//		           throw e;
+//			 }
+//			Thread.sleep(3000);
+//		    }
+//
+//		    @Test(priority = 27, dataProvider = "TestData")
+//		    public void To_Field_Dropdown_Selection_(Map<Object, Object> testdata) throws InterruptedException {
+//		    	try {
+//		    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+//			    	
+//			        String value1 = testdata.get("To").toString();
+//			        coremanualallocationpage.selectCallCentreFromToDropdown(value1);
+//			        ExtentTestManager.getTest().log(Status.PASS, "Selected 'Call Centre' from the 'To' dropdown.");
+//		    	}
+//		    	}
+//				catch (AssertionError | Exception e) {
+//					ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+//		           throw e;
+//			 }
+//			Thread.sleep(3000);
+//		    }   
+//		    
+//		    @Test(priority = 28)
+//		    public void Search_with_Mandatory_Fields_() throws InterruptedException {
+//		    	try {
+//		    	coremanualallocationpage.clickSearchBtn();
+//		    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the search button.");
+//		    	WebElement totalAccountSelected = driver.findElement(CoreManualAllocationRepo.TotalAccountSelected); // Update with the actual locator
+//	            WebElement totalOutstandingAmount = driver.findElement(CoreManualAllocationRepo.TotalOutStandingAmount); // Update with the actual locator
+//		    	 // Verify if the text for "Total account selected" is displayed and is not empty
+//		    	Assert.assertTrue(totalAccountSelected.isDisplayed(),"Total account selected is not displayed" );
+//		    	Assert.assertTrue(totalOutstandingAmount.isDisplayed(),"Total outstanding amount is not displayed");
+//		    	ExtentTestManager.getTest().log(Status.PASS, "The accounts count is displayed with the columns 'Total Account Selected' and 'Total Outstanding Amount'.");
+//		    	Assert.assertFalse(totalAccountSelected.getText().isEmpty(),"Total account selected text is empty");
+//	            Assert.assertFalse(totalOutstandingAmount.getText().isEmpty(),"Total outstanding amount text is empty");
+//		    	}
+//				catch (AssertionError | Exception e) {
+//					ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+//		           throw e;
+//			 }
+//			Thread.sleep(3000);
+//	            
+//		    }
+//		    
+//		 // Test case for 'Allocate to Field Dropdown Selection'
+//		    @Test(priority = 29, dataProvider = "TestData")
+//		    public void testAllocateToDropdownSelection(Map<Object, Object> testdata) {
+//		    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+//			    	
+//			        String value = testdata.get("AllocateTo").toString();
+//		    	coremanualallocationpage.selectCallCentreFromAllocateToDropdown(value);
+//		    	}
+//		    }
+//		    
+//		    @Test(priority = 30, dataProvider = "TestData")
+//		    public void testSelectCallCentreDropdown(Map<Object, Object> testdata) {
+//		    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+//		    		String value = testdata.get("SelectCallCentre").toString();
+//		        // Select "CallCentre 1" from dropdown
+//		    		coremanualallocationpage.selectCallCentre(value);
+//		    	}
+//		       
+//		    }
+//		    
+//		    @Test(priority = 31)
+//		    public void testAssignButtonValidationMessage() {
+//		        // Click the assign button
+//		    	coremanualallocationpage.clickAssignButton();
+//
+//		        // Assert the validation message is "Assigned successfully"
+//		        Assert.assertEquals(coremanualallocationpage.getValidationMessage(), "Assigned Successfully",
+//		                "Validation message should be 'Assigned Successfully' after allocation.");
+//		    }
+		    
 	@AfterMethod 
 	 public void takeScreenshotOnFailure(ITestResult result) throws IOException {
 		    // Check if the test case failed

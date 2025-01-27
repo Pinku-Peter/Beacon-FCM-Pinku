@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="25" passed="25" failed="0" skipped="0">
+<testng-results ignored="0" total="31" passed="31" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-24T15:52:08 IST" name="Default suite" finished-at="2025-01-24T16:02:48 IST" duration-ms="639367">
+  <suite started-at="2025-01-27T13:32:10 IST" name="Default suite" finished-at="2025-01-27T13:40:05 IST" duration-ms="474943">
     <groups>
     </groups>
-    <test started-at="2025-01-24T15:52:08 IST" name="Default test" finished-at="2025-01-24T16:02:48 IST" duration-ms="639367">
+    <test started-at="2025-01-27T13:32:10 IST" name="Default test" finished-at="2025-01-27T13:40:05 IST" duration-ms="474943">
       <class name="com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:51:11 IST" name="SetUp" finished-at="2025-01-24T15:52:08 IST" duration-ms="57563" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:31:21 IST" name="SetUp" finished-at="2025-01-27T13:32:10 IST" duration-ms="48725" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:08 IST" name="setupTest" finished-at="2025-01-24T15:52:09 IST" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:10 IST" name="setupTest" finished-at="2025-01-27T13:32:10 IST" duration-ms="206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,22 +22,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Login_to_call_centre_application_and_take_account_filtration_page()[pri:1, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:09 IST" name="Login_to_call_centre_application_and_take_account_filtration_page" finished-at="2025-01-24T15:52:17 IST" duration-ms="8338" status="PASS">
+        <test-method signature="Login_to_call_centre_application_and_take_account_filtration_page()[pri:1, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:10 IST" name="Login_to_call_centre_application_and_take_account_filtration_page" finished-at="2025-01-27T13:32:20 IST" duration-ms="10552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_to_call_centre_application_and_take_account_filtration_page -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:17 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:52:17 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:20 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:32:20 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login_to_call_centre_application_and_take_account_filtration_page status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Login_to_call_centre_application_and_take_account_filtration_page()[pri:1, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Login_to_call_centre_application_and_take_account_filtration_page status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Login_to_call_centre_application_and_take_account_filtration_page()[pri:1, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:17 IST" name="setupTest" finished-at="2025-01-24T15:52:17 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:20 IST" name="setupTest" finished-at="2025-01-27T13:32:20 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,22 +48,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Allocated_To_dropdown_mandatory_checking()[pri:2, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:17 IST" name="Allocated_To_dropdown_mandatory_checking" finished-at="2025-01-24T15:52:26 IST" duration-ms="8805" status="PASS">
+        <test-method signature="Allocated_To_dropdown_mandatory_checking()[pri:2, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:20 IST" name="Allocated_To_dropdown_mandatory_checking" finished-at="2025-01-27T13:32:30 IST" duration-ms="9045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Allocated_To_dropdown_mandatory_checking -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:26 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:52:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:30 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:32:30 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Allocated_To_dropdown_mandatory_checking status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Allocated_To_dropdown_mandatory_checking()[pri:2, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Allocated_To_dropdown_mandatory_checking status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Allocated_To_dropdown_mandatory_checking()[pri:2, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:27 IST" name="setupTest" finished-at="2025-01-24T15:52:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:31 IST" name="setupTest" finished-at="2025-01-27T13:32:31 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,29 +74,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Asset_category_dropdown_mandatory_checking(java.util.Map)[pri:3, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:27 IST" name="Asset_category_dropdown_mandatory_checking" data-provider="TestData" finished-at="2025-01-24T15:52:35 IST" duration-ms="8765" status="PASS">
+        <test-method signature="Asset_category_dropdown_mandatory_checking(java.util.Map)[pri:3, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:31 IST" name="Asset_category_dropdown_mandatory_checking" data-provider="TestData" finished-at="2025-01-27T13:32:40 IST" duration-ms="9030" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationType=Manual Allocation, OutstandingBalance=12345, OutstandingBalanceOperator==, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, OutstandingBalance=20000, OutstandingBalanceOperator=<, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Asset_category_dropdown_mandatory_checking -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:35 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:52:35 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:40 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:32:40 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Asset_category_dropdown_mandatory_checking status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Asset_category_dropdown_mandatory_checking(java.util.Map)[pri:3, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Asset_category_dropdown_mandatory_checking status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Asset_category_dropdown_mandatory_checking(java.util.Map)[pri:3, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:35 IST" name="setupTest" finished-at="2025-01-24T15:52:35 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:40 IST" name="setupTest" finished-at="2025-01-27T13:32:40 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,22 +107,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Select_SMA_and_NPA_Categories()[pri:4, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:35 IST" name="Select_SMA_and_NPA_Categories" finished-at="2025-01-24T15:52:59 IST" duration-ms="23445" status="PASS">
+        <test-method signature="Select_SMA_and_NPA_Categories()[pri:4, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:40 IST" name="Select_SMA_and_NPA_Categories" finished-at="2025-01-27T13:32:53 IST" duration-ms="12942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_SMA_and_NPA_Categories -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:59 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:52:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:53 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:32:53 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Select_SMA_and_NPA_Categories status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Select_SMA_and_NPA_Categories()[pri:4, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Select_SMA_and_NPA_Categories status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Select_SMA_and_NPA_Categories()[pri:4, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:59 IST" name="setupTest" finished-at="2025-01-24T15:52:59 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:53 IST" name="setupTest" finished-at="2025-01-27T13:32:53 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,22 +133,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="SMA_Category_Selection()[pri:5, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:52:59 IST" name="SMA_Category_Selection" finished-at="2025-01-24T15:53:02 IST" duration-ms="3570" status="PASS">
+        <test-method signature="SMA_Category_Selection()[pri:5, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:53 IST" name="SMA_Category_Selection" finished-at="2025-01-27T13:32:56 IST" duration-ms="3625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SMA_Category_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:53:02 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:53:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:56 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:32:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SMA_Category_Selection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.SMA_Category_Selection()[pri:5, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=SMA_Category_Selection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.SMA_Category_Selection()[pri:5, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:53:02 IST" name="setupTest" finished-at="2025-01-24T15:53:02 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:56 IST" name="setupTest" finished-at="2025-01-27T13:32:56 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -159,22 +159,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="NPA_Category_Selection()[pri:6, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:53:02 IST" name="NPA_Category_Selection" finished-at="2025-01-24T15:53:06 IST" duration-ms="3567" status="PASS">
+        <test-method signature="NPA_Category_Selection()[pri:6, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:32:56 IST" name="NPA_Category_Selection" finished-at="2025-01-27T13:33:00 IST" duration-ms="3616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NPA_Category_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:53:06 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:53:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:33:00 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:33:00 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=NPA_Category_Selection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.NPA_Category_Selection()[pri:6, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=NPA_Category_Selection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.NPA_Category_Selection()[pri:6, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:53:06 IST" name="setupTest" finished-at="2025-01-24T15:53:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:33:00 IST" name="setupTest" finished-at="2025-01-27T13:33:00 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -185,29 +185,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Allocation_Type_Selection_Manual_allocation(java.util.Map)[pri:7, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:53:06 IST" name="Allocation_Type_Selection_Manual_allocation" data-provider="TestData" finished-at="2025-01-24T15:53:10 IST" duration-ms="4114" status="PASS">
+        <test-method signature="Allocation_Type_Selection_Manual_allocation(java.util.Map)[pri:7, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:33:00 IST" name="Allocation_Type_Selection_Manual_allocation" data-provider="TestData" finished-at="2025-01-27T13:33:04 IST" duration-ms="4152" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationType=Manual Allocation, OutstandingBalance=12345, OutstandingBalanceOperator==, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, OutstandingBalance=20000, OutstandingBalanceOperator=<, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Allocation_Type_Selection_Manual_allocation -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:53:10 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:53:10 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:33:04 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:33:04 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Allocation_Type_Selection_Manual_allocation status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Allocation_Type_Selection_Manual_allocation(java.util.Map)[pri:7, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Allocation_Type_Selection_Manual_allocation status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Allocation_Type_Selection_Manual_allocation(java.util.Map)[pri:7, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:53:10 IST" name="setupTest" finished-at="2025-01-24T15:53:10 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:33:04 IST" name="setupTest" finished-at="2025-01-27T13:33:04 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -218,22 +218,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Perform_Search_with_Valid_Data()[pri:8, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:53:10 IST" name="Perform_Search_with_Valid_Data" finished-at="2025-01-24T15:53:20 IST" duration-ms="10246" status="PASS">
+        <test-method signature="Perform_Search_with_Valid_Data()[pri:8, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:33:04 IST" name="Perform_Search_with_Valid_Data" finished-at="2025-01-27T13:33:15 IST" duration-ms="11141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Perform_Search_with_Valid_Data -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:53:20 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:53:20 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:33:15 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:33:15 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Perform_Search_with_Valid_Data status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Perform_Search_with_Valid_Data()[pri:8, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Perform_Search_with_Valid_Data status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Perform_Search_with_Valid_Data()[pri:8, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:53:20 IST" name="setupTest" finished-at="2025-01-24T15:53:20 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:33:15 IST" name="setupTest" finished-at="2025-01-27T13:33:15 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -244,22 +244,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Login_and_Navigation_to_Manual_Allocation()[pri:9, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:53:20 IST" name="Login_and_Navigation_to_Manual_Allocation" finished-at="2025-01-24T15:55:11 IST" duration-ms="110924" status="PASS">
+        <test-method signature="Login_and_Navigation_to_Manual_Allocation()[pri:9, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:33:15 IST" name="Login_and_Navigation_to_Manual_Allocation" finished-at="2025-01-27T13:34:40 IST" duration-ms="85117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_and_Navigation_to_Manual_Allocation -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:11 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:55:11 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:34:40 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:34:40 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login_and_Navigation_to_Manual_Allocation status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Login_and_Navigation_to_Manual_Allocation()[pri:9, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Login_and_Navigation_to_Manual_Allocation status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Login_and_Navigation_to_Manual_Allocation()[pri:9, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:11 IST" name="setupTest" finished-at="2025-01-24T15:55:11 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:34:40 IST" name="setupTest" finished-at="2025-01-27T13:34:40 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -270,22 +270,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Fields_and_Buttons_on_Manual_Allocation_Page()[pri:10, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:11 IST" name="Verify_Fields_and_Buttons_on_Manual_Allocation_Page" finished-at="2025-01-24T15:55:16 IST" duration-ms="4820" status="PASS">
+        <test-method signature="Verify_Fields_and_Buttons_on_Manual_Allocation_Page()[pri:10, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:34:40 IST" name="Verify_Fields_and_Buttons_on_Manual_Allocation_Page" finished-at="2025-01-27T13:34:45 IST" duration-ms="4850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Fields_and_Buttons_on_Manual_Allocation_Page -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:16 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:55:16 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verify_Fields_and_Buttons_on_Manual_Allocation_Page status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Verify_Fields_and_Buttons_on_Manual_Allocation_Page()[pri:10, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:16 IST" name="setupTest" finished-at="2025-01-24T15:55:16 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:34:45 IST" name="setupTest" finished-at="2025-01-27T13:34:45 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -296,22 +285,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Mandatory_Field_Validation_for_Asset_Category()[pri:11, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:16 IST" name="Mandatory_Field_Validation_for_Asset_Category" finished-at="2025-01-24T15:55:25 IST" duration-ms="8608" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Mandatory_Field_Validation_for_Asset_Category -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:25 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:55:25 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:34:45 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:34:45 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Mandatory_Field_Validation_for_Asset_Category status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Mandatory_Field_Validation_for_Asset_Category()[pri:11, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Fields_and_Buttons_on_Manual_Allocation_Page status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Verify_Fields_and_Buttons_on_Manual_Allocation_Page()[pri:10, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:25 IST" name="setupTest" finished-at="2025-01-24T15:55:25 IST" duration-ms="2" status="PASS">
+        <test-method signature="Mandatory_Field_Validation_for_Asset_Category()[pri:11, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:34:45 IST" name="Mandatory_Field_Validation_for_Asset_Category" finished-at="2025-01-27T13:34:54 IST" duration-ms="8333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mandatory_Field_Validation_for_Asset_Category -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:34:54 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:34:54 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Mandatory_Field_Validation_for_Asset_Category status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Mandatory_Field_Validation_for_Asset_Category()[pri:11, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:34:54 IST" name="setupTest" finished-at="2025-01-27T13:34:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -322,22 +322,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Asset_Category_SMA_and_NPA_Selection()[pri:12, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:25 IST" name="Asset_Category_SMA_and_NPA_Selection" finished-at="2025-01-24T15:55:39 IST" duration-ms="13836" status="PASS">
+        <test-method signature="Asset_Category_SMA_and_NPA_Selection()[pri:12, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:34:54 IST" name="Asset_Category_SMA_and_NPA_Selection" finished-at="2025-01-27T13:35:08 IST" duration-ms="13972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Asset_Category_SMA_and_NPA_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:39 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:55:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:08 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:35:08 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Asset_Category_SMA_and_NPA_Selection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Asset_Category_SMA_and_NPA_Selection()[pri:12, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Asset_Category_SMA_and_NPA_Selection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Asset_Category_SMA_and_NPA_Selection()[pri:12, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:39 IST" name="setupTest" finished-at="2025-01-24T15:55:39 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:08 IST" name="setupTest" finished-at="2025-01-27T13:35:08 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -348,22 +348,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="SMA_Category_Dropdown_Selection()[pri:13, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:39 IST" name="SMA_Category_Dropdown_Selection" finished-at="2025-01-24T15:55:43 IST" duration-ms="4290" status="PASS">
+        <test-method signature="SMA_Category_Dropdown_Selection()[pri:13, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:08 IST" name="SMA_Category_Dropdown_Selection" finished-at="2025-01-27T13:35:12 IST" duration-ms="4271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SMA_Category_Dropdown_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:43 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:55:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:12 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:35:12 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SMA_Category_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.SMA_Category_Dropdown_Selection()[pri:13, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=SMA_Category_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.SMA_Category_Dropdown_Selection()[pri:13, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:43 IST" name="setupTest" finished-at="2025-01-24T15:55:43 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:12 IST" name="setupTest" finished-at="2025-01-27T13:35:12 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -374,22 +374,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="NPA_Category_Dropdown_Selection()[pri:14, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:43 IST" name="NPA_Category_Dropdown_Selection" finished-at="2025-01-24T15:55:46 IST" duration-ms="3330" status="PASS">
+        <test-method signature="NPA_Category_Dropdown_Selection()[pri:14, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:12 IST" name="NPA_Category_Dropdown_Selection" finished-at="2025-01-27T13:35:15 IST" duration-ms="3358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NPA_Category_Dropdown_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:46 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:55:46 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:15 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:35:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=NPA_Category_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.NPA_Category_Dropdown_Selection()[pri:14, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=NPA_Category_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.NPA_Category_Dropdown_Selection()[pri:14, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:46 IST" name="setupTest" finished-at="2025-01-24T15:55:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:15 IST" name="setupTest" finished-at="2025-01-27T13:35:15 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -400,29 +400,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="OS_Balance_Field_Validation(java.util.Map)[pri:15, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:46 IST" name="OS_Balance_Field_Validation" data-provider="TestData" finished-at="2025-01-24T15:55:50 IST" duration-ms="3671" status="PASS">
+        <test-method signature="OS_Balance_Field_Validation(java.util.Map)[pri:15, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:15 IST" name="OS_Balance_Field_Validation" data-provider="TestData" finished-at="2025-01-27T13:35:19 IST" duration-ms="3700" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationType=Manual Allocation, OutstandingBalance=12345, OutstandingBalanceOperator==, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, OutstandingBalance=20000, OutstandingBalanceOperator=<, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OS_Balance_Field_Validation -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:50 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:55:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:19 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:35:19 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=OS_Balance_Field_Validation status=SUCCESS method=AllScenarios_CoreManualAllocationModule.OS_Balance_Field_Validation(java.util.Map)[pri:15, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=OS_Balance_Field_Validation status=SUCCESS method=AllScenarios_CoreManualAllocationModule.OS_Balance_Field_Validation(java.util.Map)[pri:15, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:50 IST" name="setupTest" finished-at="2025-01-24T15:55:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:19 IST" name="setupTest" finished-at="2025-01-27T13:35:19 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -433,29 +433,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="To_Field_Dropdown_Selection(java.util.Map)[pri:16, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:50 IST" name="To_Field_Dropdown_Selection" data-provider="TestData" finished-at="2025-01-24T15:55:54 IST" duration-ms="3451" status="PASS">
+        <test-method signature="To_Field_Dropdown_Selection(java.util.Map)[pri:16, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:19 IST" name="To_Field_Dropdown_Selection" data-provider="TestData" finished-at="2025-01-27T13:35:23 IST" duration-ms="3455" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocatedTo=Call Centre, AllocationType=Manual Allocation, OutstandingBalance=12345, OutstandingBalanceOperator==, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+                <![CDATA[{AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, OutstandingBalance=20000, OutstandingBalanceOperator=<, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- To_Field_Dropdown_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:54 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:55:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:23 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:35:23 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=To_Field_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.To_Field_Dropdown_Selection(java.util.Map)[pri:16, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=To_Field_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.To_Field_Dropdown_Selection(java.util.Map)[pri:16, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:54 IST" name="setupTest" finished-at="2025-01-24T15:55:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:23 IST" name="setupTest" finished-at="2025-01-27T13:35:23 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -466,22 +466,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Search_with_Mandatory_Fields()[pri:17, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:55:54 IST" name="Search_with_Mandatory_Fields" finished-at="2025-01-24T15:56:09 IST" duration-ms="15438" status="PASS">
+        <test-method signature="Search_with_Mandatory_Fields()[pri:17, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:23 IST" name="Search_with_Mandatory_Fields" finished-at="2025-01-27T13:35:37 IST" duration-ms="14566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_with_Mandatory_Fields -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:56:09 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:56:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:37 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:35:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Search_with_Mandatory_Fields status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Search_with_Mandatory_Fields()[pri:17, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Search_with_Mandatory_Fields status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Search_with_Mandatory_Fields()[pri:17, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:56:09 IST" name="setupTest" finished-at="2025-01-24T15:56:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:37 IST" name="setupTest" finished-at="2025-01-27T13:35:37 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -492,22 +492,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Download_Excel_Functionality()[pri:18, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:56:09 IST" name="Download_Excel_Functionality" finished-at="2025-01-24T15:56:22 IST" duration-ms="12987" status="PASS">
+        <test-method signature="Download_Excel_Functionality()[pri:18, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:37 IST" name="Download_Excel_Functionality" finished-at="2025-01-27T13:35:51 IST" duration-ms="14056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Download_Excel_Functionality -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:56:22 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:56:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:51 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:35:51 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Download_Excel_Functionality status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Download_Excel_Functionality()[pri:18, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Download_Excel_Functionality status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Download_Excel_Functionality()[pri:18, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:56:22 IST" name="setupTest" finished-at="2025-01-24T15:56:22 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:51 IST" name="setupTest" finished-at="2025-01-27T13:35:51 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -518,22 +518,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Excel_Account_Count_Verification()[pri:19, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:56:22 IST" name="Excel_Account_Count_Verification" finished-at="2025-01-24T15:56:25 IST" duration-ms="3257" status="PASS">
+        <test-method signature="Excel_Account_Count_Verification()[pri:19, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:51 IST" name="Excel_Account_Count_Verification" finished-at="2025-01-27T13:35:54 IST" duration-ms="3173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Excel_Account_Count_Verification -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:56:25 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:56:25 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:54 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:35:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Excel_Account_Count_Verification status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Excel_Account_Count_Verification()[pri:19, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Excel_Account_Count_Verification status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Excel_Account_Count_Verification()[pri:19, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:56:25 IST" name="setupTest" finished-at="2025-01-24T15:56:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:54 IST" name="setupTest" finished-at="2025-01-27T13:35:54 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -544,22 +544,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Login_to_call_centre_application_and_take_updation_of_disposition_page()[pri:20, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:56:25 IST" name="Login_to_call_centre_application_and_take_updation_of_disposition_page" finished-at="2025-01-24T15:57:51 IST" duration-ms="85413" status="PASS">
+        <test-method signature="Login_to_call_centre_application_and_take_updation_of_disposition_page()[pri:20, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:35:54 IST" name="Login_to_call_centre_application_and_take_updation_of_disposition_page" finished-at="2025-01-27T13:37:02 IST" duration-ms="67132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_to_call_centre_application_and_take_updation_of_disposition_page -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:57:51 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T15:57:51 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Login_to_call_centre_application_and_take_updation_of_disposition_page status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Login_to_call_centre_application_and_take_updation_of_disposition_page()[pri:20, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:57:51 IST" name="setupTest" finished-at="2025-01-24T15:57:51 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:37:02 IST" name="setupTest" finished-at="2025-01-27T13:37:02 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -570,22 +559,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Login_and_Navigation_to_Manual_Allocation_Core_Application()[pri:21, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T15:57:51 IST" name="Login_and_Navigation_to_Manual_Allocation_Core_Application" finished-at="2025-01-24T16:02:16 IST" duration-ms="265331" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_and_Navigation_to_Manual_Allocation_Core_Application -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:16 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T16:02:16 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:37:02 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:37:02 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login_and_Navigation_to_Manual_Allocation_Core_Application status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Login_and_Navigation_to_Manual_Allocation_Core_Application()[pri:21, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Login_to_call_centre_application_and_take_updation_of_disposition_page status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Login_to_call_centre_application_and_take_updation_of_disposition_page()[pri:20, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:16 IST" name="setupTest" finished-at="2025-01-24T16:02:16 IST" duration-ms="2" status="PASS">
+        <test-method signature="Login_and_Navigation_to_Manual_Allocation_Core_Application()[pri:21, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:37:02 IST" name="Login_and_Navigation_to_Manual_Allocation_Core_Application" finished-at="2025-01-27T13:38:43 IST" duration-ms="101385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_and_Navigation_to_Manual_Allocation_Core_Application -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:38:43 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:38:43 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login_and_Navigation_to_Manual_Allocation_Core_Application status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Login_and_Navigation_to_Manual_Allocation_Core_Application()[pri:21, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:38:43 IST" name="setupTest" finished-at="2025-01-27T13:38:43 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -596,22 +596,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Mandatory_Field_Validation_for_Asset_Category_()[pri:22, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:16 IST" name="Mandatory_Field_Validation_for_Asset_Category_" finished-at="2025-01-24T16:02:26 IST" duration-ms="9592" status="PASS">
+        <test-method signature="Mandatory_Field_Validation_for_Asset_Category_()[pri:22, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:38:43 IST" name="Mandatory_Field_Validation_for_Asset_Category_" finished-at="2025-01-27T13:38:52 IST" duration-ms="9335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Mandatory_Field_Validation_for_Asset_Category_ -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:26 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T16:02:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:38:52 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:38:52 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Mandatory_Field_Validation_for_Asset_Category_ status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Mandatory_Field_Validation_for_Asset_Category_()[pri:22, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Mandatory_Field_Validation_for_Asset_Category_ status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Mandatory_Field_Validation_for_Asset_Category_()[pri:22, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:26 IST" name="setupTest" finished-at="2025-01-24T16:02:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:38:52 IST" name="setupTest" finished-at="2025-01-27T13:38:52 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -622,26 +622,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Asset_Category_SMA_and_NPA_Selection_()[pri:23, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:26 IST" name="Asset_Category_SMA_and_NPA_Selection_" finished-at="2025-01-24T16:02:40 IST" duration-ms="14303" status="PASS">
+        <test-method signature="Asset_Category_SMA_and_NPA_Selection_()[pri:23, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:38:52 IST" name="Asset_Category_SMA_and_NPA_Selection_" finished-at="2025-01-27T13:39:07 IST" duration-ms="14442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Asset_Category_SMA_and_NPA_Selection_ -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:40 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T16:02:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:07 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:39:07 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Asset_Category_SMA_and_NPA_Selection_ status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Asset_Category_SMA_and_NPA_Selection_()[pri:23, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=Asset_Category_SMA_and_NPA_Selection_ status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Asset_Category_SMA_and_NPA_Selection_()[pri:23, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="SMA_Category_Dropdown_Selection_()[pri:24, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:40 IST" name="SMA_Category_Dropdown_Selection_" finished-at="2025-01-24T16:02:44 IST" duration-ms="4229" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SMA_Category_Dropdown_Selection_ -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:40 IST" name="setupTest" finished-at="2025-01-24T16:02:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:07 IST" name="setupTest" finished-at="2025-01-27T13:39:07 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -652,18 +648,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:44 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T16:02:44 IST" duration-ms="0" status="PASS">
+        <test-method signature="SMA_Category_Dropdown_Selection_()[pri:24, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:07 IST" name="SMA_Category_Dropdown_Selection_" finished-at="2025-01-27T13:39:11 IST" duration-ms="4279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SMA_Category_Dropdown_Selection_ -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:11 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:39:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SMA_Category_Dropdown_Selection_ status=SUCCESS method=AllScenarios_CoreManualAllocationModule.SMA_Category_Dropdown_Selection_()[pri:24, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=SMA_Category_Dropdown_Selection_ status=SUCCESS method=AllScenarios_CoreManualAllocationModule.SMA_Category_Dropdown_Selection_()[pri:24, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:44 IST" name="setupTest" finished-at="2025-01-24T16:02:44 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:11 IST" name="setupTest" finished-at="2025-01-27T13:39:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -674,22 +674,206 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="NPA_Category_Dropdown_Selection_()[pri:25, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:44 IST" name="NPA_Category_Dropdown_Selection_" finished-at="2025-01-24T16:02:48 IST" duration-ms="3608" status="PASS">
+        <test-method signature="NPA_Category_Dropdown_Selection_()[pri:25, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:11 IST" name="NPA_Category_Dropdown_Selection_" finished-at="2025-01-27T13:39:20 IST" duration-ms="8661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NPA_Category_Dropdown_Selection_ -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:48 IST" name="takeScreenshotOnFailure" finished-at="2025-01-24T16:02:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:20 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:39:20 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=NPA_Category_Dropdown_Selection_ status=SUCCESS method=AllScenarios_CoreManualAllocationModule.NPA_Category_Dropdown_Selection_()[pri:25, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d] output={null}]]]>
+                <![CDATA[[TestResult name=NPA_Category_Dropdown_Selection_ status=SUCCESS method=AllScenarios_CoreManualAllocationModule.NPA_Category_Dropdown_Selection_()[pri:25, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@1ff4931d]" started-at="2025-01-24T16:02:48 IST" name="afterEachTest" finished-at="2025-01-24T16:02:48 IST" duration-ms="361" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:20 IST" name="setupTest" finished-at="2025-01-27T13:39:20 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule.OS_Balance_Field_Validation_(java.util.Map) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="OS_Balance_Field_Validation_(java.util.Map)[pri:26, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:20 IST" name="OS_Balance_Field_Validation_" data-provider="TestData" finished-at="2025-01-27T13:39:23 IST" duration-ms="3677" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, OutstandingBalance=20000, OutstandingBalanceOperator=<, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OS_Balance_Field_Validation_ -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:23 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:39:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OS_Balance_Field_Validation_ status=SUCCESS method=AllScenarios_CoreManualAllocationModule.OS_Balance_Field_Validation_(java.util.Map)[pri:26, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:24 IST" name="setupTest" finished-at="2025-01-27T13:39:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule.To_Field_Dropdown_Selection_(java.util.Map) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="To_Field_Dropdown_Selection_(java.util.Map)[pri:27, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:24 IST" name="To_Field_Dropdown_Selection_" data-provider="TestData" finished-at="2025-01-27T13:39:27 IST" duration-ms="3463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, OutstandingBalance=20000, OutstandingBalanceOperator=<, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- To_Field_Dropdown_Selection_ -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:27 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:39:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=To_Field_Dropdown_Selection_ status=SUCCESS method=AllScenarios_CoreManualAllocationModule.To_Field_Dropdown_Selection_(java.util.Map)[pri:27, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:27 IST" name="setupTest" finished-at="2025-01-27T13:39:27 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule.Search_with_Mandatory_Fields_() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Search_with_Mandatory_Fields_()[pri:28, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:27 IST" name="Search_with_Mandatory_Fields_" finished-at="2025-01-27T13:39:41 IST" duration-ms="13919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_with_Mandatory_Fields_ -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:41 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:39:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Search_with_Mandatory_Fields_ status=SUCCESS method=AllScenarios_CoreManualAllocationModule.Search_with_Mandatory_Fields_()[pri:28, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:41 IST" name="setupTest" finished-at="2025-01-27T13:39:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule.testAllocateToDropdownSelection(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="testAllocateToDropdownSelection(java.util.Map)[pri:29, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:41 IST" name="testAllocateToDropdownSelection" data-provider="TestData" finished-at="2025-01-27T13:39:41 IST" duration-ms="334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, OutstandingBalance=20000, OutstandingBalanceOperator=<, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAllocateToDropdownSelection -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:41 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:39:41 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAllocateToDropdownSelection status=SUCCESS method=AllScenarios_CoreManualAllocationModule.testAllocateToDropdownSelection(java.util.Map)[pri:29, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:41 IST" name="setupTest" finished-at="2025-01-27T13:39:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule.testSelectCallCentreDropdown(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="testSelectCallCentreDropdown(java.util.Map)[pri:30, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:41 IST" name="testSelectCallCentreDropdown" data-provider="TestData" finished-at="2025-01-27T13:39:42 IST" duration-ms="379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, OutstandingBalance=20000, OutstandingBalanceOperator=<, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectCallCentreDropdown -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:42 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:39:42 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSelectCallCentreDropdown status=SUCCESS method=AllScenarios_CoreManualAllocationModule.testSelectCallCentreDropdown(java.util.Map)[pri:30, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:42 IST" name="setupTest" finished-at="2025-01-27T13:39:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule.testAssignButtonValidationMessage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="testAssignButtonValidationMessage()[pri:31, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:39:42 IST" name="testAssignButtonValidationMessage" finished-at="2025-01-27T13:40:05 IST" duration-ms="22807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAssignButtonValidationMessage -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:40:05 IST" name="takeScreenshotOnFailure" finished-at="2025-01-27T13:40:05 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAssignButtonValidationMessage status=SUCCESS method=AllScenarios_CoreManualAllocationModule.testAssignButtonValidationMessage()[pri:31, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule@8297b3a]" started-at="2025-01-27T13:40:05 IST" name="afterEachTest" finished-at="2025-01-27T13:40:05 IST" duration-ms="350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->

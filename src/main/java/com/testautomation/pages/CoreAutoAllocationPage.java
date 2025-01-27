@@ -550,7 +550,9 @@ public class CoreAutoAllocationPage {
  // Method to enter Allocation Name
     public void enterAllocationName(String name) {
     	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+    	 Log.info("Waiting for the 'All' value in the Zone dropdown to become visible.");
     	 wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAutoAllocationRepo.zoneall));
+    	 Log.info("The 'All' value in the Zone dropdown is now visible.");
     	Log.info("Starting the process to enter the Allocation Name...");
 
         try {

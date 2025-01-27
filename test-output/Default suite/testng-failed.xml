@@ -5,10 +5,40 @@
     <classes>
       <class name="com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule">
         <methods>
-          <include name="afterEachTest"/>
+          <include name="Login_to_call_centre_application_and_take_account_filtration_page"/>
+          <include name="Asset_Category_SMA_and_NPA_Selection_"/>
+          <include name="Login_and_Navigation_to_Manual_Allocation_Core_Application"/>
+          <include name="Allocated_To_dropdown_mandatory_checking"/>
+          <include name="Verify_Fields_and_Buttons_on_Manual_Allocation_Page"/>
+          <include name="Login_and_Navigation_to_Manual_Allocation"/>
+          <include name="Asset_Category_SMA_and_NPA_Selection"/>
+          <include name="OS_Balance_Field_Validation"/>
+          <include name="Asset_category_dropdown_mandatory_checking"/>
+          <include name="To_Field_Dropdown_Selection"/>
+          <include name="Search_with_Mandatory_Fields"/>
+          <include name="Search_with_Mandatory_Fields_"/>
           <include name="setupTest"/>
-          <include name="testMandatoryFieldValidations"/>
+          <include name="SMA_Category_Dropdown_Selection_"/>
+          <include name="OS_Balance_Field_Validation_"/>
+          <include name="Download_Excel_Functionality"/>
+          <include name="Login_to_call_centre_application_and_take_updation_of_disposition_page"/>
+          <include name="NPA_Category_Selection"/>
+          <include name="Allocation_Type_Selection_Manual_allocation"/>
+          <include name="Mandatory_Field_Validation_for_Asset_Category_"/>
           <include name="SetUp"/>
+          <include name="Select_SMA_and_NPA_Categories"/>
+          <include name="NPA_Category_Dropdown_Selection"/>
+          <include name="testAllocateToDropdownSelection"/>
+          <include name="Excel_Account_Count_Verification"/>
+          <include name="Mandatory_Field_Validation_for_Asset_Category"/>
+          <include name="NPA_Category_Dropdown_Selection_"/>
+          <include name="To_Field_Dropdown_Selection_"/>
+          <include name="afterEachTest"/>
+          <include name="testAssignButtonValidationMessage"/>
+          <include name="testSelectCallCentreDropdown"/>
+          <include name="Perform_Search_with_Valid_Data"/>
+          <include name="SMA_Category_Dropdown_Selection"/>
+          <include name="SMA_Category_Selection"/>
           <include name="takeScreenshotOnFailure"/>
         </methods>
       </class> <!-- com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule -->
