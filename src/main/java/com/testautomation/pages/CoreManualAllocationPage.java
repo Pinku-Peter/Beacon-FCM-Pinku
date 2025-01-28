@@ -314,7 +314,7 @@ public class CoreManualAllocationPage {
     	Log.info("Spinner disappeared successfully.");
     	Log.info("Pausing for a brief moment...");
     	Log.info("Waiting for the 'Search' button to become clickable.");
-    	WebElement button = wait.until(ExpectedConditions.elementToBeClickable(CoreManualAllocationRepo.Searchbtn));
+    	wait.until(ExpectedConditions.elementToBeClickable(CoreManualAllocationRepo.Searchbtn));
     	Log.info("The 'Search' button is now clickable.");
     	Log.info("Checking if the current URL ends with 'CallCentre/ManualAllocationConfiguration'...");
         boolean isPageLoaded = driver.getCurrentUrl().endsWith("CallCentre/ManualAllocationConfiguration");
@@ -881,33 +881,108 @@ public class CoreManualAllocationPage {
     
  // Method to select 'Call Centre' from 'Allocate To' dropdown
     public void selectCallCentreFromAllocateToDropdown(String value) {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-    	WebElement AllocateTo = driver.findElement(CoreManualAllocationRepo.AllocateTo);
-    	AllocateTo.click();
+    	Log.info("Starting the process to select a value from 'Allocate To' dropdown...");
+        
+        Log.info("Locating the 'Allocate To' dropdown element...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        WebElement AllocateTo = driver.findElement(CoreManualAllocationRepo.AllocateTo);
+        
+        Log.info("Clicking on the 'Allocate To' dropdown...");
+        AllocateTo.click();
+        Log.info("'Allocate To' dropdown clicked successfully.");
+        
+        Log.info("Waiting for the value '" + value + "' to become visible in the dropdown...");
         WebElement tovalue = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.tovalue(value)));
+        
+        Log.info("Clicking on the value '" + value + "'...");
         tovalue.click();
+        Log.info("Value '" + value + "' selected successfully from the 'Allocate To' dropdown.");
     }
     
  // Method to select a call centre from the dropdown
     public void selectCallCentre(String callCentreName) {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-    	WebElement SelectCallCentre = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.SelectCallCentre));
-    	SelectCallCentre.click();
-    	WebElement SelectCallCentrevalue = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.SelectCallCentrevalue(callCentreName)));
-    	SelectCallCentrevalue.click();;
+    	Log.info("Starting the process to select a call centre: " + callCentreName + "...");
+        
+        Log.info("Waiting for the 'Select Call Centre' dropdown to become visible...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        WebElement SelectCallCentre = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.SelectCallCentre));
+        Log.info("'Select Call Centre' dropdown is visible.");
+        
+        Log.info("Clicking on the 'Select Call Centre' dropdown...");
+        SelectCallCentre.click();
+        Log.info("'Select Call Centre' dropdown clicked successfully.");
+        
+        Log.info("Waiting for the call centre value '" + callCentreName + "' to become visible...");
+        WebElement SelectCallCentrevalue = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.SelectCallCentrevalue(callCentreName)));
+        Log.info("Call centre value '" + callCentreName + "' is visible.");
+        
+        Log.info("Clicking on the call centre value '" + callCentreName + "'...");
+        SelectCallCentrevalue.click();
+        Log.info("Call centre value '" + callCentreName + "' selected successfully.");
     }
 
     // Method to click the assign button
     public void clickAssignButton() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-    	WebElement Assignbtn = wait.until(ExpectedConditions.elementToBeClickable(CoreManualAllocationRepo.Assignbtn));
-    	Assignbtn.click();
+    	 Log.info("Starting the process to click the 'Assign' button...");
+    	    
+    	    Log.info("Waiting for the 'Assign' button to become clickable...");
+    	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+    	    WebElement Assignbtn = wait.until(ExpectedConditions.elementToBeClickable(CoreManualAllocationRepo.Assignbtn));
+    	    Log.info("'Assign' button is clickable.");
+    	    
+    	    Log.info("Clicking on the 'Assign' button...");
+    	    Assignbtn.click();
+    	    Log.info("'Assign' button clicked successfully.");
     }
 
     // Method to get the validation message text
     public String getValidationMessage() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-    	WebElement validationMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.validationMessage));
-        return validationMessage.getText();
+    	Log.info("Starting the process to fetch the validation message...");
+
+        Log.info("Waiting for the validation message element to become visible...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        WebElement validationMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.validationMessage));
+        Log.info("Validation message element is visible.");
+
+        String messageText = validationMessage.getText();
+        Log.info("Fetched validation message: '" + messageText + "'");
+
+        return messageText;
+    }
+    
+ // Method to check if 'Asset Category' is marked mandatory
+    public boolean isAssetCategoryMandatory() {
+    	Log.info("Starting the process to check if the Asset Category dropdown is mandatory...");
+
+        Log.info("Waiting for the 'Asset Category' dropdown to become visible...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        WebElement assetCategoryDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAutoAllocationRepo.assetCategoryDropdown));
+        Log.info("'Asset Category' dropdown is visible.");
+
+        Log.info("Checking for the presence of the mandatory indicator (border color)...");
+        String borderColor = assetCategoryDropdown.getCssValue("border-color");
+
+        boolean isMandatory = borderColor != null && borderColor.equals("rgb(139, 0, 0)");
+        Log.info("Asset Category dropdown mandatory status: " + isMandatory);
+
+        return isMandatory;
+    }
+
+    // Method to check if 'Allocated To' is marked mandatory
+    public boolean isAllocatedToMandatory() {
+    	Log.info("Starting the process to check if the 'Allocated To' dropdown is mandatory...");
+
+        Log.info("Waiting for the 'Allocated To' dropdown to become visible...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        WebElement allocatedToDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAutoAllocationRepo.allocatedtodropdown));
+        Log.info("'Allocated To' dropdown is visible.");
+
+        Log.info("Checking for the presence of the mandatory indicator (border color)...");
+        String borderColor = allocatedToDropdown.getCssValue("border-color");
+
+        boolean isMandatory = borderColor != null && borderColor.equals("rgb(139, 0, 0)");
+        Log.info("'Allocated To' dropdown mandatory status: " + isMandatory);
+
+        return isMandatory;
     }
 }

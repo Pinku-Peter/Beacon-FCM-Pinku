@@ -58,7 +58,7 @@ public class AllScenarios_CoreAutoAllocationModule {
 		baseclass = new Base_Class();
 		//corelogin = new Login_Class();
 		callcenterlogin = new Login_Class();
-		callcenterlogin.CallCenterLogin();
+		callcenterlogin.CallCenterLogin(); 
 		driver = baseclass.getDriver(); // Retrieve the driver instance
 		callcenteraccountfiltrationPage = new CoreAutoAllocationPage(driver);
 		ExcelReader = new com.Utility.ExcelReader("Call_Centre_Auto_Allocation");
@@ -752,22 +752,29 @@ public class AllScenarios_CoreAutoAllocationModule {
 	    }
 	 
 	 @Test(priority = 31)
-	    public void Verify_Downloaded_File() throws InterruptedException {
-		 try {
-	        // Verify that accounts match those indicated in the grid
-	        boolean isAccountsMatch = callcenteraccountfiltrationPage.verifyAccountsAllocation(totalAccounts); 
-	        ExtentTestManager.getTest().log(Status.PASS, "Opened and reviewed the downloaded file.");
-	        // Assertion for expected results
-	        Assert.assertTrue(isAccountsMatch, "Accounts do not match those indicated in the grid.");
-	        ExtentTestManager.getTest().log(Status.PASS, "Verified that the accounts in the downloaded Excel file match those indicated in the grid for Call Centre through Auto Allocation.");
-		 }
-	        catch (AssertionError | Exception e) {
-				ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-	          throw e;
-		 }
-		 
-		 Thread.sleep(3000);
-	    }
+	 public void Verify_Downloaded_File() throws InterruptedException {
+		    try {
+		        // Call the verifyAccountsAllocation method and get the result
+		        Map<String, String> resultMap = callcenteraccountfiltrationPage.verifyAccountsAllocation(totalAccounts);
+
+		        // Log expected and actual data in Extent Report
+		        String expectedData = resultMap.get("expectedData");
+		        String actualData = resultMap.get("actualData");
+		        String result = resultMap.get("result");
+
+		        ExtentTestManager.getTest().log(Status.INFO, "Expected Data: " + expectedData);
+		        ExtentTestManager.getTest().log(Status.INFO, "Actual Data: " + actualData);
+
+		        // Assert the result
+		        Assert.assertEquals(result, "PASS", "Accounts do not match those indicated in the grid.");
+		        ExtentTestManager.getTest().log(Status.PASS, "Data match successful: Expected data matches the actual data.");
+		    } catch (AssertionError | Exception e) {
+		        ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+		        throw e;
+		    }
+
+		    Thread.sleep(3000);
+		}
 	 
 	 @Test(priority = 32, dataProvider = "TestData")
 	    public void Download_Dialer_File(Map<Object, Object> testdata) throws InterruptedException {
@@ -798,19 +805,27 @@ public class AllScenarios_CoreAutoAllocationModule {
 	 @Test(priority = 33)
 	    public void Verify_Dialer_Downloaded_File() throws InterruptedException {
 		 try {
-	        // Verify that accounts match those indicated in the grid
-	        boolean isAccountsMatch = callcenteraccountfiltrationPage.verifyAccountsAllocation(totalAccounts); 
-	        ExtentTestManager.getTest().log(Status.PASS, "Opened and reviewed the downloaded file.");
-	        // Assertion for expected results
-	        Assert.assertTrue(isAccountsMatch, "Accounts do not match those indicated in the grid.");
-	        ExtentTestManager.getTest().log(Status.PASS, "Verified that the accounts in the downloaded Excel file match those indicated in the grid for Call Centre through Auto Allocation.");
-		 }
-	        catch (AssertionError | Exception e) {
-				ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-	          throw e;
-		 }
-		 
-		 Thread.sleep(3000);
+		        // Call the verifyAccountsAllocation method and get the result
+		        Map<String, String> resultMap = callcenteraccountfiltrationPage.verifyAccountsAllocation(totalAccounts);
+
+		        // Extract expected and actual data
+		        String expectedData = resultMap.get("expectedData");
+		        String actualData = resultMap.get("actualData");
+		        String result = resultMap.get("result");
+
+		        // Log expected and actual data in Extent Report
+		        ExtentTestManager.getTest().log(Status.INFO, "Expected Data: " + expectedData);
+		        ExtentTestManager.getTest().log(Status.INFO, "Actual Data: " + actualData);
+
+		        // Assert that the result is PASS
+		        Assert.assertEquals(result, "PASS", "Accounts do not match those indicated in the grid.");
+		        ExtentTestManager.getTest().log(Status.PASS, "Data match successful: Expected data matches the actual data.");
+		    } catch (AssertionError | Exception e) {
+		        ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+		        throw e;
+		    }
+
+		    Thread.sleep(3000);
 	    }
 	 
 	 @Test(priority = 34, dataProvider = "TestData")

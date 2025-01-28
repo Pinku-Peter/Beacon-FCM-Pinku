@@ -5,7 +5,9 @@ import java.sql.CallableStatement;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -1327,9 +1329,10 @@ public class CoreAutoAllocationPage {
     }
     
  // Method to verify accounts allocation
-    public boolean verifyAccountsAllocation(String expectedData) {
-    	Log.info("Starting the process to verify account allocation...");
+    public Map<String, String> verifyAccountsAllocation(String expectedData) {
+        Log.info("Starting the process to verify account allocation...");
 
+        Map<String, String> resultMap = new HashMap<>();
         try {
             // Log before reading the last Sr No. from the downloaded file
             Log.info("Getting the last Sr No. from the latest downloaded file...");
@@ -1340,25 +1343,29 @@ public class CoreAutoAllocationPage {
 
             // Log before comparing the expectedData with actualData
             Log.info("Comparing expectedData: " + expectedData + " with actualData: " + actualData);
-            
-            // Compare expectedData with actualData and return the result
-            boolean isDataMatching = expectedData.equals(actualData);
-            
-            // Log the result of the comparison
-            if (isDataMatching) {
+
+            // Add expected and actual data to the map
+            resultMap.put("expectedData", expectedData);
+            resultMap.put("actualData", actualData);
+
+            // Compare expectedData with actualData and log the result
+            if (expectedData.equals(actualData)) {
                 Log.info("Data match successful: Expected data matches the actual data.");
+                resultMap.put("result", "PASS");
             } else {
                 Log.info("Data mismatch: Expected data does not match the actual data.");
+                resultMap.put("result", "FAIL");
             }
-            
-            return isDataMatching;
 
         } catch (IOException e) {
             // Log the error if an exception occurs
             Log.error("Error while reading the Excel file: " + e.getMessage(), e);
-            return false; // Or handle error appropriately
+            resultMap.put("result", "ERROR");
+            resultMap.put("errorMessage", e.getMessage());
         }
-}
+
+        return resultMap;
+    }
     
  // Method to execute the stored procedure
     public ProcedureResult executeStoredProcedure(String mobileNumber, String OSBAL) throws IOException {
