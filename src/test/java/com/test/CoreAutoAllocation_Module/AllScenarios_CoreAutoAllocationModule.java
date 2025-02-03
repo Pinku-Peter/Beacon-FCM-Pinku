@@ -60,7 +60,7 @@ public class AllScenarios_CoreAutoAllocationModule {
 		baseclass = new Base_Class();
 		//corelogin = new Login_Class();
 		callcenterlogin = new Login_Class();
-		//callcenterlogin.CallCenterLogin(); 
+		callcenterlogin.CallCenterLogin(); 
 		driver = baseclass.getDriver(); // Retrieve the driver instance
 		callcenteraccountfiltrationPage = new CoreAutoAllocationPage(driver);
 		ExcelReader = new com.Utility.ExcelReader("Call_Centre_Auto_Allocation");
@@ -81,184 +81,184 @@ public class AllScenarios_CoreAutoAllocationModule {
         extenttest = ExtentTestManager.startTest(method.getName()).assignCategory("Call Centre AutoAllocation");
     }
 	
-//	@Test(priority = 1)
-//    public void Login_to_call_centre_application_and_take_account_filtration_page() throws InterruptedException {
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-//		try {
-//			ExtentTestManager.getTest().log(Status.PASS, "Opened the FCM Call Centre application.");
-//			ExtentTestManager.getTest().log(Status.PASS, "Entered valid credentials and logged in.");
-//        //Navigate to Call Centre Main Menu
-//		callcenteraccountfiltrationPage.navigateToMainMenu();
-//		ExtentTestManager.getTest().log(Status.PASS, "Navigated to the Call Centre Main Menu.");
-//        //Click on Account Filtration sub-menu
-//		callcenteraccountfiltrationPage.navigateToAccountFiltration();
-//		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Account Filtration sub-menu.");
-//        // Expected Result: User is navigated to Account Filtration page
-//        // URL shows CallCentre/CallCentreLeadFiltration
-//        String currentUrl = driver.getCurrentUrl();
-//        Assert.assertTrue(currentUrl.contains("CallCentre/CallCentreLeadFiltration"), "Not navigated to Account Filtration page.");
-//        ExtentTestManager.getTest().log(Status.PASS, "User is navigated to Account Filtration page, URL shows CallCentre/CallCentreLeadFiltration.");
-//        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-//}
-//		
-//		catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//        }
-//		Thread.sleep(3000);
-//    }
-//	
-//	@Test(priority = 2)
-//    public void Allocated_To_dropdown_mandatory_checking() throws InterruptedException {
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-//		try {
-//			ExtentTestManager.getTest().log(Status.PASS, "Left the Asset Category and Allocated To fields empty.");
-//       //Click on the Search button
-//		callcenteraccountfiltrationPage.clickSearchButton();
-//		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Search button.");
-//        // Verify the warning message
-//        String expectedMessage = "Allocated To is Required";
-//        Assert.assertEquals(callcenteraccountfiltrationPage.getWarningMessage(), expectedMessage, "Warning message not displayed as expected");
-//        ExtentTestManager.getTest().log(Status.PASS, "Displays warning message \"Allocated to is required\".");
-//        wait.until(ExpectedConditions.invisibilityOfElementLocated(CoreAutoAllocationRepo.warningmsg));
-//}
-//		
-//		catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//        }
-//		Thread.sleep(3000);
-//    }
-//	
-//	@Test(priority = 3, dataProvider = "TestData")
-//    public void Asset_category_dropdown_mandatory_checking(Map<Object, Object> testdata) throws InterruptedException {
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-//	 try {
-//        
-//	 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
-//	    	
-//	        String value = testdata.get("AllocatedTo").toString();
-//	     // Select any value in Allocated To field
-//	        callcenteraccountfiltrationPage.selectAllocatedTo(value);
-//	        ExtentTestManager.getTest().log(Status.PASS, "Left the Asset Category field empty and selected a value in the Allocated To field.");
-//	    }
-//	// Click Search button
-//	 callcenteraccountfiltrationPage.clickSearchButtonaftergivingvalueforallocatedto();
-//	 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Search button.");
-//	// Verify the warning message
-//     Assert.assertEquals(callcenteraccountfiltrationPage.getWarningMessageaftergivingvalueforallocatedto(), "Asset Category is Required");
-//        ExtentTestManager.getTest().log(Status.PASS, "Displays warning message  \"asset category is required\".");
-//        wait.until(ExpectedConditions.invisibilityOfElementLocated(CoreAutoAllocationRepo.warningmsg2));
-//	 }
-//        catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	 Thread.sleep(3000); 
-//        
-// }
-//	@Test(priority = 4)
-//    public void Select_SMA_and_NPA_Categories() throws InterruptedException {
-//		 try {
-//        // Open Asset Category dropdown and selecting all values
-//		callcenteraccountfiltrationPage.openAssetCategoryDropdown();
-//		ExtentTestManager.getTest().log(Status.PASS, "Opened the Asset Category dropdown.");
-//		ExtentTestManager.getTest().log(Status.PASS, "Selected the SMA category and NPA category.");
-//		ExtentTestManager.getTest().log(Status.PASS, "SMA and NPA categories are selected.");
-//	 }
-//        catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	 Thread.sleep(3000);
-//    }
-//	
-//	@Test(priority = 5)
-//    public void SMA_Category_Selection() throws InterruptedException {
-//		 try {
-//        // Open SMA Category dropdown and selecting all values
-//		callcenteraccountfiltrationPage.openSMACategoryDropdown(); 
-//		ExtentTestManager.getTest().log(Status.PASS, "Opened the SMA Category dropdown.");
-//		ExtentTestManager.getTest().log(Status.PASS, "Selected SMA 0, SMA 1, and SMA 2 from the dropdown.");
-//		ExtentTestManager.getTest().log(Status.PASS, "SMA 0, SMA 1, SMA 2 should be selected.");
-//	 }
-//        catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	 Thread.sleep(3000);
-//    }
-//	
-//	@Test(priority = 6)
-//    public void NPA_Category_Selection() throws InterruptedException {
-//		 try {
-//        // Open SMA Category dropdown and selecting all values
-//		callcenteraccountfiltrationPage.openNPACategoryDropdown(); 
-//		ExtentTestManager.getTest().log(Status.PASS, "Opened the NPA Category dropdown.");
-//		ExtentTestManager.getTest().log(Status.PASS, "Selected sub-standard, doubtful-1, doubtful-2, doubtful-3, and loss asset.");
-//		ExtentTestManager.getTest().log(Status.PASS, "Selected NPA categories sub-standard , doubtful-1 , doubtful-2,doubtful-3,loss asset should be selected from the dropdown");
-//	 }
-//        catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	 Thread.sleep(3000);
-//    }
-//	
-//	@Test(priority = 7, dataProvider = "TestData")
-//    public void Allocation_Type_Selection__Auto(Map<Object, Object> testdata) throws InterruptedException {
-//	 try {
-//        
-//	 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
-//	    	
-//	        String value = testdata.get("AllocationType").toString();
-//	        callcenteraccountfiltrationPage.selectAllocationType(value); 
-//	        ExtentTestManager.getTest().log(Status.PASS, "Opened the Allocation Type dropdown.");
-//	        ExtentTestManager.getTest().log(Status.PASS, "Selected Auto Allocation.");
-//	    }
-//        ExtentTestManager.getTest().log(Status.PASS, "Auto Allocation is selected.");
-//	 }
-//        catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	 Thread.sleep(3000); 
-//        
-// }
-//	@Test(priority = 8)
-//    public void Perform_Search_with_Valid_Data() throws Throwable {
-//	try {
-//		// Step 1: Execute the TRUNCATE query before performing search
-//        String truncateQuery = "TRUNCATE TABLE mst_callcentre_accounts";
-//        String truncateResult = DBUtils.executeSQLStatement(truncateQuery);  // Call the method from DBUtils
-//        System.out.println(truncateResult); 
-//	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
-//		ExtentTestManager.getTest().log(Status.PASS, "Verified that the Asset Category, SMA Category, NPA Category, and Allocated To mandatory fields are filled.");
-//		ExtentTestManager.getTest().log(Status.PASS, "Confirmed that the Allocation Date is autofilled.");
-//	 WebElement downloadbutton = driver.findElement(CoreAutoAllocationRepo.downloadbutton);
-//    	JavascriptExecutor js = (JavascriptExecutor) driver;
-//        js.executeScript("arguments[0].scrollIntoView(true);", downloadbutton);
-//        Thread.sleep(500);
-//        // Perform search
-//	 callcenteraccountfiltrationPage.clickSearchButton(); 
-//		ExtentTestManager.getTest().log(Status.PASS, "Clicked the Search button successfully.");
-//	 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-//	 String gridText = callcenteraccountfiltrationPage.getResultGridText();
-//     if (gridText.contains("No records to display.")) {
-//    	 Assert.assertEquals(gridText, "No records to display.", "Expected no records to display");
-//		ExtentTestManager.getTest().log(Status.PASS, "Verified that the grid displays the message \"No records to display\" when no data is available.");
-//     } else {
-//    	 System.out.println("Total accounts allocated");
-//    	 Assert.fail("Test failed because grid text did not contain 'No records to display'. Instead, it contains: records");
-//     }
-//	}
-//		catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	Thread.sleep(3000);  
-//    }
-//	
+	@Test(priority = 1)
+    public void Login_to_call_centre_application_and_take_account_filtration_page() throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+		try {
+			ExtentTestManager.getTest().log(Status.PASS, "Opened the FCM Call Centre application.");
+			ExtentTestManager.getTest().log(Status.PASS, "Entered valid credentials and logged in.");
+        //Navigate to Call Centre Main Menu
+		callcenteraccountfiltrationPage.navigateToMainMenu();
+		ExtentTestManager.getTest().log(Status.PASS, "Navigated to the Call Centre Main Menu.");
+        //Click on Account Filtration sub-menu
+		callcenteraccountfiltrationPage.navigateToAccountFiltration();
+		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Account Filtration sub-menu.");
+        // Expected Result: User is navigated to Account Filtration page
+        // URL shows CallCentre/CallCentreLeadFiltration
+        String currentUrl = driver.getCurrentUrl();
+        Assert.assertTrue(currentUrl.contains("CallCentre/CallCentreLeadFiltration"), "Not navigated to Account Filtration page.");
+        ExtentTestManager.getTest().log(Status.PASS, "User is navigated to Account Filtration page, URL shows CallCentre/CallCentreLeadFiltration.");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+}
+		
+		catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+        }
+		Thread.sleep(3000);
+    }
+	
+	@Test(priority = 2)
+    public void Allocated_To_dropdown_mandatory_checking() throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+		try {
+			ExtentTestManager.getTest().log(Status.PASS, "Left the Asset Category and Allocated To fields empty.");
+       //Click on the Search button
+		callcenteraccountfiltrationPage.clickSearchButton();
+		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Search button.");
+        // Verify the warning message
+        String expectedMessage = "Allocated To is Required";
+        Assert.assertEquals(callcenteraccountfiltrationPage.getWarningMessage(), expectedMessage, "Warning message not displayed as expected");
+        ExtentTestManager.getTest().log(Status.PASS, "Displays warning message \"Allocated to is required\".");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(CoreAutoAllocationRepo.warningmsg));
+}
+		
+		catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+        }
+		Thread.sleep(3000);
+    }
+	
+	@Test(priority = 3, dataProvider = "TestData")
+    public void Asset_category_dropdown_mandatory_checking(Map<Object, Object> testdata) throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+	 try {
+        
+	 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+	    	
+	        String value = testdata.get("AllocatedTo").toString();
+	     // Select any value in Allocated To field
+	        callcenteraccountfiltrationPage.selectAllocatedTo(value);
+	        ExtentTestManager.getTest().log(Status.PASS, "Left the Asset Category field empty and selected a value in the Allocated To field.");
+	    }
+	// Click Search button
+	 callcenteraccountfiltrationPage.clickSearchButtonaftergivingvalueforallocatedto();
+	 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Search button.");
+	// Verify the warning message
+     Assert.assertEquals(callcenteraccountfiltrationPage.getWarningMessageaftergivingvalueforallocatedto(), "Asset Category is Required");
+        ExtentTestManager.getTest().log(Status.PASS, "Displays warning message  \"asset category is required\".");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(CoreAutoAllocationRepo.warningmsg2));
+	 }
+        catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	 Thread.sleep(3000); 
+        
+ }
+	@Test(priority = 4)
+    public void Select_SMA_and_NPA_Categories() throws InterruptedException {
+		 try {
+        // Open Asset Category dropdown and selecting all values
+		callcenteraccountfiltrationPage.openAssetCategoryDropdown();
+		ExtentTestManager.getTest().log(Status.PASS, "Opened the Asset Category dropdown.");
+		ExtentTestManager.getTest().log(Status.PASS, "Selected the SMA category and NPA category.");
+		ExtentTestManager.getTest().log(Status.PASS, "SMA and NPA categories are selected.");
+	 }
+        catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	 Thread.sleep(3000);
+    }
+	
+	@Test(priority = 5)
+    public void SMA_Category_Selection() throws InterruptedException {
+		 try {
+        // Open SMA Category dropdown and selecting all values
+		callcenteraccountfiltrationPage.openSMACategoryDropdown(); 
+		ExtentTestManager.getTest().log(Status.PASS, "Opened the SMA Category dropdown.");
+		ExtentTestManager.getTest().log(Status.PASS, "Selected SMA 0, SMA 1, and SMA 2 from the dropdown.");
+		ExtentTestManager.getTest().log(Status.PASS, "SMA 0, SMA 1, SMA 2 should be selected.");
+	 }
+        catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	 Thread.sleep(3000);
+    }
+	
+	@Test(priority = 6)
+    public void NPA_Category_Selection() throws InterruptedException {
+		 try {
+        // Open SMA Category dropdown and selecting all values
+		callcenteraccountfiltrationPage.openNPACategoryDropdown(); 
+		ExtentTestManager.getTest().log(Status.PASS, "Opened the NPA Category dropdown.");
+		ExtentTestManager.getTest().log(Status.PASS, "Selected sub-standard, doubtful-1, doubtful-2, doubtful-3, and loss asset.");
+		ExtentTestManager.getTest().log(Status.PASS, "Selected NPA categories sub-standard , doubtful-1 , doubtful-2,doubtful-3,loss asset should be selected from the dropdown");
+	 }
+        catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	 Thread.sleep(3000);
+    }
+	
+	@Test(priority = 7, dataProvider = "TestData")
+    public void Allocation_Type_Selection__Auto(Map<Object, Object> testdata) throws InterruptedException {
+	 try {
+        
+	 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+	    	
+	        String value = testdata.get("AllocationType").toString();
+	        callcenteraccountfiltrationPage.selectAllocationType(value); 
+	        ExtentTestManager.getTest().log(Status.PASS, "Opened the Allocation Type dropdown.");
+	        ExtentTestManager.getTest().log(Status.PASS, "Selected Auto Allocation.");
+	    }
+        ExtentTestManager.getTest().log(Status.PASS, "Auto Allocation is selected.");
+	 }
+        catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	 Thread.sleep(3000); 
+        
+ }
+	@Test(priority = 8)
+    public void Perform_Search_with_Valid_Data() throws Throwable {
+	try {
+		// Step 1: Execute the TRUNCATE query before performing search
+        String truncateQuery = "TRUNCATE TABLE mst_callcentre_accounts";
+        String truncateResult = DBUtils.executeSQLStatement(truncateQuery);  // Call the method from DBUtils
+        System.out.println(truncateResult); 
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+		ExtentTestManager.getTest().log(Status.PASS, "Verified that the Asset Category, SMA Category, NPA Category, and Allocated To mandatory fields are filled.");
+		ExtentTestManager.getTest().log(Status.PASS, "Confirmed that the Allocation Date is autofilled.");
+	 WebElement downloadbutton = driver.findElement(CoreAutoAllocationRepo.downloadbutton);
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", downloadbutton);
+        Thread.sleep(500);
+        // Perform search
+	 callcenteraccountfiltrationPage.clickSearchButton(); 
+		ExtentTestManager.getTest().log(Status.PASS, "Clicked the Search button successfully.");
+	 wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+	 String gridText = callcenteraccountfiltrationPage.getResultGridText();
+     if (gridText.contains("No records to display.")) {
+    	 Assert.assertEquals(gridText, "No records to display.", "Expected no records to display");
+		ExtentTestManager.getTest().log(Status.PASS, "Verified that the grid displays the message \"No records to display\" when no data is available.");
+     } else {
+    	 System.out.println("Total accounts allocated");
+    	 Assert.fail("Test failed because grid text did not contain 'No records to display'. Instead, it contains: records");
+     }
+	}
+		catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	Thread.sleep(3000);  
+    }
+	
 	@Test(priority = 9)
     public void  Login_to_beacon_fcm_core_application_Verify_Auto_Allocation_Page_Load() throws Exception {
 		try {
@@ -320,228 +320,228 @@ public class AllScenarios_CoreAutoAllocationModule {
 	 }
 	Thread.sleep(3000);
     }    
-//    @Test(priority = 12, dataProvider = "TestData")
-//    public void Select_effect_Date_from_Date_Picker(Map<Object, Object> testdata) throws ParseException, InterruptedException {
-//    	try {
-//        // Step 1: Click on Effect Date field
-//    	callcenteraccountfiltrationPage.clickEffectDateField();
-//    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Effect Date field.");
-//        if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
-//          	
-//    		String date = testdata.get("effectDate").toString();
-//
-//    		 // Step 2: Select a date from the date picker
-//    		callcenteraccountfiltrationPage.selectDateFromDatePicker(date);
-//    		ExtentTestManager.getTest().log(Status.PASS, "Selected a date from the date picker successfully.");
-//    	}
-//       
-//        // Verify: Selected date appears in the Effect Date field
-//        String actualDate = callcenteraccountfiltrationPage.getEffectDateFieldValue();
-//
-//        // Verify: Date format is proper in effect date field DD-MM-YYY
-//        Assert.assertTrue(callcenteraccountfiltrationPage.isDateFormatDDMMYYY(actualDate), "Date format is incorrect in the Effect Date field.");
-//        ExtentTestManager.getTest().log(Status.PASS, "Confirmed that the selected date appears in the Effect Date field and Verified that the date format in the Effect Date field is correct and displayed as DD-MM-YYYY.");
-//    	}
-//    	catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	Thread.sleep(3000);
-//    }
-//    
-//    @Test(priority = 13)
-//    public void Select_NPA_and_SMA_Category_Checkbox() throws InterruptedException {
-//    	try {
-//    	callcenteraccountfiltrationPage.selectAllInAssetCategory(); 
-//    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Asset Category dropdown.");
-//    	ExtentTestManager.getTest().log(Status.PASS, "Selected NPA Category from the dropdown.");
-//    	ExtentTestManager.getTest().log(Status.PASS, "Verified the presence of SMA Category in the dropdown");
-//    	callcenteraccountfiltrationPage.selectAllInSmaCategory(); 
-//    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Asset Category dropdown.");
-//    	callcenteraccountfiltrationPage.selectAllInNpaCategory();
-//    	ExtentTestManager.getTest().log(Status.PASS, "Selected the Select All checkbox from the NPA Category dropdown.");
-//    	ExtentTestManager.getTest().log(Status.PASS, "Selected the Select All option from the SMA Category dropdown.");
-//    	ExtentTestManager.getTest().log(Status.PASS, "Confirmed that SMA Category and NPA Category are selected under the Asset Category dropdown , Verified that the Select All option is selected under the SMA Category dropdown and Verified that the Select All option is selected under the NPA Category dropdown.");
-//    	}
-//    	catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	Thread.sleep(3000);
-//    }
-//    
-//    // Test case to validate selection of Zone
-//    @Test(priority = 14, dataProvider = "TestData")
-//    public void Select_Zone_from_Dropdown(Map<Object, Object> testdata) throws InterruptedException {
-//    	try {
-//    	
-//    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
-//          	
-//    		String value = testdata.get("Zone").toString();
-//    		callcenteraccountfiltrationPage.selectZone(value);
-//    		ExtentTestManager.getTest().log(Status.PASS, "Selected 'Mumbai' from the Zone dropdown successfully.");
-//    		ExtentTestManager.getTest().log(Status.PASS, "Mumbai is selected in Zone field.");
-//    	}
-//    	}
-//    	catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	Thread.sleep(3000);
-//    }
-//
-//    // Test case to validate selection of Processing Interval
-//    @Test(priority = 15, dataProvider = "TestData")
-//    public void Select_Processing_Interval_from_Dropdown(Map<Object, Object> testdata) throws InterruptedException {
-//    	try {
-//    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
-//          	
-//    		String value = testdata.get("ProcessingInterval").toString();
-//    		callcenteraccountfiltrationPage.selectProcessingInterval(value);
-//    		ExtentTestManager.getTest().log(Status.PASS, "Selected 'Daily' from the Processing Interval dropdown successfully.");
-//    		ExtentTestManager.getTest().log(Status.PASS, "Daily is selected in Processing Interval field");
-//    	}
-//    	}
-//    	catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	Thread.sleep(3000);
-//    }
-//
-//    // Test case to validate selection of 'To' Dropdown
-//    @Test(priority = 16, dataProvider = "TestData")
-//    public void Select_To_Dropdown(Map<Object, Object> testdata) throws InterruptedException { 
-//    	try {
-//    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
-//          	
-//    		String value = testdata.get("To").toString();
-//    		callcenteraccountfiltrationPage.selectTo(value); 
-//    		ExtentTestManager.getTest().log(Status.PASS, "Selected 'Call Centre' from the 'To' dropdown successfully.");
-//    		ExtentTestManager.getTest().log(Status.PASS, "Selected 'Call Centre is selected in 'To' field.");
-//    	}
-//    	}
-//    	catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	Thread.sleep(3000);
-//    }
-//   
-//    @Test(priority = 17, dataProvider = "TestData")
-//    public void Add_New_Allocation_Name(Map<Object, Object> testdata) throws InterruptedException {
-//    	try {
-//    		
-//    		ExtentTestManager.getTest().log(Status.PASS, "Filled in the Allocation Name, Effect Date, Asset Category, SMA Category, NPA Category, Zone, Processing Interval, and To fields.");
-//
-//        // Click the Add button
-//    	callcenteraccountfiltrationPage.clickAddButtonaftergivingrequiredvalues();
-//    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the Add button successfully.");
-//    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
-//          	
-//    		String allocationname = testdata.get("AllocationName").toString();
-//    		String zonename = testdata.get("Zone").toString();
-//        // Assertions to check if the data is displayed in the grid
-//        // Implement assertions based on the application's UI response
-//    	boolean isAllocationNamePresent = callcenteraccountfiltrationPage.allocationNameInGrid(allocationname);
-//    	Assert.assertTrue(isAllocationNamePresent, "The allocation name is not present in the grid.");
-//    	boolean isZoneNamePresent = callcenteraccountfiltrationPage.allocationNameInGrid(zonename);
-//    	Assert.assertTrue(isZoneNamePresent, "The Zone name is not present in the grid.");
-//    	ExtentTestManager.getTest().log(Status.PASS, "Verified that the Allocation Name is displayed in the grid along with the Effect Date, Asset Category, SMA Category, NPA Category, Zone, Processing Interval, and To fields and Confirmed that the Effect Date follows the correct date format of DD-MM-YYYY.");
-//    	}
-//    	}
-//    	catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	Thread.sleep(3000);
-//    }
-//     
-//    @Test(priority = 18)
-//    public void Verify_Allocation_Name_Status_After_Creation() throws InterruptedException {
-//    	try {
-//    	
-//        Assert.assertTrue(callcenteraccountfiltrationPage.isStatusActive(), "The status should be a green tick (Active).");
-//        ExtentTestManager.getTest().log(Status.PASS, "Checked the Status column of the newly added Allocation Name in the grid.");
-//        ExtentTestManager.getTest().log(Status.PASS, "Verified that the Status under the Status column is displayed as a green tick (Active)."); 
-//    	}
-//    	catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	Thread.sleep(3000);
-//    } 
-//    
-//    @Test(priority = 19)
-//    public void Deactivate_Allocation_Name() throws InterruptedException { 
-//    	try {
-//    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
-//    	callcenteraccountfiltrationPage.selectAllocationName();
-//    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the checkbox against one Allocation Name.");
-//        Assert.assertTrue(callcenteraccountfiltrationPage.isDeactivateButtonEnabled(), "Deactivate button should be enabled.");
-//        ExtentTestManager.getTest().log(Status.PASS, "Verified that the Deactivate button is enabled.");
-//        callcenteraccountfiltrationPage.clickDeactivateButton();
-//        ExtentTestManager.getTest().log(Status.PASS, "Clicked the Deactivate button for the selected Allocation Name.");
-//        Assert.assertEquals(callcenteraccountfiltrationPage.getValidationMessage(), "Updated Successfully", 
-//                "Validation message should display correctly.");
-//        ExtentTestManager.getTest().log(Status.PASS, "Ensured that the validation message \"Updated Successfully\" is displayed.");
-//        Assert.assertTrue(callcenteraccountfiltrationPage.isStatusInActive(), "The status should now be a red cross (Inactive).");
-//        ExtentTestManager.getTest().log(Status.PASS, "Verified that the Active Allocation Name status changes to 'Inactive' and Confirmed that the Status column against the Allocation Name is updated to a red cross (Inactive).");
-//        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-//    	}
-//    	catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	Thread.sleep(3000);
-//    }
-//    
-//    @Test(priority = 20) 
-//    public void Reactivate_Allocation_Name() throws InterruptedException { 
-//    	try {
-//    	callcenteraccountfiltrationPage.selectAllocationName();
-//    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the checkbox against one Allocation Name.");
-//        Assert.assertTrue(callcenteraccountfiltrationPage.isActivateButtonEnabled(), "Activate button should be enabled.");
-//        ExtentTestManager.getTest().log(Status.PASS, "Verified that the Activate button is enabled.");
-//        callcenteraccountfiltrationPage.clickActivateButton();
-//        ExtentTestManager.getTest().log(Status.PASS, "Clicked the Activate button for the selected Allocation Name.");
-//        Assert.assertEquals(callcenteraccountfiltrationPage.getValidationMessage(), "Updated Successfully", 
-//                "Validation message should display correctly.");
-//        ExtentTestManager.getTest().log(Status.PASS, "Ensured that the validation message \"Updated Successfully\" is displayed.");
-//        Assert.assertTrue(callcenteraccountfiltrationPage.isStatusActive(), "The status should now be a green tick (Active).");
-//        ExtentTestManager.getTest().log(Status.PASS, "Verified that the Active Allocation Name status changes to 'Active' and Confirmed that the Status column against the Allocation Name is updated to a green tick (Active).");
-//    	}
-//    	catch (AssertionError | Exception e) {
-//			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//            throw e;
-//	 }
-//	Thread.sleep(3000);
-//    }
-//	
-//	@Test(priority = 21)
-//    public void Run_Database_Package_and_Verify_Accounts_Insertion() throws IOException, InterruptedException {
-//		 try {
-//	            // Call the method that executes the stored procedure
-//	            String procedureOutput = ExecuteStoredProcedure.callLoadAndValidateAccountsSP();
-//	            ExtentTestManager.getTest().log(Status.PASS, "Ran the query SELECT * FROM RUN_LOG ORDER BY 1 DESC; successfully."); 
-//	            ExtentTestManager.getTest().log(Status.PASS, "Retrieved the latest run number.");
-//	            ExtentTestManager.getTest().log(Status.PASS, "Executed the procedure BEGIN callcentre_pkg.callcentre_accounts_load_proc(latest run number); END; successfully.");
-//	            // Print the output (you can remove this in production)
-//	            System.out.println("Procedure Output:\n" + procedureOutput);
-//	            
-//	            // Verify if the procedure output contains the expected success message
-//	            // You can adjust the assertion based on your expected output
-//	            Assert.assertTrue(procedureOutput.contains("PL/SQL procedure successfully completed"), 
-//	                    "Procedure execution failed or did not complete successfully.");
-//	            ExtentTestManager.getTest().log(Status.PASS, "the package should be excuted with successfull message \"PL/SQL procedure successfully completed\"");
-//	        } catch (IOException e) {
-//	            e.printStackTrace();
-//	            Assert.assertTrue(false, "Exception occurred while executing the stored procedure: " + e.getMessage());
-//	            ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-//	            throw e;
-//	        }
-//		 Thread.sleep(3000);
-//	    }
+    @Test(priority = 12, dataProvider = "TestData")
+    public void Select_effect_Date_from_Date_Picker(Map<Object, Object> testdata) throws ParseException, InterruptedException {
+    	try {
+        // Step 1: Click on Effect Date field
+    	callcenteraccountfiltrationPage.clickEffectDateField();
+    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Effect Date field.");
+        if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+          	
+    		String date = testdata.get("effectDate").toString();
+
+    		 // Step 2: Select a date from the date picker
+    		callcenteraccountfiltrationPage.selectDateFromDatePicker(date);
+    		ExtentTestManager.getTest().log(Status.PASS, "Selected a date from the date picker successfully.");
+    	}
+       
+        // Verify: Selected date appears in the Effect Date field
+        String actualDate = callcenteraccountfiltrationPage.getEffectDateFieldValue();
+
+        // Verify: Date format is proper in effect date field DD-MM-YYY
+        Assert.assertTrue(callcenteraccountfiltrationPage.isDateFormatDDMMYYY(actualDate), "Date format is incorrect in the Effect Date field.");
+        ExtentTestManager.getTest().log(Status.PASS, "Confirmed that the selected date appears in the Effect Date field and Verified that the date format in the Effect Date field is correct and displayed as DD-MM-YYYY.");
+    	}
+    	catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	Thread.sleep(3000);
+    }
+    
+    @Test(priority = 13)
+    public void Select_NPA_and_SMA_Category_Checkbox() throws InterruptedException {
+    	try {
+    	callcenteraccountfiltrationPage.selectAllInAssetCategory(); 
+    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Asset Category dropdown.");
+    	ExtentTestManager.getTest().log(Status.PASS, "Selected NPA Category from the dropdown.");
+    	ExtentTestManager.getTest().log(Status.PASS, "Verified the presence of SMA Category in the dropdown");
+    	callcenteraccountfiltrationPage.selectAllInSmaCategory(); 
+    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Asset Category dropdown.");
+    	callcenteraccountfiltrationPage.selectAllInNpaCategory();
+    	ExtentTestManager.getTest().log(Status.PASS, "Selected the Select All checkbox from the NPA Category dropdown.");
+    	ExtentTestManager.getTest().log(Status.PASS, "Selected the Select All option from the SMA Category dropdown.");
+    	ExtentTestManager.getTest().log(Status.PASS, "Confirmed that SMA Category and NPA Category are selected under the Asset Category dropdown , Verified that the Select All option is selected under the SMA Category dropdown and Verified that the Select All option is selected under the NPA Category dropdown.");
+    	}
+    	catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	Thread.sleep(3000);
+    }
+    
+    // Test case to validate selection of Zone
+    @Test(priority = 14, dataProvider = "TestData")
+    public void Select_Zone_from_Dropdown(Map<Object, Object> testdata) throws InterruptedException {
+    	try {
+    	
+    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+          	
+    		String value = testdata.get("Zone").toString();
+    		callcenteraccountfiltrationPage.selectZone(value);
+    		ExtentTestManager.getTest().log(Status.PASS, "Selected 'Mumbai' from the Zone dropdown successfully.");
+    		ExtentTestManager.getTest().log(Status.PASS, "Mumbai is selected in Zone field.");
+    	}
+    	}
+    	catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	Thread.sleep(3000);
+    }
+
+    // Test case to validate selection of Processing Interval
+    @Test(priority = 15, dataProvider = "TestData")
+    public void Select_Processing_Interval_from_Dropdown(Map<Object, Object> testdata) throws InterruptedException {
+    	try {
+    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+          	
+    		String value = testdata.get("ProcessingInterval").toString();
+    		callcenteraccountfiltrationPage.selectProcessingInterval(value);
+    		ExtentTestManager.getTest().log(Status.PASS, "Selected 'Daily' from the Processing Interval dropdown successfully.");
+    		ExtentTestManager.getTest().log(Status.PASS, "Daily is selected in Processing Interval field");
+    	}
+    	}
+    	catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	Thread.sleep(3000);
+    }
+
+    // Test case to validate selection of 'To' Dropdown
+    @Test(priority = 16, dataProvider = "TestData")
+    public void Select_To_Dropdown(Map<Object, Object> testdata) throws InterruptedException { 
+    	try {
+    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+          	
+    		String value = testdata.get("To").toString();
+    		callcenteraccountfiltrationPage.selectTo(value); 
+    		ExtentTestManager.getTest().log(Status.PASS, "Selected 'Call Centre' from the 'To' dropdown successfully.");
+    		ExtentTestManager.getTest().log(Status.PASS, "Selected 'Call Centre is selected in 'To' field.");
+    	}
+    	}
+    	catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	Thread.sleep(3000);
+    }
+   
+    @Test(priority = 17, dataProvider = "TestData")
+    public void Add_New_Allocation_Name(Map<Object, Object> testdata) throws InterruptedException {
+    	try {
+    		
+    		ExtentTestManager.getTest().log(Status.PASS, "Filled in the Allocation Name, Effect Date, Asset Category, SMA Category, NPA Category, Zone, Processing Interval, and To fields.");
+
+        // Click the Add button
+    	callcenteraccountfiltrationPage.clickAddButtonaftergivingrequiredvalues();
+    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the Add button successfully.");
+    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+          	
+    		String allocationname = testdata.get("AllocationName").toString();
+    		String zonename = testdata.get("Zone").toString();
+        // Assertions to check if the data is displayed in the grid
+        // Implement assertions based on the application's UI response
+    	boolean isAllocationNamePresent = callcenteraccountfiltrationPage.allocationNameInGrid(allocationname);
+    	Assert.assertTrue(isAllocationNamePresent, "The allocation name is not present in the grid.");
+    	boolean isZoneNamePresent = callcenteraccountfiltrationPage.allocationNameInGrid(zonename);
+    	Assert.assertTrue(isZoneNamePresent, "The Zone name is not present in the grid.");
+    	ExtentTestManager.getTest().log(Status.PASS, "Verified that the Allocation Name is displayed in the grid along with the Effect Date, Asset Category, SMA Category, NPA Category, Zone, Processing Interval, and To fields and Confirmed that the Effect Date follows the correct date format of DD-MM-YYYY.");
+    	}
+    	}
+    	catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	Thread.sleep(3000);
+    }
+     
+    @Test(priority = 18)
+    public void Verify_Allocation_Name_Status_After_Creation() throws InterruptedException {
+    	try {
+    	
+        Assert.assertTrue(callcenteraccountfiltrationPage.isStatusActive(), "The status should be a green tick (Active).");
+        ExtentTestManager.getTest().log(Status.PASS, "Checked the Status column of the newly added Allocation Name in the grid.");
+        ExtentTestManager.getTest().log(Status.PASS, "Verified that the Status under the Status column is displayed as a green tick (Active)."); 
+    	}
+    	catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	Thread.sleep(3000);
+    } 
+    
+    @Test(priority = 19)
+    public void Deactivate_Allocation_Name() throws InterruptedException { 
+    	try {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+    	callcenteraccountfiltrationPage.selectAllocationName();
+    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the checkbox against one Allocation Name.");
+        Assert.assertTrue(callcenteraccountfiltrationPage.isDeactivateButtonEnabled(), "Deactivate button should be enabled.");
+        ExtentTestManager.getTest().log(Status.PASS, "Verified that the Deactivate button is enabled.");
+        callcenteraccountfiltrationPage.clickDeactivateButton();
+        ExtentTestManager.getTest().log(Status.PASS, "Clicked the Deactivate button for the selected Allocation Name.");
+        Assert.assertEquals(callcenteraccountfiltrationPage.getValidationMessage(), "Updated Successfully", 
+                "Validation message should display correctly.");
+        ExtentTestManager.getTest().log(Status.PASS, "Ensured that the validation message \"Updated Successfully\" is displayed.");
+        Assert.assertTrue(callcenteraccountfiltrationPage.isStatusInActive(), "The status should now be a red cross (Inactive).");
+        ExtentTestManager.getTest().log(Status.PASS, "Verified that the Active Allocation Name status changes to 'Inactive' and Confirmed that the Status column against the Allocation Name is updated to a red cross (Inactive).");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+    	}
+    	catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	Thread.sleep(3000);
+    }
+    
+    @Test(priority = 20) 
+    public void Reactivate_Allocation_Name() throws InterruptedException { 
+    	try {
+    	callcenteraccountfiltrationPage.selectAllocationName();
+    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the checkbox against one Allocation Name.");
+        Assert.assertTrue(callcenteraccountfiltrationPage.isActivateButtonEnabled(), "Activate button should be enabled.");
+        ExtentTestManager.getTest().log(Status.PASS, "Verified that the Activate button is enabled.");
+        callcenteraccountfiltrationPage.clickActivateButton();
+        ExtentTestManager.getTest().log(Status.PASS, "Clicked the Activate button for the selected Allocation Name.");
+        Assert.assertEquals(callcenteraccountfiltrationPage.getValidationMessage(), "Updated Successfully", 
+                "Validation message should display correctly.");
+        ExtentTestManager.getTest().log(Status.PASS, "Ensured that the validation message \"Updated Successfully\" is displayed.");
+        Assert.assertTrue(callcenteraccountfiltrationPage.isStatusActive(), "The status should now be a green tick (Active).");
+        ExtentTestManager.getTest().log(Status.PASS, "Verified that the Active Allocation Name status changes to 'Active' and Confirmed that the Status column against the Allocation Name is updated to a green tick (Active).");
+    	}
+    	catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+            throw e;
+	 }
+	Thread.sleep(3000);
+    }
+	
+	@Test(priority = 21)
+    public void Run_Database_Package_and_Verify_Accounts_Insertion() throws IOException, InterruptedException {
+		 try {
+	            // Call the method that executes the stored procedure
+	            String procedureOutput = ExecuteStoredProcedure.callLoadAndValidateAccountsSP();
+	            ExtentTestManager.getTest().log(Status.PASS, "Ran the query SELECT * FROM RUN_LOG ORDER BY 1 DESC; successfully."); 
+	            ExtentTestManager.getTest().log(Status.PASS, "Retrieved the latest run number.");
+	            ExtentTestManager.getTest().log(Status.PASS, "Executed the procedure BEGIN callcentre_pkg.callcentre_accounts_load_proc(latest run number); END; successfully.");
+	            // Print the output (you can remove this in production)
+	            System.out.println("Procedure Output:\n" + procedureOutput);
+	            
+	            // Verify if the procedure output contains the expected success message
+	            // You can adjust the assertion based on your expected output
+	            Assert.assertTrue(procedureOutput.contains("PL/SQL procedure successfully completed"), 
+	                    "Procedure execution failed or did not complete successfully.");
+	            ExtentTestManager.getTest().log(Status.PASS, "the package should be excuted with successfull message \"PL/SQL procedure successfully completed\"");
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	            Assert.assertTrue(false, "Exception occurred while executing the stored procedure: " + e.getMessage());
+	            ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+	            throw e;
+	        }
+		 Thread.sleep(3000);
+	    }
 
     
 	@Test(priority = 22)

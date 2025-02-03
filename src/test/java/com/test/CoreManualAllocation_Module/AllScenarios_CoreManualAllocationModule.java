@@ -872,7 +872,7 @@ public class AllScenarios_CoreManualAllocationModule {
 			 @Test(priority = 40)
 			    public void Search_Functionality_with_Filters() throws InterruptedException { 
 			    	try {
-			    		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+			    		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
 			    	coremanualallocationpage.clickSearchButton();
 			    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the search button.");
 			    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));

@@ -42,7 +42,7 @@ public class CoreAutoAllocationRepo {
 	public static By smaCategoryselectall = By.xpath("(//div[@class='rz-chkbox-box   '])[23]");
 	public static By npaCategory = By.xpath("(//div[@onmousedown='Radzen.activeElement = null'])[3]");
 	public static By npaCategoryselectall = By.xpath("(//div[@class='rz-chkbox-box   '])[17]");
-	public static By zone = By.xpath("(//div[@onmousedown='Radzen.activeElement = null'])[4]");
+	public static By zone = By.xpath("//label[text()='Zone']//following-sibling::div");
 	public static By zoneall = By.xpath("//i[contains(@class, 'rz-dropdown-clear-icon rzi')]");
 	public static By zonevalue(String value) {
         return By.xpath("//li[@aria-label='>" + value + "']");
