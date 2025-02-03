@@ -42,6 +42,8 @@ import com.listeners.TestListener;
 
 
 public class AllScenarios_CoreManualAllocationModule {
+	private String totalAccounts;
+	private String accountNumber;
 	private List<WebDriver> drivers = new ArrayList<>();
 	private static String accountNumberFromExcel;
 	Base_Class baseclass;
@@ -271,8 +273,8 @@ public class AllScenarios_CoreManualAllocationModule {
       Assert.assertTrue(coremanualallocationpage.isManualAllocationPageLoaded(), "Manual Allocation page not loaded correctly.");
       ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Call Centre menu.");
       ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Manual Allocation submenu successfully.");
-      ExtentTestManager.getTest().log(Status.PASS, "Auto Allocation page is displayed with URL ending in `CallCentre/ManualAllocationConfiguration`");
-		}
+      ExtentTestManager.getTest().log(Status.PASS, "Manual Allocation page is displayed with URL ending in `CallCentre/ManualAllocationConfiguration`");
+		} 
 		catch (AssertionError | Exception e) { 
 			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
           throw e;
@@ -745,7 +747,7 @@ public class AllScenarios_CoreManualAllocationModule {
 		        Assert.assertTrue(coremanualallocationpage.isAllocatedToMandatory(), "'Allocated To' field should be mandatory");
 		        ExtentTestManager.getTest().log(Status.PASS, "Checked if the 'Allocated To' field is marked mandatory.");
 		        ExtentTestManager.getTest().log(Status.PASS, "Both 'Asset Category' and 'Allocated To' fields are marked as mandatory.");
-}
+		    	}
 				
 				catch (AssertionError | Exception e) {
 					ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
@@ -867,7 +869,342 @@ public class AllScenarios_CoreManualAllocationModule {
 		        
 		 }
 			
-		    
+			 @Test(priority = 40)
+			    public void Search_Functionality_with_Filters() throws InterruptedException { 
+			    	try {
+			    		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+			    	coremanualallocationpage.clickSearchButton();
+			    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the search button.");
+			    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+			    	WebElement totalAccountSelected = driver.findElement(CoreManualAllocationRepo.TotalAccountSelected); // Update with the actual locator
+		            WebElement totalOutstandingAmount = driver.findElement(CoreManualAllocationRepo.TotalOutStandingAmount); // Update with the actual locator
+			    	 // Verify if the text for "Total account selected" is displayed and is not empty
+			    	Assert.assertTrue(totalAccountSelected.isDisplayed(),"Total account selected is not displayed" );
+			    	Assert.assertTrue(totalOutstandingAmount.isDisplayed(),"Total outstanding amount is not displayed");
+			    	ExtentTestManager.getTest().log(Status.PASS, "The accounts count is displayed with the columns 'Total Account Selected' and 'Total Outstanding Amount'.");
+			    	Assert.assertFalse(totalAccountSelected.getText().isEmpty(),"Total account selected text is empty");
+		            Assert.assertFalse(totalOutstandingAmount.getText().isEmpty(),"Total outstanding amount text is empty");
+			    	}
+					catch (AssertionError | Exception e) {
+						ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			           throw e;
+				 }
+				Thread.sleep(3000);
+		            
+			    }
+			 
+			 @Test(priority = 41, dataProvider = "TestData")
+			    public void Download_File__List_of_Accounts(Map<Object, Object> testdata) throws InterruptedException {
+				 try {
+			        // Step 1: Click on Download File dropdown
+					 coremanualallocationpage.clickDownloadDropdown();
+				 ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Download File dropdown.");
+				 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+				    	
+				        String value = testdata.get("DownloadFile").toString();
+			        // Step 2: Select List of Accounts
+				        coremanualallocationpage.selectListOfAccounts(value);
+				 ExtentTestManager.getTest().log(Status.PASS, "Selected List of Accounts from the dropdown.");
+				 }
+			        // Step 3: Click on Download button
+				 coremanualallocationpage.clickDownloadButton();
+				 ExtentTestManager.getTest().log(Status.PASS, "Clicked the Download button successfully.");
+				 ExtentTestManager.getTest().log(Status.PASS, "Verified that the file is downloaded successfully.");
+				 }
+			        catch (AssertionError | Exception e) {
+						ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			          throw e;
+				 }
+				 
+				 Thread.sleep(3000);
+			    }
+			 
+			 @Test(priority = 42)
+			 public void Verify_Downloaded_File() throws InterruptedException {
+				    try {
+				    	WebElement totalAccountSelected = driver.findElement(CoreManualAllocationRepo.TotalAccountSelected);
+				    	totalAccounts=totalAccountSelected.getText();
+				        // Call the verifyAccountsAllocation method and get the result
+				        Map<String, String> resultMap = coremanualallocationpage.verifyAccountsAllocation(totalAccounts);
+
+				        // Log expected and actual data in Extent Report
+				        String expectedData = resultMap.get("expectedData"); 
+				        String actualData = resultMap.get("actualData");
+				        String result = resultMap.get("result");
+				        accountNumber = resultMap.get("accountNumber");
+
+				        ExtentTestManager.getTest().log(Status.INFO, "Expected Data: " + expectedData);
+				        ExtentTestManager.getTest().log(Status.INFO, "Actual Data: " + actualData);
+				        ExtentTestManager.getTest().log(Status.INFO, "Account Number: " + accountNumber);
+				        // Assert the result
+				        Assert.assertEquals(result, "PASS", "Accounts do not match those indicated in the grid.");
+				        ExtentTestManager.getTest().log(Status.PASS, "Data match successful: Expected data matches the actual data.");
+				    } catch (AssertionError | Exception e) {
+				        ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+				        throw e;
+				    }
+
+				    Thread.sleep(3000);
+				}
+			 
+			 @Test(priority = 43)
+			    public void Verify_the_URL_after_navigating_to_the_Updation_of_Disposition_page() throws Exception { 
+
+			  		try {
+			  			
+			        //Navigate to Call Centre Main Menu
+			  			coremanualallocationpage.navigateTodispostionMainMenu();
+			  			ExtentTestManager.getTest().log(Status.PASS, "Clicked on the main menu \"Disposition.\"");
+			  			ExtentTestManager.getTest().log(Status.PASS, "Clicked on the sub-menu \"Updation of Disposition.\"");
+			  			String currentUrl = driver.getCurrentUrl();
+		          Assert.assertTrue(currentUrl.contains("CallCentre/DispositionByAgent"), "Not navigated to Account Filtration page.");
+		          ExtentTestManager.getTest().log(Status.PASS, "The application URL is \"CallCentre/DispositionByAgent.\"");
+			  }
+			  		
+			  		catch (AssertionError | Exception e) {
+			  			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			            throw e;
+			        }
+			  		Thread.sleep(3000);
+			    }
+			 
+			// Test case to validate presence of all fields and buttons
+			    @Test(priority = 44)
+			    public void Validate_presence_of_fields_and_buttons_on_the_Updation_of_Disposition_page() throws InterruptedException { 
+			    	try {
+			        Assert.assertTrue(coremanualallocationpage.isAccountNumberFieldPresent(), "Account number field is missing");
+			        ExtentTestManager.getTest().log(Status.PASS, "Checked for the presence of the \"Account Number\" field.");
+			        Assert.assertTrue(coremanualallocationpage.isSearchButtonPresent(), "Search button is missing");
+			        ExtentTestManager.getTest().log(Status.PASS, "Checked for the \"Search\" button.");
+			        Assert.assertTrue(coremanualallocationpage.isCheckLiveBalanceButtonPresent(), "Check live balance button is missing");
+			        ExtentTestManager.getTest().log(Status.PASS, "Checked for the \"Check Live Balance\" button.");
+			        Assert.assertTrue(coremanualallocationpage.isTransactionDetailsSectionPresent(), "Transaction details button is missing");
+			        ExtentTestManager.getTest().log(Status.PASS, "Checked for the \"Transaction Details.\"");
+			    	}
+			  		
+			  		catch (AssertionError | Exception e) {
+			  			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			            throw e;
+			        }
+			  		Thread.sleep(3000);
+			    } 
+			    
+			    @Test(priority = 45, dataProvider = "TestData")
+			    public void Account_Number_Field_ECP_Validations(Map<Object, Object> testdata) throws InterruptedException {
+			    	try {
+			    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+				    	
+				        String Alphabets = testdata.get("Alphabets").toString();
+				        String Numeric = testdata.get("Numeric").toString();
+				        String Alphanumeric = testdata.get("Alphanumeric").toString();
+				        // Test with Alphabets
+				        coremanualallocationpage.enterAccountNumbers(Alphabets);
+				        Assert.assertTrue(coremanualallocationpage.isAccountNumberFieldValid(Alphabets), "Alphabets are incorrectly allowed");
+				        ExtentTestManager.getTest().log(Status.PASS, "Tested the \"Account Number\" field with alphabetic and input got restricted");
+				        // Test with Numeric input
+				        coremanualallocationpage.enterAccountNumbers(Numeric);
+				        Assert.assertTrue(coremanualallocationpage.isAccountNumberFieldValid(Numeric), "Numeric inputs are not allowed");
+				        ExtentTestManager.getTest().log(Status.PASS, "Tested the \\\"Account Number\\\" field with numeric and inputs are allowed");
+				        // Test with Alphanumeric input
+				        coremanualallocationpage.enterAccountNumbers(Alphanumeric); 
+				        Assert.assertTrue(coremanualallocationpage.isAccountNumberFieldValid(Alphanumeric), "Alphanumeric incorrectly allowed");
+				        ExtentTestManager.getTest().log(Status.PASS, "Tested the \\\"Account Number\\\" field with alphanumeric  and input got restricted");
+			    	}  
+			    	}
+			  		
+			  		catch (AssertionError | Exception e) {
+			  			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			            throw e;
+			        }
+			  		Thread.sleep(3000);
+			    }
+			    
+			    @Test(priority = 46)
+			    public void Search_with_Invalid_Account_Number() throws InterruptedException {
+			    	try {
+			    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+			        // Clicking the search button
+			    	coremanualallocationpage.clickSearchButon(); 
+			    	ExtentTestManager.getTest().log(Status.PASS, "Entered an invalid account number in the \"Account Number\" field.");
+			    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the \"Search\" button.");
+			        // Verifying the validation message
+			        String expectedMessage = "Invalid Account Number";
+			        String actualMessage = coremanualallocationpage.getValidationMessageafterenteringinvalidaccountnumber();
+			        Assert.assertEquals(actualMessage, expectedMessage, "Validation message mismatch");
+			        ExtentTestManager.getTest().log(Status.PASS, "Validation message displayed: \"Invalid Account Number\".");
+			        wait.until(ExpectedConditions.invisibilityOfElementLocated(CoreManualAllocationRepo.validationMessageforinvalidaccountnumber));
+			    	}
+			  		
+			  		catch (AssertionError | Exception e) {
+			  			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			            throw e;
+			        }
+			  		Thread.sleep(3000);
+			    }
+			    
+			    @Test(priority = 47)
+			    public void Search_with_Valid_Account_Number() throws InterruptedException {
+			    	try {
+			    		
+			        // Enter a valid account number
+			    	coremanualallocationpage.enterAccountNumbers(accountNumber);
+			    	ExtentTestManager.getTest().log(Status.PASS, "Entered the valid account number in the \"Account Number\" field");
+			        // Click on search button
+			    	coremanualallocationpage.clickSearchButon();
+			    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the \"Search\" button.");
+			        // Validate the account details display with "Add interaction details" field
+			        Assert.assertTrue(coremanualallocationpage.isInteractionDetailsDisplayed(), 
+			                          "Interaction details field should be displayed.");
+			        ExtentTestManager.getTest().log(Status.PASS, "Verified that the account details were displayed along with the \"Add Interaction Details\" field");
+			    	}
+			  		
+			  		catch (AssertionError | Exception e) {
+			  			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			            throw e;
+			        }
+			  		Thread.sleep(3000);
+			    }
+			    
+			    @Test(priority = 48)
+			    public void Verify_Fields_in_Add_Interaction_Details_Section() throws InterruptedException {
+			    	try {
+			        // Verify all fields are present
+			        Assert.assertTrue(coremanualallocationpage.areAllFieldsPresent(), "Not all fields are present in the Add Interaction Details section.");
+			        ExtentTestManager.getTest().log(Status.PASS, "Checked for the presence of the \"Action Owner,\" \"Disposition Type,\" \"Sub Disposition,\" \"Next Action Date,\" \"Remark,\" \"Save,\" and \"Cancel\" buttons.");
+			    	}
+			  		
+			  		catch (AssertionError | Exception e) {
+			  			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			            throw e;
+			        }
+			  		Thread.sleep(3000);
+			    }
+			    
+			 // Test to verify Internal User can be selected
+			    @Test(priority = 49, dataProvider = "TestData")
+			    public void Select_Internal_User_from_Action_Owner_Dropdown(Map<Object, Object> testdata) throws InterruptedException {
+			    	try {
+			    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+				    	
+				        String value = testdata.get("ActionOwnerDropdownValue").toString();
+			        // Action: Select Internal User from Action Owner dropdown
+				        coremanualallocationpage.selectInternalUser(value);
+				        ExtentTestManager.getTest().log(Status.PASS, "Selected "+value+" from the \"Action Owner\" dropdown.");
+			    	}
+			    	}
+			  		
+			  		catch (AssertionError | Exception e) {
+			  			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			            throw e;
+			        }
+			  		Thread.sleep(3000);
+			    	
+			    }
+			    
+			    @Test(priority = 50, dataProvider = "TestData")
+			    public void Select_Disposition_Type(Map<Object, Object> testdata) throws InterruptedException {
+			    	try {
+			    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+			    		String value = testdata.get("Disposition").toString();	
+			        // Select "Connected" from Disposition Type dropdown and assert
+			    		coremanualallocationpage.selectConnectedDispositionType(value);
+			    		ExtentTestManager.getTest().log(Status.PASS, "Selected "+value+" from the \"Disposition Type\" dropdown.");
+			    	}
+			    	}
+			  		
+			  		catch (AssertionError | Exception e) {
+			  			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			            throw e;
+			        }
+			  		Thread.sleep(3000);
+			    }
+			    
+			    @Test(priority = 51, dataProvider = "TestData")
+			    public void Select_Sub_Disposition(Map<Object, Object> testdata) throws InterruptedException {
+			    	try {
+			    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+				    	
+				        String value = testdata.get("SubDisposition").toString();
+			        // Select "Call Back" from Sub Disposition dropdown and assert
+				        coremanualallocationpage.selectCallBackSubDisposition(value);
+				        ExtentTestManager.getTest().log(Status.PASS, "Selected "+value+" from the \"Sub Disposition\" dropdown");  
+			    	}
+			    	}
+			  		
+			  		catch (AssertionError | Exception e) {
+			  			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			            throw e;
+			        }
+			  		Thread.sleep(3000);
+			    }
+
+			    @Test(priority = 52, dataProvider = "TestData")
+			    public void Select_Date_in_Next_Action_Date_DatePicker(Map<Object, Object> testdata) throws InterruptedException {
+			    	try {
+			    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+			    		String value = testdata.get("ActionDate").toString();
+			        // Select date using the date picker and assert
+			    		coremanualallocationpage.selectNextActionDate(value);
+			    		ExtentTestManager.getTest().log(Status.PASS, "Selected "+value+" using the \"Next Action Date\" date picker.");  	
+			    	}
+			    	}
+			  		
+			  		catch (AssertionError | Exception e) {
+			  			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			            throw e;
+			        }
+			  		Thread.sleep(3000);
+			    }
+
+			    @Test(priority = 53, dataProvider = "TestData")
+			    public void Enter_Remarks_and_Save_Interaction(Map<Object, Object> testdata) throws InterruptedException {
+			    	try {
+			    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+			    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+			    		String value = testdata.get("Remarks").toString();
+			        // Enter remarks and save
+			    		coremanualallocationpage.enterRemarks(value); 
+			    		ExtentTestManager.getTest().log(Status.PASS, "Entered "+value+" in the \"Remark\" field.");  	
+			    	}
+			    	coremanualallocationpage.clickSaveButton();
+			    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the \"Save\" button."); 
+			    	String expectedMessage = "Saved Successfully";
+			        String actualMessage = coremanualallocationpage.getValidationMessageaftersavingInteractionDetails();
+			        Assert.assertEquals(actualMessage, expectedMessage, "Validation message mismatch");
+			        ExtentTestManager.getTest().log(Status.PASS, "Verified that the success message \"Saved Successfully\" was displayed.");
+			        wait.until(ExpectedConditions.invisibilityOfElementLocated(CoreManualAllocationRepo.validationMessageforInteractionDetails));
+			    	}
+			  		
+			  		catch (AssertionError | Exception e) {
+			  			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			            throw e;
+			        }
+			  		Thread.sleep(3000);
+			    }
+			    
+			 // Test method to verify saved account interaction details are displayed
+			    @Test(priority = 54)
+			    public void Search_for_Previously_Saved_Account_Interaction_Details() throws InterruptedException { 
+			    	try {
+			    	// Enter a valid account number
+			    	coremanualallocationpage.enterAccountNumbers(accountNumber);
+			    	ExtentTestManager.getTest().log(Status.PASS, "Entered the same account number "+accountNumber+" in the \"Account Number\" field.");
+			        // Click on search button
+			    	coremanualallocationpage.clickSearchButon();
+			    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the \"Search\" button.");
+			        // Assert that interaction history is displayed
+			        Assert.assertTrue(coremanualallocationpage.isInteractionHistoryDisplayed(), 
+			                "Interaction history should be displayed.");
+			        ExtentTestManager.getTest().log(Status.PASS, "Verified that the saved interaction details were displayed under \"History of Interaction Details.\""); 
+			    	}
+			  		
+			  		catch (AssertionError | Exception e) {
+			  			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+			            throw e;
+			        }
+			  		Thread.sleep(3000);
+			    }
+			 
 	@AfterMethod 
 	 public void takeScreenshotOnFailure(ITestResult result) throws IOException {
 		    // Check if the test case failed

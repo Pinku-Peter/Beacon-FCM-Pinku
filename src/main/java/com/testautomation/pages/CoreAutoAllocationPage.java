@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
-
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,7 +25,7 @@ import com.Page_Repository.DispositionMasterPageRepo;
 import com.Utility.Log;
 import java.sql.Connection;
 
-import io.netty.handler.timeout.TimeoutException;
+//import io.netty.handler.timeout.TimeoutException;
 
 public class CoreAutoAllocationPage {
 	
@@ -551,10 +551,32 @@ public class CoreAutoAllocationPage {
     }
  // Method to enter Allocation Name
     public void enterAllocationName(String name) {
-    	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
-    	 Log.info("Waiting for the 'All' value in the Zone dropdown to become visible.");
-    	 wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAutoAllocationRepo.zoneall));
-    	 Log.info("The 'All' value in the Zone dropdown is now visible.");
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+        Log.info("Waiting for the 'All' value in the Zone dropdown to become visible.");
+        
+        try {
+            // Wait for the 'All' value in the Zone dropdown to be present
+            WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(CoreAutoAllocationRepo.zone));
+            
+            String expectedText = "All";
+            try {
+                // Wait for the expected text to be present in the element
+                wait.until(ExpectedConditions.textToBePresentInElement(element, expectedText));
+            } catch (TimeoutException e) {
+                // Throw a new TimeoutException if the expected text is not found within the wait time
+                throw new TimeoutException("The 'All' value in the 'Zone' dropdown is not present within the expected time. So Page not Loaded properly", e);
+            }
+
+            Log.info("The 'All' value in the Zone dropdown is now visible.");
+            
+        } catch (TimeoutException e) {
+            Log.error("Timeout: The 'All' value in the Zone dropdown did not become visible after waiting for 180 seconds. Page load check failed.", e);
+            throw e; // Fail the test with the timeout exception
+        } catch (Exception e) {
+            Log.error("An unexpected error occurred while waiting for the 'All' value in the Zone dropdown: " + e.getMessage(), e);
+            throw e; // Re-throw for higher-level handling
+        }
+
     	Log.info("Starting the process to enter the Allocation Name...");
 
         try {
@@ -1491,7 +1513,7 @@ public class CoreAutoAllocationPage {
             Log.info("Attempting to select the 'From Date' value: " + fromDate);
 
             // Find and click the 'From Date' value
-            WebElement fromandtodatevalue = driver.findElement(CoreAutoAllocationRepo.fromandtodatevalue(fromDate));
+            WebElement fromandtodatevalue = driver.findElement(CoreAutoAllocationRepo.fromdatevalue(fromDate));
             fromandtodatevalue.click();
 
             // Log after selecting the 'From Date' value
@@ -1521,7 +1543,7 @@ public class CoreAutoAllocationPage {
             Log.info("Attempting to select the 'To Date' value: " + toDate);
 
             // Find and click the 'To Date' value
-            WebElement fromandtodatevalue = driver.findElement(CoreAutoAllocationRepo.fromandtodatevalue(toDate));
+            WebElement fromandtodatevalue = driver.findElement(CoreAutoAllocationRepo.todatevalue(toDate));
             fromandtodatevalue.click();
 
             // Log after selecting the 'To Date' value

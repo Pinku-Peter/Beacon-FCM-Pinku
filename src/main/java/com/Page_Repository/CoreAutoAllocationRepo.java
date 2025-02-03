@@ -100,8 +100,11 @@ public class CoreAutoAllocationRepo {
 	public static By OutstandingBalLimit = By.xpath("//input[@onkeypress='DecimalWithHyphen(event, this); NumberWithMaxLengthWithHyphen(event, this)']");
 	public static By getdownloadhistorybutton = By.xpath("//button[contains(text(),'Get Download History')]");
 	public static By fromDateField = By.xpath("//input[@name='ActionDatefrom']");
-	public static By fromandtodatevalue(String value) {
-        return By.xpath("(//span[contains(@class, 'rz-state-default') and text()='"+ value +"'])[6]");
+	public static By fromdatevalue(String value) {
+        return By.xpath("(//span[@class='rz-state-default' and text()='" + value + "'])[4]");
+    }
+	public static By todatevalue(String value) {
+        return By.xpath("(//span[@class='rz-state-default' and text()='" + value + "'])[3]");
     }
 	public static By toDateField = By.xpath("(//input[@name='ActionDateto' and @id='ActionDateto'])[1]");
 	public static By searchbtn = By.xpath("(//button[@type='submit' and text()='Search'])[1]");

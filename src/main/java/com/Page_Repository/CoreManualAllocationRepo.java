@@ -52,11 +52,12 @@ public class CoreManualAllocationRepo {
 	public static By npacategorysellectall = By.xpath("(//label[text()='NPA Category']//following::div[contains(@class,' rz-multiselect-header')]//following-sibling::div[@class='rz-chkbox'])[4]");
 	public static By TotalAccountSelected = By.xpath("(//span[@class='rz-cell-data'])[1]");
 	public static By TotalOutStandingAmount = By.xpath("(//span[@class='rz-cell-data'])[2]");
-	//public static By UserType = By.xpath("//label[text()='User Type']//following-sibling::div[@onmousedown='Radzen.activeElement = null']");
 	public static By Disposition = By.xpath("//span[text()='Disposition']");
 	public static By UpdationofDisposition = By.xpath("//a[text()='Updation of Disposition']");
 	public static By AccountNumbertextfield = By.xpath("//input[@placeholder='Account Number']");
 	public static By Searchbut = By.xpath("//input[@value='Search']");
+	public static By CheckLiveBalancebut = By.xpath("//input[@value='Check Live Balance']");
+	public static By TransactionDetailsbut = By.xpath("//input[@value='Transaction Details']");
 	public static By warningmsg = By.xpath("//p[text()='You are not authorized to do the disposition of this account number']");
 	public static By downloadedmsg = By.xpath("//p[text()='File downloaded successfully']");
 	public static By Tofieldmandatorywarningmsg = By.xpath("//p[text()='To is Required']");
@@ -65,4 +66,27 @@ public class CoreManualAllocationRepo {
         return By.xpath("//li[@ role='option' and @aria-label='>" + value + "']");
     }
 	public static By validationMessage = By.xpath("//p[text()='Assigned Successfully']");
+	public static By validationMessageforinvalidaccountnumber = By.xpath("//p[text()='Invalid Account Number']");
+	public static By interactionDetailsField = By.xpath("//table[@style='border: none;border-collapse: collapse;']");
+	public static By actionOwner = By.xpath("//label[text()='Next Action Owner']//following-sibling::div");
+	public static By dispositionType = By.xpath("//label[text()='Disposition']//following-sibling::div");
+	public static By subDisposition = By.xpath("//label[text()='Sub-Disposition']//following-sibling::div");
+	public static By nextActionDate = By.xpath("//label[text()='Next Action Date']//following-sibling::div");
+	public static By remark = By.xpath("//label[text()='Remarks']//following-sibling::input");
+	public static By saveButton = By.xpath("//button[@type='submit']");
+	public static By cancelButton = By.xpath("//button[text()='Cancel']");
+	public static By internalUserOption(String value) {
+        return By.xpath("//li[@aria-label='>" + value + "']");
+        }
+        public static By connectedOption(String value) {
+            return By.xpath("//li[@aria-label='>" + value + "']");
+    }
+        public static By callBackOption(String value) {
+            return By.xpath("//li[@aria-label='>" + value + "']"); 
+    }
+        public static By nextActionDatevalue(String value) {
+            return By.xpath("//span[@class='rz-state-default' and text()='" + value + "']"); 
+    }
+        public static By validationMessageforInteractionDetails = By.xpath("//p[text()='Saved Successfully']");
+        public static By interactionHistorySection = By.xpath("(//div[@class='col-sm-12'])[1]");
 }

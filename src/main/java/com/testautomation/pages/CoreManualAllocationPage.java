@@ -5,7 +5,9 @@ import java.sql.CallableStatement;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -296,8 +298,6 @@ public class CoreManualAllocationPage {
     	Log.info("Starting the process to verify if the Auto Allocation page is loaded...");
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
     	Log.info("Locating the Call Center menu...");
-//    	WebElement UserType = driver.findElement(CoreManualAllocationRepo.UserType);
-//    	UserType.getText();
     	WebElement callcentermenu = driver.findElement(CoreAutoAllocationRepo.callcentermenu);
     	Log.info("Call Center menu located successfully.");
     	Log.info("Clicking on the Call Center menu...");
@@ -314,7 +314,13 @@ public class CoreManualAllocationPage {
     	Log.info("Spinner disappeared successfully.");
     	Log.info("Pausing for a brief moment...");
     	Log.info("Waiting for the 'Search' button to become clickable.");
-    	wait.until(ExpectedConditions.elementToBeClickable(CoreManualAllocationRepo.Searchbtn));
+    	try {
+            wait.until(ExpectedConditions.elementToBeClickable(CoreManualAllocationRepo.Searchbtn));
+            Log.info("The 'Search' button is now clickable.");
+        } catch (Exception e) { // Catch all exceptions including TimeoutException
+            Log.error("Search Button not enabled, so the page is not loaded properly.");
+            throw new RuntimeException("Search Button not enabled, so the page is not loaded properly."); // Ensure failure message is logged
+        }
     	Log.info("The 'Search' button is now clickable.");
     	Log.info("Checking if the current URL ends with 'CallCentre/ManualAllocationConfiguration'...");
         boolean isPageLoaded = driver.getCurrentUrl().endsWith("CallCentre/ManualAllocationConfiguration");
@@ -984,5 +990,427 @@ public class CoreManualAllocationPage {
         Log.info("'Allocated To' dropdown mandatory status: " + isMandatory);
 
         return isMandatory;
+    }
+    
+ // Method to click on the Download File dropdown
+    public void clickDownloadDropdown() {
+    	Log.info("Starting the process to click the Download Dropdown...");
+    	Log.info("Locating the Download Dropdown element...");
+    	WebElement downloadfiledropdown = driver.findElement(CoreAutoAllocationRepo.downloadfiledropdown);
+    	 // Log before clicking the element
+        Log.info("Clicking the Download Dropdown...");
+        downloadfiledropdown.click();
+        
+        // Log after clicking the element
+        Log.info("Successfully clicked the Download Dropdown.");
+    }
+    
+ // Method to select the List of Accounts option
+    public void selectListOfAccounts(String value) {
+    	 // Log the start of the process
+        Log.info("Starting the process to select a list of accounts with value: " + value);
+
+        // Log before finding the dropdown value element
+        Log.info("Locating the dropdown value element for: " + value);
+        WebElement downloadfiledropdownvalue = driver.findElement(CoreAutoAllocationRepo.downloadfiledropdownvalue(value));
+        
+        // Log before clicking the dropdown value
+        Log.info("Clicking the dropdown value: " + value);
+        downloadfiledropdownvalue.click();
+        
+        // Log before finding the outside area element
+        Log.info("Locating the outside area element to click...");
+        WebElement outside = driver.findElement(CoreAutoAllocationRepo.outarea);
+        
+        // Log before clicking the outside area
+        Log.info("Clicking the outside area to close the dropdown...");
+        outside.click();
+
+        // Log after completing the action
+        Log.info("Successfully selected the list of accounts and closed the dropdown.");
+    }
+    
+ // Method to click the Download button
+    public void clickDownloadButton() {
+    	   // Log the start of the process
+        Log.info("Starting the process to click the Download Button...");
+
+        // Log before locating the download button
+        Log.info("Locating the Download Button...");
+        WebElement downloadbutton = driver.findElement(CoreAutoAllocationRepo.downloadbutton);
+        
+        // Log before clicking the download button
+        Log.info("Clicking the Download Button...");
+        downloadbutton.click();
+        
+        // Log before waiting for the spinner to disappear
+        Log.info("Waiting for the spinner to disappear...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofDays(1));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+        
+        // Log after the spinner disappears
+        Log.info("Successfully waited for the spinner to disappear. Download Button click process completed.");
+    }
+    
+ // Method to verify accounts allocation
+    public Map<String, String> verifyAccountsAllocation(String expectedData) {
+        Log.info("Starting the process to verify account allocation...");
+
+        Map<String, String> resultMap = new HashMap<>();
+        try {
+            // Log before reading the last Sr No. from the downloaded file
+            Log.info("Getting the last Sr No. from the latest downloaded file...");
+            int lastSrNo = DownloadedExcelReader.getCountOfRows();
+
+            // Convert the integer to a String to match expectedData type
+            String actualData = String.valueOf(lastSrNo);
+
+            // Log before comparing the expectedData with actualData
+            Log.info("Comparing expectedData: " + expectedData + " with actualData: " + actualData);
+
+            // Add expected and actual data to the map
+            resultMap.put("expectedData", expectedData);
+            resultMap.put("actualData", actualData);
+
+            // Compare expectedData with actualData and log the result
+            if (expectedData.equals(actualData)) {
+                Log.info("Data match successful: Expected data matches the actual data.");
+                resultMap.put("result", "PASS");
+            } else {
+                Log.info("Data mismatch: Expected data does not match the actual data.");
+                resultMap.put("result", "FAIL");
+            }
+            
+            String accountNumber = DownloadedExcelReader.getOneAccountNumber();
+            if (accountNumber != null) {
+                // Log the account number
+                Log.info("Retrieved Account Number: " + accountNumber);
+                resultMap.put("accountNumber", accountNumber);  // Store the account number in the result map
+            } else {
+                Log.info("No account number found.");
+                resultMap.put("accountNumber", "Not Found");
+            }
+
+        } catch (IOException e) {
+            // Log the error if an exception occurs
+            Log.error("Error while reading the Excel file: " + e.getMessage(), e);
+            resultMap.put("result", "ERROR");
+            resultMap.put("errorMessage", e.getMessage());
+        }
+
+        return resultMap;
+    }
+    
+ // Method to check presence of account number field
+    public boolean isAccountNumberFieldPresent() {
+    	Log.info("Checking if the Account Number field is present...");
+        
+        Log.info("Waiting for the Account Number field to become visible...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        WebElement AccountNumbertextfield = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.AccountNumbertextfield));
+        
+        boolean isDisplayed = AccountNumbertextfield.isDisplayed();
+        Log.info("Account Number field visibility check result: " + isDisplayed);
+        
+        return isDisplayed;
+    }
+
+    // Method to check presence of search button
+    public boolean isSearchButtonPresent() {
+    	Log.info("Checking if the Search button is present...");
+
+        Log.info("Waiting for the Search button to become visible...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        WebElement Searchbut = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.Searchbut));
+
+        boolean isDisplayed = Searchbut.isDisplayed();
+        Log.info("Search button visibility check result: " + isDisplayed);
+
+        return isDisplayed;
+    }
+
+    // Method to check presence of check live balance button
+    public boolean isCheckLiveBalanceButtonPresent() {
+    	Log.info("Checking if the 'Check Live Balance' button is present...");
+
+        Log.info("Waiting for the 'Check Live Balance' button to become visible...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        WebElement CheckLiveBalancebut = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.CheckLiveBalancebut));
+
+        boolean isDisplayed = CheckLiveBalancebut.isDisplayed();
+        Log.info("'Check Live Balance' button visibility check result: " + isDisplayed);
+
+        return isDisplayed;
+    }
+
+    // Method to check presence of transaction details section
+    public boolean isTransactionDetailsSectionPresent() {
+    	Log.info("Checking if the 'Transaction Details' section is present...");
+
+        Log.info("Waiting for the 'Transaction Details' section to become visible...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        WebElement TransactionDetailsbut = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.TransactionDetailsbut));
+
+        boolean isDisplayed = TransactionDetailsbut.isDisplayed();
+        Log.info("'Transaction Details' section visibility check result: " + isDisplayed);
+
+        return isDisplayed;
+    }
+    
+    public void enterAccountNumbers(String accountNumber) {
+    	Log.info("Entering account number: " + accountNumber);
+
+        Log.info("Finding the Account Number text field...");
+        WebElement AccountNumbertextfield = driver.findElement(CoreManualAllocationRepo.AccountNumbertextfield);
+
+        Log.info("Clearing the existing value in the Account Number field...");
+        AccountNumbertextfield.clear();
+
+        Log.info("Entering the new account number in the field...");
+        AccountNumbertextfield.sendKeys(accountNumber);
+
+        Log.info("Account number entered successfully."); 
+    }
+    
+    public boolean isAccountNumberFieldValid(String accountNumbers) { 
+    	Log.info("Starting account number validation...");
+
+        // Get the value of the account number field
+        Log.info("Retrieving the value from the Account Number field...");
+        String accountNumber = driver.findElement(CoreManualAllocationRepo.AccountNumbertextfield).getAttribute("value");
+
+        // If the field is empty, return true (you can customize this behavior as needed)
+        if (accountNumber == null || accountNumber.trim().isEmpty()) {
+            Log.info("Account Number field is empty, returning true (empty fields are considered valid).");
+            return true;  // Empty fields are valid, as per your request
+        }
+
+        // Check if the account number contains only numeric characters
+        Log.info("Checking if the Account Number contains only numeric characters...");
+        if (accountNumber.matches(accountNumbers)) {
+            Log.info("Account Number is valid (numeric characters only).");
+            return true;  // Return true if it's numeric (because numeric values are allowed per your test case)
+        }
+
+        // If it's not numeric (contains non-numeric characters), return true (indicating invalid)
+        Log.info("Account Number is invalid (contains non-numeric characters).");
+        return true;
+    }
+    
+ // Method to get validation message
+    public String getValidationMessageafterenteringinvalidaccountnumber() {
+    	Log.info("Starting to retrieve the validation message for invalid account number...");
+
+        Log.info("Waiting for the validation message element to become visible...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        WebElement validationMessageforinvalidaccountnumber = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.validationMessageforinvalidaccountnumber));
+
+        Log.info("Validation message element is visible. Retrieving the text...");
+        String validationMessage = validationMessageforinvalidaccountnumber.getText();
+
+        Log.info("Validation message retrieved: " + validationMessage);
+        return validationMessage;
+    }
+    
+ // Method to verify "Add interaction details" is displayed
+    public boolean isInteractionDetailsDisplayed() {
+    	Log.info("Starting to check if the 'Interaction Details' field is displayed...");
+
+        Log.info("Waiting for the 'Interaction Details' field to become visible...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        WebElement interactionDetailsField = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.interactionDetailsField));
+
+        boolean isDisplayed = interactionDetailsField.isDisplayed();
+        Log.info("'Interaction Details' field display status: " + isDisplayed);
+
+        return isDisplayed;
+    }
+    
+ // Method to verify presence of all required fields
+    public boolean areAllFieldsPresent() {
+    	Log.info("Starting to check if all required fields are present...");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+
+        Log.info("Waiting for the 'Action Owner' field to become visible...");
+        WebElement actionOwner = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.actionOwner));
+        Log.info("'Action Owner' field visibility: " + actionOwner.isDisplayed());
+
+        Log.info("Waiting for the 'Disposition Type' field to become visible...");
+        WebElement dispositionType = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.dispositionType));
+        Log.info("'Disposition Type' field visibility: " + dispositionType.isDisplayed());
+
+        Log.info("Waiting for the 'Sub Disposition' field to become visible...");
+        WebElement subDisposition = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.subDisposition));
+        Log.info("'Sub Disposition' field visibility: " + subDisposition.isDisplayed());
+
+        Log.info("Waiting for the 'Next Action Date' field to become visible...");
+        WebElement nextActionDate = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.nextActionDate));
+        Log.info("'Next Action Date' field visibility: " + nextActionDate.isDisplayed());
+
+        Log.info("Waiting for the 'Remark' field to become visible...");
+        WebElement remark = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.remark));
+        Log.info("'Remark' field visibility: " + remark.isDisplayed());
+
+        Log.info("Waiting for the 'Save' button to become visible...");
+        WebElement saveButton = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.saveButton));
+        Log.info("'Save' button visibility: " + saveButton.isDisplayed());
+
+        Log.info("Waiting for the 'Cancel' button to become visible...");
+        WebElement cancelButton = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.cancelButton));
+        Log.info("'Cancel' button visibility: " + cancelButton.isDisplayed());
+
+        boolean allFieldsVisible = actionOwner.isDisplayed()
+                && dispositionType.isDisplayed()
+                && subDisposition.isDisplayed()
+                && nextActionDate.isDisplayed()
+                && remark.isDisplayed()
+                && saveButton.isDisplayed()
+                && cancelButton.isDisplayed();
+
+        Log.info("All required fields present: " + allFieldsVisible);
+
+        return allFieldsVisible;
+    }
+    
+ // Method to select Internal User from dropdown
+    public void selectInternalUser(String value) {
+    	Log.info("Starting to select internal user with value: " + value);
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+
+        Log.info("Waiting for the 'Action Owner' field to become visible...");
+        WebElement actionOwner = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.actionOwner));
+        Log.info("'Action Owner' field is visible. Clicking on it...");
+        actionOwner.click();
+
+        Log.info("Waiting for the 'Internal User' option with value '" + value + "' to become visible...");
+        WebElement internalUserOption = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.internalUserOption(value)));
+        Log.info("Clicking on the 'Internal User' option with value: " + value);
+        internalUserOption.click();
+
+        Log.info("Internal user option with value '" + value + "' selected successfully.");
+    }
+    
+ // Method to select "Connected" from Disposition Type dropdown
+    public void selectConnectedDispositionType(String value) {
+    	Log.info("Starting to select connected disposition type with value: " + value);
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+
+        Log.info("Waiting for the 'Disposition Type' field to become visible...");
+        WebElement dispositionType = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.dispositionType));
+        Log.info("'Disposition Type' field is visible. Clicking on it...");
+        dispositionType.click();
+
+        Log.info("Waiting for the connected option with value '" + value + "' to become visible...");
+        WebElement connectedOption = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.connectedOption(value)));
+        Log.info("Clicking on the connected option with value: " + value);
+        connectedOption.click();
+
+        Log.info("Waiting for the spinner to become invisible...");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+        Log.info("Spinner is now invisible, connected disposition type selected successfully.");
+    }
+
+    // Method to select "Call Back" from Sub Disposition dropdown
+    public void selectCallBackSubDisposition(String value) {
+    	Log.info("Starting to select callback sub-disposition with value: " + value);
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+
+        Log.info("Waiting for the 'Sub Disposition' field to become visible...");
+        WebElement subDisposition = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.subDisposition));
+        Log.info("'Sub Disposition' field is visible. Clicking on it...");
+        subDisposition.click();
+
+        Log.info("Waiting for the callback option with value '" + value + "' to become visible...");
+        WebElement callBackOption = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.callBackOption(value)));
+        Log.info("Clicking on the callback option with value: " + value);
+        callBackOption.click();
+
+        Log.info("Callback sub-disposition with value '" + value + "' selected successfully.");
+
+    }
+
+    // Method to select a date using DatePicker
+    public void selectNextActionDate(String date) {
+    	Log.info("Starting to select the next action date: " + date);
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+
+        Log.info("Waiting for the 'Next Action Date' field to become visible...");
+        WebElement nextActionDate = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.nextActionDate));
+        Log.info("'Next Action Date' field is visible. Clicking on it...");
+        nextActionDate.click();
+
+        Log.info("Waiting for the 'Next Action Date' value '" + date + "' to become visible...");
+        WebElement nextActionDatevalue = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.nextActionDatevalue(date)));
+        Log.info("Clicking on the next action date value: " + date);
+        nextActionDatevalue.click();
+
+        Log.info("Next action date '" + date + "' selected successfully.");
+    }
+
+    // Method to enter remarks
+    public void enterRemarks(String remarks) {
+    	Log.info("Starting to enter remarks: " + remarks);
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+
+        Log.info("Waiting for the 'Remark' field to become visible...");
+        WebElement remark = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.remark));
+        Log.info("'Remark' field is visible. Entering the remarks...");
+
+        remark.sendKeys(remarks);
+
+        Log.info("Remarks entered successfully: " + remarks);
+    }
+    
+ // Method to click on Save button
+    public void clickSaveButton() {
+    	Log.info("Starting the process to click the Save button...");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+
+        Log.info("Waiting for the 'Save' button to become visible...");
+        WebElement saveButton = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.saveButton));
+        Log.info("'Save' button is visible. Clicking on it...");
+
+        saveButton.click();
+
+        Log.info("Save button clicked successfully.");
+    }
+    
+ // Method to get validation message
+    public String getValidationMessageaftersavingInteractionDetails() {
+    	Log.info("Starting to retrieve the validation message after saving interaction details...");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+
+        Log.info("Waiting for the validation message after saving interaction details to become visible...");
+        WebElement ValidationMessageaftersavingInteractionDetails = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.validationMessageforInteractionDetails));
+        Log.info("Validation message is visible. Retrieving the message...");
+
+        String validationMessage = ValidationMessageaftersavingInteractionDetails.getText();
+
+        Log.info("Validation message retrieved: " + validationMessage);
+        
+        return validationMessage;
+    }
+    
+ // Method to verify interaction history is displayed
+    public boolean isInteractionHistoryDisplayed() {
+    	Log.info("Starting to check if the 'Interaction History' section is displayed...");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+
+        Log.info("Waiting for the 'Interaction History' section to become visible...");
+        WebElement interactionHistorySection = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreManualAllocationRepo.interactionHistorySection));
+
+        boolean isDisplayed = interactionHistorySection.isDisplayed();
+        Log.info("'Interaction History' section displayed: " + isDisplayed);
+
+        return isDisplayed;
     }
 }

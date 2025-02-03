@@ -3,15 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule">
+      <class name="com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule">
         <methods>
+          <include name="Verify_Fields_and_Buttons_on_Manual_Allocation_Page"/>
+          <include name="Login_and_Navigation_to_Manual_Allocation"/>
+          <include name="Asset_Category_SMA_and_NPA_Selection"/>
+          <include name="OS_Balance_Field_Validation" invocation-numbers="0"/>
           <include name="SetUp"/>
-          <include name="takeScreenshotOnFailure"/>
-          <include name="Verify_Dialer_Downloaded_File"/>
+          <include name="NPA_Category_Dropdown_Selection"/>
+          <include name="Excel_Account_Count_Verification"/>
+          <include name="To_Field_Dropdown_Selection" invocation-numbers="0"/>
+          <include name="Mandatory_Field_Validation_for_Asset_Category"/>
+          <include name="Search_with_Mandatory_Fields"/>
           <include name="afterEachTest"/>
           <include name="setupTest"/>
+          <include name="SMA_Category_Dropdown_Selection"/>
+          <include name="takeScreenshotOnFailure"/>
+          <include name="Download_Excel_Functionality"/>
         </methods>
-      </class> <!-- com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule -->
+      </class> <!-- com.test.CoreManualAllocation_Module.AllScenarios_CoreManualAllocationModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
