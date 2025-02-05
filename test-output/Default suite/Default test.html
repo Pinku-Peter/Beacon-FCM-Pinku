@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>36/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 03 15:01:20 IST 2025</td>
+<td>Started on:</td><td>Wed Feb 05 18:40:07 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>732 seconds (732001 ms)</td>
+<tr><td>Total time:</td><td>150 seconds (150761 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,82 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Validate_Downloaded_File()'><b>Validate_Downloaded_File</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
+<td><div><pre>java.lang.AssertionError: Downloaded file data does not match grid data. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Validate_Downloaded_File(AllScenarios_CoreRegularizationSummaryModule.java:462)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2552503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2552503'><pre>java.lang.AssertionError: Downloaded file data does not match grid data. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Validate_Downloaded_File(AllScenarios_CoreRegularizationSummaryModule.java:462)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,185 +151,105 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Select_effect_Date_from_Date_Picker()'><b>Select_effect_Date_from_Date_Picker</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Select_Call_Centre_Field_Dropdown_Selection()'><b>Select_Call_Centre_Field_Dropdown_Selection</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule<br>Parameters: {ActionDate=3, ActionOwnerDropdownValue=Internal User, AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, Alphabets=ABC, Alphanumeric=A1B2C3, Disposition=Connected, DownloadFile=List of Accounts - Excel, Numeric=123, OutstandingBalance=25000, OutstandingBalanceOperator==, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SubDisposition=Moratorium, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}</td>
 <td></td>
 <td>3</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
 <tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Download_File__List_of_Accounts()'><b>Download_File__List_of_Accounts</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Asset_Category_SMA_and_NPA_Selection()'><b>Asset_Category_SMA_and_NPA_Selection</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
 <td></td>
-<td>12</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
+<td>13</td>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
 <tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Reactivate_Allocation_Name()'><b>Reactivate_Allocation_Name</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>15</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Total_Account_and_Amount_in_Grid()'><b>Verify_Total_Account_and_Amount_in_Grid</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Sub_Menu_Regularization_Summary_Listing()'><b>Sub_Menu_Regularization_Summary_Listing</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
 <td></td>
 <td>3</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
 <tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Allocated_To_dropdown_mandatory_checking()'><b>Allocated_To_dropdown_mandatory_checking</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>8</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Download_Invalid_MobileNo_Excel_File()'><b>Download_Invalid_MobileNo_Excel_File</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>9</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Login_to_call_centre_application_and_take_account_filtration_page()'><b>Login_to_call_centre_application_and_take_account_filtration_page</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>8</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.SMA_Category_Selection()'><b>SMA_Category_Selection</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Dropdown_Callcentre_Name()'><b>Dropdown_Callcentre_Name</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule<br>Parameters: {ActionDate=3, ActionOwnerDropdownValue=Internal User, AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, Alphabets=ABC, Alphanumeric=A1B2C3, Disposition=Connected, DownloadFile=List of Accounts - Excel, Numeric=123, OutstandingBalance=25000, OutstandingBalanceOperator==, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SubDisposition=Moratorium, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}</td>
 <td></td>
 <td>3</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
 <tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.NPA_Category_Selections()'><b>NPA_Category_Selections</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>4</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Invalid_Mobile_Number_Downloaded_File()'><b>Verify_Invalid_Mobile_Number_Downloaded_File</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Select_To_Dropdown()'><b>Select_To_Dropdown</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>8</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Add_New_Allocation_Name()'><b>Add_New_Allocation_Name</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>22</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Downloaded_File()'><b>Verify_Downloaded_File</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Select_SMA_and_NPA_Categories()'><b>Select_SMA_and_NPA_Categories</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>12</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Login_to_beacon_fcm_core_application_Verify_Auto_Allocation_Page_Load()'><b>Login_to_beacon_fcm_core_application_Verify_Auto_Allocation_Page_Load</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>81</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Allocation_Name_Status_After_Creation()'><b>Verify_Allocation_Name_Status_After_Creation</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>4</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Perform_Search_with_Valid_Data()'><b>Perform_Search_with_Valid_Data</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>11</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Download_History()'><b>Verify_Download_History</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>10</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Dialer_Downloaded_File()'><b>Verify_Dialer_Downloaded_File</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>3</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Allocation_Type_Selection__Auto()'><b>Allocation_Type_Selection__Auto</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>4</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Run_Database_Package_and_Verify_Accounts_Insertion()'><b>Run_Database_Package_and_Verify_Accounts_Insertion</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>137</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Allocation_Type_Selections__Auto()'><b>Allocation_Type_Selections__Auto</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>4</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Deactivate_Allocation_Name()'><b>Deactivate_Allocation_Name</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>21</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Download_Dialer_File()'><b>Download_Dialer_File</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Login_and_Navigation_to_Manual_Allocation()'><b>Login_and_Navigation_to_Manual_Allocation</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
 <td></td>
 <td>23</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
 <tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Enter_Allocation_Name_with_Alphabets()'><b>Enter_Allocation_Name_with_Alphabets</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.SMA_Category_Dropdown_Selection()'><b>SMA_Category_Dropdown_Selection</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
+<td></td>
+<td>4</td>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
+<tr>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.OS_Balance_Field_Validation()'><b>OS_Balance_Field_Validation</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule<br>Parameters: {ActionDate=3, ActionOwnerDropdownValue=Internal User, AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, Alphabets=ABC, Alphanumeric=A1B2C3, Disposition=Connected, DownloadFile=List of Accounts - Excel, Numeric=123, OutstandingBalance=25000, OutstandingBalanceOperator==, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SubDisposition=Moratorium, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}</td>
+<td></td>
+<td>3</td>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
+<tr>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Search_Regularization_Summary()'><b>Search_Regularization_Summary</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
+<td></td>
+<td>6</td>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
+<tr>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Assign_Button_Validation_Message()'><b>Assign_Button_Validation_Message</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
+<td></td>
+<td>16</td>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
+<tr>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Regularization_Summary_Page_Dropdown_and_Search()'><b>Regularization_Summary_Page_Dropdown_and_Search</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
+<td></td>
+<td>3</td>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
+<tr>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Search_with_Mandatory_Fields()'><b>Search_with_Mandatory_Fields</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
+<td></td>
+<td>14</td>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
+<tr>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Download_the_regularization_summary_report_()'><b>Download_the_regularization_summary_report_</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
+<td></td>
+<td>9</td>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
+<tr>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Click_Search_Without_Selecting_Dropdown()'><b>Click_Search_Without_Selecting_Dropdown</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
+<td></td>
+<td>8</td>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
+<tr>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Side_Menu_Call_Centre_Listing()'><b>Side_Menu_Call_Centre_Listing</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
+<td></td>
+<td>8</td>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
+<tr>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Download_the_regularization_summary_report()'><b>Download_the_regularization_summary_report</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
 <td></td>
 <td>7</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
 <tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Select_NPA_and_SMA_Category_Checkbox()'><b>Select_NPA_and_SMA_Category_Checkbox</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>51</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Asset_category_dropdown_mandatory_checking()'><b>Asset_category_dropdown_mandatory_checking</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>8</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Select_Processing_Interval_from_Dropdown()'><b>Select_Processing_Interval_from_Dropdown</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>8</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Allocated_To_Selection__Call_Centre()'><b>Allocated_To_Selection__Call_Centre</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.NPA_Category_Dropdown_Selection()'><b>NPA_Category_Dropdown_Selection</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
 <td></td>
 <td>3</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
 <tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.NPA_Category_Selection()'><b>NPA_Category_Selection</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Click_Regularization_Summary()'><b>Click_Regularization_Summary</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
+<td></td>
+<td>5</td>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
+<tr>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.To_Field_Dropdown_Selection()'><b>To_Field_Dropdown_Selection</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule<br>Parameters: {ActionDate=3, ActionOwnerDropdownValue=Internal User, AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, Alphabets=ABC, Alphanumeric=A1B2C3, Disposition=Connected, DownloadFile=List of Accounts - Excel, Numeric=123, OutstandingBalance=25000, OutstandingBalanceOperator==, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SubDisposition=Moratorium, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}</td>
 <td></td>
 <td>3</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
 <tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Select_Zone_from_Dropdown()'><b>Select_Zone_from_Dropdown</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule<br>Parameters: {AllocatedTo=Call Centre, AllocationName=TestAllocation60, AllocationType=Auto Allocation, DialerFile=Dialer File - Excel, DownloadFile=List of Accounts - Excel, effectDate=3, InvalidMobileNoExcel=Invalid Mobile No - Excel, MobileNumber=A1299G465C, OutstandingBalance=12345, OutstandingBalanceOperator==, ProcessingInterval=Daily, Run=Yes, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre, Zone=Mumbai}</td>
-<td></td>
-<td>8</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Login_to_call_centre_application_and_take_account_filtration_pages()'><b>Login_to_call_centre_application_and_take_account_filtration_pages</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>66</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.SMA_Category_Selections()'><b>SMA_Category_Selections</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Allocate_to_Field_Dropdown_Selection()'><b>Allocate_to_Field_Dropdown_Selection</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule<br>Parameters: {ActionDate=3, ActionOwnerDropdownValue=Internal User, AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, Alphabets=ABC, Alphanumeric=A1B2C3, Disposition=Connected, DownloadFile=List of Accounts - Excel, Numeric=123, OutstandingBalance=25000, OutstandingBalanceOperator==, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SubDisposition=Moratorium, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}</td>
 <td></td>
 <td>3</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
 <tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Verify_Fields_and_Buttons_on_Auto_Allocation_Page()'><b>Verify_Fields_and_Buttons_on_Auto_Allocation_Page</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
+<td title='com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Data_Verification_in_Downloaded_File()'><b>Data_Verification_in_Downloaded_File</b><br>Test class: com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule</td>
 <td></td>
 <td>3</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Select_SMA_and_NPA_Categorie()'><b>Select_SMA_and_NPA_Categorie</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>77</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
-<tr>
-<td title='com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule.Perform_Search_with_Valid_Datas()'><b>Perform_Search_with_Valid_Datas</b><br>Test class: com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule</td>
-<td></td>
-<td>65</td>
-<td>com.test.CoreAutoAllocation_Module.AllScenarios_CoreAutoAllocationModule@24313fcc</td></tr>
+<td>com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e</td></tr>
 </table><p>
 </body>
 </html>
