@@ -14,8 +14,7 @@ public class CoreRegularizationSummaryRepo {
 	public static By downloadedMessage = By.xpath("//p[text()='File downloaded successfully']");
 	public static By TOTAL_AC_RECEIVEDcount = By.xpath("//tbody//tr//td[2]");
 	public static By downloadbtn2 = By.xpath("(//span[@class='rz-cell-data'])[7]");
-	public static By OutstandingBalLimitOperatordropdownvalue(String value) {
-        return By.xpath("(//li[@aria-label='>" + value + "'])[3]");
-    }
+	public static By Dashboard = By.xpath("//span[text()='Dashboard']");
+	public static By RegularizationSumary = By.xpath("//a[text()='Regularization Summary']");
 
 }

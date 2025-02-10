@@ -19,6 +19,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.lang.reflect.Method;
+import java.sql.SQLException;
 import java.time.Duration;
 import com.BasePackage.Base_Class;
 import com.BasePackage.DBUtils;
@@ -54,6 +55,7 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 	com.Utility.ScreenShot screenShot;
 	ExtentTest extenttest;
 	Login_Class corelogin;
+	Login_Class callcenterlogin;
 	CoreRegularizationSummaryPage coreregularizationsummarypage;
 	
 	@BeforeSuite
@@ -76,7 +78,7 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 	    driver = baseclass.getDriver();
 	    drivers.add(driver);
 	    coreregularizationsummarypage = new CoreRegularizationSummaryPage(driver);
-	    //callcenterlogin = new Login_Class();
+	    callcenterlogin = new Login_Class();
 	    // Update the ScreenShot object with the new driver
 	    screenShot = new com.Utility.ScreenShot(driver);
     // Start a new ExtentTest for the current test method
@@ -262,8 +264,33 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 		Thread.sleep(3000);
 	    }
 	    
-	 // Test to verify 'Call Centre' listing in side menu
 	    @Test(priority = 11)
+	    public void Create_entry_in_table_database() throws SQLException, ClassNotFoundException, IOException, InterruptedException {
+	    	try {
+	        // Update assignment date
+	    	String updateResult = coreregularizationsummarypage.updateAssignmentDate(); 
+	    	ExtentTestManager.getTest().log(Status.PASS, updateResult);
+	    	//System.out.println(updateResult);
+	    	
+	    	// Create entry for yesterday
+	    	String result = coreregularizationsummarypage.createEntryForYesterdayandtoday();
+	    	ExtentTestManager.getTest().log(Status.PASS, result);
+	    	//System.out.println(result);
+
+	     // Run the package and capture the result
+	        String packageExecutionResult = coreregularizationsummarypage.runPackage();
+	        ExtentTestManager.getTest().log(Status.PASS, packageExecutionResult);
+	        //System.out.println(packageExecutionResult);
+	    	}
+			catch (AssertionError | Exception e) {
+				ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+	           throw e;
+		 }
+		Thread.sleep(3000);
+	    }
+	    
+	  //Test to verify 'Call Centre' listing in side menu
+	    @Test(priority = 12)
 	    public void Side_Menu_Call_Centre_Listing() throws InterruptedException { 
 	    	try {
 	        boolean isListed = coreregularizationsummarypage.isCallCentreListed();
@@ -280,7 +307,7 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 	    }
 	    
 	 // Test method to verify the Regularization Summary is listed
-	    @Test(priority = 12)
+	    @Test(priority = 13)
 	    public void Sub_Menu_Regularization_Summary_Listing() throws InterruptedException {
 	    	try {
 	        // Assert to check if Regularization Summary is displayed in the sub menu
@@ -295,8 +322,8 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 		Thread.sleep(3000);
 	    }
 	    
-	    @Test(priority = 13)
-	    public void Click_Regularization_Summary() throws InterruptedException {
+	    @Test(priority = 14)
+	    public void Click_Regularization_Summary_() throws InterruptedException {
 	    	try {
 	        // Click the Regularization Summary link
 	    	coreregularizationsummarypage.clickRegularizationSummary();
@@ -314,7 +341,7 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 	    }
 	    
 	 // Test to verify the presence of Call Centre Dropdown and Search Button
-	    @Test(priority = 14)
+	    @Test(priority = 15)
 	    public void Regularization_Summary_Page_Dropdown_and_Search() throws InterruptedException {
 	    	try {
 	    		
@@ -330,7 +357,7 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 		Thread.sleep(3000);
 	    }
 	    
-	    @Test(priority = 15)
+	    @Test(priority = 16)
 	    public void Click_Search_Without_Selecting_Dropdown() throws InterruptedException {
 	    	try {
 	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
@@ -352,7 +379,7 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 		Thread.sleep(3000);
 	    }
 	    
-	    @Test(priority = 16, dataProvider = "TestData")
+	    @Test(priority = 17, dataProvider = "TestData")
 	    public void Dropdown_Callcentre_Name(Map<Object, Object> testdata) throws InterruptedException {
 	    	try {
 	    	if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
@@ -375,7 +402,7 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 	    }
 	    
 	 // Test method to verify the regularization summary report is displayed
-	    @Test(priority = 17)
+	    @Test(priority = 18)
 	    public void Search_Regularization_Summary() throws InterruptedException { 
 	    	
 	    	try {
@@ -394,7 +421,7 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 		Thread.sleep(3000);
 	    }
 	    
-	    @Test(priority = 18)
+	    @Test(priority = 19)
 	    public void Download_the_regularization_summary_report() throws InterruptedException {
 	    	try {
 	    	coreregularizationsummarypage.clickDownloadIcon(); 
@@ -408,7 +435,112 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 		Thread.sleep(3000);
 	    }
 	    
-	    @Test(priority = 19)
+	    @Test(priority = 20)
+	    public void Data_Verification_in_Downloaded_File_() throws IOException, InterruptedException {
+	    	try {
+	    	// Get actual values from the downloaded file
+	        List<String> actualTotalAccountsReceived = DownloadedExcelReader.getTotalACReceivedCount();
+	        ExtentTestManager.getTest().log(Status.PASS, "Opened the downloaded file");
+	        ExtentTestManager.getTest().log(Status.INFO,"'Total Account Received' from the downloaded file - " +actualTotalAccountsReceived+" ");
+	    	// Get expected values from the grid
+	    	List<String> expectedTotalAccountsReceived = coreregularizationsummarypage.getGridTotalAccountsReceived();
+	    	ExtentTestManager.getTest().log(Status.PASS, "Verified the data with the grid data.");
+	    	ExtentTestManager.getTest().log(Status.INFO,"'Received' count from the grid - " +expectedTotalAccountsReceived+" ");
+	    	
+	        // Validate the data
+	        Assert.assertEquals(actualTotalAccountsReceived, expectedTotalAccountsReceived, "Total account received does not match with grid data.");
+	        ExtentTestManager.getTest().log(Status.PASS, "Verified that the 'Total Account Received' in the downloaded file"+actualTotalAccountsReceived+" matches the 'Received' count in the grid."+expectedTotalAccountsReceived+"");
+	    	}
+			catch (AssertionError | Exception e) {
+				ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: 'Total Account Received' from the downloaded file not matching with the 'Received' count in the grid. " + e.getMessage());
+	           throw e;
+		 }
+		Thread.sleep(3000);
+	    }
+	    
+	    @Test(priority = 21)
+	    public void Download_the_regularization_summary_report_() throws InterruptedException {
+	    	try {
+	    	coreregularizationsummarypage.clickDownloadIconfromAccountCategory();
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the download icon against an account category.");
+	    	ExtentTestManager.getTest().log(Status.PASS, "File is downloaded for the account categoryselected. ");
+	    	}
+			catch (AssertionError | Exception e) {
+				ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+	           throw e;
+		 }
+		Thread.sleep(3000);
+
+	    }
+	    
+	    @Test(priority = 22)
+	    public void Validate_Downloaded_File_() throws IOException, InterruptedException {
+	    	try {
+	        // Read downloaded file content
+	        int fileContent = DownloadedExcelReader.getTotalAccountNumberCount();
+	        ExtentTestManager.getTest().log(Status.PASS, "Opened the downloaded file");
+	        ExtentTestManager.getTest().log(Status.INFO,"'Total Account Received' from the downloaded file - " +fileContent+" ");
+	        // Assume getGridData() returns the grid data
+	        List<WebElement> elements = driver.findElements(CoreRegularizationSummaryRepo.TOTAL_AC_RECEIVEDcount);
+	        String  gridData = elements.get(0).getText();
+	        ExtentTestManager.getTest().log(Status.INFO,"'Received' count from the grid - " +gridData+" ");
+	        ExtentTestManager.getTest().log(Status.PASS, "Compared the data with the grid data.");
+	        // Verify file content with grid data
+	        Assert.assertTrue(coreregularizationsummarypage.verifyFileDataWithGridData(fileContent, gridData), 
+	                          "Downloaded file data does not match grid data.");
+	        ExtentTestManager.getTest().log(Status.PASS, "Verified that the 'Total Account Received' in the downloaded file"+fileContent+" matches the 'Received' count in the grid" +gridData+" ");
+	    	}
+			catch (AssertionError | Exception e) {
+				ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: 'Total Account Received' from the downloaded file not matching with the 'Received' count in the grid." + e.getMessage());
+	           throw e;
+		 }
+		Thread.sleep(3000);
+	    }
+	    
+	    @Test(priority = 23)
+	    public void Login_to_call_centre_application() throws Exception {
+	    	try {
+	  		callcenterlogin.CallCenterLogin();
+	  		driver = baseclass.getDriver(); // Update the driver after CoreLogin
+	  		coreregularizationsummarypage = new CoreRegularizationSummaryPage(driver);
+	  		ExtentTestManager.getTest().log(Status.PASS, "Successfully opened the FCM Call Centre application and logged in with valid credentials");
+	  		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+	  		coreregularizationsummarypage.navigateToMainMenu();
+	  		ExtentTestManager.getTest().log(Status.PASS, "Navigated to the Main Menu on the dashboard");
+	  		coreregularizationsummarypage.clickRegularizationSumary();
+	  		ExtentTestManager.getTest().log(Status.PASS, "Clicked on the Regularization Summary sub-menu.");
+	        // Verify that the regularization summary report is displayed
+	        Assert.assertTrue(coreregularizationsummarypage.isRegularizationSumaryDisplayed(), "Regularization summary report is not displayed");
+	        ExtentTestManager.getTest().log(Status.PASS, "The Regularization Summary report was successfully displayed, showing the account category along with the 'Received' and 'Regularized' columns.");
+	        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+	    	}
+			catch (AssertionError | Exception e) {
+				ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: 'Total Account Received' from the downloaded file not matching with the 'Received' count in the grid." + e.getMessage());
+	           throw e;
+		 }
+		Thread.sleep(3000);
+	    }
+	    
+	    @Test(priority = 24)
+	    public void Click_Regularization_Summary() throws InterruptedException {
+	    	try {
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+	        // Preconditions: Ensure regularization summary is displayed
+	    	coreregularizationsummarypage.clickDownlodIcon(); // Step 1: Click on the download icon
+	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked on the download icon against the Regularization Summary title.");
+	    	wait.until(ExpectedConditions.visibilityOfElementLocated(CoreRegularizationSummaryRepo.downloadedMessage));
+	    	ExtentTestManager.getTest().log(Status.PASS, "File with Account Category,Received,regularized column data is downloaded.");
+	    	wait.until(ExpectedConditions.invisibilityOfElementLocated(CoreRegularizationSummaryRepo.downloadedMessage));
+	    	wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+	    	}
+			catch (AssertionError | Exception e) {
+				ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: 'Total Account Received' from the downloaded file not matching with the 'Received' count in the grid." + e.getMessage());
+	           throw e;
+		 }
+		Thread.sleep(3000);
+	    }
+	    
+	    @Test(priority = 25)
 	    public void Data_Verification_in_Downloaded_File() throws IOException, InterruptedException {
 	    	try {
 	    	// Get actual values from the downloaded file
@@ -431,8 +563,8 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 		Thread.sleep(3000);
 	    }
 	    
-	    @Test(priority = 20)
-	    public void Download_the_regularization_summary_report_() throws InterruptedException {
+	    @Test(priority = 26)
+	    public void Download_regularization_Summary() throws InterruptedException {
 	    	try {
 	    	coreregularizationsummarypage.clickDownloadIconfromAccountCategory();
 	    	ExtentTestManager.getTest().log(Status.PASS, "Clicked the download icon against an account category.");
@@ -446,7 +578,7 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 
 	    }
 	    
-	    @Test(priority = 21)
+	    @Test(priority = 27)
 	    public void Validate_Downloaded_File() throws IOException, InterruptedException {
 	    	try {
 	        // Read downloaded file content

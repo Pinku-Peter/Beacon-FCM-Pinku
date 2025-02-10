@@ -197,4 +197,50 @@ public class DBUtils {
         }
         return result;
     }
+    
+    public static String executeUpdateQuery(String updateQuery) 
+            throws SQLException, ClassNotFoundException, IOException {
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        String result = null;
+
+        try {
+            // Establish the database connection
+            con = Base_Class.OracleDBConnection();
+
+            // Disable auto-commit (if necessary)
+            con.setAutoCommit(false);
+
+            // Prepare the SQL statement
+            pstmt = con.prepareStatement(updateQuery);
+
+            // Execute the UPDATE statement
+            int affectedRows = pstmt.executeUpdate();
+
+            // Commit the changes
+            con.commit();
+
+            // Return success message
+            result = "Update query executed successfully. Rows affected: " + affectedRows;
+        } catch (SQLException e) {
+            if (con != null) {
+                try {
+                    con.rollback(); // Rollback in case of error
+                } catch (SQLException ex) {
+                    System.err.println("Rollback failed: " + ex.getMessage());
+                }
+            }
+            e.printStackTrace();
+            throw e; // Rethrow exception for further handling
+        } finally {
+            // Close resources
+            if (pstmt != null) {
+                pstmt.close();
+            }
+            if (con != null) {
+                con.close();
+            }
+        }
+        return result;
+    }
 }

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="21" passed="20" failed="1" skipped="0">
+<testng-results ignored="0" total="27" passed="27" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-05T18:40:07 IST" name="Default suite" finished-at="2025-02-05T18:42:38 IST" duration-ms="150761">
+  <suite started-at="2025-02-10T17:40:37 IST" name="Default suite" finished-at="2025-02-10T17:46:12 IST" duration-ms="335078">
     <groups>
     </groups>
-    <test started-at="2025-02-05T18:40:07 IST" name="Default test" finished-at="2025-02-05T18:42:38 IST" duration-ms="150761">
+    <test started-at="2025-02-10T17:40:37 IST" name="Default test" finished-at="2025-02-10T17:46:12 IST" duration-ms="335078">
       <class name="com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:38:56 IST" name="SetUp" finished-at="2025-02-05T18:40:07 IST" duration-ms="70465" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:39:12 IST" name="SetUp" finished-at="2025-02-10T17:40:37 IST" duration-ms="84852" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:07 IST" name="setupTest" finished-at="2025-02-05T18:40:07 IST" duration-ms="146" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:40:37 IST" name="setupTest" finished-at="2025-02-10T17:40:38 IST" duration-ms="216" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,22 +22,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Login_and_Navigation_to_Manual_Allocation()[pri:1, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:07 IST" name="Login_and_Navigation_to_Manual_Allocation" finished-at="2025-02-05T18:40:31 IST" duration-ms="23491" status="PASS">
+        <test-method signature="Login_and_Navigation_to_Manual_Allocation()[pri:1, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:40:38 IST" name="Login_and_Navigation_to_Manual_Allocation" finished-at="2025-02-10T17:41:01 IST" duration-ms="23169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_and_Navigation_to_Manual_Allocation -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:31 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:40:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:01 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:41:01 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login_and_Navigation_to_Manual_Allocation status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Login_and_Navigation_to_Manual_Allocation()[pri:1, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Login_and_Navigation_to_Manual_Allocation status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Login_and_Navigation_to_Manual_Allocation()[pri:1, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:31 IST" name="setupTest" finished-at="2025-02-05T18:40:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:01 IST" name="setupTest" finished-at="2025-02-10T17:41:01 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,22 +48,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Asset_Category_SMA_and_NPA_Selection()[pri:2, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:31 IST" name="Asset_Category_SMA_and_NPA_Selection" finished-at="2025-02-05T18:40:44 IST" duration-ms="13790" status="PASS">
+        <test-method signature="Asset_Category_SMA_and_NPA_Selection()[pri:2, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:01 IST" name="Asset_Category_SMA_and_NPA_Selection" finished-at="2025-02-10T17:41:15 IST" duration-ms="13915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Asset_Category_SMA_and_NPA_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:44 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:40:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:15 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:41:15 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Asset_Category_SMA_and_NPA_Selection status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Asset_Category_SMA_and_NPA_Selection()[pri:2, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Asset_Category_SMA_and_NPA_Selection status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Asset_Category_SMA_and_NPA_Selection()[pri:2, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:44 IST" name="setupTest" finished-at="2025-02-05T18:40:44 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:15 IST" name="setupTest" finished-at="2025-02-10T17:41:15 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,22 +74,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="SMA_Category_Dropdown_Selection()[pri:3, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:44 IST" name="SMA_Category_Dropdown_Selection" finished-at="2025-02-05T18:40:49 IST" duration-ms="4234" status="PASS">
+        <test-method signature="SMA_Category_Dropdown_Selection()[pri:3, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:15 IST" name="SMA_Category_Dropdown_Selection" finished-at="2025-02-10T17:41:19 IST" duration-ms="4324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SMA_Category_Dropdown_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:49 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:40:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:19 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:41:19 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SMA_Category_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.SMA_Category_Dropdown_Selection()[pri:3, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=SMA_Category_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.SMA_Category_Dropdown_Selection()[pri:3, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:49 IST" name="setupTest" finished-at="2025-02-05T18:40:49 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:19 IST" name="setupTest" finished-at="2025-02-10T17:41:19 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,22 +100,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="NPA_Category_Dropdown_Selection()[pri:4, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:49 IST" name="NPA_Category_Dropdown_Selection" finished-at="2025-02-05T18:40:52 IST" duration-ms="3257" status="PASS">
+        <test-method signature="NPA_Category_Dropdown_Selection()[pri:4, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:19 IST" name="NPA_Category_Dropdown_Selection" finished-at="2025-02-10T17:41:22 IST" duration-ms="3365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NPA_Category_Dropdown_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:52 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:40:52 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:22 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:41:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=NPA_Category_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.NPA_Category_Dropdown_Selection()[pri:4, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=NPA_Category_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.NPA_Category_Dropdown_Selection()[pri:4, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:53 IST" name="setupTest" finished-at="2025-02-05T18:40:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:23 IST" name="setupTest" finished-at="2025-02-10T17:41:23 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,29 +126,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="OS_Balance_Field_Validation(java.util.Map)[pri:5, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:53 IST" name="OS_Balance_Field_Validation" data-provider="TestData" finished-at="2025-02-05T18:40:56 IST" duration-ms="3617" status="PASS">
+        <test-method signature="OS_Balance_Field_Validation(java.util.Map)[pri:5, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:23 IST" name="OS_Balance_Field_Validation" data-provider="TestData" finished-at="2025-02-10T17:41:27 IST" duration-ms="3664" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionDate=3, ActionOwnerDropdownValue=Internal User, AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, Alphabets=ABC, Alphanumeric=A1B2C3, Disposition=Connected, DownloadFile=List of Accounts - Excel, Numeric=123, OutstandingBalance=25000, OutstandingBalanceOperator==, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SubDisposition=Moratorium, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+                <![CDATA[{AllocateTo=Call Centre, OutstandingBalance=25000, OutstandingBalanceOperator==, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OS_Balance_Field_Validation -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:56 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:40:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:27 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:41:27 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=OS_Balance_Field_Validation status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.OS_Balance_Field_Validation(java.util.Map)[pri:5, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=OS_Balance_Field_Validation status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.OS_Balance_Field_Validation(java.util.Map)[pri:5, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:56 IST" name="setupTest" finished-at="2025-02-05T18:40:57 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:27 IST" name="setupTest" finished-at="2025-02-10T17:41:27 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -159,29 +159,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="To_Field_Dropdown_Selection(java.util.Map)[pri:6, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:40:57 IST" name="To_Field_Dropdown_Selection" data-provider="TestData" finished-at="2025-02-05T18:41:00 IST" duration-ms="3357" status="PASS">
+        <test-method signature="To_Field_Dropdown_Selection(java.util.Map)[pri:6, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:27 IST" name="To_Field_Dropdown_Selection" data-provider="TestData" finished-at="2025-02-10T17:41:31 IST" duration-ms="3478" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionDate=3, ActionOwnerDropdownValue=Internal User, AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, Alphabets=ABC, Alphanumeric=A1B2C3, Disposition=Connected, DownloadFile=List of Accounts - Excel, Numeric=123, OutstandingBalance=25000, OutstandingBalanceOperator==, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SubDisposition=Moratorium, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+                <![CDATA[{AllocateTo=Call Centre, OutstandingBalance=25000, OutstandingBalanceOperator==, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- To_Field_Dropdown_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:00 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:41:00 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=To_Field_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.To_Field_Dropdown_Selection(java.util.Map)[pri:6, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:00 IST" name="setupTest" finished-at="2025-02-05T18:41:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:31 IST" name="setupTest" finished-at="2025-02-10T17:41:31 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -192,22 +181,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Search_with_Mandatory_Fields()[pri:7, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:00 IST" name="Search_with_Mandatory_Fields" finished-at="2025-02-05T18:41:14 IST" duration-ms="14293" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_with_Mandatory_Fields -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:14 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:41:14 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:31 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:41:31 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Search_with_Mandatory_Fields status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Search_with_Mandatory_Fields()[pri:7, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=To_Field_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.To_Field_Dropdown_Selection(java.util.Map)[pri:6, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:14 IST" name="setupTest" finished-at="2025-02-05T18:41:14 IST" duration-ms="2" status="PASS">
+        <test-method signature="Search_with_Mandatory_Fields()[pri:7, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:31 IST" name="Search_with_Mandatory_Fields" finished-at="2025-02-10T17:41:47 IST" duration-ms="16634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_with_Mandatory_Fields -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:47 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:41:47 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Search_with_Mandatory_Fields status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Search_with_Mandatory_Fields()[pri:7, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:47 IST" name="setupTest" finished-at="2025-02-10T17:41:47 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -218,29 +218,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Allocate_to_Field_Dropdown_Selection(java.util.Map)[pri:8, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:14 IST" name="Allocate_to_Field_Dropdown_Selection" data-provider="TestData" finished-at="2025-02-05T18:41:18 IST" duration-ms="3281" status="PASS">
+        <test-method signature="Allocate_to_Field_Dropdown_Selection(java.util.Map)[pri:8, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:47 IST" name="Allocate_to_Field_Dropdown_Selection" data-provider="TestData" finished-at="2025-02-10T17:41:51 IST" duration-ms="3298" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionDate=3, ActionOwnerDropdownValue=Internal User, AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, Alphabets=ABC, Alphanumeric=A1B2C3, Disposition=Connected, DownloadFile=List of Accounts - Excel, Numeric=123, OutstandingBalance=25000, OutstandingBalanceOperator==, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SubDisposition=Moratorium, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+                <![CDATA[{AllocateTo=Call Centre, OutstandingBalance=25000, OutstandingBalanceOperator==, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Allocate_to_Field_Dropdown_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:18 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:41:18 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:51 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:41:51 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Allocate_to_Field_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Allocate_to_Field_Dropdown_Selection(java.util.Map)[pri:8, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Allocate_to_Field_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Allocate_to_Field_Dropdown_Selection(java.util.Map)[pri:8, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:18 IST" name="setupTest" finished-at="2025-02-05T18:41:18 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:51 IST" name="setupTest" finished-at="2025-02-10T17:41:51 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -251,29 +251,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Select_Call_Centre_Field_Dropdown_Selection(java.util.Map)[pri:9, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:18 IST" name="Select_Call_Centre_Field_Dropdown_Selection" data-provider="TestData" finished-at="2025-02-05T18:41:21 IST" duration-ms="3345" status="PASS">
+        <test-method signature="Select_Call_Centre_Field_Dropdown_Selection(java.util.Map)[pri:9, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:51 IST" name="Select_Call_Centre_Field_Dropdown_Selection" data-provider="TestData" finished-at="2025-02-10T17:41:54 IST" duration-ms="3347" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionDate=3, ActionOwnerDropdownValue=Internal User, AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, Alphabets=ABC, Alphanumeric=A1B2C3, Disposition=Connected, DownloadFile=List of Accounts - Excel, Numeric=123, OutstandingBalance=25000, OutstandingBalanceOperator==, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SubDisposition=Moratorium, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+                <![CDATA[{AllocateTo=Call Centre, OutstandingBalance=25000, OutstandingBalanceOperator==, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_Call_Centre_Field_Dropdown_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:21 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:41:21 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Select_Call_Centre_Field_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Select_Call_Centre_Field_Dropdown_Selection(java.util.Map)[pri:9, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:21 IST" name="setupTest" finished-at="2025-02-05T18:41:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:54 IST" name="setupTest" finished-at="2025-02-10T17:41:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -284,22 +273,59 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Assign_Button_Validation_Message()[pri:10, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:21 IST" name="Assign_Button_Validation_Message" finished-at="2025-02-05T18:41:38 IST" duration-ms="16908" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Assign_Button_Validation_Message -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:38 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:41:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:54 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:41:54 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Assign_Button_Validation_Message status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Assign_Button_Validation_Message()[pri:10, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Select_Call_Centre_Field_Dropdown_Selection status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Select_Call_Centre_Field_Dropdown_Selection(java.util.Map)[pri:9, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:38 IST" name="setupTest" finished-at="2025-02-05T18:41:38 IST" duration-ms="2" status="PASS">
+        <test-method signature="Assign_Button_Validation_Message()[pri:10, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:41:54 IST" name="Assign_Button_Validation_Message" finished-at="2025-02-10T17:42:11 IST" duration-ms="17228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Assign_Button_Validation_Message -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:42:11 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:42:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Assign_Button_Validation_Message status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Assign_Button_Validation_Message()[pri:10, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:42:11 IST" name="setupTest" finished-at="2025-02-10T17:42:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Create_entry_in_table_database() throws java.sql.SQLException,java.lang.ClassNotFoundException,java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Create_entry_in_table_database()[pri:11, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:42:11 IST" name="Create_entry_in_table_database" finished-at="2025-02-10T17:43:46 IST" duration-ms="94967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_entry_in_table_database -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:43:46 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:43:46 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Create_entry_in_table_database status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Create_entry_in_table_database()[pri:11, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:43:46 IST" name="setupTest" finished-at="2025-02-10T17:43:46 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -310,22 +336,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Side_Menu_Call_Centre_Listing()[pri:11, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:38 IST" name="Side_Menu_Call_Centre_Listing" finished-at="2025-02-05T18:41:46 IST" duration-ms="8641" status="PASS">
+        <test-method signature="Side_Menu_Call_Centre_Listing()[pri:12, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:43:46 IST" name="Side_Menu_Call_Centre_Listing" finished-at="2025-02-10T17:43:55 IST" duration-ms="8522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Side_Menu_Call_Centre_Listing -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:46 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:41:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:43:55 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:43:55 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Side_Menu_Call_Centre_Listing status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Side_Menu_Call_Centre_Listing()[pri:11, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Side_Menu_Call_Centre_Listing status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Side_Menu_Call_Centre_Listing()[pri:12, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:46 IST" name="setupTest" finished-at="2025-02-05T18:41:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:43:55 IST" name="setupTest" finished-at="2025-02-10T17:43:55 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -336,48 +362,48 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Sub_Menu_Regularization_Summary_Listing()[pri:12, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:47 IST" name="Sub_Menu_Regularization_Summary_Listing" finished-at="2025-02-05T18:41:50 IST" duration-ms="3119" status="PASS">
+        <test-method signature="Sub_Menu_Regularization_Summary_Listing()[pri:13, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:43:55 IST" name="Sub_Menu_Regularization_Summary_Listing" finished-at="2025-02-10T17:43:58 IST" duration-ms="3129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Sub_Menu_Regularization_Summary_Listing -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:50 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:41:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:43:58 IST" name="setupTest" finished-at="2025-02-10T17:43:58 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Sub_Menu_Regularization_Summary_Listing status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Sub_Menu_Regularization_Summary_Listing()[pri:12, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:50 IST" name="setupTest" finished-at="2025-02-05T18:41:50 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Click_Regularization_Summary() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Click_Regularization_Summary_() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Click_Regularization_Summary()[pri:13, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:50 IST" name="Click_Regularization_Summary" finished-at="2025-02-05T18:41:56 IST" duration-ms="5888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Click_Regularization_Summary -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:56 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:41:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:43:58 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:43:58 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Click_Regularization_Summary status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Click_Regularization_Summary()[pri:13, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Sub_Menu_Regularization_Summary_Listing status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Sub_Menu_Regularization_Summary_Listing()[pri:13, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:56 IST" name="setupTest" finished-at="2025-02-05T18:41:56 IST" duration-ms="2" status="PASS">
+        <test-method signature="Click_Regularization_Summary_()[pri:14, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:43:58 IST" name="Click_Regularization_Summary_" finished-at="2025-02-10T17:44:04 IST" duration-ms="6505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_Regularization_Summary_ -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:04 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:44:04 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Click_Regularization_Summary_ status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Click_Regularization_Summary_()[pri:14, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:04 IST" name="setupTest" finished-at="2025-02-10T17:44:04 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -388,11 +414,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Regularization_Summary_Page_Dropdown_and_Search()[pri:14, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:56 IST" name="Regularization_Summary_Page_Dropdown_and_Search" finished-at="2025-02-05T18:41:59 IST" duration-ms="3053" status="PASS">
+        <test-method signature="Regularization_Summary_Page_Dropdown_and_Search()[pri:15, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:04 IST" name="Regularization_Summary_Page_Dropdown_and_Search" finished-at="2025-02-10T17:44:07 IST" duration-ms="3051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Regularization_Summary_Page_Dropdown_and_Search -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:59 IST" name="setupTest" finished-at="2025-02-05T18:41:59 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:07 IST" name="setupTest" finished-at="2025-02-10T17:44:07 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -403,33 +429,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:59 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:41:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:07 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:44:07 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Regularization_Summary_Page_Dropdown_and_Search status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Regularization_Summary_Page_Dropdown_and_Search()[pri:14, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Regularization_Summary_Page_Dropdown_and_Search status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Regularization_Summary_Page_Dropdown_and_Search()[pri:15, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="Click_Search_Without_Selecting_Dropdown()[pri:15, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:41:59 IST" name="Click_Search_Without_Selecting_Dropdown" finished-at="2025-02-05T18:42:07 IST" duration-ms="8470" status="PASS">
+        <test-method signature="Click_Search_Without_Selecting_Dropdown()[pri:16, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:07 IST" name="Click_Search_Without_Selecting_Dropdown" finished-at="2025-02-10T17:44:16 IST" duration-ms="8472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_Search_Without_Selecting_Dropdown -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:07 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:42:07 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:16 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:44:16 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Click_Search_Without_Selecting_Dropdown status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Click_Search_Without_Selecting_Dropdown()[pri:15, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Click_Search_Without_Selecting_Dropdown status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Click_Search_Without_Selecting_Dropdown()[pri:16, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:07 IST" name="setupTest" finished-at="2025-02-05T18:42:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:16 IST" name="setupTest" finished-at="2025-02-10T17:44:16 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -440,29 +466,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Dropdown_Callcentre_Name(java.util.Map)[pri:16, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:07 IST" name="Dropdown_Callcentre_Name" data-provider="TestData" finished-at="2025-02-05T18:42:10 IST" duration-ms="3205" status="PASS">
+        <test-method signature="Dropdown_Callcentre_Name(java.util.Map)[pri:17, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:16 IST" name="Dropdown_Callcentre_Name" data-provider="TestData" finished-at="2025-02-10T17:44:19 IST" duration-ms="3227" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ActionDate=3, ActionOwnerDropdownValue=Internal User, AllocatedTo=Call Centre, AllocateTo=Call Centre, AllocationType=Manual Allocation, Alphabets=ABC, Alphanumeric=A1B2C3, Disposition=Connected, DownloadFile=List of Accounts - Excel, Numeric=123, OutstandingBalance=25000, OutstandingBalanceOperator==, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SubDisposition=Moratorium, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
+                <![CDATA[{AllocateTo=Call Centre, OutstandingBalance=25000, OutstandingBalanceOperator==, Run=Yes, SelectCallCentre=CallCentre 1, TestScenario=Call_Centre_Auto_Allocation, To=Call Centre}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Dropdown_Callcentre_Name -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:10 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:42:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:19 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:44:19 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Dropdown_Callcentre_Name status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Dropdown_Callcentre_Name(java.util.Map)[pri:16, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Dropdown_Callcentre_Name status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Dropdown_Callcentre_Name(java.util.Map)[pri:17, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:10 IST" name="setupTest" finished-at="2025-02-05T18:42:10 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:19 IST" name="setupTest" finished-at="2025-02-10T17:44:19 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -473,26 +499,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Search_Regularization_Summary()[pri:17, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:10 IST" name="Search_Regularization_Summary" finished-at="2025-02-05T18:42:17 IST" duration-ms="6226" status="PASS">
+        <test-method signature="Search_Regularization_Summary()[pri:18, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:19 IST" name="Search_Regularization_Summary" finished-at="2025-02-10T17:44:25 IST" duration-ms="5818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Regularization_Summary -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:17 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:42:17 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:25 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:44:25 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Search_Regularization_Summary status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Search_Regularization_Summary()[pri:17, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Search_Regularization_Summary status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Search_Regularization_Summary()[pri:18, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="Download_the_regularization_summary_report()[pri:18, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:17 IST" name="Download_the_regularization_summary_report" finished-at="2025-02-05T18:42:24 IST" duration-ms="7927" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Download_the_regularization_summary_report -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:17 IST" name="setupTest" finished-at="2025-02-05T18:42:17 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:25 IST" name="setupTest" finished-at="2025-02-10T17:44:25 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -503,33 +525,48 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:24 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:42:24 IST" duration-ms="0" status="PASS">
+        <test-method signature="Download_the_regularization_summary_report()[pri:19, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:25 IST" name="Download_the_regularization_summary_report" finished-at="2025-02-10T17:44:32 IST" duration-ms="6906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Download_the_regularization_summary_report -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:32 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:44:32 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Download_the_regularization_summary_report status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Download_the_regularization_summary_report()[pri:18, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Download_the_regularization_summary_report status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Download_the_regularization_summary_report()[pri:19, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:24 IST" name="setupTest" finished-at="2025-02-05T18:42:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:32 IST" name="setupTest" finished-at="2025-02-10T17:44:32 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Data_Verification_in_Downloaded_File() throws java.io.IOException,java.lang.InterruptedException]]>
+                <![CDATA[public void com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Data_Verification_in_Downloaded_File_() throws java.io.IOException,java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Data_Verification_in_Downloaded_File()[pri:19, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:24 IST" name="Data_Verification_in_Downloaded_File" finished-at="2025-02-05T18:42:28 IST" duration-ms="3260" status="PASS">
+        <test-method signature="Data_Verification_in_Downloaded_File_()[pri:20, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:32 IST" name="Data_Verification_in_Downloaded_File_" finished-at="2025-02-10T17:44:35 IST" duration-ms="3261" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Data_Verification_in_Downloaded_File -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:28 IST" name="setupTest" finished-at="2025-02-05T18:42:28 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- Data_Verification_in_Downloaded_File_ -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:35 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:44:35 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Data_Verification_in_Downloaded_File_ status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Data_Verification_in_Downloaded_File_()[pri:20, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:35 IST" name="setupTest" finished-at="2025-02-10T17:44:35 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -540,33 +577,152 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:28 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:42:28 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Data_Verification_in_Downloaded_File status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Data_Verification_in_Downloaded_File()[pri:19, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="Download_the_regularization_summary_report_()[pri:20, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:28 IST" name="Download_the_regularization_summary_report_" finished-at="2025-02-05T18:42:37 IST" duration-ms="9517" status="PASS">
+        <test-method signature="Download_the_regularization_summary_report_()[pri:21, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:35 IST" name="Download_the_regularization_summary_report_" finished-at="2025-02-10T17:44:42 IST" duration-ms="6885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Download_the_regularization_summary_report_ -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:37 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:42:37 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:42 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:44:42 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Download_the_regularization_summary_report_ status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Download_the_regularization_summary_report_()[pri:20, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Download_the_regularization_summary_report_ status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Download_the_regularization_summary_report_()[pri:21, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:37 IST" name="setupTest" finished-at="2025-02-05T18:42:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:42 IST" name="setupTest" finished-at="2025-02-10T17:44:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Validate_Downloaded_File_() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Validate_Downloaded_File_()[pri:22, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:42 IST" name="Validate_Downloaded_File_" finished-at="2025-02-10T17:44:45 IST" duration-ms="3204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Downloaded_File_ -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:45 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:44:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Validate_Downloaded_File_ status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Validate_Downloaded_File_()[pri:22, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:45 IST" name="setupTest" finished-at="2025-02-10T17:44:45 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Login_to_call_centre_application() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Login_to_call_centre_application()[pri:23, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:44:45 IST" name="Login_to_call_centre_application" finished-at="2025-02-10T17:45:48 IST" duration-ms="62434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_to_call_centre_application -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:45:48 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:45:48 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login_to_call_centre_application status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Login_to_call_centre_application()[pri:23, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:45:48 IST" name="setupTest" finished-at="2025-02-10T17:45:48 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Click_Regularization_Summary() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Click_Regularization_Summary()[pri:24, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:45:48 IST" name="Click_Regularization_Summary" finished-at="2025-02-10T17:46:00 IST" duration-ms="12089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_Regularization_Summary -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:46:00 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:46:00 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Click_Regularization_Summary status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Click_Regularization_Summary()[pri:24, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:46:00 IST" name="setupTest" finished-at="2025-02-10T17:46:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Data_Verification_in_Downloaded_File() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Data_Verification_in_Downloaded_File()[pri:25, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:46:00 IST" name="Data_Verification_in_Downloaded_File" finished-at="2025-02-10T17:46:03 IST" duration-ms="3141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Data_Verification_in_Downloaded_File -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:46:03 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:46:03 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Data_Verification_in_Downloaded_File status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Data_Verification_in_Downloaded_File()[pri:25, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:46:03 IST" name="setupTest" finished-at="2025-02-10T17:46:03 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Download_regularization_Summary() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Download_regularization_Summary()[pri:26, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:46:03 IST" name="Download_regularization_Summary" finished-at="2025-02-10T17:46:09 IST" duration-ms="6308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Download_regularization_Summary -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:46:09 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:46:09 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Download_regularization_Summary status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Download_regularization_Summary()[pri:26, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:46:09 IST" name="setupTest" finished-at="2025-02-10T17:46:09 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -577,61 +733,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Downloaded_File()[pri:21, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:37 IST" name="Validate_Downloaded_File" finished-at="2025-02-05T18:42:38 IST" duration-ms="241" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Downloaded file data does not match grid data. expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Downloaded file data does not match grid data. expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule.Validate_Downloaded_File(AllScenarios_CoreRegularizationSummaryModule.java:462)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="Validate_Downloaded_File()[pri:27, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:46:09 IST" name="Validate_Downloaded_File" finished-at="2025-02-10T17:46:12 IST" duration-ms="3187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_Downloaded_File -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:38 IST" name="takeScreenshotOnFailure" finished-at="2025-02-05T18:42:38 IST" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:46:12 IST" name="takeScreenshotOnFailure" finished-at="2025-02-10T17:46:12 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Validate_Downloaded_File status=FAILURE method=AllScenarios_CoreRegularizationSummaryModule.Validate_Downloaded_File()[pri:21, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e] output={null}]]]>
+                <![CDATA[[TestResult name=Validate_Downloaded_File status=SUCCESS method=AllScenarios_CoreRegularizationSummaryModule.Validate_Downloaded_File()[pri:27, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@b3ca52e]" started-at="2025-02-05T18:42:38 IST" name="afterEachTest" finished-at="2025-02-05T18:42:39 IST" duration-ms="1033" status="PASS">
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule@18f8cd79]" started-at="2025-02-10T17:46:12 IST" name="afterEachTest" finished-at="2025-02-10T17:46:15 IST" duration-ms="2041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->

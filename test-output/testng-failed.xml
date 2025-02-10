@@ -5,11 +5,31 @@
     <classes>
       <class name="com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule">
         <methods>
+          <include name="Sub_Menu_Regularization_Summary_Listing"/>
+          <include name="Allocate_to_Field_Dropdown_Selection" invocation-numbers="0"/>
+          <include name="Download_regularization_Summary"/>
+          <include name="Regularization_Summary_Page_Dropdown_and_Search"/>
+          <include name="Download_the_regularization_summary_report_"/>
+          <include name="Search_Regularization_Summary"/>
+          <include name="Login_to_call_centre_application"/>
+          <include name="Data_Verification_in_Downloaded_File_"/>
+          <include name="Click_Search_Without_Selecting_Dropdown"/>
+          <include name="setupTest"/>
+          <include name="Download_the_regularization_summary_report"/>
           <include name="SetUp"/>
+          <include name="Click_Regularization_Summary_"/>
+          <include name="Search_with_Mandatory_Fields"/>
+          <include name="Side_Menu_Call_Centre_Listing"/>
+          <include name="Dropdown_Callcentre_Name"/>
+          <include name="Select_Call_Centre_Field_Dropdown_Selection" invocation-numbers="0"/>
+          <include name="Validate_Downloaded_File"/>
+          <include name="Data_Verification_in_Downloaded_File"/>
           <include name="takeScreenshotOnFailure"/>
           <include name="afterEachTest"/>
-          <include name="setupTest"/>
-          <include name="Validate_Downloaded_File"/>
+          <include name="Assign_Button_Validation_Message"/>
+          <include name="Validate_Downloaded_File_"/>
+          <include name="Click_Regularization_Summary"/>
+          <include name="Create_entry_in_table_database"/>
         </methods>
       </class> <!-- com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule -->
     </classes>

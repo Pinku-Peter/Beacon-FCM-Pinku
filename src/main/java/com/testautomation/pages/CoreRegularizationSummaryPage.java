@@ -19,8 +19,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.BasePackage.Base_Class;
+import com.BasePackage.DBUtils;
 import com.BasePackage.DownloadedExcelReader;
 import com.BasePackage.DownloadedExcelReader.DataSummary;
+import com.BasePackage.ExecuteStoredProcedure;
 import com.Page_Repository.CoreAutoAllocationRepo;
 import com.Page_Repository.CoreManualAllocationRepo;
 import com.Page_Repository.CoreRegularizationSummaryRepo;
@@ -355,6 +357,131 @@ private WebDriver driver;
        return messageText;
    }
    
+   // Method to update assignment date
+   public String  updateAssignmentDate() throws SQLException, ClassNotFoundException, IOException {
+	   String UPDATE_ASSIGNMENT_DATE_QUERY = 
+	"UPDATE mst_callcentre_accounts SET assignment_date = TRUNC(SYSDATE - 1) WHERE TRUNC(assignment_date) = TRUNC(SYSDATE)";
+	// Log the start of the method
+	    Log.info("Starting the process to update assignment date...");
+
+	    // Log the query being executed
+	    Log.info("Executing the query: " + UPDATE_ASSIGNMENT_DATE_QUERY);
+
+	    try {
+	        // Log before executing the update query
+	        Log.info("Executing the update query...");
+
+	        // Call the method to execute the query and capture the result
+	        String result = DBUtils.executeUpdateQuery(UPDATE_ASSIGNMENT_DATE_QUERY);
+
+	        // Log the successful execution of the update query
+	        Log.info("Query executed successfully.");
+
+	        // Return the result after execution
+	        return result;
+	    } catch (SQLException e) {
+	        // Log SQL exceptions with error message
+	        Log.error("SQL Exception occurred: " + e.getMessage());
+	        e.printStackTrace();
+	        return "SQL Exception: " + e.getMessage();
+	    } catch (ClassNotFoundException e) {
+	        // Log ClassNotFoundException with error message
+	        Log.error("Database driver class not found: " + e.getMessage());
+	        e.printStackTrace();
+	        return "Database driver class not found: " + e.getMessage();
+	    } catch (IOException e) {
+	        // Log I/O exceptions with error message
+	        Log.error("I/O error occurred: " + e.getMessage());
+	        e.printStackTrace();
+	        return "I/O error occurred: " + e.getMessage();
+	    } catch (Exception e) {
+	        // Log unexpected exceptions with error message
+	        Log.error("Unexpected error occurred: " + e.getMessage());
+	        e.printStackTrace();
+	        return "Unexpected error: " + e.getMessage();
+	    } finally {
+	        // Log that the method has finished
+	        Log.info("Finished updating assignment date.");
+	    }
+	}
+
+    //Method to create an entry for yesterday's and today's dates
+   public String createEntryForYesterdayandtoday() throws SQLException, IOException {
+	// Log the start of the method execution
+	    Log.info("Starting the process to create entry for yesterday and today...");
+
+	    // Log the stored procedure name that will be executed
+	    String storedProcName = "SP_INSERT_TRN_AC_MOVEMENT";
+	    Log.info("Executing stored procedure: " + storedProcName);
+
+	    try {
+	        // Call the stored procedure and capture the result
+	        String result = ExecuteStoredProcedure.executeStoredProc(storedProcName);
+
+	        // Log the result from the stored procedure execution
+	        Log.info("Stored procedure executed successfully. Result: " + result);
+
+	        // Print the response
+	        System.out.println("Stored Procedure Response: " + result);
+
+	        // Return the result
+	        return result;
+	    } catch (IOException e) {
+	        // Log any I/O exceptions
+	        Log.error("I/O error occurred while executing stored procedure: " + e.getMessage());
+	        e.printStackTrace();
+	        return "I/O error occurred: " + e.getMessage();
+	    } catch (Exception e) {
+	        // Log any unexpected exceptions
+	        Log.error("Unexpected error occurred while executing stored procedure: " + e.getMessage());
+	        e.printStackTrace();
+	        return "Unexpected error: " + e.getMessage();
+	    } finally {
+	        // Log the end of the method execution
+	        Log.info("Finished executing the stored procedure for creating entry for yesterday and today.");
+	    }
+   }
+
+   // Method to run package
+   public String  runPackage() throws SQLException, IOException {
+	// Log the start of the method execution
+	    Log.info("Starting the process to run the package ALLOCATION_DASHBOARD_DATA_LOAD_PKG.SPPROCESSCALLCENETERREGULARIZATIONSUMMARY...");
+
+	    // Define the stored procedure name
+	    String storedProcName = "ALLOCATION_DASHBOARD_DATA_LOAD_PKG.SPPROCESSCALLCENETERREGULARIZATIONSUMMARY";
+	    
+	    // Log the stored procedure name that will be executed
+	    Log.info("Executing stored procedure: " + storedProcName);
+
+	    try {
+	        // Call the stored procedure and capture the result
+	        String result = ExecuteStoredProcedure.executeStoredProce(storedProcName);
+
+	        // Log the result from the stored procedure execution
+	        Log.info("Stored procedure executed successfully. Result: " + result);
+
+	        // Print the response (optional)
+	        System.out.println("Stored Procedure Response: " + result);
+
+	        // Return the result
+	        return result;
+
+	    } catch (IOException e) {
+	        // Log any I/O exceptions
+	        Log.error("I/O error occurred while executing stored procedure: " + e.getMessage());
+	        e.printStackTrace();
+	        return "I/O error occurred: " + e.getMessage();
+	    } catch (Exception e) {
+	        // Log any unexpected exceptions
+	        Log.error("Unexpected error occurred while executing stored procedure: " + e.getMessage());
+	        e.printStackTrace();
+	        return "Unexpected error: " + e.getMessage();
+	    } finally {
+	        // Log the end of the method execution
+	        Log.info("Finished executing the stored procedure for ALLOCATION_DASHBOARD_DATA_LOAD_PKG.SPPROCESSCALLCENETERREGULARIZATIONSUMMARY.");
+	    }
+   }
+   
 // Method to check if 'Call Centre' is listed in the side menu
    public boolean isCallCentreListed() {
 	   Log.info("Starting the process to check if Call Centre is listed...");
@@ -663,6 +790,71 @@ private WebDriver driver;
 	    } catch (NumberFormatException e) {
 	        Log.error("Error parsing grid data to integer: " + gridData + " | Exception: " + e.getMessage());
 	        return false;
+	    }
+   }
+   
+// Method to navigate to main menu
+   public void navigateToMainMenu() {
+	   Log.info("Starting navigation to the Main Menu...");
+	    
+	    Log.info("Locating the Dashboard element...");
+	    WebElement Dashboard = driver.findElement(CoreRegularizationSummaryRepo.Dashboard);
+	    
+	    Log.info("Clicking on the Dashboard...");
+	    Dashboard.click();
+	    
+	    Log.info("Successfully navigated to the Main Menu.");
+   }
+
+   // Method to click on regularization summary
+   public void clickRegularizationSumary() {
+	   Log.info("Starting the process to click on 'Regularization Summary'...");
+
+	    Log.info("Locating the 'Regularization Summary' element...");
+	    WebElement RegularizationSumary = driver.findElement(CoreRegularizationSummaryRepo.RegularizationSumary);
+
+	    Log.info("Clicking on 'Regularization Summary'...");
+	    RegularizationSumary.click();
+
+	    Log.info("'Regularization Summary' clicked successfully.");
+   }
+
+   // Method to verify regularization summary report
+   public boolean isRegularizationSumaryDisplayed() {
+	   Log.info("Checking if 'Regularization Summary Report' is displayed...");
+
+	    try {
+	        Log.info("Waiting for 'Regularization Summary Report' element to be visible...");
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+	        WebElement Regularizationsummaryreport = wait.until(
+	            ExpectedConditions.visibilityOfElementLocated(CoreRegularizationSummaryRepo.Regularizationsummaryreport)
+	        );
+
+	        boolean isDisplayed = Regularizationsummaryreport.isDisplayed();
+	        Log.info("'Regularization Summary Report' visibility status: " + isDisplayed);
+	        return isDisplayed;
+	    } catch (TimeoutException e) {
+	        Log.error("'Regularization Summary Report' was not displayed within the expected time.", e);
+	        return false;
+	    }
+   }
+   
+// Method to click on the download icon
+   public void clickDownlodIcon() {
+	   Log.info("Starting the process to click on the 'Download' icon...");
+
+	    try {
+	        Log.info("Locating the 'Download' button...");
+	        WebElement downloadbtn = driver.findElement(CoreRegularizationSummaryRepo.downloadbtn);
+
+	        Log.info("Clicking on the 'Download' button...");
+	        downloadbtn.click();
+
+	        Log.info("'Download' button clicked successfully.");
+	    } catch (NoSuchElementException e) {
+	        Log.error("Failed to locate the 'Download' button. It may not be present on the page.", e);
+	    } catch (Exception e) {
+	        Log.error("An unexpected error occurred while clicking the 'Download' button.", e);
 	    }
    }
    
