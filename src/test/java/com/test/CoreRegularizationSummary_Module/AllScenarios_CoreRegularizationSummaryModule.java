@@ -443,7 +443,7 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 	        ExtentTestManager.getTest().log(Status.PASS, "Opened the downloaded file");
 	        ExtentTestManager.getTest().log(Status.INFO,"'Total Account Received' from the downloaded file - " +actualTotalAccountsReceived+" ");
 	    	// Get expected values from the grid
-	    	List<String> expectedTotalAccountsReceived = coreregularizationsummarypage.getGridTotalAccountsReceived();
+	    	List<String> expectedTotalAccountsReceived = coreregularizationsummarypage.getGridTotalAccountsReceived(); 
 	    	ExtentTestManager.getTest().log(Status.PASS, "Verified the data with the grid data.");
 	    	ExtentTestManager.getTest().log(Status.INFO,"'Received' count from the grid - " +expectedTotalAccountsReceived+" ");
 	    	

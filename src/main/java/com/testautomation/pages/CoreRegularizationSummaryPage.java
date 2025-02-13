@@ -729,21 +729,125 @@ private WebDriver driver;
    
 // Method to fetch total account received from grid
    public List<String> getGridTotalAccountsReceived() {
-	   Log.info("Fetching the total accounts received from the grid...");
+	    Log.info("Fetching the total accounts received from the grid...");
 	    
-	    List<WebElement> elements = driver.findElements(CoreRegularizationSummaryRepo.TOTAL_AC_RECEIVEDcount);
-	    Log.info("Found " + elements.size() + " elements for total accounts received.");
-
 	    List<String> texts = new ArrayList<>();
 
+	    // Initial extraction of data from the first page
+	    List<WebElement> elements = driver.findElements(CoreRegularizationSummaryRepo.TOTAL_AC_RECEIVEDcount);
+	    Log.info("Found " + elements.size() + " elements for total accounts received on the first page.");
+
+	    // Extract text from elements on the current page
 	    for (WebElement element : elements) {
 	        String text = element.getText();
 	        texts.add(text);
 	        Log.info("Extracted text: " + text);
 	    }
 
+	    // Use findElements() instead of findElement() to avoid NoSuchElementException
+	    List<WebElement> nextButtonList = driver.findElements(CoreRegularizationSummaryRepo.nextbutton);
+
+	    // Check if the "Next" button is present
+	    if (!nextButtonList.isEmpty()) {
+	        WebElement nextButton = nextButtonList.get(0); // Get the first (and only) element
+	        
+	        // Extract the total page count (assuming you have an element that shows total pages)
+	        int totalPages = getTotalPages(); // Get the total number of pages
+	        
+	        Log.info("Total pages available: " + totalPages);
+
+	        if (totalPages > 1) { // Proceed only if there is more than one page
+	            // Wait until the "Next" button is visible and enabled
+	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Adjust timeout as necessary
+	            try {
+	                // Check if the "Next" button is visible and enabled initially
+	                if (wait.until(ExpectedConditions.and(
+	                        ExpectedConditions.visibilityOf(nextButton), 
+	                        ExpectedConditions.elementToBeClickable(nextButton))) != null) {
+	                    Log.info("Next button is clickable. Proceeding with pagination...");
+	                    
+	                    int currentPage = 1; // Start from the first page
+
+	                    // Keep clicking the "Next" button until all pages are processed
+	                    while (currentPage < totalPages) {
+	                        // Re-check if the "Next" button is clickable before clicking
+	                        if (wait.until(ExpectedConditions.and(
+	                                ExpectedConditions.visibilityOf(nextButton), 
+	                                ExpectedConditions.elementToBeClickable(nextButton))) != null) {
+	                            Log.info("Next button is clickable. Clicking next page...");
+
+	                            // Click the "Next" button
+	                            nextButton.click();
+
+	                            // Wait for the page to load (adjust this as needed)
+	                            try {
+	                                Thread.sleep(2000); // Adjust as per the app's load time
+	                            } catch (InterruptedException e) {
+	                                e.printStackTrace();
+	                            }
+
+	                            // Extract data from the new page
+	                            elements = driver.findElements(CoreRegularizationSummaryRepo.TOTAL_AC_RECEIVEDcount);
+	                            Log.info("Found " + elements.size() + " elements for total accounts received on the next page.");
+	                            
+	                            // Extract text from elements on the current page
+	                            for (WebElement element : elements) {
+	                                String text = element.getText();
+	                                texts.add(text);
+	                                Log.info("Extracted text: " + text);
+	                            }
+
+	                            // Update the "Next" button WebElement in case it has changed
+	                            nextButtonList = driver.findElements(CoreRegularizationSummaryRepo.nextbutton);
+	                            if (!nextButtonList.isEmpty()) {
+	                                nextButton = nextButtonList.get(0);  // Re-fetch the "Next" button for the new page
+	                            }
+
+	                            currentPage++; // Increment the page count
+	                        } else {
+	                            // If the "Next" button is not clickable, break the loop
+	                            Log.info("Next button is not clickable. No more pages to load.");
+	                            break; // Exit the loop
+	                        }
+	                    }
+	                } else {
+	                    Log.info("Next button is not clickable initially. No more pages to load.");
+	                }
+	            } catch (Exception e) {
+	                Log.info("Next button is not clickable or an error occurred. No more pages to load.");
+	            }
+	        } else {
+	            Log.info("Only one page available. No pagination needed.");
+	        }
+	    } else {
+	        Log.info("Next button not found. Assuming no more pages. Returning the data collected so far.");
+	    }
+
 	    Log.info("Total accounts received retrieved successfully: " + texts);
 	    return texts;
+	}
+
+	// Helper method to extract the total number of pages
+	private int getTotalPages() {
+	    int totalPages = 1; // Default to 1 if pagination is not found
+	    
+	    try {
+	        // Locate the pagination controls, e.g., the total number of pages (could be the last page element)
+	        List<WebElement> pageElements = driver.findElements(CoreRegularizationSummaryRepo.pagescount);
+	        
+	        // Check if the element with the total pages exists
+	        if (!pageElements.isEmpty()) {
+	            WebElement totalPageElement = pageElements.get(pageElements.size() - 1); // Assuming the last element is the page count
+	            String totalPageText = totalPageElement.getText();
+	            
+	            // Convert the text to an integer (assuming it's a number)
+	            totalPages = Integer.parseInt(totalPageText);
+	        }
+	    } catch (Exception e) {
+	        Log.info("Error while extracting total pages: " + e.getMessage());
+	    }
+	    
+	    return totalPages;
 	}
    
 // Method to click the download icon

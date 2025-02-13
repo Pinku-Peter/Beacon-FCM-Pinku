@@ -16,5 +16,6 @@ public class CoreRegularizationSummaryRepo {
 	public static By downloadbtn2 = By.xpath("(//span[@class='rz-cell-data'])[7]");
 	public static By Dashboard = By.xpath("//span[text()='Dashboard']");
 	public static By RegularizationSumary = By.xpath("//a[text()='Regularization Summary']");
-
+	public static By nextbutton = By.xpath("//span[@class='rz-paginator-icon rzi rzi-caret-right']");
+	public static By pagescount = By.xpath("//span[@class='rz-paginator-pages']//a");
 }
