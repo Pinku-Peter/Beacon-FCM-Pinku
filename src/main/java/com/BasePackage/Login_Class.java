@@ -8,6 +8,8 @@ import java.sql.SQLException;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -306,6 +308,99 @@ public class Login_Class extends Base_Class {
         }*/
     }
 
+    public void CollectionAgencyLoginWithInputs(String UserID, String password) throws Exception {
+        try {
+            String Browser = configloader().getProperty("Browser");
+            String CollectionAppUrl = configloader().getProperty("CollectionAgencyApplicationUrl");
+
+            // Use input parameters if provided; otherwise, fetch from config
+            String CollectionUserName = (UserID != null && !UserID.isEmpty()) ? UserID : configloader().getProperty("CollectionAgencyUserName");
+            String CollectionUserPassword = (password != null && !password.isEmpty()) ? password : configloader().getProperty("CollectionAgencyUserPassword");
+
+            // Initialize WebDriver based on browser type
+            switch (Browser.toUpperCase()) {
+                case "CHROME":
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--disable-extensions");
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver(options);
+                    break;
+                case "FIREFOX":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+                default:
+                    throw new IllegalArgumentException("The Driver is not defined for browser: " + Browser);
+            }
+
+            driver.manage().window().maximize();
+            driver.manage().deleteAllCookies();
+            Log.info("Driver has initialized successfully for " + Browser + " browser");
+
+            // Load the application URL
+            driver.get(CollectionAppUrl);
+            Common.setDriver(driver);
+
+            String query = "select BANNER_DETAILS from SET_LOGINPAGE_BANNER_DETAILS where IS_ACTIVE=1 and banner_user_type=3 order by banner_section desc FETCH FIRST 1 ROWS ONLY";
+            String BANNER_DETAILS = DBUtils.fetchSingleValueFromDB(query);
+            System.out.println("BANNER_DETAILS: " + BANNER_DETAILS);
+
+            Common.fluentWait(BANNER_DETAILS, LoginPageRepo.CollectionAgencyLoginBannerDetails(BANNER_DETAILS));
+
+            Pagetitle = driver.getTitle();
+            Log.info("Title is displayed: " + Pagetitle);
+
+            // Perform login actions
+            Common.fluentWait("UserNameField", LoginPageRepo.UserNameField);
+            Common.fluentWait("PasswordField", LoginPageRepo.PasswordField);
+            Common.fluentWait("LoginButton", LoginPageRepo.LoginButton);
+
+            driver.findElement(LoginPageRepo.UserNameField).sendKeys(CollectionUserName);
+            Log.info("Entered " + CollectionUserName + " in user name field");
+            driver.findElement(LoginPageRepo.PasswordField).sendKeys(CollectionUserPassword);
+            Log.info("Entered " + CollectionUserPassword + " in password field");
+            driver.findElement(LoginPageRepo.LoginButton).click();
+            Log.info("Clicked on login button");
+
+            try {
+                WebElement clickableElement = Common.waitForElementToBeClickable(
+                    driver,
+                    LoginPageRepo.AlreadyLoginPopupYesButton,
+                    Duration.ofSeconds(20)
+                );
+
+                if (clickableElement != null) {
+                    clickableElement.click();
+                    Common.waitForSpinnerToDisappear(driver, "Loading Spinner", LoginPageRepo.Spinner);
+
+                    Common.fluentWait("UserNameField", LoginPageRepo.UserNameField);
+                    Common.fluentWait("PasswordField", LoginPageRepo.PasswordField);
+                    Common.fluentWait("LoginButton", LoginPageRepo.LoginButton);
+
+                    driver.findElement(LoginPageRepo.UserNameField).sendKeys(CollectionUserName);
+                    Log.info("Entered " + CollectionUserName + " in user name field");
+                    driver.findElement(LoginPageRepo.PasswordField).sendKeys(CollectionUserPassword);
+                    Log.info("Entered " + CollectionUserPassword + " in password field");
+                    driver.findElement(LoginPageRepo.LoginButton).click();
+                    Log.info("Clicked on login button");
+
+                    Log.info("Clicked on already login yes button and logged in again with valid credentials");
+                } else {
+                    System.out.println("Element not clickable within the timeout.");
+                }
+            } catch (Exception e) {
+                System.out.println("Exception occurred while waiting for the element: " + e.getMessage());
+                System.out.println("Already login pop up not appeared");
+            }
+
+            Thread.sleep(6000);
+
+        } catch (Exception e) {
+            Log.error("An error occurred in CollectionAgencyLoginWithInputs: " + e.getMessage());
+            e.printStackTrace();
+            throw e; // Optionally re-throw to let the calling method handle it
+        }
+    }
 
 	
 	public static void GetUserORGDetailsFromDB(String UserID) throws SQLException, ClassNotFoundException, IOException {

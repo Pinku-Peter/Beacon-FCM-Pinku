@@ -3,17 +3,26 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule">
+      <class name="CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule">
         <methods>
-          <include name="SetUp"/>
-          <include name="Data_Verification_in_Downloaded_File"/>
+          <include name="Other_Account_Details_Grid_Validation"/>
+          <include name="Committed_Amount_Field_BVA_Validations" invocation-numbers="0"/>
           <include name="takeScreenshotOnFailure"/>
-          <include name="Data_Verification_in_Downloaded_File_"/>
           <include name="afterEachTest"/>
           <include name="setupTest"/>
-          <include name="Validate_Downloaded_File"/>
+          <include name="Next_Action_Owner_Dropdown_Selection" invocation-numbers="0"/>
+          <include name="Customer_Details_Data_Accuracy"/>
+          <include name="Error_Guessing_Empty_Remarks_Field" invocation-numbers="0"/>
+          <include name="Security_Details_View_Open_Grid"/>
+          <include name="Cancel_Button_Functionality_in_Add_New_Interaction_Details" invocation-numbers="0"/>
+          <include name="Doing_Disposition_against_Agency_allocated_accounts"/>
+          <include name="Login_to_core_application_and_navigate_to_agency_account_agency_menu"/>
+          <include name="Customer_Details_Grid_Data_Integrity"/>
+          <include name="Risk_Column_Data_Consistency"/>
+          <include name="SetUp"/>
+          <include name="Disposition_and_Sub_Disposition_Valid_Selections" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.test.CoreRegularizationSummary_Module.AllScenarios_CoreRegularizationSummaryModule -->
+      </class> <!-- CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
