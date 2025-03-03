@@ -1,505 +1,531 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-20T11:28:00 IST" name="Default suite" finished-at="2025-02-20T11:37:47 IST" duration-ms="587017">
+  <suite started-at="2025-03-03T11:39:44 IST" name="Default suite" finished-at="2025-03-03T11:46:20 IST" duration-ms="396744">
     <groups>
     </groups>
-    <test started-at="2025-02-20T11:28:00 IST" name="Default test" finished-at="2025-02-20T11:37:47 IST" duration-ms="587017">
-      <class name="CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:26:19 IST" name="SetUp" finished-at="2025-02-20T11:28:00 IST" duration-ms="100768" status="PASS">
+    <test started-at="2025-03-03T11:39:44 IST" name="Default test" finished-at="2025-03-03T11:46:20 IST" duration-ms="396744">
+      <class name="CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:38:16 IST" name="SetUp" finished-at="2025-03-03T11:39:44 IST" duration-ms="87062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:28:00 IST" name="setupTest" finished-at="2025-02-20T11:28:00 IST" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:39:44 IST" name="setupTest" finished-at="2025-03-03T11:39:44 IST" duration-ms="218" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Login_to_core_application_and_navigate_to_agency_account_agency_menu() throws java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Login_to_core_application_and_navigate_to_agency_account_agency_menu() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Login_to_core_application_and_navigate_to_agency_account_agency_menu()[pri:1, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:28:00 IST" name="Login_to_core_application_and_navigate_to_agency_account_agency_menu" finished-at="2025-02-20T11:29:23 IST" duration-ms="82711" status="PASS">
+        <test-method signature="Login_to_core_application_and_navigate_to_agency_account_agency_menu()[pri:1, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:39:44 IST" name="Login_to_core_application_and_navigate_to_agency_account_agency_menu" finished-at="2025-03-03T11:40:30 IST" duration-ms="45899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_to_core_application_and_navigate_to_agency_account_agency_menu -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:29:23 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:29:23 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:40:30 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:40:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login_to_core_application_and_navigate_to_agency_account_agency_menu status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Login_to_core_application_and_navigate_to_agency_account_agency_menu()[pri:1, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=Login_to_core_application_and_navigate_to_agency_account_agency_menu status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Login_to_core_application_and_navigate_to_agency_account_agency_menu()[pri:1, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:29:23 IST" name="setupTest" finished-at="2025-02-20T11:29:23 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:40:30 IST" name="setupTest" finished-at="2025-03-03T11:40:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Truncate_mst_col_agency_acc_allocated_and_delete_data_from_trn_account_followup_where_disposition_date__today() throws java.lang.ClassNotFoundException,java.io.IOException,java.sql.SQLException,java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Truncate_mst_col_agency_acc_allocated_and_delete_data_from_trn_account_followup_where_disposition_date__today() throws java.lang.ClassNotFoundException,java.io.IOException,java.sql.SQLException,java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Truncate_mst_col_agency_acc_allocated_and_delete_data_from_trn_account_followup_where_disposition_date__today()[pri:2, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:29:23 IST" name="Truncate_mst_col_agency_acc_allocated_and_delete_data_from_trn_account_followup_where_disposition_date__today" finished-at="2025-02-20T11:29:28 IST" duration-ms="4717" status="PASS">
+        <test-method signature="Truncate_mst_col_agency_acc_allocated_and_delete_data_from_trn_account_followup_where_disposition_date__today()[pri:2, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:40:30 IST" name="Truncate_mst_col_agency_acc_allocated_and_delete_data_from_trn_account_followup_where_disposition_date__today" finished-at="2025-03-03T11:40:34 IST" duration-ms="4227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Truncate_mst_col_agency_acc_allocated_and_delete_data_from_trn_account_followup_where_disposition_date__today -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:29:28 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:29:28 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:40:34 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:40:34 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Truncate_mst_col_agency_acc_allocated_and_delete_data_from_trn_account_followup_where_disposition_date__today status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Truncate_mst_col_agency_acc_allocated_and_delete_data_from_trn_account_followup_where_disposition_date__today()[pri:2, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=Truncate_mst_col_agency_acc_allocated_and_delete_data_from_trn_account_followup_where_disposition_date__today status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Truncate_mst_col_agency_acc_allocated_and_delete_data_from_trn_account_followup_where_disposition_date__today()[pri:2, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="Allocating_accounts_to_collection_agency(java.util.Map)[pri:3, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:29:29 IST" name="Allocating_accounts_to_collection_agency" data-provider="TestData" finished-at="2025-02-20T11:32:39 IST" duration-ms="190261" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:40:35 IST" name="setupTest" finished-at="2025-03-03T11:40:35 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AccountType=Not Allocated, AllocateTo=Call Centre, CommittedAmount=1000000000, Disposition=Meeting, DPDDays=5, DPDDaysOperator==, NextActionDate=21, NextActionOwner=Collection Agency, NPACategory=SUB-STANDARD, OutstandingBalance=25000, OutstandingBalanceOperator==, Region=Mumbai I, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SMACategory=SMA 0 (01-30 Days), SubDisposition=Not able to pay, TestScenario=CollectionAgencyDispositionPage, To=Call Centre}]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Verify_that_the_Excel_file_is_successfully_downloaded_and_contains_the_details_of_the_chosen_account(java.util.Map) throws java.io.IOException,java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Verify_that_the_Excel_file_is_successfully_downloaded_and_contains_the_details_of_the_chosen_account(java.util.Map)[pri:3, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:40:35 IST" name="Verify_that_the_Excel_file_is_successfully_downloaded_and_contains_the_details_of_the_chosen_account" data-provider="TestData" finished-at="2025-03-03T11:41:23 IST" duration-ms="47947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{AccountType=Not Allocated, AcountType=Allocated, DPDDays=5, DPDDaysOperator==, FromAndToDates=3, NPACategory=SUB-STANDARD, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CollectionAgencyAgentAcAllocatPage}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_that_the_Excel_file_is_successfully_downloaded_and_contains_the_details_of_the_chosen_account -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:41:23 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:41:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_that_the_Excel_file_is_successfully_downloaded_and_contains_the_details_of_the_chosen_account status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Verify_that_the_Excel_file_is_successfully_downloaded_and_contains_the_details_of_the_chosen_account(java.util.Map)[pri:3, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:41:23 IST" name="setupTest" finished-at="2025-03-03T11:41:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Allocating_accounts_to_collection_agency() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Allocating_accounts_to_collection_agency()[pri:4, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:41:23 IST" name="Allocating_accounts_to_collection_agency" finished-at="2025-03-03T11:41:52 IST" duration-ms="28654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Allocating_accounts_to_collection_agency -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:29:29 IST" name="setupTest" finished-at="2025-02-20T11:29:29 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:41:52 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:41:52 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Allocating_accounts_to_collection_agency(java.util.Map) throws java.io.IOException,java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:32:39 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:32:39 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Allocating_accounts_to_collection_agency status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Allocating_accounts_to_collection_agency(java.util.Map)[pri:3, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=Allocating_accounts_to_collection_agency status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Allocating_accounts_to_collection_agency()[pri:4, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:32:39 IST" name="setupTest" finished-at="2025-02-20T11:32:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:41:52 IST" name="setupTest" finished-at="2025-03-03T11:41:52 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Fetch_a_not_allocated_account_number_in_selected_collection_agency() throws java.io.IOException,java.lang.InterruptedException,java.lang.ClassNotFoundException,java.sql.SQLException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Login_to_allocated_collection_agency_from_collection_agency_application() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Fetch_a_not_allocated_account_number_in_selected_collection_agency()[pri:4, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:32:39 IST" name="Fetch_a_not_allocated_account_number_in_selected_collection_agency" finished-at="2025-02-20T11:32:43 IST" duration-ms="3624" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Fetch_a_not_allocated_account_number_in_selected_collection_agency -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:32:43 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:32:43 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Fetch_a_not_allocated_account_number_in_selected_collection_agency status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Fetch_a_not_allocated_account_number_in_selected_collection_agency()[pri:4, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:32:43 IST" name="setupTest" finished-at="2025-02-20T11:32:43 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Login_to_allocated_collection_agency_from_collection_agency_application() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Login_to_allocated_collection_agency_from_collection_agency_application()[pri:5, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:32:43 IST" name="Login_to_allocated_collection_agency_from_collection_agency_application" finished-at="2025-02-20T11:33:35 IST" duration-ms="52669" status="PASS">
+        <test-method signature="Login_to_allocated_collection_agency_from_collection_agency_application()[pri:5, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:41:52 IST" name="Login_to_allocated_collection_agency_from_collection_agency_application" finished-at="2025-03-03T11:42:53 IST" duration-ms="61735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_to_allocated_collection_agency_from_collection_agency_application -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:33:35 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:33:35 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:42:53 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:42:53 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login_to_allocated_collection_agency_from_collection_agency_application status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Login_to_allocated_collection_agency_from_collection_agency_application()[pri:5, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=Login_to_allocated_collection_agency_from_collection_agency_application status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Login_to_allocated_collection_agency_from_collection_agency_application()[pri:5, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:33:35 IST" name="setupTest" finished-at="2025-02-20T11:33:35 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:42:53 IST" name="setupTest" finished-at="2025-03-03T11:42:53 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Doing_Disposition_against_Agency_allocated_accounts() throws java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.verify_agent_account_allocation_page_is_available() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Doing_Disposition_against_Agency_allocated_accounts()[pri:6, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:33:35 IST" name="Doing_Disposition_against_Agency_allocated_accounts" finished-at="2025-02-20T11:34:10 IST" duration-ms="34422" status="PASS">
+        <test-method signature="verify_agent_account_allocation_page_is_available()[pri:6, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:42:53 IST" name="verify_agent_account_allocation_page_is_available" finished-at="2025-03-03T11:43:05 IST" duration-ms="11292" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Doing_Disposition_against_Agency_allocated_accounts -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:10 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:34:10 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verify_agent_account_allocation_page_is_available -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:43:05 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:43:05 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Doing_Disposition_against_Agency_allocated_accounts status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Doing_Disposition_against_Agency_allocated_accounts()[pri:6, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=verify_agent_account_allocation_page_is_available status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.verify_agent_account_allocation_page_is_available()[pri:6, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="Customer_Details_Grid_Data_Integrity()[pri:7, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:10 IST" name="Customer_Details_Grid_Data_Integrity" finished-at="2025-02-20T11:34:13 IST" duration-ms="3219" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Customer_Details_Grid_Data_Integrity -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:10 IST" name="setupTest" finished-at="2025-02-20T11:34:10 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:43:05 IST" name="setupTest" finished-at="2025-03-03T11:43:05 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Customer_Details_Grid_Data_Integrity() throws java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Filter_Asset_Category(java.util.Map) throws java.lang.InterruptedException,java.lang.ClassNotFoundException,java.sql.SQLException,java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:13 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:34:13 IST" duration-ms="1" status="PASS">
+        <test-method signature="Filter_Asset_Category(java.util.Map)[pri:7, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:43:05 IST" name="Filter_Asset_Category" data-provider="TestData" finished-at="2025-03-03T11:43:35 IST" duration-ms="30478" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Customer_Details_Grid_Data_Integrity status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Customer_Details_Grid_Data_Integrity()[pri:7, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[{AccountType=Not Allocated, AcountType=Allocated, DPDDays=5, DPDDaysOperator==, FromAndToDates=3, NPACategory=SUB-STANDARD, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CollectionAgencyAgentAcAllocatPage}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Filter_Asset_Category -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:43:35 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:43:35 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Filter_Asset_Category status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Filter_Asset_Category(java.util.Map)[pri:7, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:13 IST" name="setupTest" finished-at="2025-02-20T11:34:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:43:35 IST" name="setupTest" finished-at="2025-03-03T11:43:35 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Risk_Column_Data_Consistency() throws java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Reset_Filters() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Risk_Column_Data_Consistency()[pri:8, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:13 IST" name="Risk_Column_Data_Consistency" finished-at="2025-02-20T11:34:16 IST" duration-ms="3062" status="PASS">
+        <test-method signature="Reset_Filters()[pri:8, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:43:35 IST" name="Reset_Filters" finished-at="2025-03-03T11:43:49 IST" duration-ms="13658" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Risk_Column_Data_Consistency -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:16 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:34:16 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Reset_Filters -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:43:49 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:43:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Risk_Column_Data_Consistency status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Risk_Column_Data_Consistency()[pri:8, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=Reset_Filters status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Reset_Filters()[pri:8, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:16 IST" name="setupTest" finished-at="2025-02-20T11:34:16 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:43:49 IST" name="setupTest" finished-at="2025-03-03T11:43:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Security_Details_View_Open_Grid() throws java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Allocate_Accounts(java.util.Map) throws java.lang.InterruptedException,java.lang.ClassNotFoundException,java.sql.SQLException,java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Security_Details_View_Open_Grid()[pri:9, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:16 IST" name="Security_Details_View_Open_Grid" finished-at="2025-02-20T11:34:26 IST" duration-ms="9630" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Security_Details_View_Open_Grid -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:26 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:34:26 IST" duration-ms="1" status="PASS">
+        <test-method signature="Allocate_Accounts(java.util.Map)[pri:9, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:43:49 IST" name="Allocate_Accounts" data-provider="TestData" finished-at="2025-03-03T11:44:29 IST" duration-ms="40278" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Security_Details_View_Open_Grid status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Security_Details_View_Open_Grid()[pri:9, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[{AccountType=Not Allocated, AcountType=Allocated, DPDDays=5, DPDDaysOperator==, FromAndToDates=3, NPACategory=SUB-STANDARD, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CollectionAgencyAgentAcAllocatPage}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Allocate_Accounts -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:44:29 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:44:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Allocate_Accounts status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Allocate_Accounts(java.util.Map)[pri:9, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:26 IST" name="setupTest" finished-at="2025-02-20T11:34:26 IST" duration-ms="0" status="PASS">
+        <test-method signature="Verify_Allocated_Accounts(java.util.Map)[pri:10, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:44:30 IST" name="Verify_Allocated_Accounts" data-provider="TestData" finished-at="2025-03-03T11:44:57 IST" duration-ms="27842" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Next_Action_Owner_Dropdown_Selection(java.util.Map) throws java.lang.InterruptedException]]>
+                <![CDATA[{AccountType=Not Allocated, AcountType=Allocated, DPDDays=5, DPDDaysOperator==, FromAndToDates=3, NPACategory=SUB-STANDARD, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CollectionAgencyAgentAcAllocatPage}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Allocated_Accounts -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:44:30 IST" name="setupTest" finished-at="2025-03-03T11:44:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Verify_Allocated_Accounts(java.util.Map) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Next_Action_Owner_Dropdown_Selection(java.util.Map)[pri:10, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:26 IST" name="Next_Action_Owner_Dropdown_Selection" data-provider="TestData" finished-at="2025-02-20T11:34:29 IST" duration-ms="3376" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:44:57 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:44:57 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AccountType=Not Allocated, AllocateTo=Call Centre, CommittedAmount=1000000000, Disposition=Meeting, DPDDays=5, DPDDaysOperator==, NextActionDate=21, NextActionOwner=Collection Agency, NPACategory=SUB-STANDARD, OutstandingBalance=25000, OutstandingBalanceOperator==, Region=Mumbai I, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SMACategory=SMA 0 (01-30 Days), SubDisposition=Not able to pay, TestScenario=CollectionAgencyDispositionPage, To=Call Centre}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Next_Action_Owner_Dropdown_Selection -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:29 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:34:29 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Next_Action_Owner_Dropdown_Selection status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Next_Action_Owner_Dropdown_Selection(java.util.Map)[pri:10, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Allocated_Accounts status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Verify_Allocated_Accounts(java.util.Map)[pri:10, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:29 IST" name="setupTest" finished-at="2025-02-20T11:34:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:44:57 IST" name="setupTest" finished-at="2025-03-03T11:44:57 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Cancel_Button_Functionality_in_Add_New_Interaction_Details(java.util.Map) throws java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Download_Grid_Data() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Cancel_Button_Functionality_in_Add_New_Interaction_Details(java.util.Map)[pri:11, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:29 IST" name="Cancel_Button_Functionality_in_Add_New_Interaction_Details" data-provider="TestData" finished-at="2025-02-20T11:34:40 IST" duration-ms="10241" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{AccountType=Not Allocated, AllocateTo=Call Centre, CommittedAmount=1000000000, Disposition=Meeting, DPDDays=5, DPDDaysOperator==, NextActionDate=21, NextActionOwner=Collection Agency, NPACategory=SUB-STANDARD, OutstandingBalance=25000, OutstandingBalanceOperator==, Region=Mumbai I, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SMACategory=SMA 0 (01-30 Days), SubDisposition=Not able to pay, TestScenario=CollectionAgencyDispositionPage, To=Call Centre}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="Download_Grid_Data()[pri:11, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:44:57 IST" name="Download_Grid_Data" finished-at="2025-03-03T11:45:11 IST" duration-ms="13762" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Cancel_Button_Functionality_in_Add_New_Interaction_Details -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:40 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:34:40 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Download_Grid_Data -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:11 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:45:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Cancel_Button_Functionality_in_Add_New_Interaction_Details status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Cancel_Button_Functionality_in_Add_New_Interaction_Details(java.util.Map)[pri:11, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=Download_Grid_Data status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Download_Grid_Data()[pri:11, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:40 IST" name="setupTest" finished-at="2025-02-20T11:34:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:11 IST" name="setupTest" finished-at="2025-03-03T11:45:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Error_Guessing_Empty_Remarks_Field(java.util.Map) throws java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Deallocate_Accounts() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Error_Guessing_Empty_Remarks_Field(java.util.Map)[pri:12, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:40 IST" name="Error_Guessing_Empty_Remarks_Field" data-provider="TestData" finished-at="2025-02-20T11:34:57 IST" duration-ms="17010" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{AccountType=Not Allocated, AllocateTo=Call Centre, CommittedAmount=1000000000, Disposition=Meeting, DPDDays=5, DPDDaysOperator==, NextActionDate=21, NextActionOwner=Collection Agency, NPACategory=SUB-STANDARD, OutstandingBalance=25000, OutstandingBalanceOperator==, Region=Mumbai I, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SMACategory=SMA 0 (01-30 Days), SubDisposition=Not able to pay, TestScenario=CollectionAgencyDispositionPage, To=Call Centre}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="Deallocate_Accounts()[pri:12, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:11 IST" name="Deallocate_Accounts" finished-at="2025-03-03T11:45:28 IST" duration-ms="17119" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Error_Guessing_Empty_Remarks_Field -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:57 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:34:57 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Deallocate_Accounts -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:28 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:45:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Error_Guessing_Empty_Remarks_Field status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Error_Guessing_Empty_Remarks_Field(java.util.Map)[pri:12, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=Deallocate_Accounts status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Deallocate_Accounts()[pri:12, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:57 IST" name="setupTest" finished-at="2025-02-20T11:34:57 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:28 IST" name="setupTest" finished-at="2025-03-03T11:45:28 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Committed_Amount_Field_BVA_Validations(java.util.Map) throws java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Open_Allocated_List_Popup() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Committed_Amount_Field_BVA_Validations(java.util.Map)[pri:13, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:34:57 IST" name="Committed_Amount_Field_BVA_Validations" data-provider="TestData" finished-at="2025-02-20T11:35:02 IST" duration-ms="5172" status="PASS">
+        <test-method signature="Open_Allocated_List_Popup()[pri:13, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:28 IST" name="Open_Allocated_List_Popup" finished-at="2025-03-03T11:45:37 IST" duration-ms="8880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Open_Allocated_List_Popup -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:37 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:45:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AccountType=Not Allocated, AllocateTo=Call Centre, CommittedAmount=1000000000, Disposition=Meeting, DPDDays=5, DPDDaysOperator==, NextActionDate=21, NextActionOwner=Collection Agency, NPACategory=SUB-STANDARD, OutstandingBalance=25000, OutstandingBalanceOperator==, Region=Mumbai I, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SMACategory=SMA 0 (01-30 Days), SubDisposition=Not able to pay, TestScenario=CollectionAgencyDispositionPage, To=Call Centre}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Committed_Amount_Field_BVA_Validations -->
-        <test-method signature="Customer_Details_Data_Accuracy()[pri:14, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:35:02 IST" name="Customer_Details_Data_Accuracy" finished-at="2025-02-20T11:35:10 IST" duration-ms="8385" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Customer_Details_Data_Accuracy -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:35:02 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:35:02 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Committed_Amount_Field_BVA_Validations status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Committed_Amount_Field_BVA_Validations(java.util.Map)[pri:13, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=Open_Allocated_List_Popup status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Open_Allocated_List_Popup()[pri:13, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:35:02 IST" name="setupTest" finished-at="2025-02-20T11:35:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:37 IST" name="setupTest" finished-at="2025-03-03T11:45:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Customer_Details_Data_Accuracy() throws java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Filter_Allocated_List_Action_Date(java.util.Map) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:35:10 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:35:10 IST" duration-ms="0" status="PASS">
+        <test-method signature="Filter_Allocated_List_Action_Date(java.util.Map)[pri:14, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:37 IST" name="Filter_Allocated_List_Action_Date" data-provider="TestData" finished-at="2025-03-03T11:45:47 IST" duration-ms="9582" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Customer_Details_Data_Accuracy status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Customer_Details_Data_Accuracy()[pri:14, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[{AccountType=Not Allocated, AcountType=Allocated, DPDDays=5, DPDDaysOperator==, FromAndToDates=3, NPACategory=SUB-STANDARD, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CollectionAgencyAgentAcAllocatPage}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Filter_Allocated_List_Action_Date -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:47 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:45:47 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Filter_Allocated_List_Action_Date status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Filter_Allocated_List_Action_Date(java.util.Map)[pri:14, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:35:10 IST" name="setupTest" finished-at="2025-02-20T11:35:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:47 IST" name="setupTest" finished-at="2025-03-03T11:45:47 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Other_Account_Details_Grid_Validation() throws java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Reset_Allocated_List_Filters() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Other_Account_Details_Grid_Validation()[pri:15, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:35:10 IST" name="Other_Account_Details_Grid_Validation" finished-at="2025-02-20T11:35:19 IST" duration-ms="8229" status="PASS">
+        <test-method signature="Reset_Allocated_List_Filters()[pri:15, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:47 IST" name="Reset_Allocated_List_Filters" finished-at="2025-03-03T11:45:50 IST" duration-ms="3300" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Other_Account_Details_Grid_Validation -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:35:19 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:35:19 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Reset_Allocated_List_Filters -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:50 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:45:50 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Other_Account_Details_Grid_Validation status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Other_Account_Details_Grid_Validation()[pri:15, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=Reset_Allocated_List_Filters status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Reset_Allocated_List_Filters()[pri:15, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:35:19 IST" name="setupTest" finished-at="2025-02-20T11:35:19 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:50 IST" name="setupTest" finished-at="2025-03-03T11:45:50 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Disposition_and_Sub_Disposition_Valid_Selections(java.util.Map) throws java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Download_Allocated_List_Data(java.util.Map) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Disposition_and_Sub_Disposition_Valid_Selections(java.util.Map)[pri:16, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:35:19 IST" name="Disposition_and_Sub_Disposition_Valid_Selections" data-provider="TestData" finished-at="2025-02-20T11:35:36 IST" duration-ms="16911" status="PASS">
+        <test-method signature="Download_Allocated_List_Data(java.util.Map)[pri:16, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:45:50 IST" name="Download_Allocated_List_Data" data-provider="TestData" finished-at="2025-03-03T11:46:09 IST" duration-ms="19169" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AccountType=Not Allocated, AllocateTo=Call Centre, CommittedAmount=1000000000, Disposition=Meeting, DPDDays=5, DPDDaysOperator==, NextActionDate=21, NextActionOwner=Collection Agency, NPACategory=SUB-STANDARD, OutstandingBalance=25000, OutstandingBalanceOperator==, Region=Mumbai I, Remarks=test, Run=Yes, SelectCallCentre=CallCentre 1, SMACategory=SMA 0 (01-30 Days), SubDisposition=Not able to pay, TestScenario=CollectionAgencyDispositionPage, To=Call Centre}]]>
+                <![CDATA[{AccountType=Not Allocated, AcountType=Allocated, DPDDays=5, DPDDaysOperator==, FromAndToDates=3, NPACategory=SUB-STANDARD, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CollectionAgencyAgentAcAllocatPage}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Disposition_and_Sub_Disposition_Valid_Selections -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:35:36 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:35:36 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Download_Allocated_List_Data -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:46:09 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:46:09 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Disposition_and_Sub_Disposition_Valid_Selections status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Disposition_and_Sub_Disposition_Valid_Selections(java.util.Map)[pri:16, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=Download_Allocated_List_Data status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Download_Allocated_List_Data(java.util.Map)[pri:16, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:35:36 IST" name="setupTest" finished-at="2025-02-20T11:35:36 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:46:09 IST" name="setupTest" finished-at="2025-03-03T11:46:09 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule.Search_Functionality_Invalid_Input() throws java.lang.InterruptedException]]>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Close_Allocated_List_Popup() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Search_Functionality_Invalid_Input()[pri:17, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:35:36 IST" name="Search_Functionality_Invalid_Input" finished-at="2025-02-20T11:37:47 IST" duration-ms="131604" status="PASS">
+        <test-method signature="Close_Allocated_List_Popup()[pri:17, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:46:09 IST" name="Close_Allocated_List_Popup" finished-at="2025-03-03T11:46:13 IST" duration-ms="3280" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Search_Functionality_Invalid_Input -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:37:47 IST" name="takeScreenshotOnFailure" finished-at="2025-02-20T11:37:47 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- Close_Allocated_List_Popup -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:46:13 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:46:13 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Search_Functionality_Invalid_Input status=SUCCESS method=AllScenarios_CollectionAgencyDispositionModule.Search_Functionality_Invalid_Input()[pri:17, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3] output={null}]]]>
+                <![CDATA[[TestResult name=Close_Allocated_List_Popup status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Close_Allocated_List_Popup()[pri:17, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule@3a52dba3]" started-at="2025-02-20T11:37:47 IST" name="afterEachTest" finished-at="2025-02-20T11:37:49 IST" duration-ms="1559" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:46:13 IST" name="setupTest" finished-at="2025-03-03T11:46:13 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module.Close_Main_Page() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Close_Main_Page()[pri:18, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:46:13 IST" name="Close_Main_Page" finished-at="2025-03-03T11:46:20 IST" duration-ms="7575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close_Main_Page -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:46:20 IST" name="takeScreenshotOnFailure" finished-at="2025-03-03T11:46:20 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Close_Main_Page status=SUCCESS method=AllScenarios_CollectionAgencyAgentAcAllocat_Module.Close_Main_Page()[pri:18, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module@2a5c8d3f]" started-at="2025-03-03T11:46:20 IST" name="afterEachTest" finished-at="2025-03-03T11:46:22 IST" duration-ms="1680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-      </class> <!-- CollectionAgencyDisposition_Module.AllScenarios_CollectionAgencyDispositionModule -->
+      </class> <!-- CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

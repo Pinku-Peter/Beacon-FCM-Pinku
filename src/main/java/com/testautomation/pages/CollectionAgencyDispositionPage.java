@@ -1,16 +1,9 @@
 package com.testautomation.pages;
 
 import java.io.IOException;
-import java.sql.CallableStatement;
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.NoSuchElementException;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -18,21 +11,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import com.BasePackage.Base_Class;
 import com.BasePackage.DBUtils;
 import com.BasePackage.DownloadedExcelReader;
-import com.BasePackage.DownloadedExcelReader.DataSummary;
-import com.BasePackage.ExecuteStoredProcedure;
 import com.Page_Repository.CollectionAgencyDispositionRepo;
-import com.Page_Repository.CoreAutoAllocationRepo;
-import com.Page_Repository.CoreManualAllocationRepo;
-import com.Page_Repository.CoreRegularizationSummaryRepo;
 import com.Page_Repository.DispositionMasterPageRepo;
 import com.Utility.Log;
-import java.sql.Connection;
-
-import io.netty.handler.timeout.TimeoutException;
 
 public class CollectionAgencyDispositionPage {
 	

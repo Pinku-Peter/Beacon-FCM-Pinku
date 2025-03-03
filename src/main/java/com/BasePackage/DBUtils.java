@@ -79,9 +79,19 @@ public class DBUtils {
         System.out.println("Select Query Result: " + selectResult);*/
 
         // Example usage with a TRUNCATE statement
-        String truncateQuery = "TRUNCATE TABLE mst_callcentre_accounts";
-        String truncateResult = executeSQLStatement(truncateQuery);
-        System.out.println("Truncate Query Result: " + truncateResult);
+//        String truncateQuery = "TRUNCATE TABLE mst_callcentre_accounts";
+//        String truncateResult = executeSQLStatement(truncateQuery);
+//        System.out.println("Truncate Query Result: " + truncateResult);
+        
+        String deleteQuery = "DELETE FROM agent_account_link WHERE col_agency_id = (SELECT COLLECTION_AGENCY_ID FROM MST_COLLECTION_AGENCY WHERE COLLECTION_AGENCY_NAME = 'qwer' FETCH FIRST 1 ROW ONLY)";
+//        String deleteQuery = "DELETE FROM agent_account_link \r\n"
+//        		+ "WHERE col_agency_id IN (\r\n"
+//        		+ "    SELECT COLLECTION_AGENCY_ID FROM MST_COLLECTION_AGENCY \r\n"
+//        		+ "    WHERE COLLECTION_AGENCY_NAME = 'qwer'\r\n"
+//        		+ ")";
+        // Call the method from DBUtils
+        executeSQLStatement(deleteQuery); 
+
     	
     }
     
