@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module">
+      <class name="core.Configurations.CollectionOfficerConfig_TestClass">
         <methods>
+          <include name="testSearchFunctionality"/>
+          <include name="takeScreenshotOnFailure"/>
           <include name="SetUp"/>
           <include name="afterEachTest"/>
           <include name="setupTest"/>
-          <include name="takeScreenshotOnFailure"/>
-          <include name="Verify_Allocated_Accounts" invocation-numbers="0"/>
         </methods>
-      </class> <!-- CollectionAgencyAgentAcAllocat_Module.AllScenarios_CollectionAgencyAgentAcAllocat_Module -->
+      </class> <!-- core.Configurations.CollectionOfficerConfig_TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

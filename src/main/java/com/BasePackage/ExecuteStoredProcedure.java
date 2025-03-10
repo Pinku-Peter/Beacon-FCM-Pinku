@@ -212,10 +212,54 @@ public class ExecuteStoredProcedure {
         return result.toString().trim();
     }
 
+    public static String executeInsertEmployeeSP(String userId) throws IOException { 
+        Connection conn = null;
+        CallableStatement callableStatement = null;
+        String statusMessage = "";
+
+        try {
+            // Step 1: Get database connection
+            conn = Base_Class.OracleDBConnection(); 
+
+            // Step 2: Prepare the stored procedure call
+            String callSP = "{ CALL SYSTEM.SP_INSERT_EMPLOYEE(?, ?) }";
+            //String callSP = "{ CALL SP_INSERT_EMPLOYEE(?, ?) }";  // 1 IN param, 1 OUT param
+            callableStatement = conn.prepareCall(callSP);
+
+            // Set IN parameter (User ID)
+            callableStatement.setString(1, userId);
+
+            // Register OUT parameter (p_message)
+            callableStatement.registerOutParameter(2, Types.VARCHAR);
+
+            // Step 3: Execute stored procedure
+            callableStatement.execute();
+
+            // Step 4: Retrieve the OUT parameter value (status message)
+            statusMessage = callableStatement.getString(2);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            statusMessage = "Error: " + e.getMessage();
+        } finally {
+            // Step 5: Close resources
+            try {
+                if (callableStatement != null) callableStatement.close();
+                // Do not close `conn` if managed by Base_Class
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
+
+        return statusMessage;
+    }    
     public static void main(String[] args) throws IOException {
         // Example usage
-        String report = callLoadAndValidateAccountsSP();
-        System.out.println(report);
+    	
+    	String userId = "IBU0001196";  // Provide a valid user ID
+        String result = executeInsertEmployeeSP(userId);
+        System.out.println(result);
+
     }
 
 }

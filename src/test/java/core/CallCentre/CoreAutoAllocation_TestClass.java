@@ -1,4 +1,4 @@
-package com.test.CoreAutoAllocation_Module;
+package core.CallCentre;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,6 +14,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -40,7 +41,7 @@ import io.netty.handler.timeout.TimeoutException;
 
 import com.listeners.TestListener;
 
-public class AllScenarios_CoreAutoAllocationModule {
+public class CoreAutoAllocation_TestClass {
 	
 	private String totalAccounts;
 	private List<WebDriver> drivers = new ArrayList<>();
@@ -53,7 +54,7 @@ public class AllScenarios_CoreAutoAllocationModule {
 	Login_Class callcenterlogin;
 	CoreAutoAllocationPage callcenteraccountfiltrationPage;
 	
-	@BeforeSuite
+	@BeforeClass
 
 	public void SetUp() throws Exception {
 		

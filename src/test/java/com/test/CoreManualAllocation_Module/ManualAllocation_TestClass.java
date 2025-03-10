@@ -14,6 +14,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -41,7 +42,7 @@ import bsh.ParseException;
 import com.listeners.TestListener;
 
 
-public class AllScenarios_CoreManualAllocationModule {
+public class ManualAllocation_TestClass {
 	private String totalAccounts;
 	private String accountNumber;
 	private List<WebDriver> drivers = new ArrayList<>();
@@ -55,7 +56,7 @@ public class AllScenarios_CoreManualAllocationModule {
 	Login_Class callcenterlogin;
 	CoreManualAllocationPage coremanualallocationpage;
 	
-	@BeforeSuite
+	@BeforeClass
 
 	public void SetUp() throws Exception {
 		

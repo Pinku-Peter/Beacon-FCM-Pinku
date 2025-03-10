@@ -1,4 +1,4 @@
-package CollectionAgencyDisposition_Module;
+package collectionAgency.Disposition;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,6 +15,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -37,7 +38,7 @@ import com.listeners.TestListener;
 import java.sql.Types;
 
 
-public class AllScenarios_CollectionAgencyDispositionModule {
+public class CollectionAgencyDisposition_TestClass {
 	
 	Base_Class baseclass;
 	com.Utility.ExcelReader ExcelReader;
@@ -51,7 +52,7 @@ public class AllScenarios_CollectionAgencyDispositionModule {
 	CollectionAgencyDispositionPage collectionagencydispositionPage;
 	String Account_Number1 , Account_Number2 , Collection_Agency , User_Id , Password;
 	
-	@BeforeSuite
+	@BeforeClass
 
 	public void SetUp() throws Exception {
 		

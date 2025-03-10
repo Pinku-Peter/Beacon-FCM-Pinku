@@ -14,6 +14,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -31,7 +32,7 @@ import com.extentReports.ExtentTestManager;
 import com.testautomation.pages.UpdationofDispositionPage;
 import com.listeners.TestListener;
 
-public class AllScenarios_Updation_of_DispositionModule {
+public class Updation_of_Disposition_TestClass {
 	
 	UpdationofDispositionPage updationofdispositionMasterPage;
 	Base_Class baseclass;
@@ -42,7 +43,7 @@ public class AllScenarios_Updation_of_DispositionModule {
 	ExtentTest extenttest;
 	Login_Class corelogin;
 	
-	@BeforeSuite
+	@BeforeClass
 
 	public void SetUp() throws Exception {
 		

@@ -1,4 +1,4 @@
-package CollectionAgencyAgentAcAllocat_Module;
+package core.CollectionAgency;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,6 +13,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -33,7 +34,7 @@ import com.testautomation.pages.CollectionAgencyAgentAcAllocatPage;
 import com.listeners.TestListener;
 import java.sql.Types;
 
-public class AllScenarios_CollectionAgencyAgentAcAllocat_Module {
+public class CollectionAgencyAgentAcAllocat_TestClass {
 	
 	Base_Class baseclass;
 	com.Utility.ExcelReader ExcelReader;
@@ -47,7 +48,9 @@ public class AllScenarios_CollectionAgencyAgentAcAllocat_Module {
 	String Account_Number1 , Account_Number2 , Collection_Agency , User_Id , Password , Agent_Name;
 	List<List<String>> excelData;
 	List<String> Account_details_before_allocate, Account_details_after_allocate;
-	@BeforeSuite
+	
+	
+	@BeforeClass
 
 	public void SetUp() throws Exception {
 		

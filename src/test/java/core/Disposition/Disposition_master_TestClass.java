@@ -1,4 +1,4 @@
-package com.test.Disposition_masterModule;
+package core.Disposition;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,6 +16,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -34,7 +35,7 @@ import com.testautomation.pages.DispositionMasterPage;
 import com.listeners.TestListener;
 
 
-public class AllScenarios_Disposition_masterModule {
+public class Disposition_master_TestClass {
 
 	com.Utility.ExcelReader ExcelReader;
 	Base_Class baseclass;
@@ -45,7 +46,7 @@ public class AllScenarios_Disposition_masterModule {
 	ExtentTest extenttest;
 	Login_Class corelogin;
 	
-	@BeforeSuite
+	@BeforeClass
 
 	public void SetUp() throws Exception {
 		

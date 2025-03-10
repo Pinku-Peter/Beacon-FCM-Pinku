@@ -494,6 +494,47 @@ public class DownloadedExcelReader {
         workbook.close();
         return extractedData;
     }
+	
+	public static boolean isEmployeePresent(String empId, String empName) throws IOException {
+        // Get the user's Downloads directory
+        String userHome = System.getProperty("user.home");
+        String downloadDir = userHome + File.separator + "Downloads";
+
+        // Get the latest downloaded file
+        File latestFile = getLatestFileFromDir(downloadDir);
+        if (latestFile == null) {
+            System.out.println("No files found in the download directory.");
+            return false; 
+        }
+
+        // Open the Excel file
+        FileInputStream fis = new FileInputStream(latestFile);
+        Workbook workbook = new XSSFWorkbook(fis);
+        Sheet sheet = workbook.getSheet("sheet1"); // Adjust sheet name if needed
+
+        // Iterate through rows (skipping the header row)
+        for (int i = 1; i <= sheet.getLastRowNum(); i++) { 
+            Row row = sheet.getRow(i);
+            if (row == null) continue; // Skip empty rows
+
+            // Read Employee ID and Name
+            Cell idCell = row.getCell(1); // Assuming Employee ID is in the 2nd column (Index 1)
+            Cell nameCell = row.getCell(2); // Assuming Name is in the 3rd column (Index 2)
+
+            // Convert cell values to String
+            String idValue = (idCell != null) ? idCell.getStringCellValue().trim() : "";
+            String nameValue = (nameCell != null) ? nameCell.getStringCellValue().trim() : "";
+
+            // Check for a match
+            if (idValue.equalsIgnoreCase(empId) && nameValue.equalsIgnoreCase(empName)) {
+                workbook.close();
+                return true; // Match found
+            }
+        }
+
+        workbook.close();
+        return false; // No match found
+    }
 
 	/**
 	 * Method to get the most recently modified file in a directory.

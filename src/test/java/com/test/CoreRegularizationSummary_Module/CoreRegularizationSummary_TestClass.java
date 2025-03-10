@@ -14,6 +14,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -45,7 +46,7 @@ import com.testautomation.pages.UpdationofDispositionPage;
 import bsh.ParseException;
 import com.listeners.TestListener;
 
-public class AllScenarios_CoreRegularizationSummaryModule {
+public class CoreRegularizationSummary_TestClass {
 	
 	Base_Class baseclass;
 	com.Utility.ExcelReader ExcelReader;
@@ -58,7 +59,7 @@ public class AllScenarios_CoreRegularizationSummaryModule {
 	Login_Class callcenterlogin;
 	CoreRegularizationSummaryPage coreregularizationsummarypage;
 	
-	@BeforeSuite
+	@BeforeClass
 
 	public void SetUp() throws Exception {
 		
