@@ -17,7 +17,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.lang.reflect.Method;
@@ -61,7 +60,7 @@ public class CollectionAgencyDisposition_TestClass {
 		String CoreUserName = Base_Class.configloader().getProperty("CoreUserName");
 		String query = "update acc_users set ORG_ID=1,ORG_TYPE=2 where USER_ID='"+CoreUserName+"'";
 		DBUtils.executeSQLStatement(query);
-		corelogin.CoreLogin();
+		Login_Class.CoreLogin(); 
 		driver = baseclass.getDriver(); // Retrieve the driver instance
 		collectionagencydispositionPage = new CollectionAgencyDispositionPage(driver);
 		ExcelReader = new com.Utility.ExcelReader("CollectionAgencyDispositionPage");
@@ -102,7 +101,7 @@ public class CollectionAgencyDisposition_TestClass {
 	 @Test(priority = 2)
 	    public void Truncate_mst_col_agency_acc_allocated_and_delete_data_from_trn_account_followup_where_disposition_date__today() throws ClassNotFoundException, IOException, SQLException, InterruptedException {
 	        try {
-	        	String TruncateResult = collectionagencydispositionPage.truncateTable();
+	        	String TruncateResult = collectionagencydispositionPage.truncateTable(); 
 	        	String DeleteResult = collectionagencydispositionPage.deleteRecordsWhereDispositionDateIsToday();
 	        	ExtentTestManager.getTest().log(Status.PASS, "Executed the mentioned queries for data integrity.Truncate Result : "+TruncateResult+"Delete Result :"+DeleteResult);
 	            Assert.assertTrue(true, "Queries executed successfully without errors.");
@@ -199,7 +198,7 @@ public class CollectionAgencyDisposition_TestClass {
 		 System.out.println("Password: " + results.get(1));
 		 System.out.println("Status message: " + results.get(2));
 
-		 corelogin.CollectionAgencyLoginWithInputs(User_Id, Password);
+		 collectionagencydispositionPage.CollectionAgencyLogin(User_Id, Password);
 		 driver = baseclass.getDriver(); // Update the driver
 		 drivers.add(driver);
 		 collectionagencydispositionPage = new CollectionAgencyDispositionPage(driver);

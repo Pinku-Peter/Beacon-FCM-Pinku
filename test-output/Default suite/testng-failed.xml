@@ -3,15 +3,26 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="core.Configurations.CollectionOfficerConfig_TestClass">
+      <class name="collectionAgency.Disposition.CollectionAgencyDisposition_TestClass">
         <methods>
-          <include name="testSearchFunctionality"/>
           <include name="takeScreenshotOnFailure"/>
-          <include name="SetUp"/>
+          <include name="Allocating_accounts_to_collection_agency" invocation-numbers="0"/>
           <include name="afterEachTest"/>
           <include name="setupTest"/>
+          <include name="Cancel_Button_Functionality_in_Add_New_Interaction_Details" invocation-numbers="0"/>
+          <include name="Committed_Amount_Field_BVA_Validations" invocation-numbers="0"/>
+          <include name="Doing_Disposition_against_Agency_allocated_accounts"/>
+          <include name="Other_Account_Details_Grid_Validation"/>
+          <include name="Customer_Details_Grid_Data_Integrity"/>
+          <include name="SetUp"/>
+          <include name="Risk_Column_Data_Consistency"/>
+          <include name="Security_Details_View_Open_Grid"/>
+          <include name="Customer_Details_Data_Accuracy"/>
+          <include name="Next_Action_Owner_Dropdown_Selection" invocation-numbers="0"/>
+          <include name="Disposition_and_Sub_Disposition_Valid_Selections" invocation-numbers="0"/>
+          <include name="Error_Guessing_Empty_Remarks_Field" invocation-numbers="0"/>
         </methods>
-      </class> <!-- core.Configurations.CollectionOfficerConfig_TestClass -->
+      </class> <!-- collectionAgency.Disposition.CollectionAgencyDisposition_TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

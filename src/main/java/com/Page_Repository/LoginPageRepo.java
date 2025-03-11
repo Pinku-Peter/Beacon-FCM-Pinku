@@ -14,7 +14,7 @@ public class LoginPageRepo {
 	public static By UserIDInDashboard = By.xpath("//span[@class='emailuser']");
 	public static By GoCollectionButton = By.xpath("//button[@class='btn btn-primary' and text()='Go Collection']");
 	public static By SetAsDefaultRadioButton = By.xpath("//div[@class='rz-chkbox-box']");
-	
+	public static By LoginPageSomeErrorOccurred = By.xpath("//span[text()='Some error occurred.']");
 	public static By getORGDetailsinLoginLandingPage(String OrgID, String OrgType) {
 	    String xpathExpression;
 

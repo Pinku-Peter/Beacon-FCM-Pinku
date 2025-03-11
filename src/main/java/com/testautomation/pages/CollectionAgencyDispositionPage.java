@@ -1,25 +1,46 @@
 package com.testautomation.pages;
 
+import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import com.BasePackage.Base_Class;
+import com.BasePackage.Common;
 import com.BasePackage.DBUtils;
 import com.BasePackage.DownloadedExcelReader;
 import com.Page_Repository.CollectionAgencyDispositionRepo;
 import com.Page_Repository.DispositionMasterPageRepo;
+import com.Page_Repository.LoginPageRepo;
 import com.Utility.Log;
 
-public class CollectionAgencyDispositionPage {
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class CollectionAgencyDispositionPage extends Base_Class {
 	
 	private WebDriver driver;
+	public static String AppType;
+	public static String CollectionAgency_BANNER_DETAILS;
+	public static String CORE_LOGIN_BANNER_DETAILS;
 	
 	public CollectionAgencyDispositionPage(WebDriver driver) {
 		Log.info("Initializing CollectionAgencyDispositionPage...");
@@ -97,7 +118,7 @@ public class CollectionAgencyDispositionPage {
         
         try {
             String result = DBUtils.executeSQLStatement(truncateQuery);
-            Log.info("Table truncated successfully.");
+            Log.info("Table truncated successfully. Result : "+result+"");
             return result;
         } catch (SQLException e) {
             Log.error("Error occurred while truncating the table: " + e.getMessage());
@@ -258,6 +279,7 @@ public class CollectionAgencyDispositionPage {
         WebElement dpdDaysField = driver.findElement(CollectionAgencyDispositionRepo.dpdDaysField);
 
         Log.info("Entering DPD Days value: " + days);
+        dpdDaysField.clear();
         dpdDaysField.sendKeys(days);
         Log.info("DPD Days value '" + days + "' entered successfully.");
     }
@@ -322,26 +344,49 @@ public class CollectionAgencyDispositionPage {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
 
-        Log.info("Locating the Download button...");
-        WebElement downloadButton = driver.findElement(CollectionAgencyDispositionRepo.downloadButton);
+        try {
+            Log.info("Locating the Download button...");
+            WebElement downloadButton = driver.findElement(CollectionAgencyDispositionRepo.downloadButton);
 
-        Log.info("Clicking on the Download button...");
-        downloadButton.click();
-        Log.info("Download button clicked successfully.");
+            Log.info("Checking if the Download button is enabled...");
+            if (!downloadButton.isEnabled()) {
+                String errorMessage = "Download button is present but not clickable. No data found in grid, hence Download button not enabled.";
+                Log.error(errorMessage);
+                Assert.fail(errorMessage); // Fails the test case
+            }
 
-        Log.info("Waiting for the download message to become visible...");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(CollectionAgencyDispositionRepo.downloadmsg));
-        Log.info("Download message is now visible.");
+            Log.info("Clicking on the Download button...");
+            downloadButton.click();
+            Log.info("Download button clicked successfully.");
 
-        Log.info("Waiting for the download message to disappear...");
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(CollectionAgencyDispositionRepo.downloadmsg));
-        Log.info("Download message disappeared, indicating completion.");
+            Log.info("Waiting for the download message to become visible...");
+            wait.until(ExpectedConditions.visibilityOfElementLocated(CollectionAgencyDispositionRepo.downloadmsg));
+            Log.info("Download message is now visible.");
 
-        Log.info("Retrieving an account number from the downloaded file...");
-        String account_number = DownloadedExcelReader.getOneAccountNumber();
-        Log.info("Account number retrieved: " + account_number);
+            Log.info("Waiting for the download message to disappear...");
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(CollectionAgencyDispositionRepo.downloadmsg));
+            Log.info("Download message disappeared, indicating completion.");
 
-        return account_number;
+            Log.info("Retrieving an account number from the downloaded file...");
+            String account_number = DownloadedExcelReader.getOneAccountNumber();
+            Log.info("Account number retrieved: " + account_number);
+
+            return account_number;
+        } catch (NoSuchElementException e) {
+            Log.error("Download button not found. It may not be present on the page.");
+            Assert.fail("Download button not found. It may not be present on the page.");
+        } catch (ElementNotInteractableException e) {
+            String errorMessage = "Download button is present but not clickable. No data found in grid, hence Download button not enabled.";
+            Log.error(errorMessage);
+            Assert.fail(errorMessage);
+        } catch (TimeoutException e) {
+            Log.error("Timed out while waiting for download message.");
+            Assert.fail("Timed out while waiting for download message.");
+        } catch (Exception e) {
+            Log.error("An unexpected error occurred while clicking the Download button.", e);
+            Assert.fail("An unexpected error occurred while clicking the Download button: " + e.getMessage());
+        }
+        return null; // Return null in case of failure
     }
 
     public void clickAllocateButton() {
@@ -394,6 +439,169 @@ public class CollectionAgencyDispositionPage {
         } catch (SQLException e) {
             Log.error("Error occurred while fetching account number: " + e.getMessage(), e);
             throw new SQLException("Error occurred while fetching account number", e);
+        }
+    }
+    
+    public void CollectionAgencyLogin(String userId, String password) throws Exception {
+        try {
+            AppType = "CollectionAgency";
+            String Browser = configloader().getProperty("Browser");
+            String CollectionAppUrl = configloader().getProperty("CollectionAgencyApplicationUrl");
+
+            // Initialize WebDriver based on browser type
+            switch (Browser.toUpperCase()) {
+                case "CHROME":
+                    ChromeOptions options = new ChromeOptions();
+                    Map<String, Object> prefs = new HashMap<>();
+                    prefs.put("profile.default_content_setting_values.automatic_downloads", 1);
+                    prefs.put("profile.default_content_setting_values.mixed_script", 1);
+                    prefs.put("profile.default_content_settings.popups", 0);
+                    prefs.put("download.prompt_for_download", false);
+                    String userHome = System.getProperty("user.home");
+                    String downloadDirectory = userHome + File.separator + "Downloads";
+                    prefs.put("download.default_directory", downloadDirectory);
+                    options.setExperimentalOption("prefs", prefs);
+
+                    options.addArguments("--allow-running-insecure-content");
+                    options.addArguments("--ignore-certificate-errors");
+                    options.addArguments("--disable-extensions");
+                    options.addArguments("--start-maximized");
+                    options.addArguments("--disable-popup-blocking");
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver(options);
+                    break;
+                case "FIREFOX":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+                default:
+                    throw new IllegalArgumentException("The Driver is not defined for browser: " + Browser);
+            }
+            Base_Class.driver = (RemoteWebDriver) driver;
+            driver.manage().window().maximize();
+            driver.manage().deleteAllCookies();
+            Log.info("Driver has initialized successfully for " + Browser + " browser");
+
+            // Load the application URL
+            driver.get(CollectionAppUrl);
+            Common.setDriver(driver);
+
+            String query = "select BANNER_DETAILS from SET_LOGINPAGE_BANNER_DETAILS where IS_ACTIVE=1 and banner_user_type=3 order by banner_section desc FETCH FIRST 1 ROWS ONLY";
+            CollectionAgency_BANNER_DETAILS = DBUtils.fetchSingleValueFromDB(query);
+            System.out.println("BANNER_DETAILS: " + CollectionAgency_BANNER_DETAILS);
+
+            Common.fluentWait(CollectionAgency_BANNER_DETAILS, LoginPageRepo.CollectionAgencyLoginBannerDetails(CollectionAgency_BANNER_DETAILS));
+
+            Pagetitle = driver.getTitle();
+            Log.info("Title is displayed: " + Pagetitle);
+
+            // Perform login actions
+            Common.fluentWait("UserNameField", LoginPageRepo.UserNameField);
+            Common.fluentWait("PasswordField", LoginPageRepo.PasswordField);
+            Common.fluentWait("LoginButton", LoginPageRepo.LoginButton);
+
+            driver.findElement(LoginPageRepo.UserNameField).sendKeys(userId);
+            Log.info("Entered " + userId + " in user name field");
+            driver.findElement(LoginPageRepo.PasswordField).sendKeys(password);
+            Log.info("Entered password in password field");
+            driver.findElement(LoginPageRepo.LoginButton).click();
+            Log.info("Clicked on login button");
+
+            try {
+                WebElement clickableElement = Common.waitForElementToBeClickable(
+                    driver, 
+                    LoginPageRepo.AlreadyLoginPopupYesButton, 
+                    Duration.ofSeconds(20)
+                );
+
+                if (clickableElement != null) {
+                    clickableElement.click();
+                    Common.waitForSpinnerToDisappear(driver, "Loading Spinner", LoginPageRepo.Spinner);
+                    
+                    Common.fluentWait("UserNameField", LoginPageRepo.UserNameField);
+                    Common.fluentWait("PasswordField", LoginPageRepo.PasswordField);
+                    Common.fluentWait("LoginButton", LoginPageRepo.LoginButton);
+                    
+                    driver.findElement(LoginPageRepo.UserNameField).sendKeys(userId);
+                    Log.info("Entered " + userId + " in user name field");
+                    driver.findElement(LoginPageRepo.PasswordField).sendKeys(password);
+                    Log.info("Entered password in password field");
+                    driver.findElement(LoginPageRepo.LoginButton).click();
+                    Log.info("Clicked on login button");
+
+                    Log.info("Clicked on already login yes button and logged in again with valid credentials");
+                } else {
+                    System.out.println("Element not clickable within the timeout.");
+                }
+            } catch (Exception e) {
+                System.out.println("Exception occurred while waiting for the element: " + e.getMessage());
+                System.out.println("Already login pop up not appeared");
+            }
+
+            SomeErrorOccuredHandling(userId,password);
+            Thread.sleep(6000);
+        } catch (Exception e) {
+            Log.error("An error occurred in CollectionAgencyLogin: " + e.getMessage());
+            e.printStackTrace();
+            throw e;
+        }
+    }
+    
+    public void SomeErrorOccuredHandling(String userId, String password) {
+        try {
+            WebElement SomeErrorOccured = Common.waitForElementToBeClickable(
+                driver, 
+                LoginPageRepo.LoginPageSomeErrorOccurred, Duration.ofSeconds(20));
+
+            if (SomeErrorOccured != null) {
+                Log.info("Showing 'Some error occurred' message, reloading the application");
+                driver.navigate().refresh();
+
+                if (AppType.equals("CollectionAgency")) {
+                    Common.fluentWait(CollectionAgency_BANNER_DETAILS, 
+                        LoginPageRepo.CollectionAgencyLoginBannerDetails(CollectionAgency_BANNER_DETAILS));
+                }
+
+                Common.fluentWait("UserNameField", LoginPageRepo.UserNameField);
+                Common.fluentWait("PasswordField", LoginPageRepo.PasswordField);
+                Common.fluentWait("LoginButton", LoginPageRepo.LoginButton);
+
+                driver.findElement(LoginPageRepo.UserNameField).sendKeys(userId);
+                driver.findElement(LoginPageRepo.PasswordField).sendKeys(password);
+                driver.findElement(LoginPageRepo.LoginButton).click();
+
+                try {
+                    WebElement clickableElement = Common.waitForElementToBeClickable(
+                        driver, 
+                        LoginPageRepo.AlreadyLoginPopupYesButton, 
+                        Duration.ofSeconds(20)
+                    );
+
+                    if (clickableElement != null) {
+                        clickableElement.click();
+                        Common.waitForSpinnerToDisappear(driver, "Loading Spinner", LoginPageRepo.Spinner);
+
+                        Common.fluentWait("UserNameField", LoginPageRepo.UserNameField);
+                        Common.fluentWait("PasswordField", LoginPageRepo.PasswordField);
+                        Common.fluentWait("LoginButton", LoginPageRepo.LoginButton);
+
+                        driver.findElement(LoginPageRepo.UserNameField).sendKeys(userId);
+                        driver.findElement(LoginPageRepo.PasswordField).sendKeys(password);
+                        driver.findElement(LoginPageRepo.LoginButton).click();
+
+                        Log.info("Clicked on already login yes button and logged in again with valid credentials");
+                    } else {
+                        System.out.println("Element not clickable within the timeout.");
+                    }
+                } catch (Exception e) {
+                    System.out.println("Exception occurred while waiting for the element: " + e.getMessage());
+                    System.out.println("Already login pop-up did not appear");
+                }
+            } else {
+                System.out.println("'Some error occurred' message did not appear");
+            }
+        } catch (Exception e) {
+            System.out.println("Exception in handling 'Some error occurred' scenario: " + e.getMessage());
         }
     }
     
