@@ -68,7 +68,7 @@ public class AlertsPlaceholderManagement_TestClass {
     }
 	
 	 @Test(priority = 1)
-	    public void testInsertNewEntryAllValidFields() throws IOException, InterruptedException {
+	    public void Insert_New_Entry_All_Valid_Fields() throws IOException, InterruptedException {
 		 try {
 		    // Prepare and execute the insert query
 		    String insertQuery = "Check_Insert_ALT_Template_Placeholder";
