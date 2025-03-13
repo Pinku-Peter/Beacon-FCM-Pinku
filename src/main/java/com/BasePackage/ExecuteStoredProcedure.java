@@ -2,10 +2,6 @@ package com.BasePackage;
 
 import java.io.IOException;
 import java.sql.*;
-import java.util.ArrayList;
-
-import oracle.jdbc.OracleCallableStatement;
-import oracle.jdbc.OracleTypes;
 
 public class ExecuteStoredProcedure {
 

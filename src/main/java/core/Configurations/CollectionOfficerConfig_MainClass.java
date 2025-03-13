@@ -1,31 +1,49 @@
 package core.Configurations;
 
 
+import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
+import java.util.Properties;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import com.BasePackage.Base_Class;
+import com.BasePackage.Common;
 import com.BasePackage.DBUtils;
 import com.BasePackage.ExecuteStoredProcedure;
+import com.BasePackage.Login_Class;
+import com.BasePackage.PropertiesFileUtil;
 import com.Page_Repository.CollectionAgencyDispositionRepo;
 import com.Page_Repository.CoreCollectionOfficerConfigRepo;
 import com.Page_Repository.DispositionMasterPageRepo;
+import com.Page_Repository.LoginPageRepo;
 import com.Utility.Log;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.netty.handler.timeout.TimeoutException;
+import java.sql.Types;
 
-public class CollectionOfficerConfig_MainClass {
+public class CollectionOfficerConfig_MainClass extends Base_Class {
 	
 	private WebDriver driver;
 	private String dbValue;
 	String Username;
+	public static String orgName;
+    public static String orgTypeName;
 	
 	public CollectionOfficerConfig_MainClass(WebDriver driver) {
 		Log.info("Initializing CollectionOfficerConfig_MainClass...");
@@ -834,5 +852,159 @@ public class CollectionOfficerConfig_MainClass {
 
 	    	    return errorMessage;
 	    }
+	    
+	    public void createHOUser() throws IOException, InterruptedException, ClassNotFoundException, SQLException {
+	    	Log.info("Starting HO User creation process...");
+
+	        String loginUserId;
+	        String loginPassword;
+
+	        String fileName = "CoreHOUserCredentials_CoreUserManagement_HO_User_Creation.properties";
+	        Log.info("Reading user credentials from properties file: " + fileName);
+
+	        Properties properties = PropertiesFileUtil.ReadFromPropertiesFile(fileName);
+	        loginUserId = properties.getProperty("HO_User_ID");
+
+	        Log.info("Preparing input parameters for stored procedure...");
+	        List<Object> inputParams = Arrays.asList(loginUserId, "John Doe", "john.doe@example.com", 9876543210L);
+	        List<Integer> outputTypes = Arrays.asList(Types.VARCHAR, Types.VARCHAR, Types.VARCHAR);
+
+	        Log.info("Executing stored procedure 'HOUserIDGenerator'...");
+	        List<Object> results = DBUtils.ExecuteAnyOracleSQLStoredProcedure("HOUserIDGenerator", inputParams, outputTypes);
+
+	        if (results == null || results.size() < 2) {
+	            Log.error("Stored procedure did not return expected results.");
+	            return;
+	        }
+
+	        loginUserId = (String) results.get(0);
+	        loginPassword = (String) results.get(1);
+	        String SP_ExecutionMessage = (String) results.get(2);
+
+	        Log.info("Stored procedure execution message: " + SP_ExecutionMessage);
+
+	        Map<String, String> updates = new HashMap<>();
+	        updates.put("HO_User_ID", loginUserId);
+	        updates.put("HO_User_Password", loginPassword);
+
+	        if (properties.isEmpty()) {
+	            Log.info("Properties file is empty. Updating properties file...");
+	            PropertiesFileUtil.updateProperties(fileName, updates);
+	            Log.info("Properties updated successfully.");
+	        } else {
+	            Log.info("Properties file already contains values. Skipping update.");
+	            loginUserId = properties.getProperty("HO_User_ID");
+	            loginPassword = properties.getProperty("HO_User_Password");
+	        }
+
+	        Log.info("User ID: " + loginUserId);
+	        Log.info("Password: " + loginPassword);
+
+	        Log.info("Initializing WebDriver...");
+	        String Browser = configloader().getProperty("Browser");
+	        String CoreAppUrl = configloader().getProperty("CoreApplicationUrl");
+
+	        switch (Browser.toUpperCase()) {
+	            case "CHROME":
+	                Log.info("Setting up Chrome WebDriver...");
+	                ChromeOptions options = new ChromeOptions();
+	                Map<String, Object> prefs = new HashMap<>();
+	                String userHome = System.getProperty("user.home");
+	                String downloadDirectory = userHome + File.separator + "Downloads";
+
+	                prefs.put("download.default_directory", downloadDirectory);
+	                prefs.put("profile.default_content_setting_values.automatic_downloads", 1);
+	                prefs.put("profile.default_content_setting_values.mixed_script", 1);
+	                prefs.put("profile.default_content_settings.popups", 0);
+	                prefs.put("download.prompt_for_download", false);
+	                options.setExperimentalOption("prefs", prefs);
+
+	                options.addArguments("--allow-running-insecure-content");
+	                options.addArguments("--ignore-certificate-errors");
+	                options.addArguments("--disable-extensions");
+	                options.addArguments("--start-maximized");
+	                options.addArguments("--disable-popup-blocking");
+
+	                WebDriverManager.chromedriver().setup();
+	                driver = new ChromeDriver(options);
+	                break;
+	            case "FIREFOX":
+	                Log.info("Setting up Firefox WebDriver...");
+	                WebDriverManager.firefoxdriver().setup();
+	                driver = new FirefoxDriver();
+	                break;
+	            default:
+	                Log.error("The Driver is not defined for browser: " + Browser);
+	                throw new IllegalArgumentException("The Driver is not defined for browser: " + Browser);
+	        }
+
+	        Log.info("Driver initialized successfully for " + Browser + " browser");
+
+	        Base_Class.driver = (RemoteWebDriver) driver;
+	        driver.manage().window().maximize();
+	        driver.manage().deleteAllCookies();
+	        Log.info("Navigating to application URL: " + CoreAppUrl);
+	        driver.get(CoreAppUrl);
+	        Common.setDriver(driver);
+	        Thread.sleep(9000);
+
+	        Log.info("Performing login...");
+	        Common.fluentWait("UserNameField", LoginPageRepo.UserNameField);
+	        Common.fluentWait("PasswordField", LoginPageRepo.PasswordField);
+	        Common.fluentWait("LoginButton", LoginPageRepo.LoginButton);
+
+	        Log.info("Entering credentials...");
+	        driver.findElement(LoginPageRepo.UserNameField).sendKeys(loginUserId);
+	        Log.info("Entered " + loginUserId + " in user name field");
+	        driver.findElement(LoginPageRepo.PasswordField).sendKeys(loginPassword);
+	        Log.info("Entered " + loginPassword + " in password field");
+	        driver.findElement(LoginPageRepo.LoginButton).click();
+	        Log.info("Clicked on login button");
+
+	        Log.info("Checking for 'Already Login' popup...");
+	        try {
+	            WebElement clickableElement = Common.waitForElementToBeClickable(
+	                driver,
+	                LoginPageRepo.AlreadyLoginPopupYesButton,
+	                Duration.ofSeconds(20)
+	            );
+
+	            if (clickableElement != null) {
+	                Log.info("Handling 'Already Login' popup...");
+	                clickableElement.click();
+	                Common.waitForSpinnerToDisappear(driver, "Loading Spinner", LoginPageRepo.Spinner);
+
+	                Log.info("Re-entering credentials...");
+	                Common.fluentWait("UserNameField", LoginPageRepo.UserNameField);
+	                Common.fluentWait("PasswordField", LoginPageRepo.PasswordField);
+	                Common.fluentWait("LoginButton", LoginPageRepo.LoginButton);
+
+	                driver.findElement(LoginPageRepo.UserNameField).sendKeys(loginUserId);
+	                Log.info("Re-entered " + loginUserId + " in user name field");
+	                driver.findElement(LoginPageRepo.PasswordField).sendKeys(loginPassword);
+	                Log.info("Re-entered " + loginPassword + " in password field");
+	                driver.findElement(LoginPageRepo.LoginButton).click();
+	                Log.info("Clicked on login button after popup");
+	            }
+	        } catch (Exception e) {
+	            Log.info("Already login popup did not appear.");
+	        }
+
+	        Log.info("Handling possible login errors...");
+	        Login_Class.SomeErrorOccuredHandling();
+
+	        Log.info("Clicking on dashboard icon...");
+	        driver.findElement(CoreCollectionOfficerConfigRepo.dashboardicon).click();
+
+	        Log.info("Fetching UserID from Dashboard...");
+	        Common.fluentWait("AccountCategoryLabelInDashboard", LoginPageRepo.AccountCategoryLabelInDashboard);
+	        String UserIDInDashboard = driver.findElement(LoginPageRepo.UserIDInDashboard).getText();
+	        Log.info("UserID in Dashboard: " + UserIDInDashboard);
+
+	        Log.info("Fetching user organization details from DB...");
+	        Login_Class.GetUserORGDetailsFromDB(UserIDInDashboard);
+
+	        Log.info("HO User creation process completed successfully.");
+	    }    
 
 }

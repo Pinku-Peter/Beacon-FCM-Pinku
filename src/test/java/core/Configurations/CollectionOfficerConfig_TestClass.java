@@ -70,7 +70,7 @@ public class CollectionOfficerConfig_TestClass {
     }
 	
 	 @Test(priority = 1)
-	    public void Add_core_users_to_mst_employee_table () throws InterruptedException {
+	    public void Add_core_users_to_mst_employee_table () throws Throwable {
 		 try {
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 		 WebElement userid = wait.until(ExpectedConditions.visibilityOfElementLocated(UpdationofDispositionRepo.loginuserid));
@@ -274,7 +274,31 @@ public class CollectionOfficerConfig_TestClass {
 			Thread.sleep(3000);
 	    }
 	 
-	 @Test(priority = 11) 
+	 @Test(priority = 11)
+	    public void testBehalBranchUserVisibility() throws ClassNotFoundException, IOException, InterruptedException, SQLException {
+	        
+		 corecollectionofficerconfigpage.createHOUser();
+		 ExtentTestManager.getTest().log(Status.PASS, "A new 'Other Branch User' was created with login credentials, and successfully logged into the application using those credentials.");
+		 driver = baseclass.getDriver(); // Update the driver
+		 drivers.add(driver);
+		 corecollectionofficerconfigpage = new CollectionOfficerConfig_MainClass(driver);
+		 screenShot = new com.Utility.ScreenShot(driver);
+		 corecollectionofficerconfigpage.clickMyDeskMainMenu();
+		 ExtentTestManager.getTest().log(Status.PASS, "The 'My Desk' main menu was clicked.");
+	        // Click on Dashboard sub menu
+		 corecollectionofficerconfigpage.clickDashboardSubMenu();
+		 ExtentTestManager.getTest().log(Status.PASS, "The 'Dashboard' submenu was clicked.");
+	        // Click on any tile of Unassigned accounts
+		 corecollectionofficerconfigpage.clickUnassignedAccountsTile(); 
+		 ExtentTestManager.getTest().log(Status.PASS, "A tile under 'Unassigned Accounts' was clicked.");
+	        // Select 'BCO' from Allocate To dropdown
+		 corecollectionofficerconfigpage.selectBCOFromAllocateTo();
+		 ExtentTestManager.getTest().log(Status.PASS, "The 'Allocate To' dropdown was clicked, and the 'BCO' value was selected.");
+	        // Assert that users are listed correctly under 'BCO'
+	        Assert.assertFalse(corecollectionofficerconfigpage.areUsersListedUnderBCO(), "Expected user should not available under BCO.");
+	    }
+	 
+	 @Test(priority = 12) 
 	    public void Test_Uncheck_Collection_Officer_Functionality() throws ClassNotFoundException, SQLException, IOException, InterruptedException {
 		 try {
 		 

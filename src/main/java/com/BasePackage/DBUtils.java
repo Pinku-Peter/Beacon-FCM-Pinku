@@ -6,7 +6,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Types;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import oracle.jdbc.OracleTypes;
@@ -62,16 +64,13 @@ public class DBUtils {
             e.printStackTrace();
         }*/
         
-    	/*String procedureCall = "{CALL SP_GET_USER_OTHERBRANCH_ACCOUNTS(?, ?)}";
-        String userId = "IBU0001196"; // Input parameter
+    	String procedureName = "Check_Insert_ALT_Template_Placeholder";
+        List<Object> inputParams = new ArrayList<>(); // No input parameters
+        List<Integer> outputParamTypes = Arrays.asList(Types.VARCHAR, Types.VARCHAR); // Example output parameters
 
-        try {
-            List<String> AcNo = callStoredProcedureWithRefCursor(procedureCall, userId);
-            String AccoutNumber = String.join(", ", AcNo);
-            System.out.println("User Branch Account Number: " + AccoutNumber);
-        } catch (Exception e) {
-            System.err.println("Failed to execute stored procedure: " + e.getMessage());
-        }*/
+        List<Object> outputValues = ExecuteAnyOracleSQLStoredProcedure(procedureName, inputParams, outputParamTypes);
+
+        System.out.println("Output Values: " + outputValues);
     	
     	 // Example usage with a SELECT statement
         /*String selectQuery = "SELECT column_name FROM table_name WHERE condition";
@@ -83,14 +82,14 @@ public class DBUtils {
 //        String truncateResult = executeSQLStatement(truncateQuery);
 //        System.out.println("Truncate Query Result: " + truncateResult);
         
-        String deleteQuery = "DELETE FROM agent_account_link WHERE col_agency_id = (SELECT COLLECTION_AGENCY_ID FROM MST_COLLECTION_AGENCY WHERE COLLECTION_AGENCY_NAME = 'qwer' FETCH FIRST 1 ROW ONLY)";
+        //String deleteQuery = "DELETE FROM agent_account_link WHERE col_agency_id = (SELECT COLLECTION_AGENCY_ID FROM MST_COLLECTION_AGENCY WHERE COLLECTION_AGENCY_NAME = 'qwer' FETCH FIRST 1 ROW ONLY)";
 //        String deleteQuery = "DELETE FROM agent_account_link \r\n"
 //        		+ "WHERE col_agency_id IN (\r\n"
 //        		+ "    SELECT COLLECTION_AGENCY_ID FROM MST_COLLECTION_AGENCY \r\n"
 //        		+ "    WHERE COLLECTION_AGENCY_NAME = 'qwer'\r\n"
 //        		+ ")";
         // Call the method from DBUtils
-        executeSQLStatement(deleteQuery); 
+        //executeSQLStatement(deleteQuery); 
 
     	
     }

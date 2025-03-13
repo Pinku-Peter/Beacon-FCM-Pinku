@@ -38,6 +38,7 @@ public class CoreCollectionOfficerConfigRepo {
 	public static By AssignReassignTo_Present_values = By.xpath("//div[@class='rz-dropdown-panel rz-popup']//li[@role='option']");
 	public static By  DownloadinExcelsuccessmsg = By.xpath("//p[text()='File downloaded successfully']");
 	public static By  Saveconfigurationwarningmsg = By.xpath("//p[text()='Select atleast one record to process.']");
+	public static By  dashboardicon = By.xpath("//span[@class='material-symbols-outlined' and contains(text(),'Dashboard')]");
 	
 	public static By Region_value(String value) {
         return By.xpath("//li[@class='rz-multiselect-item ' and @aria-label='" + value + "']");
