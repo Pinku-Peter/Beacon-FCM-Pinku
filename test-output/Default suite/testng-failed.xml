@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass">
+      <class name="core.Configurations.CollectionOfficerConfig_TestClass">
         <methods>
+          <include name="Test_Uncheck_Collection_Officer_Functionality"/>
+          <include name="other_branch_user_is_not_showing_My_Desk_Unassigned_accounts_Tile"/>
+          <include name="other_branch_user_is_not_showing_My_Desk_Branch_Attention_Required_Tile"/>
           <include name="takeScreenshotOnFailure"/>
           <include name="SetUp"/>
-          <include name="testSuccessfulLogin"/>
           <include name="afterEachTest"/>
           <include name="setupTest"/>
         </methods>
-      </class> <!-- core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass -->
+      </class> <!-- core.Configurations.CollectionOfficerConfig_TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

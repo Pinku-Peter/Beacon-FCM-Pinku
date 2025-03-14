@@ -193,7 +193,7 @@ public class CollectionAgencyAgentAcAllocat_TestClass {
 		 System.out.println("Password: " + results.get(1));
 		 System.out.println("Status message: " + results.get(2));
 
-		 collectionagencydispositionPage.CollectionAgencyLogin(User_Id, Password);
+		 collectionagencyagentacallocatPage.CollectionAgencyLogin(User_Id, Password); 
 		 driver = baseclass.getDriver(); // Update the driver
 		 drivers.add(driver);
 		 collectionagencyagentacallocatPage = new CollectionAgencyAgentAcAllocatPage(driver);
@@ -254,7 +254,7 @@ public class CollectionAgencyAgentAcAllocat_TestClass {
 		 
 		 collectionagencyagentacallocatPage.clickSearchButon(); 
 		 ExtentTestManager.getTest().log(Status.PASS, "Clicked the 'Search' button.");
-		 List<String> columnValues = collectionagencyagentacallocatPage.getAllColumnValuesExcludingFirstTwo(); 
+		 List<String> columnValues = collectionagencyagentacallocatPage.getAllColumnValuesExcludingFirstTwo();  
 		 System.out.println("Values from downloaded Excel : "+excelData);
 		 System.out.println("Values from UI Grid : "+columnValues);
 		 boolean result = collectionagencyagentacallocatPage.isExcelDataPresentInColumnValues(excelData, columnValues);

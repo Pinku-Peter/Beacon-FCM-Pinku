@@ -49,18 +49,13 @@ public class AlertsPlaceholderManagement_TestClass {
 		
 		baseclass = new Base_Class();
 		corelogin = new Login_Class();
-//		driver = baseclass.getDriver(); // Retrieve the driver instance
-//		alertsplaceholdermanagement_mainclass = new AlertsPlaceholderManagement_MainClass(driver);
-		//ExcelReader = new com.Utility.ExcelReader("CollectionAgencyAgentAcAllocatP");
-//		TestListener = new TestListener();
-//		screenShot = new com.Utility.ScreenShot(driver);
 	}
 	
 	@BeforeMethod
     public void setupTest(Method method) {
-		driver = baseclass.getDriver();
+		driver = baseclass.getDriver(); 
 		drivers.add(driver);
-	    alertsplaceholdermanagement_mainclass = new AlertsPlaceholderManagement_MainClass(driver);
+	    alertsplaceholdermanagement_mainclass = new AlertsPlaceholderManagement_MainClass(driver); 
 	    TestListener = new TestListener();
 	    screenShot = new com.Utility.ScreenShot(driver);
         // Start a new ExtentTest for the current test method
@@ -68,7 +63,7 @@ public class AlertsPlaceholderManagement_TestClass {
     }
 	
 	 @Test(priority = 1)
-	    public void Insert_New_Entry_All_Valid_Fields() throws IOException, InterruptedException {
+	    public void Insert_New_Entry_All_Valid_Fields() throws IOException, InterruptedException { 
 		 try {
 		    // Prepare and execute the insert query
 		    String insertQuery = "Check_Insert_ALT_Template_Placeholder";

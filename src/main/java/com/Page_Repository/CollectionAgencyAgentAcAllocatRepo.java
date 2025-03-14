@@ -33,9 +33,11 @@ public class CollectionAgencyAgentAcAllocatRepo {
 	public static By  Closebutton = By.xpath("//button[@type='reset' and text()='Close']");
 	public static By  AllocatedListbutton = By.xpath("//button[@type='submit' and text()='Allocated List']");
 	public static By  AssetCategoryvalues = By.xpath("//div[@class='rz-multiselect-panel rz-popup']//following-sibling::div[@class='rz-chkbox']");
-	public static By  Gridvalues = By.xpath("//table[@class='rz-grid-table rz-grid-table-fixed']//tr//td[position()>2]");
+	public static By  Gridvalues = By.xpath("//table[@class='rz-grid-table rz-grid-table-fixed']//tr//td[position()=3]");
 	public static By  accountCheckbox = By.xpath("//tbody//tr[@class='rz-datatable-even  ']//div[@class='rz-chkbox-box']");
+	public static By  firstrecordaccountCheckbox = By.xpath("//tbody//tr[@class='rz-datatable-even  ' and position()=1]//div[@class='rz-chkbox-box']");
 	public static By  accountdetails = By.xpath("//tbody//tr[@class='rz-datatable-even  ']//td[position()>1]");
+	public static By  accountdetailsoffirstrow = By.xpath("//tbody//tr[@class='rz-datatable-even  ' and position()=1]//td[position()>1]");
 	public static By  collectionagentvalues = By.xpath("(//div[@class='rz-dropdown-panel rz-popup']//div[@class='rz-dropdown-items-wrapper']//ul[@role='listbox']//li[@class='rz-dropdown-item ' ])[position()>1]");
 	public static By  Allocatedmsg = By.xpath("//p[text()='Allocated Successfully']");
 	public static By  downloadedmsg = By.xpath("//p[text()='File downloaded successfully']");

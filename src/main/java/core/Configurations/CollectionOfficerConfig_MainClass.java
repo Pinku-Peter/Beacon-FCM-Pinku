@@ -40,11 +40,12 @@ import java.sql.Types;
 public class CollectionOfficerConfig_MainClass extends Base_Class {
 	
 	private WebDriver driver;
+	public static String CORE_LOGIN_BANNER_DETAILS;
 	private String dbValue;
-	String Username;
 	public static String orgName;
     public static String orgTypeName;
-	
+    String username ,UserIDInDashboard;
+    
 	public CollectionOfficerConfig_MainClass(WebDriver driver) {
 		Log.info("Initializing CollectionOfficerConfig_MainClass...");
 	    
@@ -74,9 +75,10 @@ public class CollectionOfficerConfig_MainClass extends Base_Class {
 	 }
 	 
 	 public void clickSecurityManagement() {
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+		 UserIDInDashboard = driver.findElement(LoginPageRepo.UserIDInDashboard).getText();
+		 
 		 Log.info("Starting the process to click on 'Security Management'...");
-
-		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
 
 		    Log.info("Waiting for spinner to disappear...");
 		    wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
@@ -609,13 +611,12 @@ public class CollectionOfficerConfig_MainClass extends Base_Class {
 	        JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	        try {
+	        	Log.info("Retrieving the logged-in username...");
+	            WebElement usernameElement = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreCollectionOfficerConfigRepo.username));
+	            username = usernameElement.getText().trim();
 	            // Fetch the username
-	            Log.info("Retrieving the logged-in username...");
-	            WebElement usernameElement = wait.until(
-	                ExpectedConditions.visibilityOfElementLocated(CoreCollectionOfficerConfigRepo.username)
-	            );
-	            Username = usernameElement.getText().trim();
-	            Log.info("Fetched Username: " + Username);
+	            
+	            Log.info("Fetched Username: " + username);
 
 	            // Scroll to the dropdown
 	            Log.info("Scrolling to the bottom of the page...");
@@ -631,16 +632,16 @@ public class CollectionOfficerConfig_MainClass extends Base_Class {
 	            selectBCODropdown.click();
 
 	            // Locate and select the user from the dropdown
-	            Log.info("Waiting for user (" + Username + ") to appear in the dropdown...");
+	            Log.info("Waiting for user (" + username + ") to appear in the dropdown...");
 	            WebElement selectBCODropdownValue = wait.until(
-	                ExpectedConditions.visibilityOfElementLocated(CoreCollectionOfficerConfigRepo.Branch_BCO_value(Username))
+	                ExpectedConditions.visibilityOfElementLocated(CoreCollectionOfficerConfigRepo.Branch_BCO_value(username))
 	            );
 
-	            Log.info("Selecting user (" + Username + ") from the dropdown...");
+	            Log.info("Selecting user (" + username + ") from the dropdown...");
 	            selectBCODropdownValue.click();
 
 	            // Verify if the correct username is displayed after selection
-	            boolean isUserListed = selectBCODropdown.getText().trim().equals(Username);
+	            boolean isUserListed = selectBCODropdown.getText().trim().equals(username);
 	            Log.info("User " + (isUserListed ? "successfully" : "not") + " listed under BCO.");
 
 	            return isUserListed;
@@ -724,12 +725,16 @@ public class CollectionOfficerConfig_MainClass extends Base_Class {
 	    // Get the text of listed users in the dropdown
 	    public boolean getListedUsers() {
 	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+	    	Log.info("Retrieving the logged-in username...");
+            WebElement usernameElement = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreCollectionOfficerConfigRepo.username));
+            username = usernameElement.getText().trim();
+	 
 	        try {
-	            Log.info("Fetching Username: " + Username);
+	            Log.info("Fetching Username: " + username);
 
-	            Log.info("Waiting for 'Assign/Reassign To' dropdown value to be visible for user: " + Username);
+	            Log.info("Waiting for 'Assign/Reassign To' dropdown value to be visible for user: " + username);
 	            WebElement Branch_BCO_AssignReassignTo_value = wait.until(
-	                ExpectedConditions.visibilityOfElementLocated(CoreCollectionOfficerConfigRepo.AssignReassignTo_value(Username))
+	                ExpectedConditions.visibilityOfElementLocated(CoreCollectionOfficerConfigRepo.AssignReassignTo_value(username))
 	            );
 
 	            Log.info("Clicking 'Assign/Reassign To' dropdown value...");
@@ -741,7 +746,7 @@ public class CollectionOfficerConfig_MainClass extends Base_Class {
 	                ExpectedConditions.visibilityOfElementLocated(CoreCollectionOfficerConfigRepo.AssignReassignTodropdown)
 	            );
 
-	            boolean isUserListed = AssignReassignTodropdown.getText().trim().equals(Username);
+	            boolean isUserListed = AssignReassignTodropdown.getText().trim().equals(username);
 	            Log.info("Verification result: " + isUserListed);
 
 	            return isUserListed;
@@ -780,18 +785,18 @@ public class CollectionOfficerConfig_MainClass extends Base_Class {
 	            return false;
 	        }
 
-	        Log.info("Dropdown options retrieved. Checking for username: " + Username);
+	        Log.info("Dropdown options retrieved. Checking for username: " + username);
 
 	        // Check if the username is present in the dropdown options
 	        for (WebElement option : options) {
 	            Log.debug("Checking option: " + option.getText().trim());
-	            if (option.getText().trim().equalsIgnoreCase(Username)) {
-	                Log.info("Username found: " + Username);
+	            if (option.getText().trim().equalsIgnoreCase(username)) {
+	                Log.info("Username found: " + username);
 	                return true; // Username exists in the dropdown
 	            }
 	        }
 
-	        Log.warn("Username not found: " + Username);
+	        Log.warn("Username not found: " + username);
 	        return false; // Username not found
 	    }
 	    // Method to click on Download in Excel button
@@ -866,18 +871,18 @@ public class CollectionOfficerConfig_MainClass extends Base_Class {
 	        loginUserId = properties.getProperty("HO_User_ID");
 
 	        Log.info("Preparing input parameters for stored procedure...");
-	        List<Object> inputParams = Arrays.asList(loginUserId, "John Doe", "john.doe@example.com", 9876543210L);
+	        List<Object> inputParams = Arrays.asList(UserIDInDashboard,loginUserId, "John Doe", "john.doe@example.com", 9876543210L);
 	        List<Integer> outputTypes = Arrays.asList(Types.VARCHAR, Types.VARCHAR, Types.VARCHAR);
 
 	        Log.info("Executing stored procedure 'HOUserIDGenerator'...");
-	        List<Object> results = DBUtils.ExecuteAnyOracleSQLStoredProcedure("HOUserIDGenerator", inputParams, outputTypes);
+	        List<Object> results = DBUtils.ExecuteAnyOracleSQLStoredProcedure("ZoneUserIDGeneratorUsingAnotherUserID", inputParams, outputTypes);
 
 	        if (results == null || results.size() < 2) {
 	            Log.error("Stored procedure did not return expected results.");
 	            return;
 	        }
 
-	        loginUserId = (String) results.get(0);
+	        loginUserId = (String) results.get(0); 
 	        loginPassword = (String) results.get(1);
 	        String SP_ExecutionMessage = (String) results.get(2);
 
@@ -937,7 +942,6 @@ public class CollectionOfficerConfig_MainClass extends Base_Class {
 	                Log.error("The Driver is not defined for browser: " + Browser);
 	                throw new IllegalArgumentException("The Driver is not defined for browser: " + Browser);
 	        }
-
 	        Log.info("Driver initialized successfully for " + Browser + " browser");
 
 	        Base_Class.driver = (RemoteWebDriver) driver;
@@ -946,6 +950,11 @@ public class CollectionOfficerConfig_MainClass extends Base_Class {
 	        Log.info("Navigating to application URL: " + CoreAppUrl);
 	        driver.get(CoreAppUrl);
 	        Common.setDriver(driver);
+	        String LoginBannerQuery = "select BANNER_DETAILS from SET_LOGINPAGE_BANNER_DETAILS where IS_ACTIVE=1 and banner_user_type=1 order by banner_section desc FETCH FIRST 1 ROWS ONLY";
+            CORE_LOGIN_BANNER_DETAILS = DBUtils.fetchSingleValueFromDB(LoginBannerQuery);
+            //System.out.println("BANNER_DETAILS: " + CORE_LOGIN_BANNER_DETAILS);
+            
+            Common.fluentWait("Core login Banner", LoginPageRepo.CollectionAgencyLoginBannerDetails(CORE_LOGIN_BANNER_DETAILS));
 	        Thread.sleep(9000);
 
 	        Log.info("Performing login...");
@@ -991,20 +1000,111 @@ public class CollectionOfficerConfig_MainClass extends Base_Class {
 	        }
 
 	        Log.info("Handling possible login errors...");
-	        Login_Class.SomeErrorOccuredHandling();
+	        Login_Class.SomeErrorOccuredHandling(loginUserId,loginPassword);
 
 	        Log.info("Clicking on dashboard icon...");
 	        driver.findElement(CoreCollectionOfficerConfigRepo.dashboardicon).click();
 
 	        Log.info("Fetching UserID from Dashboard...");
 	        Common.fluentWait("AccountCategoryLabelInDashboard", LoginPageRepo.AccountCategoryLabelInDashboard);
-	        String UserIDInDashboard = driver.findElement(LoginPageRepo.UserIDInDashboard).getText();
+	        UserIDInDashboard = driver.findElement(LoginPageRepo.UserIDInDashboard).getText();
 	        Log.info("UserID in Dashboard: " + UserIDInDashboard);
 
 	        Log.info("Fetching user organization details from DB...");
 	        Login_Class.GetUserORGDetailsFromDB(UserIDInDashboard);
 
 	        Log.info("HO User creation process completed successfully.");
-	    }    
+	    } 
+	    
+	    public boolean areUsersListedUnderBCOforotherbrnach(String username) throws InterruptedException {
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+	        try {
+	            Log.info("Starting verification of user '" + username + "' in BCO dropdown.");
+
+	            // Scroll to the dropdown
+	            Log.info("Scrolling to the bottom of the page...");
+	            js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+	            Thread.sleep(5000); // Consider replacing this with an explicit wait.
+
+	            // Locate and click the dropdown
+	            Log.info("Waiting for BCO dropdown to be visible...");
+	            WebElement selectBCODropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreCollectionOfficerConfigRepo.selectBCODropdown));
+	            
+	            Log.info("Clicking on BCO dropdown...");
+	            selectBCODropdown.click();
+
+	            // Fetch dropdown options
+	            List<WebElement> options = new ArrayList<>();
+	            try {
+	                Log.info("Waiting for BCO dropdown options to be visible...");
+	                options = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(CoreCollectionOfficerConfigRepo.BCOvalues));
+	                Log.info("BCO dropdown options loaded successfully.");
+	            } catch (TimeoutException e) {
+	                Log.warn("Timeout while waiting for BCO dropdown options. Returning false.");
+	                return false;
+	            }
+
+	            // Check if the username is present in the dropdown options
+	            Log.info("Checking if user '" + username + "' exists in BCO dropdown options...");
+	            for (WebElement option : options) {
+	                Log.debug("Checking option: " + option.getText().trim());
+	                if (option.getText().trim().equalsIgnoreCase(username)) {
+	                    Log.info("User '" + username + "' found in BCO dropdown.");
+	                    return true;
+	                }
+	            }
+
+	            Log.info("User '" + username + "' not found in BCO dropdown.");
+	            return false;
+
+	        } catch (Exception e) {
+	            Log.error("Exception occurred while verifying user in BCO dropdown: " + e.getMessage());
+	            return false;
+	        }
+	    }
+	    
+	    public boolean areUsersListedUnderAssignReassignforotherbrnach(String username) throws InterruptedException {
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+	        try {
+	            Log.info("Starting verification of user '" + username + "' in Assign/Reassign dropdown.");
+
+	            // Scroll to the dropdown
+	            Log.info("Scrolling to the bottom of the page...");
+	            js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+	            Thread.sleep(5000); // Consider replacing this with an explicit wait.
+
+	            // Fetch dropdown options
+	            List<WebElement> options = new ArrayList<>();
+	            try {
+	                Log.info("Waiting for Assign/Reassign dropdown options to be visible...");
+	                options = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(CoreCollectionOfficerConfigRepo.AssignReassignTo_Present_values));
+	                Log.info("Assign/Reassign dropdown options loaded successfully.");
+	            } catch (TimeoutException e) {
+	                Log.warn("Timeout while waiting for Assign/Reassign dropdown options. Returning false.");
+	                return false;
+	            }
+
+	            // Check if the username is present in the dropdown options
+	            Log.info("Checking if user '" + username + "' exists in Assign/Reassign dropdown options...");
+	            for (WebElement option : options) {
+	                Log.debug("Checking option: " + option.getText().trim());
+	                if (option.getText().trim().equalsIgnoreCase(username)) {
+	                    Log.info("User '" + username + "' found in Assign/Reassign dropdown.");
+	                    return true;
+	                }
+	            }
+
+	            Log.info("User '" + username + "' not found in Assign/Reassign dropdown.");
+	            return false;
+
+	        } catch (Exception e) {
+	            Log.error("Exception occurred while verifying user in Assign/Reassign dropdown: " + e.getMessage());
+	            return false;
+	        }
+	    }
 
 }

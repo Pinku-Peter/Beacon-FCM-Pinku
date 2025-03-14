@@ -39,7 +39,7 @@ public class CoreCollectionOfficerConfigRepo {
 	public static By  DownloadinExcelsuccessmsg = By.xpath("//p[text()='File downloaded successfully']");
 	public static By  Saveconfigurationwarningmsg = By.xpath("//p[text()='Select atleast one record to process.']");
 	public static By  dashboardicon = By.xpath("//span[@class='material-symbols-outlined' and contains(text(),'Dashboard')]");
-	
+	public static By  BCOvalues = By.xpath("(//div[@class='rz-dropdown-panel rz-popup']//div[@class='rz-dropdown-items-wrapper'])[2]//ul//li");
 	public static By Region_value(String value) {
         return By.xpath("//li[@class='rz-multiselect-item ' and @aria-label='" + value + "']");
     }

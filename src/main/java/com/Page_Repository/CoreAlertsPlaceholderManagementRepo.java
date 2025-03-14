@@ -16,7 +16,7 @@ public class CoreAlertsPlaceholderManagementRepo {
 	public static By searchButton = By.xpath("//button[@type='button' and text()='Search']");
 	
 	public static By Region_value(String value) {
-        return By.xpath("//li[@class='rz-multiselect-item ' and @aria-label='" + value + "']");
+        return By.xpath("//li[@class='rz-multiselect-item ' and @aria-label='" + value + "']"); 
     }
 
 }

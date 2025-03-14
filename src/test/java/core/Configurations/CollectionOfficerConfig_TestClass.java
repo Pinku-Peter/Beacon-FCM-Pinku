@@ -52,7 +52,7 @@ public class CollectionOfficerConfig_TestClass {
 		
 		baseclass = new Base_Class();
 		corelogin = new Login_Class();
-		corelogin.CoreLogin();
+		Login_Class.CoreLogin();
 		driver = baseclass.getDriver(); // Retrieve the driver instance
 		corecollectionofficerconfigpage = new CollectionOfficerConfig_MainClass(driver);
 		//ExcelReader = new com.Utility.ExcelReader("CollectionAgencyAgentAcAllocatP");
@@ -62,8 +62,10 @@ public class CollectionOfficerConfig_TestClass {
 	
 	@BeforeMethod
     public void setupTest(Method method) {
-	    drivers.add(driver);
-	    // Update the ScreenShot object with the new driver
+		driver = baseclass.getDriver(); 
+		drivers.add(driver);
+		corecollectionofficerconfigpage = new CollectionOfficerConfig_MainClass(driver);
+		TestListener = new TestListener();
 	    screenShot = new com.Utility.ScreenShot(driver);
         // Start a new ExtentTest for the current test method
         extenttest = ExtentTestManager.startTest(method.getName()).assignCategory("Core-Collection Officer Config...");
@@ -76,7 +78,7 @@ public class CollectionOfficerConfig_TestClass {
 		 WebElement userid = wait.until(ExpectedConditions.visibilityOfElementLocated(UpdationofDispositionRepo.loginuserid));
 		 userId = userid.getText();
 		 WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreCollectionOfficerConfigRepo.username));
-		 userName = username.getText();
+		 userName = username.getText(); 
 		 
 	        // Step 1: Execute the stored procedure to insert the employee
 		 String Result = corecollectionofficerconfigpage.executeSPInsertEmployee(userId); 
@@ -275,8 +277,8 @@ public class CollectionOfficerConfig_TestClass {
 	    }
 	 
 	 @Test(priority = 11)
-	    public void testBehalBranchUserVisibility() throws ClassNotFoundException, IOException, InterruptedException, SQLException {
-	        
+	    public void other_branch_user_is_not_showing_My_Desk_Unassigned_accounts_Tile() throws ClassNotFoundException, IOException, InterruptedException, SQLException {
+		 try {
 		 corecollectionofficerconfigpage.createHOUser();
 		 ExtentTestManager.getTest().log(Status.PASS, "A new 'Other Branch User' was created with login credentials, and successfully logged into the application using those credentials.");
 		 driver = baseclass.getDriver(); // Update the driver
@@ -295,13 +297,49 @@ public class CollectionOfficerConfig_TestClass {
 		 corecollectionofficerconfigpage.selectBCOFromAllocateTo();
 		 ExtentTestManager.getTest().log(Status.PASS, "The 'Allocate To' dropdown was clicked, and the 'BCO' value was selected.");
 	        // Assert that users are listed correctly under 'BCO'
-	        Assert.assertFalse(corecollectionofficerconfigpage.areUsersListedUnderBCO(), "Expected user should not available under BCO.");
+	        Assert.assertFalse(corecollectionofficerconfigpage.areUsersListedUnderBCOforotherbrnach(userName), "Expected user should not available under BCO.");
+	        ExtentTestManager.getTest().log(Status.PASS, "Only logged-in branch users are displayed in the BCO dropdown.");
+		 }
+			catch (AssertionError | Exception e) {
+				ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+	           throw e;
+		 }
+			Thread.sleep(3000);
+	    } 
+	 
+	 @Test(priority = 12)
+	    public void other_branch_user_is_not_showing_My_Desk_Branch_Attention_Required_Tile() throws InterruptedException {
+		 try {
+	        // Click on My Desk main menu
+		 corecollectionofficerconfigpage.clickMyDeskMainMenu();
+		 ExtentTestManager.getTest().log(Status.PASS, "The 'My Desk' main menu was clicked.");
+	        // Click on Dashboard sub menu
+		 corecollectionofficerconfigpage.clickDashboardSubMenu();
+		 ExtentTestManager.getTest().log(Status.PASS, "The 'Dashboard' submenu was clicked.");
+		 corecollectionofficerconfigpage.clickBranchAttentionTile();
+		 ExtentTestManager.getTest().log(Status.PASS, "The 'Branch Attention Required' tile was clicked.");
+		 corecollectionofficerconfigpage.clickAssignReassignDropdown(); 
+		 ExtentTestManager.getTest().log(Status.PASS, "The 'Assign/Reassign' dropdown was clicked.");
+	        // Verify the expected users are listed
+		 Assert.assertFalse(corecollectionofficerconfigpage.areUsersListedUnderAssignReassignforotherbrnach(userName), "Expected users as Collection Officers under Assign/Reassign.");
+		 ExtentTestManager.getTest().log(Status.PASS, "Only logged-in branch users are displayed under assign/reassign dropdown");
+		 }
+			catch (AssertionError | Exception e) {
+				ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage()); 
+	           throw e;
+		 }
+			Thread.sleep(3000);
 	    }
 	 
-	 @Test(priority = 12) 
-	    public void Test_Uncheck_Collection_Officer_Functionality() throws ClassNotFoundException, SQLException, IOException, InterruptedException {
+	 @Test(priority = 13) 
+	    public void Test_Uncheck_Collection_Officer_Functionality() throws Throwable {
 		 try {
-		 
+			 Login_Class.CoreLogin();
+				driver = baseclass.getDriver();
+				drivers.add(driver);
+				corecollectionofficerconfigpage = new CollectionOfficerConfig_MainClass(driver);
+			    TestListener = new TestListener();
+			    screenShot = new com.Utility.ScreenShot(driver);
 		 corecollectionofficerconfigpage.clickConfigurationMenu(); 
 		 ExtentTestManager.getTest().log(Status.PASS, "The 'Configurations' main menu was clicked.");
 		 corecollectionofficerconfigpage.clickCollectionOfficerConfigSubmenu();

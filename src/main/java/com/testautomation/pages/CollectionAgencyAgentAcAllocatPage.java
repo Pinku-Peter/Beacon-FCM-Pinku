@@ -11,7 +11,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -20,22 +22,34 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.BasePackage.Base_Class;
+import com.BasePackage.Common;
 import com.BasePackage.DBUtils;
 import com.BasePackage.DownloadedExcelReader;
+import com.BasePackage.Login_Class;
 import com.Page_Repository.CollectionAgencyAgentAcAllocatRepo;
 import com.Page_Repository.CollectionAgencyDispositionRepo;
 import com.Page_Repository.DispositionMasterPageRepo;
+import com.Page_Repository.LoginPageRepo;
 import com.Utility.Log;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.netty.handler.timeout.TimeoutException;
 
-public class CollectionAgencyAgentAcAllocatPage {
+public class CollectionAgencyAgentAcAllocatPage extends Base_Class {
 	
 private WebDriver driver;
 String secondColumnValue;
+public static String AppType;
+public static String CollectionAgency_BANNER_DETAILS;
 	
 	public CollectionAgencyAgentAcAllocatPage(WebDriver driver) {
 		Log.info("Initializing CollectionAgencyAgentAcAllocatPage...");
@@ -391,6 +405,111 @@ String secondColumnValue;
         return isDisplayed;
     }
     
+    public void CollectionAgencyLogin(String userId, String password) throws Exception {
+        try {
+            AppType = "CollectionAgency";
+            String Browser = configloader().getProperty("Browser");
+            String CollectionAppUrl = configloader().getProperty("CollectionAgencyApplicationUrl");
+
+            // Initialize WebDriver based on browser type
+            switch (Browser.toUpperCase()) {
+                case "CHROME":
+                    ChromeOptions options = new ChromeOptions();
+                    Map<String, Object> prefs = new HashMap<>();
+                    prefs.put("profile.default_content_setting_values.automatic_downloads", 1);
+                    prefs.put("profile.default_content_setting_values.mixed_script", 1);
+                    prefs.put("profile.default_content_settings.popups", 0);
+                    prefs.put("download.prompt_for_download", false);
+                    String userHome = System.getProperty("user.home");
+                    String downloadDirectory = userHome + File.separator + "Downloads";
+                    prefs.put("download.default_directory", downloadDirectory);
+                    options.setExperimentalOption("prefs", prefs);
+
+                    options.addArguments("--allow-running-insecure-content");
+                    options.addArguments("--ignore-certificate-errors");
+                    options.addArguments("--disable-extensions");
+                    options.addArguments("--start-maximized");
+                    options.addArguments("--disable-popup-blocking");
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver(options);
+                    break;
+                case "FIREFOX":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+                default:
+                    throw new IllegalArgumentException("The Driver is not defined for browser: " + Browser);
+            }
+            Base_Class.driver = (RemoteWebDriver) driver;
+            driver.manage().window().maximize();
+            driver.manage().deleteAllCookies();
+            Log.info("Driver has initialized successfully for " + Browser + " browser");
+
+            // Load the application URL
+            driver.get(CollectionAppUrl);
+            Common.setDriver(driver);
+
+            String query = "select BANNER_DETAILS from SET_LOGINPAGE_BANNER_DETAILS where IS_ACTIVE=1 and banner_user_type=3 order by banner_section desc FETCH FIRST 1 ROWS ONLY";
+            CollectionAgency_BANNER_DETAILS = DBUtils.fetchSingleValueFromDB(query);
+            System.out.println("BANNER_DETAILS: " + CollectionAgency_BANNER_DETAILS);
+
+            Common.fluentWait(CollectionAgency_BANNER_DETAILS, LoginPageRepo.CollectionAgencyLoginBannerDetails(CollectionAgency_BANNER_DETAILS));
+
+            Pagetitle = driver.getTitle();
+            Log.info("Title is displayed: " + Pagetitle);
+
+            // Perform login actions
+            Common.fluentWait("UserNameField", LoginPageRepo.UserNameField);
+            Common.fluentWait("PasswordField", LoginPageRepo.PasswordField);
+            Common.fluentWait("LoginButton", LoginPageRepo.LoginButton);
+
+            driver.findElement(LoginPageRepo.UserNameField).sendKeys(userId);
+            Log.info("Entered " + userId + " in user name field");
+            driver.findElement(LoginPageRepo.PasswordField).sendKeys(password);
+            Log.info("Entered password in password field");
+            driver.findElement(LoginPageRepo.LoginButton).click();
+            Log.info("Clicked on login button");
+
+            try {
+                WebElement clickableElement = Common.waitForElementToBeClickable(
+                    driver, 
+                    LoginPageRepo.AlreadyLoginPopupYesButton, 
+                    Duration.ofSeconds(20)
+                );
+
+                if (clickableElement != null) {
+                    clickableElement.click();
+                    Common.waitForSpinnerToDisappear(driver, "Loading Spinner", LoginPageRepo.Spinner);
+                    
+                    Common.fluentWait("UserNameField", LoginPageRepo.UserNameField);
+                    Common.fluentWait("PasswordField", LoginPageRepo.PasswordField);
+                    Common.fluentWait("LoginButton", LoginPageRepo.LoginButton);
+                    
+                    driver.findElement(LoginPageRepo.UserNameField).sendKeys(userId);
+                    Log.info("Entered " + userId + " in user name field");
+                    driver.findElement(LoginPageRepo.PasswordField).sendKeys(password);
+                    Log.info("Entered password in password field");
+                    driver.findElement(LoginPageRepo.LoginButton).click();
+                    Log.info("Clicked on login button");
+
+                    Log.info("Clicked on already login yes button and logged in again with valid credentials");
+                } else {
+                    System.out.println("Element not clickable within the timeout.");
+                }
+            } catch (Exception e) {
+                System.out.println("Exception occurred while waiting for the element: " + e.getMessage());
+                System.out.println("Already login pop up not appeared");
+            }
+
+            Login_Class.SomeErrorOccuredHandling(userId,password);
+            Thread.sleep(6000);
+        } catch (Exception e) {
+            Log.error("An error occurred in CollectionAgencyLogin: " + e.getMessage());
+            e.printStackTrace();
+            throw e;
+        }
+    }
+    
  // Method to navigate to Agent Account Allocation page
     public void navigateToAgentAccountAllocation() {
     	Log.info("Navigating to Agent Account Allocation...");
@@ -627,29 +746,28 @@ String secondColumnValue;
     }
     
     public boolean isExcelDataPresentInColumnValues(List<List<String>> excelData, List<String> columnValues) {
-    	Log.info("Starting validation: Checking if all Excel data is present in the table column values...");
+    	Log.info("Starting validation: Checking if all column values are present in the Excel data...");
 
-        // Convert column values to a Set for faster lookups (O(1) time complexity)
-        Log.info("Normalizing table column values for comparison...");
-        Set<String> normalizedColumnValues = columnValues.stream()
+        // Convert Excel data into a Set for fast lookups
+        Log.info("Normalizing Excel data for comparison...");
+        Set<String> normalizedExcelData = excelData.stream()
+                .flatMap(List::stream) // Flatten 2D list to a single stream of values
                 .map(value -> value.trim().replace(",", "").toLowerCase()) // Normalize and lowercase
                 .collect(Collectors.toSet());
-        Log.info("Column values normalization completed.");
+        Log.info("Excel data normalization completed.");
 
-        for (List<String> row : excelData) {
-            for (String cellValue : row) {
-                String normalizedValue = cellValue.trim().replace(",", "").toLowerCase(); // Normalize Excel value
-                Log.info("Checking if value '" + cellValue + "' (normalized: '" + normalizedValue + "') is present in the table...");
+        for (String columnValue : columnValues) {
+            String normalizedValue = columnValue.trim().replace(",", "").toLowerCase(); // Normalize column value
+            Log.info("Checking if column value '" + columnValue + "' (normalized: '" + normalizedValue + "') is present in Excel data...");
 
-                if (!normalizedColumnValues.contains(normalizedValue)) {
-                    Log.warn("Value missing in table: " + cellValue);
-                    return false; // If any value is missing, return false
-                }
-                Log.info("Value '" + cellValue + "' found in the table.");
+            if (!normalizedExcelData.contains(normalizedValue)) {
+                Log.warn("Column value missing in Excel data: " + columnValue);
+                return false; // If any column value is missing, return false
             }
+            Log.info("Column value '" + columnValue + "' found in Excel data.");
         }
 
-        Log.info("Validation successful: All Excel data is present in the table.");
+        Log.info("Validation successful: All column values are present in Excel data.");
         return true;
     }
     
@@ -706,7 +824,7 @@ String secondColumnValue;
     }
     
     // Method to select accounts from the grid
-    public List<String> selectAccount() {
+    public List<String> selectAccount() throws InterruptedException {
     	Log.info("Starting process to select an account and extract row data...");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
@@ -715,7 +833,7 @@ String secondColumnValue;
         try {
             // Find all columns (td elements) within the row
             Log.info("Waiting for account details to be visible...");
-            List<WebElement> columns = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(CollectionAgencyAgentAcAllocatRepo.accountdetails));
+            List<WebElement> columns = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(CollectionAgencyAgentAcAllocatRepo.accountdetailsoffirstrow));
 
             // Iterate through each column and store the text
             for (WebElement column : columns) {
@@ -732,9 +850,13 @@ String secondColumnValue;
 
             // Click on the checkbox
             Log.info("Waiting for account checkbox to become clickable...");
-            WebElement accountCheckbox = wait.until(ExpectedConditions.elementToBeClickable(CollectionAgencyAgentAcAllocatRepo.accountCheckbox));
+            WebElement accountCheckbox = wait.until(ExpectedConditions.elementToBeClickable(CollectionAgencyAgentAcAllocatRepo.firstrecordaccountCheckbox));
 
             Log.info("Clicking the account checkbox...");
+            WebElement Resetbutton = wait.until(ExpectedConditions.elementToBeClickable(CollectionAgencyAgentAcAllocatRepo.Resetbutton));
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'start'});", Resetbutton);
+            Thread.sleep(5000);
             accountCheckbox.click();
 
             Log.info("Account checkbox clicked successfully.");
@@ -751,8 +873,13 @@ String secondColumnValue;
     }
 
     // Method to select an agent from the dropdown
-    public String selectAgent() {
+    public String selectAgent() throws InterruptedException {
     	Log.info("Starting process to select an agent...");
+    	
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+
+        Thread.sleep(5000);
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 

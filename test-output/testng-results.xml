@@ -1,229 +1,602 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="10" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-13T12:53:36 IST" name="Default suite" finished-at="2025-03-13T12:55:58 IST" duration-ms="141836">
+  <suite started-at="2025-03-14T16:29:43 IST" name="Default suite" finished-at="2025-03-14T16:40:29 IST" duration-ms="645943">
     <groups>
     </groups>
-    <test started-at="2025-03-13T12:53:36 IST" name="Default test" finished-at="2025-03-13T12:55:58 IST" duration-ms="141836">
-      <class name="core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:53:36 IST" name="SetUp" finished-at="2025-03-13T12:53:36 IST" duration-ms="22" status="PASS">
+    <test started-at="2025-03-14T16:29:43 IST" name="Default test" finished-at="2025-03-14T16:40:29 IST" duration-ms="645943">
+      <class name="core.Configurations.CollectionOfficerConfig_TestClass">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:29:43 IST" name="SetUp" finished-at="2025-03-14T16:31:19 IST" duration-ms="96508" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:53:36 IST" name="setupTest" finished-at="2025-03-13T12:53:37 IST" duration-ms="746" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:31:19 IST" name="setupTest" finished-at="2025-03-14T16:31:19 IST" duration-ms="169" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass.testInsertNewEntryAllValidFields() throws java.io.IOException,java.lang.InterruptedException]]>
+                <![CDATA[public void core.Configurations.CollectionOfficerConfig_TestClass.Add_core_users_to_mst_employee_table() throws java.lang.Throwable]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="testInsertNewEntryAllValidFields()[pri:1, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:53:37 IST" name="testInsertNewEntryAllValidFields" finished-at="2025-03-13T12:53:41 IST" duration-ms="4195" status="PASS">
+        <test-method signature="Add_core_users_to_mst_employee_table()[pri:1, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:31:19 IST" name="Add_core_users_to_mst_employee_table" finished-at="2025-03-14T16:31:23 IST" duration-ms="3745" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInsertNewEntryAllValidFields -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:53:41 IST" name="takeScreenshotOnFailure" finished-at="2025-03-13T12:53:41 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- Add_core_users_to_mst_employee_table -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:31:23 IST" name="takeScreenshotOnFailure" finished-at="2025-03-14T16:31:23 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInsertNewEntryAllValidFields status=SUCCESS method=AlertsPlaceholderManagement_TestClass.testInsertNewEntryAllValidFields()[pri:1, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Add_core_users_to_mst_employee_table status=SUCCESS method=CollectionOfficerConfig_TestClass.Add_core_users_to_mst_employee_table()[pri:1, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:53:41 IST" name="setupTest" finished-at="2025-03-13T12:53:41 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:31:23 IST" name="setupTest" finished-at="2025-03-14T16:31:23 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass.Successful_Login() throws java.lang.Exception]]>
+                <![CDATA[public void core.Configurations.CollectionOfficerConfig_TestClass.Test_Collection_Officer_Configurations_Page_Basic_Accessibility() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Successful_Login()[pri:2, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:53:41 IST" name="Successful_Login" finished-at="2025-03-13T12:55:09 IST" duration-ms="87843" status="PASS">
+        <test-method signature="Test_Collection_Officer_Configurations_Page_Basic_Accessibility()[pri:2, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:31:23 IST" name="Test_Collection_Officer_Configurations_Page_Basic_Accessibility" finished-at="2025-03-14T16:31:45 IST" duration-ms="22068" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Successful_Login -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:09 IST" name="takeScreenshotOnFailure" finished-at="2025-03-13T12:55:09 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Test_Collection_Officer_Configurations_Page_Basic_Accessibility -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:31:45 IST" name="takeScreenshotOnFailure" finished-at="2025-03-14T16:31:45 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Successful_Login status=SUCCESS method=AlertsPlaceholderManagement_TestClass.Successful_Login()[pri:2, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Test_Collection_Officer_Configurations_Page_Basic_Accessibility status=SUCCESS method=CollectionOfficerConfig_TestClass.Test_Collection_Officer_Configurations_Page_Basic_Accessibility()[pri:2, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:09 IST" name="setupTest" finished-at="2025-03-13T12:55:09 IST" duration-ms="3" status="PASS">
+        <test-method signature="Test_Collection_Officer_Configurations_Page_Parameters()[pri:3, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:31:45 IST" name="Test_Collection_Officer_Configurations_Page_Parameters" finished-at="2025-03-14T16:32:19 IST" duration-ms="33597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Collection_Officer_Configurations_Page_Parameters -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:31:45 IST" name="setupTest" finished-at="2025-03-14T16:31:45 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass.Access_Alerts_and_Notifications() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.Configurations.CollectionOfficerConfig_TestClass.Test_Collection_Officer_Configurations_Page_Parameters() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Access_Alerts_and_Notifications()[pri:3, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:09 IST" name="Access_Alerts_and_Notifications" finished-at="2025-03-13T12:55:17 IST" duration-ms="8222" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Access_Alerts_and_Notifications -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:17 IST" name="takeScreenshotOnFailure" finished-at="2025-03-13T12:55:17 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:32:19 IST" name="takeScreenshotOnFailure" finished-at="2025-03-14T16:32:19 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Access_Alerts_and_Notifications status=SUCCESS method=AlertsPlaceholderManagement_TestClass.Access_Alerts_and_Notifications()[pri:3, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Test_Collection_Officer_Configurations_Page_Parameters status=SUCCESS method=CollectionOfficerConfig_TestClass.Test_Collection_Officer_Configurations_Page_Parameters()[pri:3, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:17 IST" name="setupTest" finished-at="2025-03-13T12:55:17 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:32:19 IST" name="setupTest" finished-at="2025-03-14T16:32:19 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass.Access_Placeholder_Management() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.Configurations.CollectionOfficerConfig_TestClass.Test_Search_Functionality() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Access_Placeholder_Management()[pri:4, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:17 IST" name="Access_Placeholder_Management" finished-at="2025-03-13T12:55:25 IST" duration-ms="7635" status="PASS">
+        <test-method signature="Test_Search_Functionality()[pri:4, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:32:19 IST" name="Test_Search_Functionality" finished-at="2025-03-14T16:32:53 IST" duration-ms="34552" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Access_Placeholder_Management -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:25 IST" name="setupTest" finished-at="2025-03-13T12:55:25 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- Test_Search_Functionality -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:32:53 IST" name="takeScreenshotOnFailure" finished-at="2025-03-14T16:32:53 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass.Pagination_Controls_Display() throws java.lang.InterruptedException]]>
+                <![CDATA[[TestResult name=Test_Search_Functionality status=SUCCESS method=CollectionOfficerConfig_TestClass.Test_Search_Functionality()[pri:4, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:32:53 IST" name="setupTest" finished-at="2025-03-14T16:32:53 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void core.Configurations.CollectionOfficerConfig_TestClass.Test_Save_Configurations_Functionality() throws java.lang.ClassNotFoundException,java.sql.SQLException,java.io.IOException,java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:25 IST" name="takeScreenshotOnFailure" finished-at="2025-03-13T12:55:25 IST" duration-ms="0" status="PASS">
+        <test-method signature="Test_Save_Configurations_Functionality()[pri:5, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:32:53 IST" name="Test_Save_Configurations_Functionality" finished-at="2025-03-14T16:33:14 IST" duration-ms="20448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Save_Configurations_Functionality -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:33:14 IST" name="takeScreenshotOnFailure" finished-at="2025-03-14T16:33:14 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Access_Placeholder_Management status=SUCCESS method=AlertsPlaceholderManagement_TestClass.Access_Placeholder_Management()[pri:4, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Test_Save_Configurations_Functionality status=SUCCESS method=CollectionOfficerConfig_TestClass.Test_Save_Configurations_Functionality()[pri:5, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method signature="Pagination_Controls_Display()[pri:5, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:25 IST" name="Pagination_Controls_Display" finished-at="2025-03-13T12:55:33 IST" duration-ms="8124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Pagination_Controls_Display -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:33 IST" name="takeScreenshotOnFailure" finished-at="2025-03-13T12:55:33 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:33:14 IST" name="setupTest" finished-at="2025-03-14T16:33:14 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Pagination_Controls_Display status=SUCCESS method=AlertsPlaceholderManagement_TestClass.Pagination_Controls_Display()[pri:5, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:33 IST" name="setupTest" finished-at="2025-03-13T12:55:33 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass.Paginate_to_Next_Page() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.Configurations.CollectionOfficerConfig_TestClass.Test_Excel_Download_Functionality() throws java.lang.InterruptedException,java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Paginate_to_Next_Page()[pri:6, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:33 IST" name="Paginate_to_Next_Page" finished-at="2025-03-13T12:55:41 IST" duration-ms="8085" status="PASS">
+        <test-method signature="Test_Excel_Download_Functionality()[pri:6, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:33:14 IST" name="Test_Excel_Download_Functionality" finished-at="2025-03-14T16:33:31 IST" duration-ms="17510" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Paginate_to_Next_Page -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:41 IST" name="takeScreenshotOnFailure" finished-at="2025-03-13T12:55:41 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Test_Excel_Download_Functionality -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:33:31 IST" name="takeScreenshotOnFailure" finished-at="2025-03-14T16:33:31 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Paginate_to_Next_Page status=SUCCESS method=AlertsPlaceholderManagement_TestClass.Paginate_to_Next_Page()[pri:6, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Test_Excel_Download_Functionality status=SUCCESS method=CollectionOfficerConfig_TestClass.Test_Excel_Download_Functionality()[pri:6, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:41 IST" name="setupTest" finished-at="2025-03-13T12:55:41 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:33:31 IST" name="setupTest" finished-at="2025-03-14T16:33:31 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass.Paginate_to_Previous_Page() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.Configurations.CollectionOfficerConfig_TestClass.Test_Failed_Save_Configurations_without_Selections() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Paginate_to_Previous_Page()[pri:7, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:41 IST" name="Paginate_to_Previous_Page" finished-at="2025-03-13T12:55:49 IST" duration-ms="7981" status="PASS">
+        <test-method signature="Test_Failed_Save_Configurations_without_Selections()[pri:7, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:33:31 IST" name="Test_Failed_Save_Configurations_without_Selections" finished-at="2025-03-14T16:33:34 IST" duration-ms="3162" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Paginate_to_Previous_Page -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:49 IST" name="takeScreenshotOnFailure" finished-at="2025-03-13T12:55:49 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Test_Failed_Save_Configurations_without_Selections -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:33:34 IST" name="takeScreenshotOnFailure" finished-at="2025-03-14T16:33:34 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Paginate_to_Previous_Page status=SUCCESS method=AlertsPlaceholderManagement_TestClass.Paginate_to_Previous_Page()[pri:7, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Test_Failed_Save_Configurations_without_Selections status=SUCCESS method=CollectionOfficerConfig_TestClass.Test_Failed_Save_Configurations_without_Selections()[pri:7, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:49 IST" name="setupTest" finished-at="2025-03-13T12:55:49 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:33:34 IST" name="setupTest" finished-at="2025-03-14T16:33:34 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass.Search_Placeholder() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.Configurations.CollectionOfficerConfig_TestClass.Test_Reset_Functionality() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Search_Placeholder()[pri:8, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:49 IST" name="Search_Placeholder" finished-at="2025-03-13T12:55:58 IST" duration-ms="8857" status="PASS">
+        <test-method signature="Test_Reset_Functionality()[pri:8, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:33:34 IST" name="Test_Reset_Functionality" finished-at="2025-03-14T16:33:50 IST" duration-ms="15916" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Search_Placeholder -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:58 IST" name="takeScreenshotOnFailure" finished-at="2025-03-13T12:55:58 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Test_Reset_Functionality -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:33:50 IST" name="takeScreenshotOnFailure" finished-at="2025-03-14T16:33:50 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Search_Placeholder status=SUCCESS method=AlertsPlaceholderManagement_TestClass.Search_Placeholder()[pri:8, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Test_Reset_Functionality status=SUCCESS method=CollectionOfficerConfig_TestClass.Test_Reset_Functionality()[pri:8, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass@1c1bbc4e]" started-at="2025-03-13T12:55:58 IST" name="afterEachTest" finished-at="2025-03-13T12:55:59 IST" duration-ms="987" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:33:50 IST" name="setupTest" finished-at="2025-03-14T16:33:50 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void core.Configurations.CollectionOfficerConfig_TestClass.Verify_My_Desk_Unassigned_accounts_Tile() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Verify_My_Desk_Unassigned_accounts_Tile()[pri:9, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:33:50 IST" name="Verify_My_Desk_Unassigned_accounts_Tile" finished-at="2025-03-14T16:34:53 IST" duration-ms="62860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_My_Desk_Unassigned_accounts_Tile -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:34:53 IST" name="takeScreenshotOnFailure" finished-at="2025-03-14T16:34:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_My_Desk_Unassigned_accounts_Tile status=SUCCESS method=CollectionOfficerConfig_TestClass.Verify_My_Desk_Unassigned_accounts_Tile()[pri:9, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:34:53 IST" name="setupTest" finished-at="2025-03-14T16:34:53 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void core.Configurations.CollectionOfficerConfig_TestClass.Verify_My_Desk_Branch_Attention_Required_Tile() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Verify_My_Desk_Branch_Attention_Required_Tile()[pri:10, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:34:53 IST" name="Verify_My_Desk_Branch_Attention_Required_Tile" finished-at="2025-03-14T16:35:33 IST" duration-ms="39736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_My_Desk_Branch_Attention_Required_Tile -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:35:33 IST" name="takeScreenshotOnFailure" finished-at="2025-03-14T16:35:33 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_My_Desk_Branch_Attention_Required_Tile status=SUCCESS method=CollectionOfficerConfig_TestClass.Verify_My_Desk_Branch_Attention_Required_Tile()[pri:10, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:35:33 IST" name="setupTest" finished-at="2025-03-14T16:35:33 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void core.Configurations.CollectionOfficerConfig_TestClass.other_branch_user_is_not_showing_My_Desk_Unassigned_accounts_Tile() throws java.lang.ClassNotFoundException,java.io.IOException,java.lang.InterruptedException,java.sql.SQLException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="other_branch_user_is_not_showing_My_Desk_Unassigned_accounts_Tile()[pri:11, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:35:33 IST" name="other_branch_user_is_not_showing_My_Desk_Unassigned_accounts_Tile" finished-at="2025-03-14T16:40:28 IST" duration-ms="295287" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee00ac7dba5396d0b03bd5931a65fcb4, findElement {using=xpath, value=//div[@class='card-wrapper']//div[text()='Unassigned Accounts']//following::p[text()='SMA']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58965/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee00ac7dba5396d0b03bd5931a65fcb4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee00ac7dba5396d0b03bd5931a65fcb4, findElement {using=xpath, value=//div[@class='card-wrapper']//div[text()='Unassigned Accounts']//following::p[text()='SMA']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58965/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee00ac7dba5396d0b03bd5931a65fcb4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+at core.Configurations.CollectionOfficerConfig_MainClass.clickUnassignedAccountsTile(CollectionOfficerConfig_MainClass.java:545)
+at core.Configurations.CollectionOfficerConfig_TestClass.other_branch_user_is_not_showing_My_Desk_Unassigned_accounts_Tile(CollectionOfficerConfig_TestClass.java:294)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- other_branch_user_is_not_showing_My_Desk_Unassigned_accounts_Tile -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:40:28 IST" name="takeScreenshotOnFailure" finished-at="2025-03-14T16:40:29 IST" duration-ms="238" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=other_branch_user_is_not_showing_My_Desk_Unassigned_accounts_Tile status=FAILURE method=CollectionOfficerConfig_TestClass.other_branch_user_is_not_showing_My_Desk_Unassigned_accounts_Tile()[pri:11, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee00ac7dba5396d0b03bd5931a65fcb4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58965/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee00ac7dba5396d0b03bd5931a65fcb4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee00ac7dba5396d0b03bd5931a65fcb4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58965/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee00ac7dba5396d0b03bd5931a65fcb4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+at com.Utility.ScreenShot.takeScreenShot(ScreenShot.java:29)
+at core.Configurations.CollectionOfficerConfig_TestClass.takeScreenshotOnFailure(CollectionOfficerConfig_TestClass.java:384)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:40:29 IST" name="setupTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1741950629004" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="other_branch_user_is_not_showing_My_Desk_Branch_Attention_Required_Tile()[pri:12, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:40:29 IST" name="other_branch_user_is_not_showing_My_Desk_Branch_Attention_Required_Tile" finished-at="2025-03-14T16:40:29 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee00ac7dba5396d0b03bd5931a65fcb4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58965/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee00ac7dba5396d0b03bd5931a65fcb4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee00ac7dba5396d0b03bd5931a65fcb4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58965/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee00ac7dba5396d0b03bd5931a65fcb4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+at com.Utility.ScreenShot.takeScreenShot(ScreenShot.java:29)
+at core.Configurations.CollectionOfficerConfig_TestClass.takeScreenshotOnFailure(CollectionOfficerConfig_TestClass.java:384)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- other_branch_user_is_not_showing_My_Desk_Branch_Attention_Required_Tile -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:40:29 IST" name="takeScreenshotOnFailure" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1741950629008" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:40:29 IST" name="setupTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1741950629009" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Test_Uncheck_Collection_Officer_Functionality()[pri:13, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:40:29 IST" name="Test_Uncheck_Collection_Officer_Functionality" finished-at="2025-03-14T16:40:29 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee00ac7dba5396d0b03bd5931a65fcb4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58965/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee00ac7dba5396d0b03bd5931a65fcb4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee00ac7dba5396d0b03bd5931a65fcb4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58965/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee00ac7dba5396d0b03bd5931a65fcb4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+at com.Utility.ScreenShot.takeScreenShot(ScreenShot.java:29)
+at core.Configurations.CollectionOfficerConfig_TestClass.takeScreenshotOnFailure(CollectionOfficerConfig_TestClass.java:384)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Uncheck_Collection_Officer_Functionality -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:40:29 IST" name="takeScreenshotOnFailure" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1741950629015" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:core.Configurations.CollectionOfficerConfig_TestClass@7a8c8dcf]" started-at="2025-03-14T16:40:29 IST" name="afterEachTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1741950629057" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-      </class> <!-- core.AlertsandNotifications.AlertsPlaceholderManagement_TestClass -->
+      </class> <!-- core.Configurations.CollectionOfficerConfig_TestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
