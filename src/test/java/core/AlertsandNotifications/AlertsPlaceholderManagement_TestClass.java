@@ -41,7 +41,6 @@ public class AlertsPlaceholderManagement_TestClass {
 	Login_Class corelogin;
 	AlertsPlaceholderManagement_MainClass alertsplaceholdermanagement_mainclass;
 	String firstRowText,searchValue;
-	;
 	
 	@BeforeClass
 

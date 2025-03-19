@@ -157,9 +157,9 @@ public class DBUtils {
         return results;
     }
     
-    public static String executeSQLStatement(String query) 
-            throws SQLException, ClassNotFoundException, IOException {
-        Connection con = null;
+    public static String executeSQLStatement(String query) throws SQLException, ClassNotFoundException, IOException {
+    	
+    	Connection con = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         String result = null;
@@ -167,6 +167,9 @@ public class DBUtils {
         try {
             // Establish the database connection
             con = Base_Class.OracleDBConnection();
+
+            // Disable auto-commit to manage transactions manually
+            con.setAutoCommit(false); 
 
             // Prepare the SQL statement
             pstmt = con.prepareStatement(query);
@@ -183,13 +186,23 @@ public class DBUtils {
             } else if (query.trim().toLowerCase().startsWith("truncate")) {
                 // Execute TRUNCATE statement
                 pstmt.executeUpdate(); // TRUNCATE does not return affected rows
+                con.commit(); // Commit changes for TRUNCATE
                 result = "TRUNCATE command executed successfully.";
             } else {
                 // Execute other non-query statements (like INSERT, UPDATE, DELETE)
                 int affectedRows = pstmt.executeUpdate();
+                con.commit(); // Commit changes for DML operations
                 result = "Query executed successfully. Rows affected: " + affectedRows;
             }
         } catch (SQLException e) {
+            if (con != null) {
+                try {
+                    con.rollback(); // Rollback in case of an error
+                    System.out.println("Transaction rolled back due to an error.");
+                } catch (SQLException rollbackEx) {
+                    rollbackEx.printStackTrace();
+                }
+            }
             e.printStackTrace();
             throw e; // Rethrow exception to handle it further up the chain
         } finally {
