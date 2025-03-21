@@ -1,446 +1,626 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-19T10:11:08 IST" name="Default suite" finished-at="2025-03-19T10:15:29 IST" duration-ms="261024">
+  <suite started-at="2025-03-21T10:33:56 IST" name="Default suite" finished-at="2025-03-21T10:39:16 IST" duration-ms="319594">
     <groups>
     </groups>
-    <test started-at="2025-03-19T10:11:08 IST" name="Default test" finished-at="2025-03-19T10:15:29 IST" duration-ms="261024">
-      <class name="core.AlertsandNotifications.AlertsTemplateManagement_TestClass">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:11:08 IST" name="SetUp" finished-at="2025-03-19T10:11:08 IST" duration-ms="53" status="PASS">
+    <test started-at="2025-03-21T10:33:56 IST" name="Default test" finished-at="2025-03-21T10:39:16 IST" duration-ms="319594">
+      <class name="core.AlertsandNotifications.AlertsNotificationManagement_TestClass">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:33:56 IST" name="SetUp" finished-at="2025-03-21T10:33:56 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:11:08 IST" name="setupTest" finished-at="2025-03-19T10:11:09 IST" duration-ms="1546" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:33:56 IST" name="setupTest" finished-at="2025-03-21T10:33:57 IST" duration-ms="696" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.Test_Login_with_Valid_Credentials() throws java.lang.Exception]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Test_Login_with_Valid_Credentials() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Test_Login_with_Valid_Credentials()[pri:1, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:11:09 IST" name="Test_Login_with_Valid_Credentials" finished-at="2025-03-19T10:12:37 IST" duration-ms="87142" status="PASS">
+        <test-method signature="Test_Login_with_Valid_Credentials()[pri:1, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:33:57 IST" name="Test_Login_with_Valid_Credentials" finished-at="2025-03-21T10:36:01 IST" duration-ms="123931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_Login_with_Valid_Credentials -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:12:37 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:12:37 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:01 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:36:01 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Test_Login_with_Valid_Credentials status=SUCCESS method=AlertsTemplateManagement_TestClass.Test_Login_with_Valid_Credentials()[pri:1, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Test_Login_with_Valid_Credentials status=SUCCESS method=AlertsNotificationManagement_TestClass.Test_Login_with_Valid_Credentials()[pri:1, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:12:37 IST" name="setupTest" finished-at="2025-03-19T10:12:37 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:01 IST" name="setupTest" finished-at="2025-03-21T10:36:01 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.Display_Alerts_and_Notifications_Menu_Option() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Display_Alerts_and_Notifications_Menu_Option() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Display_Alerts_and_Notifications_Menu_Option()[pri:2, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:12:37 IST" name="Display_Alerts_and_Notifications_Menu_Option" finished-at="2025-03-19T10:12:45 IST" duration-ms="8115" status="PASS">
+        <test-method signature="Display_Alerts_and_Notifications_Menu_Option()[pri:2, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:01 IST" name="Display_Alerts_and_Notifications_Menu_Option" finished-at="2025-03-21T10:36:09 IST" duration-ms="8127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Display_Alerts_and_Notifications_Menu_Option -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:12:45 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:12:45 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:09 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:36:09 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Display_Alerts_and_Notifications_Menu_Option status=SUCCESS method=AlertsTemplateManagement_TestClass.Display_Alerts_and_Notifications_Menu_Option()[pri:2, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Display_Alerts_and_Notifications_Menu_Option status=SUCCESS method=AlertsNotificationManagement_TestClass.Display_Alerts_and_Notifications_Menu_Option()[pri:2, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:12:45 IST" name="setupTest" finished-at="2025-03-19T10:12:45 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:09 IST" name="setupTest" finished-at="2025-03-21T10:36:09 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.Access_Alerts_and_Notifications_Page() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Access_Alerts_and_Notifications_Page() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Access_Alerts_and_Notifications_Page()[pri:3, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:12:45 IST" name="Access_Alerts_and_Notifications_Page" finished-at="2025-03-19T10:12:48 IST" duration-ms="3281" status="PASS">
+        <test-method signature="Access_Alerts_and_Notifications_Page()[pri:3, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:09 IST" name="Access_Alerts_and_Notifications_Page" finished-at="2025-03-21T10:36:12 IST" duration-ms="3171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Access_Alerts_and_Notifications_Page -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:12:48 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:12:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:12 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:36:12 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Access_Alerts_and_Notifications_Page status=SUCCESS method=AlertsTemplateManagement_TestClass.Access_Alerts_and_Notifications_Page()[pri:3, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Access_Alerts_and_Notifications_Page status=SUCCESS method=AlertsNotificationManagement_TestClass.Access_Alerts_and_Notifications_Page()[pri:3, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:12:48 IST" name="setupTest" finished-at="2025-03-19T10:12:48 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:12 IST" name="setupTest" finished-at="2025-03-21T10:36:12 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.Navigate_to_Template_Management() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Notification_Management_Menu_Display() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Navigate_to_Template_Management()[pri:4, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:12:48 IST" name="Navigate_to_Template_Management" finished-at="2025-03-19T10:13:07 IST" duration-ms="19335" status="PASS">
+        <test-method signature="Verify_Notification_Management_Menu_Display()[pri:4, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:12 IST" name="Verify_Notification_Management_Menu_Display" finished-at="2025-03-21T10:36:43 IST" duration-ms="31016" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Navigate_to_Template_Management -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:07 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:13:07 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Verify_Notification_Management_Menu_Display -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:43 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:36:43 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Navigate_to_Template_Management status=SUCCESS method=AlertsTemplateManagement_TestClass.Navigate_to_Template_Management()[pri:4, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Notification_Management_Menu_Display status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Notification_Management_Menu_Display()[pri:4, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:09 IST" name="setupTest" finished-at="2025-03-19T10:13:09 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:43 IST" name="setupTest" finished-at="2025-03-21T10:36:43 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.Interact_with_Template_Management_Fields(java.util.Map) throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Notification_Management_Type_Fields() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Interact_with_Template_Management_Fields(java.util.Map)[pri:5, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:09 IST" name="Interact_with_Template_Management_Fields" data-provider="TestData" finished-at="2025-03-19T10:13:19 IST" duration-ms="10414" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Category=Notification, Categoryfortemplatecreation=Promotions, CurrentStatus=Active, EditInitialStatusfortemplatemodify=Inactive, EditReason=Test, InitialStatusfortemplatecreation=Active, NotificationType=SMS, NotificationTypefortemplatecreation=EMAIL, Run=Yes, TemplateBody=Automation testing improves software quality by identifying defects early. Selenium with Java helps in UI testing, ensuring reliability and efficiency in development., TemplateNamefortemplatecreation=Test, TestScenario=AlertsTemplateManagement}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="Verify_Notification_Management_Type_Fields()[pri:5, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:43 IST" name="Verify_Notification_Management_Type_Fields" finished-at="2025-03-21T10:36:46 IST" duration-ms="3248" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Interact_with_Template_Management_Fields -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:19 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:13:19 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Verify_Notification_Management_Type_Fields -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:46 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:36:46 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Interact_with_Template_Management_Fields status=SUCCESS method=AlertsTemplateManagement_TestClass.Interact_with_Template_Management_Fields(java.util.Map)[pri:5, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Notification_Management_Type_Fields status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Notification_Management_Type_Fields()[pri:5, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:19 IST" name="setupTest" finished-at="2025-03-19T10:13:19 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:46 IST" name="setupTest" finished-at="2025-03-21T10:36:46 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.Clear_Input_Field_Test() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Category_Fields() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Clear_Input_Field_Test()[pri:6, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:19 IST" name="Clear_Input_Field_Test" finished-at="2025-03-19T10:13:23 IST" duration-ms="3292" status="PASS">
+        <test-method signature="Verify_Category_Fields()[pri:6, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:46 IST" name="Verify_Category_Fields" finished-at="2025-03-21T10:36:50 IST" duration-ms="3245" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Clear_Input_Field_Test -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:23 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:13:23 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Verify_Category_Fields -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:50 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:36:50 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Clear_Input_Field_Test status=SUCCESS method=AlertsTemplateManagement_TestClass.Clear_Input_Field_Test()[pri:6, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Category_Fields status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Category_Fields()[pri:6, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:23 IST" name="setupTest" finished-at="2025-03-19T10:13:23 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:50 IST" name="setupTest" finished-at="2025-03-21T10:36:50 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.Display_Template_Details_Table() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Schedule_Type_Fields() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Display_Template_Details_Table()[pri:7, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:23 IST" name="Display_Template_Details_Table" finished-at="2025-03-19T10:13:26 IST" duration-ms="3421" status="PASS">
+        <test-method signature="Verify_Schedule_Type_Fields()[pri:7, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:50 IST" name="Verify_Schedule_Type_Fields" finished-at="2025-03-21T10:36:53 IST" duration-ms="3307" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Display_Template_Details_Table -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:26 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:13:26 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Verify_Schedule_Type_Fields -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:53 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:36:53 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Display_Template_Details_Table status=SUCCESS method=AlertsTemplateManagement_TestClass.Display_Template_Details_Table()[pri:7, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Schedule_Type_Fields status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Schedule_Type_Fields()[pri:7, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:26 IST" name="setupTest" finished-at="2025-03-19T10:13:26 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:53 IST" name="setupTest" finished-at="2025-03-21T10:36:53 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.Test_Template_Pagination() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Status_Fields() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Test_Template_Pagination()[pri:8, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:26 IST" name="Test_Template_Pagination" finished-at="2025-03-19T10:13:37 IST" duration-ms="10724" status="PASS">
+        <test-method signature="Verify_Status_Fields()[pri:8, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:53 IST" name="Verify_Status_Fields" finished-at="2025-03-21T10:36:56 IST" duration-ms="3224" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_Template_Pagination -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:37 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:13:37 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Verify_Status_Fields -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:56 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:36:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Test_Template_Pagination status=SUCCESS method=AlertsTemplateManagement_TestClass.Test_Template_Pagination()[pri:8, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Status_Fields status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Status_Fields()[pri:8, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:37 IST" name="setupTest" finished-at="2025-03-19T10:13:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:56 IST" name="setupTest" finished-at="2025-03-21T10:36:56 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.SMS_Template_Body_Character_Limit(java.util.Map) throws java.io.IOException,java.lang.ClassNotFoundException,java.sql.SQLException,java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Schedule_Type_Column_Display() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="SMS_Template_Body_Character_Limit(java.util.Map)[pri:9, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:13:37 IST" name="SMS_Template_Body_Character_Limit" data-provider="TestData" finished-at="2025-03-19T10:14:00 IST" duration-ms="23080" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Category=Notification, Categoryfortemplatecreation=Promotions, CurrentStatus=Active, EditInitialStatusfortemplatemodify=Inactive, EditReason=Test, InitialStatusfortemplatecreation=Active, NotificationType=SMS, NotificationTypefortemplatecreation=EMAIL, Run=Yes, TemplateBody=Automation testing improves software quality by identifying defects early. Selenium with Java helps in UI testing, ensuring reliability and efficiency in development., TemplateNamefortemplatecreation=Test, TestScenario=AlertsTemplateManagement}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="Verify_Schedule_Type_Column_Display()[pri:9, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:56 IST" name="Verify_Schedule_Type_Column_Display" finished-at="2025-03-21T10:36:59 IST" duration-ms="3078" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SMS_Template_Body_Character_Limit -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:00 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:14:00 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- Verify_Schedule_Type_Column_Display -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:59 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:36:59 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SMS_Template_Body_Character_Limit status=SUCCESS method=AlertsTemplateManagement_TestClass.SMS_Template_Body_Character_Limit(java.util.Map)[pri:9, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Schedule_Type_Column_Display status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Schedule_Type_Column_Display()[pri:9, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:00 IST" name="setupTest" finished-at="2025-03-19T10:14:00 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:59 IST" name="setupTest" finished-at="2025-03-21T10:36:59 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.Additional_Fields_for_Email_or_Notice(java.util.Map) throws java.io.IOException,java.lang.ClassNotFoundException,java.sql.SQLException,java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Template_Name_Column_Display() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Additional_Fields_for_Email_or_Notice(java.util.Map)[pri:10, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:00 IST" name="Additional_Fields_for_Email_or_Notice" data-provider="TestData" finished-at="2025-03-19T10:14:05 IST" duration-ms="4447" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Category=Notification, Categoryfortemplatecreation=Promotions, CurrentStatus=Active, EditInitialStatusfortemplatemodify=Inactive, EditReason=Test, InitialStatusfortemplatecreation=Active, NotificationType=SMS, NotificationTypefortemplatecreation=EMAIL, Run=Yes, TemplateBody=Automation testing improves software quality by identifying defects early. Selenium with Java helps in UI testing, ensuring reliability and efficiency in development., TemplateNamefortemplatecreation=Test, TestScenario=AlertsTemplateManagement}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="Verify_Template_Name_Column_Display()[pri:10, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:36:59 IST" name="Verify_Template_Name_Column_Display" finished-at="2025-03-21T10:37:02 IST" duration-ms="3040" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Additional_Fields_for_Email_or_Notice -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:05 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:14:05 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Verify_Template_Name_Column_Display -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:02 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:37:02 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Additional_Fields_for_Email_or_Notice status=SUCCESS method=AlertsTemplateManagement_TestClass.Additional_Fields_for_Email_or_Notice(java.util.Map)[pri:10, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Template_Name_Column_Display status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Template_Name_Column_Display()[pri:10, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:05 IST" name="setupTest" finished-at="2025-03-19T10:14:05 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:02 IST" name="setupTest" finished-at="2025-03-21T10:37:02 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.Add_New_Template(java.util.Map) throws java.io.IOException,java.lang.ClassNotFoundException,java.sql.SQLException,java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Schedule_Start_Column_Display() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Add_New_Template(java.util.Map)[pri:11, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:05 IST" name="Add_New_Template" data-provider="TestData" finished-at="2025-03-19T10:14:17 IST" duration-ms="12517" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Category=Notification, Categoryfortemplatecreation=Promotions, CurrentStatus=Active, EditInitialStatusfortemplatemodify=Inactive, EditReason=Test, InitialStatusfortemplatecreation=Active, NotificationType=SMS, NotificationTypefortemplatecreation=EMAIL, Run=Yes, TemplateBody=Automation testing improves software quality by identifying defects early. Selenium with Java helps in UI testing, ensuring reliability and efficiency in development., TemplateNamefortemplatecreation=Test, TestScenario=AlertsTemplateManagement}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="Verify_Schedule_Start_Column_Display()[pri:11, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:02 IST" name="Verify_Schedule_Start_Column_Display" finished-at="2025-03-21T10:37:06 IST" duration-ms="3158" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Add_New_Template -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:17 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:14:17 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- Verify_Schedule_Start_Column_Display -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:06 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:37:06 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Add_New_Template status=SUCCESS method=AlertsTemplateManagement_TestClass.Add_New_Template(java.util.Map)[pri:11, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Schedule_Start_Column_Display status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Schedule_Start_Column_Display()[pri:11, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:17 IST" name="setupTest" finished-at="2025-03-19T10:14:17 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:06 IST" name="setupTest" finished-at="2025-03-21T10:37:06 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.Save_New_Template() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Schedule_End_Column_Display() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Save_New_Template()[pri:12, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:17 IST" name="Save_New_Template" finished-at="2025-03-19T10:14:25 IST" duration-ms="7697" status="PASS">
+        <test-method signature="Verify_Schedule_End_Column_Display()[pri:12, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:06 IST" name="Verify_Schedule_End_Column_Display" finished-at="2025-03-21T10:37:09 IST" duration-ms="3171" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Save_New_Template -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:25 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:14:25 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Verify_Schedule_End_Column_Display -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:09 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:37:09 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Save_New_Template status=SUCCESS method=AlertsTemplateManagement_TestClass.Save_New_Template()[pri:12, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Schedule_End_Column_Display status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Schedule_End_Column_Display()[pri:12, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:25 IST" name="setupTest" finished-at="2025-03-19T10:14:25 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:09 IST" name="setupTest" finished-at="2025-03-21T10:37:09 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.View_Template_Details() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Time_Column_Display() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="View_Template_Details()[pri:13, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:25 IST" name="View_Template_Details" finished-at="2025-03-19T10:14:32 IST" duration-ms="7091" status="PASS">
+        <test-method signature="Verify_Time_Column_Display()[pri:13, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:09 IST" name="Verify_Time_Column_Display" finished-at="2025-03-21T10:37:12 IST" duration-ms="3070" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- View_Template_Details -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:32 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:14:32 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Verify_Time_Column_Display -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:12 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:37:12 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=View_Template_Details status=SUCCESS method=AlertsTemplateManagement_TestClass.View_Template_Details()[pri:13, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Time_Column_Display status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Time_Column_Display()[pri:13, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:32 IST" name="setupTest" finished-at="2025-03-19T10:14:32 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:12 IST" name="setupTest" finished-at="2025-03-21T10:37:12 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.Edit_Existing_Template(java.util.Map) throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Recurrence_Column_Display() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Edit_Existing_Template(java.util.Map)[pri:14, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:14:32 IST" name="Edit_Existing_Template" data-provider="TestData" finished-at="2025-03-19T10:15:17 IST" duration-ms="45140" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Category=Notification, Categoryfortemplatecreation=Promotions, CurrentStatus=Active, EditInitialStatusfortemplatemodify=Inactive, EditReason=Test, InitialStatusfortemplatecreation=Active, NotificationType=SMS, NotificationTypefortemplatecreation=EMAIL, Run=Yes, TemplateBody=Automation testing improves software quality by identifying defects early. Selenium with Java helps in UI testing, ensuring reliability and efficiency in development., TemplateNamefortemplatecreation=Test, TestScenario=AlertsTemplateManagement}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="Verify_Recurrence_Column_Display()[pri:14, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:12 IST" name="Verify_Recurrence_Column_Display" finished-at="2025-03-21T10:37:15 IST" duration-ms="3056" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Edit_Existing_Template -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:15:17 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:15:17 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Verify_Recurrence_Column_Display -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:15 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:37:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Edit_Existing_Template status=SUCCESS method=AlertsTemplateManagement_TestClass.Edit_Existing_Template(java.util.Map)[pri:14, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Recurrence_Column_Display status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Recurrence_Column_Display()[pri:14, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:15:17 IST" name="setupTest" finished-at="2025-03-19T10:15:17 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:15 IST" name="setupTest" finished-at="2025-03-21T10:37:15 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsTemplateManagement_TestClass.View_Template_History() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Day_of_Week_Column_Display() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="View_Template_History()[pri:15, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:15:17 IST" name="View_Template_History" finished-at="2025-03-19T10:15:27 IST" duration-ms="10101" status="PASS">
+        <test-method signature="Verify_Day_of_Week_Column_Display()[pri:15, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:15 IST" name="Verify_Day_of_Week_Column_Display" finished-at="2025-03-21T10:37:18 IST" duration-ms="3079" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- View_Template_History -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:15:27 IST" name="takeScreenshotOnFailure" finished-at="2025-03-19T10:15:27 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Verify_Day_of_Week_Column_Display -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:18 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:37:18 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=View_Template_History status=SUCCESS method=AlertsTemplateManagement_TestClass.View_Template_History()[pri:15, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Day_of_Week_Column_Display status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Day_of_Week_Column_Display()[pri:15, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:core.AlertsandNotifications.AlertsTemplateManagement_TestClass@1c1bbc4e]" started-at="2025-03-19T10:15:27 IST" name="afterEachTest" finished-at="2025-03-19T10:15:29 IST" duration-ms="1344" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:18 IST" name="setupTest" finished-at="2025-03-21T10:37:18 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Day_of_Month_Column_Display() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Verify_Day_of_Month_Column_Display()[pri:16, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:18 IST" name="Verify_Day_of_Month_Column_Display" finished-at="2025-03-21T10:37:21 IST" duration-ms="3060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Day_of_Month_Column_Display -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:21 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:37:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_Day_of_Month_Column_Display status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Day_of_Month_Column_Display()[pri:16, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:21 IST" name="setupTest" finished-at="2025-03-21T10:37:21 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Status_Column_Display() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Verify_Status_Column_Display()[pri:17, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:21 IST" name="Verify_Status_Column_Display" finished-at="2025-03-21T10:37:24 IST" duration-ms="3062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Status_Column_Display -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:24 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:37:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_Status_Column_Display status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Status_Column_Display()[pri:17, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:24 IST" name="setupTest" finished-at="2025-03-21T10:37:24 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_the_pagination() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Verify_the_pagination()[pri:18, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:24 IST" name="Verify_the_pagination" finished-at="2025-03-21T10:37:27 IST" duration-ms="3101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_the_pagination -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:27 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:37:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_the_pagination status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_the_pagination()[pri:18, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:28 IST" name="setupTest" finished-at="2025-03-21T10:37:28 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_the_functionality_of_search_button(java.util.Map) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Verify_the_functionality_of_search_button(java.util.Map)[pri:19, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:37:28 IST" name="Verify_the_functionality_of_search_button" data-provider="TestData" finished-at="2025-03-21T10:38:13 IST" duration-ms="44797" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Run=Yes, ScheduleType=One Time, TestScenario=AlertsNotificationManagement}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_the_functionality_of_search_button -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:38:13 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:38:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_the_functionality_of_search_button status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_the_functionality_of_search_button(java.util.Map)[pri:19, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:38:13 IST" name="setupTest" finished-at="2025-03-21T10:38:13 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_the_functionality_of_cross_button_in_input_fields() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Verify_the_functionality_of_cross_button_in_input_fields()[pri:20, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:38:13 IST" name="Verify_the_functionality_of_cross_button_in_input_fields" finished-at="2025-03-21T10:38:16 IST" duration-ms="3173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_the_functionality_of_cross_button_in_input_fields -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:38:16 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:38:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_the_functionality_of_cross_button_in_input_fields status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_the_functionality_of_cross_button_in_input_fields()[pri:20, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:38:16 IST" name="setupTest" finished-at="2025-03-21T10:38:16 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Configure_Button_Click() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Verify_Configure_Button_Click()[pri:21, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:38:16 IST" name="Verify_Configure_Button_Click" finished-at="2025-03-21T10:38:20 IST" duration-ms="3258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Configure_Button_Click -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:38:20 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:38:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_Configure_Button_Click status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Configure_Button_Click()[pri:21, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:38:20 IST" name="setupTest" finished-at="2025-03-21T10:38:20 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_UI_Elements_Presence() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Verify_UI_Elements_Presence()[pri:22, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:38:20 IST" name="Verify_UI_Elements_Presence" finished-at="2025-03-21T10:38:42 IST" duration-ms="21917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_UI_Elements_Presence -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:38:42 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:38:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_UI_Elements_Presence status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_UI_Elements_Presence()[pri:22, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:38:42 IST" name="setupTest" finished-at="2025-03-21T10:38:42 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void core.AlertsandNotifications.AlertsNotificationManagement_TestClass.Verify_Edit_Button_Functionality() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Verify_Edit_Button_Functionality()[pri:23, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:38:42 IST" name="Verify_Edit_Button_Functionality" finished-at="2025-03-21T10:39:15 IST" duration-ms="33045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Edit_Button_Functionality -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:39:15 IST" name="takeScreenshotOnFailure" finished-at="2025-03-21T10:39:15 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_Edit_Button_Functionality status=SUCCESS method=AlertsNotificationManagement_TestClass.Verify_Edit_Button_Functionality()[pri:23, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:core.AlertsandNotifications.AlertsNotificationManagement_TestClass@24aed80c]" started-at="2025-03-21T10:39:15 IST" name="afterEachTest" finished-at="2025-03-21T10:39:16 IST" duration-ms="1057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-      </class> <!-- core.AlertsandNotifications.AlertsTemplateManagement_TestClass -->
+      </class> <!-- core.AlertsandNotifications.AlertsNotificationManagement_TestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
