@@ -64,9 +64,9 @@ public class DBUtils {
             e.printStackTrace();
         }*/
         
-    	String procedureName = "Check_Insert_ALT_Template_Placeholder";
-        List<Object> inputParams = new ArrayList<>(); // No input parameters
-        List<Integer> outputParamTypes = Arrays.asList(Types.VARCHAR, Types.VARCHAR); // Example output parameters
+    	String procedureName = "SP_DELETE_ALERT_TEMPLATES";
+         List<Object> inputParams = Arrays.asList("Test");
+         List<Integer> outputParamTypes = Arrays.asList(Types.VARCHAR); // Example output parameters
 
         List<Object> outputValues = ExecuteAnyOracleSQLStoredProcedure(procedureName, inputParams, outputParamTypes);
 

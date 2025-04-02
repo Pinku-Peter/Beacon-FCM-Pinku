@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="core.AlertsandNotifications.AlertsNotificationManagement_TestClass">
+      <class name="core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass">
         <methods>
+          <include name="Confirm_Masking_Without_Reason" invocation-numbers="0"/>
+          <include name="Enter_Invalid_Account_Number" invocation-numbers="0"/>
           <include name="takeScreenshotOnFailure"/>
           <include name="SetUp"/>
-          <include name="Verify_Schedule_Type_Fields"/>
-          <include name="Verify_the_functionality_of_cross_button_in_input_fields"/>
-          <include name="Verify_the_functionality_of_search_button" invocation-numbers="0"/>
+          <include name="Approve_Unmask_Request"/>
           <include name="setupTest"/>
           <include name="afterEachTest"/>
         </methods>
-      </class> <!-- core.AlertsandNotifications.AlertsNotificationManagement_TestClass -->
+      </class> <!-- core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
