@@ -229,7 +229,7 @@ private WebDriver driver;
         loginUserId = properties.getProperty("Zone_User_ID");
 
         Log.info("Initializing input parameters for stored procedure...");
-        List<Object> inputParams = Arrays.asList("", "Mumbai", "Manal metha", "metha@example.com", 1122889900);
+        List<Object> inputParams = Arrays.asList(loginUserId, "Mumbai", "Manal metha", "metha@example.com", 1122889900);
         List<Integer> outputTypes = Arrays.asList(Types.VARCHAR, Types.VARCHAR, Types.VARCHAR);
 
         Log.info("Executing stored procedure: ZoneUserIDGeneratorWithInputZoneName...");

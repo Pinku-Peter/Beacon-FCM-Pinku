@@ -130,7 +130,7 @@ public class AlertsMaskAcAndMaskingAutho_TestClass {
 	 @Test(priority = 3)
 	    public void Approve_Masking_Request() throws Exception {
 		 try {
-			 List<Object> results = alertsmaskacandmaskingautho_mainclass.createZoneUser();
+			 List<Object> results = alertsmaskacandmaskingautho_mainclass.createZoneUser(); 
 
 		        // You can use the results if needed
 		        zoneUserID = (String) results.get(0);
