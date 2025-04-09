@@ -57,6 +57,7 @@ public class AlertsPlaceholderManagement_TestClass {
 	    alertsplaceholdermanagement_mainclass = new AlertsPlaceholderManagement_MainClass(driver); 
 	    TestListener = new TestListener();
 	    screenShot = new com.Utility.ScreenShot(driver);
+	    ExcelReader = new com.Utility.ExcelReader("CoreAlertsPlaceholderManagement");
         // Start a new ExtentTest for the current test method
         extenttest = ExtentTestManager.startTest(method.getName()).assignCategory("CoreAlertsPlaceholderManagement");
     }

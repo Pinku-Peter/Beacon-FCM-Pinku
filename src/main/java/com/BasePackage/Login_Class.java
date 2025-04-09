@@ -501,12 +501,28 @@ public class Login_Class extends Base_Class {
 	
 	public static void CoreLoginWithInputs(String UserID, String password) throws Exception {
 	    try {
+	    	AppType="Core";
 	        String Browser = configloader().getProperty("Browser");
 	        String CoreAppUrl = configloader().getProperty("CoreApplicationUrl");
 	        
 	        // Use input parameters if provided; otherwise, fetch from config
 	        String CoreUserName = (UserID != null && !UserID.isEmpty()) ? UserID : configloader().getProperty("CoreUserName");
 	        String CoreUserPassword = (password != null && !password.isEmpty()) ? password : configloader().getProperty("CoreUserPassword");
+	        
+	     // Fetch the default URL from the database
+	        String query = "select Default_URL from acc_users where user_id = '" + CoreUserName + "'";
+	        String defaultURL = DBUtils.fetchSingleValueFromDB(query);
+	        Log.info("Default URL: " + defaultURL);
+	        
+	     // Check if the default URL is null or empty
+			  if (defaultURL == null || defaultURL.trim().isEmpty()) {
+			      // If the default URL is null or empty, update it to '/Home'
+			      String updateQuery = "UPDATE acc_users SET Default_URL = '/Home' WHERE user_id = '"+CoreUserName+"'";
+			      DBUtils.executeSQLStatement(updateQuery);
+			  } else if ("/Home".equals(defaultURL)) {
+			      // If the default URL is already '/Home', no action is needed
+			      System.out.println("Default URL is already /Home. No action taken.");
+			  }
 	        
 	        // Initialize WebDriver based on browser type
 	        switch (Browser.toUpperCase()) {
@@ -547,16 +563,16 @@ public class Login_Class extends Base_Class {
 	        Common.fluentWait("LoginButton", LoginPageRepo.LoginButton);
 	        
 	     // Fetch the default URL from the database
-	        String query = "select Default_URL from acc_users where user_id = '" + CoreUserName + "'";
-	        String defaultURL = DBUtils.fetchSingleValueFromDB(query);
-	        Log.info("Default URL: " + defaultURL);
+	        String queryCoreLoginWithInputs = "select Default_URL from acc_users where user_id = '" + CoreUserName + "'";
+	        String defaultURLCoreLoginWithInputs = DBUtils.fetchSingleValueFromDB(queryCoreLoginWithInputs);
+	        Log.info("Default URL: " + defaultURLCoreLoginWithInputs);
 	        
 	     // Check if the default URL is null or empty
-			  if (defaultURL == null || defaultURL.trim().isEmpty()) {
+			  if (defaultURLCoreLoginWithInputs == null || defaultURLCoreLoginWithInputs.trim().isEmpty()) {
 			      // If the default URL is null or empty, update it to '/Home'
 			      String updateQuery = "UPDATE acc_users SET Default_URL = '/Home' WHERE user_id = '"+CoreUserName+"'";
 			      DBUtils.executeSQLStatement(updateQuery);
-			  } else if ("/Home".equals(defaultURL)) {
+			  } else if ("/Home".equals(defaultURLCoreLoginWithInputs)) {
 			      // If the default URL is already '/Home', no action is needed
 			      System.out.println("Default URL is already /Home. No action taken.");
 			  }

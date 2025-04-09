@@ -3,17 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass">
+      <class name="core.SummaryReports.BankAllocationSummary_TestClass">
         <methods>
-          <include name="Confirm_Masking_Without_Reason" invocation-numbers="0"/>
-          <include name="Enter_Invalid_Account_Number" invocation-numbers="0"/>
           <include name="takeScreenshotOnFailure"/>
           <include name="SetUp"/>
-          <include name="Approve_Unmask_Request"/>
+          <include name="validateDataExecutionForBankAllocationSummary"/>
           <include name="setupTest"/>
           <include name="afterEachTest"/>
         </methods>
-      </class> <!-- core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass -->
+      </class> <!-- core.SummaryReports.BankAllocationSummary_TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

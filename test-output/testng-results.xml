@@ -1,342 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-03T10:17:09 IST" name="Default suite" finished-at="2025-04-03T10:39:16 IST" duration-ms="1326984">
+  <suite started-at="2025-04-09T15:07:13 IST" name="Default suite" finished-at="2025-04-09T15:14:05 IST" duration-ms="412498">
     <groups>
     </groups>
-    <test started-at="2025-04-03T10:17:09 IST" name="Default test" finished-at="2025-04-03T10:39:16 IST" duration-ms="1326984">
-      <class name="core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:17:09 IST" name="SetUp" finished-at="2025-04-03T10:17:09 IST" duration-ms="48" status="PASS">
+    <test started-at="2025-04-09T15:07:13 IST" name="Default test" finished-at="2025-04-09T15:14:05 IST" duration-ms="412498">
+      <class name="core.SummaryReports.BankAllocationSummary_TestClass">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:07:13 IST" name="SetUp" finished-at="2025-04-09T15:07:13 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:17:09 IST" name="setupTest" finished-at="2025-04-03T10:17:10 IST" duration-ms="1041" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:07:14 IST" name="setupTest" finished-at="2025-04-09T15:07:15 IST" duration-ms="119" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass.Login_and_Navigate_to_Mask_Account_Window() throws java.lang.Exception]]>
+                <![CDATA[public void core.SummaryReports.BankAllocationSummary_TestClass.testSuccessfulAccountAllocation(java.util.Map) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Login_and_Navigate_to_Mask_Account_Window()[pri:1, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:17:10 IST" name="Login_and_Navigate_to_Mask_Account_Window" finished-at="2025-04-03T10:20:29 IST" duration-ms="198778" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_and_Navigate_to_Mask_Account_Window -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:20:29 IST" name="takeScreenshotOnFailure" finished-at="2025-04-03T10:20:29 IST" duration-ms="3" status="PASS">
+        <test-method signature="testSuccessfulAccountAllocation(java.util.Map)[pri:1, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:07:15 IST" name="testSuccessfulAccountAllocation" data-provider="TestData" finished-at="2025-04-09T15:09:57 IST" duration-ms="162843" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login_and_Navigate_to_Mask_Account_Window status=SUCCESS method=AlertsMaskAcAndMaskingAutho_TestClass.Login_and_Navigate_to_Mask_Account_Window()[pri:1, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31] output={null}]]]>
+                <![CDATA[{AllocateTo=Branch, AssetCategory=SMA Category, Branch=Amaravati, FromandToDates=9, OsBalanceAmount=10000, OsBalanceOperator=<, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CoreBankAllocationSummary}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulAccountAllocation -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:09:57 IST" name="takeScreenshotOnFailure" finished-at="2025-04-09T15:09:57 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSuccessfulAccountAllocation status=SUCCESS method=BankAllocationSummary_TestClass.testSuccessfulAccountAllocation(java.util.Map)[pri:1, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:20:30 IST" name="setupTest" finished-at="2025-04-03T10:20:30 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:09:57 IST" name="setupTest" finished-at="2025-04-09T15:09:57 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass.Mask_Account_with_Valid_Details(java.util.Map) throws java.lang.Throwable]]>
+                <![CDATA[public void core.SummaryReports.BankAllocationSummary_TestClass.testValidUserLogin() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Mask_Account_with_Valid_Details(java.util.Map)[pri:2, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:20:30 IST" name="Mask_Account_with_Valid_Details" data-provider="TestData" finished-at="2025-04-03T10:21:22 IST" duration-ms="51925" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{InvalidAccountNumber=1234, NotificationType=EMAIL, Reason=Test, Run=Yes, Status=Mask, Status2=Unmask, Template=Email 2, TestScenario=CoreAlertsMaskAcAndMaskingAutho}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testValidUserLogin()[pri:2, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:09:57 IST" name="testValidUserLogin" finished-at="2025-04-09T15:11:21 IST" duration-ms="83213" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Mask_Account_with_Valid_Details -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:21:22 IST" name="takeScreenshotOnFailure" finished-at="2025-04-03T10:21:22 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testValidUserLogin -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:11:21 IST" name="takeScreenshotOnFailure" finished-at="2025-04-09T15:11:21 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Mask_Account_with_Valid_Details status=SUCCESS method=AlertsMaskAcAndMaskingAutho_TestClass.Mask_Account_with_Valid_Details(java.util.Map)[pri:2, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testValidUserLogin status=SUCCESS method=BankAllocationSummary_TestClass.testValidUserLogin()[pri:2, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:21:22 IST" name="setupTest" finished-at="2025-04-03T10:21:22 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:11:21 IST" name="setupTest" finished-at="2025-04-09T15:11:21 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass.Approve_Masking_Request() throws java.lang.Exception]]>
+                <![CDATA[public void core.SummaryReports.BankAllocationSummary_TestClass.testAccountAllocation() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Approve_Masking_Request()[pri:3, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:21:22 IST" name="Approve_Masking_Request" finished-at="2025-04-03T10:24:12 IST" duration-ms="169625" status="PASS">
+        <test-method signature="testAccountAllocation()[pri:3, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:11:21 IST" name="testAccountAllocation" finished-at="2025-04-09T15:12:14 IST" duration-ms="53533" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Approve_Masking_Request -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:24:12 IST" name="takeScreenshotOnFailure" finished-at="2025-04-03T10:24:12 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testAccountAllocation -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:12:14 IST" name="takeScreenshotOnFailure" finished-at="2025-04-09T15:12:14 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Approve_Masking_Request status=SUCCESS method=AlertsMaskAcAndMaskingAutho_TestClass.Approve_Masking_Request()[pri:3, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testAccountAllocation status=SUCCESS method=BankAllocationSummary_TestClass.testAccountAllocation()[pri:3, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:24:12 IST" name="setupTest" finished-at="2025-04-03T10:24:12 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:12:14 IST" name="setupTest" finished-at="2025-04-09T15:12:14 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass.Validate_Masked_Account_in_Notification_Management(java.util.Map) throws java.lang.Exception]]>
+                <![CDATA[public void core.SummaryReports.BankAllocationSummary_TestClass.validateDataExecutionForBankAllocationSummary() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Masked_Account_in_Notification_Management(java.util.Map)[pri:4, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:24:12 IST" name="Validate_Masked_Account_in_Notification_Management" data-provider="TestData" finished-at="2025-04-03T10:31:16 IST" duration-ms="423559" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{InvalidAccountNumber=1234, NotificationType=EMAIL, Reason=Test, Run=Yes, Status=Mask, Status2=Unmask, Template=Email 2, TestScenario=CoreAlertsMaskAcAndMaskingAutho}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="validateDataExecutionForBankAllocationSummary()[pri:4, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:12:14 IST" name="validateDataExecutionForBankAllocationSummary" finished-at="2025-04-09T15:12:15 IST" duration-ms="605" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validate_Masked_Account_in_Notification_Management -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:31:16 IST" name="takeScreenshotOnFailure" finished-at="2025-04-03T10:31:16 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- validateDataExecutionForBankAllocationSummary -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:12:15 IST" name="takeScreenshotOnFailure" finished-at="2025-04-09T15:12:15 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Validate_Masked_Account_in_Notification_Management status=SUCCESS method=AlertsMaskAcAndMaskingAutho_TestClass.Validate_Masked_Account_in_Notification_Management(java.util.Map)[pri:4, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=validateDataExecutionForBankAllocationSummary status=SUCCESS method=BankAllocationSummary_TestClass.validateDataExecutionForBankAllocationSummary()[pri:4, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:31:16 IST" name="setupTest" finished-at="2025-04-03T10:31:16 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:12:15 IST" name="setupTest" finished-at="2025-04-09T15:12:15 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass.Unmask_Account(java.util.Map) throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.SummaryReports.BankAllocationSummary_TestClass.testVerifyTodaysAccountsInBranchAllocation(java.util.Map) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Unmask_Account(java.util.Map)[pri:5, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:31:16 IST" name="Unmask_Account" data-provider="TestData" finished-at="2025-04-03T10:32:06 IST" duration-ms="50838" status="PASS">
+        <test-method signature="testVerifyTodaysAccountsInBranchAllocation(java.util.Map)[pri:5, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:12:15 IST" name="testVerifyTodaysAccountsInBranchAllocation" data-provider="TestData" finished-at="2025-04-09T15:14:05 IST" duration-ms="109885" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{InvalidAccountNumber=1234, NotificationType=EMAIL, Reason=Test, Run=Yes, Status=Mask, Status2=Unmask, Template=Email 2, TestScenario=CoreAlertsMaskAcAndMaskingAutho}]]>
+                <![CDATA[{AllocateTo=Branch, AssetCategory=SMA Category, Branch=Amaravati, FromandToDates=9, OsBalanceAmount=10000, OsBalanceOperator=<, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CoreBankAllocationSummary}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Unmask_Account -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:32:06 IST" name="takeScreenshotOnFailure" finished-at="2025-04-03T10:32:06 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testVerifyTodaysAccountsInBranchAllocation -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:14:05 IST" name="takeScreenshotOnFailure" finished-at="2025-04-09T15:14:05 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Unmask_Account status=SUCCESS method=AlertsMaskAcAndMaskingAutho_TestClass.Unmask_Account(java.util.Map)[pri:5, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:32:06 IST" name="setupTest" finished-at="2025-04-03T10:32:06 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass.Approve_Unmask_Request() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Approve_Unmask_Request()[pri:6, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:32:06 IST" name="Approve_Unmask_Request" finished-at="2025-04-03T10:36:14 IST" duration-ms="247749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Approve_Unmask_Request -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:36:14 IST" name="takeScreenshotOnFailure" finished-at="2025-04-03T10:36:14 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Approve_Unmask_Request status=SUCCESS method=AlertsMaskAcAndMaskingAutho_TestClass.Approve_Unmask_Request()[pri:6, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testVerifyTodaysAccountsInBranchAllocation status=SUCCESS method=BankAllocationSummary_TestClass.testVerifyTodaysAccountsInBranchAllocation(java.util.Map)[pri:5, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:36:14 IST" name="setupTest" finished-at="2025-04-03T10:36:14 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass.Account_Number_Field_BVA_Validations() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Account_Number_Field_BVA_Validations()[pri:7, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:36:14 IST" name="Account_Number_Field_BVA_Validations" finished-at="2025-04-03T10:36:42 IST" duration-ms="27398" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Account_Number_Field_BVA_Validations -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:36:42 IST" name="takeScreenshotOnFailure" finished-at="2025-04-03T10:36:42 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Account_Number_Field_BVA_Validations status=SUCCESS method=AlertsMaskAcAndMaskingAutho_TestClass.Account_Number_Field_BVA_Validations()[pri:7, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:36:42 IST" name="setupTest" finished-at="2025-04-03T10:36:42 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass.Account_Number_Field_ECP_Validations() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Account_Number_Field_ECP_Validations()[pri:8, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:36:42 IST" name="Account_Number_Field_ECP_Validations" finished-at="2025-04-03T10:37:00 IST" duration-ms="18693" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Account_Number_Field_ECP_Validations -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:37:00 IST" name="takeScreenshotOnFailure" finished-at="2025-04-03T10:37:00 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Account_Number_Field_ECP_Validations status=SUCCESS method=AlertsMaskAcAndMaskingAutho_TestClass.Account_Number_Field_ECP_Validations()[pri:8, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:37:00 IST" name="setupTest" finished-at="2025-04-03T10:37:00 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass.Enter_Invalid_Account_Number(java.util.Map) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Enter_Invalid_Account_Number(java.util.Map)[pri:9, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:37:00 IST" name="Enter_Invalid_Account_Number" data-provider="TestData" finished-at="2025-04-03T10:37:17 IST" duration-ms="16600" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{InvalidAccountNumber=1234, NotificationType=EMAIL, Reason=Test, Run=Yes, Status=Mask, Status2=Unmask, Template=Email 2, TestScenario=CoreAlertsMaskAcAndMaskingAutho}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Enter_Invalid_Account_Number -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:37:17 IST" name="takeScreenshotOnFailure" finished-at="2025-04-03T10:37:17 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Enter_Invalid_Account_Number status=SUCCESS method=AlertsMaskAcAndMaskingAutho_TestClass.Enter_Invalid_Account_Number(java.util.Map)[pri:9, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:37:17 IST" name="setupTest" finished-at="2025-04-03T10:37:17 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass.Leave_Account_Number_Empty() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Leave_Account_Number_Empty()[pri:10, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:37:17 IST" name="Leave_Account_Number_Empty" finished-at="2025-04-03T10:37:30 IST" duration-ms="13402" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Leave_Account_Number_Empty -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:37:30 IST" name="takeScreenshotOnFailure" finished-at="2025-04-03T10:37:30 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Leave_Account_Number_Empty status=SUCCESS method=AlertsMaskAcAndMaskingAutho_TestClass.Leave_Account_Number_Empty()[pri:10, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:37:31 IST" name="setupTest" finished-at="2025-04-03T10:37:31 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass.Confirm_Masking_Without_Reason(java.util.Map) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Confirm_Masking_Without_Reason(java.util.Map)[pri:11, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:37:31 IST" name="Confirm_Masking_Without_Reason" data-provider="TestData" finished-at="2025-04-03T10:39:11 IST" duration-ms="100736" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{InvalidAccountNumber=1234, NotificationType=EMAIL, Reason=Test, Run=Yes, Status=Mask, Status2=Unmask, Template=Email 2, TestScenario=CoreAlertsMaskAcAndMaskingAutho}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Confirm_Masking_Without_Reason -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:39:11 IST" name="takeScreenshotOnFailure" finished-at="2025-04-03T10:39:11 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Confirm_Masking_Without_Reason status=SUCCESS method=AlertsMaskAcAndMaskingAutho_TestClass.Confirm_Masking_Without_Reason(java.util.Map)[pri:11, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass@2cd76f31]" started-at="2025-04-03T10:39:11 IST" name="afterEachTest" finished-at="2025-04-03T10:39:16 IST" duration-ms="4566" status="PASS">
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@4e08711f]" started-at="2025-04-09T15:14:05 IST" name="afterEachTest" finished-at="2025-04-09T15:14:05 IST" duration-ms="490" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-      </class> <!-- core.AlertsandNotifications.AlertsMaskAcAndMaskingAutho_TestClass -->
+      </class> <!-- core.SummaryReports.BankAllocationSummary_TestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -7,18 +7,15 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.BasePackage.DBUtils;
 import com.Page_Repository.CoreAlertsMaskAcAndMaskingAuthoRepo;
 import com.Page_Repository.CoreAlertsNoticeTypeMa_NoticeAcRepo;
-import com.Page_Repository.CoreAlertsNotificationManagementRepo;
 import com.Page_Repository.CoreAlertsPlaceholderManagementRepo;
 import com.Page_Repository.CoreAlertsTemplateManagementRepo;
 import com.Page_Repository.DispositionMasterPageRepo;
@@ -30,18 +27,28 @@ public class AlertsNoticeTypeManagement_MainClass {
 private WebDriver driver;
 	
 	public AlertsNoticeTypeManagement_MainClass(WebDriver driver) {  
-
+		Log.info("Initializing AlertsNoticeTypeManagement_MainClass...");
+	    
 	    this.driver = driver;  
- 
+	 
 	    PageFactory.initElements(driver, this);  
 
+	    Log.info("AlertsNoticeTypeManagement_MainClass initialized successfully.");
     }
 	
 	 // Method to verify if "Alerts and Notifications" menu item is displayed
     public boolean isAlertsAndNotificationsVisible() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
-        WebElement alertsAndNotificationsMenu = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAlertsPlaceholderManagementRepo.alertsAndNotificationsMenu));
-        return alertsAndNotificationsMenu.isDisplayed();
+    	Log.info("Waiting for Alerts and Notifications menu to be visible...");
+        
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+        WebElement alertsAndNotificationsMenu = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(CoreAlertsPlaceholderManagementRepo.alertsAndNotificationsMenu)
+        );
+        
+        boolean isVisible = alertsAndNotificationsMenu.isDisplayed();
+        Log.info("Alerts and Notifications menu visibility status: " + isVisible);
+        
+        return isVisible;
     }
     
  // Method to click on alerts and notifications
@@ -100,10 +107,20 @@ private WebDriver driver;
     
     // Method to verify if "Alerts and Notifications" menu item is displayed
     public boolean isAddTemplateFormDisplayed() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
-        WebElement addTemplateform = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAlertsNoticeTypeMa_NoticeAcRepo.popUp));
+    	Log.info("Waiting for Add Template form to be visible...");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+        WebElement addTemplateform = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(CoreAlertsNoticeTypeMa_NoticeAcRepo.popUp)
+        );
+
+        Log.info("Waiting for spinner to disappear...");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
-        return addTemplateform.isDisplayed();
+
+        boolean isDisplayed = addTemplateform.isDisplayed();
+        Log.info("Add Template form visibility status: " + isDisplayed);
+
+        return isDisplayed;
     }
     
  // Method to interact with Notification Type field
@@ -241,10 +258,14 @@ private WebDriver driver;
     }
     
     public void deleteNoticeType(String templatename) throws IOException, ClassNotFoundException, SQLException {
+    	Log.info("Preparing to delete Notice Type: " + templatename);
 
-        String query = "delete from ALT_NOTICE_TYPE where NOTICE_TYPE_NAME='"+templatename+"'";
-
+        String query = "DELETE FROM ALT_NOTICE_TYPE WHERE NOTICE_TYPE_NAME='" + templatename + "'";
+        
+        Log.info("Executing query: " + query);
         DBUtils.executeSQLStatement(query);
+
+        Log.info("Notice Type '" + templatename + "' deleted successfully.");
 
     }
     
@@ -314,34 +335,74 @@ private WebDriver driver;
     
     // Method to get error message
     public String getTemplateNameErrorMessage() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
-    	 WebElement templateNameError = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAlertsNoticeTypeMa_NoticeAcRepo.templateNameError));
-        return templateNameError.getText();
+    	Log.info("Waiting for Template Name error message to be visible...");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+        WebElement templateNameError = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(CoreAlertsNoticeTypeMa_NoticeAcRepo.templateNameError)
+        );
+
+        String errorMessage = templateNameError.getText();
+        Log.info("Retrieved Template Name error message: " + errorMessage);
+
+        return errorMessage;
     }
     
     // Method to click on 'Cancel' button
     public void clickCancelbutton() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
-   	 	WebElement cancelButton = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAlertsNoticeTypeMa_NoticeAcRepo.cancelButton));
-   	 	cancelButton.click();
+    	Log.info("Waiting for Cancel button to be visible...");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+        WebElement cancelButton = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(CoreAlertsNoticeTypeMa_NoticeAcRepo.cancelButton)
+        );
+
+        Log.info("Clicking on Cancel button...");
+        cancelButton.click();
+
+        Log.info("Waiting for spinner to disappear...");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+
+        Log.info("Cancel button clicked successfully.");
     }
     
  // Method to click on 'Notice Type Management' submenu
     public void clickNoticeTypeManagementSubMenu() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
-   	 	WebElement noticeTypeManagementSubMenu = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAlertsNoticeTypeMa_NoticeAcRepo.noticeTypeManagementSubMenu));
+    	Log.info("Waiting for Notice Type Management sub-menu to be visible...");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+        WebElement noticeTypeManagementSubMenu = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(CoreAlertsNoticeTypeMa_NoticeAcRepo.noticeTypeManagementSubMenu)
+        );
+
+        Log.info("Clicking on Notice Type Management sub-menu...");
         noticeTypeManagementSubMenu.click();
+
+        Log.info("Waiting for spinner to disappear...");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+
+        Log.info("Waiting for page navigation element to be visible...");
         wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAlertsNoticeTypeMa_NoticeAcRepo.Pagenavigation));
+
+        Log.info("Successfully navigated to Notice Type Management page.");
     }
 
     // Method to click on 'Add Notice Type' button
     public void clickAddNoticeType() {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
-   	 	WebElement addNoticeTypeButton = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAlertsNoticeTypeMa_NoticeAcRepo.addNoticeTypeButton));
+    	Log.info("Waiting for Add Notice Type button to be visible...");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+        WebElement addNoticeTypeButton = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(CoreAlertsNoticeTypeMa_NoticeAcRepo.addNoticeTypeButton)
+        );
+
+        Log.info("Clicking on Add Notice Type button...");
         addNoticeTypeButton.click();
+
+        Log.info("Waiting for spinner to disappear...");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+
+        Log.info("Add Notice Type button clicked successfully.");
     }
 
     // Method to verify that the pop-up with fields is present
