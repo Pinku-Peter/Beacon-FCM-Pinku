@@ -48,7 +48,8 @@ public class CoreAlertsTemplateManagementRepo {
 	public static By editButton = By.xpath("//table[@class='rz-grid-table rz-grid-table-fixed']//tbody//tr[position()=1]//td[position()=4]");
 	public static By editInitialStatusdropdown = By.xpath("//div[@class='rz-dialog-content']//div[@title='Select Initial Status']");
 	public static By editInitialStatusdropdownvalue(String value) {
-        return By.xpath("//div[@style='display: block; box-sizing: border-box; width: 163px; z-index: 2000; left: 302px; top: 204px; min-width: 163px;']//ul//li[@aria-label='>" + value + "']");
+        return By.xpath("(//div[@class='rz-dropdown-items-wrapper']//following-sibling::li[@role='option' and @aria-label='>" + value + "'])[2]");
+        
     }
 	public static By editreason = By.xpath("//label[text()='Reason']//following-sibling::textarea");
 	public static By updatebutton = By.xpath("//button[@type='submit' and text()='Update']");

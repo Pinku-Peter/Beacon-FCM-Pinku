@@ -18,7 +18,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.lang.reflect.Method;
-import java.sql.SQLException;
 import java.time.Duration;
 import com.BasePackage.Base_Class;
 import com.BasePackage.Login_Class;
@@ -30,8 +29,6 @@ import com.aventstack.extentreports.Status;
 import com.extentReports.ExtentManager;
 import com.extentReports.ExtentTestManager;
 import com.listeners.TestListener;
-
-import core.AlertsandNotifications.AlertsNoticeTypeManagement_MainClass;
 
 public class BankAllocationSummary_TestClass {
 	
@@ -67,13 +64,13 @@ public class BankAllocationSummary_TestClass {
 	
 	@Test(priority = 1, dataProvider = "TestData")
     public void testSuccessfulAccountAllocation(Map<Object, Object> testdata) throws Exception {
-	 
+		try {
 	// Login into the core application
 	 Login_Class.CoreLogin(); 
 	 driver = baseclass.getDriver();
 	 bankallocationsummary = new BankAllocationSummary_MainClass(driver);
 	 screenShot = new com.Utility.ScreenShot(driver);
-	 
+	 ExtentTestManager.getTest().log(Status.PASS, "Logged in as a Zone user.");
 	 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
 	    	
 	        String value1 = testdata.get("AssetCategory").toString();
@@ -85,24 +82,38 @@ public class BankAllocationSummary_TestClass {
 	        String value7 = testdata.get("AllocateTo").toString();
 	 
 	 List<Object> results1 = bankallocationsummary.deleteZoneUserToBranchUserAccountAllocation(value4,value7,"IBU0000240");
-	 System.out.println("Status message: " + results1.get(0));
-	 
+	 ExtentTestManager.getTest().log(Status.PASS, String.valueOf(results1.get(0)));
 	 List<Object> results2 = bankallocationsummary.insertBCOUser("IBU0000240");
-	 System.out.println("Status message: " + results2.get(0));
-	        
+	 ExtentTestManager.getTest().log(Status.PASS, String.valueOf(results2.get(0)));
 	        bankallocationsummary.selectSmaTile();
+	        ExtentTestManager.getTest().log(Status.PASS, "Navigated to My Desk.");
+	        ExtentTestManager.getTest().log(Status.PASS, "Selected the SMA tile from Unassigned Accounts.");
 	        bankallocationsummary.selectAssetCategory(value1);
+	        ExtentTestManager.getTest().log(Status.PASS, "Selected Asset Category.");
 	        bankallocationsummary.selectSmaCategory(value2);
+	        ExtentTestManager.getTest().log(Status.PASS, "Selected SMA Category.");
 	        bankallocationsummary.selectRegion(value3);
+	        ExtentTestManager.getTest().log(Status.PASS, "Selected Region.");
 	        bankallocationsummary.selectBranch(value4);
+	        ExtentTestManager.getTest().log(Status.PASS, "Selected Branch.");
 	        bankallocationsummary.selectDpdFinancialOperation(value5,value6);
+	        ExtentTestManager.getTest().log(Status.PASS, "Selected Financial values.");
 	        bankallocationsummary.clickSearch();
+	        ExtentTestManager.getTest().log(Status.PASS, "Clicked the Search button.");
 	        bankallocationsummary.selectAllocateToBranch(value7);
+	        ExtentTestManager.getTest().log(Status.PASS, "Selected a Branch from the \"Allocate To\" dropdown.");
 	 }
-	 bankallocationsummary.clickAllocate();
-        
+	 		bankallocationsummary.clickAllocate();
+	 		ExtentTestManager.getTest().log(Status.PASS, "Clicked the Allocate button.");
         // Assert the confirmation message is displayed
-        Assert.assertTrue(bankallocationsummary.isConfirmationMessageDisplayed());
+	 		Assert.assertTrue(bankallocationsummary.isConfirmationMessageDisplayed());
+	 		ExtentTestManager.getTest().log(Status.PASS, "Accounts allocated successfully, confirmation message displayed");
+		}
+			catch (AssertionError | Exception e) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+           throw e;
+	 }
+		Thread.sleep(3000);
     }
 	
 	 @Test(priority = 2) 
@@ -150,8 +161,10 @@ public class BankAllocationSummary_TestClass {
 
 		    System.out.println("Status message: " + statusMessage);
 
-		    // You can verify the message contains expected text
-		    Assert.assertTrue(statusMessage.equals("Accounts inserted into TRN_AC_MOVEMENT with MOVEMENT TYPE=1 and MOVEMENT_TYPE_CATEGORY=NEW"),"Expected success message not found!"); 
+		    String expectedMessage = "Accounts inserted into TRN_AC_MOVEMENT with  MOVEMENT TYPE=1 and MOVEMENT_TYPE_CATEGORY=NEW";
+		    
+		    Assert.assertTrue(statusMessage.equalsIgnoreCase(expectedMessage),
+		            "Test failed - Expected message: '" + expectedMessage + "', but got: '" + statusMessage + "'");
 	    }
 	 
 	 @Test(priority = 5, dataProvider = "TestData")
@@ -168,8 +181,8 @@ public class BankAllocationSummary_TestClass {
 		    	
 		        String value1 = testdata.get("Region").toString();
 		        String value2 = testdata.get("Branch").toString();
-		        String value3 = testdata.get("FromandToDates").toString(); 
-		        String value4 = testdata.get("FromandToDates").toString();
+		        String value3 = testdata.get("TodaysDate").toString(); 
+		        String value4 = testdata.get("TodaysDate").toString();
 		        
 		        bankallocationsummary.fillMandatoryFields(value1, value2, value3, value4);  
 	        
@@ -179,7 +192,74 @@ public class BankAllocationSummary_TestClass {
 	        // Verifying that today's allocations are displayed correctly
 	        Assert.assertTrue(bankallocationsummary.areTodaysAllocationsDisplayed(account_numbers_count), "Today's allocated accounts are not displayed correctly.");
 	    }  
-	
+	 
+	 @Test(priority = 6)
+	    public void testDownloadFunctionality() {
+
+		 bankallocationsummary.downloadAsExcel(); 
+	        
+	     Assert.assertTrue(bankallocationsummary.isExcelvaluesMatchingWithUI(), "Excel file is not matching with UI displayed values");
+
+	    } 
+	 
+	 @Test(priority = 7, dataProvider = "TestData")
+	    public void testVerifyAccountsInYesterdaysDate(Map<Object, Object> testdata) throws IOException {
+		 
+		 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+		    	
+		        String value1 = testdata.get("AllocateTo").toString();
+		        String value2 = testdata.get("Branch").toString();
+	        
+		        String statusMessage = bankallocationsummary.updateAllocatedDate(value2,value1,userId); 
+		        
+		        System.out.println(statusMessage);	
+		        
+		        Assert.assertTrue(statusMessage.equalsIgnoreCase("Update successful."), 
+		                "Test failed - Expected message 'Update successful.' but got: " + statusMessage); 
+		        
+		        String statusMessage2 = bankallocationsummary.runBranchAllocDashboard(); 
+		        
+		        System.out.println(statusMessage2);		        
+		        
+		        Assert.assertTrue(statusMessage2.equalsIgnoreCase("Success"), 
+		                "Test failed - Expected message 'Success' but got: " + statusMessage2);
+		 }
+		 
+	    }
+	 
+	 @Test(priority = 8)
+	    public void verifyTablesUpdatedAfterPackageExecution() throws IOException {
+	        // Step 1: Execute the stored procedure
+		 List<Object> statusMessage = bankallocationsummary.checkDashboardDataLoadExecution(userId);
+
+	        // Step 2: Check the outputs
+	        String resultSummary = (String) statusMessage.get(0);
+	        String resultDashboard = (String) statusMessage.get(1); 
+
+	        // Expected Results
+	        Assert.assertEquals(resultSummary, "Yes", "DW_BRANCH_ALLOCATIONS_SUMMARY table entry check failed");
+	        Assert.assertEquals(resultDashboard, "Yes", "DW_BRANCH_ALLOCATIONS_DASHBOARD table entry check failed");
+	    }
+	 
+	 
+	 
+	 @Test(priority = 9, dataProvider = "TestData")
+	    public void verifyGridDetailsAccuracy(Map<Object, Object> testdata ) {
+		 
+		 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
+		    	
+		        String value1 = testdata.get("YesterdaysDate").toString(); 
+		        String value2 = testdata.get("YesterdaysDate").toString();
+		        
+		        bankallocationsummary.selectyesterdaysdate(value1, value2);   
+		        
+		 }
+		 bankallocationsummary.clickSearchButton();
+	        
+	        // Verifying that today's allocations are displayed correctly
+	        Assert.assertTrue(bankallocationsummary.areYesterdaysAllocationsDisplayed(account_numbers_count), "Yesterday's's allocated accounts are not displayed correctly.");
+	    }
+	 
 	@AfterMethod 
 	 public void takeScreenshotOnFailure(ITestResult result) throws IOException {
 		    // Check if the test case failed

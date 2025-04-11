@@ -163,7 +163,7 @@ private WebDriver driver;
             Log.info("Waiting for the dropdown value '" + value + "' to be visible...");
             wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAlertsTemplateManagementRepo.dropdownvaluesfortemplatecreation(value)));
             Log.info("Values available in dropdown. Page loaded successfully.");
-        } catch (TimeoutException e) {
+        } catch (Exception e) {
             Log.error("Values not available in dropdown. Page did not load completely.", e);
             throw new RuntimeException("Values not available in dropdown. The page is not fully loaded. Please try again.", e);
         }

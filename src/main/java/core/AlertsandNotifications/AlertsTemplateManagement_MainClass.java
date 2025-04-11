@@ -666,16 +666,14 @@ private WebDriver driver;
     	    Log.info("Waiting for the edit initial status dropdown to be visible.");
     	    WebElement editInitialStatusdropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAlertsTemplateManagementRepo.editInitialStatusdropdown));
 
-    	    Log.info("Clicking the edit initial status dropdown multiple times.");
-    	    editInitialStatusdropdown.click();
-    	    editInitialStatusdropdown.click();
+    	    Log.info("Clicking the edit initial status dropdown.");
     	    editInitialStatusdropdown.click();
 
     	    Log.info("Waiting for the dropdown value to be visible.");
     	    WebElement editInitialStatusdropdownvalue = wait.until(ExpectedConditions.visibilityOfElementLocated(CoreAlertsTemplateManagementRepo.editInitialStatusdropdownvalue(newValues)));
 
     	    Log.info("Selecting the dropdown value: " + newValues);
-    	    editInitialStatusdropdownvalue.click();
+    	    editInitialStatusdropdownvalue.click(); 
 
     	    Log.info("Edit process completed successfully.");
     }

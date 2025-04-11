@@ -34,7 +34,10 @@ public class BankAllocationSummaryRepo {
 	public static By ToDate = By.xpath("//label[text()='To Date']//following-sibling::div");
 	public static By search = By.xpath("//button[@type='button' and text()='Search']");
 	public static By Datefromgrid = By.xpath("//tr[@class='rz-datatable-even  ']//td[position()=1]");
-	public static By CountofAccountsfromgrid = By.xpath("//tr[@class='rz-datatable-even  ']//td[position()=2]");
+	public static By CountofAccountsfromgrid = By.xpath("//tr[@class='rz-datatable-even  ']//td[position()=4]");
+	public static By TOTAL_OS_AMOUNT_IN_LAKHSfromgrid = By.xpath("//tr[@class='rz-datatable-even  ']//td[position()=5]");
+	public static By Downloadbuttonfromgrid = By.xpath("//span[@class='rz-cell-data']//following::i");
+	public static By Downloadsuccessmessage = By.xpath("//p[text()='File downloaded successfully']");
 	
 	public static By Dropdownvalues(String value) { 
         return By.xpath("//li[@class='rz-multiselect-item ' and @aria-label='" + value + "']"); 

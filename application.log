@@ -1,54 +1,264 @@
-[INFO ] 2025-04-09 15:07:18.711 [main] Log - Driver has initialized successfully for chrome browser
-[INFO ] 2025-04-09 15:07:59.777 [main] Log - Title is displayed: BeaconICnRM
-[INFO ] 2025-04-09 15:08:00.574 [main] Log - Default URL: /Home
-[INFO ] 2025-04-09 15:08:00.949 [main] Log - Entered IBU0001196 in user name field
-[INFO ] 2025-04-09 15:08:01.096 [main] Log - Entered test@123 in password field
-[INFO ] 2025-04-09 15:08:01.229 [main] Log - Clicked on login button
-[INFO ] 2025-04-09 15:08:07.134 [main] Log - Entered IBU0001196 in user name field
-[INFO ] 2025-04-09 15:08:07.244 [main] Log - Entered test@123 in password field
-[INFO ] 2025-04-09 15:08:07.320 [main] Log - Clicked on login button
-[INFO ] 2025-04-09 15:08:07.320 [main] Log - Clicked on already login yes button and logged in again with valid credentials
-[INFO ] 2025-04-09 15:08:27.836 [main] Log - Exception in SomeErrorOccuredHandling: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()='Some error occurred.'] (tried for 20 second(s) with 500 milliseconds interval)
+[INFO ] 2025-04-11 17:20:57.092 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:20:57.096 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:20:57.099 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:21:00.946 [main] Log - Driver has initialized successfully for chrome browser
+[INFO ] 2025-04-11 17:21:55.900 [main] Log - Title is displayed: BeaconICnRM
+[INFO ] 2025-04-11 17:21:56.811 [main] Log - Default URL: /Home
+[INFO ] 2025-04-11 17:21:57.083 [main] Log - Entered IBU0001196 in user name field
+[INFO ] 2025-04-11 17:21:57.214 [main] Log - Entered test@123 in password field
+[INFO ] 2025-04-11 17:21:57.355 [main] Log - Clicked on login button
+[INFO ] 2025-04-11 17:22:01.966 [main] Log - Entered IBU0001196 in user name field
+[INFO ] 2025-04-11 17:22:02.078 [main] Log - Entered test@123 in password field
+[INFO ] 2025-04-11 17:22:02.168 [main] Log - Clicked on login button
+[INFO ] 2025-04-11 17:22:02.168 [main] Log - Clicked on already login yes button and logged in again with valid credentials
+[INFO ] 2025-04-11 17:22:22.247 [main] Log - Exception in SomeErrorOccuredHandling: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()='Some error occurred.'] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65482/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fe9f137abd027e8a9b2d82cb2abf6d32
-[INFO ] 2025-04-09 15:08:27.904 [main] Log - UserID in Dashboard: IBU0001196
-[INFO ] 2025-04-09 15:08:28.493 [main] Log - Org Name: Mumbai, Org Type Name: Zone/CO
-[INFO ] 2025-04-09 15:09:58.519 [main] Log - Default URL: /Home
-[INFO ] 2025-04-09 15:09:59.900 [main] Log - Driver has initialized successfully for chrome browser
-[INFO ] 2025-04-09 15:10:52.973 [main] Log - Title is displayed: BeaconICnRM
-[INFO ] 2025-04-09 15:10:53.640 [main] Log - Default URL: /Home
-[INFO ] 2025-04-09 15:10:53.988 [main] Log - Entered IBU0000240 in user name field
-[INFO ] 2025-04-09 15:10:54.107 [main] Log - Entered password in password field
-[INFO ] 2025-04-09 15:10:54.201 [main] Log - Clicked on login button
-[INFO ] 2025-04-09 15:10:58.433 [main] Log - Entered IBU0000240 in user name field
-[INFO ] 2025-04-09 15:10:58.534 [main] Log - Entered password in password field
-[INFO ] 2025-04-09 15:10:58.632 [main] Log - Clicked on login button
-[INFO ] 2025-04-09 15:11:18.641 [main] Log - Exception in SomeErrorOccuredHandling: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()='Some error occurred.'] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59531}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59531/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ad499c7f96db3f547eff481da4225041
-[INFO ] 2025-04-09 15:11:18.708 [main] Log - UserID in Dashboard: IBU0000240
-[INFO ] 2025-04-09 15:11:19.316 [main] Log - Org Name: Amaravati, Org Type Name: Branch
-[INFO ] 2025-04-09 15:12:16.538 [main] Log - Driver has initialized successfully for chrome browser
-[INFO ] 2025-04-09 15:13:04.277 [main] Log - Title is displayed: BeaconICnRM
-[INFO ] 2025-04-09 15:13:04.934 [main] Log - Default URL: /Home
-[INFO ] 2025-04-09 15:13:05.245 [main] Log - Entered IBU0001196 in user name field
-[INFO ] 2025-04-09 15:13:05.366 [main] Log - Entered test@123 in password field
-[INFO ] 2025-04-09 15:13:05.463 [main] Log - Clicked on login button
-[INFO ] 2025-04-09 15:13:09.645 [main] Log - Entered IBU0001196 in user name field
-[INFO ] 2025-04-09 15:13:09.744 [main] Log - Entered test@123 in password field
-[INFO ] 2025-04-09 15:13:09.827 [main] Log - Clicked on login button
-[INFO ] 2025-04-09 15:13:09.827 [main] Log - Clicked on already login yes button and logged in again with valid credentials
-[INFO ] 2025-04-09 15:13:30.189 [main] Log - Exception in SomeErrorOccuredHandling: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()='Some error occurred.'] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65257}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65257/devtoo..., se:cdpVersion: 135.0.7049.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 78388ce96355c4fcd5c885b07025ab75
-[INFO ] 2025-04-09 15:13:30.255 [main] Log - UserID in Dashboard: IBU0001196
-[INFO ] 2025-04-09 15:13:30.878 [main] Log - Org Name: Mumbai, Org Type Name: Zone/CO
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\PINKU~1.PET\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63244}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63244/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88f8e20cb10bfb0fa0e4067fabad0928
+[INFO ] 2025-04-11 17:22:22.327 [main] Log - UserID in Dashboard: IBU0001196
+[INFO ] 2025-04-11 17:22:23.101 [main] Log - Org Name: Mumbai, Org Type Name: Zone/CO
+[INFO ] 2025-04-11 17:22:31.645 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:22:31.645 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:22:31.645 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:22:34.693 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:22:34.694 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:22:34.695 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:22:34.700 [main] Log - Verifying if Alerts and Notifications menu is visible...
+[INFO ] 2025-04-11 17:22:34.740 [main] Log - Alerts and Notifications menu found. Scrolling to the element...
+[INFO ] 2025-04-11 17:22:39.791 [main] Log - Alerts and Notifications menu visibility status: true
+[INFO ] 2025-04-11 17:22:42.801 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:22:42.803 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:22:42.804 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:22:42.813 [main] Log - Attempting to click on 'Alerts and Notifications' menu...
+[INFO ] 2025-04-11 17:22:42.862 [main] Log - Clicking on 'Alerts and Notifications' main menu...
+[INFO ] 2025-04-11 17:22:42.948 [main] Log - 'Alerts and Notifications' menu clicked successfully.
+[INFO ] 2025-04-11 17:22:42.948 [main] Log - Verifying if Alerts and Notifications sub-menus are displayed...
+[INFO ] 2025-04-11 17:22:42.994 [main] Log - Alerts and Notifications sub-menus visibility status: true
+[INFO ] 2025-04-11 17:22:46.003 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:22:46.004 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:22:46.006 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:22:46.011 [main] Log - Attempting to click on Template Management sub-menu...
+[INFO ] 2025-04-11 17:22:46.346 [main] Log - Clicked on Template Management sub-menu.
+[INFO ] 2025-04-11 17:22:52.077 [main] Log - Spinner has disappeared. Template Management page is now loading.
+[INFO ] 2025-04-11 17:22:52.077 [main] Log - Checking if the ViewTemplate page is displayed...
+[INFO ] 2025-04-11 17:22:59.932 [main] Log - ViewTemplate page display status: true
+[INFO ] 2025-04-11 17:23:03.806 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:23:03.806 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:23:03.806 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:23:03.808 [main] Log - Selecting notification type: SMS
+[INFO ] 2025-04-11 17:23:03.912 [main] Log - Dropdown opened. Selecting value: SMS
+[INFO ] 2025-04-11 17:23:04.060 [main] Log - Notification type selected successfully: SMS
+[INFO ] 2025-04-11 17:23:04.060 [main] Log - Entering current status: Active
+[INFO ] 2025-04-11 17:23:04.185 [main] Log - Dropdown opened. Selecting value: Active
+[INFO ] 2025-04-11 17:23:04.333 [main] Log - Current status selected successfully: Active
+[INFO ] 2025-04-11 17:23:04.333 [main] Log - Entering category: Notification
+[INFO ] 2025-04-11 17:23:04.449 [main] Log - Dropdown opened. Selecting value: Notification
+[INFO ] 2025-04-11 17:23:04.591 [main] Log - Category selected successfully: Notification
+[INFO ] 2025-04-11 17:23:04.592 [main] Log - Attempting to click the Filter button...
+[INFO ] 2025-04-11 17:23:04.745 [main] Log - Filter button clicked. Waiting for spinner to disappear...
+[INFO ] 2025-04-11 17:23:10.356 [main] Log - Filter applied successfully.
+[INFO ] 2025-04-11 17:23:13.417 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:23:13.418 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:23:13.419 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:23:13.426 [main] Log - Attempting to click the Cross button...
+[INFO ] 2025-04-11 17:23:13.562 [main] Log - Cross button clicked successfully.
+[INFO ] 2025-04-11 17:23:13.563 [main] Log - Checking if the Notification Type dropdown is cleared...
+[INFO ] 2025-04-11 17:23:13.621 [main] Log - Notification Type dropdown cleared status: true
+[INFO ] 2025-04-11 17:23:16.628 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:23:16.630 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:23:16.630 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:23:16.635 [main] Log - Verifying table structure...
+[INFO ] 2025-04-11 17:23:16.636 [main] Log - Waiting for table columns to be visible...
+[INFO ] 2025-04-11 17:23:16.902 [main] Log - Table structure verification result: true
+[INFO ] 2025-04-11 17:23:19.914 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:23:19.915 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:23:19.915 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:23:19.920 [main] Log - Attempting to click the Next Page button...
+[INFO ] 2025-04-11 17:23:19.921 [main] Log - Waiting for Next Page button to be visible...
+[INFO ] 2025-04-11 17:23:19.974 [main] Log - Clicking the Next Page button...
+[INFO ] 2025-04-11 17:23:20.067 [main] Log - Waiting for the spinner to disappear...
+[INFO ] 2025-04-11 17:23:25.563 [main] Log - Successfully navigated to the next page.
+[INFO ] 2025-04-11 17:23:25.563 [main] Log - Verifying if the record count matches the expected value: 10
+[INFO ] 2025-04-11 17:23:25.563 [main] Log - Fetching record count per page...
+[INFO ] 2025-04-11 17:23:25.563 [main] Log - Waiting for the spinner to disappear...
+[INFO ] 2025-04-11 17:23:25.583 [main] Log - Waiting for table records to be visible...
+[INFO ] 2025-04-11 17:23:25.618 [main] Log - Total records found on the current page: 10
+[INFO ] 2025-04-11 17:23:25.618 [main] Log - Expected records: 10, Actual records: 10
+[INFO ] 2025-04-11 17:23:25.618 [main] Log - Record count verification result: true
+[INFO ] 2025-04-11 17:23:28.746 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:23:28.746 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:23:28.746 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:23:28.747 [main] Log - Attempting to click the Add Template button...
+[INFO ] 2025-04-11 17:23:28.748 [main] Log - Waiting for the Add Template button to be visible...
+[INFO ] 2025-04-11 17:23:28.772 [main] Log - Clicking the Add Template button...
+[INFO ] 2025-04-11 17:23:28.915 [main] Log - Waiting for the spinner to disappear...
+[INFO ] 2025-04-11 17:23:31.327 [main] Log - Successfully clicked the Add Template button.
+[INFO ] 2025-04-11 17:23:31.328 [main] Log - Selecting initial status: Active
+[INFO ] 2025-04-11 17:23:31.329 [main] Log - Waiting for the Initial Status dropdown to be visible...
+[INFO ] 2025-04-11 17:23:31.393 [main] Log - Clicking the Initial Status dropdown...
+[INFO ] 2025-04-11 17:23:31.539 [main] Log - Waiting for the dropdown value 'Active' to be visible...
+[INFO ] 2025-04-11 17:23:41.457 [main] Log - Values available in dropdown. Page loaded successfully.
+[INFO ] 2025-04-11 17:23:41.457 [main] Log - Selecting the dropdown value: Active
+[INFO ] 2025-04-11 17:23:41.567 [main] Log - Initial status 'Active' selected successfully.
+[INFO ] 2025-04-11 17:23:41.567 [main] Log - Selecting template category: Promotions
+[INFO ] 2025-04-11 17:23:41.567 [main] Log - Waiting for the Template Category dropdown to be visible...
+[INFO ] 2025-04-11 17:23:41.613 [main] Log - Clicking the Template Category dropdown...
+[INFO ] 2025-04-11 17:23:41.700 [main] Log - Waiting for the dropdown value 'Promotions' to be visible...
+[INFO ] 2025-04-11 17:23:41.738 [main] Log - Selecting the dropdown value: Promotions
+[INFO ] 2025-04-11 17:23:41.835 [main] Log - Template category 'Promotions' selected successfully.
+[INFO ] 2025-04-11 17:23:41.835 [main] Log - Entering template name: Test
+[INFO ] 2025-04-11 17:23:41.835 [main] Log - Waiting for the Template Name field to be visible...
+[INFO ] 2025-04-11 17:23:41.880 [main] Log - Clearing the Template Name field...
+[INFO ] 2025-04-11 17:23:41.922 [main] Log - Entering the Template Name: Test
+[INFO ] 2025-04-11 17:23:42.014 [main] Log - Template name 'Test' entered successfully.
+[INFO ] 2025-04-11 17:23:42.014 [main] Log - Starting to enter template body for SMS: Automation testing improves software quality by identifying defects early. Selenium with Java helps in UI testing, ensuring reliability and efficiency in development.
+[INFO ] 2025-04-11 17:23:42.014 [main] Log - Waiting for the SMS Template Body field to be visible...
+[INFO ] 2025-04-11 17:23:42.039 [main] Log - Clearing the existing text in the SMS Template Body field...
+[INFO ] 2025-04-11 17:23:42.067 [main] Log - Entering template body text for SMS...
+[INFO ] 2025-04-11 17:23:43.690 [main] Log - Template body for SMS entered successfully.
+[INFO ] 2025-04-11 17:23:43.691 [main] Log - Fetching character count indicator text.
+[INFO ] 2025-04-11 17:23:43.691 [main] Log - Waiting for the character count indicator to be visible...
+[INFO ] 2025-04-11 17:23:43.742 [main] Log - Character count indicator text retrieved: 160/160 characters
+[INFO ] 2025-04-11 17:23:46.851 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:23:46.851 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:23:46.851 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:23:46.853 [main] Log - Selecting notification type: EMAIL
+[INFO ] 2025-04-11 17:23:46.853 [main] Log - Waiting for the spinner to disappear...
+[INFO ] 2025-04-11 17:23:46.884 [main] Log - Waiting for the Notification Type dropdown to be visible...
+[INFO ] 2025-04-11 17:23:46.909 [main] Log - Clicking the Notification Type dropdown...
+[INFO ] 2025-04-11 17:23:46.983 [main] Log - Waiting for the dropdown value 'EMAIL' to be visible...
+[INFO ] 2025-04-11 17:23:47.011 [main] Log - Selecting the dropdown value: EMAIL
+[INFO ] 2025-04-11 17:23:47.315 [main] Log - Notification type 'EMAIL' selected successfully.
+[INFO ] 2025-04-11 17:23:47.315 [main] Log - Entering template body: Automation testing improves software quality by identifying defects early. Selenium with Java helps in UI testing, ensuring reliability and efficiency in development.
+[INFO ] 2025-04-11 17:23:47.315 [main] Log - Waiting for the Template Body field to be visible...
+[INFO ] 2025-04-11 17:23:47.380 [main] Log - Clearing the Template Body field...
+[INFO ] 2025-04-11 17:23:47.491 [main] Log - Entering the Template Body: Automation testing improves software quality by identifying defects early. Selenium with Java helps in UI testing, ensuring reliability and efficiency in development.
+[INFO ] 2025-04-11 17:23:48.170 [main] Log - Template body entered successfully.
+[INFO ] 2025-04-11 17:23:48.170 [main] Log - Checking if the Subject field is displayed.
+[INFO ] 2025-04-11 17:23:48.170 [main] Log - Waiting for the Subject field to be visible...
+[INFO ] 2025-04-11 17:23:48.210 [main] Log - Subject field displayed: true
+[INFO ] 2025-04-11 17:23:48.211 [main] Log - Checking if the body field text limit indicator is displayed.
+[WARN ] 2025-04-11 17:23:48.225 [main] Log - Body field text limit indicator not found.
+[INFO ] 2025-04-11 17:23:51.370 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:23:51.370 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:23:51.370 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:23:51.370 [main] Log - Selecting notification type: EMAIL
+[INFO ] 2025-04-11 17:23:51.372 [main] Log - Waiting for the spinner to disappear...
+[INFO ] 2025-04-11 17:23:51.393 [main] Log - Waiting for the Notification Type dropdown to be visible...
+[INFO ] 2025-04-11 17:23:51.409 [main] Log - Clicking the Notification Type dropdown...
+[INFO ] 2025-04-11 17:23:51.507 [main] Log - Waiting for the dropdown value 'EMAIL' to be visible...
+[INFO ] 2025-04-11 17:23:51.548 [main] Log - Selecting the dropdown value: EMAIL
+[INFO ] 2025-04-11 17:23:51.632 [main] Log - Notification type 'EMAIL' selected successfully.
+[INFO ] 2025-04-11 17:23:51.632 [main] Log - Selecting initial status: Active
+[INFO ] 2025-04-11 17:23:51.632 [main] Log - Waiting for the Initial Status dropdown to be visible...
+[INFO ] 2025-04-11 17:23:51.687 [main] Log - Clicking the Initial Status dropdown...
+[INFO ] 2025-04-11 17:23:51.809 [main] Log - Waiting for the dropdown value 'Active' to be visible...
+[INFO ] 2025-04-11 17:23:51.857 [main] Log - Values available in dropdown. Page loaded successfully.
+[INFO ] 2025-04-11 17:23:51.857 [main] Log - Selecting the dropdown value: Active
+[INFO ] 2025-04-11 17:23:51.970 [main] Log - Initial status 'Active' selected successfully.
+[INFO ] 2025-04-11 17:23:51.971 [main] Log - Selecting template category: Promotions
+[INFO ] 2025-04-11 17:23:51.971 [main] Log - Waiting for the Template Category dropdown to be visible...
+[INFO ] 2025-04-11 17:23:52.020 [main] Log - Clicking the Template Category dropdown...
+[INFO ] 2025-04-11 17:23:52.131 [main] Log - Waiting for the dropdown value 'Promotions' to be visible...
+[INFO ] 2025-04-11 17:23:52.174 [main] Log - Selecting the dropdown value: Promotions
+[INFO ] 2025-04-11 17:23:52.266 [main] Log - Template category 'Promotions' selected successfully.
+[INFO ] 2025-04-11 17:23:52.266 [main] Log - Entering template name: Test
+[INFO ] 2025-04-11 17:23:52.268 [main] Log - Waiting for the Template Name field to be visible...
+[INFO ] 2025-04-11 17:23:52.314 [main] Log - Clearing the Template Name field...
+[INFO ] 2025-04-11 17:23:52.393 [main] Log - Entering the Template Name: Test
+[INFO ] 2025-04-11 17:23:52.470 [main] Log - Template name 'Test' entered successfully.
+[INFO ] 2025-04-11 17:23:52.471 [main] Log - Starting execution of stored procedure with query: Check_Insert_ALT_Template_Placeholder
+[INFO ] 2025-04-11 17:23:52.471 [main] Log - Calling ExecuteAnyOracleSQLStoredProcedure with input parameters: []
+[INFO ] 2025-04-11 17:23:53.247 [main] Log - Stored procedure executed successfully.
+[INFO ] 2025-04-11 17:23:53.248 [main] Log - Search Value: Deleted entry from ALT_TEMPLATE_PLACEHOLDERS and inserted new entry successfully.
+[INFO ] 2025-04-11 17:23:53.248 [main] Log - Execution Message: CUST_NAME
+[INFO ] 2025-04-11 17:23:53.249 [main] Log - Returning stored procedure results.
+[INFO ] 2025-04-11 17:23:53.249 [main] Log - Entering template body: CUST_NAME
+[INFO ] 2025-04-11 17:23:53.250 [main] Log - Waiting for the Template Body field to be visible...
+[INFO ] 2025-04-11 17:23:53.313 [main] Log - Clearing the Template Body field...
+[INFO ] 2025-04-11 17:23:53.430 [main] Log - Entering the Template Body: CUST_NAME
+[INFO ] 2025-04-11 17:23:53.597 [main] Log - Template body entered successfully.
+[INFO ] 2025-04-11 17:23:53.597 [main] Log - Starting deletion of alert template: Test
+[INFO ] 2025-04-11 17:23:53.597 [main] Log - Executing stored procedure 'SP_DELETE_ALERT_TEMPLATES' with input parameters: [Test]
+[INFO ] 2025-04-11 17:23:54.283 [main] Log - Alert template 'Test' deleted successfully.
+[INFO ] 2025-04-11 17:23:54.283 [main] Log - Initiating click action on Save button.
+[INFO ] 2025-04-11 17:23:54.285 [main] Log - Waiting for the Save button to be visible...
+[INFO ] 2025-04-11 17:23:54.321 [main] Log - Clicking the Save button...
+[INFO ] 2025-04-11 17:23:54.456 [main] Log - Waiting for the confirmation popup OK button to be visible...
+[INFO ] 2025-04-11 17:23:54.494 [main] Log - Clicking the OK button on the popup...
+[INFO ] 2025-04-11 17:23:54.615 [main] Log - Save action completed successfully.
+[INFO ] 2025-04-11 17:23:54.615 [main] Log - Checking if the success message is displayed.
+[INFO ] 2025-04-11 17:23:54.615 [main] Log - Waiting for the success message to be visible...
+[INFO ] 2025-04-11 17:24:00.493 [main] Log - Success message displayed: true
+[INFO ] 2025-04-11 17:24:03.501 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:24:03.502 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:24:03.502 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:24:03.508 [main] Log - Checking if the template with name 'Test' is listed.
+[INFO ] 2025-04-11 17:24:05.429 [main] Log - Template 'Test' is found in the list.
+[INFO ] 2025-04-11 17:24:08.449 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:24:08.450 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:24:08.450 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:24:08.453 [main] Log - Attempting to click the View button.
+[INFO ] 2025-04-11 17:24:08.511 [main] Log - View button is visible. Clicking the button.
+[INFO ] 2025-04-11 17:24:11.563 [main] Log - View action completed. Spinner is no longer visible.
+[INFO ] 2025-04-11 17:24:11.563 [main] Log - Checking if template details are displayed.
+[INFO ] 2025-04-11 17:24:11.563 [main] Log - Waiting for spinner to disappear.
+[INFO ] 2025-04-11 17:24:11.583 [main] Log - Waiting for template detail fields to be visible.
+[INFO ] 2025-04-11 17:24:11.710 [main] Log - All template details are successfully displayed.
+[INFO ] 2025-04-11 17:24:14.804 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:24:14.804 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:24:14.804 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:24:14.808 [main] Log - Attempting to click the Edit button.
+[INFO ] 2025-04-11 17:24:14.808 [main] Log - Waiting for the view dialog box close button to be visible.
+[INFO ] 2025-04-11 17:24:14.833 [main] Log - Clicking the view dialog box close button.
+[INFO ] 2025-04-11 17:24:14.943 [main] Log - Waiting for the Edit button to be visible.
+[INFO ] 2025-04-11 17:24:14.991 [main] Log - Clicking the Edit button.
+[INFO ] 2025-04-11 17:24:15.133 [main] Log - Waiting for the spinner to disappear.
+[INFO ] 2025-04-11 17:24:27.875 [main] Log - Edit button clicked successfully.
+[INFO ] 2025-04-11 17:24:27.876 [main] Log - Starting the edit process for fields with new value: Inactive
+[INFO ] 2025-04-11 17:24:27.876 [main] Log - Waiting for the spinner to disappear.
+[INFO ] 2025-04-11 17:24:32.970 [main] Log - Waiting for the edit initial status dropdown to be visible.
+[INFO ] 2025-04-11 17:24:33.025 [main] Log - Clicking the edit initial status dropdown.
+[INFO ] 2025-04-11 17:24:33.088 [main] Log - Waiting for the dropdown value to be visible.
+[INFO ] 2025-04-11 17:24:33.116 [main] Log - Selecting the dropdown value: Inactive
+[INFO ] 2025-04-11 17:24:33.204 [main] Log - Edit process completed successfully.
+[INFO ] 2025-04-11 17:24:33.204 [main] Log - Starting to enter edit reason: Test
+[INFO ] 2025-04-11 17:24:33.205 [main] Log - Waiting for the edit reason field to be visible.
+[INFO ] 2025-04-11 17:24:33.232 [main] Log - Clearing the existing text in the edit reason field.
+[INFO ] 2025-04-11 17:24:33.263 [main] Log - Entering the new edit reason.
+[INFO ] 2025-04-11 17:24:33.321 [main] Log - Edit reason entered successfully.
+[INFO ] 2025-04-11 17:24:33.321 [main] Log - Starting the process to save changes.
+[INFO ] 2025-04-11 17:24:33.322 [main] Log - Waiting for the edit template section to be visible.
+[INFO ] 2025-04-11 17:24:33.347 [main] Log - Scrolling down inside the edit template section.
+[INFO ] 2025-04-11 17:24:33.356 [main] Log - Waiting for a short delay before interacting with the update button.
+[INFO ] 2025-04-11 17:24:38.367 [main] Log - Waiting for the update button to be visible.
+[INFO ] 2025-04-11 17:24:38.437 [main] Log - Clicking the update button.
+[INFO ] 2025-04-11 17:24:38.601 [main] Log - Waiting for the confirmation popup OK button to be visible.
+[INFO ] 2025-04-11 17:24:38.628 [main] Log - Clicking the confirmation popup OK button.
+[INFO ] 2025-04-11 17:24:38.785 [main] Log - Waiting for the success message indicating modifications were successful.
+[INFO ] 2025-04-11 17:24:44.726 [main] Log - Changes saved successfully.
+[INFO ] 2025-04-11 17:24:44.781 [main] Log - Checking if the template 'Test' has status 'Inactive'.
+[INFO ] 2025-04-11 17:24:44.782 [main] Log - Waiting for any loading spinners to disappear.
+[INFO ] 2025-04-11 17:24:50.542 [main] Log - Waiting for the template table to be visible.
+[INFO ] 2025-04-11 17:24:50.571 [main] Log - Locating all rows within the template table.
+[INFO ] 2025-04-11 17:24:50.590 [main] Log - Iterating through the table rows to find the template.
+[INFO ] 2025-04-11 17:24:50.630 [main] Log - Checking template: 'Test' with status: 'Inactive'.
+[INFO ] 2025-04-11 17:24:50.630 [main] Log - Template 'Test' is inactive.
+[INFO ] 2025-04-11 17:24:53.647 [main] Log - Initializing AlertsTemplateManagement_MainClass...
+[INFO ] 2025-04-11 17:24:53.648 [main] Log - Initializing WebElements using PageFactory...
+[INFO ] 2025-04-11 17:24:53.648 [main] Log - AlertsTemplateManagement_MainClass initialized successfully.
+[INFO ] 2025-04-11 17:24:53.652 [main] Log - Clicking on the 'View History' button.
+[INFO ] 2025-04-11 17:24:53.653 [main] Log - Waiting for loading spinners to disappear.
+[INFO ] 2025-04-11 17:24:53.715 [main] Log - Waiting for the 'View History' button to be visible.
+[INFO ] 2025-04-11 17:24:53.740 [main] Log - Clicking the 'View History' button.
+[INFO ] 2025-04-11 17:24:53.935 [main] Log - Waiting for any loading spinners to disappear after clicking 'View History'.
+[INFO ] 2025-04-11 17:24:59.670 [main] Log - 'View History' action completed successfully.
+[INFO ] 2025-04-11 17:24:59.671 [main] Log - Verifying if the History popup is displayed.
+[INFO ] 2025-04-11 17:24:59.671 [main] Log - Waiting for history table headers to be visible.
+[INFO ] 2025-04-11 17:24:59.722 [main] Log - Extracting actual history table headers.
+[INFO ] 2025-04-11 17:24:59.760 [main] Log - Validating history table headers.
+[INFO ] 2025-04-11 17:24:59.760 [main] Log - Waiting for history table data to be visible.
+[INFO ] 2025-04-11 17:24:59.812 [main] Log - Checking if history table contains data.
+[INFO ] 2025-04-11 17:24:59.822 [main] Log - History popup validation successful.

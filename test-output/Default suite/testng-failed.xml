@@ -7,9 +7,9 @@
         <methods>
           <include name="takeScreenshotOnFailure"/>
           <include name="SetUp"/>
-          <include name="validateDataExecutionForBankAllocationSummary"/>
           <include name="setupTest"/>
           <include name="afterEachTest"/>
+          <include name="testVerifyAccountsInYesterdaysDate" invocation-numbers="0"/>
         </methods>
       </class> <!-- core.SummaryReports.BankAllocationSummary_TestClass -->
     </classes>
