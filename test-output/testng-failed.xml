@@ -10,6 +10,7 @@
           <include name="setupTest"/>
           <include name="afterEachTest"/>
           <include name="testVerifyAccountsInYesterdaysDate" invocation-numbers="0"/>
+          <include name="verifyTablesUpdatedAfterPackageExecution"/>
         </methods>
       </class> <!-- core.SummaryReports.BankAllocationSummary_TestClass -->
     </classes>
