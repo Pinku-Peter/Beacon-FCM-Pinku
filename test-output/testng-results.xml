@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-15T10:16:18 IST" name="Default suite" finished-at="2025-04-15T10:24:24 IST" duration-ms="486015">
+  <suite started-at="2025-04-17T17:55:20 IST" name="Default suite" finished-at="2025-04-17T18:06:13 IST" duration-ms="653184">
     <groups>
     </groups>
-    <test started-at="2025-04-15T10:16:18 IST" name="Default test" finished-at="2025-04-15T10:24:24 IST" duration-ms="486015">
+    <test started-at="2025-04-17T17:55:20 IST" name="Default test" finished-at="2025-04-17T18:06:13 IST" duration-ms="653184">
       <class name="core.SummaryReports.BankAllocationSummary_TestClass">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:16:18 IST" name="SetUp" finished-at="2025-04-15T10:16:18 IST" duration-ms="35" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T17:55:20 IST" name="SetUp" finished-at="2025-04-17T17:55:20 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:16:20 IST" name="setupTest" finished-at="2025-04-15T10:16:21 IST" duration-ms="159" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T17:55:22 IST" name="setupTest" finished-at="2025-04-17T17:55:22 IST" duration-ms="131" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,29 +22,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_zone_user_able_to_allocate_accounts_to_branch(java.util.Map)[pri:1, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:16:21 IST" name="Verify_zone_user_able_to_allocate_accounts_to_branch" data-provider="TestData" finished-at="2025-04-15T10:19:36 IST" duration-ms="195684" status="PASS">
+        <test-method signature="Verify_zone_user_able_to_allocate_accounts_to_branch(java.util.Map)[pri:1, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T17:55:22 IST" name="Verify_zone_user_able_to_allocate_accounts_to_branch" data-provider="TestData" finished-at="2025-04-17T17:59:19 IST" duration-ms="237098" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocateTo=Branch, AssetCategory=SMA Category, Branch=Amaravati, OsBalanceAmount=10000, OsBalanceOperator=<, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CoreBankAllocationSummary, TodaysDate=15, YesterdaysDate=14}]]>
+                <![CDATA[{AllocateTo=Branch, AssetCategory=SMA Category, Branch=Amaravati, OsBalanceAmount=10000, OsBalanceOperator=<, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CoreBankAllocationSummary}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_zone_user_able_to_allocate_accounts_to_branch -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:19:36 IST" name="takeScreenshotOnFailure" finished-at="2025-04-15T10:19:36 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T17:59:19 IST" name="takeScreenshotOnFailure" finished-at="2025-04-17T17:59:19 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verify_zone_user_able_to_allocate_accounts_to_branch status=SUCCESS method=BankAllocationSummary_TestClass.Verify_zone_user_able_to_allocate_accounts_to_branch(java.util.Map)[pri:1, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_zone_user_able_to_allocate_accounts_to_branch status=SUCCESS method=BankAllocationSummary_TestClass.Verify_zone_user_able_to_allocate_accounts_to_branch(java.util.Map)[pri:1, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:19:36 IST" name="setupTest" finished-at="2025-04-15T10:19:36 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T17:59:19 IST" name="setupTest" finished-at="2025-04-17T17:59:19 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,22 +55,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_branch_user_able_to_Login_with_Valid_Credentials()[pri:2, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:19:36 IST" name="Verify_branch_user_able_to_Login_with_Valid_Credentials" finished-at="2025-04-15T10:21:04 IST" duration-ms="88159" status="PASS">
+        <test-method signature="Verify_branch_user_able_to_Login_with_Valid_Credentials()[pri:2, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T17:59:19 IST" name="Verify_branch_user_able_to_Login_with_Valid_Credentials" finished-at="2025-04-17T18:00:44 IST" duration-ms="84850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_branch_user_able_to_Login_with_Valid_Credentials -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:21:05 IST" name="takeScreenshotOnFailure" finished-at="2025-04-15T10:21:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:00:44 IST" name="takeScreenshotOnFailure" finished-at="2025-04-17T18:00:44 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verify_branch_user_able_to_Login_with_Valid_Credentials status=SUCCESS method=BankAllocationSummary_TestClass.Verify_branch_user_able_to_Login_with_Valid_Credentials()[pri:2, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_branch_user_able_to_Login_with_Valid_Credentials status=SUCCESS method=BankAllocationSummary_TestClass.Verify_branch_user_able_to_Login_with_Valid_Credentials()[pri:2, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:21:05 IST" name="setupTest" finished-at="2025-04-15T10:21:05 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:00:44 IST" name="setupTest" finished-at="2025-04-17T18:00:44 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,22 +81,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Successful_Account_Allocation_to_My_accounts_in_my_desk()[pri:3, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:21:05 IST" name="Successful_Account_Allocation_to_My_accounts_in_my_desk" finished-at="2025-04-15T10:21:58 IST" duration-ms="53128" status="PASS">
+        <test-method signature="Successful_Account_Allocation_to_My_accounts_in_my_desk()[pri:3, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:00:44 IST" name="Successful_Account_Allocation_to_My_accounts_in_my_desk" finished-at="2025-04-17T18:01:46 IST" duration-ms="61977" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Successful_Account_Allocation_to_My_accounts_in_my_desk -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:21:58 IST" name="takeScreenshotOnFailure" finished-at="2025-04-15T10:21:58 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:01:46 IST" name="takeScreenshotOnFailure" finished-at="2025-04-17T18:01:46 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Successful_Account_Allocation_to_My_accounts_in_my_desk status=SUCCESS method=BankAllocationSummary_TestClass.Successful_Account_Allocation_to_My_accounts_in_my_desk()[pri:3, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e] output={null}]]]>
+                <![CDATA[[TestResult name=Successful_Account_Allocation_to_My_accounts_in_my_desk status=SUCCESS method=BankAllocationSummary_TestClass.Successful_Account_Allocation_to_My_accounts_in_my_desk()[pri:3, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:21:58 IST" name="setupTest" finished-at="2025-04-15T10:21:58 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:01:46 IST" name="setupTest" finished-at="2025-04-17T18:01:46 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,22 +107,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Data_Execution_for_Bank_Allocation_Summary_in_database()[pri:4, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:21:58 IST" name="Validate_Data_Execution_for_Bank_Allocation_Summary_in_database" finished-at="2025-04-15T10:22:01 IST" duration-ms="3638" status="PASS">
+        <test-method signature="Validate_Data_Execution_for_Bank_Allocation_Summary_in_database()[pri:4, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:01:46 IST" name="Validate_Data_Execution_for_Bank_Allocation_Summary_in_database" finished-at="2025-04-17T18:01:50 IST" duration-ms="3633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_Data_Execution_for_Bank_Allocation_Summary_in_database -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:22:01 IST" name="takeScreenshotOnFailure" finished-at="2025-04-15T10:22:01 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:01:50 IST" name="takeScreenshotOnFailure" finished-at="2025-04-17T18:01:50 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Validate_Data_Execution_for_Bank_Allocation_Summary_in_database status=SUCCESS method=BankAllocationSummary_TestClass.Validate_Data_Execution_for_Bank_Allocation_Summary_in_database()[pri:4, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e] output={null}]]]>
+                <![CDATA[[TestResult name=Validate_Data_Execution_for_Bank_Allocation_Summary_in_database status=SUCCESS method=BankAllocationSummary_TestClass.Validate_Data_Execution_for_Bank_Allocation_Summary_in_database()[pri:4, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:22:01 IST" name="setupTest" finished-at="2025-04-15T10:22:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:01:50 IST" name="setupTest" finished-at="2025-04-17T18:01:50 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,29 +133,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Accounts_in_Todays_Branch_Allocation_Summary(java.util.Map)[pri:5, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:22:01 IST" name="Verify_Accounts_in_Todays_Branch_Allocation_Summary" data-provider="TestData" finished-at="2025-04-15T10:23:51 IST" duration-ms="109277" status="PASS">
+        <test-method signature="Verify_Accounts_in_Todays_Branch_Allocation_Summary(java.util.Map)[pri:5, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:01:50 IST" name="Verify_Accounts_in_Todays_Branch_Allocation_Summary" data-provider="TestData" finished-at="2025-04-17T18:05:30 IST" duration-ms="220143" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocateTo=Branch, AssetCategory=SMA Category, Branch=Amaravati, OsBalanceAmount=10000, OsBalanceOperator=<, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CoreBankAllocationSummary, TodaysDate=15, YesterdaysDate=14}]]>
+                <![CDATA[{AllocateTo=Branch, AssetCategory=SMA Category, Branch=Amaravati, OsBalanceAmount=10000, OsBalanceOperator=<, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CoreBankAllocationSummary}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Accounts_in_Todays_Branch_Allocation_Summary -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:23:51 IST" name="takeScreenshotOnFailure" finished-at="2025-04-15T10:23:51 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:05:30 IST" name="takeScreenshotOnFailure" finished-at="2025-04-17T18:05:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verify_Accounts_in_Todays_Branch_Allocation_Summary status=SUCCESS method=BankAllocationSummary_TestClass.Verify_Accounts_in_Todays_Branch_Allocation_Summary(java.util.Map)[pri:5, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Accounts_in_Todays_Branch_Allocation_Summary status=SUCCESS method=BankAllocationSummary_TestClass.Verify_Accounts_in_Todays_Branch_Allocation_Summary(java.util.Map)[pri:5, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:23:51 IST" name="setupTest" finished-at="2025-04-15T10:23:51 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:05:30 IST" name="setupTest" finished-at="2025-04-17T18:05:30 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -166,22 +166,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Download_Functionality_as_Excel()[pri:6, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:23:51 IST" name="Verify_Download_Functionality_as_Excel" finished-at="2025-04-15T10:24:04 IST" duration-ms="13255" status="PASS">
+        <test-method signature="Verify_Download_Functionality_as_Excel()[pri:6, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:05:30 IST" name="Verify_Download_Functionality_as_Excel" finished-at="2025-04-17T18:05:46 IST" duration-ms="16471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Download_Functionality_as_Excel -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:24:04 IST" name="takeScreenshotOnFailure" finished-at="2025-04-15T10:24:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:05:46 IST" name="takeScreenshotOnFailure" finished-at="2025-04-17T18:05:46 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verify_Download_Functionality_as_Excel status=SUCCESS method=BankAllocationSummary_TestClass.Verify_Download_Functionality_as_Excel()[pri:6, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Download_Functionality_as_Excel status=SUCCESS method=BankAllocationSummary_TestClass.Verify_Download_Functionality_as_Excel()[pri:6, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:24:04 IST" name="setupTest" finished-at="2025-04-15T10:24:04 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:05:47 IST" name="setupTest" finished-at="2025-04-17T18:05:47 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -192,29 +192,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Accounts_in_Yesterdays_date(java.util.Map)[pri:7, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:24:04 IST" name="Verify_Accounts_in_Yesterdays_date" data-provider="TestData" finished-at="2025-04-15T10:24:09 IST" duration-ms="4578" status="PASS">
+        <test-method signature="Verify_Accounts_in_Yesterdays_date(java.util.Map)[pri:7, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:05:47 IST" name="Verify_Accounts_in_Yesterdays_date" data-provider="TestData" finished-at="2025-04-17T18:05:51 IST" duration-ms="4623" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocateTo=Branch, AssetCategory=SMA Category, Branch=Amaravati, OsBalanceAmount=10000, OsBalanceOperator=<, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CoreBankAllocationSummary, TodaysDate=15, YesterdaysDate=14}]]>
+                <![CDATA[{AllocateTo=Branch, AssetCategory=SMA Category, Branch=Amaravati, OsBalanceAmount=10000, OsBalanceOperator=<, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CoreBankAllocationSummary}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Accounts_in_Yesterdays_date -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:24:09 IST" name="takeScreenshotOnFailure" finished-at="2025-04-15T10:24:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:05:51 IST" name="takeScreenshotOnFailure" finished-at="2025-04-17T18:05:51 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verify_Accounts_in_Yesterdays_date status=SUCCESS method=BankAllocationSummary_TestClass.Verify_Accounts_in_Yesterdays_date(java.util.Map)[pri:7, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Accounts_in_Yesterdays_date status=SUCCESS method=BankAllocationSummary_TestClass.Verify_Accounts_in_Yesterdays_date(java.util.Map)[pri:7, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:24:09 IST" name="setupTest" finished-at="2025-04-15T10:24:09 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:05:51 IST" name="setupTest" finished-at="2025-04-17T18:05:51 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -225,22 +225,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_the_tables_DW_BRANCH_ALLOCATIONS_SUMMARY_and_DW_BRANCH_ALLOCATIONS_DASHBOARD_are_updated_after_the_package_execution()[pri:8, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:24:09 IST" name="Verify_the_tables_DW_BRANCH_ALLOCATIONS_SUMMARY_and_DW_BRANCH_ALLOCATIONS_DASHBOARD_are_updated_after_the_package_execution" finished-at="2025-04-15T10:24:12 IST" duration-ms="3649" status="PASS">
+        <test-method signature="Verify_the_tables_DW_BRANCH_ALLOCATIONS_SUMMARY_and_DW_BRANCH_ALLOCATIONS_DASHBOARD_are_updated_after_the_package_execution()[pri:8, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:05:51 IST" name="Verify_the_tables_DW_BRANCH_ALLOCATIONS_SUMMARY_and_DW_BRANCH_ALLOCATIONS_DASHBOARD_are_updated_after_the_package_execution" finished-at="2025-04-17T18:05:55 IST" duration-ms="3611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_the_tables_DW_BRANCH_ALLOCATIONS_SUMMARY_and_DW_BRANCH_ALLOCATIONS_DASHBOARD_are_updated_after_the_package_execution -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:24:12 IST" name="takeScreenshotOnFailure" finished-at="2025-04-15T10:24:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:05:55 IST" name="takeScreenshotOnFailure" finished-at="2025-04-17T18:05:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verify_the_tables_DW_BRANCH_ALLOCATIONS_SUMMARY_and_DW_BRANCH_ALLOCATIONS_DASHBOARD_are_updated_after_the_package_execution status=SUCCESS method=BankAllocationSummary_TestClass.Verify_the_tables_DW_BRANCH_ALLOCATIONS_SUMMARY_and_DW_BRANCH_ALLOCATIONS_DASHBOARD_are_updated_after_the_package_execution()[pri:8, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_the_tables_DW_BRANCH_ALLOCATIONS_SUMMARY_and_DW_BRANCH_ALLOCATIONS_DASHBOARD_are_updated_after_the_package_execution status=SUCCESS method=BankAllocationSummary_TestClass.Verify_the_tables_DW_BRANCH_ALLOCATIONS_SUMMARY_and_DW_BRANCH_ALLOCATIONS_DASHBOARD_are_updated_after_the_package_execution()[pri:8, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:24:13 IST" name="setupTest" finished-at="2025-04-15T10:24:13 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:05:55 IST" name="setupTest" finished-at="2025-04-17T18:05:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -251,29 +251,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Verify_Grid_Details_Accuracy(java.util.Map)[pri:9, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:24:13 IST" name="Verify_Grid_Details_Accuracy" data-provider="TestData" finished-at="2025-04-15T10:24:22 IST" duration-ms="9154" status="PASS">
+        <test-method signature="Verify_Grid_Details_Accuracy(java.util.Map)[pri:9, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:05:55 IST" name="Verify_Grid_Details_Accuracy" data-provider="TestData" finished-at="2025-04-17T18:06:10 IST" duration-ms="14789" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AllocateTo=Branch, AssetCategory=SMA Category, Branch=Amaravati, OsBalanceAmount=10000, OsBalanceOperator=<, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CoreBankAllocationSummary, TodaysDate=15, YesterdaysDate=14}]]>
+                <![CDATA[{AllocateTo=Branch, AssetCategory=SMA Category, Branch=Amaravati, OsBalanceAmount=10000, OsBalanceOperator=<, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=CoreBankAllocationSummary}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Grid_Details_Accuracy -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:24:22 IST" name="takeScreenshotOnFailure" finished-at="2025-04-15T10:24:22 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:06:10 IST" name="takeScreenshotOnFailure" finished-at="2025-04-17T18:06:10 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verify_Grid_Details_Accuracy status=SUCCESS method=BankAllocationSummary_TestClass.Verify_Grid_Details_Accuracy(java.util.Map)[pri:9, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Grid_Details_Accuracy status=SUCCESS method=BankAllocationSummary_TestClass.Verify_Grid_Details_Accuracy(java.util.Map)[pri:9, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@3d285d7e]" started-at="2025-04-15T10:24:22 IST" name="afterEachTest" finished-at="2025-04-15T10:24:24 IST" duration-ms="2321" status="PASS">
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:core.SummaryReports.BankAllocationSummary_TestClass@1ce24091]" started-at="2025-04-17T18:06:10 IST" name="afterEachTest" finished-at="2025-04-17T18:06:13 IST" duration-ms="3727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->

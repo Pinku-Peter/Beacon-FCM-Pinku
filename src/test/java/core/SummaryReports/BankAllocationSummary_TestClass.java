@@ -19,6 +19,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 import java.time.Duration;
+import java.time.LocalDate;
+
 import com.BasePackage.Base_Class;
 import com.BasePackage.Login_Class;
 import com.Page_Repository.CoreCollectionOfficerConfigRepo;
@@ -41,8 +43,11 @@ public class BankAllocationSummary_TestClass {
 	ExtentTest extenttest;
 	Login_Class corelogin;
 	BankAllocationSummary_MainClass bankallocationsummary;
-	String userid,password,userName,userId;
+	static String  userid,password,userName,userId;
 	List<String> account_numbers_count;
+	
+	String TodaysDate = String.valueOf(LocalDate.now().getDayOfMonth());
+	String YesterdaysDate = String.valueOf(LocalDate.now().minusDays(1).getDayOfMonth()); 
 	
 	@BeforeClass
 
@@ -210,10 +215,8 @@ public class BankAllocationSummary_TestClass {
 		    	
 		        String value1 = testdata.get("Region").toString();
 		        String value2 = testdata.get("Branch").toString();
-		        String value3 = testdata.get("TodaysDate").toString(); 
-		        String value4 = testdata.get("TodaysDate").toString();
 		        
-		        bankallocationsummary.fillMandatoryFields(value1, value2, value3, value4);  
+		        bankallocationsummary.fillMandatoryFields(value1, value2, TodaysDate, TodaysDate);  
 	        
 		 }
 		 bankallocationsummary.clickSearchButton();
@@ -304,12 +307,9 @@ public class BankAllocationSummary_TestClass {
 	    public void Verify_Grid_Details_Accuracy(Map<Object, Object> testdata ) throws InterruptedException {  
 		 try {
 		 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
-		    	
-		        String value1 = testdata.get("YesterdaysDate").toString(); 
-		        String value2 = testdata.get("YesterdaysDate").toString();
 		        
-		        bankallocationsummary.selectyesterdaysdate(value1, value2);   
-		        ExtentTestManager.getTest().log(Status.PASS, "Selected date from date picker : "+value1);  
+		        bankallocationsummary.selectyesterdaysdate(YesterdaysDate, YesterdaysDate);   
+		        ExtentTestManager.getTest().log(Status.PASS, "Selected date from date picker : "+YesterdaysDate);  
 		 }
 		 bankallocationsummary.clickSearchButton();
 		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on Search button.");
