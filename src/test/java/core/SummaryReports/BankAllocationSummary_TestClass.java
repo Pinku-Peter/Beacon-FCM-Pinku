@@ -32,7 +32,7 @@ import com.extentReports.ExtentManager;
 import com.extentReports.ExtentTestManager;
 import com.listeners.TestListener;
 
-public class BankAllocationSummary_TestClass {
+public class BankAllocationSummary_TestClass { 
 	
 	Base_Class baseclass;
 	static com.Utility.ExcelReader ExcelReader;
@@ -232,22 +232,7 @@ public class BankAllocationSummary_TestClass {
 			Thread.sleep(3000); 
 	    }  
 	 
-	 @Test(priority = 6)
-	    public void Verify_Download_Functionality_as_Excel() throws InterruptedException { 
-		 try {
-		 bankallocationsummary.downloadAsExcel(); 
-		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on 'Download as Excel'");  
-	     Assert.assertTrue(bankallocationsummary.isExcelvaluesMatchingWithUI(), "Excel file is not matching with UI displayed values");
-	     ExtentTestManager.getTest().log(Status.PASS, "Opened the downloaded Excel file and found the details as per in grid.");
-		 }
-			catch (AssertionError | Exception e) {
-				ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
-	           throw e;
-		 }
-			Thread.sleep(3000); 
-	    } 
-	 
-	 @Test(priority = 7, dataProvider = "TestData")
+	 @Test(priority = 6, dataProvider = "TestData")
 	    public void Verify_Accounts_in_Yesterdays_date(Map<Object, Object> testdata) throws IOException, InterruptedException { 
 		 try {
 		 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) { 
@@ -278,7 +263,7 @@ public class BankAllocationSummary_TestClass {
 		 
 	    }
 	 
-	 @Test(priority = 8)
+	 @Test(priority = 7)
 	    public void Verify_the_tables_DW_BRANCH_ALLOCATIONS_SUMMARY_and_DW_BRANCH_ALLOCATIONS_DASHBOARD_are_updated_after_the_package_execution() throws IOException, InterruptedException {
 		 try {
 	        // Step 1: Execute the stored procedure
@@ -303,7 +288,7 @@ public class BankAllocationSummary_TestClass {
 	 
 	 
 	 
-	 @Test(priority = 9, dataProvider = "TestData")
+	 @Test(priority = 8, dataProvider = "TestData")
 	    public void Verify_Grid_Details_Accuracy(Map<Object, Object> testdata ) throws InterruptedException {  
 		 try {
 		 if (testdata.get("Run").toString().equalsIgnoreCase("Yes")) {
@@ -323,6 +308,21 @@ public class BankAllocationSummary_TestClass {
 		 }
 			Thread.sleep(3000);
 	    }
+	 
+	 @Test(priority = 9)
+	    public void Verify_Download_Functionality_as_Excel() throws InterruptedException { 
+		 try {
+		 bankallocationsummary.downloadAsExcel(); 
+		 ExtentTestManager.getTest().log(Status.PASS, "Clicked on 'Download as Excel'");  
+	     Assert.assertTrue(bankallocationsummary.isExcelvaluesMatchingWithUI(), "Excel file is not matching with UI displayed values");
+	     ExtentTestManager.getTest().log(Status.PASS, "Opened the downloaded Excel file and found the details as per in grid.");
+		 }
+			catch (AssertionError | Exception e) {
+				ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + e.getMessage());
+	           throw e;
+		 }
+			Thread.sleep(3000); 
+	    } 
 	 
 	@AfterMethod 
 	 public void takeScreenshotOnFailure(ITestResult result) throws IOException {

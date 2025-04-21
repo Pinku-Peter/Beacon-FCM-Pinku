@@ -152,6 +152,16 @@ public class BankRegularizationSummary_TestClass {
 		    System.out.println("Grid Details (first 6): " + gridDetails);
 		    Assert.assertFalse(gridDetails.isEmpty(), "Grid details should not be empty");
 	    }
+	 
+	 @Test(priority = 5) 
+	    public void testMandatoryFieldsEmptyError() {
+	        // Leave all mandatory fields empty and click search
+		 BankRegularizationSummary.clickSearchButton();
+
+	        // Validate the error message is displayed
+	        String errorMessage = BankRegularizationSummary.getErrorMessageText();
+	        Assert.assertEquals(errorMessage, "Please select Branch.", "Error message mismatch!");
+	    }
 	
 	@AfterMethod 
 	 public void takeScreenshotOnFailure(ITestResult result) throws IOException {

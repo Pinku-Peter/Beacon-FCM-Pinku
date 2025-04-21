@@ -188,6 +188,23 @@ private WebDriver driver;
         return String.join(", ", texts);
         
     }
+    
+ // Method to click on the search button
+    public void clickSearchButton() {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+    	WebElement resetButton = wait.until(ExpectedConditions.visibilityOfElementLocated(BankRegularizationSummaryRepo.resetButton));
+    	resetButton.click();
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(DispositionMasterPageRepo.spinner));
+        WebElement searchButton = wait.until(ExpectedConditions.visibilityOfElementLocated(BankRegularizationSummaryRepo.searchButton));
+        searchButton.click();
+    }
+
+    // Method to get the error message text
+    public String getErrorMessageText() {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+    	WebElement errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(BankRegularizationSummaryRepo.errorMessage));
+        return errorMessage.getText(); 
+    }
 
 
 }
