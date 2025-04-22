@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="core.SummaryReports.BankAllocationSummary_TestClass">
+      <class name="core.SummaryReports.BankRegularizationSummary_TestClass">
         <methods>
-          <include name="takeScreenshotOnFailure"/>
-          <include name="SetUp"/>
+          <include name="Mandatory_Fields_Empty_Validation"/>
           <include name="setupTest"/>
           <include name="afterEachTest"/>
-          <include name="Verify_Download_Functionality_as_Excel"/>
+          <include name="takeScreenshotOnFailure"/>
+          <include name="SetUp"/>
         </methods>
-      </class> <!-- core.SummaryReports.BankAllocationSummary_TestClass -->
+      </class> <!-- core.SummaryReports.BankRegularizationSummary_TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
