@@ -81,7 +81,7 @@ public class CollectionOfficerConfig_TestClass {
 		 userName = username.getText(); 
 		 
 	        // Step 1: Execute the stored procedure to insert the employee
-		 String Result = corecollectionofficerconfigpage.executeSPInsertEmployee(userId); 
+		 String Result = corecollectionofficerconfigpage.executeSPInsertEmployee(userId);  
 		 ExtentTestManager.getTest().log(Status.PASS, "Core users were added to the mst_employee table with IS_BCO = 0. Query execution Result : "+Result+"");
 		 }
 			catch (AssertionError | Exception e) {

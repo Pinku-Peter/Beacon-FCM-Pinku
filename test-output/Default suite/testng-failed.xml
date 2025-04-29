@@ -3,15 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="core.SummaryReports.BankRegularizationSummary_TestClass">
+      <class name="core.AgencyManagement.AgencyAllocationSummary_TestClass">
         <methods>
-          <include name="Mandatory_Fields_Empty_Validation"/>
+          <include name="testSearchWithoutSelectingCollectionAgency"/>
+          <include name="testAllocateAccountsToCollectionAgency" invocation-numbers="0"/>
+          <include name="testNavigateToAllocationSummary"/>
+          <include name="testValidateNewEntriesOfAllocatedAccounts"/>
+          <include name="takeScreenshotOnFailure"/>
           <include name="setupTest"/>
           <include name="afterEachTest"/>
-          <include name="takeScreenshotOnFailure"/>
           <include name="SetUp"/>
         </methods>
-      </class> <!-- core.SummaryReports.BankRegularizationSummary_TestClass -->
+      </class> <!-- core.AgencyManagement.AgencyAllocationSummary_TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

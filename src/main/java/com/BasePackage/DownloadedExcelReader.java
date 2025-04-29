@@ -214,6 +214,59 @@ public class DownloadedExcelReader {
 	    return accountNumber; // Return the first account number found
 	}
 	
+	public static Map<String, Object> getAccountNumberDetails() throws IOException {
+	    // Get the user's home directory dynamically
+	    String userHome = System.getProperty("user.home");
+
+	    // Construct the path to the Downloads directory
+	    String downloadDir = userHome + File.separator + "Downloads";
+
+	    // Get the latest downloaded file
+	    File latestFile = getLatestFileFromDir(downloadDir);
+	    if (latestFile == null) {
+	        System.out.println("No files found in the download directory.");
+	        return null;
+	    }
+
+	    // Open the Excel file
+	    FileInputStream fis = new FileInputStream(latestFile);
+	    Workbook workbook = new XSSFWorkbook(fis);
+	    Sheet sheet = workbook.getSheet("sheet1"); // Adjust if sheet name differs
+
+	    int accountCount = 0;
+	    String oneAccountNumber = null;
+
+	    for (int i = 1; i <= sheet.getLastRowNum(); i++) {
+	        Row row = sheet.getRow(i);
+	        if (row != null) {
+	            Cell accountCell = row.getCell(7); // Column index 7 = column 8
+	            if (accountCell != null) {
+	                String accountNumber = null;
+	                if (accountCell.getCellType() == CellType.NUMERIC) {
+	                    accountNumber = String.valueOf((long) accountCell.getNumericCellValue());
+	                } else if (accountCell.getCellType() == CellType.STRING) {
+	                    accountNumber = accountCell.getStringCellValue().trim();
+	                }
+
+	                if (accountNumber != null && !accountNumber.isEmpty()) {
+	                    accountCount++;
+	                    if (oneAccountNumber == null) {
+	                        oneAccountNumber = accountNumber;
+	                    }
+	                }
+	            }
+	        }
+	    }
+
+	    workbook.close();
+
+	    // Prepare result map
+	    Map<String, Object> result = new HashMap<>();
+	    result.put("totalCount", accountCount);
+	    result.put("sampleAccount", oneAccountNumber);
+	    return result;
+	}
+	
 	public static List<String> getTotalACReceivedCount() throws IOException {
 		List<String> values = new ArrayList<>();
 	    // Get the user's home directory dynamically

@@ -1,210 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-22T10:08:21 IST" name="Default suite" finished-at="2025-04-22T10:10:55 IST" duration-ms="153971">
+  <suite started-at="2025-04-29T16:44:50 IST" name="Default suite" finished-at="2025-04-29T16:49:07 IST" duration-ms="256934">
     <groups>
     </groups>
-    <test started-at="2025-04-22T10:08:21 IST" name="Default test" finished-at="2025-04-22T10:10:55 IST" duration-ms="153971">
-      <class name="core.SummaryReports.BankRegularizationSummary_TestClass">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:08:21 IST" name="SetUp" finished-at="2025-04-22T10:08:21 IST" duration-ms="23" status="PASS">
+    <test started-at="2025-04-29T16:44:50 IST" name="Default test" finished-at="2025-04-29T16:49:07 IST" duration-ms="256934">
+      <class name="core.AgencyManagement.AgencyAllocationSummary_TestClass">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:44:50 IST" name="SetUp" finished-at="2025-04-29T16:44:50 IST" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:08:21 IST" name="setupTest" finished-at="2025-04-22T10:08:22 IST" duration-ms="696" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:44:50 IST" name="setupTest" finished-at="2025-04-29T16:44:51 IST" duration-ms="638" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.SummaryReports.BankRegularizationSummary_TestClass.Validate_Navigation_to_Bank_Regularization_Summary() throws java.lang.Exception]]>
+                <![CDATA[public void core.AgencyManagement.AgencyAllocationSummary_TestClass.Truncate_mst_col_agency_acc_allocated() throws java.lang.ClassNotFoundException,java.sql.SQLException,java.io.IOException,java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Navigation_to_Bank_Regularization_Summary()[pri:1, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:08:22 IST" name="Validate_Navigation_to_Bank_Regularization_Summary" finished-at="2025-04-22T10:09:58 IST" duration-ms="95861" status="PASS">
+        <test-method signature="Truncate_mst_col_agency_acc_allocated()[pri:1, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:44:51 IST" name="Truncate_mst_col_agency_acc_allocated" finished-at="2025-04-29T16:44:55 IST" duration-ms="4234" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validate_Navigation_to_Bank_Regularization_Summary -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:09:58 IST" name="takeScreenshotOnFailure" finished-at="2025-04-22T10:09:58 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Truncate_mst_col_agency_acc_allocated -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:44:55 IST" name="takeScreenshotOnFailure" finished-at="2025-04-29T16:44:55 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Validate_Navigation_to_Bank_Regularization_Summary status=SUCCESS method=BankRegularizationSummary_TestClass.Validate_Navigation_to_Bank_Regularization_Summary()[pri:1, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848] output={null}]]]>
+                <![CDATA[[TestResult name=Truncate_mst_col_agency_acc_allocated status=SUCCESS method=AgencyAllocationSummary_TestClass.Truncate_mst_col_agency_acc_allocated()[pri:1, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:09:58 IST" name="setupTest" finished-at="2025-04-22T10:09:58 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:44:55 IST" name="setupTest" finished-at="2025-04-29T16:44:55 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.SummaryReports.BankRegularizationSummary_TestClass.Inserting_TRN_AC_MOVEMENT_table_with_AC_MOVEMENT_DATE_Current_date_MOVEMENT_TYPE_4_and_MOVEMENT_TYPE_CATEGORY_REMOVED() throws java.io.IOException,java.lang.InterruptedException]]>
+                <![CDATA[public void core.AgencyManagement.AgencyAllocationSummary_TestClass.Login_to_core_application_and_navigate_to_agency_account_agency_menu() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Inserting_TRN_AC_MOVEMENT_table_with_AC_MOVEMENT_DATE_Current_date_MOVEMENT_TYPE_4_and_MOVEMENT_TYPE_CATEGORY_REMOVED()[pri:2, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:09:58 IST" name="Inserting_TRN_AC_MOVEMENT_table_with_AC_MOVEMENT_DATE_Current_date_MOVEMENT_TYPE_4_and_MOVEMENT_TYPE_CATEGORY_REMOVED" finished-at="2025-04-22T10:10:02 IST" duration-ms="3628" status="PASS">
+        <test-method signature="Login_to_core_application_and_navigate_to_agency_account_agency_menu()[pri:2, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:44:55 IST" name="Login_to_core_application_and_navigate_to_agency_account_agency_menu" finished-at="2025-04-29T16:47:32 IST" duration-ms="156562" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Inserting_TRN_AC_MOVEMENT_table_with_AC_MOVEMENT_DATE_Current_date_MOVEMENT_TYPE_4_and_MOVEMENT_TYPE_CATEGORY_REMOVED -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:02 IST" name="takeScreenshotOnFailure" finished-at="2025-04-22T10:10:02 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Login_to_core_application_and_navigate_to_agency_account_agency_menu -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:47:32 IST" name="takeScreenshotOnFailure" finished-at="2025-04-29T16:47:32 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Inserting_TRN_AC_MOVEMENT_table_with_AC_MOVEMENT_DATE_Current_date_MOVEMENT_TYPE_4_and_MOVEMENT_TYPE_CATEGORY_REMOVED status=SUCCESS method=BankRegularizationSummary_TestClass.Inserting_TRN_AC_MOVEMENT_table_with_AC_MOVEMENT_DATE_Current_date_MOVEMENT_TYPE_4_and_MOVEMENT_TYPE_CATEGORY_REMOVED()[pri:2, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848] output={null}]]]>
+                <![CDATA[[TestResult name=Login_to_core_application_and_navigate_to_agency_account_agency_menu status=SUCCESS method=AgencyAllocationSummary_TestClass.Login_to_core_application_and_navigate_to_agency_account_agency_menu()[pri:2, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:02 IST" name="setupTest" finished-at="2025-04-22T10:10:02 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:47:33 IST" name="setupTest" finished-at="2025-04-29T16:47:33 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.SummaryReports.BankRegularizationSummary_TestClass.Validate_Data_Execution_for_Bank_Regularization_Summary() throws java.io.IOException,java.lang.InterruptedException]]>
+                <![CDATA[public void core.AgencyManagement.AgencyAllocationSummary_TestClass.Allocating_accounts_to_collection_agency(java.util.Map) throws java.lang.InterruptedException,java.lang.ClassNotFoundException,java.sql.SQLException,java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Data_Execution_for_Bank_Regularization_Summary()[pri:3, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:02 IST" name="Validate_Data_Execution_for_Bank_Regularization_Summary" finished-at="2025-04-22T10:10:06 IST" duration-ms="4265" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Validate_Data_Execution_for_Bank_Regularization_Summary -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:06 IST" name="takeScreenshotOnFailure" finished-at="2025-04-22T10:10:06 IST" duration-ms="0" status="PASS">
+        <test-method signature="Allocating_accounts_to_collection_agency(java.util.Map)[pri:3, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:47:33 IST" name="Allocating_accounts_to_collection_agency" data-provider="TestData" finished-at="2025-04-29T16:48:52 IST" duration-ms="78594" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Validate_Data_Execution_for_Bank_Regularization_Summary status=SUCCESS method=BankRegularizationSummary_TestClass.Validate_Data_Execution_for_Bank_Regularization_Summary()[pri:3, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848] output={null}]]]>
+                <![CDATA[{AccountType=Not Allocated, DPDDays=20, DPDDaysOperator=<, NPACategory=SUB-STANDARD, Region=Mumbai I, Run=Yes, SMACategory=SMA 0 (01-30 Days), TestScenario=Core-AgencyAllocationSummary}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Allocating_accounts_to_collection_agency -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:48:52 IST" name="takeScreenshotOnFailure" finished-at="2025-04-29T16:48:52 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Allocating_accounts_to_collection_agency status=SUCCESS method=AgencyAllocationSummary_TestClass.Allocating_accounts_to_collection_agency(java.util.Map)[pri:3, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:07 IST" name="setupTest" finished-at="2025-04-22T10:10:07 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:48:52 IST" name="setupTest" finished-at="2025-04-29T16:48:52 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.SummaryReports.BankRegularizationSummary_TestClass.Validate_Data_in_Bank_Regularization_Summary_page(java.util.Map) throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AgencyManagement.AgencyAllocationSummary_TestClass.Validate_Data_process_for_agency_allocation_Summary() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Data_in_Bank_Regularization_Summary_page(java.util.Map)[pri:4, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:07 IST" name="Validate_Data_in_Bank_Regularization_Summary_page" data-provider="TestData" finished-at="2025-04-22T10:10:25 IST" duration-ms="17428" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Branch=Amaravati, Region=Mumbai I, Run=Yes, TestScenario=CoreBankRegularizationSummary}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="Validate_Data_process_for_agency_allocation_Summary()[pri:4, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:48:52 IST" name="Validate_Data_process_for_agency_allocation_Summary" finished-at="2025-04-29T16:48:55 IST" duration-ms="3680" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validate_Data_in_Bank_Regularization_Summary_page -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:25 IST" name="takeScreenshotOnFailure" finished-at="2025-04-22T10:10:25 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- Validate_Data_process_for_agency_allocation_Summary -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:48:56 IST" name="takeScreenshotOnFailure" finished-at="2025-04-29T16:48:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Validate_Data_in_Bank_Regularization_Summary_page status=SUCCESS method=BankRegularizationSummary_TestClass.Validate_Data_in_Bank_Regularization_Summary_page(java.util.Map)[pri:4, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848] output={null}]]]>
+                <![CDATA[[TestResult name=Validate_Data_process_for_agency_allocation_Summary status=SUCCESS method=AgencyAllocationSummary_TestClass.Validate_Data_process_for_agency_allocation_Summary()[pri:4, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:25 IST" name="setupTest" finished-at="2025-04-22T10:10:25 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:48:56 IST" name="setupTest" finished-at="2025-04-29T16:48:56 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.SummaryReports.BankRegularizationSummary_TestClass.Validate_Count_and_OS_Amount_Without_Query_Execution() throws java.lang.InterruptedException]]>
+                <![CDATA[public void core.AgencyManagement.AgencyAllocationSummary_TestClass.Navigate_to_agency_allocation_summary_page() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Count_and_OS_Amount_Without_Query_Execution()[pri:5, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:25 IST" name="Validate_Count_and_OS_Amount_Without_Query_Execution" finished-at="2025-04-22T10:10:28 IST" duration-ms="3175" status="PASS">
+        <test-method signature="Navigate_to_agency_allocation_summary_page()[pri:5, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:48:56 IST" name="Navigate_to_agency_allocation_summary_page" finished-at="2025-04-29T16:49:01 IST" duration-ms="5757" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validate_Count_and_OS_Amount_Without_Query_Execution -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:28 IST" name="takeScreenshotOnFailure" finished-at="2025-04-22T10:10:28 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Navigate_to_agency_allocation_summary_page -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:49:01 IST" name="setupTest" finished-at="2025-04-29T16:49:01 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Validate_Count_and_OS_Amount_Without_Query_Execution status=SUCCESS method=BankRegularizationSummary_TestClass.Validate_Count_and_OS_Amount_Without_Query_Execution()[pri:5, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:28 IST" name="setupTest" finished-at="2025-04-22T10:10:28 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void core.SummaryReports.BankRegularizationSummary_TestClass.Validate_Data_Consistency_in_Export() throws java.io.IOException,java.lang.InterruptedException]]>
+                <![CDATA[public void core.AgencyManagement.AgencyAllocationSummary_TestClass.Search_Without_Selecting_Select_collection_agency_dropdown() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Validate_Data_Consistency_in_Export()[pri:6, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:28 IST" name="Validate_Data_Consistency_in_Export" finished-at="2025-04-22T10:10:39 IST" duration-ms="10984" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Validate_Data_Consistency_in_Export -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:39 IST" name="takeScreenshotOnFailure" finished-at="2025-04-22T10:10:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:49:01 IST" name="takeScreenshotOnFailure" finished-at="2025-04-29T16:49:01 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Validate_Data_Consistency_in_Export status=SUCCESS method=BankRegularizationSummary_TestClass.Validate_Data_Consistency_in_Export()[pri:6, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848] output={null}]]]>
+                <![CDATA[[TestResult name=Navigate_to_agency_allocation_summary_page status=SUCCESS method=AgencyAllocationSummary_TestClass.Navigate_to_agency_allocation_summary_page()[pri:5, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:39 IST" name="setupTest" finished-at="2025-04-22T10:10:39 IST" duration-ms="1" status="PASS">
+        <test-method signature="Search_Without_Selecting_Select_collection_agency_dropdown()[pri:6, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:49:01 IST" name="Search_Without_Selecting_Select_collection_agency_dropdown" finished-at="2025-04-29T16:49:06 IST" duration-ms="4890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_Without_Selecting_Select_collection_agency_dropdown -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:49:06 IST" name="takeScreenshotOnFailure" finished-at="2025-04-29T16:49:06 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void core.SummaryReports.BankRegularizationSummary_TestClass.Mandatory_Fields_Empty_Validation() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="Mandatory_Fields_Empty_Validation()[pri:7, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:39 IST" name="Mandatory_Fields_Empty_Validation" finished-at="2025-04-22T10:10:54 IST" duration-ms="15275" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Mandatory_Fields_Empty_Validation -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:54 IST" name="takeScreenshotOnFailure" finished-at="2025-04-22T10:10:54 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Mandatory_Fields_Empty_Validation status=SUCCESS method=BankRegularizationSummary_TestClass.Mandatory_Fields_Empty_Validation()[pri:7, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848] output={null}]]]>
+                <![CDATA[[TestResult name=Search_Without_Selecting_Select_collection_agency_dropdown status=SUCCESS method=AgencyAllocationSummary_TestClass.Search_Without_Selecting_Select_collection_agency_dropdown()[pri:6, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:core.SummaryReports.BankRegularizationSummary_TestClass@26794848]" started-at="2025-04-22T10:10:54 IST" name="afterEachTest" finished-at="2025-04-22T10:10:55 IST" duration-ms="1049" status="PASS">
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:core.AgencyManagement.AgencyAllocationSummary_TestClass@bcec361]" started-at="2025-04-29T16:49:06 IST" name="afterEachTest" finished-at="2025-04-29T16:49:07 IST" duration-ms="1071" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-      </class> <!-- core.SummaryReports.BankRegularizationSummary_TestClass -->
+      </class> <!-- core.AgencyManagement.AgencyAllocationSummary_TestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
